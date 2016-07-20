@@ -28,23 +28,23 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  Open Visual Studio 2015 to create **ASP.NET Core web application**.
 
-   ![](getting-started_images/getting-started_img16.png)
+   ![](getting-started_images/getting-started_img1.png)
 
 *  After project creation, open your **project.json** file to add our Syncfusion assembly packages.
 
-   ![](getting-started_images/getting-started_img20.png)
+   ![](getting-started_images/getting-started_img5.png)
    
 *  In the Solution Explorer window, click the **"Show All Files"** button.
 
-   ![](getting-started_images/getting-started_img115.jpeg)
+   ![](getting-started_images/getting-started_img6.jpeg)
    
 *  Open **Bower.json** file to include the following necessary packages.   
 
-   ![](getting-started_images/getting-started_img17.png)
+   ![](getting-started_images/getting-started_img2.png)
 
 *  After Bower packages installation the scripts and CSS files are loaded into the **wwwroot -> lib** folder as shown below
 
-   ![](getting-started_images/getting-started_img18.png)
+   ![](getting-started_images/getting-started_img3.png)
    
 *  Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.   
    
@@ -102,7 +102,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  Finally compile your project, after successful compilation then press F5 key to deploy your project.   
 
-   ![](getting-started_images/getting-started_img19.png)
+   ![](getting-started_images/getting-started_img4.png)
 
 
 ### Using Yeoman with Visual Studio Code:
@@ -146,46 +146,46 @@ yo aspnet
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img116.JPG)
+![](getting-started_images/getting-started_img7.JPG)
 
 
 * From the list of available projects, select the **Web Application Basic [ without Membership and Authorization ]** by using arrow keys.
 
-![](getting-started_images/getting-started_img117.JPG)
+![](getting-started_images/getting-started_img8.JPG)
 
 
 * And then provide the project name or simply press the enter key to create the project with default name.
 
-![](getting-started_images/getting-started_img118.JPG)
+![](getting-started_images/getting-started_img9.JPG)
 
 
 #### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started_images/getting-started_img120.JPG)
+![](getting-started_images/getting-started_img11.JPG)
 
 
 * Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your visual studio code.
 
-![](getting-started_images/getting-started_img121.JPG)
+![](getting-started_images/getting-started_img12.JPG)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version.
 
-![](getting-started_images/getting-started_img122.JPG)
+![](getting-started_images/getting-started_img13.JPG)
 
 
 * Open quick window (Ctrl + p) to run the “**bower install**” command to installed our Scripts and CSS to your application **wwwroot -> lib** folder.
 
-![](getting-started_images/getting-started_img123.JPG)
+![](getting-started_images/getting-started_img14.JPG)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.json** file to specify our assembly packages.
 
-![](getting-started_images/getting-started_img124.JPG)
+![](getting-started_images/getting-started_img15.JPG)
 
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
@@ -205,7 +205,7 @@ dotnet restore
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img125.JPG)
+![](getting-started_images/getting-started_img16.JPG)
 
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
@@ -275,7 +275,7 @@ dotnet restore
 
 * Finally press F5 key to deploy your project.
 
-![](getting-started_images/getting-started_img126.JPG)
+![](getting-started_images/getting-started_img17.JPG)
 
 
 ### Using Command Prompt with Visual Studio Code
@@ -311,36 +311,36 @@ dotnet new -t web
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img119.JPG)
+![](getting-started_images/getting-started_img10.JPG)
 
 
 #### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started_images/getting-started_img120.JPG)
+![](getting-started_images/getting-started_img11.JPG)
 
 
 * Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your visual studio code.
 
-![](getting-started_images/getting-started_img121.JPG)
+![](getting-started_images/getting-started_img12.JPG)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version.
 
-![](getting-started_images/getting-started_img122.JPG)
+![](getting-started_images/getting-started_img13.JPG)
 
 
 * Open quick window (Ctrl + p) to run the “bower install” command to installed our Scripts and CSS to your application **wwwroot - > lib** folder.
 
-![](getting-started_images/getting-started_img123.JPG)
+![](getting-started_images/getting-started_img14.JPG)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.json** file to specify our assembly packages.
 
-![](getting-started_images/getting-started_img124.JPG)
+![](getting-started_images/getting-started_img15.JPG)
 
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
@@ -359,7 +359,7 @@ dotnet restore
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img125.JPG)
+![](getting-started_images/getting-started_img16.JPG)
 
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
@@ -429,4 +429,4 @@ dotnet restore
 
 * Finally press F5 key to deploy your project.
 
-![](getting-started_images/getting-started_img126.JPG)
+![](getting-started_images/getting-started_img17.JPG)
