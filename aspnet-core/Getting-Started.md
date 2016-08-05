@@ -18,9 +18,9 @@ documentation: ug
 
 To work with ASP.NET Core 1.0, you need to make sure is whether you have installed the following software on your machine
 
-* Visual Studio 2015 [Update 3](https://go.microsoft.com/fwlink/?LinkId=691129) and above.
+* Visual Studio 2015 [Update 3](https://go.microsoft.com/fwlink/?LinkId=691129).
 
-* DotNetCore [1.0.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245).
+* DotNetCore [1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245).
 
 #### Configure Syncfusion Components in ASP.NET Core Application:
 
@@ -48,16 +48,16 @@ The following steps helps to create a ASP.NET Core web application to configure 
    
 *  Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.   
    
-   ~~~ cshtml
+   {% highlight cshtml %}
   
 	@using Syncfusion.JavaScript
 	@addTagHelper "*, Syncfusion.EJ"
  
-   ~~~
+   {% endhighlight %}
 
 *  Refer the necessary scripts and CSS files in your **layout.cshtml** page from **lib -> syncfusion-javascript** folder.   
 
-   ~~~ cshtml
+   {% highlight cshtml %}
    
 	<html>
 	<head>    
@@ -82,27 +82,181 @@ The following steps helps to create a ASP.NET Core web application to configure 
 	</body>
 	</html>
 
-   ~~~
+   {% endhighlight %}
 
 *  Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
 
-   ~~~ cshtml
+   {% highlight cshtml %}
    
     <ej-script-manager></ej-script-manager>
 	
-   ~~~
+   {% endhighlight %}
 
 *  Now open your view page to render our Syncfusion components in Tag Helper syntax.   
    
-   ~~~ cshtml
+   {% highlight cshtml %}
    
 	<ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
 	
-   ~~~
+   {% endhighlight %}
 
 *  Finally compile your project, after successful compilation then press F5 key to deploy your project.   
 
    ![](getting-started_images/getting-started_img4.png)
+
+
+### Using Command Prompt with Visual Studio Code
+
+#### System Requirements:
+
+* Visual Studio [Code](https://code.visualstudio.com/#)
+* DotNetCore 1.0 [(Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245)
+
+The following steps helps to create a ASP.NET Core web application to configure our components.
+
+* Create a new folder in your local directory.
+* Open the command prompt from your local directory with administrator mode.
+* In the command prompt we have an options to develop a below listed types of projects. The default type as console application. If you want to create any other specific type project, need to specify the **-****t** (template) key in command before the project type name. To know more about the project options and its syntax declarations refer the [.NET](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new#) link.
+
+{% highlight text %}
+
+    *   console
+
+    *   web
+
+    *   lib
+
+    *   xunittest
+
+
+{% endhighlight %}
+
+* Then run the below mentioned command to create a new web application. After command execution the project will be created within your folder.
+
+{% highlight text %}
+dotnet new -t web
+
+{% endhighlight %}
+
+![](getting-started_images/getting-started_img10.JPG)
+
+
+#### Configure Syncfusion Components in ASP.NET Core Application
+
+* Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
+
+![](getting-started_images/getting-started_img11.JPG)
+
+
+* Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your Visual Studio code.
+
+![](getting-started_images/getting-started_img12.JPG)
+
+
+* In **bower.json** file specify our Syncfusion packages with our latest version.
+
+![](getting-started_images/getting-started_img13.JPG)
+
+
+* Open quick window (Ctrl + p) to run the “**bower install**” command to installed our Scripts and CSS to your application **wwwroot -> lib** folder.
+
+![](getting-started_images/getting-started_img14.JPG)
+
+
+> Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
+
+* Now open your **project.json** file to specify our assembly packages.
+
+![](getting-started_images/getting-started_img15.JPG)
+
+
+* Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
+
+   {% highlight cshtml %}
+  
+	@using Syncfusion.JavaScript
+	@addTagHelper "*, Syncfusion.EJ"
+ 
+   {% endhighlight %}
+
+* open command prompt window with administrator rights and navigate to your project folder then execute the following command to restore the packages specified in your **project.json** file.
+
+{% highlight text %}
+dotnet restore
+
+{% endhighlight %}
+
+![](getting-started_images/getting-started_img16.JPG)
+
+
+* Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
+{% highlight cshtml %}
+
+[Layout.cshtml]
+
+<html>
+
+<head>
+
+<environment names="Development">
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+<link rel="stylesheet" href="~/css/site.css" />
+
+<link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
+
+<link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+
+</environment>
+
+</head>
+
+<body>
+
+<environment names="Development">
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<script src="~/lib/jquery.easing/js/jquery.easing.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+
+</environment>
+
+</body>
+
+</html>
+
+
+
+{% endhighlight %}
+
+* Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
+
+   {% highlight cshtml %}
+   
+    <ej-script-manager></ej-script-manager>
+	
+   {% endhighlight %}
+
+* Now open your view page to render our Syncfusion components in Tag Helper syntax.
+
+   {% highlight cshtml %}
+   
+	<ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
+	
+   {% endhighlight %}
+
+* Finally press F5 key to deploy your project.
+
+![](getting-started_images/getting-started_img17.JPG)
 
 
 ### Using Yeoman with Visual Studio Code:
@@ -110,9 +264,9 @@ The following steps helps to create a ASP.NET Core web application to configure 
 #### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
-* DotNetCore [1.0.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245)
+* DotNetCore [1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245)
 
-To create an ASP.NET Core 1.0.0 application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
+To create an ASP.NET Core 1.0 application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
 
 Since **Visual Studio Code** uses folder structure for storing files of application, we will create a folder of the name **ASP.NET**
 
@@ -166,7 +320,7 @@ yo aspnet
 ![](getting-started_images/getting-started_img11.JPG)
 
 
-* Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your visual studio code.
+* Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your Visual Studio code.
 
 ![](getting-started_images/getting-started_img12.JPG)
 
@@ -190,12 +344,12 @@ yo aspnet
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
 
-   ~~~ cshtml
+   {% highlight cshtml %}
   
 	@using Syncfusion.JavaScript
 	@addTagHelper "*, Syncfusion.EJ"
  
-   ~~~
+   {% endhighlight %}
 
 * open command prompt window with administrator rights and navigate to your project folder then execute the following command to restore the packages specified in your **project.json** file.
 
@@ -259,173 +413,19 @@ dotnet restore
 
 * Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
 
-   ~~~ cshtml
+   {% highlight cshtml %}
    
     <ej-script-manager></ej-script-manager>
 	
-   ~~~
+   {% endhighlight %}
 
 * Now open your view page to render our Syncfusion components in Tag Helper syntax.
 
-   ~~~ cshtml
+   {% highlight cshtml %}
    
 	<ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
 	
-   ~~~
-
-* Finally press F5 key to deploy your project.
-
-![](getting-started_images/getting-started_img17.JPG)
-
-
-### Using Command Prompt with Visual Studio Code
-
-#### System Requirements:
-
-* Visual Studio [Code](https://code.visualstudio.com/#)
-* DotNetCore 1.0.0 [(Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245)
-
-The following steps helps to create a ASP.NET Core web application to configure our components.
-
-* Create a new folder in your local directory.
-* Open the command prompt from your local directory with administrator mode.
-* In the command prompt we have an options to develop a below listed types of projects. The default type as console application. If you want to create any other specific type project, need to specify the **-****t** (template) key in command before the project type name. To know more about the project options and its syntax declarations refer the [dotnet](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new#) link.
-
-{% highlight text %}
-
-    *   console
-
-    *   web
-
-    *   lib
-
-    *   xunittest
-
-
-{% endhighlight %}
-
-* Then run the below mentioned command to create a new web application. After command execution the project will be created within your folder.
-
-{% highlight text %}
-dotnet new -t web
-
-{% endhighlight %}
-
-![](getting-started_images/getting-started_img10.JPG)
-
-
-#### Configure Syncfusion Components in ASP.NET Core Application
-
-* Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
-
-![](getting-started_images/getting-started_img11.JPG)
-
-
-* Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your visual studio code.
-
-![](getting-started_images/getting-started_img12.JPG)
-
-
-* In **bower.json** file specify our Syncfusion packages with our latest version.
-
-![](getting-started_images/getting-started_img13.JPG)
-
-
-* Open quick window (Ctrl + p) to run the “bower install” command to installed our Scripts and CSS to your application **wwwroot - > lib** folder.
-
-![](getting-started_images/getting-started_img14.JPG)
-
-
-> Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
-
-* Now open your **project.json** file to specify our assembly packages.
-
-![](getting-started_images/getting-started_img15.JPG)
-
-
-* Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
-
-   ~~~ cshtml
-  
-	@using Syncfusion.JavaScript
-	@addTagHelper "*, Syncfusion.EJ"
- 
-   ~~~
-
-* open command prompt window with administrator rights and navigate to your project folder then execute the following command to restore the packages specified in your **project.json** file.
-
-{% highlight text %}
-dotnet restore
-
-{% endhighlight %}
-
-![](getting-started_images/getting-started_img16.JPG)
-
-
-* Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
-{% highlight cshtml %}
-
-[Layout.cshtml]
-
-<html>
-
-<head>
-
-<environment names="Development">
-
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-<link rel="stylesheet" href="~/css/site.css" />
-
-<link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
-
-<link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
-
-</environment>
-
-</head>
-
-<body>
-
-<environment names="Development">
-
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<script src="~/lib/jquery.easing/js/jquery.easing.min.js"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-
-</environment>
-
-</body>
-
-</html>
-
-
-
-{% endhighlight %}
-
-* Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
-
-   ~~~ cshtml
-   
-    <ej-script-manager></ej-script-manager>
-	
-   ~~~
-
-* Now open your view page to render our Syncfusion components in Tag Helper syntax.
-
-   ~~~ cshtml
-   
-	<ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
-	
-   ~~~
+   {% endhighlight %}
 
 * Finally press F5 key to deploy your project.
 
