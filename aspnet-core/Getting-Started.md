@@ -170,7 +170,7 @@ dotnet new -t web
 ![](getting-started_images/getting-started_img15.JPG)
 
 
-* Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
+* Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
    {% highlight cshtml %}
   
