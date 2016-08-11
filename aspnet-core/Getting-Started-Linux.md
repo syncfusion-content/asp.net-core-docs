@@ -147,40 +147,40 @@ yo aspnet
 
 {% endhighlight %}
 
-![](getting-started_images_linux/img1.jpg)
+![](getting-started-images-linux/img1.jpg)
 
 * From the list of available projects, select the *Web Application Basic* [without Membership and Authorization] by using arrow keys.
 
-![](getting-started_images_linux/img2.jpg)
+![](getting-started-images-linux/img2.jpg)
 
 * And then provide the project name or simply press the ‘Enter’ key to create the project with default name.
 
-![](getting-started_images_linux/img3.jpg)
+![](getting-started-images-linux/img3.jpg)
 
 ### Configuring Syncfusion Components
 
 * Open Visual Studio Code and open your Sample application folder using **Open Folder** option. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started_images_linux/img4.jpg)
+![](getting-started-images-linux/img4.jpg)
 
 * Click the Extension icon in the Visual Studio Code left side pane, in the search window type the command *bower*. The bower related extensions are listed out. Now select the Bower extension and click the install button.
 
-![](getting-started_images_linux/img5.jpg)
+![](getting-started-images-linux/img5.jpg)
 
 * In **bower.json** file specify our Syncfusion packages with our latest version, or else specify the **`*`** symbol will automatically loads our latest version scripts and CSS files.
 
-![](getting-started_images_linux/img6.jpg)
+![](getting-started-images-linux/img6.jpg)
 
 * Then open quick window to enter the *`>bower`* command and press ‘Enter’ key, from the below list of suggestions select the **bower install** option to restored our scripts and CSS into your application **wwwroot -> lib** folder.
 
-![](getting-started_images_linux/img7.jpg)
+![](getting-started-images-linux/img7.jpg)
 
 * Now refer our Syncfusion package **Syncfusion.EJ.MVC** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here]
 (https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
 * Once the NuGet packages installation gets completed, open your **Project.json** file to include our **Syncfusion.EJ.MVC** package reference.
 
-![](getting-started_images_linux/img8.jpg)
+![](getting-started-images-linux/img8.jpg)
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -195,7 +195,7 @@ yo aspnet
 dotnet restore
 {% endhighlight %}
 
-![](getting-started_images_linux/img9.jpg)
+![](getting-started-images-linux/img9.jpg)
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
@@ -261,4 +261,4 @@ dotnet restore
 
 * Then open your browser and paste the listening port **localhost:5000** to view your sample in browser.
 
-![](getting-started_images_linux/img10.jpg)
+![](getting-started-images-linux/img10.jpg)
