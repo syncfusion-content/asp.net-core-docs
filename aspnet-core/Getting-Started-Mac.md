@@ -73,7 +73,7 @@ mkdir Sample
 dotnet new -t web
 {% endhighlight %}
 
-![](getting-started_images_mac/img11.png)
+![](getting-started-images-mac/img11.png)
 
 #### Building Projects with Yeoman
 
@@ -104,21 +104,21 @@ npm install -g generator-aspnet
 yo aspnet
 {% endhighlight %}
 
-![](getting-started_images_mac/img1.png)
+![](getting-started-images-mac/img1.png)
 
 * From the list of available projects, select the *Web Application Basic* [without Membership and Authorization] by using arrow keys.
 
-![](getting-started_images_mac/img2.png)
+![](getting-started-images-mac/img2.png)
 
 * And then provide the project name or simply press the ‘Enter’ key to create the project with default name.
 
-![](getting-started_images_mac/img3.png)
+![](getting-started-images-mac/img3.png)
 
 ### Configuring Syncfusion Components
 
 * Open Visual Studio Code and open your Sample application folder using **Open Folder** option. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started_images_mac/img4.png)
+![](getting-started-images-mac/img4.png)
 
 * Open a quick window (Command + P) and run the following command to install the bower extension in your Visual Studio Code.
 
@@ -126,22 +126,22 @@ yo aspnet
 ext install bower
 {% endhighlight %}
 
-![](getting-started_images_mac/img5.png)
+![](getting-started-images-mac/img5.png)
 
 * In **bower.json** file specify our Syncfusion packages with our latest version, or else specify the **`*`** symbol will automatically loads our latest version scripts and CSS files.
 
-![](getting-started_images_mac/img6.png)
+![](getting-started-images-mac/img6.png)
 
 * Then open quick window to enter the *`>bower`* command and press ‘Enter’ key, from the below list of suggestions select the **bower install** option to restored our scripts and CSS into your application **wwwroot -> lib** folder.
 
-![](getting-started_images_mac/img7.png)
+![](getting-started-images-mac/img7.png)
 
 N> Recommended to install the **Bower package watcher** extension will helps to load the packages automatically whenever save the **bower.json** file.
 
 * Now refer our Syncfusion package **Syncfusion.EJ.MVC** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 * Now open your **project.json** file to specify our assembly packages.
 
-![](getting-started_images_mac/img8.png)
+![](getting-started-images-mac/img8.png)
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 {% highlight cshtml %}
@@ -153,7 +153,7 @@ N> Recommended to install the **Bower package watcher** extension will helps to 
 dotnet restore
 {% endhighlight %}
 
-![](getting-started_images_mac/img9.png)
+![](getting-started-images-mac/img9.png)
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page
 
@@ -214,8 +214,8 @@ dotnet restore
    {% endhighlight %}
 * Finally execute the **dotnet run** command to run your sample browser.
 
-![](getting-started_images_mac/img12.png)
+![](getting-started-images-mac/img12.png)
 
 * Then open your browser and paste the listening port **localhost:5000** to view your sample in browser.
 
-![](getting-started_images_mac/img10.png)
+![](getting-started-images-mac/img10.png)
