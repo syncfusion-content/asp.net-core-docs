@@ -38,7 +38,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_img6.jpeg)
    
-*  Open **Bower.json** file to include the following necessary packages.   
+*  Open **bower.json** file to include the following necessary packages.   
 
    ![](getting-started_images/getting-started_img2.png)
 
@@ -158,7 +158,7 @@ dotnet new -t web
 ![](getting-started_images/getting-started_img13.JPG)
 
 
-* Open quick window (Ctrl + p) to run the “**bower install**” command to installed our Scripts and CSS to your application **wwwroot -> lib** folder.
+* Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
 ![](getting-started_images/getting-started_img14.JPG)
 
@@ -279,7 +279,7 @@ npm install -g yo
 
 {% endhighlight %}
 
-* After installing **Yo** you need to install the ASP.NET generator, gulp and bower.
+* After installing **Yo** you need to install the ASP.NET generator, gulp and Bower.
 
 {% highlight text %}
 
@@ -330,7 +330,7 @@ yo aspnet
 ![](getting-started_images/getting-started_img13.JPG)
 
 
-* Open quick window (Ctrl + p) to run the “**bower install**” command to installed our Scripts and CSS to your application **wwwroot -> lib** folder.
+* Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
 ![](getting-started_images/getting-started_img14.JPG)
 

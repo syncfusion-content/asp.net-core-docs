@@ -163,7 +163,7 @@ yo aspnet
 
 ![](getting-started-images-linux/img4.jpg)
 
-* Click the Extension icon in the Visual Studio Code left side pane, in the search window type the command *bower*. The bower related extensions are listed out. Now select the Bower extension and click the install button.
+* Click the Extension icon in the Visual Studio Code left side pane, in the search window type the command *bower*. The Bower related extensions are listed out. Now select the Bower extension and click the install button.
 
 ![](getting-started-images-linux/img5.jpg)
 
@@ -178,7 +178,7 @@ yo aspnet
 * Now refer our Syncfusion package **Syncfusion.EJ.MVC** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here]
 (https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
-* Once the NuGet packages installation gets completed, open your **Project.json** file to include our **Syncfusion.EJ.MVC** package reference.
+* Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.MVC** package reference.
 
 ![](getting-started-images-linux/img8.jpg)
 
