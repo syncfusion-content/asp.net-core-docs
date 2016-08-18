@@ -120,7 +120,7 @@ yo aspnet
 
 ![](getting-started-images-mac/img4.png)
 
-* Open a quick window (Command + P) and run the following command to install the bower extension in your Visual Studio Code.
+* Open a quick window (Command + P) and run the following command to install the Bower extension in your Visual Studio Code.
 
 {% highlight text %}
 ext install bower
