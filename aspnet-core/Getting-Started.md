@@ -38,7 +38,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_img6.jpeg)
    
-*  Open **Bower.json** file to include the following necessary packages.   
+*  Open **bower.json** file to include the following necessary packages.   
 
    ![](getting-started_images/getting-started_img2.png)
 
@@ -46,14 +46,14 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_img3.png)
    
-*  Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.   
-   
-   {% highlight cshtml %}
-  
-	@using Syncfusion.JavaScript
-	@addTagHelper "*, Syncfusion.EJ"
- 
-   {% endhighlight %}
+*  Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
+
+{% highlight cshtml %}
+
+@using Syncfusion.JavaScript
+@addTagHelper "*, Syncfusion.EJ"
+
+{% endhighlight %}
 
 *  Refer the necessary scripts and CSS files in your **layout.cshtml** page from **lib -> syncfusion-javascript** folder.   
 
@@ -120,64 +120,64 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 {% highlight text %}
 
-    *   console
+*   console
 
-    *   web
+*   web
 
-    *   lib
+*   lib
 
-    *   xunittest
-
+*   xunittest
 
 {% endhighlight %}
 
 * Then run the below mentioned command to create a new web application. After command execution the project will be created within your folder.
 
 {% highlight text %}
+
 dotnet new -t web
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img10.JPG)
+  ![](getting-started_images/getting-started_img10.JPG)
 
 
 #### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started_images/getting-started_img11.JPG)
+  ![](getting-started_images/getting-started_img11.JPG)
 
 
 * Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your Visual Studio code.
 
-![](getting-started_images/getting-started_img12.JPG)
+  ![](getting-started_images/getting-started_img12.JPG)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version.
 
-![](getting-started_images/getting-started_img13.JPG)
+  ![](getting-started_images/getting-started_img13.JPG)
 
 
-* Open quick window (Ctrl + p) to run the “**bower install**” command to installed our Scripts and CSS to your application **wwwroot -> lib** folder.
+* Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
-![](getting-started_images/getting-started_img14.JPG)
+  ![](getting-started_images/getting-started_img14.JPG)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.json** file to specify our assembly packages.
 
-![](getting-started_images/getting-started_img15.JPG)
+  ![](getting-started_images/getting-started_img15.JPG)
 
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
-   {% highlight cshtml %}
-  
-	@using Syncfusion.JavaScript
-	@addTagHelper "*, Syncfusion.EJ"
- 
-   {% endhighlight %}
+{% highlight cshtml %}
+
+@using Syncfusion.JavaScript
+@addTagHelper "*, Syncfusion.EJ"
+
+{% endhighlight %}
 
 * open command prompt window with administrator rights and navigate to your project folder then execute the following command to restore the packages specified in your **project.json** file.
 
@@ -186,7 +186,7 @@ dotnet restore
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img16.JPG)
+  ![](getting-started_images/getting-started_img16.JPG)
 
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
@@ -234,8 +234,6 @@ dotnet restore
 
 </html>
 
-
-
 {% endhighlight %}
 
 * Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
@@ -256,7 +254,7 @@ dotnet restore
 
 * Finally press F5 key to deploy your project.
 
-![](getting-started_images/getting-started_img17.JPG)
+  ![](getting-started_images/getting-started_img17.JPG)
 
 
 ### Using Yeoman with Visual Studio Code:
@@ -279,12 +277,11 @@ npm install -g yo
 
 {% endhighlight %}
 
-* After installing **Yo** you need to install the ASP.NET generator, gulp and bower.
+* After installing **Yo** you need to install the ASP.NET generator, gulp and Bower.
 
 {% highlight text %}
 
 npm install -g yo generator-aspnet gulp bower
-
 
 {% endhighlight %}
 
@@ -294,62 +291,58 @@ npm install -g yo generator-aspnet gulp bower
 
 yo aspnet
 
-
-
-
-
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img7.JPG)
+  ![](getting-started_images/getting-started_img7.JPG)
 
 
 * From the list of available projects, select the **Web Application Basic [ without Membership and Authorization ]** by using arrow keys.
 
-![](getting-started_images/getting-started_img8.JPG)
+  ![](getting-started_images/getting-started_img8.JPG)
 
 
 * And then provide the project name or simply press the enter key to create the project with default name.
 
-![](getting-started_images/getting-started_img9.JPG)
+  ![](getting-started_images/getting-started_img9.JPG)
 
 
 #### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started_images/getting-started_img11.JPG)
+  ![](getting-started_images/getting-started_img11.JPG)
 
 
-* Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the bower extension in your Visual Studio code.
+* Now open your **bower.json** json file and add the necessary packages to load our script and CSS. Instead of that need to install the Bower extension in your Visual Studio code.
 
-![](getting-started_images/getting-started_img12.JPG)
+  ![](getting-started_images/getting-started_img12.JPG)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version.
 
-![](getting-started_images/getting-started_img13.JPG)
+  ![](getting-started_images/getting-started_img13.JPG)
 
 
-* Open quick window (Ctrl + p) to run the “**bower install**” command to installed our Scripts and CSS to your application **wwwroot -> lib** folder.
+* Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
-![](getting-started_images/getting-started_img14.JPG)
+  ![](getting-started_images/getting-started_img14.JPG)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.json** file to specify our assembly packages.
 
-![](getting-started_images/getting-started_img15.JPG)
+  ![](getting-started_images/getting-started_img15.JPG)
 
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
 
-   {% highlight cshtml %}
-  
-	@using Syncfusion.JavaScript
-	@addTagHelper "*, Syncfusion.EJ"
- 
-   {% endhighlight %}
+{% highlight cshtml %}
+
+@using Syncfusion.JavaScript
+@addTagHelper "*, Syncfusion.EJ"
+
+{% endhighlight %}
 
 * open command prompt window with administrator rights and navigate to your project folder then execute the following command to restore the packages specified in your **project.json** file.
 
@@ -359,10 +352,11 @@ dotnet restore
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img16.JPG)
+  ![](getting-started_images/getting-started_img16.JPG)
 
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
+
 {% highlight cshtml %}
 
 [Layout.cshtml]
@@ -407,8 +401,6 @@ dotnet restore
 
 </html>
 
-
-
 {% endhighlight %}
 
 * Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
@@ -429,4 +421,4 @@ dotnet restore
 
 * Finally press F5 key to deploy your project.
 
-![](getting-started_images/getting-started_img17.JPG)
+  ![](getting-started_images/getting-started_img17.JPG)
