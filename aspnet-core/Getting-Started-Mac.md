@@ -12,7 +12,7 @@ documentation: ug
 
 The below guidelines demonstrate how to create an ASP.NET Core application and configure with our Essential Studio MVC Components.
 
-## Prerequisites:
+## Prerequisites
 
 * Visual Studio [Code](https://code.visualstudio.com/).
 
@@ -51,7 +51,9 @@ The following steps helps to create a ASP.NET Core web application using termina
 * Open a terminal window, create a new directory for your project creation.
 
 {% highlight text %}
+
 mkdir Sample
+
 {% endhighlight %}
 
 * Then navigate to your folder directory in your terminal window.
@@ -60,20 +62,22 @@ mkdir Sample
 
 {% highlight text %}
 
-    *   console
-    *   web    
-    *   lib
-    *   xunittest
+*   console
+*   web    
+*   lib
+*   xunittest
 
 {% endhighlight %}
 
 * Then run the below mentioned command to create a new web application. After this command execution the new web application project will be created within your folder.
 
 {% highlight text %}
+
 dotnet new -t web
+
 {% endhighlight %}
 
-![](getting-started-images-mac/img11.png)
+  ![](getting-started-images-mac/img11.png)
 
 #### Building Projects with Yeoman
 
@@ -81,13 +85,19 @@ Yeoman is a scaffolding tool for modern web apps and helps us to quick start a n
 Since **Visual Studio Code** uses folder structure for storing files of application, create a folder of the name **ASP.NET**.
 
 * Open the Command line terminal and execute the below mentioned command to install the Node.js.
+
 {% highlight text %}
+
 brew install node
+
 {% endhighlight %}
+
 * Then need to install the *Yeoman*, *bower*, *grunt* and *gulp* tool in your local machine by using *npm*.
 
 {% highlight text %}
+
 npm install -g yo bower grunt-cli gulp
+
 {% endhighlight %}
 
 N> If you get the error *npm ERR! Please try running this command again in root/administrator* on Mac OS, run the following command using [sudo](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/sudo.8.html): *sudo npm install -g yo bower grunt-cli gulp*
@@ -95,69 +105,84 @@ N> If you get the error *npm ERR! Please try running this command again in root/
 * After installing *Yo* you need to install the ASP.NET generator.
 
 {% highlight text %}
+
 npm install -g generator-aspnet
+
 {% endhighlight %}
 
 * Once Yeoman generator installed successfully, run the below command to invoke a ASP.NET Core project creation wizard.
 
 {% highlight text %}
+
 yo aspnet
+
 {% endhighlight %}
 
-![](getting-started-images-mac/img1.png)
+  ![](getting-started-images-mac/img1.png)
 
 * From the list of available projects, select the *Web Application Basic* [without Membership and Authorization] by using arrow keys.
 
-![](getting-started-images-mac/img2.png)
+  ![](getting-started-images-mac/img2.png)
 
 * And then provide the project name or simply press the ‘Enter’ key to create the project with default name.
 
-![](getting-started-images-mac/img3.png)
+  ![](getting-started-images-mac/img3.png)
 
 ### Configuring Syncfusion Components
 
 * Open Visual Studio Code and open your Sample application folder using **Open Folder** option. Now your project folder is loaded in Visual Studio Code application.
 
-![](getting-started-images-mac/img4.png)
+  ![](getting-started-images-mac/img4.png)
 
 * Open a quick window (Command + P) and run the following command to install the Bower extension in your Visual Studio Code.
 
 {% highlight text %}
+
 ext install bower
+
 {% endhighlight %}
 
-![](getting-started-images-mac/img5.png)
+  ![](getting-started-images-mac/img5.png)
 
 * In **bower.json** file specify our Syncfusion packages with our latest version, or else specify the **`*`** symbol will automatically loads our latest version scripts and CSS files.
 
-![](getting-started-images-mac/img6.png)
+  ![](getting-started-images-mac/img6.png)
 
 * Then open quick window to enter the *`>bower`* command and press ‘Enter’ key, from the below list of suggestions select the **bower install** option to restored our scripts and CSS into your application **wwwroot -> lib** folder.
 
-![](getting-started-images-mac/img7.png)
+  ![](getting-started-images-mac/img7.png)
 
 N> Recommended to install the **Bower package watcher** extension will helps to load the packages automatically whenever save the **bower.json** file.
 
 * Now refer our Syncfusion package **Syncfusion.EJ.MVC** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
+
 * Now open your **project.json** file to specify our assembly packages.
 
-![](getting-started-images-mac/img8.png)
+  ![](getting-started-images-mac/img8.png)
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
+
 {% highlight cshtml %}
+
 @using Syncfusion.JavaScript
 @addTagHelper *, Syncfusion.EJ
-{% endhighlight %}
-* Open Terminal window and navigate to your project folder then execute the following command to restore the packages which are all specified in your **project.json** file.
-{% highlight text %}
-dotnet restore
+
 {% endhighlight %}
 
-![](getting-started-images-mac/img9.png)
+* Open Terminal window and navigate to your project folder then execute the following command to restore the packages which are all specified in your **project.json** file.
+
+{% highlight text %}
+
+dotnet restore
+
+{% endhighlight %}
+
+  ![](getting-started-images-mac/img9.png)
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page
 
 {% highlight cshtml %}
+
 <html>
 
 <head>
@@ -201,21 +226,25 @@ dotnet restore
 {% endhighlight %}
 
 * Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
+
 {% highlight cshtml %}
    
     <ej-script-manager></ej-script-manager>
 	
-   {% endhighlight %}
+{% endhighlight %}
+
 * Now open your view page to render our Syncfusion components in Tag Helper syntax.
- {% highlight cshtml %}
-   
-	<ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
+
+{% highlight cshtml %}
+
+<ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
 	
-   {% endhighlight %}
+{% endhighlight %}
+
 * Finally execute the **dotnet run** command to run your sample browser.
 
-![](getting-started-images-mac/img12.png)
+  ![](getting-started-images-mac/img12.png)
 
 * Then open your browser and paste the listening port **localhost:5000** to view your sample in browser.
 
-![](getting-started-images-mac/img10.png)
+  ![](getting-started-images-mac/img10.png)
