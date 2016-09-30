@@ -7,7 +7,6 @@ control: Schedule
 documentation: ug
 ---
 
-
 # Getting Started
 
 Refer the [Getting Started](/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
@@ -56,7 +55,7 @@ It is necessary to define the following namespace within the *_viewImports.cshtm
 
 N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
-Add the Scheduler code within the View page as given below with proper field names bind to it â€“
+Add the Scheduler code within the View page as given below with proper field names bind to it –
 
 {% highlight cshtml %}
 
@@ -67,7 +66,9 @@ Add the Scheduler code within the View page as given below with proper field nam
 
 {% endhighlight %}
 
-To access and process the data back and forth the Scheduler, define it with data manager settings along with the data adaptor (url adaptor) options as given below â€“
+N> The appointment fields like id, subject, description and other required Scheduler appointment fields are needed to be mapped with the appropriate column names from the dataSource as done in the above code example.
+
+To access and process the data back and forth the Scheduler, define it with data manager settings along with the data adaptor (url adaptor) options as given below –
 
  {% highlight cshtml %}
  
@@ -81,7 +82,7 @@ To access and process the data back and forth the Scheduler, define it with data
 
 N> In the above code, url adaptor has been used, where the controller action named _GetData_ is called within it.
 
-Create a new class in the **Home** controller page to define the data to be passed to the Scheduler as mentioned below,
+Create a new class file namely _ScheduleData_ within the **Models** folder in order to define the data to be passed to the Scheduler as mentioned below,
 
 {% highlight c# %}
 
@@ -95,43 +96,50 @@ Create a new class in the **Home** controller page to define the data to be pass
         public bool IsAllDay { get; set; }
         public bool IsRecurrence { get; set; }
         public string RecurrenceRule { get; set; }
+        
+        // Method that passes the Scheduler appointment data
+        public List<ScheduleData> getSchedulerData()
+        {
+           List<ScheduleData> data = new List<ScheduleData> {
+             new ScheduleData {
+                    ProgramName = "Turtle Walk",
+                    Comments = "Night out with turtles",
+                    ProgramStartTime = new DateTime(2016, 6, 2, 3, 0, 0),
+                    ProgramEndTime = new DateTime(2016, 6, 2, 4, 0, 0),
+                    IsAllDay = true
+             },
+             new ScheduleData {
+                    ProgramName = "Winter Sleepers",
+                    Comments = "Long sleep during winter season",
+                    ProgramStartTime = new DateTime(2016, 6, 3, 1, 0, 0),
+                    ProgramEndTime = new DateTime(2016, 6, 3, 2, 0, 0)
+             },
+             new ScheduleData {
+                    ProgramName = "Estivation",
+                    Comments = "Sleeping in hot season",
+                    ProgramStartTime = new DateTime(2016, 6, 4, 3, 0, 0),
+                    ProgramEndTime = new DateTime(2016, 6, 4, 4, 0, 0)
+             }
+           };
+           return data;
+        }
     }
 
 {% endhighlight %}
 
-Now, define the action _GetData_ in **Home** controller page as shown below with the list of appointment data to be passed to the Scheduler.
+Now, define the action _GetData_ within the **Home** controller page as shown below and access the model data in it (use the model namespace at the top of the controller page), which is then bind to the Scheduler.
 
 {% highlight c# %}
 
     public List<ScheduleData> GetData()
     {
-       List<ScheduleData> data = new List<ScheduleData> {
-         new ScheduleData {
-                ProgramName = "Turtle Walk",
-                Comments = "Night out with turtles",
-                ProgramStartTime = new DateTime(2016, 6, 2, 3, 0, 0),
-                ProgramEndTime = new DateTime(2016, 6, 2, 4, 0, 0),
-                IsAllDay = true
-         },
-         new ScheduleData {
-                ProgramName = "Winter Sleepers",
-                Comments = "Long sleep during winter season",
-                ProgramStartTime = new DateTime(2016, 6, 3, 1, 0, 0),
-                ProgramEndTime = new DateTime(2016, 6, 3, 2, 0, 0)
-         },
-         new ScheduleData {
-                ProgramName = "Estivation",
-                Comments = "Sleeping in hot season",
-                ProgramStartTime = new DateTime(2016, 6, 4, 3, 0, 0),
-                ProgramEndTime = new DateTime(2016, 6, 4, 4, 0, 0)
-         }
-       };
-       return data;
+        ScheduleData appoint = new ScheduleData();
+        return appoint.getSchedulerData(); // returns the appointment data, which gets bind to the Scheduler control
     }
 
 {% endhighlight %}
 
-N> The appointment fields like Id, Subject, Description and other required fields are needed to be mapped with the appropriate column names from the dataSource as done in the above code example.
+
 
  
 
