@@ -16,13 +16,13 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 * Visual Studio [Code](https://code.visualstudio.com/).
 
-* ASP.NET Core 1.0 [Preview2](https://download.microsoft.com/download/0/A/3/0A372822-205D-4A86-BFA7-084D2CBE9EDF/dotnet-dev-osx-x64.1.0.0-preview2-003121.pkg).
+* ASP.NET Core 1.0.1 [Preview2](https://go.microsoft.com/fwlink/?LinkID=827517).
 
 * [Homebrew](http://brew.sh/)
 
 * OpenSSL (Latest Version)
 
-N>   Install the latest version OpenSSL by executing the following commands in your terminal window.
+>   Install the latest version OpenSSL by executing the following commands in your terminal window.
 
 {% highlight text %}
 ~$ brew update
@@ -100,7 +100,7 @@ npm install -g yo bower grunt-cli gulp
 
 {% endhighlight %}
 
-N> If you get the error *npm ERR! Please try running this command again in root/administrator* on Mac OS, run the following command using [sudo](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/sudo.8.html): *sudo npm install -g yo bower grunt-cli gulp*
+> If you get the error *npm ERR! Please try running this command again in root/administrator* on Mac OS, run the following command using [sudo](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/sudo.8.html): *sudo npm install -g yo bower grunt-cli gulp*
 
 * After installing *Yo* you need to install the ASP.NET generator.
 
@@ -152,13 +152,15 @@ ext install bower
 
   ![](getting-started-images-mac/img7.png)
 
-N> Recommended to install the **Bower package watcher** extension will helps to load the packages automatically whenever save the **bower.json** file.
+> Recommended to install the **Bower package watcher** extension will helps to load the packages automatically whenever save the **bower.json** file.
 
-* Now refer our Syncfusion package **Syncfusion.EJ.MVC** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
+* Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
 * Now open your **project.json** file to specify our assembly packages.
 
   ![](getting-started-images-mac/img8.png)
+
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
