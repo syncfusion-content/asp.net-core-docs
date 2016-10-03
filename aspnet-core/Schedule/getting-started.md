@@ -55,7 +55,7 @@ It is necessary to define the following namespace within the *_viewImports.cshtm
 
 N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
-Add the Scheduler code within the View page as given below with proper field names bind to it â€“
+Add the Scheduler code within the View page as given below with proper field names bind to it –
 
 {% highlight cshtml %}
 
@@ -68,7 +68,7 @@ Add the Scheduler code within the View page as given below with proper field nam
 
 N> The appointment fields like id, subject, description and other required Scheduler appointment fields are needed to be mapped with the appropriate column names from the dataSource as done in the above code example.
 
-To access and process the data back and forth the Scheduler, define it with data manager settings along with the data adaptor (url adaptor) options as given below â€“
+To access and process the data back and forth the Scheduler, define it with data manager settings along with the data adaptor (url adaptor) options as given below –
 
  {% highlight cshtml %}
  
@@ -127,14 +127,14 @@ Create a new class file namely _ScheduleData_ within the **Models** folder in or
 
 {% endhighlight %}
 
-Now, define the action _GetData_ within the **Home** controller page as shown below and access the model data in it (use the model namespace at the top of your controller page), which is then bind to the Scheduler.
+Now, define the action _GetData_ within the **Home** controller page as shown below and access the model data in it (use the model namespace at the top of the controller page), which is then bind to the Scheduler.
 
 {% highlight c# %}
 
     public List<ScheduleData> GetData()
     {
-        ScheduleData data = new ScheduleData();
-        data.getSchedulerData(); // returns the appointment data, which gets bind to the Scheduler control
+        ScheduleData appoint = new ScheduleData();
+        return appoint.getSchedulerData(); // returns the appointment data, which gets bind to the Scheduler control
     }
 
 {% endhighlight %}

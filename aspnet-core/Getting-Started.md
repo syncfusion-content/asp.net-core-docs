@@ -10,17 +10,17 @@ documentation: ug
 
 # Getting Started
 
-## ASP.NET Core 1.0 Application 
+## ASP.NET Core 1.0.1 Application 
 
 ### Using Visual Studio
 
 #### System Requirements:
 
-To work with ASP.NET Core 1.0, you need to make sure is whether you have installed the following software on your machine
+To work with ASP.NET Core 1.0.1, you need to make sure is whether you have installed the following software on your machine
 
 * Visual Studio 2015 [Update 3](https://go.microsoft.com/fwlink/?LinkId=691129).
 
-* DotNetCore [1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245).
+* DotNetCore [1.0.1 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=827546).
 
 #### Configure Syncfusion Components in ASP.NET Core Application:
 
@@ -33,7 +33,9 @@ The following steps helps to create a ASP.NET Core web application to configure 
 *  After project creation, open your **project.json** file to add our Syncfusion assembly packages.
 
    ![](getting-started_images/getting-started_img5.png)
-   
+
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. 
+
 *  In the Solution Explorer window, click the **"Show All Files"** button.
 
    ![](getting-started_images/getting-started_img6.jpeg)
@@ -51,6 +53,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 {% highlight cshtml %}
 
 @using Syncfusion.JavaScript
+
 @addTagHelper "*, Syncfusion.EJ"
 
 {% endhighlight %}
@@ -110,7 +113,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 #### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
-* DotNetCore 1.0 [(Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245)
+* DotNetCore 1.0.1 [(Preview 2)](https://go.microsoft.com/fwlink/?LinkId=827546)
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
 
@@ -169,12 +172,14 @@ dotnet new -t web
 
   ![](getting-started_images/getting-started_img15.JPG)
 
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
 {% highlight cshtml %}
 
 @using Syncfusion.JavaScript
+
 @addTagHelper "*, Syncfusion.EJ"
 
 {% endhighlight %}
@@ -262,9 +267,9 @@ dotnet restore
 #### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
-* DotNetCore [1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=817245)
+* DotNetCore [1.0.1 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=827546)
 
-To create an ASP.NET Core 1.0 application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
+To create an ASP.NET Core 1.0.1 application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
 
 Since **Visual Studio Code** uses folder structure for storing files of application, we will create a folder of the name **ASP.NET**
 
@@ -334,12 +339,14 @@ yo aspnet
 
   ![](getting-started_images/getting-started_img15.JPG)
 
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
 
 {% highlight cshtml %}
 
 @using Syncfusion.JavaScript
+
 @addTagHelper "*, Syncfusion.EJ"
 
 {% endhighlight %}

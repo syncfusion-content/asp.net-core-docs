@@ -200,18 +200,21 @@ yo aspnet
 
   ![](getting-started-images-linux/img7.jpg)
 
-* Now refer our Syncfusion package **Syncfusion.EJ.MVC** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here]
+* Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here]
 (https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
-* Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.MVC** package reference.
+* Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.AspNet.Core** package reference.
 
   ![](getting-started-images-linux/img8.jpg)
+
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
 {% highlight cshtml %}
 
 @using Syncfusion.JavaScript
+
 @addTagHelper *, Syncfusion.EJ
 
 {% endhighlight %}
