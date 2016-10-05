@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Customization in Tooltip widget for Syncfusion Essential JS
-description: Customization in Tooltip widget for Syncfusion Essential JS
+title: Customization | Tooltip | ASP.NET Core | Syncfusion
+description: Customization in Tooltip widget for Syncfusion Essential Dotnet Core
 platform: aspnet-core
 control: Tooltip
 documentation: ug
-keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget, Tooltip template,
+keywords : Dotnetcore Tooltip,ASP Dotnet Core Tooltip, core Tooltip,aspnetcore Tooltip widget,Dotnetcore Tooltip template, Dotnetcore Tooltip Animation, Dotnetcore Tooltip closemode 
 ---
 
 # Customization
@@ -17,11 +17,11 @@ By default you can add any text or image to the Tooltip. To customize the toolti
 {% highlight CSHTML %}
 
     <div class="ctrl" id="centerImg">
-        <img class="ctrImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" />
+        <img class="ctrImg" src="http://aspnetcore.syncfusion.com/images/tooltip/template-04.png" />
         <div class="new">Roslyn Succinctly</div>
     </div>
 
-    <ej-tooltip id="centerImg" content="<div class='main'> <div class='poster'> <img src='http://js.syncfusion.com/demos/web/images/tooltip/template-2.png' width='150px' height='120px'> </div> <div class='def'> <h4> Roslyn Succinctly </h4><div class='description'>Microsoft has only recently embraced the world of open source software, offering <a href='#'>More...</a> </div>" width="350px">
+    <ej-tooltip id="centerImg" content="<div class='main'> <div class='poster'> <img src='http://aspnetcore.syncfusion.com/images/tooltip/template-2.png' width='150px' height='120px'> </div> <div class='def'> <h4> Roslyn Succinctly </h4><div class='description'>Microsoft has only recently embraced the world of open source software, offering <a href='#'>More...</a> </div>" width="350px">
     </ej-tooltip>
 
 {% endhighlight %}
@@ -79,11 +79,11 @@ Tooltip title can be customized with the image or any HTML element.
 {% highlight CSHTML %}
     
     <div class="ctrl" id="centerImg">
-        <img class="ctrImg" src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" />
+        <img class="ctrImg" src="http://aspnetcore.syncfusion.com/images/tooltip/template-04.png" />
         <div class="new">Roslyn Succinctly</div>
     </div>
 
-    <ej-tooltip id="centerImg" content="<div>Microsoft has only recently embraced the world of open source software, offering <a href='#'>More...</a> </div>").Title("<div><img class='titleImg' src='http://js.syncfusion.com/demos/web/images/tooltip/template-2.png' /> <div class='description'> Roslyn Succinctly </div> </div> ">
+    <ej-tooltip id="centerImg" content="<div>Microsoft has only recently embraced the world of open source software, offering <a href='#'>More...</a> </div>").Title("<div><img class='titleImg' src='http://aspnetcore.syncfusion.com/images/tooltip/template-2.png' /> <div class='description'> Roslyn Succinctly </div> </div> ">
     </ej-tooltip>
 
  {% endhighlight %}   
@@ -140,10 +140,10 @@ Let's create a Tooltip that slides down when shown using the [animation](http://
 {% highlight CSHTML %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="tooltip1"><u> JavaScript</u> </a>the way you really want to.
     </div>
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web.">
+    <ej-tooltip id="tooltip1" content="JavaScript is the programming language of HTML and the Web.">
     <e-tooltip-animation effect="Slide" speed="1000" />
     </ej-tooltip>
 
@@ -159,22 +159,22 @@ Show or Hide method may receive an optional 'callback' parameter, which represen
 {% highlight CSHTML %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="tooltip2"><u> JavaScript</u> </a>the way you really want to.
     </div>
     
     <ej-button id="open" text="Open" show-rounded-corner="true" size="@ButtonSize.Large" click="onClick" />
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web.">
+    <ej-tooltip id="tooltip2" content="JavaScript is the programming language of HTML and the Web.">
     </ej-tooltip>
 
     <script>
         var tip;
         function onClick(args){
-            tip = $("#test").data("ejTooltip");
+            tip = $("#tooltip2").data("ejTooltip");
             tip.show(null,"myFunc");
         }
         function myFunc(args) {
-            tip = $("#test").data("ejTooltip");
+            tip = $("#tooltip2").data("ejTooltip");
             $(tip.tooltip).slideDown(200, "easeOutElastic");
         }
         
@@ -182,7 +182,7 @@ Show or Hide method may receive an optional 'callback' parameter, which represen
 
 {% endhighlight %}
 
-N> Show or Hide method can also receive an optional parameter “effect name”, (e.g any easing effect name) which specifies the type of effect taken place when showing/hiding of the tooltip, please refer to the following link for online demo - [link](http://jsplayground.syncfusion.com/Sync_sz1250aa).
+N> Show or Hide method can also receive an optional parameter “effect name”, (e.g any easing effect name) which specifies the type of effect taken place when showing/hiding of the tooltip, please refer to the following link for online demo - [link](http://aspnetcore.syncfusion.com/tooltip/animation).
 
 ## Modernize the tooltip’s content
 
@@ -191,16 +191,16 @@ It's easy to update a tooltip’s content – whether it’s open or closed.
 {% highlight CSHTML %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
-        @Html.EJ().Button("open").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("Update Content").ClientSideEvents(events => events.Click("onClick"))
+        TypeScript lets you write <a id="tooltip3"><u> JavaScript</u> </a>the way you really want to.
+        <ej-button id="open" text="Update Content" show-rounded-corner="true" size="@ButtonSize.Large" click="onClick" />
     </div>
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web.">
+    <ej-tooltip id="tooltip3" content="JavaScript is the programming language of HTML and the Web.">
     </ej-tooltip>
 
     <script type="text/javascript">
         function onClick(args){
-            tip = $("#test").data("ejTooltip");
+            tip = $("#tooltip3").data("ejTooltip");
             tip.setModel({ content: "JavaScript" });
             tip.show();
         }
@@ -240,10 +240,10 @@ Let see an example, this Tooltip will only hide after hovering the target for 20
 {% highlight CSHTML %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="tooltip4"><u> JavaScript</u> </a>the way you really want to.
     </div>
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web." close-mode="Auto" auto-close-timeout="2000">
+    <ej-tooltip id="tooltip4" content="JavaScript is the programming language of HTML and the Web." close-mode="Auto" auto-close-timeout="2000">
     </ej-tooltip>
 
 {% endhighlight %}
@@ -257,10 +257,10 @@ A close button will be shown with the Tooltip. The button element (i.e. close bu
 {% highlight CSHTML %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="tooltip5"><u> JavaScript</u> </a>the way you really want to.
     </div>
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web." close-mode="Sticky" width="200px">
+    <ej-tooltip id="tooltip5" content="JavaScript is the programming language of HTML and the Web." close-mode="Sticky" width="200px">
     </ej-tooltip>
 
 {% endhighlight %}
@@ -272,10 +272,10 @@ You can also have Tooltip with a title, in which case the button will lye within
 {% highlight CSHTML %}
 
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="tooltip6"><u> JavaScript</u> </a>the way you really want to.
     </div>
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web." close-mode="Sticky" width="200px" title="JavaScript">
+    <ej-tooltip id="tooltip6" content="JavaScript is the programming language of HTML and the Web." close-mode="Sticky" width="200px" title="JavaScript">
     </ej-tooltip>
 
 {% endhighlight %}

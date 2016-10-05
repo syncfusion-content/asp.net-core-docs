@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Overview
+title: Overview | Tooltip | ASP.NET Core | Syncfusion
 description: overview
 platform: aspnet-core
 control: Tooltip Control
 documentation: ug
-keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
+keywords : Dotnetcore Tooltip,ASP Dotnet Core Tooltip, core Tooltip,aspnetcore Tooltip widget
 ---
 
 # Overview

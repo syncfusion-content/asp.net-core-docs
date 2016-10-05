@@ -1,11 +1,11 @@
 ---
 layout: post
-title: How To section of Tooltip widget for Syncfusion Essential JS
+title: How To | Tooltip | ASP.NET Core | Syncfusion
 description: How To section of Tooltip widget
 platform: aspnet-core
 control: Tooltip
 documentation: ug
-keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
+keywords : Dotnetcore Tooltip,ASP Dotnet Core Tooltip, core Tooltip,aspnetcore Tooltip widget,Dotnetcore Tooltip AJAX content,Dotnetcore Tooltip Integration with Slider
 ---
 
 # How To
@@ -107,12 +107,12 @@ Render the employees table and create the tooltip. Once the tooltip created, the
                 url: "tooltipData.js",
                 success: function (result) {
                     var emp = [
-                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/2.png" },
-                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/4.png" },
-                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/8.png" },
-                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/3.png" },
-                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/1.png" },
-                        { photo: "http://js.syncfusion.com/demos/web/content/images/grid/Employees/6.png" },
+                        { photo: "http://aspnetcore.syncfusion.com/images/Employees/2.png" },
+                        { photo: "http://aspnetcore.syncfusion.com/images/Employees/4.png" },
+                        { photo: "http://aspnetcore.syncfusion.com/images/Employees/8.png" },
+                        { photo: "http://aspnetcore.syncfusion.com/images/Employees/3.png" },
+                        { photo: "http://aspnetcore.syncfusion.com/images/Employees/1.png" },
+                        { photo: "http://aspnetcore.syncfusion.com/images/Employees/6.png" },
                     ];
                     for (i = 0; i < result.length ; i++) {
                         if (result[i].LastName == $(proxy.event.target).attr("data-content"))
@@ -253,7 +253,7 @@ Styling the Tip's background and border colors is done using "cssClass" API of T
 
     <div class="frame">
         <div class="img" id="custom">
-            <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-04.png" alt="Roslyn Succinctly" >
+            <img src="http://aspnetcore.syncfusion.com/images/tooltip/template-04.png" alt="Roslyn Succinctly" >
             <div class="desc">Roslyn Succinctly</div>
         </div>
     </div>

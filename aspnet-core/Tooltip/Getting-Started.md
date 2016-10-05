@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Getting started with Tooltip widget for Syncfusion Essential JS
+title: Getting started | Tooltip | ASP.NET Core | Syncfusion
 description: How to create the Tooltip
 platform: aspnet-core
 control: Tooltip
 documentation: ug
-keywords : ejTooltip, Tooltip, js Tooltip, Tooltip widget
+keywords : Dotnetcore Tooltip,ASP Dotnet Core Tooltip, core Tooltip,aspnetcore Tooltip widget,Dotnetcore Tooltip Appearance,Dotnetcore Tooltip Dimensions
 ---
 # Getting started
 
@@ -26,7 +26,7 @@ Using the following steps, you can create a Tooltip control. The basic rendering
     <div class="frame">    
         <div class="img" id="sample">
             <a target="_blank" href="image/taj.png">
-            <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
+            <img src="http://aspnetcore.syncfusion.com/images/tooltip/template-05.png" alt="Delphi">
             </a>
             <div class="desc">Delphi Succinctly</div>
         </div>
@@ -72,10 +72,10 @@ Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ej
 {% highlight CSHTML %}
  
     <div class="control">
-        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+        TypeScript lets you write <a id="testSample"><u> JavaScript</u> </a>the way you really want to.
     </div>
 
-    <ej-tooltip id="test" content="JavaScript is the programming language of HTML and the Web." width="100px" height="100px">
+    <ej-tooltip id="testSample" content="JavaScript is the programming language of HTML and the Web." width="100px" height="100px">
     </ej-tooltip>
 
 {% endhighlight %}
@@ -86,14 +86,14 @@ You can configure the appearance of the Tooltip with the title, close button and
 
 {% highlight CSHTML %}
  
-    <div class="img" id="sample">
+    <div class="img" id="sample2">
         <a target="_blank" href="image/taj.png">
-        <img src="http://js.syncfusion.com/demos/web/images/tooltip/template-05.png" alt="Delphi">
+        <img src="http://aspnetcore.syncfusion.com/images/tooltip/template-05.png" alt="Delphi">
         </a>
         <div class="desc">Delphi Succinctly</div>
     </div>
 
-    <ej-tooltip id="test" content="Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms." width="180px" title="Delphi Succinctly" close-mode="Sticky" is-balloon="false">
+    <ej-tooltip id="sample2" content="Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms." width="180px" title="Delphi Succinctly" close-mode="Sticky" is-balloon="false">
     </ej-tooltip>
 
 {% endhighlight %}
