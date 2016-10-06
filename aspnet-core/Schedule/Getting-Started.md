@@ -133,8 +133,8 @@ Now, define the action _GetData_ within the **Home** controller page as shown be
 
     public List<ScheduleData> GetData()
     {
-        ScheduleData data = new ScheduleData();
-        data.getSchedulerData(); // returns the appointment data, which gets bind to the Scheduler control
+        ScheduleData appoint = new ScheduleData();
+        return appoint.getSchedulerData(); // returns the appointment data, which gets bind to the Scheduler control
     }
 
 {% endhighlight %}
