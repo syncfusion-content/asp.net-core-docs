@@ -44,6 +44,8 @@ I> Syncfusion other platforms NuGet packages feed links are available [here](htt
 Syncfusion ASP.NET Core NuGet can install once configured the package source. The NuGet installation steps as below,
 
 1. Once configured the Package source with Syncfusion NuGet Packages, right click on project and choose `Manage NuGet Packages | Browse | <Package Source Name>`.
+   
+   I> We are providing the Syncfusion AspNet Core NuGet packages as preview. So, please make sure `Include prerelease` option is enabled in your NuGet Package Manager for ASP.NET Core platform.  
 
    ![](installation-and-deployment_images/NuGetConfig3.jpeg)
 
