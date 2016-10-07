@@ -9,7 +9,44 @@ documentation: ug
 
 # Getting Started
 
-To run Kanban sample in ASP.NET Core 1.0.1, Please refer the `ASP.NET Core` documentation to initially configure the common specifications. 
+Refer the [Getting Started](/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+
+Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
+
+{% highlight cshtml %}
+
+    <html>
+    <head>
+        <environment names="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />
+            <link href="~/lib/syncfusion-javascript/Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+            <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+        </environment>
+    </head>
+    <body>
+        <environment names="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>        
+            <script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
+            <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+        </environment>
+    </body>
+    </html>
+
+{% endhighlight %}
+
+It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to make use of the Kanban component with the tag helper support.
+ 
+{% highlight cshtml %}
+ 
+    @using Syncfusion.JavaScript
+    @addTagHelper "*, Syncfusion.EJ"
+    
+{% endhighlight %}
+
+N> Script manager must be defined at the bottom of the *_Layout.cshtml* page. 
 
 ## Data Binding
 

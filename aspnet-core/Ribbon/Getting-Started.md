@@ -9,7 +9,44 @@ documentation: ug
 
 # Getting Started
 
-To run Ribbon sample in ASP.NET Core 1.0.1, Please refer the [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation to initially configure the common specifications. 
+Refer the [Getting Started](/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+
+Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
+
+{% highlight cshtml %}
+
+    <html>
+    <head>
+        <environment names="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />
+            <link href="~/lib/syncfusion-javascript/Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
+            <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+        </environment>
+    </head>
+    <body>
+        <environment names="Development">
+            <script src="~/lib/jquery/dist/jquery.js"></script>
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>        
+            <script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
+            <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+        </environment>
+    </body>
+    </html>
+
+{% endhighlight %}
+
+It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to make use of the Ribbon component with the tag helper support.
+ 
+{% highlight cshtml %}
+ 
+    @using Syncfusion.JavaScript
+    @addTagHelper "*, Syncfusion.EJ"
+    
+{% endhighlight %}
+
+N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
 ## Control Initialization
 
@@ -42,17 +79,6 @@ Define the Application Tab with `type` as `Menu` to render simple Ribbon control
         </e-menu-settings>
     </e-application-tab>
     </ej-ribbon>
-
-{% endhighlight  %}
-
-{% highlight html %}
-
-    @*To load Ribbon sample level icons*@
-
-    @section StyleSection{
-        <link href="@Url.Content("~/css/ejthemes/ribbon-css/ej.icons.css")" rel="stylesheet" />
-
-    }
 
 {% endhighlight  %}
 
@@ -92,17 +118,6 @@ RibbonTab is a set of related groups which are combined into single item. For cr
     </e-tabs>
     </ej-ribbon>
 
-
-{% endhighlight  %}
-
-{% highlight html %}
-
-    @*To load Ribbon sample level icons*@
-
-    @section StyleSection{
-        <link href="@Url.Content("~/css/ejthemes/ribbon-css/ej.icons.css")" rel="stylesheet" />
-
-    }
 
 {% endhighlight  %}
 
@@ -165,11 +180,12 @@ Create `e-group` item with `text` specified and add `e-content-group` to `e-cont
     @*To load Ribbon sample level icons*@
 
     @section StyleSection{
-        <link href="@Url.Content("~/css/ejthemes/ribbon-css/ej.icons.css")" rel="stylesheet" />
-
+        <link href="~/lib/syncfusion-javascript/Content/ej/web/ribbon-css/ej.icons.css" rel="stylesheet" />
     }
 
 {% endhighlight  %}
+
+N> 2. Ribbon’s sample level icons can be loaded using `ej.icons.CSS` from the downloaded packages `/lib/syncfusion-javascript/Content/ej/web/ribbon-css/ej.icons.css`.
 
 ![](getting-started-images/Ribbon_img2.png)
 
@@ -248,8 +264,7 @@ Syncfusion ASP.NET Core Controls can be added to TabGroup’s content with corre
     @*To load Ribbon sample level icons*@
 
     @section StyleSection{
-        <link href="@Url.Content("~/css/ejthemes/ribbon-css/ej.icons.css")" rel="stylesheet" />
-
+        <link href="~/lib/syncfusion-javascript/Content/ej/web/ribbon-css/ej.icons.css" rel="stylesheet" />
     }
 
 {% endhighlight  %}
