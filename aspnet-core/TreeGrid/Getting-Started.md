@@ -267,10 +267,10 @@ You can enable Editing in TreeGrid using edit-settings API as illustrated in the
 
 You are also provided with the following editors’ support in TreeGrid control
 
-* Stringedit
-* Booleanedit
-* Numericedit
-* Dropdownedit
+* String
+* Boolean
+* Numeric
+* Dropdown
 * Datepicker
 * Datetimepicker
 
