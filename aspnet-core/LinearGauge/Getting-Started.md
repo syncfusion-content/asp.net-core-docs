@@ -27,7 +27,7 @@ ASP.NET Core Linear Gauge widget basically renders with flexible APIs. You can e
 1. First create an Core Project and add necessary Dll's and scripts with the help of the given [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) Documentation.
 2. Add the following code example to the corresponding view page to render Linear Gauge.
 
-   ~~~ js
+   ~~~ cshtml
 
    <ej-linear-gauge id="thermoLinear"></ej-linear-gauge>
 
@@ -62,7 +62,7 @@ Run the above code example to get a default Linear Gauge with default values as 
 Basic attributes of each canvas elements are height and width. You can set the height and width of the gauge using the following code example. It sets the height and width of the canvas image where the thermometer is to be rendered.
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
     <ej-linear-gauge id="thermoLinear"
                      height="550"
@@ -84,11 +84,9 @@ Run the above code example and you will get the following gauge as similar to de
 
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
     <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500"
                      label-color="#8c8c8c"
                      enable-animation="false">
     </ej-linear-gauge>
@@ -110,13 +108,9 @@ Run the above code example and you will get the following gauge as the output.
 
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500"
-                     label-color="#8c8c8c"
-                     enable-animation="false">
+    <ej-linear-gauge id="thermoLinear">
         <e-linear-scale-collections>
             <e-linear-scales width="20" 
                              type="Thermometer" 
@@ -155,24 +149,11 @@ In Linear Gauge the two types of pointers available are: Marker pointer and Bar 
 
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500"
-                     label-color="#8c8c8c"
-                     enable-animation="false">
+    <ej-linear-gauge id="thermoLinear">
         <e-linear-scale-collections>
-            <e-linear-scales width="20" 
-                             type="Thermometer" 
-                             background-color="transparent"
-                             minimum="-10"
-                             maximum="110"
-                             minor-interval-value="5"
-                             length="335"
-                             show-custom-labels="true">
-             <e-border width="1"></e-border>                
-                <e-linear-position x="50" y="18"></e-linear-position>
+            <e-linear-scales>            
                 <e-marker-pointer-collections>
                     <e-marker-pointers marker-opacity="0"></e-marker-pointers>
                 </e-marker-pointer-collections>
@@ -202,32 +183,11 @@ Add Label Customization
 
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500"
-                     label-color="#8c8c8c"
-                     enable-animation="false">
+<ej-linear-gauge id="thermoLinear">
         <e-linear-scale-collections>
-            <e-linear-scales width="20" 
-                             type="Thermometer" 
-                             background-color="transparent"
-                             minimum="-10"
-                             maximum="110"
-                             minor-interval-value="5"
-                             length="335"
-                             show-custom-labels="true">
-             <e-border width="1"></e-border>                
-                <e-linear-position x="50" y="18"></e-linear-position>
-                <e-marker-pointer-collections>
-                    <e-marker-pointers marker-opacity="0"></e-marker-pointers>
-                </e-marker-pointer-collections>
-                <e-bar-pointer-collections>
-                    <e-bar-pointers width="10" bar-pointerdistance-from-scale="0" bar-pointer-value="37" 
-                                    bar-pointer-background-color="#DB3738">
-                    </e-bar-pointers>
-                </e-bar-pointer-collections>
+            <e-linear-scales>
                 <e-linear-label-collections>
                     <e-linear-labels placement="Near">
                         <e-font size="10px" font-family="Segoe UI" font-style="normal"></e-font>
@@ -238,7 +198,7 @@ Add Label Customization
                 </e-linear-label-collections>
             </e-linear-scales>
         </e-linear-scale-collections>
-    </ej-linear-gauge>
+</ej-linear-gauge>
 
 {% endhighlight %}
 
@@ -255,40 +215,12 @@ Run the above code example and you will get the following gauge as output.
 
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500"
-                     label-color="#8c8c8c"
-                     enable-animation="false">
+    <ej-linear-gauge id="thermoLinear">
         <e-linear-scale-collections>
-            <e-linear-scales width="20" 
-                             type="Thermometer" 
-                             background-color="transparent"
-                             minimum="-10"
-                             maximum="110"
-                             minor-interval-value="5"
-                             length="335"
-                             show-custom-labels="true">
-             <e-border width="1"></e-border>                
-                <e-linear-position x="50" y="18"></e-linear-position>
-                <e-marker-pointer-collections>
-                    <e-marker-pointers marker-opacity="0"></e-marker-pointers>
-                </e-marker-pointer-collections>
-                <e-bar-pointer-collections>
-                    <e-bar-pointers width="10" bar-pointerdistance-from-scale="0" bar-pointer-value="37" 
-                                    bar-pointer-background-color="#DB3738">
-                    </e-bar-pointers>
-                </e-bar-pointer-collections>
-                <e-linear-label-collections>
-                    <e-linear-labels placement="Near">
-                        <e-font size="10px" font-family="Segoe UI" font-style="normal"></e-font>
-                    </e-linear-labels>
-                    <e-linear-labels placement="Far">
-                        <e-distance-from-scale x="13"></e-distance-from-scale>
-                    </e-linear-labels>
-                </e-linear-label-collections>
+            <e-linear-scales>
+             
                 <e-linear-tick-collections>
 
                     <e-linear-ticks type="MajorInterval" height="8" width="1" color="#8c8c8c">
@@ -305,6 +237,7 @@ Run the above code example and you will get the following gauge as output.
                     </e-linear-ticks>
 
                 </e-linear-tick-collections>
+
             </e-linear-scales>
         </e-linear-scale-collections>
     </ej-linear-gauge>
@@ -326,55 +259,12 @@ Run the above code example and you will get the following gauge as output.
 
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500" 
-                     label-color="#8c8c8c"
-                     enable-animation="false">
+    <ej-linear-gauge id="thermoLinear">
         <e-linear-scale-collections>
-            <e-linear-scales width="20" 
-                             type="Thermometer" 
-                             background-color="transparent"
-                             minimum="-10"
-                             maximum="110"
-                             minor-interval-value="5"
-                             length="335"
-                             show-custom-labels="true">
-             <e-border width="1"></e-border>                
-                <e-linear-position x="50" y="18"></e-linear-position>
-                <e-marker-pointer-collections>
-                    <e-marker-pointers marker-opacity="0"></e-marker-pointers>
-                </e-marker-pointer-collections>
-                <e-bar-pointer-collections>
-                    <e-bar-pointers width="10" bar-pointerdistance-from-scale="0" bar-pointer-value="37" 
-                                    bar-pointer-background-color="#DB3738">
-                    </e-bar-pointers>
-                </e-bar-pointer-collections>
-                <e-linear-label-collections>
-                    <e-linear-labels placement="Near">
-                        <e-font size="10px" font-family="Segoe UI" font-style="normal"></e-font>
-                    </e-linear-labels>
-                    <e-linear-labels placement="Far">
-                        <e-distance-from-scale x="13"></e-distance-from-scale>
-                    </e-linear-labels>
-                </e-linear-label-collections>
-                <e-linear-tick-collections>
+            <e-linear-scales>
 
-                    <e-linear-ticks type="MajorInterval" height="8" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MinorInterval" height="4" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MajorInterval" placement="Far" height="8" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MinorInterval" placement="Far" height="4" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                </e-linear-tick-collections>
                 <e-custom-label-collections>
                     <e-custom-labels value="0 C" color="#666666">
                         <e-linear-position x="44" y="78"></e-linear-position>
@@ -389,6 +279,7 @@ Run the above code example and you will get the following gauge as output.
                         <e-font font-family="Segoe UI" font-style="bold" size="13px"></e-font>
                     </e-custom-labels>
                 </e-custom-label-collections>
+
             </e-linear-scales>
         </e-linear-scale-collections>
     </ej-linear-gauge>
@@ -408,73 +299,11 @@ Run the above code example to get the following gauge as output.
 Add the function that converts the temperature in degree to Fahrenheit in the label, with an index value of 1.
 
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500" 
-                     draw-custom-label="DrawCustomLabel"
-                     label-color="#8c8c8c"
-                     enable-animation="false">
-        <e-linear-scale-collections>
-            <e-linear-scales width="20" 
-                             type="Thermometer" 
-                             background-color="transparent"
-                             minimum="-10"
-                             maximum="110"
-                             minor-interval-value="5"
-                             length="335"
-                             show-custom-labels="true">
-             <e-border width="1"></e-border>                
-                <e-linear-position x="50" y="18"></e-linear-position>
-                <e-marker-pointer-collections>
-                    <e-marker-pointers marker-opacity="0"></e-marker-pointers>
-                </e-marker-pointer-collections>
-                <e-bar-pointer-collections>
-                    <e-bar-pointers width="10" bar-pointerdistance-from-scale="0" bar-pointer-value="37" 
-                                    bar-pointer-background-color="#DB3738">
-                    </e-bar-pointers>
-                </e-bar-pointer-collections>
-                <e-linear-label-collections>
-                    <e-linear-labels placement="Near">
-                        <e-font size="10px" font-family="Segoe UI" font-style="normal"></e-font>
-                    </e-linear-labels>
-                    <e-linear-labels placement="Far">
-                        <e-distance-from-scale x="13"></e-distance-from-scale>
-                    </e-linear-labels>
-                </e-linear-label-collections>
-                <e-linear-tick-collections>
-
-                    <e-linear-ticks type="MajorInterval" height="8" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MinorInterval" height="4" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MajorInterval" placement="Far" height="8" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MinorInterval" placement="Far" height="4" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                </e-linear-tick-collections>
-                <e-custom-label-collections>
-                    <e-custom-labels value="0 C" color="#666666">
-                        <e-linear-position x="44" y="78"></e-linear-position>
-                        <e-font font-family="Segoe UI" font-style="bold" size="12px"></e-font>
-                    </e-custom-labels>
-                    <e-custom-labels value="0 F" color="#666666">
-                        <e-linear-position x="56" y="78"></e-linear-position>
-                        <e-font font-family="Segoe UI" font-style="bold" size="12px"></e-font>
-                    </e-custom-labels>
-                    <e-custom-labels value="0 C" color="#666666">
-                        <e-linear-position x="51" y="90"></e-linear-position>
-                        <e-font font-family="Segoe UI" font-style="bold" size="13px"></e-font>
-                    </e-custom-labels>
-                </e-custom-label-collections>
-            </e-linear-scales>
-        </e-linear-scale-collections>
-    </ej-linear-gauge>
+<ej-linear-gauge id="thermoLinear"
+                     draw-labels="DrawLabel">
+</ej-linear-gauge>
 
 <script>
 
@@ -504,73 +333,11 @@ Run the above code example and you will get the following gauge as output.
 
 Add the function that displays the current temperature value in the custom label.
 
-{% highlight js %}
+{% highlight cshtml %}
 
-    <ej-linear-gauge id="thermoLinear"
-                     height="550"
-                     width="500" 
-                     draw-custom-label="DrawCustomLabel"
-                     label-color="#8c8c8c"
-                     enable-animation="false">
-        <e-linear-scale-collections>
-            <e-linear-scales width="20" 
-                             type="Thermometer" 
-                             background-color="transparent"
-                             minimum="-10"
-                             maximum="110"
-                             minor-interval-value="5"
-                             length="335"
-                             show-custom-labels="true">
-             <e-border width="1"></e-border>                
-                <e-linear-position x="50" y="18"></e-linear-position>
-                <e-marker-pointer-collections>
-                    <e-marker-pointers marker-opacity="0"></e-marker-pointers>
-                </e-marker-pointer-collections>
-                <e-bar-pointer-collections>
-                    <e-bar-pointers width="10" bar-pointerdistance-from-scale="0" bar-pointer-value="37" 
-                                    bar-pointer-background-color="#DB3738">
-                    </e-bar-pointers>
-                </e-bar-pointer-collections>
-                <e-linear-label-collections>
-                    <e-linear-labels placement="Near">
-                        <e-font size="10px" font-family="Segoe UI" font-style="normal"></e-font>
-                    </e-linear-labels>
-                    <e-linear-labels placement="Far">
-                        <e-distance-from-scale x="13"></e-distance-from-scale>
-                    </e-linear-labels>
-                </e-linear-label-collections>
-                <e-linear-tick-collections>
-
-                    <e-linear-ticks type="MajorInterval" height="8" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MinorInterval" height="4" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MajorInterval" placement="Far" height="8" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                    <e-linear-ticks type="MinorInterval" placement="Far" height="4" width="1" color="#8c8c8c">
-                        <e-distance-from-scale y="4"></e-distance-from-scale>
-                    </e-linear-ticks>
-                </e-linear-tick-collections>
-                <e-custom-label-collections>
-                    <e-custom-labels value="0 C" color="#666666">
-                        <e-linear-position x="44" y="78"></e-linear-position>
-                        <e-font font-family="Segoe UI" font-style="bold" size="12px"></e-font>
-                    </e-custom-labels>
-                    <e-custom-labels value="0 F" color="#666666">
-                        <e-linear-position x="56" y="78"></e-linear-position>
-                        <e-font font-family="Segoe UI" font-style="bold" size="12px"></e-font>
-                    </e-custom-labels>
-                    <e-custom-labels value="0 C" color="#666666">
-                        <e-linear-position x="51" y="90"></e-linear-position>
-                        <e-font font-family="Segoe UI" font-style="bold" size="13px"></e-font>
-                    </e-custom-labels>
-                </e-custom-label-collections>
-            </e-linear-scales>
-        </e-linear-scale-collections>
-    </ej-linear-gauge>
+<ej-linear-gauge id="thermoLinear"
+                     draw-custom-label="DrawCustomLabel">        
+</ej-linear-gauge>
 
 <script>
 

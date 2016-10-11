@@ -93,17 +93,13 @@ Items have different properties to customize the Digital Gauge.
 
 {% highlight CSHTML %}
 
-<ej-digital-gauge id="Digitalgauge"
-                      height="145"
-                      width="260">
+<ej-digital-gauge id="Digitalgauge">
         <e-items>
             <e-digital-gauge-items value="102">
-                <e-segment-settings 
-                                    length="20"
+                <e-segment-settings length="20"
                                     width="2">
                 </e-segment-settings>
-                <e-character-settings 
-                                      spacing="12"
+                <e-character-settings spacing="12"
                                       type="SevenSegment">
                 </e-character-settings>
             </e-digital-gauge-items>
@@ -131,21 +127,8 @@ Digital Gauge Segment Properties
 
 <div id="frameDiv">
 
-<ej-digital-gauge id="Digitalgauge"
-                      height="145"
-                      width="260">
-        <e-items>
-            <e-digital-gauge-items value="102">
-                <e-segment-settings 
-                                    length="20"
-                                    width="2">
-                </e-segment-settings>
-                <e-character-settings 
-                                      spacing="12"
-                                      type="SevenSegment">
-                </e-character-settings>
-            </e-digital-gauge-items>
-        </e-items>
+<ej-digital-gauge id="Digitalgauge">
+
 </ej-digital-gauge>
 
 </div>
@@ -187,21 +170,14 @@ The Location property is used to position the digital letters inside the canvas 
 
 {% highlight CSHTML %}
 
-<ej-digital-gauge id="Digitalgauge"
-                      height="145"
-                      width="260">
+<ej-digital-gauge id="Digitalgauge">
         <e-items>
             <e-digital-gauge-items value="102">
-                <e-segment-settings length="20"
-                                    width="2">
-                </e-segment-settings>
-                <e-character-settings spacing="12"
-                                      type="SevenSegment">
-                </e-character-settings>
-                <e-digital-position 
-                                    x="15" 
+
+                <e-digital-position x="15" 
                                     y="40">
                 </e-digital-position>
+
             </e-digital-gauge-items>
         </e-items>
 </ej-digital-gauge>
@@ -222,9 +198,7 @@ You can further add the Items Collection to display the temperature value like D
 
 {% highlight CSHTML %}
 
-    <ej-digital-gauge id="Digitalgauge"
-                      height="145"
-                      width="260">
+<ej-digital-gauge id="Digitalgauge">
         <e-items>
             <e-digital-gauge-items value="102">
                 <e-segment-settings length="20"
@@ -297,7 +271,7 @@ You can further add the Items Collection to display the temperature value like D
                 </e-digital-position>
             </e-digital-gauge-items>
         </e-items>
-    </ej-digital-gauge>
+</ej-digital-gauge>
 
 {% endhighlight %}
 

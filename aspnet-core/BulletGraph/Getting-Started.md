@@ -132,11 +132,13 @@ Once the DataSource property is assigned with the required values, you can bind 
 {% highlight CSHTML %}
 
 <ej-bullet-graph id="Bulletgraph">
+
         <e-fields datasource="ViewBag.datasource" 
                   category-field="category" 
                   feature-measure-field="value" 
                   comparative-measure-field="comparitiveMeasureValue">
         </e-fields>
+
 </ej-bullet-graph>
 
 {% endhighlight %}
@@ -152,22 +154,15 @@ Minimum, Maximum and Interval values for the QuantitativeScale of the BulletGrap
 
 {% highlight js %}
 
-<ej-bullet-graph id="Bulletgraph" width="850" height="540" 
-                     qualitative-range-size="800" 
-                     quantitative-scale-length="425" 
-                     orientation="Vertical" 
-                     flow-direction="Backward">
+<ej-bullet-graph id="Bulletgraph">
+
         <e-quantitative-scale-settings minimum="70" maximum="130" interval="10" 
                     tick-position="Center">
                     <e-location x="80" y="30"></e-location>
             <e-label-settings position="Above"></e-label-settings>
         </e-quantitative-scale-settings>
-        <e-fields datasource="ViewBag.datasource" 
-                  category-field="catagory" 
-                  feature-measure-field="value" 
-                  comparative-measure-field="comparitiveMeasureValue">
-        </e-fields>
-    </ej-bullet-graph>
+
+</ej-bullet-graph>
 
 
 {% endhighlight %}
@@ -185,25 +180,14 @@ By default, 3 ranges are displayed in the BulletGraph control during the initial
 
 {% highlight js %}
 
-<ej-bullet-graph id="Bulletgraph" width="850" height="540" 
-                     qualitative-range-size="800" 
-                     quantitative-scale-length="425" 
-                     orientation="Vertical" 
-                     flow-direction="Backward">
-        <e-quantitative-scale-settings minimum="70" maximum="130" interval="10" tick-position="Near">
-            <e-label-settings position="Above"></e-label-settings>
-            <e-location x="80" y="30"></e-location>
-        </e-quantitative-scale-settings>
-        <e-fields datasource="ViewBag.datasource" 
-                  category-field="catagory" 
-                  feature-measure-field="value" 
-                  comparative-measure-field="comparitiveMeasureValue">
-        </e-fields>
+<ej-bullet-graph id="Bulletgraph">
+        
         <e-qualitative-ranges>
             <e-qualitative-range range-end="90"></e-qualitative-range>
             <e-qualitative-range range-end="110"></e-qualitative-range>
             <e-qualitative-range range-end="130" range-stroke="#CDC9C9"></e-qualitative-range>
         </e-qualitative-ranges>
+
 </ej-bullet-graph>
 
 {% endhighlight %}
@@ -222,11 +206,8 @@ You can do the following code changes in the quantitative scale to customize the
 
 {% highlight js %}
 
-    <ej-bullet-graph id="Bulletgraph" width="850" height="540" 
-                     qualitative-range-size="800" 
-                     quantitative-scale-length="425" 
-                     orientation="Vertical" 
-                     flow-direction="Backward">
+<ej-bullet-graph id="Bulletgraph">
+
         <e-quantitative-scale-settings minimum="70" maximum="130" interval="10" tick-position="Near">
             <e-location x="80" y="30"></e-location>
             <e-label-settings position="Above"></e-label-settings>
@@ -234,18 +215,9 @@ You can do the following code changes in the quantitative scale to customize the
             <e-minor-tick-settings width="1"></e-minor-tick-settings>
             <e-comparative-measure-settings stroke="#507786"></e-comparative-measure-settings>
             <e-featured-measure-settings stroke="#169DD8"></e-featured-measure-settings>
-        </e-quantitative-scale-settings>
-        <e-fields datasource="ViewBag.datasource" 
-                  category-field="catagory" 
-                  feature-measure-field="value" 
-                  comparative-measure-field="comparitiveMeasureValue">
-        </e-fields>
-        <e-qualitative-ranges>
-            <e-qualitative-range range-end="90"></e-qualitative-range>
-            <e-qualitative-range range-end="110"></e-qualitative-range>
-            <e-qualitative-range range-end="130" range-stroke="#CDC9C9"></e-qualitative-range>
-        </e-qualitative-ranges>
-    </ej-bullet-graph>
+        </e-quantitative-scale-settings>   
+
+</ej-bullet-graph>
 
 {% endhighlight %}
 
@@ -264,29 +236,8 @@ You can add the following code example to display an appropriate Caption and Sub
 
 {% highlight js %}
 
-    <ej-bullet-graph id="Bulletgraph" width="850" height="540" 
-                     qualitative-range-size="800" 
-                     quantitative-scale-length="425" 
-                     orientation="Vertical" 
-                     flow-direction="Backward">
-        <e-quantitative-scale-settings minimum="70" maximum="130" interval="10" tick-position="Near">
-            <e-location x="80" y="30"></e-location>
-            <e-label-settings position="Above"></e-label-settings>
-            <e-major-tick-settings size="7" width="1"></e-major-tick-settings>
-            <e-minor-tick-settings width="1"></e-minor-tick-settings>
-            <e-comparative-measure-settings stroke="#507786"></e-comparative-measure-settings>
-            <e-featured-measure-settings stroke="#169DD8"></e-featured-measure-settings>
-        </e-quantitative-scale-settings>
-        <e-fields datasource="ViewBag.datasource" 
-                  category-field="catagory" 
-                  feature-measure-field="value" 
-                  comparative-measure-field="comparitiveMeasureValue">
-        </e-fields>
-        <e-qualitative-ranges>
-            <e-qualitative-range range-end="90"></e-qualitative-range>
-            <e-qualitative-range range-end="110"></e-qualitative-range>
-            <e-qualitative-range range-end="130" range-stroke="#CDC9C9"></e-qualitative-range>
-        </e-qualitative-ranges>
+<ej-bullet-graph id="Bulletgraph">
+
         <e-caption-settings text-angle="90" text="Monsoon Rainfall - Actual vs Forecast">
             <e-location x="470" y="270"></e-location>
             <e-bullet-font font-family="Segoe UI" font-weight="regular" size="20px" opacity="1"></e-bullet-font>
@@ -295,7 +246,8 @@ You can add the following code example to display an appropriate Caption and Sub
                 <e-bullet-font font-family="Segoe UI" font-weight="regular" size="16px" opacity="1"></e-bullet-font>
             </e-sub-title>
         </e-caption-settings>
-    </ej-bullet-graph>
+        
+</ej-bullet-graph>
 
 
 {% endhighlight %}
@@ -314,39 +266,11 @@ You can use a Tooltip in your application to display the values of forecasted ra
 
 {% highlight cshtml %}
 
-        <ej-bullet-graph id="Bulletgraph" width="850" height="540"
-                         qualitative-range-size="800"
-                         quantitative-scale-length="425"
-                         orientation="Vertical"
-                         flow-direction="Backward">
+<ej-bullet-graph id="Bulletgraph">
+
             <e-bullet-tooltip-settings visible="true" template="Tooltip"></e-bullet-tooltip-settings>
-            <e-quantitative-scale-settings minimum="70" maximum="130" interval="10" tick-position="Near">
-                <e-location x="80" y="30"></e-location>
-                <e-label-settings position="Above"></e-label-settings>
-                <e-major-tick-settings size="7" width="1"></e-major-tick-settings>
-                <e-minor-tick-settings width="1"></e-minor-tick-settings>
-                <e-comparative-measure-settings stroke="#507786"></e-comparative-measure-settings>
-                <e-featured-measure-settings stroke="#169DD8"></e-featured-measure-settings>
-            </e-quantitative-scale-settings>
-            <e-fields datasource="ViewBag.datasource"
-                      category-field="catagory"
-                      feature-measure-field="value"
-                      comparative-measure-field="comparitiveMeasureValue">
-            </e-fields>
-            <e-qualitative-ranges>
-                <e-qualitative-range range-end="90"></e-qualitative-range>
-                <e-qualitative-range range-end="110"></e-qualitative-range>
-                <e-qualitative-range range-end="130" range-stroke="#CDC9C9"></e-qualitative-range>
-            </e-qualitative-ranges>
-            <e-caption-settings text-angle="90" text="Monsoon Rainfall - Actual vs Forecast">
-                <e-location x="470" y="270"></e-location>
-                <e-bullet-font font-family="Segoe UI" font-weight="regular" size="20px" opacity="1"></e-bullet-font>
-                <e-sub-title text-angle="0" text="Rainfall (mm)">
-                    <e-location x="180" y="4"></e-location>
-                    <e-bullet-font font-family="Segoe UI" font-weight="regular" size="16px" opacity="1"></e-bullet-font>
-                </e-sub-title>
-            </e-caption-settings>
-        </ej-bullet-graph>
+            
+</ej-bullet-graph>
 
 
 
