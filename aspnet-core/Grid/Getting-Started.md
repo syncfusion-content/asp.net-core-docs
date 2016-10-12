@@ -160,7 +160,7 @@ The following output is displayed as a result of the above code example.
 
 ## Add Summaries
 
-Summaries can be added by setting the [`show-summary`] to `true` and adding required summary rows and columns in the [`summary-rows`] property. 
+Summaries can be added by setting the `show-summary` to `true` and adding required summary rows and columns in the `summary-rows` property. 
 
 {% highlight cshtml %}
  
