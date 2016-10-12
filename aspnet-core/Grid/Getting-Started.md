@@ -16,7 +16,7 @@ Ensure once whether all the necessary dependency packages are included within th
 Also, check whether the assembly dependency package Syncfusion.EJ added within the project.json file.
 
 Now, refer the necessary scripts and CSS files into your _Layout.cshtml page from the wwwroot -> lib -> syncfusion-javascript folder.
-{% highlight html %}
+{% highlight cshtml %}
 
 <!DOCTYPE html>
 <html>
@@ -43,18 +43,23 @@ Now, refer the necessary scripts and CSS files into your _Layout.cshtml page fr
 
 It is necessary to define the following namespace within the _viewImports.cshtml  page in order to make use of the Grid control with the tag helper support.
 
-@using Syncfusion.JavaScript @addTagHelper "*, Syncfusion.EJ"
+{% highlight cshtml %}
+
+@using Syncfusion.JavaScript 
+@addTagHelper "*, Syncfusion.EJ"
+
+{% endhighlight %}
 
 N>Script manager must be defined at the bottom of the _Layout.cshtml page.
 
 
-### Data Binding
+## Data Binding
 
 You can bind the data to Grid control by either locally or remotely. Assign the remote service URL to `e-datamanager`  property of Grid control to bind remote data using` ej.DataManager`. 
 
 In `e-columns` definition, the `text-align` property allows you to align text of the columns, the `width` property is used to define width of the columns and `format` property allows you to format the particular columns value.
 
-{% highlight html %}
+{% highlight cshtml %}
 
 <ej-grid id="FlatGrid">
      <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
@@ -75,11 +80,11 @@ The following output is displayed as a result of the above code example.
 ![](Getting-Started_images/Getting-Started2_img1.jpeg)
 
 
-### Enable Paging
+## Enable Paging
 
 The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control. To enable paging, use `allow-paging` property of Grid as follows.
 
-{% highlight html %}
+{% highlight cshtml %}
  
  <ej-grid id="FlatGrid" allow-paging="true" >
      <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
@@ -100,13 +105,13 @@ The following output is displayed as a result of the above code example.
 ![](Getting-Started_images/Getting-Started2_img2.png)
 
 
-### Enable Filtering
+## Enable Filtering
 
 The Filtering feature in Grid is used to facilitate the extraction of a subset of records that meet certain criteria. You can apply Filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
 
 To enable filtering, use the `allow-filtering` property of Grid as follows.
 
-{% highlight html %}
+{% highlight cshtml %}
 
  <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true">
      <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
@@ -127,13 +132,13 @@ The following output is displayed as a result of the above code example.
 ![](Getting-Started_images/Getting-Started2_img3.png)
 
 
-### Enable Grouping
+## Enable Grouping
 
 The Grouping feature in Grid is used to consolidate the Grid data into groups. Grouping allows the categorization of records based on specified columns. You can easily group a particular column by simply dragging the column to the upper portion of the Grid. The Grid data is automatically grouped when you drop a particular column.  In this example, the Grouping feature is used to analyze the shipment details of products.
 
 To enable grouping, use the `allow-grouping` property of Grid as follows.
 
-{% highlight html %}
+{% highlight cshtml %}
  <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true">
      <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
      <e-group-settings grouped-columns="ShipCountry" />
@@ -155,9 +160,9 @@ The following output is displayed as a result of the above code example.
 
 ## Add Summaries
 
-[`Summaries`] can be added by setting the [`show-summary`] to `true` and adding required summary rows and columns in the [`summary-rows`] property. 
+Summaries can be added by setting the [`show-summary`] to `true` and adding required summary rows and columns in the [`summary-rows`] property. 
 
-{% highlight html %}
+{% highlight cshtml %}
  
 <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" show-summary="True">
      <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
