@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Syncfusion Essential HeatMap for JavaScript
+title: Getting Started | ASP.NET Core | Syncfusion
 description: Getting started walk through to create your first Heat map.
 platform: aspnet-core
 control: HeatMap
@@ -13,14 +13,16 @@ documentation: ug
 
 Initialize `HeatMap` to the Html Page as shown in the following code sample.
 
-{% highlight aspnet-core %}
+{% highlight razor %}
 
 @*Initializes heat map control*@
 
-<div>
+
+
+
      <ej-heatmap is-responsive="true" id="heatmap" width="830" items-source="ViewBag.itemsource" items-mapping="ViewBag.itemsmapping" legend-collection="ViewBag.legendcollection">
      </ej:heatMap>
-</div>
+
     
 {% endhighlight %}
  
@@ -32,8 +34,9 @@ Populate product information in a collection
 {% highlight c# %}
 
 [Serializable]
- public class SampleTableData
- {
+
+     public class SampleTableData
+      {
             private string productName;
             [JsonProperty("ProductName")]
             [DefaultValue("")]
@@ -106,18 +109,18 @@ Populate product information in a collection.
 
 {% highlight c# %} 
        
-public void CreateTableHeatmap()
-{
+     public void CreateTableHeatmap()
+     {
      List<string> collection = new List<string>();
      collection.Add("heatmapLegend");
      ViewBag.legendcollection = collection;
      ViewBag.itemsource = GetTableSource();
      return View();
-}
+     }
 
-public Collection GetTableSource()
-{
-    Collection collection = new Collection();
+       public Collection GetTableSource()
+       {
+            Collection collection = new Collection();
             Random random = new Random();
             string[] rows = { "Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Fløtemysost", "Perth Pasties", "Boston Crab Meat", "Raclette Courdavault" };
             for (int i = 0; i < 8; i++)
@@ -134,7 +137,7 @@ public Collection GetTableSource()
                 });
             }
             return collection;
-}
+         }
 
 {% endhighlight %}
 
@@ -146,15 +149,15 @@ Now data is ready, next we need to configure data source and map rows and column
 
 {% highlight c# %}
 
-TableMapping TableMapping = new TableMapping();
-TableMapping.HeaderMapping = new HeaderMapping() { PropertyName = "ProductName", DisplayName = "Product Name", ColumnStyle = new ColumnStyle() { Width = 140, TextAlign = HeatMapTextAlign.Right } };
-TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2010", DisplayName = "Y2010" });
-TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2011", DisplayName = "Y2011" });
-TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2012", DisplayName = "Y2012" });
-TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2013", DisplayName = "Y2013" });
-TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2014", DisplayName = "Y2014" });
-TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2015", DisplayName = "Y2015" });
-ViewBag.itemsmapping = TableMapping;
+     TableMapping TableMapping = new TableMapping();
+     TableMapping.HeaderMapping = new HeaderMapping() { PropertyName = "ProductName", DisplayName = "Product Name", ColumnStyle = new ColumnStyle() { Width = 140, TextAlign = HeatMapTextAlign.Right } };
+     TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2010", DisplayName = "Y2010" });
+     TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2011", DisplayName = "Y2011" });
+     TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2012", DisplayName = "Y2012" });
+     TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2013", DisplayName = "Y2013" });
+     TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2014", DisplayName = "Y2014" });
+     TableMapping.ColumnMapping.Add(new HeaderMapping() { PropertyName = "Y2015", DisplayName = "Y2015" });
+     ViewBag.itemsmapping = TableMapping;
 
 {% endhighlight %}
 
@@ -167,18 +170,18 @@ Next we can configure color range for these values using color mapping
  
 * Configure items mapping based on items source.
  
-{% highlight aspnet-core %}  
+{% highlight razor %}  
         
- <ej-heatmap is-responsive="true" id="heatmap" width="830" items-source="ViewBag.itemsource" items-mapping="ViewBag.itemsmapping" legend-collection="ViewBag.legendcollection">
-   <e-colorMappingCollection>
-   <e-color-mapping value="0" color="#8ec8f8">
-   <e-label text="0"></e-label>
-   </e-color-mapping>
-   <e-color-mapping value="100" color="#0d47a1">
-         <e-label text="100"></e-label>
-     </e-color-mapping>
-     </e-colorMappingCollection>
-  </ej-heatmap>
+    <ej-heatmap is-responsive="true" id="heatmap" width="830" items-source="ViewBag.itemsource" items-mapping="ViewBag.itemsmapping" legend-collection="ViewBag.legendcollection">
+    <e-colorMappingCollection>
+    <e-color-mapping value="0" color="#8ec8f8">
+    <e-label text="0"></e-label>
+    </e-color-mapping>
+    <e-color-mapping value="100" color="#0d47a1">
+    <e-label text="100"></e-label>
+    </e-color-mapping>
+    </e-colorMappingCollection>
+    </ej-heatmap>
             
 {% endhighlight %} 
  
@@ -192,10 +195,10 @@ Next we can configure color range for these values using color mapping
  
 A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
   
-{% highlight aspnet-core %}
+{% highlight razor %}
    
 @*Initializes heat map control*@
-<div>
+      
         <ej-heatmaplegend is-responsive="true" id="heatmapLegend" width="75%" height="50px" legend-mode="Gradient" orientation="Horizontal">
             <e-colorMappingCollection>
                 <e-color-mapping value="0" color="#8ec8f8">
@@ -206,14 +209,14 @@ A legend control is used to represent range value in a gradient, create a legend
                 </e-color-mapping>
             </e-colorMappingCollection>
         </ej-heatmaplegend>
-</div>
+
     
 {% endhighlight %}
 
 Final script file looks like this.
 
 {% tabs %}
-{% highlight aspnet-core %}
+{% highlight razor %}
 
     <div style="width: 950px; margin: 0 auto; text-align: center;">
         <ej-heatmap is-responsive="true" id="heatmap" width="830" items-source="ViewBag.itemsource" items-mapping="ViewBag.itemsmapping" legend-collection="ViewBag.legendcollection">
@@ -292,11 +295,12 @@ public class TableMapBinding : System.Web.UI.Page
                 }
             }
             return collection;
-    }
-}
+         }
+     }
 
 [Serializable]
-public class SampleCellData
+
+        public class SampleCellData
         {
             private string productName;
 
@@ -325,7 +329,7 @@ public class SampleCellData
                 get { return valuex; }
                 set { valuex = value; }
             }
-    }
+         }
 
 {% endhighlight %}
 {% endtabs %}
