@@ -274,6 +274,8 @@ Add the following code example to the corresponding view page to render Rating i
 
 {% endtabs %}
 
+N> We can render the control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
+
 Add the following styles to the corresponding view page to show the Rating in a horizontal order.
 
 {% highlight css %}
@@ -315,5 +317,3 @@ Execute the above code to render the following output.
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-
-N> We can render the control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
