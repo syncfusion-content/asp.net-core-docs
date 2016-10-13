@@ -1,7 +1,8 @@
 ---
-title: Overview
-description: This section explains about Essential PDF
-platform: file-formats
+layout: post
+title: Getting Started
+description: This section explains creating a simple PDF document with basic elements
+platform: aspnet-core
 control: PDF
 documentation: UG
 ---
