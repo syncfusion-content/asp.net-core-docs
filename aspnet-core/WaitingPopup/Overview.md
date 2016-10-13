@@ -246,3 +246,5 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 The following screenshot displays an alert box displayed with the message “Signed in successfully” after loading.
 
 ![](Overview_images/Overview_img4.png)
+
+N> We can render the control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
