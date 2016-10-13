@@ -181,8 +181,9 @@ The following screenshot illustrates Rating with customized ShapeWidth and Shape
 
 Rating control’s style and appearance are controlled based on CSS classes. In order to apply styles to the Rating control, refer to 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.web.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.web.all.min.css is the combination of these both. 
 
-By default, there are 12 themes support available for Rating control namely:
+By default, there are 17 themes support available for Rating control namely:
 
+* bootstrap-theme
 * default-theme
 * flat-azure-dark
 * fat-lime

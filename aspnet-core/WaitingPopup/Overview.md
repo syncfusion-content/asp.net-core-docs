@@ -45,7 +45,9 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 
 1. Add the following code example to the corresponding view page to create Login page with username and password.
 
-   ~~~ cshtml
+{% tabs %}
+
+{% highlight CSHTML %}
 	
 	<div class="content-container-fluid">
 
@@ -95,12 +97,65 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 
 	</div>
 
-   ~~~
+  {% endhighlight %}
+
+  {% highlight Razor %}
    
+	<div class="content-container-fluid">
+
+		<div class="row">
+
+		<div class="cols-sample-area">
+
+			<table id="target">
+
+			<tr>
+
+				<td>Username</td>
+
+				<td><input type="text"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>Password</td>
+
+				<td><input type="password"></td>
+
+			</tr>
+
+			<tr>
+
+				<td></td>                       
+
+			 <td>                         
+			 
+			 @Html.EJ().Button("buttonnormal").Text("Login").Size(ButtonSize.Large).ClientSideEvents(e =>e.Create("btnload").Click("btnClick"))
+
+			 </td>                    
+
+			@Html.EJ().WaitingPopup("target").ShowOnInit(false)
+
+			</tr>
+
+			</table>
+
+
+
+		</div>
+
+		</div>
+
+	</div>
+
+	 {% endhighlight %}
+
+{% endtabs %}
 
 2. Add the following styles in the view page to show the Waiting Popup.
 
-   ~~~ css
+ {% highlight css %}
 
 	<style type="text/css" class="cssStyles">
 
@@ -133,12 +188,12 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 
 	</style>
 
-   ~~~
+  {% endhighlight %}
    
 
 3. Add the following script in the view page.
 
-   ~~~ js
+{% highlight javascript %}
 
 	<script>
 
@@ -166,7 +221,7 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 
 	</script>
 		
-   ~~~
+{% endhighlight %}
    
 
 
