@@ -131,11 +131,11 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 
 			 <td>                         
 			 
-			 @Html.EJ().Button("buttonnormal").Text("Login").Size(ButtonSize.Large).ClientSideEvents(e =>e.Create("btnload").Click("btnClick"))
+			 @{ Html.EJ().Button("buttonnormal").Text("Login").Size(ButtonSize.Large).ClientSideEvents(e =>e.Create("btnload").Click("btnClick")).Render(); }
 
 			 </td>                    
 
-			@Html.EJ().WaitingPopup("target").ShowOnInit(false)
+			@{ Html.EJ().WaitingPopup("target").ShowOnInit(false).Render(); }
 
 			</tr>
 
