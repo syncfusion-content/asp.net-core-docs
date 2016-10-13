@@ -8,7 +8,8 @@ documentation: UG
 ---
 # Getting Started
 
-To create a PDF document from scratch and saving it to stream, the following assemblies have to be added as reference to the project.
+Create Syncfusion ASP.NET core Application. You can refer the [ASP.NET core Getting Started documentation](https://help.syncfusion.com/aspnet-core/getting-started)to create new project and add necessary assemblies.
+To create a PDF document the following assemblies have to be added as reference to the project.
 
 <table>
   <tr>
