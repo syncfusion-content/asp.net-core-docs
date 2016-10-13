@@ -35,8 +35,6 @@ Create Syncfusion ASP.NET Core application. You can refer [ASP.NET Core Getting 
     {% endhighlight %}
 
 {% endtabs %}
-
-![](Getting-Started_images/Getting-Started_img2.png) 
     
 N> We can render the Menu control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
 
