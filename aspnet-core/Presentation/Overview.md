@@ -8,7 +8,7 @@ documentation: UG
 ---
 # Overview
 
-**Essential Presentation** for ASP.NET Core is a native .**NET** class library that can be used by developers to create, read, and write Microsoft PowerPoint files by using C#, VB.NET, and managed C++ code.
+**Essential Presentation** for ASP.NET Core is a native .**NET** class library that can be used by developers to create, read, and write Microsoft PowerPoint files by using C# code.
 
 It is a non-UI component that provides a full-fledged PowerPoint Presentation instance that facilitates accessing and manipulating the presentations without any dependency of Microsoft Office COM libraries and Microsoft Office.
 
