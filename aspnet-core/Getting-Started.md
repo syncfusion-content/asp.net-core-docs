@@ -34,7 +34,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_fileformat_img2.png)
 
-> You can refer [Installation](https://help.syncfusion.com/aspnet-core/installation) procedure to configuring Syncfusion NuGet packages.
+> You can refer [Installation](https://help.syncfusion.com/aspnet-core/installation) procedure to configure Syncfusion NuGet packages.
 
 #### Configure Syncfusion UI Components in ASP.NET Core Application:
 
