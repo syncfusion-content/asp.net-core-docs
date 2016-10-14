@@ -22,20 +22,6 @@ To work with ASP.NET Core 1.0.1, you need to make sure is whether you have insta
 
 * DotNetCore [1.0.1 (Preview 2)](https://go.microsoft.com/fwlink/?LinkId=827546).
 
-#### Configure Syncfusion File Format Components in ASP.NET Core Application:
-
-The following steps helps to create a ASP.NET Core web application to configure our File Format components.
-
-* Open Visual Studio 2015 to create **ASP.NET Core web application**.
-
-   ![](getting-started_images/getting-started_fileformat_img1.png)
-
-* After project creation, open your **project.json** file to add our Syncfusion assembly packages.
-
-   ![](getting-started_images/getting-started_fileformat_img2.png)
-
-> You can refer [Installation](https://help.syncfusion.com/aspnet-core/installation) procedure to configure Syncfusion NuGet packages.
-
 #### Configure Syncfusion UI Components in ASP.NET Core Application:
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
@@ -121,6 +107,19 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_img4.png)
 
+#### Configure Syncfusion File Format Components in ASP.NET Core Application:
+
+The following steps helps to create a ASP.NET Core web application to configure our File Format components.
+
+* Open Visual Studio 2015 to create **ASP.NET Core web application**.
+
+   ![](getting-started_images/getting-started_fileformat_img1.png)
+
+* After project creation, open your **project.json** file to add our Syncfusion assembly packages.
+
+   ![](getting-started_images/getting-started_fileformat_img2.png)
+
+> You can refer [Installation](https://help.syncfusion.com/aspnet-core/installation) procedure to configure Syncfusion NuGet packages.
 
 ### Using Command Prompt with Visual Studio Code
 
