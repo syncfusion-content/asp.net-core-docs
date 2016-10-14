@@ -10,15 +10,15 @@ documentation: ug
 
 ## Creating a simple PowerPoint Presentation with basic elements from scratch
 
-In this page, you can learn how to create a simple PowerPoint Presentation by using Essential Presentation API.
+Refer the [Getting Started](/aspnet-core/getting-started) page of the introduction part to know more about the basic [system requirements](/aspnet-core/getting-started#system-requirements) and the steps to [configure Syncfusion File Formats components](/aspnet-core/getting-started#configure-syncfusion-file-format-components-in-aspnet-core-application) in an ASP.NET Core application.
 
-For creating and manipulating a PowerPoint Presentation, include the following assemblies in the application.
+Ensure whether all the following dependency packages are included within the project.json file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-file-format-components-in-aspnet-core-application), to create and manipulate the PowerPoint presentation using Presentation library.
 
 <table>
     <thead>
         <tr>
             <th>
-                Assembly Name
+                Package Name
             </th>
             <th>
                 Short Description
