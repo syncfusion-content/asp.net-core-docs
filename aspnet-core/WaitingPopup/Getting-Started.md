@@ -17,7 +17,7 @@ ASP.NET Core Waiting Popup provides support to display Waiting Popup within your
 
 
 
-![](Overview_images/Overview_img1.png)
+![](Getteing-Started_images/Getteing-Started_img1.png)
 
 
 In the above screenshot, you can give the Username and Password. When you click the Login button, the Waiting Popup appears.  After loading, the alert box appears with a message “Signed in successfully”.
@@ -220,7 +220,7 @@ N> We can render the control by using either razor or tag helper which is shown 
 
 
 
-   ![](Overview_images/Overview_img2.png)
+   ![](Getteing-Started_images/Getteing-Started_img2.png)
 
 
 
@@ -229,11 +229,11 @@ N> We can render the control by using either razor or tag helper which is shown 
 
 
 
-   ![](Overview_images/Overview_img3.png)
+   ![](Getteing-Started_images/Getteing-Started_img3.png)
 
 
 
 
 The following screenshot displays an alert box displayed with the message “Signed in successfully” after loading.
 
-![](Overview_images/Overview_img4.png)
+![](Getteing-Started_images/Getteing-Started_img4.png)
