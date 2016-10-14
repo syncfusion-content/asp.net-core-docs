@@ -121,3 +121,5 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% endhighlight %}
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
+
+N> Since native support for import and export is not given, we are using js service link.
