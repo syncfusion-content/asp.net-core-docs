@@ -14,7 +14,7 @@ The **PivotGauge** control for **Essential ASP.NET Core** reads both **OLAP** an
 
 **Key Features**
 
-Some of the key features of Scheduler are as follows, 
+Some of the key features of PivotGauge are as follows, 
 
 * **Data source:** Supports OLAP data binding with **XML/A** data sources and Relational data sources.
 * **Tooltip:** Displays the value and goal information in the tooltip.

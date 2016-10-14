@@ -14,7 +14,7 @@ The **PivotChart** control for **Essential ASP.NET Core** is a lightweight contr
 
 **Key Features**
 
-Some of the key features of Scheduler are as follows, 
+Some of the key features of PivotChart are as follows, 
 
 * **Data source** - Supports OLAP data binding with XML/A data sources and Relational data sources.
 * **Series** - A collection of series items that contain the actual data points is displayed on the chart.

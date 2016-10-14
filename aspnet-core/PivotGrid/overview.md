@@ -14,7 +14,7 @@ The **PivotGrid** control is an easily configurable, presentation-quality busine
 
 **Key Features**
 
-Some of the key features of Scheduler are as follows, 
+Some of the key features of PivotGrid are as follows, 
 
 * **Data Binding**: Supports both OLAP and Relational datasource data binding in the same environment. 
 * **PivotTable Field List**: Lists the entire datasource bound to PivotGrid and allows UI interaction such as filtering and drag drop operation of any measure, dimension, hierarchy, level and field at runtime.  
