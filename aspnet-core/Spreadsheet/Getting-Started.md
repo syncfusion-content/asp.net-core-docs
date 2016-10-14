@@ -15,7 +15,7 @@ This section explains briefly about how to create Spreadsheet in your applicatio
 
 The following steps explains how to create spreadsheet,
 
-1. Create Syncfusion ASP.NET Core application. You can refer [ASP.NET core Getting started documentation](https://help.syncfusion.com/aspnet-core/getting-started# "") to create new project and add necessary packages and script files.  
+1. Create Syncfusion ASP.NET Core application. You can refer [ASP.NET core Getting started documentation](https://help.syncfusion.com/aspnet-core/getting-started) to create new project and add necessary packages and script files.  
 2. Add a Spreadsheet control in view page. Spreadsheet is rendered with default `height` and `width`. You can also customize Spreadsheet dimension by setting height and width property in `e-scroll-settings`. 
 
 {% highlight cshtml %}
@@ -25,7 +25,7 @@ The following steps explains how to create spreadsheet,
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with Data
 
@@ -33,17 +33,17 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 1. Initialize Spreadsheet with dataSource.
 
-{% highlight cshtml %}
+~~~cshtml
 <ej-spread-sheet id="Spreadsheet">
     <e-sheets>
          <e-sheet dataSource=”ViewBag.Datasource”></e-sheet>
     </e-sheets>
 </ej-spread-sheet>
-{% endhighlight %}
+~~~
 
 2. Create datasource for Spreadsheet control.
 
-{% highlight csharp %}
+~~~csharp
        
         public ActionResult Index()
         {
@@ -83,10 +83,9 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
             public int Discount { get; set; }
             public int Profit { get; set; }
         }
+~~~
 
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 ## Apply Conditional Formatting
 
@@ -108,7 +107,7 @@ To apply conditional formats for a range use `c-format-rules` tag. The followin
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ## Export Spreadsheet as Excel File
 
