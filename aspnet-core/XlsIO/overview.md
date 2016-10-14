@@ -7,7 +7,7 @@ documentation: UG
 ---
 # Overview
 
-**Essential** **XlsIO** is a native **.NET** class library that can be used to create and modify **Microsoft** **Excel** files by using C#, VB.NET and managed C++ code. It is a non-UI component that provides a full-fledged object model that facilitates accessing & manipulating the spreadsheets without any dependency of Microsoft Office COM libraries & Microsoft Office.
+**Essential** **XlsIO** is a native **.NET** class library that can be used to create and modify **Microsoft** **Excel** files by using C#, VB.NET and managed C++ code. It is a non-UI component that provides a full-fledged object model that facilitates accessing & manipulating the spreadsheets without any dependency of Microsoft Office COM libraries and Microsoft Office.
 
 
 **Key Features**
