@@ -150,28 +150,28 @@ The `Gradient` property of Node allows you to define and applies the gradient ef
 
     <ej-diagram id="diagram" width="900px" height="600px">
         <e-nodes>
-             <e-node name="node1" width="100" height="100" offset-X="100" offset-Y="100" fill-color="darkCyan" border-width="2">
-                <e-gradient type="linear" x1="0" y1="0" x2="50" y2="50">
-                   <e-stops>
-                       <e-stop color="white" offset="0"></e-stop>
-                       <e-stop color="darkCyan" offset="100"></e-stop>
-                   </e-stops>
-                </e-gradient>
-             </e-node>             
-        </e-nodes>
+          <e-node name="node1" width="100" height="100" offset-X="100" offset-Y="100" fill-color="darkCyan" border-width="2">
+            <e-radial-gradient cx="50" cy="50" fx="50" fy="50">
+                 <e-stops>
+                    <e-stop color="white" offset="0"></e-stop>
+                    <e-stop color="darkCyan" offset="100"></e-stop>
+                </e-stops>
+            </e-radial-gradient>
+        </e-node>
+    </e-nodes>
     </ej-diagram>
     
     <ej-diagram id="diagram" width="900px" height="600px">
         <e-nodes>
-             <e-node name="node1" width="100" height="100" offset-X="100" offset-Y="100" fill-color="darkCyan" border-width="2">
-               <e-gradient type="radial" cx="50" cy="50" fx="50" fy="50">
-                   <e-stops>
-                       <e-stop color="white" offset="0"></e-stop>
-                       <e-stop color="darkCyan" offset="100"></e-stop>
-                   </e-stops>
-               </e-gradient>
-             </e-node>             
-        </e-nodes>
+          <e-node name="node1" width="100" height="100" offset-X="100" offset-Y="100" fill-color="darkCyan" border-width="2">
+            <e-linear-gradient x1="0" y1="0" x2="50" y2="50">
+                 <e-stops>
+                    <e-stop color="white" offset="0"></e-stop>
+                    <e-stop color="darkCyan" offset="100"></e-stop>
+                </e-stops>
+            </e-linear-gradient>
+        </e-node>
+    </e-nodes>
     </ej-diagram>
      
 {% endhighlight %}
