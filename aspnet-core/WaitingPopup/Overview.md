@@ -1,3 +1,4 @@
+---
 layout: post
 title: WaitingPopup | WaitingPopup | ASP.NET Core | Syncfusion
 description: overview
@@ -15,5 +16,4 @@ The WaitingPopup control for ASP.NET Core is a visual element that provides supp
 * Custom text: Supports custom text inside the pop-up panel.
 * Template: Supports including HTML content instead of the default image.
 * Transparency: Supports customizing the transparency and opacity level.
-* Themes: JavaScript controls include 12 built-in themes (6 flat and 6 gradient effects) and also support the custom skin option to set user-defined themes.
-
+* Themes: JavaScript controls include 17 built-in themes (6 flat, 6 gradient, bootstrap, 2 high-contrast, material and office-365 effects) and also support the custom skin option to set user-defined themes.
