@@ -57,6 +57,8 @@ The following output is displayed.
 Toolbar without Toolbar items
 {:.caption}
 
+N> To render the Toolbar Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 ### Initialize Toolbar Items
 
 Toolbar consists of a list of items. From the following guidelines, you can learn how to initialize the Toolbar items 
