@@ -15,9 +15,11 @@ documentation: ug
 
 
 2.Add DropDownList control by using the below code.
-{% tabs %}
+
 
   {% highlight CSHTML %}
+  
+   /*ej-Tag Helper code to render DropDownList*/
 
             <ej-drop-down-list id="selectCar"></ej-drop-down-list>
 
@@ -25,12 +27,14 @@ documentation: ug
   {% endhighlight  %}
   
   {% highlight Razor %}
+  
+       /*Razor code to render DropDownList*/
 
           @{Html.EJ().DropDownList("DropDownList1").Render();}
 
   {% endhighlight  %}
   
-{% endtabs %}
+N> To render the DropDownLiist Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 3.Execute the code and get the DropDownList control rendered as below
 
@@ -39,46 +43,55 @@ documentation: ug
 ## Populating data
 
 The DropDownList can be bounded to any local list data and remote data services. You can use DataManager component to serve data from the data services based on the query provided. To bind data to DropDownList control, the Datasource property’s URL and Query are used. To render the DropDownList items, map the DropDownListFields with corresponding Fields
- {% tabs %}
+ 
  
    {% highlight CSHTML %}
+   
+      /*ej-Tag Helper code to render DropDownList*/
 
             <ej-drop-down-list id="customerList" query="ej.Query().from('Customers').take(6)" watermark-text="Select a customer" >
                 <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager>
                 <e-drop-down-list-fields text="CustomerID" table-name="Customers"/>
-				</ej-drop-down-list>
+		    </ej-drop-down-list>
                         
    {% endhighlight   %} 
    
    {% highlight Razor %}
+   
+       /*Razor code to render DropDownList*/
 
           @{Html.EJ().DropDownList("dropdownlist1").Datasource(ds => ds.URL("http://mvc.syncfusion.com/Services/Northwnd.svc/")).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID")).Render();}
 		  
 
   {% endhighlight  %}
    
-{% endtabs %}
+
 
 Execute the code and to get a DropDownList control with data bound from remote service
 
 ![](Getting-Started-images/Getting-Started2.jpeg)
+
 ##Setting Dimensions
 
 DropDownList dimensions can be set using width and height Properties.
 
-{% tabs %}
+
  
 
    {% highlight CSHTML %}
+   
+     /*ej-Tag Helper code to render DropDownList*/
 
                <ej-drop-down-list id="customerList" query="ej.Query().from('Customers').take(6)" watermark-text="Select a customer" width="300px" height="50px">
-                 <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager>
-                  <e-drop-down-list-fields text="CustomerID" table-name="Customers"/>
-                                  </ej-drop-down-list>
+                   <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager>
+                   <e-drop-down-list-fields text="CustomerID" table-name="Customers"/>
+               </ej-drop-down-list>
 
   {% endhighlight  %}
   
    {% highlight Razor %}
+   
+       /*Razor code to render DropDownList*/
 
          @{Html.EJ().DropDownList("dropdownlist2").Datasource(ds => ds.URL("http://mvc.syncfusion.com/Services/Northwnd.svc/")).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID")).Width("300px").Height("50px").Render();}
 		 
@@ -86,25 +99,29 @@ DropDownList dimensions can be set using width and height Properties.
 
   {% endhighlight  %}
 
-{% endtabs %}
+
 
 **Setting dimensions to Popup list**
 
 popup-width and popup-height can be used to create a fixed size popup list.
 
-{% tabs %}
+
 
 
    {% highlight CSHTML %}
+   
+       /*ej-Tag Helper code to render DropDownList*/
 
        <ej-drop-down-list id="customerList" query="ej.Query().from('Customers').take(6)" watermark-text="Select a customer" width="200px" popup-height="300px" popup-width="200px">
                 <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager>
                 <e-drop-down-list-fields text="CustomerID" table-name="Customers"/>
-            </ej-drop-down-list>
+        </ej-drop-down-list>
 
    {% endhighlight  %}
    
   {% highlight Razor %}
+  
+       /*Razor code to render DropDownList*/
 
           @{Html.EJ().DropDownList("dropdownlist3").Datasource(ds => ds.URL("http://mvc.syncfusion.com/Services/Northwnd.svc/")).Query("ej.Query().from('Customers').take(6)").DropDownListFields(f => f.Text("CustomerID")).Width("300px").Height("30px").PopupHeight("300px").PopupWidth("300px").Render();}
 		 
@@ -112,25 +129,27 @@ popup-width and popup-height can be used to create a fixed size popup list.
 
   {% endhighlight  %}
 
-{% endtabs %}
+
 
 ##Setting and Getting Value
 
 You can select single or multiple values from DropDownList control. To assign a value initially to the DropDownList, you can use <b>value</b> property.
 
-{% tabs %}
+
 
   {% tabs %}
 
 {% highlight CSHTML %}
 
-    @using (Html.BeginForm("Index", "Home", FormMethod.Post, null))
+    /*ej-Tag Helper code to render DropDownList*/
+
+      @using (Html.BeginForm("Index", "Home", FormMethod.Post, null))
         {
 		
 		<ej-drop-down-list id="bikeList" datasource="(IEnumerable<Bikes>)ViewBag.datasource" watermark-text="Select a bike" width="100%">
                 <e-drop-down-list-fields id="empid" text="text" value="text" />
-            </ej-drop-down-list>
-           <input type="submit" value="Get Value" />
+       </ej-drop-down-list>
+       <input type="submit" value="Get Value" />
 		}
 
 {% endhighlight %}
@@ -176,6 +195,8 @@ You can select single or multiple values from DropDownList control. To assign a 
 
 {% highlight Razor %}
 
+    /*Razor code to render DropDownList*/
+
            @using (Html.BeginForm("Contact", "Home", FormMethod.Post, null))
     {   
 	     
@@ -219,4 +240,4 @@ You can select single or multiple values from DropDownList control. To assign a 
 	
 {% endtabs %}
 
-{% endtabs %}
+
