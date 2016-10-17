@@ -369,6 +369,7 @@ Country = country;
 }
 }
 {% endhighlight %}
+{% endtabs %}
 
 The resultant document looks as follows.
 
