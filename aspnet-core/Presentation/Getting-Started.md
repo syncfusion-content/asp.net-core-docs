@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting-Started
 description: getting started
