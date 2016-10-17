@@ -5,6 +5,7 @@ description: getting started
 platform: aspnet-core
 control: TagCloud
 documentation: ug
+keywords: ejTagCloud, TagCloud, TagCloud widget, js TagCloud
 ---
 
 # Getting Started
