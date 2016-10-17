@@ -9,41 +9,32 @@ keywords:
 
 # Getting Started
 
-This section explains briefly about how to create Spreadsheet in your application with ASP.NET core and also how to populate the Spreadsheet with data, formats and how to export Spreadsheet data as excel file.
+This section explains briefly about how to create Spreadsheet in your ASP.NET core application  and also how to populate the Spreadsheet with data, formats and how to export Spreadsheet data as excel file.
 
 ## Initialize Spreadsheet
 
 The following steps explains how to create spreadsheet,
 
-1. Create Syncfusion ASP.NET Core application. You can refer [ASP.NET core Getting started documentation](https://help.syncfusion.com/aspnet-core/getting-started# "") to create new project and add necessary packages and script files.  
+1. Create Syncfusion ASP.NET Core application. You can refer [ASP.NET core Getting started documentation](https://help.syncfusion.com/aspnet-core/getting-started) to create new project and add necessary packages and script files.  
 2. Add a Spreadsheet control in view page. Spreadsheet is rendered with default `height` and `width`. You can also customize Spreadsheet dimension by setting height and width property in `e-scroll-settings`. 
 
 {% highlight cshtml %}
-<ej-spread-sheet id="Spreadsheet">
-</ej-spread-sheet>	
+
+<ej-spread-sheet id="Spreadsheet"></ej-spread-sheet>	
+
 {% endhighlight %}
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with Data
 
 Now, this section explains how to populate JSON data to the Spreadsheet. You can set `dataSource` attribute in `e-sheets` tag to populate JSON data in Spreadsheet.
 
-1. Initialize Spreadsheet with dataSource.
+1) Create datasource for Spreadsheet control.
 
-{% highlight cshtml %}
-<ej-spread-sheet id="Spreadsheet">
-    <e-sheets>
-         <e-sheet dataSource=”ViewBag.Datasource”></e-sheet>
-    </e-sheets>
-</ej-spread-sheet>
-{% endhighlight %}
-
-2. Create datasource for Spreadsheet control.
-
-{% highlight csharp %}
+~~~csharp
        
         public ActionResult Index()
         {
@@ -83,32 +74,41 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
             public int Discount { get; set; }
             public int Profit { get; set; }
         }
+~~~
 
-{% endhighlight %}
+2) Initialize Spreadsheet with dataSource.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+~~~cshtml
+<ej-spread-sheet id="Spreadsheet">
+    <e-sheets>
+         <e-sheet dataSource=”ViewBag.Datasource”></e-sheet>
+    </e-sheets>
+</ej-spread-sheet>
+~~~
+
+![](Getting-Started_images/Getting-Started_img2.png)
 
 ## Apply Conditional Formatting
 
 Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `allow-conditional-formats` attribute to enable/disable Conditional formats.
 
-To apply conditional formats for a range use `c-format-rules` tag. The following code example illustrates this behaviour,
+To apply conditional formats for a range use `e-cformat-rules` tag. The following code example illustrates this behaviour,
 
 {% highlight cshtml %}
 
-<ej-spread-sheet id="Spreadsheet">  
-  <e-sheets>  
-    <e-sheet>
-         <e-cformat-rules>
-               <e-cformat-rule action="GreaterThan" inputs=@(new List<string>() { "10"}) color="RedFill" range="D2:D8"></e-cformat-rule>
-           </e-cformat-rules>
-   </e-sheet>
-  </e-sheets>
+<ej-spread-sheet id="Spreadsheet">
+    <e-sheets>
+        <e-sheet>
+            <e-cformat-rules>
+                <e-cformat-rule action="GreaterThan" inputs=@(new List<string>() { "10"}) color="RedFill" range="D2:D8"></e-cformat-rule>
+            </e-cformat-rules>
+        </e-sheet>
+    </e-sheets>
 </ej-spread-sheet>
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ## Export Spreadsheet as Excel File
 
@@ -122,3 +122,5 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% endhighlight %}
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
+
+N> We have not provided complete support for Import and Export functionality in ASP NET Core. However we have acheived this functionality using ejService link. 
