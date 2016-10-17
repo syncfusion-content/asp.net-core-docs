@@ -19,4 +19,3 @@ The ASP.NET Core TagCloud control allows the user to display a list of links or 
 * Font-size: Supports limiting the font size with a minimum and maximum range.
 * RTL: Supports changing the TagCloud direction for right-to-left alignment.
 * Themes: JavaScript controls include 12 built-in themes (6 flat and 6 gradient effects) and also support a custom skin option to set user defined themes.
-

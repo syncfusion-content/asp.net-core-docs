@@ -57,8 +57,8 @@ Essential Studio ASP.NET Core TagCloud widget has built-in features such as clic
 
 		#techWebList 
 		{
-
-			margin: 0 auto;
+         
+         margin: 0 auto;
 
 		}
 
@@ -168,10 +168,10 @@ You can perform the event operations like MouseOver, MouseOut and Click by addin
     </ej-tag-cloud>
 
     <div id="tagCloudTarget">
-
-        <ul>
-
-            <li>mouseover</li>
+          
+          <ul>
+          
+           <li>mouseover</li>
 
             <li>mouseout</li>
 
@@ -247,9 +247,7 @@ You can perform the event operations like MouseOver, MouseOut and Click by addin
 
 	}
 
-
-
-	function oncreate(args) 
+   function oncreate(args) 
 	{
 
 		alert("Tagcloud has been created.");
