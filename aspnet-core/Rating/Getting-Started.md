@@ -33,13 +33,12 @@ You can create a Core Project and add necessary assembly and script with the hel
 
 Add the following code example to the corresponding view page to render Rating inside the Tab control.	
 
-{% tabs %}
-
 {% highlight CSHTML %}
 
-<div class="frame"> 
+ /*ej-Tag Helper code to render Rating*/
 
-<ej-tab id="moviesTab">
+<div class="frame">
+    <ej-tab id="moviesTab">
         <e-tab-items>
             <e-tab-item id="steelman" text="Man of Steel">
                 <e-content-template>
@@ -54,12 +53,12 @@ Add the following code example to the corresponding view page to render Rating i
                                         <span class="movie-header">Man of Steel</span><br />
                                         Rating :
                                         <br />
-                                        <ej-rating  id="univRating" value="4"/>
+                                        <ej-rating id="univRating" value="4" />
 
-                                            <span>Movie Info:</span>
-                                            <p>
-                                                A young boy learns that he has extraordinary powers and is not of this Earth.
-                                            </p>
+                                        <span>Movie Info:</span>
+                                        <p>
+                                            A young boy learns that he has extraordinary powers and is not of this Earth.
+                                        </p>
                                     </div>
                                 </td>
                             </tr>
@@ -122,198 +121,116 @@ Add the following code example to the corresponding view page to render Rating i
                 </e-content-template>
             </e-tab-item>
         </e-tab-items>
-    </ej-tab>
-
+    </ej-tab> 
 </div>
 
 {% endhighlight %}
 
 {% highlight Razor %}
 
-<div class="frame">  
-
-@{Html.EJ().Tab("moviesTab").Items(evt=> 
-
-{                
-
-	 evt.Add().ID("steelman").Text("Man of Steel").ContentTemplate(
-
-		 @<div>
-
-			<table>
-
-				<tr>
-
-					<td class="movies-img" valign="top">                                    
-
-						<img src="@Url.Content("~/Images/rating/mos.png")" alt="mos" />
-
-					</td>
-
-					<td valign="top">
-
-						<div>
-
-							<span class="movie-header">Man of Steel</span><br />
-
-							Rating :
-											<br />
-
-							 @Html.EJ().Rating("univRating").Value(4)
-
-							<span>Movie Info:</span>
-
-							<p>
-
-								A young boy learns that he has extraordinary powers and is not of this Earth.
-
-							</p>
-
-						</div>
-
-					</td>
-
-				</tr>
-
-			</table>
-
-		</div>);
-
-	 evt.Add().ID("woldwar").Text("World War Z").ContentTemplate(
-
-		 @<div>
-
-		<table>
-
-			<tr>
-
-				<td class="movies-img" valign="top">                                
-
-					<img src="@Url.Content("~/Images/rating/wwz.png")" alt="mos" />
-
-				</td>
-
-				<td valign="top">
-
-					<div>
-
-						<span class="movie-header">World War Z</span><br />
-
-						Rating :
-										<br />                                  
-
-						@Html.EJ().Rating("wwzRating"). Value(4)
-
-						<span>Movie Info:</span>
-
-						<p>
-
-							The story revolves around United Nations employee Gerry Lane (Pitt).
-
-						</p>
-
-					</div>
-
-				</td>
-
-			</tr>
-
-		</table>
-
-	</div>);
-
-	 evt.Add().ID("unive").Text("Monsters University").ContentTemplate(
-
-		 @<div>
-
-		<table>
-
-			<tr>
-
-				<td class="movies-img" valign="top">                                
-
-					<img src="@Url.Content("~/Images/rating/mu.png")" alt="mos" />
-
-				</td>
-
-				<td valign="top">
-
-					<div>
-
-						<span class="movie-header">Monsters University</span><br />
-
-						Rating :
-										<br />
-										
-						@Html.EJ().Rating("mosRating").Value(3)
-
-						<span>Movie Info:</span>
-
-						<p>
-
-							Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case. 
-
-						</p>
-
-					</div>
-
-				</td>
-
-			</tr>
-
-		</table>
-
-	</div>);
-
-}).Render();
-}
-
+ /*Razor code to render Rating*/
+
+<div class="frame"> 
+    @{Html.EJ().Tab("moviesTab").Items(evt=> 
+    { 
+    evt.Add().ID("steelman").Text("Man of Steel").ContentTemplate( 
+    @<div> 
+        <table> 
+            <tr> 
+                <td class="movies-img" valign="top"> 
+                    <img src="@Url.Content("~/Images/rating/mos.png")" alt="mos" />  
+                </td> 
+                <td valign="top"> 
+                    <div> 
+                        <span class="movie-header">Man of Steel</span><br /> 
+                        Rating :
+                        <br /> 
+                        @Html.EJ().Rating("univRating").Value(4) 
+                        <span>Movie Info:</span> 
+                        <p> 
+                            A young boy learns that he has extraordinary powers and is not of this Earth. 
+                        </p> 
+                    </div> 
+                </td> 
+            </tr> 
+        </table> 
+    </div>);
+
+    evt.Add().ID("woldwar").Text("World War Z").ContentTemplate( 
+    @<div> 
+        <table> 
+            <tr> 
+                <td class="movies-img" valign="top"> 
+                    <img src="@Url.Content("~/Images/rating/wwz.png")" alt="mos" /> 
+                </td> 
+                <td valign="top"> 
+                    <div> 
+                        <span class="movie-header">World War Z</span><br /> 
+                        Rating :
+                        <br /> 
+                        @Html.EJ().Rating("wwzRating"). Value(4) 
+                        <span>Movie Info:</span> 
+                        <p> 
+                            The story revolves around United Nations employee Gerry Lane (Pitt). 
+                        </p> 
+                    </div> 
+                </td> 
+            </tr> 
+        </table> 
+    </div>); 
+    evt.Add().ID("unive").Text("Monsters University").ContentTemplate( 
+    @<div> 
+        <table> 
+            <tr> 
+                <td class="movies-img" valign="top"> 
+                    <img src="@Url.Content("~/Images/rating/mu.png")" alt="mos" /> 
+                </td> 
+                <td valign="top"> 
+                    <div> 
+                        <span class="movie-header">Monsters University</span><br /> 
+                        Rating :
+                        <br /> 
+                        @Html.EJ().Rating("mosRating").Value(3) 
+                        <span>Movie Info:</span> 
+                        <p> 
+                            Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case. 
+                        </p> 
+                    </div> 
+                </td> 
+            </tr> 
+        </table> 
+    </div>);
+
+    }).Render();
+    } 
 </div>
 
-{% endhighlight %}
+{% endhighlight %} 
 
-{% endtabs %}
-
-N> We can render the control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
+N> To render the Rating Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Add the following styles to the corresponding view page to show the Rating in a horizontal order.
 
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
+    .movies-img {
+        width: 125px;
+    }
 
-	.movies-img 
-	{
+    .movie-header {
+        font-size: 20px;
+        font-weight: 600;
+    }
 
-		width: 125px;
-
-	}
-
-
-
-	.movie-header 
-	{
-
-		font-size: 20px;
-
-		font-weight: 600;
-
-	}
-
-	.frame 
-	{
-
-		width: 600px;
-
-		height: 250px;
-
-	}
-
+    .frame {
+        width: 600px;
+        height: 250px;
+    }
 </style>
 
 {% endhighlight %}
 
 Execute the above code to render the following output.
-
 
 ![](Getting-Started_images/Getting-Started_img2.png)

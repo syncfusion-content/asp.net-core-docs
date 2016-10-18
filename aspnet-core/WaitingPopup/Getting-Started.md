@@ -33,116 +33,69 @@ ASP.NET Core Waiting Popup widget has a built-in feature to block all other acti
 In a real-time Login page scenario, when you click on the Login button, the Waiting Popup is displayed. This is achieved by using the button Click.
 
 1. Add the following code example to the corresponding view page to create Login page with username and password.
-
-{% tabs %}
-
-{% highlight CSHTML %}
-	
-	<div class="content-container-fluid">
-
-		<div class="row">
-
-		<div class="cols-sample-area">
-
-			<table id="target">
-
-			<tr>
-
-				<td>Username</td>
-
-				<td><input type="text"></td>
-
-			</tr>
-
-			<tr>
-
-				<td>Password</td>
-
-				<td><input type="password"></td>
-
-			</tr>
-
-			<tr>
-
-				<td></td>                       
-
-			 <td>                         
-			  
-             <ej-button id="buttonnormal" text="Login" size="@ButtonSize.Large" create="btnLoad" click="btnClick"/>       
-             
-			 </td>                    
  
-            <ej-waiting-popup id="target" show-on-init ="false" /> 
+{% highlight CSHTML %}
 
-			</tr>
-
-			</table>
-
-
-
-		</div>
-
-		</div>
-
+/*ej-Tag Helper code to render WaitingPopup*/
+	
+	<div class="content-container-fluid"> 
+		<div class="row"> 
+		<div class="cols-sample-area"> 
+			<table id="target"> 
+			<tr> 
+				<td>Username</td> 
+				<td><input type="text"></td> 
+			</tr> 
+			<tr> 
+				<td>Password</td> 
+				<td><input type="password"></td> 
+			</tr> 
+			<tr> 
+				<td></td>               
+			 <td>                        
+             <ej-button id="buttonnormal" text="Login" size="@ButtonSize.Large" create="btnLoad" click="btnClick"/>     
+			 </td>                     
+            <ej-waiting-popup id="target" show-on-init ="false" />  
+			</tr> 
+			</table> 
+		</div> 
+		</div> 
 	</div>
 
   {% endhighlight %}
 
   {% highlight Razor %}
    
+ /*Razor code to render WaitingPopup*/
+
 	<div class="content-container-fluid">
-
-		<div class="row">
-
-		<div class="cols-sample-area">
-
-			<table id="target">
-
-			<tr>
-
-				<td>Username</td>
-
-				<td><input type="text"></td>
-
-			</tr>
-
-			<tr>
-
-				<td>Password</td>
-
-				<td><input type="password"></td>
-
-			</tr>
-
-			<tr>
-
-				<td></td>                       
-
-			 <td>                         
-			 
-			 @{ Html.EJ().Button("buttonnormal").Text("Login").Size(ButtonSize.Large).ClientSideEvents(e =>e.Create("btnload").Click("btnClick")).Render(); }
-
-			 </td>                    
-
-			@{ Html.EJ().WaitingPopup("target").ShowOnInit(false).Render(); }
-
-			</tr>
-
-			</table>
-
-
-
-		</div>
-
-		</div>
-
-	</div>
+    <div class="row">
+        <div class="cols-sample-area">
+            <table id="target">
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        @{ Html.EJ().Button("buttonnormal").Text("Login").Size(ButtonSize.Large).ClientSideEvents(e =>e.Create("btnload").Click("btnClick")).Render(); }
+                    </td>
+                    @{ Html.EJ().WaitingPopup("target").ShowOnInit(false).Render(); }
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
 
 	 {% endhighlight %}
 
-{% endtabs %}
+N> To render the WaitingPopup Control you can use either Razor or Tag helper code as given in the above code snippet.
 
-N> We can render the control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
 
 2. Add the following styles in the view page to show the Waiting Popup.
 
@@ -151,30 +104,19 @@ N> We can render the control by using either razor or tag helper which is shown 
 	<style type="text/css" class="cssStyles">
 
 		#target 
-		{
-
-		margin: 0 auto;
-
-		}
-
+		{ 
+		margin: 0 auto; 
+		} 
 		#target_WaitingPopup .e-image 
-		{
-
-		display: block;
-
-		height: 70px;
-
-		}
-
+		{ 
+		display: block; 
+		height: 70px; 
+		} 
 		#popup 
-		{
-
-		height: auto;
-
-		width: auto;
-
-		margin-top: 100px;
-
+		{ 
+		height: auto; 
+		width: auto; 
+		margin-top: 100px; 
 		}
 
 	</style>
@@ -186,53 +128,31 @@ N> We can render the control by using either razor or tag helper which is shown 
 
 {% highlight javascript %}
 
-	<script>
+	<script> 
 
-			function btnClick(e)
-
-			{
-
-			var wp = $("#target").data("ejWaitingPopup");
-
-			wp.show();
-
-			setTimeout(success, 5000);
-
-			}
-
-			function success()
-
-			{
-
-			alert("Signed in successfully");
-
-			var popup = $("#target").ejWaitingPopup("hide");
-
-			}                  
+			function btnClick(e) 
+			{ 
+			var wp = $("#target").data("ejWaitingPopup"); 
+			wp.show(); 
+			setTimeout(success, 5000); 
+			} 
+			function success() 
+			{ 
+			alert("Signed in successfully"); 
+			var popup = $("#target").ejWaitingPopup("hide"); 
+			}                   
 
 	</script>
 		
-{% endhighlight %}
-   
+{% endhighlight %}  
 
-
-4. The following screenshot displays the User login.
-
-
+4. The following screenshot displays the User login. 
 
    ![](Getteing-Started_images/Getteing-Started_img2.png)
 
-
-
-
 5. The following screenshot shows the Waiting Popup
 
-
-
    ![](Getteing-Started_images/Getteing-Started_img3.png)
-
-
-
 
 The following screenshot displays an alert box displayed with the message “Signed in successfully” after loading.
 
