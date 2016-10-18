@@ -35,6 +35,8 @@ Add the following code example to the corresponding view page to render Rating i
 
 {% highlight CSHTML %}
 
+ /*ej-Tag Helper code to render Rating*/
+
 <div class="frame">
     <ej-tab id="moviesTab">
         <e-tab-items>
@@ -126,139 +128,77 @@ Add the following code example to the corresponding view page to render Rating i
 
 {% highlight Razor %}
 
-<div class="frame">
+ /*Razor code to render Rating*/
 
-    @{Html.EJ().Tab("moviesTab").Items(evt=>
-
-    {
-
-    evt.Add().ID("steelman").Text("Man of Steel").ContentTemplate(
-
-    @<div>
-
-        <table>
-
-            <tr>
-
-                <td class="movies-img" valign="top">
-
-                    <img src="@Url.Content("~/Images/rating/mos.png")" alt="mos" />
-
-                </td>
-
-                <td valign="top">
-
-                    <div>
-
-                        <span class="movie-header">Man of Steel</span><br />
-
+<div class="frame"> 
+    @{Html.EJ().Tab("moviesTab").Items(evt=> 
+    { 
+    evt.Add().ID("steelman").Text("Man of Steel").ContentTemplate( 
+    @<div> 
+        <table> 
+            <tr> 
+                <td class="movies-img" valign="top"> 
+                    <img src="@Url.Content("~/Images/rating/mos.png")" alt="mos" />  
+                </td> 
+                <td valign="top"> 
+                    <div> 
+                        <span class="movie-header">Man of Steel</span><br /> 
                         Rating :
-                        <br />
-
-                        @Html.EJ().Rating("univRating").Value(4)
-
-                        <span>Movie Info:</span>
-
-                        <p>
-
-                            A young boy learns that he has extraordinary powers and is not of this Earth.
-
-                        </p>
-
-                    </div>
-
-                </td>
-
-            </tr>
-
-        </table>
-
+                        <br /> 
+                        @Html.EJ().Rating("univRating").Value(4) 
+                        <span>Movie Info:</span> 
+                        <p> 
+                            A young boy learns that he has extraordinary powers and is not of this Earth. 
+                        </p> 
+                    </div> 
+                </td> 
+            </tr> 
+        </table> 
     </div>);
 
-    evt.Add().ID("woldwar").Text("World War Z").ContentTemplate(
-
-    @<div>
-
-        <table>
-
-            <tr>
-
-                <td class="movies-img" valign="top">
-
-                    <img src="@Url.Content("~/Images/rating/wwz.png")" alt="mos" />
-
-                </td>
-
-                <td valign="top">
-
-                    <div>
-
-                        <span class="movie-header">World War Z</span><br />
-
+    evt.Add().ID("woldwar").Text("World War Z").ContentTemplate( 
+    @<div> 
+        <table> 
+            <tr> 
+                <td class="movies-img" valign="top"> 
+                    <img src="@Url.Content("~/Images/rating/wwz.png")" alt="mos" /> 
+                </td> 
+                <td valign="top"> 
+                    <div> 
+                        <span class="movie-header">World War Z</span><br /> 
                         Rating :
-                        <br />
-
-                        @Html.EJ().Rating("wwzRating"). Value(4)
-
-                        <span>Movie Info:</span>
-
-                        <p>
-
-                            The story revolves around United Nations employee Gerry Lane (Pitt).
-
-                        </p>
-
-                    </div>
-
-                </td>
-
-            </tr>
-
-        </table>
-
-    </div>);
-
-    evt.Add().ID("unive").Text("Monsters University").ContentTemplate(
-
-    @<div>
-
-        <table>
-
-            <tr>
-
-                <td class="movies-img" valign="top">
-
-                    <img src="@Url.Content("~/Images/rating/mu.png")" alt="mos" />
-
-                </td>
-
-                <td valign="top">
-
-                    <div>
-
-                        <span class="movie-header">Monsters University</span><br />
-
+                        <br /> 
+                        @Html.EJ().Rating("wwzRating"). Value(4) 
+                        <span>Movie Info:</span> 
+                        <p> 
+                            The story revolves around United Nations employee Gerry Lane (Pitt). 
+                        </p> 
+                    </div> 
+                </td> 
+            </tr> 
+        </table> 
+    </div>); 
+    evt.Add().ID("unive").Text("Monsters University").ContentTemplate( 
+    @<div> 
+        <table> 
+            <tr> 
+                <td class="movies-img" valign="top"> 
+                    <img src="@Url.Content("~/Images/rating/mu.png")" alt="mos" /> 
+                </td> 
+                <td valign="top"> 
+                    <div> 
+                        <span class="movie-header">Monsters University</span><br /> 
                         Rating :
-                        <br />
-
-                        @Html.EJ().Rating("mosRating").Value(3)
-
-                        <span>Movie Info:</span>
-
-                        <p>
-
-                            Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case.
-
-                        </p>
-
-                    </div>
-
-                </td>
-
-            </tr>
-
-        </table>
-
+                        <br /> 
+                        @Html.EJ().Rating("mosRating").Value(3) 
+                        <span>Movie Info:</span> 
+                        <p> 
+                            Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case. 
+                        </p> 
+                    </div> 
+                </td> 
+            </tr> 
+        </table> 
     </div>);
 
     }).Render();

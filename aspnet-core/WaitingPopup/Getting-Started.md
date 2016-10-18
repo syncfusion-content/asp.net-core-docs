@@ -35,6 +35,8 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 1. Add the following code example to the corresponding view page to create Login page with username and password.
  
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render WaitingPopup*/
 	
 	<div class="content-container-fluid"> 
 		<div class="row"> 
@@ -64,6 +66,8 @@ In a real-time Login page scenario, when you click on the Login button, the Wait
 
   {% highlight Razor %}
    
+ /*Razor code to render WaitingPopup*/
+
 	<div class="content-container-fluid">
     <div class="row">
         <div class="cols-sample-area">
