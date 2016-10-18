@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | Tab  | ASP.NET Core | Syncfusion
-description: How to create the Tooltip
+description: How to create the Tab
 platform: aspnet-core
 control: Tab
 documentation: ug
@@ -142,7 +142,7 @@ The ASP.NET Core Rating control provides an intuitive rating experience that all
 
 For more information about rating, refer to the following link: 
 
-<https://help.syncfusion.com/aspnet-core/overview>
+<https://help.syncfusion.com/aspnet-core>
 
 {% highlight CSHTML %}
 
