@@ -44,7 +44,7 @@ Add the following code example to the corresponding view page to render Rating i
                         <table>
                             <tr>
                                 <td class="movies-img" valign="top">
-                                    <img src="@Url.Content(" ~ /Images/rating/mos.png")" alt="mos" />
+                                    <img src="@Url.Content("~/Images/rating/mos.png")" alt="mos" />
                                 </td>
                                 <td valign="top">
                                     <div>
@@ -71,7 +71,7 @@ Add the following code example to the corresponding view page to render Rating i
                         <table>
                             <tr>
                                 <td class="movies-img" valign="top">
-                                    <img src="@Url.Content(" ~ /Images/rating/wwz.png")" alt="mos" />
+                                    <img src="@Url.Content("~/Images/rating/wwz.png")" alt="mos" />
                                 </td>
                                 <td valign="top">
                                     <div>
@@ -97,7 +97,7 @@ Add the following code example to the corresponding view page to render Rating i
                         <table>
                             <tr>
                                 <td class="movies-img" valign="top">
-                                    <img src="@Url.Content(" ~ /Images/rating/mu.png")" alt="mos" />
+                                    <img src="@Url.Content("~/Images/rating/mu.png")" alt="mos" />
                                 </td>
                                 <td valign="top">
                                     <div>
@@ -142,7 +142,7 @@ Add the following code example to the corresponding view page to render Rating i
 
                 <td class="movies-img" valign="top">
 
-                    <img src="@Url.Content(" ~ /Images/rating/mos.png")" alt="mos" />
+                    <img src="@Url.Content("~/Images/rating/mos.png")" alt="mos" />
 
                 </td>
 
@@ -185,7 +185,7 @@ Add the following code example to the corresponding view page to render Rating i
 
                 <td class="movies-img" valign="top">
 
-                    <img src="@Url.Content(" ~ /Images/rating/wwz.png")" alt="mos" />
+                    <img src="@Url.Content("~/Images/rating/wwz.png")" alt="mos" />
 
                 </td>
 
@@ -228,7 +228,7 @@ Add the following code example to the corresponding view page to render Rating i
 
                 <td class="movies-img" valign="top">
 
-                    <img src="@Url.Content(" ~ /Images/rating/mu.png")" alt="mos" />
+                    <img src="@Url.Content("~/Images/rating/mu.png")" alt="mos" />
 
                 </td>
 
