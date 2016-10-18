@@ -30,7 +30,7 @@ Now, the Spreadsheet is rendered with default row and column count.
 
 ## Populate Spreadsheet with Data
 
-Now, this section explains how to populate JSON data to the Spreadsheet. You can set `dataSource` attribute in `e-sheets` tag to populate JSON data in Spreadsheet.
+Now, this section explains how to populate JSON data to the Spreadsheet. You can set `datasource` attribute in `e-sheets` tag to populate JSON data in Spreadsheet.
 
 1) Create datasource for Spreadsheet control.
 
@@ -76,12 +76,12 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
         }
 ~~~
 
-2) Initialize Spreadsheet with dataSource.
+2) Initialize Spreadsheet with datasource.
 
 ~~~cshtml
 <ej-spread-sheet id="Spreadsheet">
     <e-sheets>
-         <e-sheet dataSource=”ViewBag.Datasource”></e-sheet>
+         <e-sheet datasource=”ViewBag.Datasource”></e-sheet>
     </e-sheets>
 </ej-spread-sheet>
 ~~~
@@ -90,9 +90,9 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 
 ## Apply Conditional Formatting
 
-Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `allow-conditional-formats` attribute to enable/disable Conditional formats.
+Conditional formatting helps you to apply formats to a cell or range with certain color based on the cells values. You can use `allow-conditional-formats` attribute to enable/disable conditional formats.
 
-To apply conditional formats for a range use `e-cformat-rules` tag. The following code example illustrates this behaviour,
+To apply conditional formats for a range use `e-cformat-rules` tag. The following code example illustrates this behavior,
 
 {% highlight cshtml %}
 
@@ -112,7 +112,7 @@ To apply conditional formats for a range use `e-cformat-rules` tag. The followi
 
 ## Export Spreadsheet as Excel File
 
-The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `allow-exporting` option in `e-export-settings` as `true`. Since Spreadsheet uses server side helper to save documents set `excel-url` in `e-export-settings` option. The following code example illustrates this behaviour,
+The Spreadsheet can save its data, style, format into an excel file. To enable save option in Spreadsheet set `allow-exporting` option in `e-export-settings` as `true`. Since Spreadsheet uses server side helper to save documents set `excel-url` in `e-export-settings` option. The following code example illustrates this behavior,
 
 {% highlight cshtml %}
 <ej-spread-sheet id="Spreadsheet">
@@ -123,4 +123,4 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
 
-N> We have not provided complete support for Import and Export functionality in ASP NET Core. However we have acheived this functionality using ejService link. 
+N> We have not provided complete support for import and export functionality in ASP NET Core. However we have acheived this functionality using service link. 
