@@ -13,8 +13,8 @@ The Essential Studio for ASP.NET Core Web Tiles are simple, opaque rectangles or
 
 # Key Features
 
-*	**Live tile support:** here the tiles are changed dynamically at specific time interval.
+*	**Live tile support:** Here the tiles are changed dynamically at specific time interval.
 
-*	**Badge value:** it is used to show the content count present behind the Tile.
+*	**Badge value:** It is used to show the content count present behind the Tile.
  
 *	**Caption support:** Caption is used to set title for the corresponding tile. 

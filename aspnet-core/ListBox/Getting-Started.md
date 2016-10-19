@@ -28,7 +28,7 @@ This section explains briefly on how to create a ListBox control in your ASP.NET
 
 ## Data binding
 
-We can also populate data in the listbox using “datasource” and “e-list-box-fields” properties. To achieve this we need to create and assign datasource to the Listbox as given below.
+We can also populate data in the listbox using “datasource” and “e-list-box-fields” properties. To achieve this we need to create and assign Datasource to the Listbox as given below.
 
 {% highlight cshtml %}
 

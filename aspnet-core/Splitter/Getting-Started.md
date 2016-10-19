@@ -41,7 +41,7 @@ ASP.NET Core Splitter control consists of movable split bar(s) that divides the 
 
 ## Configure Tree View
 
-Add the following code example in the corresponding view page. ‘HtmlAttributes’ property is used to add HTML attributes like, id, class etc. to the components.
+Add the following code example in the corresponding view page. 'html-attributes' property is used to add HTML attributes like, id, class etc. to the components.
 Add below code to configure the tree view in your splitter control
 
 {% highlight cshtml %}

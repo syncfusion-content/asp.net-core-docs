@@ -282,6 +282,6 @@ Add this in corresponding style section:
 
 {% endhighlight %}
 
-After execute the mentioned code you can view the following output.
+After execute the above code you can get below output.
 
 ![](Getting-Started_Images/default2.png)

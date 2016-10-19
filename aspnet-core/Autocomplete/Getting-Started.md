@@ -3,7 +3,7 @@ layout: post
 title: Getting-Started
 description: getting started
 platform: aspnet-core
-control: Autocomplete 
+control: AutoComplete 
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ This section allows you to learn and how to configure the AutoComplete control i
 AutoComplete Textbox control basically renders with built-in features like keyboard navigation with animations and flexible API’s. You can easily create the AutoCompleteTextbox control by the following steps.
 
 1. Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
-2. Once you have done all the basic configurations which is mentioned in the ASP.NET Core 1.0 getting started started page, Now you can create and deploy our Autocomplete Control.
+2. Once you have done all the basic configurations which is mentioned in the ASP.NET Core getting started page, Now you can create and deploy our AutoComplete Control.
 3. Initialize the AutoComplete control in the view page by using the below code.
 
     {% highlight cshtml %}
@@ -35,9 +35,9 @@ AutoComplete Textbox control basically renders with built-in features like keybo
 
 ## Populate Data to AutoComplete
 
-In this section we have used remote data binding for AutoComplete data Population.
+In this section we have used remote Datasource binding for AutoComplete data Population.
 
-1. To get data from remote URL you can use our e-datamanager control. The query property is used to filter and get only the required data from corresponding url which is given in the e-datamanager URL.
+1. To get data from remote URL you need to use our e-datamanager control. The query property is used to filter and get only the required data from corresponding URL which is given in the e-datamanager URL.
 2. You can map all the available Data fields to the AutoComplete TextBox as per your requirement. 
 
     {% highlight cshtml %}
