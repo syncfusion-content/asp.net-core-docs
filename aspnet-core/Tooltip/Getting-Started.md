@@ -23,6 +23,8 @@ Using the following steps, you can create a Tooltip control. The basic rendering
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render Tooltip*/
+
     <div class="frame">    
         <div class="img" id="sample">
             <a target="_blank" href="image/taj.png">
@@ -35,8 +37,26 @@ Using the following steps, you can create a Tooltip control. The basic rendering
     <ej-tooltip id="sample" content="Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.">
     </ej-tooltip>
 
+{% endhighlight %}
+
+{% highlight Razor %}
+
+/*Razor code to render Tooltip*/
+
+    <div class="frame">    
+        <div class="img" id="sample1">
+            <a target="_blank" href="image/taj.png">
+            <img src="http://aspnetcore.syncfusion.com/images/tooltip/template-05.png" alt="Delphi">
+            </a>
+            <div class="desc">Delphi Succinctly</div>
+        </div>
+    </div>
+
+    @Html.EJ().Tooltip("sample1").Content("Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.")
 
 {% endhighlight %}
+
+N> To render the Tooltip Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Apply the following style sheet
 
@@ -71,6 +91,8 @@ Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ej
 
 {% highlight CSHTML %}
  
+ /*ej-Tag Helper code to render Tooltip*/
+
     <div class="control">
         TypeScript lets you write <a id="testSample"><u> JavaScript</u> </a>the way you really want to.
     </div>
@@ -80,12 +102,26 @@ Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ej
 
 {% endhighlight %}
 
+{% highlight Razor %}
+ 
+ /*Razor code to render Tooltip*/
+
+    <div class="control">
+        TypeScript lets you write <a id="tooltip1"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+
+    @Html.EJ().Tooltip("tooltip1").Content("JavaScript is the programming language of HTML and the Web.").Width("100px").Height("100px")
+        
+{% endhighlight %}
+
 ## Tooltip Appearance 
 
 You can configure the appearance of the Tooltip with the title, close button and call out as your application requires.
 
 {% highlight CSHTML %}
  
+ /*ej-Tag Helper code to render Tooltip*/
+
     <div class="img" id="sample2">
         <a target="_blank" href="image/taj.png">
         <img src="http://aspnetcore.syncfusion.com/images/tooltip/template-05.png" alt="Delphi">
@@ -97,6 +133,22 @@ You can configure the appearance of the Tooltip with the title, close button and
     </ej-tooltip>
 
 {% endhighlight %}
+
+{% highlight Razor %}
+ 
+ /*Razor code to render Tooltip*/
+
+    <div class="img" id="sample">
+        <a target="_blank" href="image/taj.png">
+        <img src="http://aspnetcore.syncfusion.com/images/tooltip/template-05.png" alt="Delphi">
+        </a>
+        <div class="desc">Delphi Succinctly</div>
+    </div>
+
+    @Html.EJ().Tooltip("sample").Content("Learn the fundamentals of Delphi to build a variety of solutions for many devices and platforms.").Width("180px").Title("Delphi Succinctly").CloseMode(CloseMode.Sticky).IsBalloon(false)
+    
+{% endhighlight %}
+
 
 Apply the following styles to show the Tooltip.
 
