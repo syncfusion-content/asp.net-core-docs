@@ -20,23 +20,23 @@ From the following guideline, you can learn how to customize the Menu control fo
 
 Create Syncfusion ASP.NET Core application. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation to initially configure the common specifications.
 
-{% tabs %}
+{% highlight CSHTML %}
 
-	{% highlight CSHTML %}
+    /*ej-Tag Helper code to render Menu*/
 
-        <ej-menu id="syncfusionProducts"> </ej-menu>
+    <ej-menu id="syncfusionProducts"> </ej-menu>
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight Razor %}
+{% highlight Razor %}
 
-        @{ Html.EJ().Menu("SyncfusionProducts").Render(); }
+    /*Razor code to render Menu*/
 
-    {% endhighlight %}
+    @{ Html.EJ().Menu("SyncfusionProducts").Render(); }
 
-{% endtabs %}
+{% endhighlight %}
     
-N> We can render the Menu control by using either razor or tag helper which is shown in the above code.To render the control using razor,the code is same as like the MVC but in addition here we need to add Render() method.
+N> To render the Menu Control you can use either Razor or Tag helper code as given in the above code snippet 
 
 ## Configure Parent Menu items
 
@@ -48,27 +48,26 @@ To navigate the clicked Menu item to a specific URL, define the navigation URL t
 
 Initialize the Menu with data source value as follows. 
 
-{% tabs %}
+{% highlight CSHTML %}
 
-	{% highlight CSHTML %}
+    /*ej-Tag Helper code to render Menu*/
 
-        <ej-menu id="syncfusionProducts">
-            <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
-                <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-            </e-menu-fields>
-        </ej-menu>  
+    <ej-menu id="syncfusionProducts">
+        <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
+            <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
+        </e-menu-fields>
+    </ej-menu>  
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight Razor %}
+{% highlight Razor %}
 
-        @{ Html.EJ().Menu("SyncfusionProducts").Width("600px").MenuFields(f => f.Datasource(d => 
-        d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/")).Query("ej.Query().from('RootLevelItems')").Id("InfoID").Text("InfoText")).Render(); }
+    /*Razor code to render Menu*/
 
-    {% endhighlight %}
+    @{ Html.EJ().Menu("SyncfusionProducts").Width("600px").MenuFields(f => f.Datasource(d => 
+    d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/")).Query("ej.Query().from('RootLevelItems')").Id("InfoID").Text("InfoText")).Render(); }
 
-{% endtabs %}
-
+{% endhighlight %}
 
 The following screenshot displays the resultant output Menu without sub menu item.
 
@@ -80,41 +79,43 @@ Each Menu items consist of list of sub level Menu items. Refer the following gui
 
 The following code example explains the initialization of first level sub menu items of Menu control.
 
-{% tabs %}
+{% highlight CSHTML %}
 
-	{% highlight CSHTML %}
+    /*ej-Tag Helper code to render Menu*/
 
-        <ej-menu id="syncfusionProducts">
-            <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
-                <e-child table-name="SubItems" id="SubItemID" parent-id="InfoID" text="SubItemText"> 
-                    <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-                </e-child>
+    <ej-menu id="syncfusionProducts">
+        <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
+            <e-child table-name="SubItems" id="SubItemID" parent-id="InfoID" text="SubItemText"> 
                 <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-            </e-menu-fields>
-        </ej-menu>  
+            </e-child>
+            <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
+        </e-menu-fields>
+    </ej-menu>  
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight Razor %}
+{% highlight Razor %}
 
-       @{
-           Html.EJ().Menu("SyncfusionProducts").Width("600px")
-           .MenuFields(f => f.Datasource(d => 
-                    d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                    .Query("ej.Query().from('RootLevelItems')")
-                    .Id("InfoID")
-                    .Text("InfoText")
-                    .Child(c => c.Datasource(cd => 
-                    cd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                    .TableName("SubItems")
-                    .Id("SubItemID")
-                    .ParentId("InfoID")
-                    .Text("SubItemText"))).Render();
-        }
+    /*Razor code to render Menu*/
 
-    {% endhighlight %}
+    @{
+        Html.EJ().Menu("SyncfusionProducts").Width("600px")
+        .MenuFields(f => f.Datasource(d => 
+                d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
+                .Query("ej.Query().from('RootLevelItems')")
+                .Id("InfoID")
+                .Text("InfoText")
+                .Child(c => c.Datasource(cd => 
+                cd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
+                .TableName("SubItems")
+                .Id("SubItemID")
+                .ParentId("InfoID")
+                .Text("SubItemText"))).Render();
+    }
 
-{% endtabs %}
+{% endhighlight %}
+
+
 
 Execute the above code example to render the following output Menu with sub menu item.
 
@@ -126,51 +127,53 @@ Render sub menu item to multiple level in Menu control. In Menu Widgets, mention
 
 The following code example explains the initialization of multiple level sub menu items.
 
-{% tabs %}
+{% highlight CSHTML %}
 
-	{% highlight CSHTML %}
+    /*ej-Tag Helper code to render Menu*/
 
-       <ej-menu id="syncfusionProducts">
-            <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
-                <e-child table-name="SubItems" id="SubItemID" parent-id="InfoID" text="SubItemText"> 
-                    <e-child table-name="InnerItems" id="InnerSubItemID" parent-id="SubItemID" text="InnerSubItemText"> 
-                        <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-                    </e-child>
+    <ej-menu id="syncfusionProducts">
+        <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
+            <e-child table-name="SubItems" id="SubItemID" parent-id="InfoID" text="SubItemText"> 
+                <e-child table-name="InnerItems" id="InnerSubItemID" parent-id="SubItemID" text="InnerSubItemText"> 
                     <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
                 </e-child>
                 <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-            </e-menu-fields>
-        </ej-menu>  
+            </e-child>
+            <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
+        </e-menu-fields>
+    </ej-menu>  
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight Razor %}
+{% highlight Razor %}
 
-       @{
-           @Html.EJ().Menu("SyncfusionProducts").Width("600px")
-           .MenuFields(f => f.Datasource(d => 
-                d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                .Query("ej.Query().from('RootLevelItems')")
-                .Id("InfoID")
-                .Text("InfoText")
-                    .Child(c => c.Datasource(cd => 
-                    cd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                    .TableName("SubItems")
-                    .Id("SubItemID")
-                    .ParentId("InfoID")
-                    .Text("SubItemText")
-                        .Child(cc => cc.Datasource(ccd =>
-                            ccd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                            .TableName("InnerItems")
-                            .Id("InnerSubItemID")
-                            .ParentId("SubItemID")
-                            .Text("InnerSubItemText")))).Render();
+    /*Razor code to render Menu*/
 
-        }
+    @{
+        @Html.EJ().Menu("SyncfusionProducts").Width("600px")
+        .MenuFields(f => f.Datasource(d => 
+            d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
+            .Query("ej.Query().from('RootLevelItems')")
+            .Id("InfoID")
+            .Text("InfoText")
+                .Child(c => c.Datasource(cd => 
+                cd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
+                .TableName("SubItems")
+                .Id("SubItemID")
+                .ParentId("InfoID")
+                .Text("SubItemText")
+                    .Child(cc => cc.Datasource(ccd =>
+                        ccd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
+                        .TableName("InnerItems")
+                        .Id("InnerSubItemID")
+                        .ParentId("SubItemID")
+                        .Text("InnerSubItemText")))).Render();
 
-    {% endhighlight %}
+    }
 
-{% endtabs %}
+{% endhighlight %}
+
+
 
 The following screenshot is the resultant output Menu with multiple level sub menu item.
 
