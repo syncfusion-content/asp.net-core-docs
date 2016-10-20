@@ -11,38 +11,42 @@ keywords:
 Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the introduction part to know more about the basic [system requirements](https://help.syncfusion.com/aspnet-core/getting-started#system-requirements) and the steps to [configure Syncfusion File Format components](https://help.syncfusion.com/aspnet-core/getting-started#configure-syncfusion-file-format-components-in-aspnet-core-application) in an ASP.NET Core application. Ensure once whether all the following dependency packages are included within the project.json file as mentioned [here](https://help.syncfusion.com/aspnet-core/getting-started#configure-syncfusion-file-format-components-in-aspnet-core-application), to create and manipulate the Word documents using DocIO.
 
 <table>
-<tr>
 <thead>
+<tr>
+<th>
 Package Name 
-</thead>
-<thead>
+</th>
+<th>
 Short Description 
-</thead>
+</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<thead>
+<td>
 Syncfusion.DocIO.AspNet.Core
-</thead>
-<thead>
+</td>
+<td>
 This package contains the core features needed for creating, reading, manipulating a Word document.
-</thead>
+</td>
 </tr>
 <tr>
-<thead>
+<td>
 Syncfusion.Compression.AspNet.Core
-</thead>
-<thead>
+</td>
+<td>
 This package is used to archive/extract the Word document contents.
-</thead>
+</td>
 </tr>
 <tr>
-<thead>
+<td>
 Syncfusion.OfficeChart.AspNet.Core
-</thead>
-<thead>
+</td>
+<td>
 This package contains the Office Chart Object model and core features needed for chart creation.
-</thead>
+</td>
 </tr>
+</tbody>
 </table>
 
 Include the following namespaces in your .cs file
@@ -334,9 +338,7 @@ string ProductFileName = args.FieldValue.ToString();
 args.ImageStream = new FileStream(ProductFileName, FileMode.Open, FileAccess.Read);
 }
 }
-{% endhighlight %}
 
-{% highlight c# %}
 public List<Employee> GetEmployees()
 {
 List<Employee> employees = new List<Employee>();
