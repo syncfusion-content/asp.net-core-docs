@@ -245,7 +245,7 @@ You can refer to the following link for more information on rendering ListBox co
 
         </script>
 
-    ~~~ 
+    ~~~
 
 4. Run the above code to render the following output.
 
