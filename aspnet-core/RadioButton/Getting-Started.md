@@ -30,185 +30,90 @@ Essential Studio ASP.NET Core RadioButton widget has a built-in feature to selec
 {% highlight CSHTML %}
 
 <div class="frame">
-
 	<div>
-
 		<div >
-
 			<br />
-
 		   1. What is the Expansion for MVC<br />
-
-
-
 			<table>
-
 				<tr>
-
 					<td >
-
 						<ej-radio-button id="Radio1" name="rad1" size="Small" checked="false" enabled="true" /><!--Creates a small Radio Button-->
-
 						<label for="Radio1" class="clslab">
-
 							Model View Controller
-
 						</label>
-
 					</td>
-
 					<td  >
-
 						<ej-radio-button id="Radio2" name="rad1" size="Small" checked="false" enabled="true" />
-
 						<label for="Radio2" class="clslab">
-
 							Model Virtual Container
-
 						</label>
-
 					</td>
-
 					<td >
-
 						<ej-radio-button id="Radio3" name="rad1" size="Small" checked="false" enabled="true" />
-
 						<label for="Radio3" class="clslab">
-
 							Model Visual Controller
-
 						</label>
-
 					</td>
-
 				</tr>
-
 			</table>
-
 			<br />
-
 			<br />
-
 		   2.What is the Expansion for USB<br />
-
-
-
 			<table>
-
 				<tr>
-
 					<td >
-
 						<ej-radio-button id="Radio4" name="rad2" size="Medium" checked="false" enabled="true" /> <!--Creates a Medium size Radio Button-->
-
 						<label for="Radio4" class="clslab">
-
 							Universal Serial Bus
-
 						</label>
-
 					</td>
-
 					<td >
-
 						<ej-radio-button id="Radio5" name="rad2" size="Medium" checked="false" enabled="true" />
-
 						<label for="Radio5" class="clslab">
-
 							Universal Serial Buffer
-
 						</label>
-
 					</td>
-
 					<td>
-
 						<ej-radio-button id="Radio6" name="rad2" size="Medium" checked="false" enabled="true" />
-
 						<label for="Radio6" class="clslab">
-
 							Universal Serialized Buffer
-
 						</label>
-
 					</td>
-
 				</tr>
-
 			</table>
-
 			<br/>
-
 			<br />
-
 			3.What is the Expansion for JS<br />
-
-
-
 			<table>
-
 				<tr>
-
 					<td >
-
 						<ej-radio-button id="Radio7" name="rad3" size="Medium" checked="false" enabled="true" />
-
 						<label for="Radio7" class="clslab">
-
 							Jquery Script
-
 						</label>
-
 					</td>
-
 					<td >
-
 						<ej-radio-button id="Radio8" name="rad3" size="Medium" checked="false" enabled="true" />
-
 						<label for="Radio8" class="clslab">
-
 							Java Script
-
 						</label>
-
 					</td>
-
 					<td>
-
 					    <ej-radio-button id="Radio9" name="rad3" size="Medium" checked="false" enabled="true" />
-
 						<label for="Radio9" class="clslab">
-
 							Json Script
-
 						</label>
-
 					</td>
-
 				</tr>
-
-
-
 			</table>
-
 			<center>
-
-				<table>
-
+			<table>
 					<ej-button id="Submit" width="100px" size="Large" text="Submit" click="button">
-
 			</center> 
-
-				  </table> 
-
-
-
+			</table> 
 			<br />
-
 		</div>
-
 	</div>
-
 </div>
 
 {% endhighlight %}
@@ -284,155 +189,153 @@ Add the following code example in the index page.
 
 <div class="frame">
 
-        <div>
+	<div>
 
-            <div >
+		<div >
 
-                <br />
+			<br />
 
-               1. Are you a Fresher ?<br />
+			1. Are you a Fresher ?<br />
 
 
 
-                <table>
+			<table>
 
-                    <tr>
+				<tr>
 
-                        <td >
+					<td >
 
-                            <ej-radio-button id="Radio1" name="rad1" size="Small" checked="false" enabled="true" /> <!--Creates a small Radio Button-->
+						<ej-radio-button id="Radio1" name="rad1" size="Small" checked="false" enabled="true" /> <!--Creates a small Radio Button-->
 
-                            <label for="Radio1" class="clslab">
+						<label for="Radio1" class="clslab">
 
-                               Yes
+							Yes
 
-                            </label>
+						</label>
 
-                        </td>
+					</td>
 
-                        <td  >
+					<td  >
 
-                            <ej-radio-button id="Radio2" name="rad1" size="Small" checked="false" enabled="true" />
+						<ej-radio-button id="Radio2" name="rad1" size="Small" checked="false" enabled="true" />
 
-                            <label for="Radio2" class="clslab">
+						<label for="Radio2" class="clslab">
 
-                                No
+							No
 
-                            </label>
+						</label>
 
-                        </td>
+					</td>
 
-                    </tr>
+				</tr>
 
-                </table>
+			</table>
 
-                <br />
+			<br />
 
-                <br />
+			<br />
 
 
 
-                2. Do you complete any .NET certification courses ?<br />
+			2. Do you complete any .NET certification courses ?<br />
 
 
 
-                <table>
+			<table>
 
-                    <tr>
+				<tr>
 
-                        <td>
+					<td>
 
-                            <ej-radio-button id="Radio3" name="rad2" size="Small" checked="false" enabled="true" /> <!--Creates a small Radio Button-->
+						<ej-radio-button id="Radio3" name="rad2" size="Small" checked="false" enabled="true" /> <!--Creates a small Radio Button-->
 
-                            <label for="Radio1" class="clslab">
+						<label for="Radio1" class="clslab">
 
-                                Yes
+							Yes
 
-                            </label>
+						</label>
 
-                        </td>
+					</td>
 
-                        <td>
+					<td>
 
-                            <ej-radio-button id="Radio4" name="rad2" size="Small" checked="false" enabled="true" />
+						<ej-radio-button id="Radio4" name="rad2" size="Small" checked="false" enabled="true" />
 
-                            <label for="Radio2" class="clslab">
+						<label for="Radio2" class="clslab">
 
-                                No
+							No
 
-                            </label>
+						</label>
 
-                        </td>
+					</td>
 
-                    </tr>
+				</tr>
 
-                </table>
+			</table>
 
-                <br />
+			<br />
 
-                <br />
+			<br />
 
 
 
-                3. Are you interested to work in .NET platform ?<br />
+			3. Are you interested to work in .NET platform ?<br />
 
 
 
-                <table>
+			<table>
 
-                    <tr>
+				<tr>
 
-                        <td>
+					<td>
 
-                            <ej-radio-button id="Radio5" name="rad3" size="Small" checked="false" enabled="true" /> <!--Creates a small Radio Button-->
+						<ej-radio-button id="Radio5" name="rad3" size="Small" checked="false" enabled="true" /> <!--Creates a small Radio Button-->
 
-                            <label for="Radio1" class="clslab">
+						<label for="Radio1" class="clslab">
 
-                                Yes
+							Yes
 
-                            </label>
+						</label>
 
-                        </td>
+					</td>
 
-                        <td>
+					<td>
 
-                            <ej-radio-button id="Radio6" name="rad3" size="Small" checked="false" enabled="true" />
+						<ej-radio-button id="Radio6" name="rad3" size="Small" checked="false" enabled="true" />
 
-                            <label for="Radio2" class="clslab">
+						<label for="Radio2" class="clslab">
 
-                                No
+							No
 
-                            </label>
+						</label>
 
-                        </td>
+					</td>
 
-                    </tr>
+				</tr>
 
-                </table>
+			</table>
 
-                <br />
+			<br />
 
-                <br />
+			<br />
 
-                <center>
+			<center>
 
-                    <table>
+				<table>
 
-                        <ej-button id="Submit" width="100px" size="Large" text="Submit" click="button">
+					<ej-button id="Submit" width="100px" size="Large" text="Submit" click="button">
 
-                </center> 
+			</center> 
 
-                      </table> 
+					</table> 
 
+			<br />
 
+		</div>
 
-                <br />
+	</div>
 
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 
 
