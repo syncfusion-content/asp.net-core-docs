@@ -24,7 +24,7 @@ In the above screenshot, you can select hobbies, interest list and social networ
 
 ### Create a Checkbox
 
-ASP.NET Core Checkbox widget has built-in features like multiple selections. You can easily create the Checkbox widget using simple Tag helper “<ej-check-box />” as follows.
+ASP.NET Core Checkbox widget has built-in features like multiple selections. You can easily create the Checkbox widget using simple Tag helper `<ej-check-box />` as follows.
 
 1. Create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
 2. Add the following code to the corresponding view page to render Checkbox.
@@ -35,97 +35,97 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 
 
-	   <div class="frame">
+<div class="frame">
 
-			<div class="control">
+	<div class="control">
 
-				<div class="chkalign">
+		<div class="chkalign">
 
-					<h4>Hobbies</h4>
+			<h4>Hobbies</h4>
 
-					<table>
+			<table>
 
-						<tr>
+				<tr>
 
-							<td class="chkrad">
+					<td class="chkrad">
 
-								<ej-check-box id="check1" value="Music" />
+						<ej-check-box id="check1" value="Music" />
 
-								<label for="check1" class="clslab">
+						<label for="check1" class="clslab">
 
-									Music
+							Music
 
-								</label>
+						</label>
 
-							</td>
+					</td>
 
-							<td class="chkrad">
+					<td class="chkrad">
 
-								<ej-check-box id="Checkbox3" value="Sports" />
+						<ej-check-box id="Checkbox3" value="Sports" />
 
-								<label for="Checkbox3" class="clslab">
+						<label for="Checkbox3" class="clslab">
 
-									Sports
+							Sports
 
-								</label>
+						</label>
 
-							</td>
+					</td>
 
-							<td class="chkrad">
+					<td class="chkrad">
 
-								<ej-check-box id="Checkbox4" value="Bike Riding" />
+						<ej-check-box id="Checkbox4" value="Bike Riding" />
 
-								<label for="Checkbox4" class="clslab">
+						<label for="Checkbox4" class="clslab">
 
-									Bike Riding
+							Bike Riding
 
-								</label>
+						</label>
 
-							</td>
+					</td>
 
-						</tr>
+				</tr>
 
-					</table>
+			</table>
 
-					<h4>Interest List</h4>
+			<h4>Interest List</h4>
 
-					<table>
+			<table>
 
-						<tr>
+				<tr>
 
-							<td class="chkrad">
+					<td class="chkrad">
 
-								<ej-check-box id="Checkbox1" value="Playing Games" size="Medium" />
+						<ej-check-box id="Checkbox1" value="Playing Games" size="Medium" />
 
-								<label for="Checkbox1" class="clslab">Playing Games</label>
+						<label for="Checkbox1" class="clslab">Playing Games</label>
 
-							</td>
+					</td>
 
-							<td class="chkrad">
+					<td class="chkrad">
 
-								<ej-check-box id="Checkbox5" value="Hearing Songs" size="Medium" />
-								
-								<label for="Checkbox5" class="clslab">Hearing Songs</label>
+						<ej-check-box id="Checkbox5" value="Hearing Songs" size="Medium" />
+						
+						<label for="Checkbox5" class="clslab">Hearing Songs</label>
 
-							</td>
+					</td>
 
-							<td class="chkrad">
+					<td class="chkrad">
 
-								<ej-check-box id="Checkbox6" value="Reading Books" size="Medium" />
+						<ej-check-box id="Checkbox6" value="Reading Books" size="Medium" />
 
-								<label for="Checkbox6" class="clslab">Reading Books</label>
+						<label for="Checkbox6" class="clslab">Reading Books</label>
 
-							</td>
+					</td>
 
-						</tr>
+				</tr>
 
-					</table>
-
-				</div>
-
-			</div>
+			</table>
 
 		</div>
+
+	</div>
+
+</div>
 
 
    ~~~
@@ -139,23 +139,23 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 
 
-		<style>
+	<style>
 
-			td {
+		td {
 
-				float: left;
+			float: left;
 
-			}
+		}
 
-			label
+		label
 
-			{
+		{
 
-				float: right; margin:5px 10px;
+			float: right; margin:5px 10px;
 
-			}
+		}
 
-		</style>
+	</style>
 
 
    ~~~
@@ -184,31 +184,31 @@ ASP.NET Core Tri-State Checkbox widget renders by setting EnableTriState propert
 
 <h4>Social networks</h4>
 
-                <table>
+<table>
 
-                    <tr>
+	<tr>
 
-                        <td class="chkrad">
+		<td class="chkrad">
 
-                            <ej-check-box id="Checkbox2" value="Checkbox2" size="Medium" enable-tri-state="true" check-state="Indeterminate" /> <label for="Checkbox2" class="clslab">Facebook</label>
+			<ej-check-box id="Checkbox2" value="Checkbox2" size="Medium" enable-tri-state="true" check-state="Indeterminate" /> <label for="Checkbox2" class="clslab">Facebook</label>
 
-                        </td>
+		</td>
 
-                        <td class="chkrad">
+		<td class="chkrad">
 
-                            <ej-check-box id="Checkbox7" value="GPlus" size="Medium" enable-tri-state="true" check-state="Uncheck" /> <label for="Checkbox7" class="clslab">GPlus</label>
+			<ej-check-box id="Checkbox7" value="GPlus" size="Medium" enable-tri-state="true" check-state="Uncheck" /> <label for="Checkbox7" class="clslab">GPlus</label>
 
-                        </td>
+		</td>
 
-                        <td class="chkrad">
+		<td class="chkrad">
 
-                            <ej-check-box id="Checkbox8" value="Twitter" size="Medium" enable-tri-state="true" check-state="Check" /> <label for="Checkbox8" class="clslab">Twitter</label>
+			<ej-check-box id="Checkbox8" value="Twitter" size="Medium" enable-tri-state="true" check-state="Check" /> <label for="Checkbox8" class="clslab">Twitter</label>
 
-                        </td>
+		</td>
 
-                    </tr>
+	</tr>
 
-                </table>
+</table>
 
 
 
@@ -258,26 +258,16 @@ You can receive the Hobbies and Interest values using Checkbox. You can create a
 
             var checkeditem = [];                                               
 
-
-
-          $(".e-checkbox").each(function () {
-
-
+            $(".e-checkbox").each(function () {
 
              if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
 
-
-
                  checkeditem.push($("#" + $(this)[0].id).ejCheckBox("option","value"));
 
+             });
 
-
-                });
-
-
-
-            alert(checkeditem);        });
-
+            alert(checkeditem);        
+		});
     });
 
 </script>
