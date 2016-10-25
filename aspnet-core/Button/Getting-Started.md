@@ -87,7 +87,7 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
 2. Add the following code example to your view page to display Audio control and render the Button.
 
 
-   ~~~ html
+{% highlight html %}
    
 <div class="audiodiv">
 
@@ -137,24 +137,24 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
     </table>
 </div>
 
-   ~~~
+{% endhighlight  %}
   
 
 3. Add the following event function to script section in your view page to use Button control feature as the Multimedia player control.
 
 
 
-   ~~~ js
+{% highlight js %}
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
 	//getting audio control access and stored in variable v
 
 	var v = document.getElementsByTagName("audio")[0];
 
 	//trigger the audio control using variable v
-
-	function play(e) {
+    
+    function play(e) {
 
 		if (e.isChecked) {
 
@@ -169,8 +169,6 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
 		}
 
 	}
-
-
 
 	function start() {
 
@@ -200,14 +198,12 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
 
 	}
 
-	</script>
+</script>
 
-   ~~~
-  
-   
+{% endhighlight %}
+
+
 4. The following screenshot displays Multimedia player control.
-
-
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -220,6 +216,7 @@ In this section, you can learn how to create a Microsoft Office Ribbon used to c
 
 
 {% highlight html %}
+
 <table>
    <tr>
      <td>                 
@@ -257,7 +254,7 @@ In this section, you can learn how to create a Microsoft Office Ribbon used to c
 
 1. Add the following code example in your view page for sample text.
 
-   ~~~ html 
+{% highlight html %}
 
 		<div class="sample">
 
@@ -265,74 +262,72 @@ In this section, you can learn how to create a Microsoft Office Ribbon used to c
 
 		</div>
 
-   ~~~
+{% endhighlight  %}
   
 
 
 
 2. Add the following event function to the script section in your view page to use Button control feature as the Multimedia player control.
 
-   ~~~ javascript
+{% highlight js %}
 
-		<script type="text/javascript">
+<script type="text/javascript">
 
+    function bold(e) {                
 
-
-					function bold(e) {                
-
-						if (e.isChecked) {
+        if (e.isChecked) {
 
 
 
-							$(".sample span").wrap("<b></b>");
+            $(".sample span").wrap("<b></b>");
 
-						} else {
-
-
-
-							$(".sample span").unwrap("<b></b>");
-
-						}
-
-					}
-
-					function italic(e) {
-
-						if (e.isChecked) {
-
-							$(".sample span").wrap("<i></i>");
-
-						} else {
+        } else {
 
 
 
-							$(".sample span").unwrap("<i></i>");
+            $(".sample span").unwrap("<b></b>");
 
-						}
+        }
 
-					}
+    }
 
-					function underline(e) {
+    function italic(e) {
 
-						if (e.isChecked) {
+        if (e.isChecked) {
 
-							$(".sample span").wrap("<u></u>");
+            $(".sample span").wrap("<i></i>");
 
-						} else {
-
-
-
-							$(".sample span").unwrap("<u></u>");
-
-						}
-
-					}
+        } else {
 
 
 
-				</script>
+            $(".sample span").unwrap("<i></i>");
 
-   ~~~
+        }
+
+    }
+
+    function underline(e) {
+
+        if (e.isChecked) {
+
+            $(".sample span").wrap("<u></u>");
+
+        } else {
+
+
+
+            $(".sample span").unwrap("<u></u>");
+
+        }
+
+    }
+
+
+
+</script>
+
+{% endhighlight  %}
   
 
 
