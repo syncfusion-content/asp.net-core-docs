@@ -28,10 +28,10 @@ This section expalins the essential steps required to render a DatePicker contro
 N>  DatePicker is a form control, so in form submission its value can be retrieved as a name value pair. By default, ID will be set as name attribute to achieve uniqueness. If you want to set the name manually you can use our HtmlAttributes API as given in the below code.
     {% highlight cshtml %}
 
-    @{
+@{
         Dictionary<string, object> htmlAttr = new Dictionary<string, object>();
         htmlAttr.Add("name", "dp_startval");
-    }
+ }
 
     {% endhighlight %}
 
@@ -45,7 +45,7 @@ N>  DatePicker is a form control, so in form submission its value can be retriev
 
 The Essential DatePicker provides an options to configure all its properties and to get its value. DatePicker value can be assigned during initialization or at run time. Below code shows how to assign values at initialization.
 
- ~~~ cshtml
+    ~~~ cshtml
 
     <ej-date-picker id="startDate" value="DateTime.Now"  date-format="yyyy/MM/dd"></ej-date-picker>
 
@@ -73,8 +73,8 @@ You can assign values to existing DatePicker using its instance. Consider that y
   
     </script>
 
-
     ~~~
+    
 
 N> Existing DatePicker instance can be created by jQuery.data() and you can control the API�s of DatePicker behavior.
 
@@ -104,6 +104,7 @@ Essential DatePicker can be created using DatePickerFor extension, which behaves
 Please refer the below code to create the DatePickerFor control in your application.
 
     ~~~ cshtml
+
     @* bind the "date" property in model to strongly typed Datepicker *@
     <ej-date-picker id="dp" ej-for="date" min-date="DateTime.Now"></ej-date-picker>
     @Html.ValidationMessageFor(model => model.date)
