@@ -26,7 +26,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
 1. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
 
-    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it it your project.
+    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
 
 2. Add the following code to the corresponding view page to render the TimePicker.
 
