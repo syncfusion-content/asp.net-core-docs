@@ -30,7 +30,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
 2. Add the following code to the corresponding view page to render the TimePicker.
 
-   ~~~ cshtml
+   {% highlight CSHTML %}
 
 
 	@*Add the following code example to the corresponding CSHTML page to render TimePicker widget*@
@@ -101,11 +101,8 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
         </table>
 
-   ~~~
+   {% endhighlight %}
    
-
-
-
 3. Add the following styles to show the TimePicker control in horizontal order in the Content folder.
 
    ~~~ css
@@ -178,7 +175,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
 1. Add the following code to the corresponding view page to render the TimePicker.
 
-   ~~~ cshtml
+   {% highlight CSHTML %}
 
 	@*Add the following code example to the corresponding CSHTML page to render TimePicker widget*@
 
@@ -261,12 +258,12 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
         </table>
 
-   ~~~
+   {% endhighlight %}
    
 
 2. Add the following styles to show the TimePicker control in horizontal order in the Content folder.
 
-   ~~~ css
+   {% highlight css %}
 
 	<style type="text/css" class="cssStyles">
 
@@ -298,7 +295,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
 	</style>
 
-   ~~~
+   {% endhighlight %}
    
 
 
