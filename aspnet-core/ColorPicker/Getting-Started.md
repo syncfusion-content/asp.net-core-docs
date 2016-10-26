@@ -16,7 +16,7 @@ The Essential ColorPicker control provides support for selecting the colors from
 
 In this example, you will learn how to customize ColorPicker control in a category Application, in which a new category can be added along with a color chosen from ColorPicker. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_image/Getting-Started_img1.png)
 
 ColorPicker 
 {:.caption}
@@ -31,19 +31,19 @@ Creating category application involves the following steps:
 
 1. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
 
-    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it it your project.
+    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
 
 2. Add the following code to the corresponding view page for rendering the ColorPicker widget.
 
-    ~~~ cshtml
+{% highlight CSHTML %}
 
         <ej-color-picker id="CategoryColor" value="#278787"></ej-color-picker>
 
-    ~~~
+{% endhighlight %}  
 
     The above code will render a simple Colorpicker control as shown below.
 
-    ![](Getting-Started_images/Getting-Started_img2.png)
+    ![](Getting-Started_image/Getting-Started_img2.png)
     
 
 ### Initialize the other widgets
@@ -143,9 +143,9 @@ You can refer to the following link for more information on rendering ListBox co
 
 2. Add the following style section to align form fields.
 
-    ~~~ css
+    {% highlight css %}
 
-        <style>
+<style type="text/css" class="cssStyles">
         .content-container-fluid > .row {
             width: 410px;
             border: 1px solid #bbbcbb;
@@ -216,13 +216,13 @@ You can refer to the following link for more information on rendering ListBox co
         }
 </style>
 
-    ~~~
+    {% endhighlight %}
 
 3. Get the instance of ListBox and Colorpicker controls
 
-    ~~~ js
+~~~ javascript
 
-        <script>
+        <script type="text/javascript">
 
             var listBoxObj, colorObj;
 
@@ -245,13 +245,13 @@ You can refer to the following link for more information on rendering ListBox co
 
         </script>
 
-    ~~~ 
+    ~~~
 
 4. Run the above code to render the following output.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_image/Getting-Started_img3.png)
 
 Color Picker control
 {:.caption}
@@ -260,9 +260,9 @@ Color Picker control
 
 1. Category can be added to the ListBox by upon Button click. The following script section define the click event for the button element.
 
-   ~~~ js
+~~~ javascript
 
-		<script>
+		<script type="text/javascript">
 
 				jQuery(function ($) {
 
@@ -290,7 +290,7 @@ Color Picker control
 
 2. The following screenshot illustrates the resultant output after you click Add button.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_image/Getting-Started_img4.png)
 
 Value from Color Picker control
 {:.caption}
