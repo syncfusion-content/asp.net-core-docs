@@ -41,9 +41,9 @@ Creating category application involves the following steps:
 
 {% endhighlight %}  
 
-    The above code will render a simple Colorpicker control as shown below.
+The above code will render a simple Colorpicker control as shown below.
 
-    ![](Getting-Started_image/Getting-Started_img2.png)
+![](Getting-Started_image/Getting-Started_img2.png)
     
 
 ### Initialize the other widgets
@@ -218,7 +218,7 @@ You can refer to the following link for more information on rendering ListBox co
 
     {% endhighlight %}
 
-3. Get the instance of ListBox and Colorpicker controls
+3. Get the instance of ListBox and Colorpicker controls.
 
 ~~~ javascript
 
@@ -244,12 +244,9 @@ You can refer to the following link for more information on rendering ListBox co
             }
 
         </script>
-
-    ~~~
+~~~
 
 4. Run the above code to render the following output.
-
-
 
 ![](Getting-Started_image/Getting-Started_img3.png)
 
@@ -258,35 +255,33 @@ Color Picker control
 
 ### Add value to ListBox Control 
 
-1. Category can be added to the ListBox by upon Button click. The following script section define the click event for the button element.
+1. Category can be added to the ListBox upon Button click. The following script section define the click event for the button element.
 
 ~~~ javascript
 
-		<script type="text/javascript">
+    <script type="text/javascript">
 
-				jQuery(function ($) {
+			jQuery(function ($) {
 
-				//reuse the previous section script block            
+			//reuse the previous section script block            
 
-				 //The following function used to add the new value to the listbox control
+			//The following function used to add the new value to the listbox control
+            function addCategoryvalue() {
 
-				function addCategoryvalue() {
+			    if ($("#categoryName").val() !== "") {
 
-					if ($("#categoryName").val() !== "") {
+			        //To get the selected color from the colorpicker by using getValue()
 
-						//To get the selected color from the colorpicker by using getValue()
+				    listBoxObj.addItem("<span class='color' style='background-color: " + colorObj.getValue() + "' ></span>" + $("#categoryName").val());
 
-						listBoxObj.addItem("<span class='color' style='background-color: " + colorObj.getValue() + "' ></span>" + $("#categoryName").val());
+				    $("#categoryName").val("");
 
-						$("#categoryName").val("");
+			        }
+		        }
+            });
 
-					}
-
-				}
-
-		</script>
-
-   ~~~
+	    </script>        
+~~~
 
 2. The following screenshot illustrates the resultant output after you click Add button.
 
