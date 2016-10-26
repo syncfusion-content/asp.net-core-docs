@@ -29,15 +29,5 @@ This section explains you briefly on how to create a GroupButton in your applic
 
 ~~~
 
-{% highlight js %}
-
-         <script>
-
-            $("#groupButton").ejGroupButton();// initialize the group button control
-
-         </script>
-
-{% endhighlight %}
-
 Also we can use the dataSource, to create the GroupButton which is explained under the dataSource section in this documentation.
 
