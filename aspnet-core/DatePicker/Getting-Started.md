@@ -15,7 +15,7 @@ This section expalins the essential steps required to render a DatePicker contro
 
 1. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
 
-    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it it your project.
+    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
 
 2. The Essential DatePicker can be created using EJTag helper as given below.
 
@@ -74,7 +74,7 @@ You can assign values to existing DatePicker using its instance. Consider that y
 ~~~
     
 
-N> Existing DatePicker instance can be created by jQuery.data() and you can control the API�s of DatePicker behavior.
+N> Existing DatePicker instance can be created by jQuery.data() and you can control the API`s of DatePicker behavior.
 
 ## Client Side Events
 
