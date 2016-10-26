@@ -34,13 +34,13 @@ The DateTimePicker widget basically renders built-in features like Month and Tim
 4. Add the following code to the corresponding view page to render DateTimePicker.
 
 
-   ~~~ cshtml
+   {% highlight CSHTML %}
        
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget*@
 
 	<ej-date-time-picker id="Datetime" width="175px" value='DateTime.Parse("05/15/2015 09:00 AM")'></ej-date-time-picker>
 
-   ~~~
+   {% endhighlight %}
    
 
     Execute the above code to render the following output.
@@ -54,13 +54,13 @@ The DateTimePicker widget basically renders built-in features like Month and Tim
 ## Set the Min/Max Date and Time Intervals
 In a real-time appointment booking scenario, the booking is open only for a limited number of days. You can select the date from the given range. This is achieved using the properties MinDateTime and MaxDateTime. Only the dates ranging between MinDateTime and MaxDateTime are enabled in the datepicker. Using the Interval property, you can set the interval.  
 
-    ~~~ cshtml
+    {% highlight CSHTML %}
        
 	 @*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized Mintime and Maxtime*@
 
     <ej-date-time-picker id="DateTime" min-date-time='DateTime.Parse("5/10/2015 09:00 AM")' max-date-time='DateTime.Parse("5/20/2015 06:00 PM")' interval="30" width="175px" value='DateTime.Parse("5/15/2015 09:00 AM")'></ej-date-time-picker>
     
-    ~~~
+    {% endhighlight %}
    
 
 ![](Getting-Started_images/Getting-Started_img3.png)

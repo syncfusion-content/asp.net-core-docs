@@ -35,11 +35,11 @@ Creating category application involves the following steps:
 
 2. Add the following code to the corresponding view page for rendering the ColorPicker widget.
 
-    ~~~ cshtml
+{% highlight CSHTML %}
 
         <ej-color-picker id="CategoryColor" value="#278787"></ej-color-picker>
 
-    ~~~
+{% endhighlight %}  
 
     The above code will render a simple Colorpicker control as shown below.
 
@@ -143,9 +143,9 @@ You can refer to the following link for more information on rendering ListBox co
 
 2. Add the following style section to align form fields.
 
-    ~~~ css
+    {% highlight css %}
 
-        <style>
+<style type="text/css" class="cssStyles">
         .content-container-fluid > .row {
             width: 410px;
             border: 1px solid #bbbcbb;
@@ -216,13 +216,13 @@ You can refer to the following link for more information on rendering ListBox co
         }
 </style>
 
-    ~~~
+    {% endhighlight %}
 
 3. Get the instance of ListBox and Colorpicker controls
 
-    ~~~ js
+~~~ javascript
 
-        <script>
+        <script type="text/javascript">
 
             var listBoxObj, colorObj;
 
@@ -260,9 +260,9 @@ Color Picker control
 
 1. Category can be added to the ListBox by upon Button click. The following script section define the click event for the button element.
 
-   ~~~ js
+~~~ javascript
 
-		<script>
+		<script type="text/javascript">
 
 				jQuery(function ($) {
 
