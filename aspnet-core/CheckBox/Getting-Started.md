@@ -31,9 +31,7 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 
 
-   ~~~ html
-
-
+{% highlight html %}
 
 <div class="frame">
 
@@ -127,8 +125,7 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 </div>
 
-
-   ~~~
+{% endhighlight  %}
 
 
 
@@ -136,8 +133,6 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 3. Add the following styles to the corresponding view page to show the Checkbox in horizontal order.
 
    ~~~ css
-
-
 
 	<style>
 
@@ -156,9 +151,8 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 		}
 
 	</style>
-
-
-   ~~~
+	
+	~~~
 
 
 
