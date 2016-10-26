@@ -69,7 +69,7 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 ~~~
 
-   ~~~ csharp
+{% highlight c# %}
    
 	// Add the following code to add list items in the controller page
 	public class Btn
@@ -91,7 +91,7 @@ Below is the sample to code to render the GroupButton JSON dataSource,
             return View();
         }
 
-   ~~~
+{% endhighlight %}
 
 
 ![](DataSource_images/DataSoruce_img1.jpg)
