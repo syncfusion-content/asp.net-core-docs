@@ -1,6 +1,6 @@
 ---
 layout: post
-title:OverView of the Toolbar control for Syncfusion ASP.NET Core
+title: OverView of the Toolbar control for Syncfusion ASP.NET Core
 description: OverView of the Toolbar control for Syncfusion ASP.NET Core  	 	
 platform:  aspnet-core
 control: Toolbar
