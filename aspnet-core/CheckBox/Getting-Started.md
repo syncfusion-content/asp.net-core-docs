@@ -132,7 +132,7 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 3. Add the following styles to the corresponding view page to show the Checkbox in horizontal order.
 
-   ~~~ css
+{% highlight css %}
 
 	<style>
 
@@ -152,7 +152,7 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 	</style>
 	
-	~~~
+{% endhighlight  %}
 
 
 
@@ -289,8 +289,7 @@ You can get the Media Player file type application like video, audio and picture
 
 
 
-   ~~~ html
-
+{% highlight html %}
 
 
 			<table>
@@ -365,8 +364,7 @@ You can get the Media Player file type application like video, audio and picture
 
 			</table>
 
-
-   ~~~
+{% endhighlight  %}
 
 
 
