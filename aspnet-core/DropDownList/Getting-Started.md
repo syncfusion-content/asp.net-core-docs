@@ -42,7 +42,7 @@ N> To render the DropDownLiist Control you can use either Razor or Tag helper co
 
 ## Populating data
 
-The DropDownList can be bounded to any local list data and remote data services. You can use DataManager component to serve data from the data services based on the query provided. To bind data to DropDownList control, the Datasource property's URL and Query are used. To render the DropDownList items, map the DropDownListFields with corresponding Fields
+The DropDownList can be bounded to any local list data and remote data services. You can use DataManager component to serve data from the data services based on the query provided. To bind data to DropDownList control, the Datasource propertys URL and Query are used. To render the DropDownList items, map the DropDownListFields with corresponding Fields
  
  
    {% highlight CSHTML %}
