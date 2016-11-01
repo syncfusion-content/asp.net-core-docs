@@ -28,8 +28,7 @@ Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page f
         <environment names="Development">
             <script src="~/lib/jquery/dist/jquery.js"></script>
             <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>        
-            <script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
+            <script src="~/js/site.js" asp-append-version="true"></script>                    
             <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
         </environment>
     </body>
