@@ -66,20 +66,18 @@ The Dialog control's tilte can be set through the 'title' property. which is sho
 
 In most cases, the Dialog controls are needed only in dynamic actions like showing some messages on clicking a button, to provide alert, etc. So the Dialog control provides “open” and “close” methods to open/close the dialogs dynamically.
 
-The Dialog control can be hidden on initialize using show-on-init property which should be set to false.
+The Dialog control can be hidden on initialize using **show-on-init** property which should be set to false.
 We can open and close the dialog on button click. Refer the below code
 
 {% highlight cshtml %}
 
-     <ej-button id="btnOpen" text="Click to open dialog" />
-            <div class="control">
-              <ej-dialog id="basicDialog" title="Dialog" is-responsive="true" close="onDialogClose">
-                 <e-content-template>
-                    <div class="cnt">
-                         This is sample content.
-                      </div>             
-                    </e-content-template>
-                </ej-dialog>       
+        <ej-button id="btnOpen" text="Click to open dialog" click="onclick" />
+        <div class="control">
+                <ej-dialog id="basicDialog" title="Dialog" is-responsive="true" close="onDialogClose" show-on-init="false">
+                <e-content-template>
+                        This is sample content.
+                </e-content-template>
+                </ej-dialog>
         </div>
        
 {% endhighlight %}  
@@ -87,7 +85,11 @@ We can open and close the dialog on button click. Refer the below code
 {% highlight javascript %}  
 
         function onclick() {
-          $("#basicDialog").ejDialog("open");
+            $("#basicDialog").ejDialog("open");
+            $("#btnOpen").hide();
+        }
+        function onDialogClose(args) {
+            $("#btnOpen").show();
         }
 
   {% endhighlight %}
