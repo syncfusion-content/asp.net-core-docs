@@ -188,7 +188,7 @@ yo aspnet
 
   ![](getting-started-images-linux/img4.jpg)
 
-* Now configure a Bower excution enviroment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages)
+* Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages)
 
 * Click the Extension icon in the Visual Studio Code left side pane, in the search window type the command *bower*. The Bower related extensions are listed out. Now select the Bower extension and click the install button.
 
