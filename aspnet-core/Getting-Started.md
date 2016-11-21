@@ -165,7 +165,7 @@ dotnet new -t web
   ![](getting-started_images/getting-started_img11.JPG)
 
 
-* Open your **bower.json** json file and specify our Syncfusion package will loads our scripts and CSS. Refer this [link] (https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages) to configure the bower execution environment in your local machine. Then install a bower extension in your Visual Studio code to complete a configuration.    
+* Open your **bower.json** json file and specify our Syncfusion package will loads our scripts and CSS. Refer this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages) to configure the bower execution environment in your local machine. Then install a bower extension in your Visual Studio code to complete a configuration.    
 
   ![](getting-started_images/getting-started_img12.JPG)
 
@@ -332,7 +332,7 @@ yo aspnet
   ![](getting-started_images/getting-started_img11.JPG)
 
 
-* Now configure a Bower execution environment in your local machine based on this [link] (https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages). Then install a Bower extension in your Visual Studio code to complete a configuration.    
+* Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages). Then install a Bower extension in your Visual Studio code to complete a configuration.    
 
   ![](getting-started_images/getting-started_img12.JPG)
 
