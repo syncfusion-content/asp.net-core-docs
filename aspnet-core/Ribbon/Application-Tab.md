@@ -24,7 +24,7 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
 
 {% highlight html %}
 
-    <ul id="ribbonmenu">
+   <ul id="ribbonmenu">
         <li>
             <a>FILE</a>
             <ul>
@@ -35,18 +35,18 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
                 <li><a>Print</a></li>
             </ul>
         </li>
-    </ul>
+   </ul>
 
 {% endhighlight  %}
 
 {% highlight CSHTML %}
 
   <ej-ribbon id="defaultRibbon" width="500px">
-    <e-application-tab type=Menu menu-item-id="ribbonmenu">
+     <e-application-tab type=Menu menu-item-id="ribbonmenu">
         <e-menu-settings open-on-click="true">
         </e-menu-settings>
-    </e-application-tab>
-    <e-tabs>
+     </e-application-tab>
+     <e-tabs>
           <e-tab id="home" text="HOME">
             <e-groups>
                 <e-group text="New" align-type=Rows content-id="Contents" type="custom">
@@ -63,7 +63,7 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
                 </e-group>
             </e-groups>
         </e-tab> 
-    </e-tabs>
+     </e-tabs>
   </ej-ribbon>
     
 {% endhighlight  %}
@@ -72,11 +72,11 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
 
 ### _Binding Data Source_
 
-Application Menu can be rendered using JSON Data Source. Please refer [`this`] page to set data source to `ejMenu`.
+Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/aspnetmvc/menu/data-binding) page to set data source to `ejMenu`.
 
 {% highlight html %}
 
-    <ul id="ribbonmenu1"></ul>
+     <ul id="ribbonmenu1"></ul>
     
 {% endhighlight  %}
 
@@ -105,7 +105,7 @@ Application Menu can be rendered using JSON Data Source. Please refer [`this`] p
                 </e-groups>
             </e-tab>
         </e-tabs>
-    </ej-ribbon>
+   </ej-ribbon>
 
 <script type="text/javascript">
 		var data = [{
@@ -179,9 +179,9 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
                 </e-groups>
             </e-tab>
         </e-tabs>
-    </ej-ribbon>
+  </ej-ribbon>
     
-    <div id="newCon">
+   <div id="newCon">
         <table>
             <tr>
                 <td>
@@ -189,8 +189,8 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
                 </td>
             </tr>
         </table>
-    </div>
-    <div id="accountCon">
+   </div>
+   <div id="accountCon">
         <div class="e-userDiv">
             <span>User Information</span>
             <div>
@@ -202,8 +202,8 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
             </div>
         </div>
         <a href="#">Sign out</a>
-    </div>
-    <div id="ribbonContent">Home control</div>
+   </div>
+   <div id="ribbonContent">Home control</div>
         
    @section ScriptSection{
      <script>
@@ -219,8 +219,8 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
    }
     
    @section StyleSection{
-    <link href="@Url.Content("~/css/ejthemes/ribbon-css/ej.icons.css")" rel="stylesheet" />
-    <style>
+     <link href="@Url.Content("~/css/ejthemes/ribbon-css/ej.icons.css")" rel="stylesheet" />
+     <style>
         .e-accuser {
              background-image: url('../css/ejthemes/common-images/ribbon/user.jpg');
         }

@@ -13,7 +13,7 @@ RibbonTabs is a collection of control `TabGroup` which enables you to organize r
 
 {% highlight html %}
 
-    <ul id="ribbonmenu">
+     <ul id="ribbonmenu">
         <li>
             <a>FILE</a>
             <ul>
@@ -24,7 +24,7 @@ RibbonTabs is a collection of control `TabGroup` which enables you to organize r
                 <li><a>Print</a></li>
             </ul>
         </li>
-    </ul>
+     </ul>
 
 {% endhighlight  %}
 
@@ -32,11 +32,11 @@ RibbonTabs is a collection of control `TabGroup` which enables you to organize r
 {% highlight cshtml %}
 
   <ej-ribbon id="defaultRibbon" width="500px">
-    <e-application-tab type=Menu menu-item-id="ribbonmenu">
+     <e-application-tab type=Menu menu-item-id="ribbonmenu">
         <e-menu-settings open-on-click="false">
         </e-menu-settings>
-    </e-application-tab>
-    <e-tabs>
+     </e-application-tab>
+     <e-tabs>
           <e-tab id="home" text="HOME">
             <e-groups>
                 <e-group text="Save" align-type=Rows>
@@ -64,7 +64,7 @@ RibbonTabs is a collection of control `TabGroup` which enables you to organize r
                 </e-group>
             </e-groups>
         </e-tab> 
-    </e-tabs>
+     </e-tabs>
    </ej-ribbon>
 
 {% endhighlight  %}
