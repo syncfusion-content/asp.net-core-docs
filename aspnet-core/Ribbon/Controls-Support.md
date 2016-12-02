@@ -26,46 +26,29 @@ The following table describes about the built in controls `Type` and their corre
 <tbody>
 <tr>
 <td class="type">Button</td>
-<td class="control settings"><span class="param-type">Button - ButtonSettings</span></td><td class="example last">
-	ButtonSettings: {
-					Width: 70,
-					ContentType: ej.ContentType.ImageOnly,
-					PrefixIcon: "e-ribbon e-new"
-				    }
+<td class="control settings"><span class="param-type">Button - button-settings</span></td><td class="example last">
+	button-settings width="70" content-type= "ImageOnly" prefix-icon="e-icon e-ribbon e-new"
  </td>
 </tr>
 <tr>
 <td class="type">SplitButton</td>
-<td class="control settings"><span class="param-type">SplitButton - SplitButtonSettings</span></td>
+<td class="control settings"><span class="param-type">SplitButton - split-button-settings</span></td>
 <td class="example last">
-	SplitButtonSettings: {
-                          ContentType: ej.ContentType.ImageOnly,
-                          TargetID: "pasteSplit",
-                          ButtonMode: "dropdown",
-                          ArrowPosition: ej.ArrowPosition.Bottom
-                          }
+	split-button-settings content-type="ImageOnly" target-id="pasteSplit" button-mode="dropdown" arrow-position=Bottom
  </td>
 </tr>
 <tr>
 <td class="type">ToggleButton</td>
-<td class="control settings"><span class="param-type">ToggleButton - ToggleButtonSettings</span></td>
+<td class="control settings"><span class="param-type">ToggleButton - toggle-button-settings</span></td>
 <td class="example last">
-	ToggleButtonSettings: {
-                           ContentType: ej.ContentType.ImageOnly,
-                           DefaultText: "Italic",
-                           ActiveText: "Italic"
-                           }
+	toggle-button-settings content-type="ImageOnly" default-text="Italic" active-text="Italic"
  </td>
 </tr>
 <tr>
 <td class="type">DropDownList</td>
-<td class="control settings"><span class="param-type">DropDownList - DropDownSettings</span></td>
+<td class="control settings"><span class="param-type">DropDownList - dropdown-settings</span></td>
 <td class="example last">
-	DropDownSettings: {
-                      DataSource: size,
-                      Text: "1pt",
-                      Width: 65
-                      }
+	dropdown-settings datasource="ViewBag.datasource" text="1pt" width="65"
  </td>
 </tr>
 </tbody>
