@@ -9,11 +9,11 @@ platform: aspnet-core
 
 # Filtering
 
-Filtering allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the quick filters collection. To enable filtering, define `kanbanfilter-settings` collection with display `text` and [`ej.Query`](https://help.syncfusion.com/js/datamanager/query). 
+Filtering allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the quick filters collection. To enable filtering, define `kanbanfilter-settings` collection with display `text` and `ej.Query`. 
 
 You can also define display tip to describe filter definition to user using property `description`. If the `description` property is not defined, given `text` will act as display tip.
 
-We can also customize filter option through external button or [`custom-toolbar-items`](https://help.syncfusion.com/js/api/ejkanban#members:customtoolbaritems) by using [`filterCards()`](https://help.syncfusion.com/js/api/ejkanban#methods:filtercards) method.
+We can also customize filter option through external button or `custom-toolbar-items` by using `filterCards()` method.
 
 The following code example describes the above behavior.
 
