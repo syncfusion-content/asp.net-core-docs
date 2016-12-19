@@ -70,6 +70,8 @@ The following code example describes the above behavior.
      </e-kanbancolumns>
      <e-kanbanfield content="Summary" primary-key="Id" priority="RankId" tag="Tags" color="Type" image-url="ImgUrl">
      </e-kanbanfield>
+     <e-kanbancard-settings color-mapping=@(new Dictionary<string, object>() { { "#cb2027", "Bug,Story" }, { "#67ab47", "Improvement" }, { "#fbae19", "Epic" }, { "#6a5da8", "Others"} })>
+     </e-kanbancard-settings>
 </ej-kanban>
   
 {% endhighlight  %}
@@ -151,33 +153,43 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 
-     <script id="cardtemplate" type="text/x-jsrender">        
-            <table>
+ <script id="cardtemplate" type="text/x-jsrender">
+    <table class="e-templatetable">
+        <colgroup>
+            <col width=@("10%")>
+            <col width=@("90%")>
+        </colgroup>
+        <tbody>
             <tr>
-                <td class="photo">
-                    <img src="{{:Priority}}.png">
-                </td>            
+                <td class="photo">                    
+                    <img src="../lib/syncfusion-javascript/Content/images/kanban/{{:Priority}}.png"/>
+                </td>
                 <td class="details">
                     <table>
                         <colgroup>
-                            <col width="30%">
-                            <col width="70%">
+                            <col width=@("10%")>
+                            <col width=@("90%")>
                         </colgroup>
                         <tbody>
                             <tr>
-                                <td class="CardHeader">   Name: </td>
+                                <td class="CardHeader">   Assignee: </td>
                                 <td>{{:Assignee}}</td>
                             </tr>
                             <tr>
-                                <td class="CardHeader">   Task: </td>
+                                <td class="CardHeader">   Summary: </td>
+                                <td>{{:Summary}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CardHeader">   Type: </td>
                                 <td>{{:Type}}</td>
                             </tr>
                         </tbody>
                     </table>
                 </td>
             </tr>
-            </table> 
-        </script>
+        </tbody>
+    </table>
+</script>
             
 {% endhighlight %}
 
@@ -186,33 +198,33 @@ The following code example describes the above behavior.
 
     <!--CSS for card template-->
         <style>
-            .e-templatetable {
-                width: 100%;
-            }
+             .e-templatetable {
+                  width: 100%;
+              }
 
             .details > table {
-                margin-left: 2px;
-                border-collapse: separate;
-                border-spacing: 2px;
-                width: 100%;
-            }
+                 margin-left: 2px;
+                 border-collapse: separate;
+                 border-spacing: 2px;
+                 width: 100%;
+              }
 
             .details td {
-                vertical-align: top;
-            }
+                 vertical-align: top;
+             }
 
             .details {
-                padding: 8px 8px 10px 0;
+               padding: 8px 8px 10px 0;
+             }
+
+           .photo {
+               padding: 8px 6px 10px 6px;
+               text-align: center;
             }
 
-            .photo {
-                padding: 8px 6px 10px 6px;
-                text-align: center;
-            }
-
-            .CardHeader {
-                font-weight: bolder;
-                padding-right: 10px;
+           .CardHeader {
+               font-weight: bolder;
+              padding-right: 10px;
             }
         </style>
 
@@ -222,16 +234,18 @@ The following code example describes the above behavior.
 
 {% highlight razor %}
 
-<ej-kanban id="KanbanBoard" key-field="Status" allow-title="true" dataSource="ViewBag.datasource">
-   <e-kanbancolumns>
-        <e-kanbancolumn header-text="Backlog" key=@(new List<string>(){"Open"})>
-        </e-kanbancolumn>
-        <e-kanbancolumn header-text="In Progress" key=@(new List<string>() {"InProgress"})></e-kanbancolumn>
-        <e-kanbancolumn header-text="Done" key=@(new List<string>() {"Close"})></e-kanbancolumn>
-   </e-kanbancolumns>
-   <e-kanbanfield primary-key="Id" color="Type">
-   </e-kanbanfield>
-</ej-kanban>
+     <ej-kanban id="KanbanBoard" key-field="Status" allow-title="true" dataSource="ViewBag.datasource">
+          <e-kanbancolumns>
+              <e-kanbancolumn header-text="Backlog" key=@(new List<string>(){"Open"})>
+              </e-kanbancolumn>
+              <e-kanbancolumn header-text="In Progress" key=@(new List<string>() {"InProgress"})></e-kanbancolumn>
+              <e-kanbancolumn header-text="Done" key=@(new List<string>() {"Close"})></e-kanbancolumn>
+          </e-kanbancolumns>
+          <e-kanbanfield primary-key="Id">
+          </e-kanbanfield>
+          <e-kanbancard-settings template="#cardtemplate">
+          </e-kanbancard-settings>
+      </ej-kanban>
   
 {% endhighlight  %}
 
@@ -412,8 +426,8 @@ The following code example describes the tooltip template.
                         <td class="details">
                             <table>
                                 <colgroup>
-                                    <col width="30%">
-                                    <col width="70%">
+                                    <col width=@("30%")>
+                                    <col width=@("70%")>
                                 </colgroup>
                                 <tbody>
                                     <tr>
