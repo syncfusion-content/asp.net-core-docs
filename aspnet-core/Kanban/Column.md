@@ -224,7 +224,7 @@ The following output is displayed as a result of the above code example.
 
 ### Header Template
 
-The template design that applies on for the column header. To render template, set `header-template`.
+The template design that applies on for the column header. To render template, set `header-template` property of the `kanbancolumn`.
 
 You can use JsRender syntax in the template.
 
@@ -737,9 +737,10 @@ The following code example describes the above behavior.
 
 {% highlight razor %}
 
-      <ej-kanban id="KanbanBoard" key-field="Status" dataSource="ViewBag.datasource" enable-total-count="true">
+   <ej-kanban id="KanbanBoard" key-field="Status" dataSource="ViewBag.datasource" enable-total-count="true">
           <e-kanbancolumns>
               <e-kanbancolumn header-text="Backlog" key=@(new List<string>(){"Open"})>
+                  <e-kanbancustomtotalcount text="Backlog Count"></e-kanbancustomtotalcount>
               </e-kanbancolumn>
               <e-kanbancolumn header-text="In Progress" key=@(new List<string>() {"InProgress"})></e-kanbancolumn>
               <e-kanbancolumn header-text="Done" key=@(new List<string>() {"Close"})></e-kanbancolumn>
