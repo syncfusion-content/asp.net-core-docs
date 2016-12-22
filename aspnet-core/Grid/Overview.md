@@ -12,7 +12,7 @@ The Grid control for ASP.NET Core is an efficient display engine for tabular dat
 
 **Key Features**
 
-Some important features of the Grid control for JavaScript are:
+Some important features of the Grid control for ASP.NET Core are:
 
 * **Data sources**—Bind the Grid control with a List of collections or ej.DataManager.
 * **Sorting and grouping**—Supports __n__ levels of sorting and grouping.
@@ -27,3 +27,4 @@ Some important features of the Grid control for JavaScript are:
 * **RTL support**—Provides a full-fledged right-to-left mode which aligns content in the Grid control from right to left.
 * **Localization**—Provides inherent support to localize the UI.
 
+N> We have placed some of the features in this UG documentation using razor code. We will replace the razor code with tagHelpers in future releases.
