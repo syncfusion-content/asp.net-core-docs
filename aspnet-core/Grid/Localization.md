@@ -723,5 +723,3 @@ public partial class GridController : Controller
 
 
 ![](Localization_images/Globalizationandlocalization._img4.png)
-
-
