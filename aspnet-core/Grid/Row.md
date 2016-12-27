@@ -92,5 +92,3 @@ By default its value is `true`, so the following code example describes the how 
 The following output is displayed as a result of the above code example.
 
 ![](Row_images/Row_img4.png)
-
-
