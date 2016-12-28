@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Essential ASP.NET Core Spreadsheet
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
-platform: ASP.NET Core
+platform: aspnet-core
 control: Spreadsheet
 documentation: UG
 keywords: 
@@ -16,7 +16,7 @@ This section explains briefly about how to create Spreadsheet in your ASP.NET co
 The following steps explains how to create spreadsheet,
 
 1. Create Syncfusion ASP.NET Core application. You can refer [ASP.NET core Getting started documentation](https://help.syncfusion.com/aspnet-core/getting-started) to create new project and add necessary packages and script files.  
-2. Add a Spreadsheet control in view page. Spreadsheet is rendered with default `height` and `width`. You can also customize Spreadsheet dimension by setting height and width property in `e-scroll-settings`. 
+2. Add a Spreadsheet control in view page. Spreadsheet is rendered with default height and width. You can also customize Spreadsheet dimension by setting `height` and `width` property in `e-scroll-settings`. 
 
 {% highlight cshtml %}
 
@@ -116,8 +116,10 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% highlight cshtml %}
 <ej-spread-sheet id="Spreadsheet">
-    <e-export-settings excel-url="http://js.syncfusion.com/demos/ejservices/api/JSXLExport/ExportToExcel">
+    //...
+    <e-export-settings excel-url="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport">
     </e-export-settings>
+    //...
 </ej-spread-sheet>
 {% endhighlight %}
 
