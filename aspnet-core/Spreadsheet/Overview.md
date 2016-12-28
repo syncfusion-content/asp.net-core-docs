@@ -1,7 +1,7 @@
 ---
 title: Overview
 description: overview
-platform: ASP.NET Core
+platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 keywords: 
