@@ -36,7 +36,7 @@ It is controlled by an API named `AppointmentTemplateId` which accepts the id va
 
 Usually, the appointments are displayed with its **Subject** and **Start/End time** on the Scheduler. If suppose, the subject needs to be accompanied with location text, it can be done with the following code example.
 
-{% highlight razor %}
+{% highlight html %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -78,7 +78,7 @@ The template design that applies on the Scheduler elements such as all-day cells
 
 The cells can be customized with the following code example.
 
-{% highlight razor %}
+{% highlight html %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" all-day-cells-template-id="#alldayTemplate" work-cells-template-id="#workTemplate">
     <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
@@ -132,7 +132,7 @@ The template design that applies on for the date header part of the Scheduler. A
 
 The Date header can be customized with the following code example.
 
-{% highlight razor %}
+{% highlight html %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" date-header-template-id="#dateTemplate">
     <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
@@ -168,7 +168,7 @@ The field names that are mapped from the dataSource to the appropriate field pro
 
 To customize the resource header with some additional images or other customizations in **Vertical** **Scheduler** **View** – refer the below code example.
 
-{% highlight razor %}
+{% highlight html %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -214,7 +214,7 @@ To customize the resource header with some additional images or other customizat
 
 To perform the above specified same customization in **Horizontal** **Scheduler** **view**, the template structure varies a little bit as depicted below.
 
-{% highlight razor %}
+{% highlight html %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -247,7 +247,7 @@ To perform the above specified same customization in **Horizontal** **Scheduler*
 
 {% highlight html %}
 
-// Template for ResourceHeader in Horizontal
+<!-- Template for ResourceHeader in Horizontal -->
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div style="width:15px;height:15px;margin-right:5px;margin-top:2px;float:left;background:{{:Color}};"></div><div style="float:left;margin-left:5px;">{{:Text}}</div>
@@ -269,7 +269,7 @@ The `TimeScale` is also availed with template options to allow customization. It
 
 The template customization for major and minor timeslots can be referred from the following code example.
 
-{% highlight razor %}
+{% highlight html %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px"current-date="new DateTime(2015, 11, 8)">
     <e-time-scale enable="true" major-slot="60" major-slot-template-id="#majorTemplate" minor-slot-count="6" minor-slot-template-id="#minorTemplate"></e-time-scale>
@@ -313,7 +313,7 @@ The template design which can be applied to the content of the priority field in
 
 When template is applied for the `PrioritySettings`, these default icons will be replaced by the custom icons or styles defined newly. The following code example depicts the way to enable the priority settings and to define the new custom styles to replace the default icons in the Priority field.
 
-{% highlight razor %}
+{% highlight html %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -378,7 +378,7 @@ By making use of template feature with tooltip, all the field names that are map
 
 To define the template option for tooltip, the  `TooltipSettings` must be enabled first. The following code example depicts the way to add the tooltip template.
 
-{% highlight razor %}
+{% highlight html %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -419,7 +419,7 @@ Agenda View provides two separate templates – one for date column and another 
 
 The following code snippet shows how to customize the content of the date, time and event column.
 
-{% highlight razor %}
+{% highlight html %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -472,7 +472,7 @@ The following code snippet shows how to customize the content of the date, time 
 
 {% highlight js %}
 
-function _getDate(date) {
+    function _getDate(date) {
         var dateCol = new Date(date);
         return dateCol.toDateString();
     }
