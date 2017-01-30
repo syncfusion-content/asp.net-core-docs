@@ -36,7 +36,7 @@ It is controlled by an API named `AppointmentTemplateId` which accepts the id va
 
 Usually, the appointments are displayed with its **Subject** and **Start/End time** on the Scheduler. If suppose, the subject needs to be accompanied with location text, it can be done with the following code example.
 
-{% highlight html %}
+{% highlight razor %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -56,14 +56,14 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 
 <!-- Template for Appointment -->
 <script id="apptemplate" type="text/x-jsrender">
-    {{if View !== "agenda"}}
+    {{"{{"}}if View !== "agenda"{{}}}}
     <div style="height:100%; background-color:orange; margin-left: 5px;">
-        <div style="margin-left: 2px;">{{:Subject}}</div>
-        <div style="margin-left: 2px;">{{:Location}}</div>
+        <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
+        <div style="margin-left: 2px;">{{"{{"}}:Location{{}}}}</div>
     </div>
-    {{else}}
-    <div>{{:Subject}}, {{:Location}}</div>
-    {{/if}}
+    {{"{{"}}else{{}}}}
+        <div>{{"{{"}}:Subject{{}}}}{{"{{"}}:Location{{}}}}</div>
+    {{"{{"}}/if{{}}}}
 </script>
 
 {% endhighlight %}
@@ -78,7 +78,7 @@ The template design that applies on the Scheduler elements such as all-day cells
 
 The cells can be customized with the following code example.
 
-{% highlight html %}
+{% highlight razor %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" all-day-cells-template-id="#alldayTemplate" work-cells-template-id="#workTemplate">
     <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
@@ -97,31 +97,31 @@ The cells can be customized with the following code example.
 
 <!-- Template for Workcells and Monthcells -->
 <script id="workTemplate" type="text/x-jsrender">
-    {{if resource.classname == 'e-parentnode'}}
-    {{:resource.text }}
-    {{else}}
-    {{if date.getDay() == 0 || date.getDay() == 6}}
-    <div style="background-color:lightblue">Weekend</div>
-    {{else}}
-    {{if view == 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5}}
-    <div style="background-color:burlywood">Meeting</div>
-    {{else resource.text != 'Party Hall-B' && date.getDate() == 15}}
-    <div style="background-color:thistle">Holiday</div>
-    {{else view != 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5 && date.getHours() == 10}}
-    <div style="background-color:burlywood">Meeting</div>
-    {{else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5}}
-    <div style="background-color:lightblue">Conf.</div>
-    {{else resource.text == 'Party Hall-B' && date.getDate() == 16"}
+    {{"{{"}}if resource.classname == 'e-parentnode'{{}}}}
+        {{"{{"}}:resource.text{{}}}}
+    {{"{{"}}else{{}}}}
+        {{"{{"}}if date.getDay() == 0 || date.getDay() == 6{{}}}}
+            <div style="background-color:lightblue">Weekend</div>
+        {{"{{"}}else{{}}}}
+            {{"{{"}}if view == 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5{{}}}}
+                <div style="background-color:burlywood">Meeting</div>
+            {{"{{"}}else resource.text != 'Party Hall-B' && date.getDate() == 15{{}}}}
+                <div style="background-color:thistle">Holiday</div>
+            {{"{{"}}else view != 'month' && resource.text == 'Party Hall-A' && date.getDay() == 5 && date.getHours() == 10{{}}}}
+                <div style="background-color:burlywood">Meeting</div>
+            {{"{{"}}else view == 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5{{}}}}
+                <div style="background-color:lightblue">Conf.</div>
+            {{"{{"}}else resource.text == 'Party Hall-B' && date.getDate() == 16{{}}}}
                 <div style="background-color:darkkhaki">Happyday</div>
-            {{else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12}}
-    <div style="background-color:goldenrod">Conf.</div>
-    {{else date.getDate() == 10 && date.getMonth() == 11}}
-    <div style="background-color:palegreen">Day Spl</div>
-    {{else date.getDate() == 25 && date.getMonth() == 11}}
-    <div style="background-color:sandybrown">Christmas</div>
-    {{/if}}
-    {{/if}}
-    {{/if}}
+            {{"{{"}}else view != 'month' && resource.text == 'Party Hall-B' && date.getDay() == 5 && date.getHours() == 12{{}}}}
+                <div style="background-color:goldenrod">Conf.</div>
+            {{"{{"}}else date.getDate() == 10 && date.getMonth() == 11{{}}}}
+                <div style="background-color:palegreen">Day Spl</div>
+            {{"{{"}}else date.getDate() == 25 && date.getMonth() == 11{{}}}}
+                <div style="background-color:sandybrown">Christmas</div>
+            {{"{{"}}/if{{}}}}
+        {{"{{"}}/if{{}}}}
+    {{"{{"}}/if{{}}}}
 </script>
 
 {% endhighlight %}
@@ -132,7 +132,7 @@ The template design that applies on for the date header part of the Scheduler. A
 
 The Date header can be customized with the following code example.
 
-{% highlight html %}
+{% highlight razor %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" date-header-template-id="#dateTemplate">
     <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
@@ -145,7 +145,7 @@ The Date header can be customized with the following code example.
 
 <!-- Template for Dateheader -->
 <script id="dateTemplate" type="text/x-jsrender">
-    <div>{{:~dTemplate(date)}}</div>
+    <div>{{"{{"}}:~dTemplate(date){{}}}}</div>
 </script>
 
 <script>
@@ -168,7 +168,7 @@ The field names that are mapped from the dataSource to the appropriate field pro
 
 To customize the resource header with some additional images or other customizations in **Vertical** **Scheduler** **View** – refer the below code example.
 
-{% highlight html %}
+{% highlight razor %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -204,7 +204,7 @@ To customize the resource header with some additional images or other customizat
 <!-- Template for ResourceHeader in Vertical -->
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
-        <div style="width:15px;height:15px;margin-left:275px;margin-top:2px;float:left;background:{{:Color}};"></div><div style="float:left;margin-left:5px;">{{:Text}}</div>
+        <div style="width:15px;height:15px;margin-left:150px;margin-top:2px;float:left;background:{{"{{"}}:Color{{}}}};"></div><div style="float:left;margin-left:5px;">{{"{{"}}:Text{{}}}}</div>
     </div>
 </script>
 
@@ -214,7 +214,7 @@ To customize the resource header with some additional images or other customizat
 
 To perform the above specified same customization in **Horizontal** **Scheduler** **view**, the template structure varies a little bit as depicted below.
 
-{% highlight html %}
+{% highlight razor %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -247,10 +247,10 @@ To perform the above specified same customization in **Horizontal** **Scheduler*
 
 {% highlight html %}
 
-<!-- Template for ResourceHeader in Horizontal -->
+// Template for ResourceHeader in Horizontal
 <script id="resTemplate" type="text/x-jsrender">
     <div style="height:100%">
-        <div style="width:15px;height:15px;margin-right:5px;margin-top:2px;float:left;background:{{:Color}};"></div><div style="float:left;margin-left:5px;">{{:Text}}</div>
+        <div style="width:15px;height:15px;margin-top:2px;float:left;background:{{"{{"}}:Color{{}}}};"></div><div style="float:left;margin-left:5px;">{{"{{"}}:Text{{}}}}</div>
     </div>
 </script>
 
@@ -269,7 +269,7 @@ The `TimeScale` is also availed with template options to allow customization. It
 
 The template customization for major and minor timeslots can be referred from the following code example.
 
-{% highlight html %}
+{% highlight razor %}
 
 <ej-schedule id="Schedule1" width="100%" height="525px"current-date="new DateTime(2015, 11, 8)">
     <e-time-scale enable="true" major-slot="60" major-slot-template-id="#majorTemplate" minor-slot-count="6" minor-slot-template-id="#minorTemplate"></e-time-scale>
@@ -283,12 +283,12 @@ The template customization for major and minor timeslots can be referred from th
 
 <!-- Template for Majorslot -->
 <script id="majorTemplate" type="text/x-jsrender">
-    <div>{{:~major(date)}}</div>
+    <div>{{"{{"}}:~major(date){{}}}}</div>
 </script>
 
 <!-- Template for Minorslot -->
 <script id="minorTemplate" type="text/x-jsrender">
-    <div>{{:~minor(date)}}</div>
+    <div>{{"{{"}}:~minor(date){{}}}}</div>
 </script>
 
 <script>
@@ -313,7 +313,7 @@ The template design which can be applied to the content of the priority field in
 
 When template is applied for the `PrioritySettings`, these default icons will be replaced by the custom icons or styles defined newly. The following code example depicts the way to enable the priority settings and to define the new custom styles to replace the default icons in the Priority field.
 
-{% highlight html %}
+{% highlight razor %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -378,7 +378,7 @@ By making use of template feature with tooltip, all the field names that are map
 
 To define the template option for tooltip, the  `TooltipSettings` must be enabled first. The following code example depicts the way to add the tooltip template.
 
-{% highlight html %}
+{% highlight razor %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -401,12 +401,12 @@ To define the template option for tooltip, the  `TooltipSettings` must be enable
 <script id="tooltipTemplate" type="text/x-jsrender">
     <div style="width:145px">
         <div style="padding-top:3px;">
-            <div style="float:left; font:13px Segoe UI; font-weight:bold;">Subject&nbsp;&nbsp;:&nbsp;</div>
-            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{:Subject}}</div>
+            <div style="float:left; font:13px Segoe UI; font-weight:bold;">Subject:&nbsp;</div>
+            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Subject{{}}}}</div>
         </div>
         <div style="padding-top:3px">
             <div style="float:left; font:13px Segoe UI; font-weight:bold;">Location:&nbsp;</div>
-            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{:Location}}</div>
+            <div style="padding-top:2px; font:12px Segoe UI SemiBold;">{{"{{"}}:Location{{}}}}</div>
         </div>
     </div>
 </script>
@@ -419,7 +419,7 @@ Agenda View provides two separate templates – one for date column and another 
 
 The following code snippet shows how to customize the content of the date, time and event column.
 
-{% highlight html %}
+{% highlight razor %}
 
 @using MyProject.Models; // Here MyProject defines your project name to access the model class
 @{
@@ -442,7 +442,7 @@ The following code snippet shows how to customize the content of the date, time 
 <script id="datetemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
-            <div>{{:~dateDisplay(StartTime)}}</div>
+            <div>{{"{{"}}:~dateDisplay(StartTime){{}}}}</div>
         </div>
     </div>
 </script>
@@ -451,21 +451,21 @@ The following code snippet shows how to customize the content of the date, time 
 <script id="timetemplate" type="text/x-jsrender">
     <div style="height:100%">
         <div>
-            <div>{{:~timeDisplay(StartTime)}}</div>
+            <div>{{"{{"}}:~timeDisplay(StartTime){{}}}}</div>
         </div>
     </div>
 </script>
 
-<!-- Template for appointment which applies for event column in agenda view -->
+<!-- Template for appointment which applies for event column in agenda view. -->
 <script id="apptemplate" type="text/x-jsrender">
-    {{if View !== "agenda"}}
+    {{"{{"}}if View !== "agenda"{{}}}}
     <div style="height:100%; background-color:orange; margin-left: 5px;">
-        <div style="margin-left: 2px;">{{:Subject}}</div>
-        <div style="margin-left: 2px;">{{:Location}}</div>
+        <div style="margin-left: 2px;">{{"{{"}}:Subject{{}}}}</div>
+        <div style="margin-left: 2px;">{{"{{"}}:Location{{}}}}</div>
     </div>
-    {{else}}
-    <div>{{:Subject}}, {{:Location}}</div>
-    {{/if}}
+    {{"{{"}}else{{}}}}
+    <div>{{"{{"}}:Subject{{}}}} {{"{{"}}:Location{{}}}}</div>
+    {{"{{"}}/if{{}}}}
 </script>
 
 {% endhighlight %}
