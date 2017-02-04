@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Filtering
 
-Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `AllowFiltering`property as`true`.   
+Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allow-filtering`property as`true`.   
 
 The Grid supports three types of filter, they are
 
@@ -25,27 +25,24 @@ And also four types of filter menu is available in all filter types, they are
 
 The corresponding filter menu is opened based on the column type.
 
-N>  1. Need to specify the `Type` of column, when first record data value is empty or null otherwise the filter menu is not opened. 
-N>  2. The default filter type is Filter bar, when `AllowFiltering` is enabled and `FilterType` is not set.
+N>  1. Need to specify the [`type`](http://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
+N>  2. The default filter type is Filter bar, when `allow-filtering` is enabled and [`filter-type`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filter-type") is not set.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .Columns(col =>
-            {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-            }).Render();
-          }      
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>
+
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -71,31 +68,26 @@ The following output is displayed as a result of the above code example.
 
 ## Menu Filter
 
-You can enable menu filter by setting `FilterType` as `Menu` in `FilterSettings`
+You can enable menu filter by setting `filter-type` as `Menu` in `e-filter-settings`
 
-There is an option to show or hide the additional filter options in the Menu by setting `ShowPredicate` as `true` or `false` in `FilterSettings` respectively.
-
-N> For `FilterType` property you can assign either `string` value ("Menu") or `enum` value (`Syncfusion.JavaScript.FilterType.Menu`).
+There is an option to show or hide the additional filter options in the Menu by setting `show-predicate` as `true` or `false` in `e-filter-settings` respectively.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .FilterSettings(filter => { filter.FilterType(FilterType.Menu); })
-            .Columns(col =>
-              {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-             }).Render();
-          }      
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Menu"/>
+        <e-columns>
+            <e-column field="OrderID"  header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>     
+
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -135,27 +127,24 @@ Boolean Filter
 
 ## Excel-like filter
 
-You can enable excel menu by setting  `FilterType` as` Excel` in `FilterSettings` . The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
+You can enable excel menu by setting  `filter-type` as` Excel` in `e-filter-settings`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .FilterSettings(filter => { filter.FilterType(FilterType.Excel); })
-            .Columns(col =>
-            {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-            }).Render();
-         }      
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Excel"/>
+        <e-columns>
+            <e-column field="OrderID"  header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>
+
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -190,7 +179,7 @@ Checkbox list generation:
 
 By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `MaxFilterChoices` with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting `max-filter-choices` with required limit in integer.
 
 N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
 N> 2. `Query` of checkbox list can also be changed using excel filter events.
@@ -200,20 +189,16 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .FilterSettings(filter => { filter.FilterType(FilterType.Excel).MaxFilterChoices(4); })
-            .Columns(col =>
-             {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-             }).Render();
-           }
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Excel" max-filter-choices="4" />
+        <e-columns>
+            <e-column field="OrderID"  header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>
                    
 {% endhighlight  %}
 {% highlight c# %}
@@ -240,27 +225,24 @@ The following output is displayed as a result of the above code example.
 
 ### Case Sensitivity
 
-To perform filter operation with case sensitive in excel styled filter menu mode by setting `EnableCaseSensitivity` as `true`.
+To perform filter operation with case sensitive in excel styled filter menu mode by setting `enable-case-sensitivity` as `true`.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .FilterSettings(filter => { filter.FilterType(FilterType.Excel).EnableCaseSensitivity(true);  })
-            .Columns(col =>
-             {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-             }).Render();
-          }      
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Excel" enable-case-sensitivity="true"/>
+        <e-columns>
+            <e-column field="OrderID"  header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>     
+    
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -286,7 +268,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter Bar
 
-`Filter bar` row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the `FilterType` as `FilterBar`.
+`Filter bar` row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the `filter-type` as `FilterBar`.
 
 List of Filter bar Expressions:
 
@@ -431,20 +413,17 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .FilterSettings(filter => { filter.FilterType(FilterType.FilterBar); })
-            .Columns(col =>
-            {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-            }).Render();
-         }      
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="FilterBar"/>
+        <e-columns>
+            <e-column field="OrderID"  header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>    
+    
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -470,36 +449,32 @@ The following output is displayed as a result of the above code example.
 
 Filter bar modes:
 
-This specifies the grid to start the filter action while typing in the filter bar or after pressing the enter key based on `FilterBarMode`.There are two types of `FilterBarMode`, they are
+This specifies the grid to start the filter action while typing in the filter bar or after pressing the enter key based on `filter-bar-mode`.There are two types of `filter-bar-mode`, they are
 
 1. OnEnter
 2. Immediate
 
-N> For `FilterBarMode` property you can assign either `string` value (OnEnter) or `enum` value (`Syncfusion.JavaScript.FilterBarMode.OnEnter`).
 
 Filter bar message:
 
-The filter bar message is supported only for the `FilterType` as 'FilterBar'. The filtered data with column name is displayed in the grid pager itself. By default `ShowFilterBarStatus` is 'true'.
+The filter bar message is supported only for the `filter-bar-mode` as 'FilterBar'. The filtered data with column name is displayed in the grid pager itself. By default `show-filter-bar-status` is 'true'.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .AllowFiltering()
-            .FilterSettings(filter => { filter.ShowFilterBarStatus(true); })
-            .Columns(col =>
-             {
-                col.Field("OrderID").HeaderText("Order ID").Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                col.Field("Freight").HeaderText("Freight").Add();
-            }).Render();
-         }      
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+        <e-filter-settings show-filter-bar-status="true" />
+        <e-columns>
+            <e-column field="OrderID"  header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Customer ID"></e-column>
+            <e-column field="CustomerID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>
+
 {% endhighlight  %}
 {% highlight c# %}
 
