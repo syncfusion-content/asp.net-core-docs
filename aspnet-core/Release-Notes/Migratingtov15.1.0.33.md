@@ -1,7 +1,7 @@
 ---
-title 		: Essential Studio for ASP.NET Core 2017 Volume 1 Migration document
-description : Essential Studio for ASP.NET Core 2017 Volume 1 Migration document
-platform 	: aspnet-core
+title: Essential Studio for ASP.NET Core 2017 Volume 1 Migration document
+description: Essential Studio for ASP.NET Core 2017 Volume 1 Migration document
+platform: aspnet-core
 documentation: ug
 keywords: migration, upgradation, upgrade-changes, 2017vol1-changes
 ---
