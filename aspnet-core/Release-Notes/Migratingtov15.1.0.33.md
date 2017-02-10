@@ -50,6 +50,7 @@ As a part of NET Standard support, we have made below changes.
 ## PDF
 
 As a part of NET Standard support, we have made below changes.
+
 * PdfDocument.Save(string filename) has been removed, instead make use of PdfDocument.Save(Stream outputFileStream) method.
 * PdfLoadedDocument.Save(string filename) has been removed, instead make use of PdfLoadedDocument.Save(Stream outputFileStream) method.
 
