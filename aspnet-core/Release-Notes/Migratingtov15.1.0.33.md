@@ -58,8 +58,8 @@ As a part of NET Standard support, we have made below changes.
 
 As a part of NET Standard support, we have made below changes.
 
-* Presentation.Open(string filename) has been removed, instead make use of Presentation.Open(Stream inputFileStream) method.
-* Presentation.Save(string filename) has been removed, instead make use of Presentation.Save(Stream outputFileStream) method.
+* `Open(string filename)` method in `Presentation` class has been removed, instead make use of `Open(Stream inputFileStream)` method.
+* `Save(string filename)` method in `Presentation` class has been removed, instead make use of `Save(Stream outputFileStream)` method.
 
 ## XlsIO
 
