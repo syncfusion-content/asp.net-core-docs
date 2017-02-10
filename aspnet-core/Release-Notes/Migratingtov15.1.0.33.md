@@ -60,4 +60,13 @@ As a part of NET Standard support, we have made below changes
 
 ## XlsIO
 
-As a part of NET Standard support, we have made below changes
+As a part of NET Standard support, we have made below changes.
+
+* Package and assembly names has been changed to `Syncfusion.XlsIO.Portable`.
+* Overloads with file path parameter in `Open` and `Save` methods has been removed. The same can be achieved with "stream" parameter.
+* Scope of `SortedList<Tkey,Tvalue>` class is changed from public to internal.
+* Scope of `PropertyInfoExtension` class and its extension methods are changed from public to internal.
+* Namespace of `SortedList<Tkey,Tvalue>` class is changed from `System.Collections.Generic` to `Syncfusion.XlsIO.Implementation`
+* Namespace of `ICloneable` interface is changed from `System` to Syncfusion.CompoundFile.XlsIO.
+* Namespace for `RichTextReader` class is given as Syncfusion.XlsIO.
+* `Syncfusion.Calculate` namespace is changed as `Syncfusion.XlsIO.Calculate`.
