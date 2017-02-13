@@ -47,6 +47,13 @@ keywords: migration, upgradation, upgrade-changes, 2017vol1-changes
 
 As a part of NET Standard support, we have made below changes.
 
+* `Open(string filename)` method of `WordDocument` class has been removed, instead make use of `Open(Stream inputFileStream, FormatType outputFileFormatType)` method.
+* `Save(string filename)` method of `WordDocument` class has been removed, instead make use of `Save(Stream OutputFileStream, FormatType outputFileFormatType)` method.
+* `HtmlExportCssStyleSheetType`, and `HtmlExportCssStyleSheetFileName` properties of `SaveOptions` class has been removed and now support only inline & internal CSS in HTML export.
+* `HTMLExportImagesFolder` property of `SaveOptions` class has been removed, instead make use of `ImageNodeVisited` event of `SaveOptions` to save the images in the specified path and use the saved path as image source during HTML export.
+* In HTML import, loading image from absolute/web path has been removed. Instead make use of `ImageNodeVisited` event of `HTMLImportSettings` class to load image from the specified path.
+* `IsValidXHTML(string html, XHTMLValidationType type)` and `IsValidXHTML(string html, XHTMLValidationType type, out string exceptionMessage)` methods of `WTextBody` class has been removed, instead make use of[this](http://www.syncfusion.com/downloads/support/directtrac/general/HTMLVA~1-1531659666.ZIP# "") extension in your application to check the XHTML 1.0 validation. Refer [this](http://www.syncfusion.com/downloads/support/directtrac/general/HTMLCO~1-516511074.ZIP# "") sample for more details.
+
 ## PDF
 
 As a part of NET Standard support, we have made below changes.
@@ -58,8 +65,8 @@ As a part of NET Standard support, we have made below changes.
 
 As a part of NET Standard support, we have made below changes.
 
-* Presentation.Open(string filename) has been removed, instead make use of Presentation.Open(Stream inputFileStream) method.
-* Presentation.Save(string filename) has been removed, instead make use of Presentation.Save(Stream outputFileStream) method.
+* `Open(string filename)` method in `Presentation` class has been removed, instead make use of `Open(Stream inputFileStream)` method.
+* `Save(string filename)` method in `Presentation` class has been removed, instead make use of `Save(Stream outputFileStream)` method.
 
 ## XlsIO
 
