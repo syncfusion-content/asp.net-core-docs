@@ -16,7 +16,7 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 * Visual Studio [Code](https://code.visualstudio.com/).
 
-* ASP.NET Core 1.0.1 [Preview2](https://go.microsoft.com/fwlink/?LinkID=827517).
+* ASP.NET Core 1.1.0 [Preview2](https://go.microsoft.com/fwlink/?LinkID=835011).
 
 * [Homebrew](http://brew.sh/)
 
@@ -25,9 +25,16 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 >   Install the latest version OpenSSL by executing the following commands in your terminal window.
 
 {% highlight text %}
-~$ brew update
-~$ brew install openssl
-~$ brew link -force openssl
+brew update
+
+brew install openssl
+
+mkdir -p /usr/local/lib
+
+ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
+
+ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
+
 {% endhighlight %}
 
 ## Configuration
@@ -81,7 +88,7 @@ dotnet new -t web
 
 #### Building Projects with Yeoman
 
-Yeoman is a scaffolding tool for modern web apps and helps us to quick start a new web project. The following steps helps to create an ASP.NET Core 1.0 application using [yeoman](http://yeoman.io/) tool.
+Yeoman is a scaffolding tool for modern web apps and helps us to quick start a new web project. The following steps helps to create an ASP.NET Core 1.1.0 application using [yeoman](http://yeoman.io/) tool.
 Since **Visual Studio Code** uses folder structure for storing files of application, create a folder of the name **ASP.NET**.
 
 * Open the Command line terminal and execute the below mentioned command to install the Node.js.
@@ -162,7 +169,7 @@ ext install bower
 
   ![](getting-started-images-mac/img8.png)
 
-> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -191,35 +198,23 @@ dotnet restore
 
 <head>
 
-<environment names="Development">
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-<link rel="stylesheet" href="~/css/site.css" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
 
-</environment>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/jsrender/jsrender.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+
 
 </head>
 
 <body>
 
-<environment names="Development">
-
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-
-</environment>
 
 </body>
 
