@@ -18,7 +18,8 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 * Mono
 
-* .NET Core [SDK](https://dotnetcli.blob.core.windows.net/dotnet/Sdk/rel-1.0.0/dotnet-sdk-ubuntu-x64.latest.deb)
+* Install .NET Core [SDK](https://www.microsoft.com/net/download/linux) based on your OS version. 
+
 
 Set up the apt-get feeds, then install .NET Core on Ubuntu or Linux Mint. Execute the below commands in terminal window to set up the apt-get feeds for Ubuntu 14.04 and 16.04.
 
@@ -30,7 +31,7 @@ Open your terminal window and execute the following commands.
 
 sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
 
-sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 
 sudo apt-get update
 
@@ -43,7 +44,18 @@ Open your terminal window and execute the following commands
 
 sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
 
-sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
+
+sudo apt-get update
+
+### Ubuntu 16.10
+
+Open your terminal window and execute the following commands
+{% highlight text %}
+
+sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ yakkety main" > /etc/apt/sources.list.d/dotnetdev.list'
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 
 sudo apt-get update
 
@@ -51,7 +63,7 @@ sudo apt-get update
 
 ### Mono Installation
 
-The [Mono Project](http://www.mono-project.com/) (powered by Xamarin) is a project that tends to make the .NET Framework available to Microsoft's foreign platforms. To run our ASP.NET Core 1.0 web application on Linux, install the Mono by executing the below commands.
+The [Mono Project](http://www.mono-project.com/) (powered by Xamarin) is a project that tends to make the .NET Framework available to Microsoft's foreign platforms. To run our ASP.NET Core 1.1.0 web application on Linux, install the Mono by executing the below commands.
 
 * Execute this command to add the Mono's GPG key to the packages manager.
 
@@ -95,7 +107,7 @@ Before you start, please ensure any previous .NET Core version installed on your
 
 {% highlight text %}
 
-sudo apt-get install dotnet-dev-1.0.0-preview2-003121
+sudo apt-get install dotnet-dev-1.0.0-preview2.1-003177
 
 {% endhighlight %}
 
@@ -209,7 +221,7 @@ yo aspnet
 
   ![](getting-started-images-linux/img8.jpg)
 
-> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -239,35 +251,22 @@ dotnet restore
 
 <head>
 
-<environment names="Development">
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-<link rel="stylesheet" href="~/css/site.css" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
 
-</environment>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/jsrender/jsrender.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
 
 </head>
 
 <body>
 
-<environment names="Development">
-
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-
-</environment>
 
 </body>
 

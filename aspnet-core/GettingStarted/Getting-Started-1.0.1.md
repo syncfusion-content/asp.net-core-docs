@@ -12,7 +12,7 @@ documentation: ug
 
 ## ASP.NET Core 1.0.1 Application 
 
-### Using Visual Studio
+### Using Visual Studio 2015
 
 #### System Requirements:
 
@@ -34,7 +34,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_img5.png)
 
-> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. 
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release. 
 
 *  In the Solution Explorer window, click the **"Show All Files"** button.
 
@@ -62,27 +62,30 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    {% highlight cshtml %}
    
-	<html>
-	<head>    
-		<environment names="Development">
-			<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-			<link rel="stylesheet" href="~/css/site.css" />
-			<link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
-			<link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
-		</environment>   
-	</head>
-	<body>
+<html>
 
-		<environment names="Development">
-			<script src="~/lib/jquery/dist/jquery.js"></script>
-			<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-			<script src="~/js/site.js" asp-append-version="true"></script>
-			<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-			<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-		</environment> 
-			
-	</body>
-	</html>
+<head>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+<link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
+
+<link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/jsrender/jsrender.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
 
    {% endhighlight %}
 
@@ -186,7 +189,7 @@ dotnet new -t web
 
   ![](getting-started_images/getting-started_img15.JPG)
 
-> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -217,35 +220,22 @@ dotnet restore
 
 <head>
 
-<environment names="Development">
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-<link rel="stylesheet" href="~/css/site.css" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
 
-</environment>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/jsrender/jsrender.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
 
 </head>
 
 <body>
 
-<environment names="Development">
-
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-
-</environment>
 
 </body>
 
@@ -353,7 +343,7 @@ yo aspnet
 
   ![](getting-started_images/getting-started_img15.JPG)
 
-> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release.
+> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -386,35 +376,22 @@ dotnet restore
 
 <head>
 
-<environment names="Development">
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-<link rel="stylesheet" href="~/css/site.css" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
 
-</environment>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/jsrender/jsrender.min.js"></script>
+
+<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
 
 </head>
 
 <body>
 
-<environment names="Development">
-
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
-<script src="~/js/site.js" asp-append-version="true"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-
-<script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-
-</environment>
 
 </body>
 
