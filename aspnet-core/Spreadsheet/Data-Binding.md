@@ -59,7 +59,7 @@ To bind remote data to the Spreadsheet, you can assign a service data as an inst
 
 {% highlight cshtml %}
 
-<ej-spread-sheet id="Spreadsheet" >
+<ej-spread-sheet id="Spreadsheet">
     <e-sheets>
         <e-sheet query="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight'])
         .take(50)" primary-key="OrderID">
@@ -81,7 +81,7 @@ The following code illustrates Offline data binding for Spreadsheet,
 
 {% highlight cshtml %}
 
-<ej-spread-sheet id="Spreadsheet" >
+<ej-spread-sheet id="Spreadsheet">
     <e-sheets>
         <e-sheet query="new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight'])
         .take(50)" primary-key="OrderID">
@@ -101,7 +101,7 @@ An HTML Table element can also be used as the data source of Spreadsheet. To use
 
 {% highlight cshtml %}
 
-<ej-spread-sheet id="Spreadsheet" >
+<ej-spread-sheet id="Spreadsheet">
     <e-sheets>
         <e-sheet show-header="false">
             <e-datamanager table="#_table1"></e-datamanager>
