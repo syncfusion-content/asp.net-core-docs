@@ -637,3 +637,126 @@ List of Column type and Filter operators
         </tr>
     </table>
 
+    ## FilterBar Template
+
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc to filter the grid data for the particular column.  
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read` - It is used to read the input value at end of typing.
+3. `write` - It is used to assign the value to control at time of filtering.
+
+
+The following code example describes the above behavior.
+{% tabs %}
+
+{% highlight html %}
+ <ej-grid id="Grid" datasource=ViewBag.datasource allow-paging="true" action-complete="complete" action-begin="begin" allow-filtering="true">
+     <e-columns>
+        <e-column header-text="Order ID" field="OrderID" is-primary-key="true" />
+        <e-column header-text="Customer ID" field="CustomerID" filter-bar-template='new FilterBarTemplate() { Read="autoComplete_read", Create="autoComplete_create", Write="autoComplete_write"}'/>
+        <e-column header-text="Employee ID" field="EmployeeID" filter-bar-template='new FilterBarTemplate() { Read="dropdown_read",  Write="dropdown_write"}'/>
+        <e-column header-text="Ship City" field="ShipCity" />
+        <e-column header-text="Ship Address" field="ShipAddress" />
+       </e-columns>
+</ej-grid>
+{% endhighlight  %}
+
+{% highlight js %}
+     <script type="text/javascript">      
+         function autoComplete_create(args) {
+        return "<input>"
+    }
+    function autoComplete_write(args) {
+        var gridObj = $('#Grid ').data("ejGrid");
+        var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
+        args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+    }
+    function autoComplete_read(args) {
+        this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+    }
+    function dropdown_write(args) {
+        var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                                                        { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+        ]
+        args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+    }
+    function dropdown_read(args) {
+        if (args.element.val() == "clear") {
+            this.clearFiltering(args.column.field);
+            args.element.val("")
+        }
+        this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+    }
+    </script>
+{% endhighlight %}
+
+{% highlight c# %}
+namespace WebApplication8.Controllers
+{
+    public class HomeController : Controller
+    {
+        List<Orders> order = new List<Orders>();
+        
+        public void BindDataSource()
+        {
+            for (int i = 1; i < 10; i++)
+            {
+                order.Add(new Orders(10001 + i, 1 + i,"ALFKI" + i, "Berlin" + i, "NewYork" + i));
+            }
+        }   
+       
+        public class Orders
+        {
+            public Orders()
+            {
+
+            }
+            public Orders(long OrderID,int EmployeeID,string CustomerId, string ShipCity, string ShipAddress )
+            {
+                this.OrderID = OrderID;
+                this.EmployeeID = EmployeeID;
+                this.CustomerID = CustomerId;
+                this.ShipCity = ShipCity;
+                this.ShipAddress = ShipAddress;
+            }
+            public long OrderID { get; set; }
+            public int EmployeeID { get; set; }
+            public string CustomerID { get; set; }
+            public string ShipCity { get; set; }
+            public string ShipAddress { get; set; }
+        }
+        public IActionResult Index()
+        {
+            BindDataSource();
+            ViewBag.datasource = order;
+           // ViewBag.datasource = emp;
+            return View();
+        }
+        
+        public IActionResult EditPartial([FromBody]Orders ord)
+        {
+           
+            if (ord == null)
+                ord = new Orders();
+          
+            return PartialView("_partial", ord);
+        }
+
+
+    }
+}
+
+{% endhighlight  %}
+    
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+FilterBar Template
+
+![](filtering_images/filtering_img12.png)
+{:caption}
+After Filtering
