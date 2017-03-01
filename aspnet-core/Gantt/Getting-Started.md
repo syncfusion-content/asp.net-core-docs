@@ -61,7 +61,7 @@ Simple Gantt chart
 
 1. First, create a new ASP.Net core project; please refer [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
 
-2. Create a data source in Controllers/HomeController.cs file, JSON data can be added to Gantt using Datasource property in Gantt.
+2. Create a data source in Controllers/HomeController.cs file, data source can be added to Gantt using `datasource` property in Gantt.
 
 
 ~~~ csharp
@@ -241,7 +241,7 @@ The following screen shot displays the Gantt.
 Gantt chart
 {:.caption}
 
-### Enable Toolbar
+## Enable Toolbar
 
 Gantt control contains the toolbar options to edit, search, expand and collapse all records, indent, outdent, delete, and add a task. You can enable toolbar using Toolbar option.
 
@@ -275,7 +275,7 @@ The following screen shot displays a Tool bar in Gantt.
 Toolbar in Gantt chart
 {:.caption}
 
-N> add, edit, delete, indent and outdent options are enabled when enabling the allow-editing, allow-adding, allow-delete, allow-indent and allow-outdent in the edit Options.
+N> add, edit, delete, indent and outdent options are enabled when enabling the `allow-editing`, `allow-adding`, `allow-delete` and `allow-indent` in the edit Options.
 
 ## Enable sorting 
 
@@ -283,9 +283,9 @@ Gantt control has the sorting functionality for arranging the tasks in ascending
 
 ### Multicolumn sorting:
 
-Enable the multicolumn sorting in Gantt by setting allow-multi-sorting to “True”. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
+Enable the multicolumn sorting in Gantt by setting `allow-multi-sorting`to `True`. You can sort multiple columns in Gantt by selecting the desired column header while holding the CTRL key.
 
-{% highlight html %}
+{% highlight CSHTML %}
 
 <ej-gantt id="ganttSample3" datasource="ViewBag.datasource"
 
@@ -297,27 +297,27 @@ Enable the multicolumn sorting in Gantt by setting allow-multi-sorting to “Tru
 
 {% endhighlight %}
 
-#### Enable Editing
+## Enable Editing
 
-You can enable editing using EditOption and allow-gantt-chart-editing options.
+You can enable editing using `e-gantt-edit-settings` and `allow-gantt-chart-editing` options.
 
-#### Cell Editing:
+### Cell Editing:
 
 Modify the task details through the grid cell editing by setting the edit-mode as cell-editing.
 
-#### Normal Editing:
+### Normal Editing:
 
 Modify the task details through the edit dialog by setting the edit-mode as Normal.
 
-#### Taskbar Editing:
+### Taskbar Editing:
 
 Modify the task details through user interaction like resizing and dragging the taskbar.
 
-#### Predecessor Editing:
+### Predecessor Editing:
 
-Modify the predecessor details of a task by using mouse interactions by setting allow-gantt-chart-editing as true and setting the value for predecessor-mapping property.
+Modify the predecessor details of a task by using mouse interactions by setting `allow-gantt-chart-editing` as `true` and setting the value for `predecessor-mapping` property.
 
-{% highlight html %}
+{% highlight cshtml %}
 
 <ej-gantt id="ganttSample3" datasource="ViewBag.datasource"
           allow-gantt-chart-editing="true"
@@ -329,7 +329,7 @@ Modify the predecessor details of a task by using mouse interactions by setting 
 
 The following screen shot displays the Gantt control with Enable Editing options.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 Gantt control with Enable Editing options
 {:.caption}
@@ -338,15 +338,13 @@ N> Both cellEditing and normal editing operations are performed through double c
 
 ## Enable Context Menu
 
-You can enable the context menu in Gantt by setting the enable-context-menu to “True”.
+You can enable the context menu in Gantt by setting the `enable-context-menu` to `True`.
 
 
-{% highlight html %}
+{% highlight cshtml %}
 
 <ej-gantt id="ganttSample3" datasource="ViewBag.datasource"          
-
           enable-context-menu="true">
-
 </ej-gantt>
 
 {% endhighlight %}
@@ -354,16 +352,32 @@ You can enable the context menu in Gantt by setting the enable-context-menu to �
 
 The following screen shot displays Gantt chart with Enable Context menu option.
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img8.png)
 
 Gantt chart with Enable Context menu option
 {:.caption}
 
-### Provide tasks relationship
+## Enable Column Menu
+
+You can enable the column menu in Gantt, by setting the `show-column-chooser` as `true`.
+
+{% highlight cshtml %}
+
+<ej-gantt id="ganttSample3" datasource="ViewBag.datasource"          
+          show-column-chooser="true">
+</ej-gantt>
+
+{% endhighlight %}
+
+The following screen shot displays Gantt chart in which column chooser option is enabled:
+
+![](Getting-Started_images/Getting-Started_img11.png)
+
+## Provide tasks relationship
 
 In Gantt control, you have the predecessor support to show the relationship between two different tasks.
 
-#### Types:
+### Types:
 
 * Start to Start (SS)
 
@@ -397,14 +411,14 @@ You can show the relationship in tasks by using the PredecessorMapping as follow
 The following screen shot displays the relationship between tasks.
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![](Getting-Started_images/Getting-Started_img9.png)
 
 Gantt chart with relationships between tasks
 {:.caption}
 
 ## Provide Resources
 
-In ASP.NET core 1.0 Gantt, you can display and assign the resource for each task. Create a collection of JSON object, which contains id and name of the resource and assign it to ResourceCollection option. Then, specify the field name for id and name of the resource in the resource collection to resource-id-mapping and resource-name-mapping properties. The name of the field which contains the actual resources assigned for a particular task in the data-source is specified using resource-info-mapping.
+In ASP.NET core 1.0 Gantt, you can display and assign the resource for each task. Create a collection of list object, which contains id and name of the resource and assign it to ResourceCollection option. Then, specify the field name for id and name of the resource in the resource collection to `resource-id-mapping` and `resource-name-mapping` properties. The name of the field which contains the actual resources assigned for a particular task in the data-source is specified using `resource-info-mapping`.
 
 
 {% highlight C# %}
@@ -477,6 +491,23 @@ The following screen shot displays resource allocation for tasks in Gantt.
 ![](Getting-Started_images/Getting-Started_img12.png)
 
 Resource allocation for tasks in Gantt
+{:.caption}
+
+## Highlight Weekend
+
+In Gantt, you can on or off weekends high lighting by setting the `highlight-weekends` as `true` or `false`.
+
+{% highlight CSHTML %}
+  <ej-gantt id="ganttSample3" datasource="ViewBag.datasource"
+     highlight-weekends="true">
+  </ej-gantt> 
+{% endhighlight %}
+
+The following screen shot displays Gantt chart in which highlight weekends is enabled:
+
+![](Getting-Started_images/Getting-Started_img12.png)
+
 
 This section explains briefly about the control structure and how to create a Gantt chart.
+
 
