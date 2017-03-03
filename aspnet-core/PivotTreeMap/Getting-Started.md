@@ -55,23 +55,23 @@ It is necessary to define the following namespace within the *_viewImports.cshtm
 
 N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
-### Initialize PivotGauge
+### Initialize PivotTreeMap
 
 Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
 
 {% highlight cshtml %}
 
-<ej-pivot-gauge id="PivotGauge1"></ej-pivot-gauge>
+<ej-pivot-treemap id="PivotTreeMap1"></ej-pivot-treemap>
 
 {% endhighlight %}
 
-### Populate PivotGauge With DataSource
+### Populate PivotTreeMap With DataSource
 
-Initializes the OLAP datasource for PivotGauge control as shown below.
+Initializes the OLAP datasource for PivotTreeMap control as shown below.
 
 {% highlight cshtml %}
 
-<ej-pivot-gauge id="PivotGauge1" background-color="transparent" enable-tooltip="true" load="onLoad">
+<ej-pivot-treemap id="PivotTreeMap1">
     <e-data-source catalog="Adventure Works DW 2008 SE" cube="Adventure Works" data="//bi.syncfusion.com/olap/msmdpump.dll">
         <e-pivot-rows>
             <e-row-field field-name="[Date].[Fiscal]"></e-row-field>
@@ -87,8 +87,9 @@ Initializes the OLAP datasource for PivotGauge control as shown below.
             </e-value-field>
         </e-pivot-values>
     </e-data-source>
-</ej-pivot-gauge>
+</ej-pivot-treemap>
 
+<!--Tooltip labels can be localized here-->
 <script id="tooltipTemplate" type="application/jsrender">
     <div style="background:White; color:black; font-size:12px; font-weight:normal; border: 1px solid #4D4D4D; white-space: nowrap;border-radius: 2px; margin-right: 25px; min-width: 110px;padding-right: 5px; padding-left: 5px; padding-bottom: 2px ;width: auto; height: auto;">
         <div>Measure(s) : {{:~Measures(#data)}}</div><div>Row : {{:~Row(#data)}}</div><div>Column : {{:~Column(#data)}}</div><div>Value : {{:~Value(#data)}}</div>
