@@ -114,7 +114,7 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
   
 {% highlight cshtml %}
   
-<ej-pivot-gauge id="PivotGauge1" enable-tooltip="true" background-color="transparent" load="onload">
+<ej-pivot-gauge id="PivotGauge1" background-color="transparent" load="onload">
     <e-data-source>
         <e-pivot-rows>
             <e-row-field field-name="Country" field-caption="Country"></e-row-field>
@@ -188,7 +188,7 @@ Initializes the OLAP datasource for PivotGauge control as shown below.
 
 {% highlight cshtml %}
 
-<ej-pivot-gauge id="PivotGauge1" background-color="transparent" enable-tooltip="true" load="onLoad">
+<ej-pivot-gauge id="PivotGauge1" background-color="transparent" load="onLoad">
     <e-data-source catalog="Adventure Works DW 2008 SE" cube="Adventure Works" data="//bi.syncfusion.com/olap/msmdpump.dll">
         <e-pivot-rows>
             <e-row-field field-name="[Date].[Fiscal]"></e-row-field>
