@@ -16,7 +16,7 @@ Holidays in Gantt control is used to highlight the non-working days in Gantt con
 <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
     //...>
     <e-holidays>
-        <e-holiday day="2/11/2014" label="Public holiday" background="yellowgreen"></e-holiday>
+        <e-holiday day="2/03/2014" label="Public holiday" background="yellowgreen"></e-holiday>
     </e-holidays>
 </ejGantt> 
 
