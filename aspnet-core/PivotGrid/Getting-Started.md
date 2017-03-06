@@ -110,7 +110,7 @@ function onload(args) {
 
 {% endhighlight %}
 
-The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGrid control.
+The JSON data is set to the **"data"** property present inside the **"e-data-source"** object. **"e-data-source"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGrid control.
   
 {% highlight cshtml %}
   
@@ -133,6 +133,61 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
 The above code will generate a simple PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section.
 
 ![](Getting-Started_images/purejs.png)
+
+### Apply Sorting
+
+You can sort a field either to ascending or descending order using the "sort-order" property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+ 
+{% highlight cshtml %}
+
+<ej-pivot-grid id="PivotGrid1" load="onload">
+    <e-data-source>
+        <e-pivot-rows>
+            <e-row-field field-name="Country" field-caption="Country" sort-order="Descending"></e-row-field>
+        </e-pivot-rows>
+        <e-pivot-columns>
+            <e-column-field field-name="Product" field-caption="Product"></e-column-field>
+        </e-pivot-columns>
+        <e-pivot-values>
+            <e-value-field field-name="Amount" field-caption="Amount"></e-value-field>
+        </e-pivot-values>
+    </e-data-source>
+</ej-pivot-grid>
+
+{% endhighlight %}
+
+![](Getting-Started_images/purejssorting.png)
+
+### Apply Summary Types
+
+Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"Sum"** is the default summary type. Following are the summary types that are supported:
+
+* Sum
+* Average
+* Count
+* Min
+* Max
+
+{% highlight cshtml %}
+
+<ej-pivot-grid id="PivotGrid1" is-responsive="true" load="onload">
+    <e-data-source>
+        <e-pivot-rows>
+            <e-row-field field-name="Country" field-caption="Country"></e-row-field>
+        </e-pivot-rows>
+        <e-pivot-columns>
+            <e-column-field field-name="Product" field-caption="Product"></e-column-field>
+        </e-pivot-columns>
+        <e-pivot-values>
+            <e-value-field field-name="Amount" field-caption="Amount" summary-type="Average"></e-value-field>
+            <e-value-field field-name="Quantity" field-caption="Quantity" summary-type="Count"></e-value-field>
+        </e-pivot-values>
+    </e-data-source>
+</ej-pivot-grid>
+
+{% endhighlight %}    
+
+![](Getting-Started_images/purejssummarytype.png)
 
 ## OLAP
 
