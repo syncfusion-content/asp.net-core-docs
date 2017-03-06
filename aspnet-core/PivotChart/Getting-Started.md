@@ -204,13 +204,6 @@ Initializes the OLAP datasource for PivotChart control as shown below.
     <e-legend row-count="2"></e-legend>
 </ej-pivot-chart>
 
-<style>
-    #PivotChart1 {
-        width:950px;
-        height:460px;
-    }
-</style>
-
 {% endhighlight %}
 
 The above code will generate a simple PivotChart with internet sales amount over a period of fiscal years across different customer geographic locations.

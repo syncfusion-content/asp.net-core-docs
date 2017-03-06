@@ -154,13 +154,13 @@ The following code shows how to render row drag tooltip with tooltip template.
 
         <td class="border" style='height:30px;'>
 
-            <div>{{“{{“}}:#data['Id'] {{}}}}</div>
+            <div>{{"{{"}}:#data['Id'] {{}}}}</div>
 
         </td>
 
         <td class="border" style='height:30px;'>
 
-            <div>{{“{{“}}:#data['Name'] {{}}}}</div>
+            <div>{{"{{"}}:#data['Name'] {{}}}}</div>
 
         </td>
 
