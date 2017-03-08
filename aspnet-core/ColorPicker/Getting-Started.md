@@ -16,7 +16,7 @@ The Essential ColorPicker control provides support for selecting the colors from
 
 In this example, you will learn how to customize ColorPicker control in a category Application, in which a new category can be added along with a color chosen from ColorPicker. 
 
-![](Getting-Started_image/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ColorPicker 
 {:.caption}
@@ -43,7 +43,7 @@ Creating category application involves the following steps:
 
 The above code will render a simple Colorpicker control as shown below.
 
-![](Getting-Started_image/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
     
 
 ### Initialize the other widgets
@@ -248,7 +248,7 @@ You can refer to the following link for more information on rendering ListBox co
 
 4. Run the above code to render the following output.
 
-![](Getting-Started_image/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 Color Picker control
 {:.caption}
@@ -285,7 +285,7 @@ Color Picker control
 
 2. The following screenshot illustrates the resultant output after you click Add button.
 
-![](Getting-Started_image/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 Value from Color Picker control
 {:.caption}
