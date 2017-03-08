@@ -48,6 +48,9 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 
 sudo apt-get update
 
+{% endhighlight %}
+
+
 ### Ubuntu 16.10
 
 Open your terminal window and execute the following commands
@@ -170,8 +173,11 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 {% endhighlight %}
+
 * Install Yeoman and aspnet generator.
+
 {% highlight text %}
+
 sudo npm install -g yo generator-aspnet
 
 {% endhighlight %}
