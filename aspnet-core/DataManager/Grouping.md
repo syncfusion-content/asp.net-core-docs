@@ -12,9 +12,6 @@ keywords: Grouping, grouping
 
 Grouping technique is also supported in **DataManager**. When you want to analyze any particular record based on its category simply you can group that column and analyze the records based on category. The following code example illustrates the grouping behavior in table.
 
-
-{% highlight html %}
-
 {% tabs %}
 
 {% highlight CSHTML %}
