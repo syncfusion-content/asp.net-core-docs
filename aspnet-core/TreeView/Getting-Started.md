@@ -123,9 +123,9 @@ Render TreeView with remote data source
         <ej-tree-view id="treeView">
             <e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName">
                 <e-child table-name="Products" parent-id="CategoryID" text="ProductName">
-                    <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager>
+                    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager>
                 </e-child>
-                <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/"></e-datamanager>
+                <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager>
             </e-tree-view-fields>
         </ej-tree-view>  
             
