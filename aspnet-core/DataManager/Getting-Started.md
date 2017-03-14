@@ -25,17 +25,17 @@ In this application, as you have web service for Northwnd database, you can assi
 
 {% highlight CSHTML %} 
  
-  /*ej-Tag Helper code to render DataManager*/
+    /*ej-Tag Helper code to render DataManager*/
 
-<e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders" cross-domain="true"></e-datamanager>
+    <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders" cross-domain="true"></e-datamanager>
 
 {% endhighlight  %}
 
 {% highlight Razor %} 
 
-  /*Razor code to render DataManager*/
+    /*Razor code to render DataManager*/
 
-@Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true)
+    @{Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true).Render();}
 
 {% endhighlight  %}
 
@@ -43,54 +43,46 @@ N> To render the DataManager Control you can use either Razor or Tag helper code
 
 You can use the ej.Query to generate the report from web service.
 
-### Binding with Grid Control
+## Binding with Grid Control
 
 You can bind the DataManager with Grid by defining the ID of DataManager in the DataManagerID property of the Grid control.
 
 {% highlight CSHTML %}
 
-/*ej-Tag Helper code to render DataManager*/
+    /*ej-Tag Helper code to render DataManager*/
 
-<ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true">
-    <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager>
-    <e-columns>
-        <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
-        <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
-        <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
-        <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
-        <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
-    </e-columns>
-</ej-grid>
+    <ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true">
+        <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+        </e-columns>
+    </ej-grid>
 
 {% endhighlight  %}
 
 {% highlight Razor %}
 
-  /*Razor code to render DataManager*/
+    /*Razor code to render DataManager*/
 
-@Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true)
+    @{Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true).Render();}
 
-@(Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
-
+    @{Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
         .DataManagerID("FlatData") //DataManagerID(DataManager ID)
-
-        .Query("new ej.Query().take(5)") 
+        .Query("new ej.Query().take(5)")
         .Columns(col =>
-
         {
-
             col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-
             col.Field("CustomerID").HeaderText("Customer ID").Width(80).Add();
-
             col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
-
             col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
             col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
-
-        }))
+        }).Render();
+    }
 
 {% endhighlight  %}
 
@@ -101,7 +93,7 @@ When you run, the following table is displayed.
 DataManager with Grid Control
 {:.caption}
 
-### Filter
+## Filter
 
 You can generate the Filter query to filter the CustomerID column based on VINET value and it is ran by using the DataManager.
 
@@ -111,69 +103,58 @@ The select property of ejQuery is used to retrieve the specified columns from th
 
 {% highlight CSHTML %}
 
-  /*ej-Tag Helper code to render DataManager*/
+    /*ej-Tag Helper code to render DataManager*/
 
-<ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true" allow-filtering="true">
-    <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
-    <e-filter-settings>
-        <e-filtered-columns>
-            <e-filtered-column field="CustomerID" operator="Equals" value="VINET"></e-filtered-column>
-        </e-filtered-columns>
-    </e-filter-settings>
-    <e-columns>
-        <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
-        <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
-        <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
-        <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
-        <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
-    </e-columns>
-</ej-grid>
-}
+    <ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true" allow-filtering="true">
+        <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+        <e-filter-settings>
+            <e-filtered-columns>
+                <e-filtered-column field="CustomerID" operator="Equals" value="VINET"></e-filtered-column>
+            </e-filtered-columns>
+        </e-filter-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+        </e-columns>
+    </ej-grid>
+
 
 {% endhighlight %}
 
 {% highlight Razor %}
 
-  /*Razor code to render DataManager*/
+    /*Razor code to render DataManager*/
 
-@Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true)
+    @{Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true).Render();}
 
-@(Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
-
+    @{Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
         .DataManagerID("FlatData")
-
         .Query("new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').take(5)")
-
         //where(fieldName, operator, value, [ignoreCase])
-
         .Columns(col =>
-
         {
-
             col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-
             col.Field("CustomerID").HeaderText("Customer ID").Width(80).Add();
-
             col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
-
             col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
             col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
-
-        }))
+        }).Render();
+    }
 
 {% endhighlight %}
 
 When you run the filter query and bind the result to the Grid, the following table is displayed.
-
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 Data with Filtering
 {:.caption}
 
-### Sort
+## Sort
 
 You can generate the Sort query to sort the Freight column in descending order and that is executed by using the DataManager. 
 
@@ -181,27 +162,27 @@ The sortBy property of ejQuery is used to sort the records based on the field an
 
 {% highlight CSHTML %}
 
-/*ej-Tag Helper code to render DataManager*/
+    /*ej-Tag Helper code to render DataManager*/
 
-<ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true" allow-multi-sorting="true">
-    <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
-  
-    <e-sort-settings>
-        <e-sorted-columns>
-            <e-sorted-column field="Freight" direction="Descending">
+    <ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true" allow-multi-sorting="true">
+        <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+    
+        <e-sort-settings>
+            <e-sorted-columns>
+                <e-sorted-column field="Freight" direction="Descending">
 
-            </e-sorted-column>
-        </e-sorted-columns>
-    </e-sort-settings>
-    <e-columns>
-        <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
-        <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
-        <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
-        <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
-        <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
-    </e-columns>
-</ej-grid>
+                </e-sorted-column>
+            </e-sorted-columns>
+        </e-sort-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+        </e-columns>
+    </ej-grid>
 
 {% endhighlight %}
 
@@ -209,31 +190,21 @@ The sortBy property of ejQuery is used to sort the records based on the field an
 
 /*Razor code to render DataManager*/
 
-@Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true)
+    @{Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true).Render();}
 
-@(Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
-
-        .DataManagerID("FlatData")
-
-        .Query("new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').take(5)")
-
-        //sortBy(field direction)
-
-        .Columns(col =>
-
-        {
-
-            col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(80).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
-
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
-            col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
-
-        }))
+    @{Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
+            .DataManagerID("FlatData")
+            .Query("new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').take(5)")
+            //sortBy(field direction)
+            .Columns(col =>
+            {
+                col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
+                col.Field("CustomerID").HeaderText("Customer ID").Width(80).Add();
+                col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
+                col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
+                col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
+            }).Render();
+    }
 
 {% endhighlight %}
 
@@ -244,7 +215,7 @@ When you run the sort query and bind the result to the table, the following tabl
 Data with Sorting
 {:.caption}
 
-### Page
+## Page
 
 You can generate the Paging query to get the top four orders and it is ran by using the DataManager.  
 
@@ -252,59 +223,50 @@ The Page property of ejQuery is used to retrieve the records based on the given 
 
 {% highlight CSHTML %}
 
-/*ej-Tag Helper code to render DataManager*/
+    /*ej-Tag Helper code to render DataManager*/
 
-<ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true" allow-multi-sorting="true">
-    <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
-    <e-sort-settings>
-        <e-sorted-columns>
-            <e-sorted-column field="Freight" direction="Descending">
-            </e-sorted-column>
-        </e-sorted-columns>
-    </e-sort-settings>
-    <e-page-settings page-count="3" page-size="5">       
-    </e-page-settings>
-    <e-columns>
-        <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
-        <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
-        <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
-        <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
-        <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
-    </e-columns>
-</ej-grid>
+    <ej-grid id="FlatGrid" allow-sorting="true" allow-paging="true" allow-multi-sorting="true">
+        <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+        <e-sort-settings>
+            <e-sorted-columns>
+                <e-sorted-column field="Freight" direction="Descending">
+                </e-sorted-column>
+            </e-sorted-columns>
+        </e-sort-settings>
+        <e-page-settings page-count="3" page-size="5">       
+        </e-page-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+        </e-columns>
+    </ej-grid>
 
 {% endhighlight %}
 
 {% highlight Razor %}
 
-/*Razor code to render DataManager*/
+    /*Razor code to render DataManager*/
 
-@Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true)
+    @{Html.EJ().DataManager("FlatData").URL("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/").CrossDomain(true).Render();}
 
-@(Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
-
+    @{Html.EJ().Grid<MVCdoc.OrdersView>("FlatGrid")
         .DataManagerID("FlatData")
-
         .Query("new ej.Query().select(['OrderID', 'CustomerID', 'EmployeeID', 'ShipCity', 'Freight']).where('CustomerID', 'equal', 'VINET').sortBy('Freight desc').page(3,5)")
-
         //page(pageIndex,pageSize)
-
         .Columns(col =>
-
         {
 
             col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-
             col.Field("CustomerID").HeaderText("Customer ID").Width(80).Add();
-
             col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
-
             col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
             col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
-
-        }))
+        }).Render();
+    }
 
 {% endhighlight %}
 

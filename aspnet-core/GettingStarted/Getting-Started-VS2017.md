@@ -19,7 +19,7 @@ documentation: ug
 To work with ASP.NET Core 1.1 you need to make sure, whether you have installed the following software on your machine
 
 * Visual Studio 2017 RC.
-* DotNetCore [1.1 SDK] (https://go.microsoft.com/fwlink/?LinkID=835014)
+* DotNetCore [1.1 SDK](https://go.microsoft.com/fwlink/?LinkID=835014)
 
 #### Configure Syncfusion UI Components in ASP.NET Core Application
 
@@ -39,11 +39,15 @@ The following steps helps to create a ASP.NET Core web application to utilize Sy
 
 * Select the newly created Package Source and rename the source name using the Name input box.
 
-* Copy the Syncfusion NuGet Package URL from Syncfusion NuGet account and paste it in the source textbox. You can get the URL by clicking the Copy URL label from the required version and platform provided in the following link: http://nuget.syncfusion.com/package/aspnetcore
+  **Name**: Name of the package that listed in Available package sources  
+  **Source**: Syncfusion ASP.NET Core NuGet Package feed URL
+  [http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore](http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore)
+
+* Copy the Syncfusion NuGet Package URL from Syncfusion NuGet account and paste it in the source textbox. You can get the URL by clicking the Copy URL label from the required version and platform provided in the following link: [http://nuget.syncfusion.com/package/aspnetcore](http://nuget.syncfusion.com/package/aspnetcore)
 
 * Select the Update and then click the OK button. The package’s source get added to the list of available package sources.
 
-* Right click your project references and then select “Manage NuGet Package” option. In this window choose the “Syncfusion Packages registered name” from the package source dropdown. And check the “**include prerelease**” option.
+* Right click your project references and then select “**Manage NuGet Package**” option. In this window choose the “**Syncfusion Packages registered name**” from the package source dropdown. And check the “**include prerelease**” option.
 
 * Now, our Syncfusion Packages will list in this window. Select and install the “**Syncfusion.EJ.AspNet.Core**” package from this list.
 
