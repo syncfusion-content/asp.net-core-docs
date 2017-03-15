@@ -881,10 +881,6 @@ Refer to the following code example.
 
 {% endtabs %}
 
-Result of the above code example is illustrated as follows.
-
-![](Data-Adaptors_images/Data-Adaptors_img5.png) 
-
 ## Custom Adaptor
 
 Custom adaptor is a key technique to customize adaptors in **DataManager**. It is useful to write own adaptor. Normally **ej.Adaptor** is base class for all adaptors. Therefore you first inherit **ej.Adaptor** to develop customized one and then you override functionality in custom adaptor with base class. 
