@@ -770,8 +770,6 @@ Refer to the following code example.
 
 {% endhighlight %}
 
-{% endhighlight %}
-
 {% highlight Razor %}
 
     /*Razor code to render DataManager*/
