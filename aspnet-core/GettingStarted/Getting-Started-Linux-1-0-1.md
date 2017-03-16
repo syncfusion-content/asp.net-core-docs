@@ -107,12 +107,16 @@ To configure an ASP.NET Core application and utilize our Essential Studio MVC co
 * Configuring Syncfusion Components.
 
 ### Create an ASP.NET Core Application
+
 ASP.NET Core Web application can be created in any one of the following ways.
+
 * Terminal (Command Line).
 * Yeoman.
 
 #### Building Projects with Command Line
+
 The following steps helps to create a ASP.NET Core web application using terminal window.
+
 * Open a terminal window to create a new directory for your project creation.
 
 {% highlight text %}

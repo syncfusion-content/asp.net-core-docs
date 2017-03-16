@@ -43,8 +43,6 @@ The following steps helps to create a ASP.NET Core web application to utilize Sy
   **Source**: Syncfusion ASP.NET Core NuGet Package feed URL
   [http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore](http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore)
 
-* Copy the Syncfusion NuGet Package URL from Syncfusion NuGet account and paste it in the source textbox. You can get the URL by clicking the Copy URL label from the required version and platform provided in the following link: [http://nuget.syncfusion.com/package/aspnetcore](http://nuget.syncfusion.com/package/aspnetcore)
-
 * Select the Update and then click the OK button. The package’s source get added to the list of available package sources.
 
 * Right click your project references and then select “**Manage NuGet Package**” option. In this window choose the “**Syncfusion Packages registered name**” from the package source dropdown. And check the “**include prerelease**” option.
