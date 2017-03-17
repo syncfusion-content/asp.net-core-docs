@@ -144,7 +144,7 @@ You can apply text format for a cell in following ways,
 
 #### Initial Load
 
-You can apply text format for a cell by specifying `style` property in cell data binding. The following code example describes the above behavior,
+You can apply text format for a cell by specifying `e-styles` property in cell data binding. The following code example describes the above behavior,
 
 {% highlight cshtml %}
 
