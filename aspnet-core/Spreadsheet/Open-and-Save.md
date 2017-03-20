@@ -209,7 +209,7 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 {% highlight cshtml %}
 
 <ej-spread-sheet id="Spreadsheet">
-    <e-export-settings allow-exporting="true" excel-url="ExcelExport" csv-url="CsvExport" pdf-url="PdfExport"></e-export-settings>
+    <e-export-settings allow-exporting="true" excel-url="ExcelExport" csv-url="CsvExport" ></e-export-settings>
 </ej-spread-sheet>
     
 {% endhighlight %}
@@ -232,10 +232,6 @@ namespace MVCSampleBrowser.Controllers
         {
             return Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.CSV);
         }
-        public ActionResult PdfExport(string sheetModel, string sheetData, string password)
-        {
-            return Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.PDF);
-        }
     }
 }
     
@@ -251,7 +247,6 @@ You can save Spreadsheet contents with following file types,
 * XLS
 * XLSX
 * CSV
-* PDF
 
 You can save excel documents in following ways,
 

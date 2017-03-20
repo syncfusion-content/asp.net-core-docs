@@ -15,7 +15,6 @@ Data presentation is helpful for proper representation of data in Spreadsheet. Y
 * Chart
 * Conditional formatting
 * Filtering 
-* Picture
 * Pivot table
 * Sorting 
 * Table
