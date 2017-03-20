@@ -650,7 +650,7 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight razor %}
- <ej-grid id="Grid" datasource=ViewBag.datasource allow-paging="true" action-complete="complete" action-begin="begin" allow-filtering="true">
+ <ej-grid  id="FlatGrid" datasource=ViewBag.datasource allow-paging="true" action-complete="complete" action-begin="begin" allow-filtering="true">
      <e-columns>
         <e-column header-text="Order ID" field="OrderID" is-primary-key="true" />
         <e-column header-text="Customer ID" field="CustomerID" filter-bar-template='new FilterBarTemplate() { Read="autoComplete_read", Create="autoComplete_create", Write="autoComplete_write"}'/>
@@ -663,11 +663,11 @@ The following code example describes the above behavior.
 
 {% highlight js %}
      <script type="text/javascript">      
-         function autoComplete_create(args) {
+    function autoComplete_create(args) {
         return "<input>"
     }
     function autoComplete_write(args) {
-        var gridObj = $('#Grid ').data("ejGrid");
+        var gridObj = $('#FlatGrid ').data("ejGrid");
         var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
         args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
     }
