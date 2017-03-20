@@ -20,7 +20,7 @@ You can perform following operations in worksheet,
 * Move and Copy
 
 ### Add
-The Spreadsheet has support for inserting new sheet. You can insert sheet into two ways.
+The Spreadsheet has support for inserting new sheet. You can insert sheet in two ways.
 
 * Add a new sheet as last sheet.
 * Insert a new sheet before the active sheet.
