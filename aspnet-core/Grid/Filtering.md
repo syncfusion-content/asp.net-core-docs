@@ -639,17 +639,17 @@ List of Column type and Filter operators
 
 ## FilterBar Template
 
-Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filterBarTemplate`] property of `columns` we can render any other controls like autoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.  
+Usually enabling allowFiltering, will create default textbox in Grid FilterBar. So, Using [`filter-bar-template`] property of `columns` we can render any other controls like autoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.  
 It has three functions. They are    
 
 1. `create` - It is used to create the control at time of initialize.
 2. `read`   - It is used to read the Filter value selected.
-3. `write`  - It is used to assign the value selected for filtering.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
 
 The following code example describes the above behavior.
 {% tabs %}
 
-{% highlight html %}
+{% highlight razor %}
  <ej-grid id="Grid" datasource=ViewBag.datasource allow-paging="true" action-complete="complete" action-begin="begin" allow-filtering="true">
      <e-columns>
         <e-column header-text="Order ID" field="OrderID" is-primary-key="true" />
@@ -691,60 +691,19 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight c# %}
-namespace WebApplication8.Controllers
-{
-    public class HomeController : Controller
-    {
-        List<Orders> order = new List<Orders>();
-        
-        public void BindDataSource()
-        {
-            for (int i = 1; i < 10; i++)
-            {
-                order.Add(new Orders(10001 + i, 1 + i,"ALFKI" + i, "Berlin" + i, "NewYork" + i));
-            }
-        }   
-       
-        public class Orders
-        {
-            public Orders()
-            {
 
-            }
-            public Orders(long OrderID,int EmployeeID,string CustomerId, string ShipCity, string ShipAddress )
-            {
-                this.OrderID = OrderID;
-                this.EmployeeID = EmployeeID;
-                this.CustomerID = CustomerId;
-                this.ShipCity = ShipCity;
-                this.ShipAddress = ShipAddress;
-            }
-            public long OrderID { get; set; }
-            public int EmployeeID { get; set; }
-            public string CustomerID { get; set; }
-            public string ShipCity { get; set; }
-            public string ShipAddress { get; set; }
-        }
-        public IActionResult Index()
-        {
-            BindDataSource();
-            ViewBag.datasource = order;
-           // ViewBag.datasource = emp;
-            return View();
-        }
-        
-        public IActionResult EditPartial([FromBody]Orders ord)
-        {
-           
-            if (ord == null)
-                ord = new Orders();
-          
-            return PartialView("_partial", ord);
-        }
-
-
-    }
-}
+        namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+              }
+           } 
 
 {% endhighlight  %}
     
