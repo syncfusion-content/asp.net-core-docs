@@ -2,7 +2,7 @@
 layout: post
 title: asp.net core in bash on windows
 description: asp.net core in bash on windows
-platform: js
+platform: aspnet-core
 control: Control Name undefined
 documentation: ug
 ---
@@ -246,7 +246,7 @@ $ sudo apt-get upgrade
 
 *  Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
-
+N> Kindly include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)
 
 {% highlight cshtml %}
 

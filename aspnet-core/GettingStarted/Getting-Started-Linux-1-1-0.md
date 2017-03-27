@@ -256,6 +256,8 @@ dotnet restore
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
+N> Kindly include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)
+
 {% highlight cshtml %}
 
 <html>
