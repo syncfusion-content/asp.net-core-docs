@@ -650,14 +650,18 @@ The following code example describes the above behavior.
 {% tabs %}
 
 {% highlight razor %}
- <ej-grid  id="FlatGrid" datasource=ViewBag.datasource allow-paging="true" action-complete="complete" action-begin="begin" allow-filtering="true">
+ <ej-grid  id="FlatGrid" datasource=ViewBag.datasource allow-paging="true" allow-filtering="true">
      <e-columns>
-        <e-column header-text="Order ID" field="OrderID" is-primary-key="true" />
-        <e-column header-text="Customer ID" field="CustomerID" filter-bar-template='new FilterBarTemplate() { Read="autoComplete_read", Create="autoComplete_create", Write="autoComplete_write"}'/>
-        <e-column header-text="Employee ID" field="EmployeeID" filter-bar-template='new FilterBarTemplate() { Read="dropdown_read",  Write="dropdown_write"}'/>
-        <e-column header-text="Ship City" field="ShipCity" />
+        <e-column header-text="Order ID" field="OrderID" is-primary-key="true"/>
+        <e-column header-text="Customer ID" field="CustomerID">
+            <e-filter-bar-template read="autoComplete_read" create="autoComplete_create" write="autoComplete_write"/>
+        </e-column>
+        <e-column header-text="Employee ID" field="EmployeeID" filter-bar-template='new FilterBarTemplate() { Read="dropdown_read",  Write="dropdown_write"}'>
+            <e-filter-bar-template read="dropdown_read" write="dropdown_write" />
+        </e-column>
+        <e-column header-text="Ship City" field="ShipCity"/>       
         <e-column header-text="Ship Address" field="ShipAddress" />
-       </e-columns>
+   </e-columns>
 </ej-grid>
 {% endhighlight  %}
 
