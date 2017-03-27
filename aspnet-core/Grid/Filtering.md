@@ -656,7 +656,7 @@ The following code example describes the above behavior.
         <e-column header-text="Customer ID" field="CustomerID">
             <e-filter-bar-template read="autoComplete_read" create="autoComplete_create" write="autoComplete_write"/>
         </e-column>
-        <e-column header-text="Employee ID" field="EmployeeID" filter-bar-template='new FilterBarTemplate() { Read="dropdown_read",  Write="dropdown_write"}'>
+        <e-column header-text="Employee ID" field="EmployeeID">
             <e-filter-bar-template read="dropdown_read" write="dropdown_write" />
         </e-column>
         <e-column header-text="Ship City" field="ShipCity"/>       
