@@ -190,7 +190,9 @@ dotnet restore
 
   ![](getting-started-images-mac/img9.png)
 
-* Now refer the necessary scripts and CSS files in your **_layout.cshtml** page
+* Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
+
+N> Include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)
 
 {% highlight cshtml %}
 
