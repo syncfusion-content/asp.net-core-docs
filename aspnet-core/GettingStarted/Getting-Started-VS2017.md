@@ -18,7 +18,7 @@ documentation: ug
 
 To work with ASP.NET Core 1.1 you need to make sure, whether you have installed the following software on your machine
 
-* Visual Studio 2017 RC.
+* Visual Studio 2017.
 * DotNetCore [1.1 SDK](https://go.microsoft.com/fwlink/?LinkID=835014)
 
 #### Configure Syncfusion UI Components in ASP.NET Core Application
@@ -67,7 +67,9 @@ The following steps helps to create a ASP.NET Core web application to utilize Sy
 
 {% endhighlight %}
 
-*  Refer the necessary scripts and CSS files in your **layout.cshtml** page from **lib -> syncfusion-javascript** folder.   
+*  Refer the necessary scripts and CSS files in your **layout.cshtml** page from **lib -> syncfusion-javascript** folder.
+
+N> Include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)
 
    {% highlight cshtml %}
    
