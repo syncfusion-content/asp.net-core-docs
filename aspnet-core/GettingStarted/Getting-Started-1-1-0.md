@@ -60,7 +60,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  Refer the necessary scripts and CSS files in your **layout.cshtml** page from **lib -> syncfusion-javascript** folder.
 
-N> Include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)   
+N> Include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under the tag *environment names="Development"*)   
 
    {% highlight cshtml %}
    
@@ -216,7 +216,7 @@ dotnet restore
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
-N> Kindly include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)
+N> Kindly include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under the tag *environment names="Development"*)
 
 {% highlight cshtml %}
 
@@ -374,7 +374,7 @@ dotnet restore
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
-N> Kindly include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under *<environment names="Development">*)
+N> Kindly include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under the tag *environment names="Development"*)
 
 {% highlight cshtml %}
 
