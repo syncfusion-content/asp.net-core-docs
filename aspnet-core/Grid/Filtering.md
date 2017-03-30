@@ -652,15 +652,15 @@ The following code example describes the above behavior.
 {% highlight razor %}
  <ej-grid  id="FlatGrid" datasource=ViewBag.datasource allow-paging="true" allow-filtering="true">
      <e-columns>
-        <e-column header-text="Order ID" field="OrderID" is-primary-key="true"/>
-        <e-column header-text="Customer ID" field="CustomerID">
+        <e-column field="OrderID" header-text="Order ID" is-primary-key="true"/>
+        <e-column field="CustomerID" header-text="Customer ID">
             <e-filter-bar-template read="autoComplete_read" create="autoComplete_create" write="autoComplete_write"/>
         </e-column>
-        <e-column header-text="Employee ID" field="EmployeeID">
+        <e-column field="EmployeeID" header-text="Employee ID">
             <e-filter-bar-template read="dropdown_read" write="dropdown_write" />
         </e-column>
-        <e-column header-text="Ship City" field="ShipCity"/>       
-        <e-column header-text="Ship Address" field="ShipAddress" />
+        <e-column field="ShipCity" header-text="Ship City" />       
+        <e-column field="ShipAddress"  header-text="Ship Address"/>
    </e-columns>
 </ej-grid>
 {% endhighlight  %}
