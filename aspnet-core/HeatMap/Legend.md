@@ -11,7 +11,7 @@ documentation: ug
 
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
 
-##Create Legend
+## Create Legend
 
 Legend can be created with color mapping as shown below.
 
@@ -40,13 +40,13 @@ Resultant legend will be like following image.
 
 ![](Legend_images/Legend_img1.png)
  
-##Legend Mode
+## Legend Mode
 
 There are two modes for Legend
 * Gradient
 * List
 
-###Gradient:
+### Gradient:
 
 {% highlight razor %}
 
@@ -57,7 +57,7 @@ There are two modes for Legend
 
 ![](Legend_images/Legend_img2.png)
 
-###List:
+### List:
 
 {% highlight razor %}
 
@@ -68,13 +68,13 @@ There are two modes for Legend
 
 ![](Legend_images/Legend_img3.png)
 
-##Orientation
+## Orientation
 
 There are 2 types of Orientation, applicable for Gradient and List Mode 
 * Horizontal
 * Vertical
 
-###Horizontal:
+### Horizontal:
 
 {% highlight razor %}
 
@@ -85,7 +85,7 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 
 ![](Legend_images/Legend_img3.png)
 
-###Vertical:
+### Vertical:
 
 {% highlight razor %}
 

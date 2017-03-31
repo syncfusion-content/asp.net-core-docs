@@ -7,7 +7,7 @@ control: HeatMap
 documentation: ug
 ---
 
-#Items Mapping
+# Items Mapping
 
 External data source can be mapped with HeatMap using `itemsMapping` property. It supports 2 kind of data source.
 
@@ -136,13 +136,7 @@ Let us see the difference between two types of mapping. Following table represen
                 
             {% endhighlight %}
         </td>
-    </tr>
-    <tr>
-        <td>
-            ![](Items-Mapping_images/ItemsMapping_img1.png)
-        </td>
-        <td>
-            ![](Items-Mapping_images/ItemsMapping_img1.png)
-        </td>
-    </tr>
+    </tr>     
 </table>
+
+![](Items-Mapping_images/ItemsMapping_img1.png)
