@@ -49,8 +49,89 @@ In the view page, add TreeView helper as shown below. It will render the TreeVie
             </e-tree-view-items>
         </ej-tree-view>
                 
-  {% endhighlight %}       
-    
+  {% endhighlight %}    
+
+##Render TreeView using Razor Syntax   
+
+You can create a tree using “Items” API of TreeView control. Here there is no necessary to use a data source for rendering TreeView.
+
+In the view page, add TreeView as shown below. It will render the TreeView with specified items.
+
+{% highlight CSHTML %}
+
+    @{Html.EJ().TreeView("tree").Items(items =>
+        {
+            items.Add().Text("File").Children(child =>
+            {
+                child.Add().Text("New");
+                child.Add().Text("Open");
+                child.Add().Text("Save");
+                child.Add().Text("Save As");
+                child.Add().Text("Print Preview");
+                child.Add().Text("Print");
+                child.Add().Text("Close");
+            });
+            items.Add().Text("Edit").Children(child =>
+            {
+                child.Add().Text("Undo");
+                child.Add().Text("Redo");
+                child.Add().Text("Cut");
+                child.Add().Text("Copy");
+                child.Add().Text("Paste");
+            });
+            items.Add().Text("Insert").Children(child =>
+            {
+                child.Add().Text("Page Numbers");
+                child.Add().Text("Table");
+                child.Add().Text("Picture");
+                child.Add().Text("Comment");
+                child.Add().Text("Links");
+                child.Add().Text("Symbols");
+                child.Add().Text("Diagram");
+                child.Add().Text("TextBox");
+                child.Add().Text("Data Time");
+            });
+            items.Add().Text("Format").Expanded(true).Children(child =>
+            {
+                child.Add().Text("Font").Children(childs =>
+                {
+                    childs.Add().Text("Arial");
+                    childs.Add().Text("Arial Black");
+                    childs.Add().Text("Arial Narrow");
+                    childs.Add().Text("Courier");
+                    childs.Add().Text("Gaurand");
+                    childs.Add().Text("Times New Roman");
+                    childs.Add().Text("Vrendra");
+                    childs.Add().Text("Helvatica");
+                    childs.Add().Text("Impact");
+                });
+                child.Add().Text("Paragraph");
+                child.Add().Text("Bullets and Numbering");
+                child.Add().Text("Borders and Shading");
+                child.Add().Text("Columns");
+                child.Add().Text("Tabs");
+                child.Add().Text("Change Case");
+            });
+            items.Add().Text("View").Children(child =>
+            {
+                child.Add().Text("Normal");
+                child.Add().Text("Web Layout");
+                child.Add().Text("Print Layout");
+                child.Add().Text("Task Pane");
+            });
+            items.Add().Text("Tools").Children(child =>
+            {
+                child.Add().Text("Spelling and Grammar");
+                child.Add().Text("Research");
+                child.Add().Text("Language");
+                child.Add().Text("Word Count");
+                child.Add().Text("Track Changes");
+                child.Add().Text("Merge Documents");
+            });
+        }).Render();}
+
+{% endhighlight %}    
+
 ## TreeView using Data Binding
 
 Another way of creating TreeView is binding with the data source, you can bind local data or remote data source to create a TreeView. 
