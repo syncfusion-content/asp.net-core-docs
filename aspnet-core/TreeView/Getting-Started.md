@@ -51,7 +51,7 @@ In the view page, add TreeView helper as shown below. It will render the TreeVie
                 
   {% endhighlight %}    
 
-##TreeView useing Razor Syntax   
+##Render TreeView using Razor Syntax   
 
 You can create a tree using “Items” API of TreeView control. Here there is no necessary to use a data source for rendering TreeView.
 
@@ -129,7 +129,7 @@ In the view page, add TreeView as shown below. It will render the TreeView with 
                 child.Add().Text("Merge Documents");
             });
         }).Render();}
-        
+
 {% endhighlight %}    
 
 ## TreeView using Data Binding
