@@ -138,7 +138,14 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
     </div>
 	
    ~~~
-   
+
+Razor code to render MaskEdit
+
+ ~~~ cshtml
+
+@{Html.EJ().MaskEdit("mask").MaskFormat("99-999-99999").Render();}
+
+~~~
 
 3. Add the following styles to show MaskEdit and place it in a particular position.
 

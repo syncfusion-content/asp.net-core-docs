@@ -123,7 +123,13 @@ ASP.NET Core Editors renders built-in features like keyboard navigation, min and
 
    ~~~
  
+Razor code to render CurrencyTextBox
 
+ ~~~ cshtml
+
+@{Html.EJ().CurrencyTextBox("currency").Render();}
+
+~~~
 
 3. The following styles are added to arrange the Editors.  You can add the following location in the URL path for the background image and to apply styling [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
 
