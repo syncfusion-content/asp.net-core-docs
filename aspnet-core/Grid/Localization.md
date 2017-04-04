@@ -248,72 +248,39 @@ LastPage</td><td>
 Last Page</td></tr>
 </table>
 
-
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<OrdersView>("Localization")
-
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-
-        .AllowGrouping()
-
-        .AllowPaging()
-
-        .Locale("de-DE")
-
-        .GroupSettings(group=>group.EnableDropAreaAnimation(false))
-
-        .Columns(col =>
-
-        {
-
-            col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(95).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(95).Add();
-
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
-            col.Field("ShipCity").HeaderText("Ship City").Width(80).Add();
-
-        }).Render();
-
-      } 
-
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" locale="de-DE" group-settings ="@(new GroupSettings { EnableDropAreaAnimation=false })" datasource="ViewBag.DataSource">
+         <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" width="75" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="95"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="95" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="75" format="{0:C}"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity" width="80"></e-column>
+        </e-columns>
+    </ej-grid>     
+    
 {% endhighlight  %}
 {% highlight c# %}
 
-public partial class GridController : Controller
-
-{
-
-	//
-
-	// GET: /Localization/
-
-	public IActionResult Localization()
-
-	{
-
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
-		ViewBag.dataSource = DataSource;
-
-		return View();
-
-	}
-
-}
-
-
-{% endhighlight  %}
+     namespace MVCSampleBrowser.Controllers
+         {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %} 
 {% highlight js %}
 <script type="text/javascript">
 
-ej.Grid.Locale["de-DE"] = {
+ ej.Grid.Locale["de-DE"] = {
     EmptyRecord: "Keine Aufzeichnungen angezeigt",
     GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
     DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
@@ -334,21 +301,16 @@ ej.Grid.Locale["de-DE"] = {
     previousPagerTooltip: "Zum vorherigen Pager"
  };
  
- 
-</script>
-
+ </script>
 {% endhighlight  %}
-{% endtabs %} 
+{% endtabs %}  
 
 
 ![](Localization_images/Globalizationandlocalization._img1.png)
 
-
 I> You need to change pager locale in `ej.Pager.Locale` object.
 
-
 ## Excel-Filter Localization
-
 
 All text in Excel-Filter can be localized using `ej.ExcelFilter.Locale` object. Please find the table with list of properties and its value in locale object.
 
@@ -501,69 +463,38 @@ False</td></tr>
 Please find the code
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<OrdersView>("Localization")
-
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-
-        .AllowPaging()
-
-        .Locale("de-DE")
-
-        .AllowFiltering()
-        
-        .FilterSettings(filter => filter.FilterType(FilterType.Excel))
-        
-        .Columns(col =>
-        {
-
-            col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(95).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(95).Add();
-
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
-            col.Field("ShipCity").HeaderText("Ship City").Width(80).Add();
-
-        }).Render();
-
-   }
-
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" locale="de-DE" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Excel"/>
+         <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" width="75" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="95"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="95" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="75" format="{0:C}"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity" width="80"></e-column>
+        </e-columns>
+    </ej-grid>     
+    
 {% endhighlight  %}
 {% highlight c# %}
 
-public partial class GridController : Controller
-
-{
-
-	//
-
-	// GET: /Localization/
-
-	public IActionResult Localization()
-
-	{
-
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
-		ViewBag.dataSource = DataSource;
-
-		return View();
-
-	}
-
-}
-
-
-{% endhighlight  %}
+     namespace MVCSampleBrowser.Controllers
+         {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %} 
 {% highlight js %}
 <script type="text/javascript">
-
-ej.ExcelFilter.Locale["de-DE"] = {
+  ej.ExcelFilter.Locale["de-DE"] = {
       SortNoSmaller: "Art Anzahl kleiner",
       SortNoLarger: "Art Anzahl größer",
       SortTextAscending: "Sortieren aufsteigend Text",
@@ -574,75 +505,49 @@ ej.ExcelFilter.Locale["de-DE"] = {
       DateFilter: "Datum Filter"
   }
  
- 
 </script>
 {% endhighlight  %}
-{% endtabs %} 
+{% endtabs %}  
 
 ![](Localization_images/Globalizationandlocalization._img2.png)
 
 
 ## Globalization
 
-`ej.globalize` library is used to globalize numeric values in Grid control using `Format` property in `Columns`. Globalize values will be automatically used when `Locale` property is set with locale string value for example `en-US`.
+`ej.globalize` library is used to globalize numeric values in Grid control using `format` property in `e-columns`. Globalize values will be automatically used when `locale` property is set with locale string value for example `en-US`.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<OrdersView>("Localization")
-
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-
-        .Locale("de-DE")
-
-        .Columns(col =>
-        {
-
-            col.Field("OrderID").HeaderText("Order ID").TextAlign(TextAlign.Right).Width(75).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(95).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(95).Add();
-
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-
-            col.Field("ShipCity").HeaderText("Ship City").Width(80).Add();
-
-        }).Render();
-
-   } 
-
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" locale="de-DE" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Excel"/>
+         <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" width="75" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="95"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="95" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="75" format="{0:C}"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity" width="80"></e-column>
+        </e-columns>
+    </ej-grid>     
+    
 {% endhighlight  %}
 {% highlight c# %}
 
-public partial class GridController : Controller
+     namespace MVCSampleBrowser.Controllers
+         {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %} 
 
-{
-
-	//
-
-	// GET: /Localization/
-
-	public IActionResult Localization()
-
-	{
-
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
-		ViewBag.dataSource = DataSource;
-
-		return View();
-
-	}
-
-}
-
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
+{% endtabs %}  
 
 ![](Localization_images/Globalizationandlocalization._img3.png)
 
@@ -652,66 +557,39 @@ I> In the above example, you need to use `globalize.culture.de-DE` script file t
 
 ## Right to Left - RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using `EnableRTL` as true.
+By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using `enable-rtl` as true.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<OrdersView>("Localization")
-
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-
-        .AllowPaging()
-
-        .EnableRTL()
-        
-        .Columns(col =>
-        {
-
-            col.Field("OrderID").HeaderText("Order ID").TextAlign(TextAlign.Right).Width(120).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(120).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(120).Add();
-
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(120).Format("{0:C}").Add();
-
-            col.Field("ShipCity").HeaderText("Ship City").Width(120).Add();
-
-        }).Render();
-
-   } 
-
+    <ej-grid id="FlatGrid" allow-paging="true" enable-rtl="true" datasource="ViewBag.DataSource">
+        <e-filter-settings filter-type="Excel"/>
+         <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" width="120" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="120"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="120" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="120" format="{0:C}"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity" width="120"></e-column>
+        </e-columns>
+    </ej-grid>     
+    
 {% endhighlight  %}
 {% highlight c# %}
 
-public partial class GridController : Controller
+     namespace MVCSampleBrowser.Controllers
+         {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %} 
 
-{
-
-	//
-
-	// GET: /Localization/
-
-	public IActionResult Localization()
-
-	{
-
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
-		ViewBag.dataSource = DataSource;
-
-		return View();
-
-	}
-
-}
-
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
+{% endtabs %}  
 
 ![](Localization_images/Globalizationandlocalization._img4.png)

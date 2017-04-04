@@ -12,46 +12,34 @@ The grid control has support for dynamic insertion, updation and deletion of rec
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
-The primary key for the data source should be defined in `Columns` definition, for editing to work properly. In `Columns` definition, particular primary column's `IsPrimaryKey` property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
+The primary key for the data source should be defined in `e-columns` definition, for editing to work properly. In `e-columns` definition, particular primary column's `is-primary-key` property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
 
 N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
-N> 2. The column which is specified as `IsIdentity` will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that `IsIdentity` column.
+N> 2. The column which is specified as `is-identity` will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that `is-identity` column.
 
 ## Toolbar with edit option
 
-Using toolbar which is rendered at the top of the grid header, you can show all the CRUD related action. To enable toolbar and toolbar items, set `ShowToolbar` property as true and `ToolbarItems`. The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
+Using toolbar which is rendered at the top of the grid header, you can show all the CRUD related action. To enable toolbar and toolbar items, set `show-toolbar` property as true and `toolbar-items`. The default toolbar items are `add`, `edit`, `delete`, `update` and `cancel`.
 
-N> For `ToolbarItems` property you can assign either `string` value ("Add") or `enum` value (`Syncfusion.JavaScript.ToolBarItems.Add`).
+N> For `toolbar-items` property you can assign either `string` value ("Add") or `enum` value (`Syncfusion.JavaScript.ToolBarItems.Add`).
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-              {
-                col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-				col.Field("EmployeeID").HeaderText("Employee ID").Add();
-                col.Field("ShipCity").HeaderText("Ship City").Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-              }).Render();
-         }      
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+            <e-column field="CustomerID" header-text="CustomerID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -68,7 +56,7 @@ The following code example describes the above behavior.
              }
         } 
 {% endhighlight  %}    
-{% endtabs %} 
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -76,7 +64,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell edit type and its edit options
 
-The edit type of bound column can be customized using `EditType` property of `Columns`. The following Essential JavaScript controls are supported built-in by `EditType`. You can set the `EditType` based on specific data type of the column. 
+The edit type of bound column can be customized using `edit-type` property of `e-columns`. The following Essential JavaScript controls are supported built-in by `edit-type`. You can set the `edit-type` based on specific data type of the column. 
 
 * `NumericTextBox` control for integers, double, and decimal data types.
 * `DatePicker` control for date data type.
@@ -85,7 +73,7 @@ The edit type of bound column can be customized using `EditType` property of `Co
 
 And also you can define the model for all the editTypes controls while editing through EditOptions.
 
-The following table describes `EditType` and their corresponding EditOptions of the specific data type of the column.
+The following table describes `edit-type` and their corresponding EditOptions of the specific data type of the column.
 
 <table>
 <tr>
@@ -110,41 +98,30 @@ DateTimePicker</td><td>
 DateTimeEditOptions(new DateTimePickerProperties() {})</td></tr>
 </table>
 
-N> 1. If `EditType` is not set, then by default it will display the input element ("string") while editing a column.
-N> 2. For `EditType` property you can assign either `string` value ("Numeric") or `enum` value (`Syncfusion.JavaScript.EditingType.Numeric`).
+N> 1. If `edit-type` is not set, then by default it will display the input element ("string") while editing a column.
+N> 2. For `edit-type` property you can assign either `string` value ("Numeric") or `enum` value (`Syncfusion.JavaScript.EditingType.Numeric`).
 
 The following code example describes the above behavior 
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-			       col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.Dropdown).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).DateEditOptions(new DatePickerProperties() { ButtonText="Now"}).Format("{0:MM/dd/yyyy}").Add();            
-                   col.Field("Verified").HeaderText("Verified").EditType(EditingType.Boolean).Add();
-
-                }).Render();
-           }      
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="CustomerID" edit-type="String"></e-column>
+            <e-column field="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker"format="{0:MM/dd/yyyy}" ></e-column>
+            <e-column field="Verified" header-text="Verified" edit-type="Boolean"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -154,14 +131,14 @@ The following code example describes the above behavior
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
 {% endhighlight  %}    
-{% endtabs %} 
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -169,7 +146,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Edit Template
 
-On editing the column values, custom editor can be created by using `EditTemplate` property of `Columns`. It has three functions, they are
+On editing the column values, custom editor can be created by using `edit-template` property of `e-columns`. It has three functions, they are
 
 1. `Create` - It is used to create the control at time of initialize.
 2. `Read` - It is used to read the input value at time of save.
@@ -178,36 +155,24 @@ On editing the column values, custom editor can be created by using `EditTemplat
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-              {
-                 col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-                 col.Field("CustomerID").HeaderText("Customer ID").Add();
-			     col.Field("Freight").HeaderText("Freight").Add();
-                 col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                 col.Field("ShipPostalCode").HeaderText("Ship Postal Code").EditTemplate(a => { a.Create("create").Read("read").Write("write"); }).Add();
-                
-              }).Render();
-           }
-              
-{% endhighlight  %}  
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+            <e-column field="CustomerID" header-text="CustomerID"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+            <e-column field="ShipPostalCode" header-text="Ship Postal Code">
+              <e-edit-template create="create" read="read" write="write"> 
+              </e-edit-template>
+            </e-column>
+        </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
 {% highlight c# %}
 
      namespace MVCSampleBrowser.Controllers
@@ -216,14 +181,14 @@ The following code example describes the above behavior.
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
 {% endhighlight  %}
- {% highlight js %}
+{% highlight js %}
 
      <script id="template" type="text/x-jsrender">
         function create() 
@@ -245,7 +210,7 @@ The following code example describes the above behavior.
     </script>
     
 {% endhighlight %}   
-{% endtabs %} 
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -256,99 +221,29 @@ The following output is displayed as a result of the above code example.
 
 ### Inline 
 
-Set `EditMode` as `Normal`, then the row itself is changed as edited row.
+Set `edit-mode` as `Normal`, then the row itself is changed as edited row.
 
-N> For `EditMode` property you can assign either `string` value (`Normal`) or `enum` value (`Syncfusion.JavaScript.EditMode.Normal`).
-
-The following code example describes the above behavior.
-
-{% tabs %}
-
-{% highlight razor %}
-
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Normal); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").EditType(EditingType.Dropdown).Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-               }).Render();
-           }     
-
-{% endhighlight  %}
-{% highlight c# %}
-
-     namespace MVCSampleBrowser.Controllers
-        {
-            public class GridController : Controller
-              { 
-                public IActionResult GridFeatures()
-                 {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
-                 }
-             }
-        } 
-{% endhighlight  %}
-    
-{% endtabs %} 
-
-The following output is displayed as a result of the above code example.
-
-![](Editing_images/Editing_img4.png)
-
-
-### Inline Form
-
-Set `EditMode` as `InlineForm`, then edit form will be inserted next to the row which is to be edited.
+N> For `edit-mode` property you can assign either `string` value (`Normal`) or `enum` value (`Syncfusion.JavaScript.EditMode.Normal`).
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.InlineForm); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-                }).Render();
-            }      
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="Normal"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -365,8 +260,53 @@ The following code example describes the above behavior.
              }
         } 
 {% endhighlight  %}    
-{% endtabs %} 
+{% endtabs %}  
 
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img4.png)
+
+### Inline Form
+
+Set `edit-mode` as `InlineForm`, then edit form will be inserted next to the row which is to be edited.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight razor %}
+
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="InlineForm"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
+{% highlight c# %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+ 
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img5.png)
@@ -378,64 +318,47 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, set `EditMode` as `InlineFormTemplate` and specify the template ID to `InlineFormTemplateID` property of `EditSettings`.
+To edit the records using Inline template form, set `edit-mode` as `InlineFormTemplate` and specify the template ID to `inline-form-template-id` property of `e-edit-settings`.
 
-While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using `ActionComplete` event of grid.
+While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using `action-complete` event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while saving the edited record.
 N> 3.  It's a standard way to enclose the `Template` within the `script` tag with `type` as "text/x-jsrender".
-N> 4.  For `EditMode` property you can assign either `string` value (`InlineFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.InlineTemplateForm`) 
+N> 4.  For `edit-mode` property you can assign either `string` value (`InlineFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.InlineTemplateForm`) 
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .ClientSideEvents(eve => { eve.ActionComplete("complete"); })
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.InlineFormTemplate).InlineFormTemplateID("#template");})
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-                   col.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.Dropdown).Add();
-				             
-              }).Render();
-          }  
- 
-{% endhighlight  %} 
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="InlineFormTemplate" inline-form-template-id="#template" action-complete="complete"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}            
-{% highlight js %}			  
-    
+{% endhighlight  %}    
+{% highlight js %}	  
 <script id="template" type="text/template">                             
    <table cellspacing="10">
 		<tr>
@@ -475,10 +398,10 @@ The following code example describes the above behavior.
               }
         </script>
 			  
-{% endhighlight  %}    
+{% endhighlight %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img6.png)
 
@@ -486,44 +409,31 @@ Before the template elements are converted to JS controls
 
 ![](Editing_images/Editing_img7.png)
 
-After the template elements are converted to JS controls using actionComplete event.
-
+After the template elements are converted to JS controls using action-complete event.
 
 ### Dialog
 
-Set `EditMode` as `Dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
+Set `edit-mode` as `Dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Dialog); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-               }).Render();
-          }     
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="Dialog"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -533,14 +443,14 @@ The following code example describes the above behavior.
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
 {% endhighlight  %}    
-{% endtabs %} 
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -553,62 +463,47 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Dialog template form, set `EditMode` as 'DialogTemplate' and specify the template id to `DialogEditorTemplateID` property of `EditSettings`.
+To edit the records using Dialog template form, set `edit-mode` as 'DialogTemplate' and specify the template id to `dialog-editor-template-id` property of `e-edit-settings`.
 
-While using template, you can change the elements that are defined in the `Template`, to appropriate JS controls based on the column type. This can be achieved by using `ActionComplete` event of grid.
+While using template, you can change the elements that are defined in the `template`, to appropriate JS controls based on the column type. This can be achieved by using `action-complete` event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
-N> 3. For `EditMode` property you can assign either `string` value (`DialogTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.DialogTemplate`).
+N> 3. For `edit-mode` property you can assign either `string` value (`DialogTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.DialogTemplate`).
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .ClientSideEvents(eve => { eve.ActionComplete("complete"); })
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.DialogTemplate).DialogEditorTemplateID("#template"); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.Dropdown).Add();
-                     
-               }).Render();
-           }  
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="DialogTemplate" dialog-editor-template-id="#template" action-complete="complete"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}               
-{% highlight js %} 		  
-    
- <script id="template" type="text/template">
+{% endhighlight  %}    
+{% highlight js %}	  
+<script id="template" type="text/template">                             
    <table cellspacing="10">
 		<tr>
 			<td>Order ID</td>
@@ -647,7 +542,7 @@ The following code example describes the above behavior.
               }
         </script>
 			  
-{% endhighlight  %}   
+{% endhighlight %}    
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -660,47 +555,33 @@ Before the template elements are converted to JS controls
 
 After the template elements are converted to JS controls using actionComplete event.
 
-
 ### External Form
 
-By setting the `EditMode` as `ExternalForm`, the edit form is opened outside the grid content.
+By setting the `edit-mode` as `ExternalForm`, the edit form is opened outside the grid content.
 
 The following code example describes the above behavior.
-
+ 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.ExternalForm); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-                {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-                }).Render();
-           }      
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="ExternalForm"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
@@ -712,14 +593,12 @@ The following code example describes the above behavior.
                  }
              }
         } 
-{% endhighlight  %}
-    
-{% endtabs %} 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img11.png)
-
 
 Form Position:
 
@@ -728,39 +607,24 @@ You can position an External edit form in the following two ways.
 1. Top-right
 2. Bottom left
 
-This can be achieved by setting the `FormPosition` property of `EditSettings` as 'TopRight' or 'BottomLeft'.
+This can be achieved by setting the `form-position` property of `e-edit-settings` as 'TopRight' or 'BottomLeft'.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.ExternalForm).FormPosition(FormPosition.TopRight);  })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                            
-             }).Render();
-         }      
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="ExternalForm" form-position="TopRight"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
@@ -770,15 +634,14 @@ The following code example describes the above behavior.
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-    
-{% endtabs %} 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -791,61 +654,47 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using External template form, set `EditMode` as `ExternalFormTemplate` and specify the template id to `ExternalFormTemplateID` property of `EditSettings`.
+To edit the records using External template form, set `edit-mode` as `ExternalFormTemplate` and specify the template id to `external-form-template-id` property of `e-edit-settings`.
 
-While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using `ActionComplete` event of grid.
+While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using `action-complete` event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing. 
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
-N> 3. For `EditMode` property you can assign either `string` value (`ExternalFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.ExternalFormTemplate`).
+N> 3. For `edit-mode` property you can assign either `string` value (`ExternalFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.ExternalFormTemplate`).
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .ClientSideEvents(eve => { eve.ActionComplete("complete"); })
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.ExternalFormTemplate).ExternalFormTemplateID("#template");})
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.Dropdown).Add();
-              }).Render();
-          }  
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="ExternalFormTemplate" external-form-template-id="#template" action-complete="complete"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-{% highlight js %}              
-			  
-  <script id="template" type="text/template">
+{% endhighlight  %}    
+{% highlight js %}	  
+<script id="template" type="text/template">                             
    <table cellspacing="10">
 		<tr>
 			<td>Order ID</td>
@@ -876,7 +725,7 @@ The following code example describes the above behavior.
 		</tr>
    </table>
  </script>
-        <script>
+	    <script>
               function complete(args) {
 	             $("#EmployeeID").ejNumericTextbox();
 	             $("#Freight").ejNumericTextbox();
@@ -884,7 +733,7 @@ The following code example describes the above behavior.
               }
         </script>
 			  
-{% endhighlight  %}   
+{% endhighlight %}    
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -900,59 +749,46 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### Batch / Excel-like
 
-Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set `EditMode` as `Batch` to enable batch editing.
+Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set `edit-mode` as `Batch` to enable batch editing.
 
 N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Batch); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-               }).Render();
-          }      
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="Batch"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-    
-{% endtabs %} 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -961,43 +797,30 @@ The following output is displayed as a result of the above code example.
 
 ## Confirmation messages
 
-To show the confirm dialog while saving or discarding the Batch changes (discarding during the grid action like filtering, sorting and paging), set `ShowConfirmDialog` as `true`.
+To show the confirm dialog while saving or discarding the Batch changes (discarding during the grid action like filtering, sorting and paging), set `show-confirm-dialog` as `true`.
 
-N> `ShowConfirmDialog` property is only for Batch editing mode.
+N> `show-confirm-dialog` property is only for Batch editing mode.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().EditMode(EditMode.Batch).ShowConfirmDialog(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-              }).Render();
-          }      
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="Batch" show-confirm-dialog="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-
 {% highlight c# %}
 
      namespace MVCSampleBrowser.Controllers
@@ -1006,59 +829,43 @@ The following code example describes the above behavior.
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-    
-{% endtabs %} 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img16.png)
 
+To show delete confirm dialog while deleting a record, set `show-delete-confirm-dialog` as true.
 
-To show delete confirm dialog while deleting a record, set `ShowDeleteConfirmDialog` as true.
-
-N> `ShowDeleteConfirmDialog` property is for all type of `EditMode`.
+N> `show-delete-confirm-dialog` property is for all type of `edit-mode`.
 
 The following code example describes the above behavior.
 
-
 {% tabs %}
-
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().ShowDeleteConfirmDialog(); })
-            .ToolbarSettings(toolbar =>
-               {
-                  toolbar.ShowToolbar().ToolbarItems(items =>
-                    {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-				   col.Field("CustomerID").HeaderText("Customer ID").EditType(EditingType.String).Add();
-				   col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Add();
-                   col.Field("ShipCountry").HeaderText("Ship Country").Add();
-                   col.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").Add();            
-             }).Render();
-          }      
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" edit-mode="Batch" show-delete-confirm-dialog="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+            </e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-
 {% highlight c# %}
 
      namespace MVCSampleBrowser.Controllers
@@ -1067,14 +874,13 @@ The following code example describes the above behavior.
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-    
+{% endhighlight  %}    
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -1095,7 +901,7 @@ The below validation script files are needed when editing is enabled with valida
 ### jQuery Validation
 
 
-You can set validation rules using ` ValidationRules` property of `Columns`. The following are jQuery validation methods.
+You can set validation rules using `validation-rules` property of `e-columns`. The following are jQuery validation methods.
 
 __List__ __of__ __Jquery__ __validation__ __methods__
 
@@ -1171,51 +977,36 @@ Grid supports all the standard validation methods of jQuery, please refer the jQ
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
-            .ToolbarSettings(toolbar =>
-               {
-                  toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-              {
-                col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).ValidationRules(v => v.AddRule("required",true).AddRule("number", true)).Add();
-                col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(v => v.AddRule("required", true).AddRule("minlength", 3)).Add();
-			    col.Field("ShipCity").HeaderText("Ship City").Add();
-                col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).ValidationRules(v => v.AddRule("range", "[0,1000]")).Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-            }).Render();
-         }      
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"number",true} })' text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"minlength",3} })'></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"range","[0,1000]"} })' ></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-    
+{% endhighlight  %}    
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -1225,43 +1016,43 @@ The following output is displayed as a result of the above code example.
 
 ### Custom Validation
 
-In addition to jQuery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within `ValidationRules` property of `Columns`. 
+In addition to jQuery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within `validation-rules` property of `e-columns`. 
 
-Using `messages` property of `ValidationRules` you can specify the error message for that column.
+Using `messages` property of `validation-rules` you can specify the error message for that column.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-              {
-                col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-                col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(v => v.AddRule("customRegex", 5)).Add();
-			    col.Field("ShipCity").HeaderText("Ship City").Add();
-                col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).ValidationRules(rule => rule.AddRule("customCompare", new List<object>() { 0, 1000 })).Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-              }).Render();
-          }    
-            
- {% endhighlight  %}          
-           
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID"  text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="String" validation-rules='@(new Dictionary<string,object> {{"customRegex",5}})'></e-column>
+            <e-column field="ShipCountry" header-text="Ship City"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric" validation-rules='@(new Dictionary<string,object> {{"customCompare",new List <Object>() {0,1000}} })' ></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
+{% highlight c# %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}   
 {% highlight js %}           
           
           <script type="text/javascript">
@@ -1278,24 +1069,7 @@ The following code example describes the above behavior.
             });
           </script>
      
-{% endhighlight  %}
-
-{% highlight c# %}
-
-    namespace MVCSampleBrowser.Controllers
-        {
-            public class GridController : Controller
-              { 
-                public IActionResult GridFeatures()
-                 {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
-                 }
-             }
-        } 
-{% endhighlight  %}
-    
+{% endhighlight  %}   
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -1305,56 +1079,41 @@ The following output is displayed as a result of the above code example.
 
 ## Adding New Row Position
 
-To add new row in the top or bottom position of grid content, set `RowPosition` property of `EditSettings` depending on the requirement.
+To add new row in the top or bottom position of grid content, set `row-position` property of `e-edit-settings` depending on the requirement.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().RowPosition(RowPosition.Bottom) })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-              {
-                col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-			    col.Field("ShipCity").HeaderText("Ship City").Add();
-                col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-             }).Render();
-        }  
-{% endhighlight %}
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" row-position="Bottom"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+     namespace MVCSampleBrowser.Controllers
         {
             public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
-{% endhighlight  %}
-    
+{% endhighlight  %}    
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.
@@ -1364,104 +1123,28 @@ The following output is displayed as a result of the above code example.
 
 ## Render with blank row for easy add new
 
-The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set `ShowAddNewRow` property of `EditSettings` as `true`.
+The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set `show-add-new-row` property of `e-edit-settings` as `true`.
 
-The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the `RowPosition` property of `EditSettings`.
+The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the `row-position` property of `e-edit-settings`.
 
 The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-              {
-                col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Add();
-			    col.Field("ShipCity").HeaderText("Ship City").Add();
-                col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Add();
-                col.Field("ShipCountry").HeaderText("Ship Country").Add();
-              }).Render();
-         }  
-{% endhighlight %}
-
-{% highlight c# %}
-
-    namespace MVCSampleBrowser.Controllers
-        {
-            public class GridController : Controller
-              { 
-                public IActionResult GridFeatures()
-                 {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
-                 }
-             }
-        } 
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" show-add-new-row="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-    
-{% endtabs %} 
-
-The following output is displayed as a result of the above code example.
-
-![](Editing_images/Editing_img27.png)
-
-N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
-N> 2. If it is local, then the newly added record is added at the top of the page even if the added new `RowPosition` is mentioned as "Bottom".
-
-
-## Default column values on add new
-
-While adding new record in grid, there is an option to set the default value for the columns. Using `DefaultValue` property of `Columns` you can set the default values for that particular column while editing or adding a new row.
-
-The following code example describes the above behavior.
-
-{% tabs %}
-
-{% highlight razor %}
-
-    @{Html.EJ().Grid<Object>("FlatGrid")
-            .Datasource((IEnumerable<object>)ViewBag.DataSource)
-            .AllowPaging()
-            .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
-            .ToolbarSettings(toolbar =>
-               {
-                   toolbar.ShowToolbar().ToolbarItems(items =>
-                   {
-                       items.AddTool(ToolBarItems.Add);
-                       items.AddTool(ToolBarItems.Edit);  
-                       items.AddTool(ToolBarItems.Delete);
-                       items.AddTool(ToolBarItems.Update);
-                       items.AddTool(ToolBarItems.Cancel);
-                   });
-               })
-            .Columns(col =>
-               {
-                 col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Add();
-                 col.Field("CustomerID").HeaderText("Customer ID").Add();
-			     col.Field("ShipCity").HeaderText("Ship City").DefaultValue("Bern").Add();
-                 col.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).DefaultValue(45).Add();
-                 col.Field("ShipCountry").HeaderText("Ship Country").DefaultValue("Brazil").Add();
-               }).Render();
-          }  
-{% endhighlight %}
-
 {% highlight c# %}
 
      namespace MVCSampleBrowser.Controllers
@@ -1470,14 +1153,60 @@ The following code example describes the above behavior.
               { 
                 public IActionResult GridFeatures()
                  {
-                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.DataSource = DataSource;
-                   return View();
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
                  }
              }
         } 
+{% endhighlight  %}    
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img27.png)
+
+N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
+N> 2. If it is local, then the newly added record is added at the top of the page even if the added new `row-position` is mentioned as "Bottom".
+
+
+## Default column values on add new
+
+While adding new record in grid, there is an option to set the default value for the columns. Using `default-value` property of `e-columns` you can set the default values for that particular column while editing or adding a new row.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight razor %}
+
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true" show-add-new-row="true"></e-edit-settings>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
+        <e-columns>
+            <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" default-value="Bern"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric" default-value="45"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" default-value="Brazil"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-    
+{% highlight c# %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
 {% endtabs %} 
 
 The following output is displayed as a result of the above code example.

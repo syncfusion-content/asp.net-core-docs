@@ -9,53 +9,46 @@ documentation: ug
 
 # Summary 
 
-Summary rows visibility can be controlled by `ShowSummary` property and it can be added to grid by using `SummaryRow` array property. The following code example describes the above behavior.
-
+Summary rows visibility can be controlled by `show-summary` property and it can be added to grid by using `e-summary-rows` array property. The following code example describes the above behavior.
 
 {% tabs %}
-
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		row.Title("Sum").SummaryColumns(col => { col.SummaryType(SummaryType.Sum).Format("{0:C}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
-	})
-	.AllowPaging()
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-		col.Field("ShipCountry").HeaderText("Ship Country").Width(100).Add();
-		col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Format("{0:C}").Add();
-
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
-
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.DataSource">
+        <e-summary-rows>
+           <e-summary-row title="Sum">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+         </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="80" text-align="Right"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="90"></e-column>
+			<e-column field="ShipCountry" header-text="Ship Country" width="100"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="80" format="{0:C}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-{% endtabs %} 
+{% highlight c# %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
 
 ![](Summary_images/summaryGrid_img1.png)
 
@@ -73,352 +66,304 @@ Following are the supported list of aggregates
 ### Sum, Average, Maximum and minimum
 
 
-Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined by using  `SummaryType` in `SummaryColumns` collections. These aggregate are used in `Number` column.
+Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined by using  `summary-type` in `e-summary-columns` collections. These aggregate are used in `Number` column.
 
 {% tabs %}
-
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		row.Title("Sum").SummaryColumns(col => { col.SummaryType(SummaryType.Sum).Format("{0:C}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
-		row.Title("Average").SummaryColumns(col => { col.SummaryType(SummaryType.Average).Format("{0:C}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
-		row.Title("Maximum").SummaryColumns(col => { col.SummaryType(SummaryType.Maximum).Format("{0:C}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
-		row.Title("Minimum").SummaryColumns(col => { col.SummaryType(SummaryType.Minimum).Format("{0:C}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
-	  })
-	.AllowPaging()
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-		col.Field("ShipCountry").HeaderText("Ship Country").Width(100).Add();
-		col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Format("{0:C}").Add();
-
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.DataSource">
+      <e-summary-rows>
+           <e-summary-row title="Sum">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+            <e-summary-row title="Average">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Average" format="{0:C}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+           <e-summary-row title="Maximum">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Maximum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+           <e-summary-row title="Minimum">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Minimum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+         </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="80" text-align="Right"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="90"></e-column>
+			<e-column field="ShipCountry" header-text="Ship Country" width="100"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="80" format="{0:C}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-{% endtabs %} 
+{% highlight c# %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 ![](Summary_images/summaryGrid_img2.png)
 
 ### True and False Count 
 
-Summaries with `True` and `False` count aggregate can be defined by using `SummaryType`,`SummaryColumns` collections. `True` and `False` count aggregates are used for Boolean columns.
+Summaries with `True` and `False` count aggregate can be defined by using `summary-type`,`e-summary-columns` collections. `True` and `False` count aggregates are used for Boolean columns.
 
 {% tabs %}
-
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		row.Title("False Count").SummaryColumns(col => { col.SummaryType(SummaryType.Falsecount).DisplayColumn("Verified").DataMember("Verified").Add(); }).Add();
-		row.Title("True Count").SummaryColumns(col => { col.SummaryType(SummaryType.Truecount).DisplayColumn("Verified").DataMember("Verified").Add(); }).Add();
-		
-	})  
-	.AllowPaging()
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-		col.Field("ShipCountry").HeaderText("Ship Country").Width(100).Add();
-		col.Field("Verified").HeaderText("Verified").Width(80).Add();
-
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.DataSource">
+      <e-summary-rows>
+           <e-summary-row title="False Count">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Falsecount" display-column="Verified" data-member="Verified"/>
+                   </e-summary-columns>
+           </e-summary-row>
+           <e-summary-row title="True Count">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Truecount" display-column="Verified" data-member="Verified"/>
+                   </e-summary-columns>
+           </e-summary-row>
+         </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="80" text-align="Right"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="90"></e-column>
+			<e-column field="ShipCountry" header-text="Ship Country" width="100"></e-column>
+            <e-column field="Verified" header-text="Verified" width="80"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-{% endtabs %} 
+{% highlight c# %}
 
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 ![](Summary_images/summaryGrid_img3.png)
 
 
 ## Custom Summary
 
-Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, `SummaryType` should be `Custom` and `CustomSummaryValue` property need to define as function. In this property `CustomSummaryValue` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
-{% tabs %}
+Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, `summary-type` should be `Custom` and `custom-summary-value` property need to define as function. In this property `custom-summary-value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
 
+{% tabs %}
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		 row.Title("Currency").SummaryColumns(col => { col.SummaryType(SummaryType.Custom).CustomSummaryValue("currency").DisplayColumn("Freight").Format("{0:C2}").Add(); }).Add(););
-		
-		
-	})  
-	.AllowPaging()
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(70).Add();
-		col.Field("CustomerID").HeaderText("CustomerID").TextAlign(TextAlign.Right).Width(70).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(70).Add();
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(70).Add();
-		col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(70).Format("{0:C}").Add();
-
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.DataSource">
+        <e-summary-rows>
+           <e-summary-row title="Currency">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Custom" custom-summary-value="currency" format="{0:C2}" display-column="Freight"/>
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="70" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" text-align="Right" width="70"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="70"></e-column>
+			<e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="70"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="70" format="{0:C}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
+{% highlight c# %}
 
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}
 {% highlight js %}
-
-<script type="text/javascript">
-  function currency() {
+   
+   <script type="text/javascript">
+   function currency() {
       //to get grid instance
       var gridObj = $("#Grid").ejGrid("instance");
       //ej.sum is aggreagte to add datas of freight from datasource
       return ej.sum(gridObj.model.dataSource, "Freight");
-  }
+   }
   </script>
 
-{% endhighlight %}
+{% endhighlight  %}  
+{% endtabs %}  
 
-{% endtabs %} 
 
 ![](Summary_images/summaryGrid_img4.png)
 
 ## Group Summary
 
-Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define `ShowTotalSummary` as false.
+Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define `show-total-summary` as false.
 
 {% tabs %}
-
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		row.ShowTotalSummary(false).SummaryColumns(col => 
-		{ 
-			col.SummaryType(SummaryType.Sum)
-			.Format("{0:C2}")
-			.DisplayColumn("Freight")
-			.DataMember("Freight")
-			.Prefix("Sum = ")
-			.Add(); 
-		}).Add();
-	})
-	.AllowPaging()
-	.AllowSorting()
-	.AllowGrouping()
-	.GroupSettings(group => { group.GroupedColumns(col => { col.Add("CustomerID"); }); })
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(80).Add();
-		col.Field("CustomerID").HeaderText("CustomerID").TextAlign(TextAlign.Right).Width(75).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(150).Add();	
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();		
-		col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "CustomerID"}})"  datasource="ViewBag.DataSource">
+        <e-summary-rows>
+           <e-summary-row show-total-summary="false" >
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Sum" prefix=@("Sum=") format="{0:C2}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="70" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" text-align="Right" width="70"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="70"></e-column>
+			<e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="70"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="70" format="{0:C2}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
+{% highlight c# %}
 
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
+     namespace MVCSampleBrowser.Controllers
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
-{% endhighlight %}
-
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}
 {% endtabs %}
 
 ![](Summary_images/summaryGrid_img5.png)
-
 
 W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
-To show summaries in each Group's Caption row, particular summary row should have `ShowTotalSummary` as `false` and `ShowCaptionSummary` as `true`.
-{% tabs %}
+To show summaries in each Group's Caption row, particular summary row should have `show-total-summary` as `false` and `show-caption-summary` as `true`.
 
+{% tabs %}
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		row.ShowTotalSummary(false).SummaryColumns(col => 
-		{ 
-			col.SummaryType(SummaryType.Average)
-			.Format("{0:C2}")
-			.DisplayColumn("Freight")
-			.DataMember("Freight")
-			.Prefix("Average = ")
-			.Add(); 
-		}).Add();
-	})
-	.AllowPaging()
-	.AllowSorting()
-	.AllowGrouping()
-	.GroupSettings(group => { group.GroupedColumns(col => { col.Add("EmployeeID"); }); })
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width(80).Add();
-		col.Field("CustomerID").HeaderText("CustomerID").TextAlign(TextAlign.Right).Width(75).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(150).Add();	
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();		
-		col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "EmployeeID"}})" datasource="ViewBag.DataSource">
+        <e-summary-rows>
+           <e-summary-row show-total-summary="false" show-caption-summary="true" >
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Sum" prefix=@("Sum=") format="{0:C2}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="70" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" text-align="Right" width="70"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="70"></e-column>
+			<e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="70"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="70" format="{0:C2}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
+{% endhighlight  %}
+{% highlight c# %}
 
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
+     namespace MVCSampleBrowser.Controllers
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
-{% endhighlight %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}
 
 {% endtabs %}
 
 ![](Summary_images/summaryGrid_img6.png)
 
-
 W> Minimum one column should be grouped to show summary details.
 
 ## Format
 
-To format Summary values, `Format` property needs to be assigned in `SummaryColumns` collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format Summary values, `format` property needs to be assigned in `e-summary-columns` collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% tabs %}
-
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("Summary")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	.ShowSummary()
-	.SummaryRow(row =>
-	{
-		row.Title("Sum").SummaryColumns(col => { col.SummaryType(SummaryType.Sum).Format("{0:C}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
-	})
-	.AllowPaging()
-	.Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-		col.Field("ShipCountry").HeaderText("Ship Country").Width(100).Add();
-		col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Format("{0:C}").Add();
-
-	}).Render();
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-
-        }
-    }
-}
-
-
+   <ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.DataSource">
+        <e-summary-rows>
+           <e-summary-row title="Sum">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="70" text-align="Right"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="70"></e-column>
+			      <e-column field="ShipCountry" header-text="Ship Country" width="100"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="70" format="{0:C}"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
+{% highlight c# %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}
+
 {% endtabs %} 
 
 ![](Summary_images/summaryGrid_img7.png)
