@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Selection
 
-Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set `AllowSelection` as `true`. 
+Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set `allow-selection` as `true`. 
 
 ## Types of Selection
 
@@ -19,53 +19,49 @@ There are two types of selections available in grid. They are
 
 ### Single Selection
 
-Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting `SelectionType` property as `Single` and also set `AllowSelection` property as `true`.
+Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting `selection-type` property as `single` and also set `allow-selection` property as `true`.
 
 ### Multiple Selections
 
-Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set `SelectionType`  property as `Multiple` and also set `AllowSelection` property as `true`.
+Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set `selection-type`  property as `Multiple` and also set `allow-selection` property as `true`.
 
 ## Row Selection
 
-Row selection is enabled by set `SelectionMode` property of `SelectionSettings` as `Row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect selected rows, by press **"Ctrl + mouse left"** click on selected row.
+Row selection is enabled by set `selection-mode` property of `e-selection-settings` as `row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect selected rows, by press **"Ctrl + mouse left"** click on selected row.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" allow-selection="true" selection-type="Multiple" datasource="ViewBag.DataSource">
+       <e-selection-settings selection-mode="@(new List<string>(){"row"})"></e-selection-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .AllowSelection()
-            .SelectionType(SelectionType.Multiple)
-            .SelectionSettings(select => { select.SelectionMode(mode => { mode.AddMode(SelectionMode.Row); }); })            
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();   
-	 	  	    col.Field("ShipCity").Add();
-	 	        col.Field("ShipCountry").Add(); 
-                col.Field("Freight").Add();    
-            }).Render();
-        }
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
+
+      namespace MVCSampleBrowser.Controllers
           {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         } 
-{% endhighlight  %}
-{% endtabs %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
 
 The following output is displayed as a result of the above code example
 
@@ -73,45 +69,41 @@ The following output is displayed as a result of the above code example
 
 ## Multiple Row Selection using Checkbox Column
 
-Select multiple rows in grid by using Checkbox column and it can be enabled by set column `Type` as `checkbox`. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header.
+Select multiple rows in grid by using Checkbox column and it can be enabled by set column `type` as `checkbox`. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header.
 
-If the `Field` property of Checkbox column is not defined, then it acts as a template column. So `Field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
+If the `field` property of Checkbox column is not defined, then it acts as a template column. So `field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" allow-selection="true" datasource="ViewBag.DataSource">
+       <e-columns>
+            <e-column type="checkbox" width="50"/>
+            <e-column field="OrderID" header-text="Order ID" width="75" text-align="right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80" ></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="right" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="right" width="75" format="{0:C}"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .AllowSelection()          
-            .Columns(col =>
-            {
-                col.Type("checkbox").Width(50).Add();
-                col.Field("OrderID").IsPrimaryKey(true).Width(80).TextAlign(TextAlign.Right).Add();
-                col.Field("CustomerID").HeaderText("Customer ID").Width(75).Add();
-                col.Field("EmployeeID").HeaderText("Employee ID").Width(75).TextAlign(TextAlign.Right).Add();
-                col.Field("Freight").HeaderText("Freight").Format("{0:C}").Width(75).TextAlign(TextAlign.Right).Add();  
-            }).Render();
-        }
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
+
+      namespace MVCSampleBrowser.Controllers
           {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         } 
-{% endhighlight  %}
-{% endtabs %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example
 
@@ -119,45 +111,42 @@ The following output is displayed as a result of the above code example
 
 ## Cell Selection
 
-Cell selection is enabled by set `SelectionMode` property of `SelectionSettings` as `Cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on selected cell click.
+Cell selection is enabled by set `selection-mode` property of `selection-settings` as `cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on selected cell click.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" allow-selection="true" selection-type="multiple" datasource="ViewBag.DataSource">
+       <e-selection-settings selection-mode="@(new List<string>(){"cell"})"/> 
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .AllowSelection()
-            .SelectionType(SelectionType.Multiple)
-            .SelectionSettings(select => { select.SelectionMode(mode => { mode.AddMode(SelectionMode.Cell); }); })            
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();   
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add(); 
-                col.Field("Freight").Add();    
-            }).Render(); 
-        }
 {% endhighlight  %}
 {% highlight c# %}
-		
-	     namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
+
+      namespace MVCSampleBrowser.Controllers
           {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
+
 
 The following output is displayed as a result of the above code example
 
@@ -174,41 +163,36 @@ Box cell selection is to select multiple cells vertically based on the initial c
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" allow-selection="true" selection-type="multiple" datasource="ViewBag.DataSource">
+       <e-selection-settings selection-mode="cell" cell-selection-mode="Box"/> 
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .AllowSelection()
-            .SelectionType(SelectionType.Multiple)
-            .SelectionSettings(select => { select.SelectionMode(mode => { mode.AddMode(SelectionMode.Cell);}).CellSelectionMode(CellSelectionMode.Box); })           
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();   
-	            col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add(); 
-                col.Field("Freight").Add();    
-            }).Render();
-         }
 {% endhighlight  %}
 {% highlight c# %}
-		
-	    namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
+
+      namespace MVCSampleBrowser.Controllers
           {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-            }
-          }
-{% endhighlight  %}
-{% endtabs %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
  The following output is displayed as a result of the above code example
 
@@ -217,46 +201,41 @@ The following code example describes the above behavior.
 
 ## Column Selection
 
-Column selection can be enabled by setting `SelectionMode` property of `SelectionSettings` as `Column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
+Column selection can be enabled by setting `SelectionMode` property of `e-selection-settings` as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" allow-selection="true" selection-type="multiple" datasource="ViewBag.DataSource">
+       <e-selection-settings selection-mode="@(new List<string>(){"column"})"/> 
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .AllowSelection()
-            .SelectionType(SelectionType.Multiple)
-            .SelectionSettings(select => { select.SelectionMode(mode => { mode.AddMode(SelectionMode.Column); }); })           
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();   
-	            col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add(); 
-                col.Field("Freight").Add();    
-            }).Render(); 
-        }
 {% endhighlight  %}
 {% highlight c# %}
-		
-	    namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-          }
-       }
 
-{% endhighlight  %}
-{% endtabs %}
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
 
 The following output is displayed as a result of the above code example
 
@@ -269,40 +248,35 @@ While using grid in a touch device environment, there is an option for multi sel
 
 The following code example describes the above behavior. 
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" allow-selection="true" selection-type="multiple" datasource="ViewBag.DataSource">
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .AllowSelection()
-            .SelectionType(SelectionType.Multiple)           
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();   
-	            col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add(); 
-                col.Field("Freight").Add();    
-            }).Render();
-         }
 {% endhighlight  %}
 {% highlight c# %}
-		
-         namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
+
+      namespace MVCSampleBrowser.Controllers
           {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-            }
-          }
-{% endhighlight  %}
-{% endtabs %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -311,43 +285,39 @@ The following output is displayed as a result of the above code example.
 
 ## Toggle Selection
 
-The Toggle selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set `EnableToggle` property of `SelectionSettings`  as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
+The Toggle selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set `enable-toggle` property of `selection-settings` as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
 
 N> If multi selection is enabled, then in first click on any selected row (without pressing Ctrl key), it will clear multi selection and in second click on the same row, it will be unselected. 
 
 The following code example describes the above behavior. 
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
+   <ej-grid id="FlatGrid" allow-paging="true" enable-row-hover="false" datasource="ViewBag.DataSource">
+     <SelectionSettings enable-toggle="true"/>
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
 
-	  @{Html.EJ().Grid<OrdersView>("Selection")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .EnableRowHover(false)
-            .SelectionSettings(select => { select.EnableToggle(true); })        
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();   
-	            col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add(); 
-                col.Field("Freight").Add();    
-            }).Render(); 
-         }
 {% endhighlight  %}
 {% highlight c# %}
-		
-	    namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
+
+      namespace MVCSampleBrowser.Controllers
           {
-           public IActionResult Selection()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
 {% endtabs %}  

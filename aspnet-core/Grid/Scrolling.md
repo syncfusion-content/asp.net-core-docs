@@ -8,50 +8,49 @@ documentation: ug
 ---
 # Scrolling
 
-Scrolling can be enabled by setting `AllowScrolling`  as `true`. The height and width can be set to grid by using the properties  `Height` and `Width` property of  `ScrollSettings`. 
+Scrolling can be enabled by setting `allow-scrolling` as `true`. The height and width can be set to grid by using the properties `height` and `width` property of `e-scroll-settings`. 
 
- N> If `Width`  and `Height`  is not defined in the `ScrollSettings`  property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
+ N> If `width` and `height` is not defined in the `e-scroll-settings` property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
-The height and width can be set in percentage and pixel. The default value for `Height`  and `Width`  in `ScrollSettings`  is 0 and `auto` respectively.
+The height and width can be set in percentage and pixel. The default value for `height` and `width` in `e-scroll-settings` is 0 and `auto` respectively.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(400).Height(300); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add()
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-      	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="400" height="300">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+            
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-	    namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-            }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -59,46 +58,45 @@ The following output is displayed as a result of the above code example.
 
 ## Set Width and Height in pixel 
 
-To specify the `Width` and `Height` property of  `ScrollSettings` in pixel, by set the pixel value as integer. 
+To specify the `width` and `height` property of `e-scroll-settings` in pixel, by set the pixel value as integer. 
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(500).Height(300); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-      	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="500" height="300">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+            
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -106,46 +104,46 @@ The following output is displayed as a result of the above code example.
 
 ## Set Width and Height in percentage
 
-To specify the `Width` and `Height` property of  `ScrollSettings`  in percentage, by set the percentage value as string.
+To specify the `width` and `height` property of  `e-scroll-settings` in percentage, by set the percentage value as string.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width("70%").Height("5%"); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-      	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width=@("70%") height=@("5%")></e-scroll-settings>
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+            
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-	    namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
 
 The following output is displayed as a result of the above code example.
 
@@ -153,46 +151,45 @@ The following output is displayed as a result of the above code example.
 
 ## Set Width as auto
 
-Specify `Width`  property of `ScrollSettings`  as auto, then the scrollbar is rendered only when the grid width exceeds the browser window width.
+Specify `width` property of `e-scroll-settings` as auto, then the scrollbar is rendered only when the grid width exceeds the browser window width.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width("auto").Height(300); })            
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width=@("auto") height="300">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+            
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-	    namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -200,48 +197,44 @@ The following output is displayed as a result of the above code example.
 
 ## Frozen Columns
 
-Specify `FrozenColumns`  property of `ScrollSettings`  to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying `FrozenColumns`  then only you can scroll and see the remaining columns with freeze pane.
+Specify `frozen-columns` property of `e-scroll-settings` to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying `frozen-columns` then only you can scroll and see the remaining columns with freeze pane.
 
-N> `AllowScrolling`  must be `true` while specifying `FrozenColumns` .
+N> `allow-scrolling` must be `true` while specifying `frozen-columns`.
 
-The following code example describes the above behavior.
-
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(300).FrozenColumns(2); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-        }
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="300" frozen-columns="2">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -250,47 +243,47 @@ The following output is displayed as a result of the above code example.
 
 ### Freeze particular columns:
 
-To freeze selected columns in grid at the time of scrolling, by set `IsFrozen`  property of columns as `true`. `IsFrozen`  columns are rendered first in the grid even the columns index is different while declaring the `Columns` .
+To freeze selected columns in grid at the time of scrolling, by set `is-frozen` property of columns as `true`.`is-frozen` columns are rendered first in the grid even the columns index is different while declaring the `e-columns` .
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(400); })              
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("Freight").Format("{0:C}").IsFrozen(true).Add(); 
-                col.Field("OrderDate").Format("{0:dd/MM/yyyy}").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Width(100).IsFrozen(true).Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();         
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="400" frozen-columns="2">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="Freight" format="{0:C}" is-frozen="true"></e-column>
+            <e-column field="OrderDate" format="{0:dd/MM/yyyy}"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry" is-frozen="true"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-         {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
 
 The following output is displayed as a result of the above code example.
 
@@ -299,8 +292,8 @@ The following output is displayed as a result of the above code example.
 
 ### Frozen Columns alert Messages:
 
-1. If `AllowScrolling`  is false while using `FrozenColumns`  then "Enable `AllowScrolling`  while using frozen Columns" alert message is thrown.
-2. If `FrozenColumns`  is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
+1. If `allow-scrolling` is false while using `frozen-columns`  then "Enable `allow-scrolling` while using frozen Columns" alert message is thrown.
+2. If `frozen-columns` is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
 3. Frozen Rows and Columns are not supported the following features
  Grouping
  Row Template
@@ -312,48 +305,46 @@ If any one of the above feature is enabled along with Frozen Rows and Columns, t
 
 ## Frozen Rows
 
-Specify `FrozenRows`  property of `ScrollSettings`  to freeze rows(upto the specified FrozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying `FrozenRows`  then only you can scroll and see the remaining rows with freeze pane.
+Specify `frozen-rows` property of `e-scroll-settings` to freeze rows(upto the specified FrozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying `frozen-rows` then only you can scroll and see the remaining rows with freeze pane.
 
-N> `AllowScrolling`  must be `true` while specifying `FrozenRows` .
+N> `allow-scrolling` must be `true` while specifying `frozen-rows` .
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(300).FrozenRows(4); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();   
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="400" frozen-rows="4">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-        }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -362,52 +353,50 @@ The following output is displayed as a result of the above code example.
 
 ## Touch scroll
 
-In touch  supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting `EnableTouchScroll`  property of `ScrollSettings`  as `false`.
+In touch supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting `enable-touch-scroll` property of `e-scroll-settings` as `false`.
 
 The following code example describes the above behavior.
-
-{% tabs %} 
+ 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(300).EnableTouchScroll(false); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="400" enable-touch-scroll="false">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-         namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-         }
-{% endhighlight  %}
-{% endtabs %} 
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 ## Virtual Scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `AllowVirtualScrolling`  property of `ScrollSettings`  as `true`. 
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `allow-virtual-scrolling` property of `e-scroll-settings` as `true`. 
 
-We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `EnableVirtualization` property of `ScrollSettings` as true and it doesn't requires `AllowVirtualScrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable `EnableVirtualization` property of the `ScrollSettings`. Some of the relevant functionalities of this are,
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `enable-virtualization` property of `e-scroll-settings` as true and it doesn't requires `allow-virtual-scrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable `enable-virtualization` property of the `e-scroll-settings`. Some of the relevant functionalities of this are,
 
 1.	White space will not be appeared in the Grid. 
 2.	Improved page rendering performance. 
@@ -430,46 +419,44 @@ N> 7. Editing
 
 ### Normal Mode:
 
-It allows you to load the grid with data while scrolling. This can be achieved by setting `VirtualScrollMode`  as `Normal`.
+It allows you to load the grid with data while scrolling. This can be achieved by setting `virtual-scroll-mode` as `Normal`.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(300).AllowVirtualScrolling(true).VirtualScrollMode(VirtualScrollMode.Normal); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="300" allow-virtual-scrolling ="true" virtual-scroll-mode="Normal">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-        }
-{% endhighlight  %}
-{% endtabs %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -477,46 +464,44 @@ The following output is displayed as a result of the above code example.
 
 #### Enhanced Virtual Scrolling:
 
-In order to enable this, you need to set the `EnableVirtualization` property of the `ScrollSettings` as true. 
+In order to enable this, you need to set the `enable-virtualization` property of the `e-scroll-settings` as true. 
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(300).EnableVirtualization(true); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="300" enable-virtualization="true">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-        }
-{% endhighlight  %}
-{% endtabs %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -524,47 +509,46 @@ The following output is displayed as a result of the above code example.
 
 ### Continuous Mode:
 
-In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the `VirtualScrollMode`  property as `Continuous`.
+In Continuous mode, the data is loaded in grid when the scrollbar reaches the end. You can enable the continuous mode by setting the `virtual-scroll-mode` property as `Continuous`.
 
 The following code example describes the above behavior.
 
-{% tabs %} 
+{% tabs %}
 {% highlight razor %}
 
-	  @{Html.EJ().Grid<OrdersView>("Scrolling")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowScrolling()
-            .ScrollSettings(col => { col.Width(550).Height(300).AllowVirtualScrolling(true).VirtualScrollMode(VirtualScrollMode.Continuous); })             
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCity").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("ShipAddress").Add();
-                col.Field("ShipPostalCode").Add();
-                col.Field("Freight").Format("{0:C}").Add();    
-            }).Render();
-       	}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" allow-scrolling="true">
+      <e-scroll-settings width="550" height="300" allow-virtual-scrolling ="true" virtual-scroll-mode="Continuous">
+        <e-columns>
+            <e-column field="OrderID" ></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="CustomerID"></e-column>
+            <e-column field="ShipCity"></e-column>
+            <e-column field="ShipCountry"></e-column> 
+            <e-column field="ShipAddress"></e-column> 
+            <e-column field="ShipPostalCode"></e-column>   
+            <e-column field="Freight" format="{0:C}"></e-column>
+       </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
 {% highlight c# %}
-		
-        namespace MVCSampleBrowser.Controllers
-     	 {
-          public partial class GridController : Controller
-          {
-           public IActionResult Scrolling()
-             {
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-        }
-{% endhighlight  %}
-{% endtabs %}
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
  ![](scrolling_images/scrolling_img9.png)
+
