@@ -9,75 +9,39 @@ documentation: ug
 
 # Print
 
-You need to use `print()` method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `PrintGrid` in `ToolbarItems`.
+You need to use `print()` method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `printGrid` in `toolbar-items`.
 
 {% tabs %}
- 
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("PrintGrid")
-
-.Datasource((IEnumerable<object>)ViewBag.datasource)
-
-.ToolbarSettings(toolbar =>
-{
-
-    toolbar.ShowToolbar().ToolbarItems(items =>
-    {
-
-        items.AddTool(ToolBarItems.PrintGrid);
-
-    });
-
-})
-
-.AllowPaging()
-
-.Columns(col =>
-{
-
-    col.Field("OrderID").HeaderText("Order ID").TextAlign(TextAlign.Right).Width(75).Add();
-
-    col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-
-    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-
-    col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Add();
-
-    col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-
-}).Render();
-
-}
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="CustomerID" width="90"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="80" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="90"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
+{% highlight c# %}
 
-{% highlight C#%}
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using SyncfusionMvcApplication1;
-using SyncfusionMvcApplication1.Models;
-namespace SyncfusionMvcApplication1.Controllers
-{
-    public class GridController : Controller
-    {
-        //
-        // GET: /Grid/
-        public IActionResult GridFeatures()
+     namespace MVCSampleBrowser.Controllers
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-        }
-    }
-}
-
-
-{% endhighlight  %}
-{% endtabs %} 
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 ![](Print-Grid_images/Print_img1.png)
 
@@ -96,78 +60,46 @@ Some of print options are not configurable through JavaScript code. You need to 
 By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](http://help.syncfusion.com/js/api/ejgrid#methods:print) method from required button event.
 
 {% tabs %}
- 
 {% highlight razor %}
-<button id="print">Print</button>
-
-@{Html.EJ().Grid<OrdersView>("PrintGrid")
-
-.Datasource((IEnumerable<object>)ViewBag.datasource)
-
-.AllowPaging()
-
-.EnableHeaderHover()
-
-.Columns(col =>
-{
-
-    col.Field("OrderID").HeaderText("Order ID").TextAlign(TextAlign.Right).Width(75).Add();
-
-    col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-
-    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-
-    col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Add();
-
-    col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-
-}).Render();
-
-}
-
-<script type="text/javascript">
-
-    $("#print").ejButton({
-
-        showRoundedCorner: true,
-        size: "mini",
-        click: function () {
+   
+   <button id="print">Print</button>
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="90"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="80" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="90"></e-column>
+        </e-columns>
+   </ej-grid>
+   <script type="text/javascript">
+      $("#print").ejButton({ 
+            showRoundedCorner: true,
+            size: "mini",
+            click: function () {
             $("#PrintGrid").ejGrid("print");
         }
-
-    });
-
-</script>
+     });
+    </script>
+                   
 {% endhighlight  %}
+{% highlight c# %}
 
-{% highlight C#%}
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using SyncfusionMvcApplication1;
-using SyncfusionMvcApplication1.Models;
-namespace SyncfusionMvcApplication1.Controllers
-{
-    public class GridController : Controller
-    {
-        //
-        // GET: /Grid/
-        public IActionResult GridFeatures()
+     namespace MVCSampleBrowser.Controllers
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-        }
-    }
-}
-
-
-{% endhighlight  %}
-{% endtabs %} 
-
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 ![](Print-Grid_images/Print_img2.png)
 
@@ -181,73 +113,38 @@ Print dialog in Chrome browser
 
 ## Print Visible Page
 
-By default, the Grid will print all records. To print current page, you need to set `PrintMode` as `CurrentPage` in `PageSettings` property.
+By default, the Grid will print all records. To print current page, you need to set `print-mode` as `CurrentPage` in `e-page-settings` property.
 
 {% tabs %}
- 
 {% highlight razor %}
 
-@{Html.EJ().Grid<OrdersView>("PrintGrid")
-
-.Datasource((IEnumerable<object>)ViewBag.datasource)
-
-.AllowPaging()
-
-.PageSettings(page=> page.PrintMode(PrintMode.CurrentPage))
-
-.ToolbarSettings(toolbar =>
-    {
-
-        toolbar.ShowToolbar().ToolbarItems(items =>
-        {
-
-            items.AddTool(ToolBarItems.PrintGrid);
-
-        });
-
-})
-
-.Columns(col =>
-{
-
-    col.Field("OrderID").HeaderText("Order ID").TextAlign(TextAlign.Right).Width(75).Add();
-
-    col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-
-    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-
-    col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Add();
-
-    col.Field("ShipCity").HeaderText("Ship City").Width(90).Add();
-
-}).Render();
-
-}
-
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
+       <e-page-settings print-mode="CurrentPage"></e-page-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="CustomerID" width="90"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" width="80" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="80"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="90"></e-column>
+        </e-columns>
+   </ej-grid>
+                   
 {% endhighlight  %}
-{% highlight C#%}
+{% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using SyncfusionMvcApplication1;
-using SyncfusionMvcApplication1.Models;
-namespace SyncfusionMvcApplication1.Controllers
-{
-    public class GridController : Controller
-    {
-        //
-        // GET: /Grid/
-        public IActionResult GridFeatures()
+     namespace MVCSampleBrowser.Controllers
         {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-        }
-    }
-}
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.DataSource = DataSource;
+                    return View();
+                 }
+             }
+        } 
 
-{% endhighlight  %}
-{% endtabs %} 
+{% endhighlight  %}    
+{% endtabs %}  

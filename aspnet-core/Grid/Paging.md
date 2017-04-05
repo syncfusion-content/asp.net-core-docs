@@ -8,89 +8,158 @@ documentation: ug
 ---
 # Paging
 
- You can display the grid records in paged view, by setting `AllowPaging` property as `true`.
+ You can display the grid records in paged view, by setting `allow-paging` property as `true`.
 
 The code snippet to enable paging is follows.
 
 {% tabs %}
 {% highlight razor %}
 
-       @{Html.EJ().Grid<Object>("Paging")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("Freight").Format("{0:C}").Add();
-            }).Render();
-         }
-{% endhighlight  %} 
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
+
+{% endhighlight  %}
 {% highlight c# %}
 
       namespace MVCSampleBrowser.Controllers
-      {
-       public class GridController : Controller
-       { 
-         public IActionResult Paging()
           {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
-          }
-       }
-     }    
- {% endhighlight  %}
- {% endtabs %} 
- 
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
+
  The following output is displayed as a result of the above code example.
  
  ![](Paging_images/Paging_img1.png)
 
+
 ## Pager with query string
 
 
-You can pass the current page information as a query string while navigating to other page. To enable query string, set the `EnableQueryString` property of `PageSettings` as `true`.
+You can pass the current page information as a query string while navigating to other page. To enable query string, set the `enable-query-string` property of `e-page-settings` as `true`.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
 
-     @{Html.EJ().Grid<Object>("Paging")
-            .Datasource((IEnumerable<object>)ViewBag.datasource)
-            .AllowPaging()
-            .PageSettings(Page => { Page.EnableQueryString(true); })
-            .Columns(col =>
-            {
-                col.Field("OrderID").Add();
-                col.Field("EmployeeID").Add();
-                col.Field("CustomerID").Add();
-                col.Field("ShipCountry").Add();
-                col.Field("Freight").Format("{0:C}").Add();
-            }).Render();
-        }            
- {% endhighlight  %} 
- {% highlight c# %} 
-        
-          namespace MVCSampleBrowser.Controllers
-           {
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+        <e-page-settings enable-query-string="true"> </e-page-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+   </ej-grid>
+
+{% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
             public class GridController : Controller
               { 
-               public IActionResult Paging()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                   ViewBag.datasource = DataSource;
+                   ViewBag.DataSource = DataSource;
                    return View();
                  }
-              }   
-            } 
-
- {% endhighlight  %}
- {% endtabs %} 
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
  ![](Paging_images/Paging_img2.png)
+ 
+ ## Pager template
+
+Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set `enable-templates` as true and `template` properties of `e-page-settings`.
+
+ Prevent to show the default pager while enabling the pager `template` by setting `show-defaults` property of `e-page-settings` as `false`.
+
+ N> It's a standard way to enclose the `template`  within the `script` tag with `type` as "text/x-jsrender".
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight razor %}
+
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" create="create">
+        <e-page-settings enable-templates="true" template="#template" show-defaults="false"></e-page-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C}"></e-column>
+        </e-columns>
+   </ej-grid>
+
+{% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% highlight js %}
+
+         <script id="template" type="text/x-jsrender">
+            <input id="currentPage" type="text" style="text-align: center; width: 32px; height: 21px; background: white;" value="1" />
+            <label>of 200</label>
+            <button id="btn">Go to</button>
+          </script>
+          <script>
+            function create(args) {
+                     $("#btn").ejButton({
+                       click : "btnClick"
+                         });
+                   }
+             function btnClick(args) {
+                     var val = $("#currentPage").val();
+                     var gridObj = $("#Grid").data("ejGrid");
+                      gridObj.gotoPage(args.val);
+                  }
+           </script>
+{% endhighlight  %}
+{% highlight css %}
+
+     .e-grid .e-pager .e-pagercontainer {
+	       border-width: 0px;
+	       overflow: visible;
+         }         
+{% endhighlight  %} 
+{% endtabs %} 
+ 
+The following output is displayed as a result of the above code example.
+
+![](Paging_images/Paging_img3.png)
