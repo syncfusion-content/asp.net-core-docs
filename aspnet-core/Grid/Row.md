@@ -134,89 +134,6 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight  js %}
 <script id="templateData" type="text/x-jsrender">
-    <tr>
-             <td class="photo">
-                 <img style="width:130px;height: 160px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID {{}}}}.png" alt="{{"{{"}}:EmployeeID {{}}}}" />
-             </td>
-             <td class="details">
-                 <table class="CardTable" cellpadding="3" cellspacing="2">
-                      <colgroup>
-                              <col width="50%">
-                              <col width="50%">
-                      </colgroup>
-                      <tbody>
-                          <tr>
-                              <td class="CardHeader">First Name</td>
-                              <td>{{"{{"}}:FirstName {{}}}} </td>
-                          </tr>
-                          <tr>
-                              <td class="CardHeader">Last Name</td>
-                              <td>{{"{{"}}:LastName {{}}}}</td>
-                          </tr>
-                          <tr>
-                              <td class="CardHeader">Title</td>
-                              <td>{{"{{"}}:Title {{}}}}</td>
-                          </tr>
-                      </tbody>
-                 </table>
-            </td>
-      </tr>
-</script>
-{% endhighlight  %}
-{% highlight  css %}
-<style>
-    .photo img {
-        width: 130px;
-    }
-    .photo, .details {
-        border-color: #c4c4c4;
-        border-style: solid;
-    }
-    .photo {
-        border-width: 1px 0px 0px 0px;
-    }
-    .details {
-        border-width: 1px 0px 0px 1px;
-    }
-    .details > table {
-            width: 100%;
-        }
-    .CardHeader {
-        font-weight: bolder;
-    }
-</style>
-{% endhighlight  %}
-{% highlight  razor %}
-@(Html.EJ().Grid<EmployeeView>("RowTemplate")
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-        .Query("new ej.Query().take(2)")
-        .Columns(col =>
-            {
-                col.HeaderText("Photo").Width(30).Add();
-                col.HeaderText("Employee Details").Width(70).Add();
-            })
-       .RowTemplate("#templateData")    // row template
-)
-{% endhighlight  %}
-{% highlight c# %}
-namespace MVCSampleBrowser.Controllers
-  {
-	   public class GridController : Controller
-         {
-               public ActionResult RowTemplate()
-                {
-                     var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
-                      ViewBag.datasource = DataSource;
-                      return View();
-                }
-         }
-  }
-{% endhighlight  %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight  js %}
-<script id="templateData" type="text/x-jsrender">
       <tr>
              <td class="photo">
                  <img style="width:130px;height: 160px" src="/15.1.0.41/themes/web/images/employees/{{"{{"}}:EmployeeID {{}}}}.png" alt="{{"{{"}}:EmployeeID {{}}}}" />
@@ -295,6 +212,7 @@ namespace MVCSampleBrowser.Controllers
              }
         } 
 {% endhighlight  %} 
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 
