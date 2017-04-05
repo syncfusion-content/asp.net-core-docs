@@ -143,7 +143,7 @@ popup-width and popup-height can be used to create a fixed size popup list.
   
        /*Razor code to render DropDownList*/
 
-          @{Html.EJ().DropDownList("customersList").Datasource((IEnumerable<Bikes>)ViewBag.datasource).DropDownListFields(df => df.ID("id").Text("text").Value("text")).Width("300px").Height("50px").PopupHeight("300px").PopupWidth("300px").Render();}
+          @{Html.EJ().DropDownList("customersList").Datasource((IEnumerable<Customers>)ViewBag.datasource).DropDownListFields(df => df.ID("id").Text("text").Value("text")).Width("300px").Height("50px").PopupHeight("300px").PopupWidth("300px").Render();}
 		 
 		  
 
