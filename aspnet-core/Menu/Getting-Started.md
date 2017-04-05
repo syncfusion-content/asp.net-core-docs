@@ -42,30 +42,48 @@ N> To render the Menu Control you can use either Razor or Tag helper code as giv
 
 Each Menu consists of a list of Menu items with list of sub level Menu item. Refer the following guidelines to initialize the root level elements of Menu control with Remote data source value. RootLevelItems data service is created to define the root level Menu items, sub items and InnerItems data services to initialize the sub level and inner sub levels and both can be referred from the following service location. In Menu Widgets mention the RootLevelItem Data Source in the Datasource property. Elements’s properties like Id, Text, URL, and Parent Id can be defined using our menu fields and it explained briefly under the concept and features of Menu control.
 
-[http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
-
 To navigate the clicked Menu item to a specific URL, define the navigation URL to each Menu item.
 
-Initialize the Menu with data source value as follows. 
+Initialize the Menu element using datasource as follows. 
 
 {% highlight CSHTML %}
 
     /*ej-Tag Helper code to render Menu*/
-
-    <ej-menu id="syncfusionProducts">
-        <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
-            <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-        </e-menu-fields>
-    </ej-menu>  
-
+     <ej-Menu id="SyncfusionProducts">
+         <e-menu-fields dataSource="ViewBag.datasource" id="pid" text="mtext" parent-id="parent"></e-menu-fields>
+    </ej-Menu>
 {% endhighlight %}
 
 {% highlight Razor %}
 
     /*Razor code to render Menu*/
 
-    @{ Html.EJ().Menu("SyncfusionProducts").Width("600px").MenuFields(f => f.Datasource(d => 
-    d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/")).Query("ej.Query().from('RootLevelItems')").Id("InfoID").Text("InfoText")).Render(); }
+    @{Html.EJ().Menu("SyncfusionProducts").MenuFields(f => f.Datasource((IEnumerable<MenuJson>)ViewBag.datasource).Id("pid").Text("mtext").ParentId("parent")).Render();}
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+           
+        public ActionResult Index()
+        {
+            List<MenuJson> menuitem = new List<MenuJson>();
+            menuitem.Add(new MenuJson { pid = 1, mtext = "Product", parent = null });
+            menuitem.Add(new MenuJson { pid = 2, mtext = "Support", parent = null });
+            menuitem.Add(new MenuJson { pid = 3, mtext = "Purchase", parent = null });
+            menuitem.Add(new MenuJson { pid = 4, mtext = "Downloads", parent = null });
+            menuitem.Add(new MenuJson { pid = 5, mtext = "Resources", parent = null });
+            menuitem.Add(new MenuJson { pid = 6, mtext = "Company", parent = null });
+            ViewBag.datasource = menuitem;
+            return View();
+        }
+         
+         public class MenuJson
+       {
+        public string mtext { get; set; }
+        public int pid { get; set; }
+        public string parent { get; set; }
+      }
 
 {% endhighlight %}
 
@@ -83,14 +101,9 @@ The following code example explains the initialization of first level sub menu i
 
     /*ej-Tag Helper code to render Menu*/
 
-    <ej-menu id="syncfusionProducts">
-        <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
-            <e-child table-name="SubItems" id="SubItemID" parent-id="InfoID" text="SubItemText"> 
-                <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-            </e-child>
-            <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-        </e-menu-fields>
-    </ej-menu>  
+     <ej-Menu id="SyncfusionProducts">
+         <e-menu-fields dataSource="ViewBag.datasource" id="pid" text="mtext" parent-id="parent"></e-menu-fields>
+    </ej-Menu>
 
 {% endhighlight %}
 
@@ -98,20 +111,58 @@ The following code example explains the initialization of first level sub menu i
 
     /*Razor code to render Menu*/
 
-    @{
-        Html.EJ().Menu("SyncfusionProducts").Width("600px")
-        .MenuFields(f => f.Datasource(d => 
-                d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                .Query("ej.Query().from('RootLevelItems')")
-                .Id("InfoID")
-                .Text("InfoText")
-                .Child(c => c.Datasource(cd => 
-                cd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                .TableName("SubItems")
-                .Id("SubItemID")
-                .ParentId("InfoID")
-                .Text("SubItemText"))).Render();
-    }
+    @{Html.EJ().Menu("SyncfusionProducts").MenuFields(f => f.Datasource((IEnumerable<MenuJson>)ViewBag.datasource).Id("pid").Text("mtext").ParentId("parent")).Render();}
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+           
+       List<MenuJson> menuitem = new List<MenuJson>();
+           menuitem.Add(new MenuJson { pid = 1, mtext = "Product", parent = null });
+            menuitem.Add(new MenuJson { pid = 2, mtext = "Support", parent = null });
+            menuitem.Add(new MenuJson { pid = 3, mtext = "Purchase", parent = null });
+            menuitem.Add(new MenuJson { pid = 4, mtext = "Downloads", parent = null });
+            menuitem.Add(new MenuJson { pid = 5, mtext = "Resources", parent = null });
+            menuitem.Add(new MenuJson { pid = 6, mtext = "Company", parent = null });
+            menuitem.Add(new MenuJson { pid = 11, parent = "1", mtext = "ASP.NET" });
+            menuitem.Add(new MenuJson { pid = 12, parent = "1", mtext = "ASP.NET MVC" });
+            menuitem.Add(new MenuJson { pid = 13, parent = "1", mtext = "Mobile MVC" });
+            menuitem.Add(new MenuJson { pid = 14, parent = "1", mtext = "Silverlight" });
+            menuitem.Add(new MenuJson { pid = 15, parent = "1", mtext = "Windows Forms" });
+            menuitem.Add(new MenuJson { pid = 16, parent = "1", mtext = "Windows Phone" });
+            menuitem.Add(new MenuJson { pid = 17, parent = "1", mtext = "WinRT(XMAL)" });
+            menuitem.Add(new MenuJson { pid = 18, parent = "1", mtext = "WPF" });
+            menuitem.Add(new MenuJson { pid = 19, parent = "1", mtext = "Orubase Studio" });
+            menuitem.Add(new MenuJson { pid = 20, parent = "1", mtext = "Metro Studio" });
+            menuitem.Add(new MenuJson { pid = 21, parent = "1", mtext = "What's NEw" });
+            menuitem.Add(new MenuJson { pid = 27, parent = "2", mtext = "Direct-Trac Support" });
+            menuitem.Add(new MenuJson { pid = 28, parent = "2", mtext = "Community Foruma" });
+            menuitem.Add(new MenuJson { pid = 29, parent = "2", mtext = "Knowledge Base" });
+            menuitem.Add(new MenuJson { pid = 30, parent = "2", mtext = "Online Documentation" });
+            menuitem.Add(new MenuJson { pid = 31, parent = "2", mtext = "Services" });
+            menuitem.Add(new MenuJson { pid = 34, parent = "4", mtext = "Evaluation" });
+            menuitem.Add(new MenuJson { pid = 35, parent = "4", mtext = "Free E-books" });
+            menuitem.Add(new MenuJson { pid = 36, parent = "4", mtext = "Metro Studio" });
+            menuitem.Add(new MenuJson { pid = 37, parent = "4", mtext = "C" });
+            menuitem.Add(new MenuJson { pid = 38, parent = "4", mtext = "Version History" });
+            menuitem.Add(new MenuJson { pid = 39, parent = "5", mtext = "E-Books" });
+            menuitem.Add(new MenuJson { pid = 40, parent = "5", mtext = "White Papers" });
+            menuitem.Add(new MenuJson { pid = 41, parent = "6", mtext = "More About US" });
+            menuitem.Add(new MenuJson { pid = 42, parent = "6", mtext = "Management" });
+            menuitem.Add(new MenuJson { pid = 43, parent = "6", mtext = "News & Events" });
+            menuitem.Add(new MenuJson { pid = 44, parent = "6", mtext = "Customer Quotes" });
+            menuitem.Add(new MenuJson { pid = 45, parent = "6", mtext = "Customer Lists" });
+            ViewBag.datasource = menuitem;
+            return View();
+        }
+         
+         public class MenuJson
+       {
+        public string mtext { get; set; }
+        public int pid { get; set; }
+        public string parent { get; set; }
+      }
 
 {% endhighlight %}
 
@@ -131,17 +182,9 @@ The following code example explains the initialization of multiple level sub men
 
     /*ej-Tag Helper code to render Menu*/
 
-    <ej-menu id="syncfusionProducts">
-        <e-menu-fields query="ej.Query().from('RootLevelItems')" id="InfoID" text="InfoText"> 
-            <e-child table-name="SubItems" id="SubItemID" parent-id="InfoID" text="SubItemText"> 
-                <e-child table-name="InnerItems" id="InnerSubItemID" parent-id="SubItemID" text="InnerSubItemText"> 
-                    <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-                </e-child>
-                <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-            </e-child>
-            <e-datamanager url="http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"></e-datamanager> 
-        </e-menu-fields>
-    </ej-menu>  
+    <ej-Menu id="SyncfusionProducts">
+         <e-menu-fields dataSource="ViewBag.datasource" id="pid" text="mtext" parent-id="parent"></e-menu-fields>
+    </ej-Menu>
 
 {% endhighlight %}
 
@@ -149,30 +192,69 @@ The following code example explains the initialization of multiple level sub men
 
     /*Razor code to render Menu*/
 
-    @{
-        @Html.EJ().Menu("SyncfusionProducts").Width("600px")
-        .MenuFields(f => f.Datasource(d => 
-            d.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-            .Query("ej.Query().from('RootLevelItems')")
-            .Id("InfoID")
-            .Text("InfoText")
-                .Child(c => c.Datasource(cd => 
-                cd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                .TableName("SubItems")
-                .Id("SubItemID")
-                .ParentId("InfoID")
-                .Text("SubItemText")
-                    .Child(cc => cc.Datasource(ccd =>
-                        ccd.URL("http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/"))
-                        .TableName("InnerItems")
-                        .Id("InnerSubItemID")
-                        .ParentId("SubItemID")
-                        .Text("InnerSubItemText")))).Render();
-
-    }
+     @{Html.EJ().Menu("SyncfusionProducts").MenuFields(f => f.Datasource((IEnumerable<MenuJson>)ViewBag.datasource).Id("pid").Text("mtext").ParentId("parent")).Render();}
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+           
+        public ActionResult Index()
+        {
+            List<MenuJson> menuitem = new List<MenuJson>();
+           menuitem.Add(new MenuJson { pid = 1, mtext = "Product", parent = null });
+            menuitem.Add(new MenuJson { pid = 2, mtext = "Support", parent = null });
+            menuitem.Add(new MenuJson { pid = 3, mtext = "Purchase", parent = null });
+            menuitem.Add(new MenuJson { pid = 4, mtext = "Downloads", parent = null });
+            menuitem.Add(new MenuJson { pid = 5, mtext = "Resources", parent = null });
+            menuitem.Add(new MenuJson { pid = 6, mtext = "Company", parent = null });
+            menuitem.Add(new MenuJson { pid = 11, parent = "1", mtext = "ASP.NET" });
+            menuitem.Add(new MenuJson { pid = 12, parent = "1", mtext = "ASP.NET MVC" });
+            menuitem.Add(new MenuJson { pid = 13, parent = "1", mtext = "Mobile MVC" });
+            menuitem.Add(new MenuJson { pid = 14, parent = "1", mtext = "Silverlight" });
+            menuitem.Add(new MenuJson { pid = 15, parent = "1", mtext = "Windows Forms" });
+            menuitem.Add(new MenuJson { pid = 16, parent = "1", mtext = "Windows Phone" });
+            menuitem.Add(new MenuJson { pid = 17, parent = "1", mtext = "WinRT(XMAL)" });
+            menuitem.Add(new MenuJson { pid = 18, parent = "1", mtext = "WPF" });
+            menuitem.Add(new MenuJson { pid = 19, parent = "1", mtext = "Orubase Studio" });
+            menuitem.Add(new MenuJson { pid = 20, parent = "1", mtext = "Metro Studio" });
+            menuitem.Add(new MenuJson { pid = 21, parent = "1", mtext = "What's NEw" });
+            menuitem.Add(new MenuJson { pid = 22, parent = "21", mtext = "ASP.NET" });
+            menuitem.Add(new MenuJson { pid = 23, parent = "21", mtext = "ASP.NET MVC" });
+            menuitem.Add(new MenuJson { pid = 24, parent = "21", mtext = "Mobile MVC" });
+            menuitem.Add(new MenuJson { pid = 25, parent = "21", mtext = "Windows Forms" });
+            menuitem.Add(new MenuJson { pid = 26, parent = "21", mtext = "Windows Phone" });
+            menuitem.Add(new MenuJson { pid = 27, parent = "2", mtext = "Direct-Trac Support" });
+            menuitem.Add(new MenuJson { pid = 28, parent = "2", mtext = "Community Foruma" });
+            menuitem.Add(new MenuJson { pid = 29, parent = "2", mtext = "Knowledge Base" });
+            menuitem.Add(new MenuJson { pid = 30, parent = "2", mtext = "Online Documentation" });
+            menuitem.Add(new MenuJson { pid = 31, parent = "2", mtext = "Services" });
+            menuitem.Add(new MenuJson { pid = 32, parent = "31", mtext = "Consulting" });
+            menuitem.Add(new MenuJson { pid = 33, parent = "31", mtext = "Training" });
+            menuitem.Add(new MenuJson { pid = 34, parent = "4", mtext = "Evaluation" });
+            menuitem.Add(new MenuJson { pid = 35, parent = "4", mtext = "Free E-books" });
+            menuitem.Add(new MenuJson { pid = 36, parent = "4", mtext = "Metro Studio" });
+            menuitem.Add(new MenuJson { pid = 37, parent = "4", mtext = "C" });
+            menuitem.Add(new MenuJson { pid = 38, parent = "4", mtext = "Version History" });
+            menuitem.Add(new MenuJson { pid = 39, parent = "5", mtext = "E-Books" });
+            menuitem.Add(new MenuJson { pid = 40, parent = "5", mtext = "White Papers" });
+            menuitem.Add(new MenuJson { pid = 41, parent = "6", mtext = "More About US" });
+            menuitem.Add(new MenuJson { pid = 42, parent = "6", mtext = "Management" });
+            menuitem.Add(new MenuJson { pid = 43, parent = "6", mtext = "News & Events" });
+            menuitem.Add(new MenuJson { pid = 44, parent = "6", mtext = "Customer Quotes" });
+            menuitem.Add(new MenuJson { pid = 45, parent = "6", mtext = "Customer Lists" });
+            ViewBag.datasource = menuitem;
+            return View();
+        }
+         
+         public class MenuJson
+       {
+        public string mtext { get; set; }
+        public int pid { get; set; }
+        public string parent { get; set; }
+      }
+
+{% endhighlight %}
 
 
 The following screenshot is the resultant output Menu with multiple level sub menu item.
