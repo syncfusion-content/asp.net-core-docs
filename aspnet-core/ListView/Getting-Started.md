@@ -14,43 +14,76 @@ This control allows you to select an item from a list-like interface and provide
 ## Create a simple ListView
 
 1.	Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/getting-started ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
-2.	Add the following code example to the corresponding view page for ListView rendering
+2.	Add the following code example to the corresponding view page for ListView rendering.
 
-    {% highlight cshtml %}
+The following steps explain local data binding to an ListView.
 
-        <ej-list-view id="locallistview"  width="400" height="300">
-            <e-list-view-items>
-                <e-list-view-item text="Discover Music"> </e-list-view-item>
-                <e-list-view-item text="Sales and Events"></e-list-view-item>
-                <e-list-view-item text="Categories"></e-list-view-item>
-                <e-list-view-item text="Mp3 Albums"></e-list-view-item>
-                <e-list-view-item text="More in Music"></e-list-view-item>
-            </e-list-view-items>
-        </ej-list-view>
+You need to add the class in the Models. Define the Class with key and text field. Then create a List of that class and add the data.
+
+    {% highlight CSHTML %}
+
+        public class ListData
+        {
+            public string texts { get; set; }
+        }
+        public static class ListDataModal
+        {
+            public static List<ListData> listTempSource = new List<ListData>();
+            public static List<ListData> setListDataSource()
+            {
+                listTempSource.Add(new ListData { texts = "Inbox" });
+                listTempSource.Add(new ListData { texts = "VIP" });
+                listTempSource.Add(new ListData { texts = "Drafts" });
+                listTempSource.Add(new ListData { texts = "Sent" });
+                listTempSource.Add(new ListData { texts = "Junk" });
+                listTempSource.Add(new ListData { texts = "Trash" });
+                listTempSource.Add(new ListData { texts = "All mails" });
+                listTempSource.Add(new ListData { texts = "Mail" });
+                return listTempSource;
+            }
+        }
+
+    {% endhighlight %}
+
+In the controller page, you need to pass the model class to the corresponding view.
+
+    {% highlight c# %}
+
+            public ActionResult Index()
+            {
             
+                return View(ListDataModal.setListDataSource());             
+            }
+
+    {% endhighlight %}
+
+In the View page, add Listview helper and map the Local data list to corresponding DataSource and ListviewFields. You need to refer the model class at the top of the page.
+
+    {% highlight CSHTML %}
+
+        @model List<WebApplication6.Models.ListData>
+        <ej-list-view id="locallistview" show-header="false" width="400" height="206" datasource="Model">
+            <e-field-settings text="texts" />
+        </ej-list-view>
+
     {% endhighlight %}
             
-3. Run the above code then you will get output as follows.
+Run the above code then you will get output as follows.
         
-     ![](Getting-Started_Images/default.png)
+![](Getting-Started_Images/default.png)
          
  ## Header support
 
 You can add a header for ListView using show-header property. Refer the following code to render ListView with header text.
 
-{% highlight cshtml %}
+    {% highlight cshtml %}
 
-    <ej-list-view id="locallistview" show-header="true" header-title="Favorite" width="400" height="300">
-        <e-list-view-items>
-                <e-list-view-item text="Discover Music"> </e-list-view-item>
-                <e-list-view-item text="Sales and Events"></e-list-view-item>
-                <e-list-view-item text="Categories"></e-list-view-item>
-                <e-list-view-item text="Mp3 Albums"></e-list-view-item>
-                <e-list-view-item text="More in Music"></e-list-view-item>
-            </e-list-view-items>
-    </ej-list-view>
+        @model List<WebApplication6.Models.ListData>
+        <ej-list-view id="locallistview"  show-header="true" header-title="Favorite" width="400" height="206" datasource="Model">
+            <e-field-settings text="texts" />
+        </ej-list-view>
 
-{% endhighlight %}
+    {% endhighlight %}
  
  Run the above code and you will get the below output.
  
