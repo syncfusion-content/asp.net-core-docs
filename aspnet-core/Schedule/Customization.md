@@ -76,6 +76,28 @@ Working hours indicates the work hour limit within the Scheduler, which is highl
 
 N> By default, work hour **Start** is set to **9** and **End** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the starting work hour, to make the user to view that particular time initially.
 
+## Hide Weekend
+
+The Scheduler can be render based on the customized days. The customized days can be render based on the `WorkWeek` days. To customize the days, use the `ShowWeekend` property.
+
+The following code example renders the scheduler with hiding weekend.
+
+{% highlight razor %}
+
+@using MyProject.Models; // Here MyProject defines your project name to access the model class
+@{
+    <!-- Datasource for Appointments -->
+    List<ScheduleFields> Appoint = new List<ScheduleFields>();
+    Appoint.Add(new ScheduleFields { Id = "1", Subject = "Meeting", StartTime = new DateTime(2015, 11, 10, 10, 00, 00), EndTime = new DateTime(2015, 11, 10, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "" });
+}
+
+<ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" show-weekend="false">
+    <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
+    </e-appointment-settings>
+</ej-schedule>
+
+{% endhighlight %}
+
 ## TimeScale
 
 The `TimeScale` allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
