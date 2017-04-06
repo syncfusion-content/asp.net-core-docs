@@ -49,58 +49,34 @@ You need to add the class in the Models. Define the Class with key and text fiel
 
     {% highlight CSHTML %}
 
-        public class CarsList
+        public class ComponentsList
         {
 
-            public int uniqueKey { get; set; }
-            public string text { get; set; }
-            public string company { get; set; }
-            public static List<CarsList> GetCarList()
+            public int ComponentId { get; set; }
+            public string ComponentName { get; set; }          
+            public static List<ComponentsList> GetComponentsList()
             {
-                List<CarsList> car = new List<CarsList>();
-                car.Add(new CarsList { text = "Audi S6" });
-                car.Add(new CarsList { text = "Austin-Healey" });
-                car.Add(new CarsList { text = "Alfa Romeo" });
-                car.Add(new CarsList { text = "Aston Martin" });
-                car.Add(new CarsList { text = "BMW 7" });
-                car.Add(new CarsList { text = "Bentley Mulsanne" });
-                car.Add(new CarsList { text = "Bugatti Veyron" });
-                car.Add(new CarsList { text = "Chevrolet Camaro" });
-                car.Add(new CarsList { text = "Cadillac" });
-                car.Add(new CarsList { text = "Duesenberg J" });
-                car.Add(new CarsList { text = "Dodge Sprinter" });
-                car.Add(new CarsList { text = "Elantra" });
-                car.Add(new CarsList { text = "Excavator" });
-                car.Add(new CarsList { text = "Ford Boss 302" });
-                car.Add(new CarsList { text = "Ferrari 360" });
-                car.Add(new CarsList { text = "Ford Thunderbird" });
-                car.Add(new CarsList { text = "GAZ Siber" });
-                car.Add(new CarsList { text = "Honda S2000" });
-                car.Add(new CarsList { text = "Hyundai Santro" });
-                car.Add(new CarsList { text = "Isuzu Swift" });
-                car.Add(new CarsList { text = "Infiniti Skyline" });
-                car.Add(new CarsList { text = "Jaguar XJS" });
-                car.Add(new CarsList { text = "Kia Sedona EX" });
-                car.Add(new CarsList { text = "Koenigsegg Agera" });
-                car.Add(new CarsList { text = "Lotus Esprit" });
-                car.Add(new CarsList { text = "Lamborghini Diablo" });
-                car.Add(new CarsList { text = "Mercedes-Benz" });
-                car.Add(new CarsList { text = "Mercury Coupe" });
-                car.Add(new CarsList { text = "Maruti Alto 800" });
-                car.Add(new CarsList { text = "Nissan Qashqai" });
-                car.Add(new CarsList { text = "Oldsmobile S98" });
-                car.Add(new CarsList { text = "Opel Superboss" });
-                car.Add(new CarsList { text = "Porsche 356" });
-                car.Add(new CarsList { text = "Pontiac Sunbird" });
-                car.Add(new CarsList { text = "Scion SRS/SC/SD" });
-                car.Add(new CarsList { text = "Saab Sportcombi" });
-                car.Add(new CarsList { text = "Subaru Sambar" });
-                car.Add(new CarsList { text = "Suzuki Swift" });
-                car.Add(new CarsList { text = "Triumph Spitfire" });
-                car.Add(new CarsList { text = "Toyota 2000GT" });
-                car.Add(new CarsList { text = "Volvo P1800" });
-                car.Add(new CarsList { text = "Volkswagen Shirako" });
-                return car;
+                List<ComponentsList> component = new List<ComponentsList>();
+                component.Add(new ComponentsList { ComponentName = "Autocomplete" });
+                component.Add(new ComponentsList { ComponentName = "Accordion" });
+                component.Add(new ComponentsList { ComponentName = "BulletGraph" });
+                component.Add(new ComponentsList { ComponentName = "Chart" });
+                component.Add(new ComponentsList { ComponentName = "DatePicker" });
+                component.Add(new ComponentsList { ComponentName = "Dialog" });
+                component.Add(new ComponentsList { ComponentName = "Diagram" });
+                component.Add(new ComponentsList { ComponentName = "DropDown" });
+                component.Add(new ComponentsList { ComponentName = "Gauge" });
+                component.Add(new ComponentsList { ComponentName = "Schedule" });
+                component.Add(new ComponentsList { ComponentName = "Scrollbar" });
+                component.Add(new ComponentsList { ComponentName = "Slider" });
+                component.Add(new ComponentsList { ComponentName = "RangeNavigatior" });
+                component.Add(new ComponentsList { ComponentName = "Rating" });
+                component.Add(new ComponentsList { ComponentName = "RichTextEditor" });
+                component.Add(new ComponentsList { ComponentName = "Tab" });
+                component.Add(new ComponentsList { ComponentName = "TagCloud" });
+                component.Add(new ComponentsList { ComponentName = "Toolbar" });
+                component.Add(new ComponentsList { ComponentName = "TreeView" });               
+                return component;
             }
         }
 
@@ -113,7 +89,8 @@ In the controller page, you need to pass the model class to the corresponding vi
             public ActionResult Index()
             {
             
-            return View(CarsList.GetCarList());                
+              return View(ComponentsList.GetComponentsList());  
+
             }
 
     {% endhighlight %}
@@ -122,12 +99,12 @@ In the View page, add Autocomplete helper and map the Local data list to corresp
 
     {% highlight CSHTML %}
 
-        @model List<MvcApplication7.Models.CarsList>
+        @model List<MvcApplication7.Models.ComponentsList>
         <div class="frame">
         <div class="row">
             <div class="control">           
                 <ej-autocomplete id="delimit" width="500" datasource="Model" >
-                    <e-autocomplete-fields key="uniqueKey" text="text" />
+                    <e-autocomplete-fields key="ComponentId" text="ComponentName" />
                 </ej-autocomplete>
             </div>       
         </div>
@@ -137,7 +114,7 @@ In the View page, add Autocomplete helper and map the Local data list to corresp
 
 Run the above code now you can get AutoComplete Control with data source. Your output will be shown as below.
 
-    ![](Getting-Started_Images/datasource.png)
+![](Getting-Started_Images/datasource.png)
 
 ## Configure Visual Mode with filter option
 
@@ -152,7 +129,7 @@ You can use available filter-type to show suggestions based on your filter. By d
 {% highlight cshtml %}
 
             <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith" >                
-                <e-autocomplete-fields key="uniqueKey" text="text" />
+                <e-autocomplete-fields key="ComponentId" text="ComponentName" />
             </ej-autocomplete>
             
 {% endhighlight %}
@@ -168,7 +145,7 @@ When you set the highlight-search property to 'true', the characters typed in te
 {% highlight cshtml %}
 
         <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true" >                
-                <e-autocomplete-fields key="uniqueKey" text="text" />
+                <e-autocomplete-fields key="ComponentId" text="ComponentName" />
         </ej-autocomplete>
             
 {% endhighlight %}
@@ -184,7 +161,7 @@ To enable Popup Button you have to set "show-popup-button" as "true". Now you ca
 {% highlight cshtml %}
 
      <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true"  show-popup-button="true">                
-                <e-autocomplete-fields key="uniqueKey" text="text" />
+                <e-autocomplete-fields key="ComponentId" text="ComponentName" />
      </ej-autocomplete>
             
 {% endhighlight %}
