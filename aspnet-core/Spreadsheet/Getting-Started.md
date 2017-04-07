@@ -116,11 +116,19 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% highlight cshtml %}
 <ej-spread-sheet id="Spreadsheet">
-    //...
-    <e-export-settings excel-url="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport">
-    </e-export-settings>
-    //...
+	//...
+    <e-export-settings excel-url="ExcelExport"></e-export-settings>
+	//...
 </ej-spread-sheet>
+{% endhighlight %}
+
+{% highlight c# %}
+//...
+public ActionResult ExcelExport(string sheetModel, string sheetData, string password)
+{
+    return Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX);
+}
+//...
 {% endhighlight %}
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
