@@ -20,7 +20,7 @@ The following steps explain local data binding to an ListView.
 
 You need to add the class in the Models. Define the Class with key and text field. Then create a List of that class and add the data.
 
-    {% highlight CSHTML %}
+    {% highlight c# %}
 
         public class ListData
         {
