@@ -2,7 +2,7 @@
 layout: post
 title: Dimension | RadialSlider | ASP.NET MVC | Syncfusion
 description: dimension
-platform: ejmvc
+platform: aspnet-core
 control: RadialSlider
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Display Angle Settings| RadialSlider | ASP.NET MVC | Syncfusion
 description: Display Angle Settings
-platform: ejmvc
+platform: aspnet-core
 control: Radial Slider
 documentation: ug
 ---
