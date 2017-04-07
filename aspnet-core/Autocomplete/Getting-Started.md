@@ -22,7 +22,7 @@ AutoComplete Textbox control basically renders with built-in features like keybo
 
     {% highlight cshtml %}
 
-                <ej-autocomplete id="searchCustomer"  width="100%" watermark-text="Search a customer">
+                <ej-autocomplete id="searchCustomer"  width="100%" watermark-text="Search a component">
                 
                 </ej-autocomplete>
 
@@ -47,7 +47,7 @@ The following steps explain local data binding to an AutoComplete textbox.
 
 You need to add the class in the Models. Define the Class with key and text field. Then create a List of that class and add the data.
 
-    {% highlight CSHTML %}
+    {% highlight c# %}
 
         public class ComponentsList
         {
