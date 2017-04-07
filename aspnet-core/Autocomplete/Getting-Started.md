@@ -22,7 +22,7 @@ AutoComplete Textbox control basically renders with built-in features like keybo
 
     {% highlight cshtml %}
 
-                <ej-autocomplete id="searchCustomer"  width="100%" watermark-text="Search a customer">
+                <ej-autocomplete id="searchCustomer"  width="100%" watermark-text="Search a component">
                 
                 </ej-autocomplete>
 
@@ -35,23 +35,86 @@ AutoComplete Textbox control basically renders with built-in features like keybo
 
 ## Populate Data to AutoComplete
 
-In this section we have used remote Datasource binding for AutoComplete data Population.
+You can provide either local data or remote data to the Autocomplete.
 
-1. To get data from remote URL you need to use our e-datamanager control. The query property is used to filter and get only the required data from corresponding URL which is given in the e-datamanager URL.
-2. You can map all the available Data fields to the AutoComplete TextBox as per your requirement. 
+### Local Data Binding
 
-    {% highlight cshtml %}
+AutoComplete provides extensive data binding support to populate AutoComplete items, so that the values are mapped to the AutoComplete fields, namely Key and Text. DataBinding helps you bind a key value pair to AutoComplete textbox. Key field takes the unique id of the dataSource elements. Text field gets the value to be displayed in the AutoComplete textbox.
 
-                <ej-autocomplete id="searchCustomer" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')" width="100%" watermark-text="Search a customer">
-                    <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/" offline="false"></e-datamanager>
-                    <e-autocomplete-fields text="ContactName" key="SupplierID" />
-                </ej-autocomplete>
+##### Defining the Local data for AutoComplete
+
+The following steps explain local data binding to an AutoComplete textbox.
+
+You need to add the class in the Models. Define the Class with key and text field. Then create a List of that class and add the data.
+
+    {% highlight c# %}
+
+        public class ComponentsList
+        {
+
+            public int ComponentId { get; set; }
+            public string ComponentName { get; set; }          
+            public static List<ComponentsList> GetComponentsList()
+            {
+                List<ComponentsList> component = new List<ComponentsList>();
+                component.Add(new ComponentsList { ComponentName = "Autocomplete" });
+                component.Add(new ComponentsList { ComponentName = "Accordion" });
+                component.Add(new ComponentsList { ComponentName = "BulletGraph" });
+                component.Add(new ComponentsList { ComponentName = "Chart" });
+                component.Add(new ComponentsList { ComponentName = "DatePicker" });
+                component.Add(new ComponentsList { ComponentName = "Dialog" });
+                component.Add(new ComponentsList { ComponentName = "Diagram" });
+                component.Add(new ComponentsList { ComponentName = "DropDown" });
+                component.Add(new ComponentsList { ComponentName = "Gauge" });
+                component.Add(new ComponentsList { ComponentName = "Schedule" });
+                component.Add(new ComponentsList { ComponentName = "Scrollbar" });
+                component.Add(new ComponentsList { ComponentName = "Slider" });
+                component.Add(new ComponentsList { ComponentName = "RangeNavigatior" });
+                component.Add(new ComponentsList { ComponentName = "Rating" });
+                component.Add(new ComponentsList { ComponentName = "RichTextEditor" });
+                component.Add(new ComponentsList { ComponentName = "Tab" });
+                component.Add(new ComponentsList { ComponentName = "TagCloud" });
+                component.Add(new ComponentsList { ComponentName = "Toolbar" });
+                component.Add(new ComponentsList { ComponentName = "TreeView" });               
+                return component;
+            }
+        }
 
     {% endhighlight %}
 
-3. Run the above code now you can get AutoComplete Control with data source. Your output will be shown as below.
+In the controller page, you need to pass the model class to the corresponding view.
 
-    ![](Getting-Started_Images/datasource.png)
+    {% highlight c# %}
+
+            public ActionResult Index()
+            {
+            
+              return View(ComponentsList.GetComponentsList());  
+
+            }
+
+    {% endhighlight %}
+
+In the View page, add Autocomplete helper and map the Local data list to corresponding DataSource and AutoCompleteFields. You need to refer the model class at the top of the page.
+
+    {% highlight CSHTML %}
+
+        @model List<ApplicationName.Models.ComponentsList>
+        <div class="frame">
+        <div class="row">
+            <div class="control">           
+                <ej-autocomplete id="delimit" width="500" datasource="Model" >
+                    <e-autocomplete-fields key="ComponentId" text="ComponentName" />
+                </ej-autocomplete>
+            </div>       
+        </div>
+        </div>
+
+    {% endhighlight %}
+
+Run the above code now you can get AutoComplete Control with data source. Your output will be shown as below.
+
+![](Getting-Started_Images/datasource.png)
 
 ## Configure Visual Mode with filter option
 
@@ -65,9 +128,8 @@ You can use available filter-type to show suggestions based on your filter. By d
 
 {% highlight cshtml %}
 
-            <ej-autocomplete id="Visualmod" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith" >
-                <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/" offline="false"></e-datamanager>
-                <e-autocomplete-fields text="ContactName" key="SupplierID" />
+            <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a component" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith" >                
+                <e-autocomplete-fields key="ComponentId" text="ComponentName" />
             </ej-autocomplete>
             
 {% endhighlight %}
@@ -82,9 +144,8 @@ When you set the highlight-search property to 'true', the characters typed in te
 
 {% highlight cshtml %}
 
-        <ej-autocomplete id="Visualmod" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true" >
-                <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/" offline="false"></e-datamanager>
-                <e-autocomplete-fields text="ContactName" key="SupplierID" />
+        <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a component" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true" >                
+                <e-autocomplete-fields key="ComponentId" text="ComponentName" />
         </ej-autocomplete>
             
 {% endhighlight %}
@@ -99,9 +160,8 @@ To enable Popup Button you have to set "show-popup-button" as "true". Now you ca
 
 {% highlight cshtml %}
 
-     <ej-autocomplete id="Visualmod" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true"  show-popup-button="true">
-                <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/" offline="false"></e-datamanager>
-                <e-autocomplete-fields text="ContactName" key="SupplierID" />
+     <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a component" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true"  show-popup-button="true">                
+                <e-autocomplete-fields key="ComponentId" text="ComponentName" />
      </ej-autocomplete>
             
 {% endhighlight %}
