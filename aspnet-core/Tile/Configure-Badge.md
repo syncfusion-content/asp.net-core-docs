@@ -2,7 +2,7 @@
 layout: post
 title: Configure Badge | Tile | ASP.NET Core | Syncfusion
 description: configure badge
-platform: ejmvaspnet-corec
+platform: aspnet-core
 control: Tile
 documentation: ug
 keywords: badge

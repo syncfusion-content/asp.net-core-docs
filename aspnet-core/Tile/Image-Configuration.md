@@ -2,7 +2,7 @@
 layout: post
 title: Image Configuration | Tile | ASP.NET MVC | Syncfusion
 description: image configuration
-platform: ejmvc
+platform: aspnet-core
 control: Tile
 documentation: ug
 ---
