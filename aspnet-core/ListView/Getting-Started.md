@@ -61,7 +61,7 @@ In the View page, add Listview helper and map the Local data list to correspondi
 
     {% highlight CSHTML %}
 
-        @model List<WebApplication6.Models.ListData>
+        @model List<ApplicationName.Models.ListData>
         <ej-list-view id="locallistview" show-header="false" width="400" height="206" datasource="Model">
             <e-field-settings text="texts" />
         </ej-list-view>
@@ -78,7 +78,7 @@ You can add a header for ListView using show-header property. Refer the followin
 
     {% highlight cshtml %}
 
-        @model List<WebApplication6.Models.ListData>
+        @model List<ApplicationName.Models.ListData>
         <ej-list-view id="locallistview"  show-header="true" header-title="Favorite" width="400" height="206" datasource="Model">
             <e-field-settings text="texts" />
         </ej-list-view>
