@@ -34,7 +34,7 @@ The following steps explain local data binding to an ListBox.
 
 You need to add the class in the Models. Define the Class with key and text field. Then create a List of that class and add the data.
 
-    {% highlight CSHTML %}
+    {% highlight c# %}
 
         public class Bikes
         {
@@ -76,7 +76,7 @@ In the controller page, you need to pass the model class to the corresponding vi
 
     {% endhighlight %}
 
-In the View page, add Autocomplete helper and map the Local data list to corresponding DataSource and AutoCompleteFields. You need to refer the model class at the top of the page.    
+In the View page, add Listbox helper and map the Local data list to corresponding DataSource and ListBoxFields. You need to refer the model class at the top of the page.    
 
     {% highlight CSHTML %}
 
