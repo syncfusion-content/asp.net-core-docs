@@ -99,7 +99,7 @@ In the View page, add Autocomplete helper and map the Local data list to corresp
 
     {% highlight CSHTML %}
 
-        @model List<MvcApplication7.Models.ComponentsList>
+        @model List<ApplicationName.Models.ComponentsList>
         <div class="frame">
         <div class="row">
             <div class="control">           
