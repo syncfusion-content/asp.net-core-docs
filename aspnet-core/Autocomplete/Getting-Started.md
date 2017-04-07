@@ -84,7 +84,7 @@ You need to add the class in the Models. Define the Class with key and text fiel
 
 In the controller page, you need to pass the model class to the corresponding view.
 
-    {% highlight CSHTML %}
+    {% highlight c# %}
 
             public ActionResult Index()
             {
@@ -128,7 +128,7 @@ You can use available filter-type to show suggestions based on your filter. By d
 
 {% highlight cshtml %}
 
-            <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith" >                
+            <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a component" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith" >                
                 <e-autocomplete-fields key="ComponentId" text="ComponentName" />
             </ej-autocomplete>
             
@@ -144,7 +144,7 @@ When you set the highlight-search property to 'true', the characters typed in te
 
 {% highlight cshtml %}
 
-        <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true" >                
+        <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a component" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true" >                
                 <e-autocomplete-fields key="ComponentId" text="ComponentName" />
         </ej-autocomplete>
             
@@ -160,7 +160,7 @@ To enable Popup Button you have to set "show-popup-button" as "true". Now you ca
 
 {% highlight cshtml %}
 
-     <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a customer" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true"  show-popup-button="true">                
+     <ej-autocomplete id="Visualmod" datasource="Model" width="100%" watermark-text="Search a component" multi-select-mode="@MultiSelectModeTypes.VisualMode" filter-type="StartsWith"highlight-search="true" show-rounded-corner="true"  show-popup-button="true">                
                 <e-autocomplete-fields key="ComponentId" text="ComponentName" />
      </ej-autocomplete>
             
