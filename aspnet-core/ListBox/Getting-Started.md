@@ -80,7 +80,7 @@ In the View page, add Listbox helper and map the Local data list to correspondin
 
     {% highlight CSHTML %}
 
-        @model List<WebApplication6.Models.Bikes>
+        @model List<ApplicationName.Models.Bikes>
         <div class="control frame">
             <div class="ctrllabel">
                 Select a bike:
