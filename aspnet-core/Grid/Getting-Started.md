@@ -11,7 +11,7 @@ documentation: ug
 
 Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
-Ensure once whether all the necessary dependency packages are included within the bower.json file as mentioned [here](https://help.syncfusion.com/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the Grid control gets installed and loads into the mentioned location (wwwroot->lib) within your project.
+Ensure once whether all the necessary dependency packages are included within the bower.json file as mentioned [here](https://help.syncfusion.com/aspnet-core/installation#configuring-syncfusion-bower-packages), so that the required scripts and CSS to render the Grid control gets installed and loads into the mentioned location (wwwroot->lib) within your project.
 
 Also, check whether the assembly dependency package Syncfusion.EJ added within the project.json file.
 
