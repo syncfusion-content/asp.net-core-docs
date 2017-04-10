@@ -251,7 +251,7 @@ You can set the Up/Down arrow icon to Accordion header, by adding e-arrowheadup 
 	/*ej-Tag Helper code to render Accordion*/
 
 	<ej-accordion id="basicAccordion" show-rounded-corner=true>
-		<e-custom-icon header="e-arrowheaddown" selected-header="e-arrowheadup" />
+		<e-custom-icon header="e-arrowhead-down" selected-header="e-arrowheadup" />
 		<e-accordion-items>
 			<e-accordion-item text="ASP.NET">
 				<e-content-template>
@@ -290,7 +290,7 @@ You can set the Up/Down arrow icon to Accordion header, by adding e-arrowheadup 
 	/*Razor code to render Accordion*/
 
 	@{
-		Html.EJ().Accordion("basicAccordion").ShowRoundedCorner(true).CustomIcon(icon => icon.SelectedHeader("e-arrowheadup").Header("e-arrowheaddown")).Items(data => { data.Add().Text("ASP.NET").ContentTemplate(@<div>
+		Html.EJ().Accordion("basicAccordion").ShowRoundedCorner(true).CustomIcon(icon => icon.SelectedHeader("e-arrowheadup").Header("e-arrowhead-down")).Items(data => { data.Add().Text("ASP.NET").ContentTemplate(@<div>
 			Microsoft ASP.NET is a set of technologies in the Microsoft .NET Framework for building Web applications and XML Web services. ASP.NET pages execute on the server and generate markup such as HTML, WML, or XML that is sent to a desktop or mobile browser. ASP.NET pages use a compiled, event-driven programming model that improves performance and enables the separation of application logic and user interface.
 		</div>);
 		data.Add().Text("ASP.NET MVC").ContentTemplate(@<div>
