@@ -116,13 +116,19 @@ The Spreadsheet can save its data, style, format into an excel file. To enable s
 
 {% highlight cshtml %}
 <ej-spread-sheet id="Spreadsheet">
-    //...
-    <e-export-settings excel-url="http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport">
-    </e-export-settings>
-    //...
+//...
+    <e-export-settings excel-url="ExcelExport"></e-export-settings>
+//...
 </ej-spread-sheet>
 {% endhighlight %}
 
-Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
+{% highlight c# %}
+//...
+public ActionResult ExcelExport(string sheetModel, string sheetData, string password)
+{
+    return Spreadsheet.Save(sheetModel, sheetData, "sample", ExportFormat.XLSX);
+}
+//...
+{% endhighlight %}
 
-N> We have not provided complete support for import and export functionality in ASP NET Core. However we have acheived this functionality using service link. 
+Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
