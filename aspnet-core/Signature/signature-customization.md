@@ -1,6 +1,6 @@
 ---
 layout: post
-title: signature customization
+title: signature customization | Signature | ASP.NET Core | Syncfusion
 description: signature customization
 platform: aspnet-core
 control: Signature

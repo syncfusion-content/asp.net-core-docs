@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimension | RadialSlider | ASP.NET MVC | Syncfusion
+title: Dimension | RadialSlider | ASP.NET Core | Syncfusion
 description: dimension
 platform: aspnet-core
 control: RadialSlider

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Animation Effect| RadialSlider | ASP.NET MVC | Syncfusion
+title: Animation Effect| RadialSlider | ASP.NET Core | Syncfusion
 description: Animation Effect
-platform: ejmvc
+platform: aspnet-core
 control: Radial Slider
 documentation: ug
 ---

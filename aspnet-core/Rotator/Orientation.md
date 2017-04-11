@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Orientation | Rotator | ASP.NET MVC | Syncfusion
+title: Orientation | Rotator | ASP.NET Core | Syncfusion
 description: orientation
-platform: ejmvc
+platform: aspnet-core
 control: Rotator
 documentation: ug
 ---

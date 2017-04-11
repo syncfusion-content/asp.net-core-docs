@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TargetId | NavigationDrawer | ASP.NET MVC | Syncfusion
+title: TargetId | NavigationDrawer | ASP.NET Core | Syncfusion
 description: targetid
-platform: ejmvc
+platform: aspnet-core
 control: NavigationDrawer
 documentation: ug
 ---

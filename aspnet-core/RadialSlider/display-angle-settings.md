@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Angle Settings| RadialSlider | ASP.NET MVC | Syncfusion
+title: Display Angle Settings| RadialSlider | ASP.NET Core | Syncfusion
 description: Display Angle Settings
 platform: aspnet-core
 control: Radial Slider

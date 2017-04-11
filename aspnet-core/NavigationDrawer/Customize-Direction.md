@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customize Direction | NavigationDrawer | ASP.NET MVC | Syncfusion
+title: Customize Direction | NavigationDrawer | ASP.NET Core | Syncfusion
 description: customize direction
-platform: ejmvc
+platform: aspnet-core
 control: NavigationDrawer
 documentation: ug
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Configuration | Tile | ASP.NET MVC | Syncfusion
+title: Image Configuration | Tile | ASP.NET Core | Syncfusion
 description: image configuration
 platform: aspnet-core
 control: Tile

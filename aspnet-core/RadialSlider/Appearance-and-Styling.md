@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance-and-Styling | RadialSlider | ASP.NET MVC | Syncfusion
+title: Appearance-and-Styling | RadialSlider | ASP.NET Core | Syncfusion
 description: Appearance-and-Styling
-platform: ejmvc
+platform: aspnet-core
 control: RadialSlider
 documentation: ug
 ---

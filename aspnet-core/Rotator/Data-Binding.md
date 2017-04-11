@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Binding | Rotator | ASP.NET MVC | Syncfusion
+title: Data Binding | Rotator | ASP.NET Core | Syncfusion
 description: data binding
-platform: ejmvc
+platform: aspnet-core
 control: Rotator
 documentation: ug
 ---

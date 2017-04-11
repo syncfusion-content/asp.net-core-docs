@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles and Appearance | Tile | ASP.NET MVC | Syncfusion
+title: Styles and Appearance | Tile | ASP.NET Core | Syncfusion
 description: styles and appearance
 platform: aspnet-core
 control: Tile
