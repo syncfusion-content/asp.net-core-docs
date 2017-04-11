@@ -13,7 +13,7 @@ The following are some miscellaneous properties that helps you to change the beh
 
 ## Target ID
 
-You can append a list with ListBox by using TargetId property. Define a <ul>,< li> tag that you want to display on ListBox and then set the id of parent <ul> tag to TargetId property. And its data type is string. 
+You can append a list with ListBox by using target-id property. Define a <ul>,< li> tag that you want to display on ListBox and then set the id of parent <ul> tag to target-id property. And its data type is string. 
 
 The following steps explains you the configuration of target-id property in ListBox.
 
@@ -95,10 +95,17 @@ The following steps explains you the configuration of selected-index= property i
 
 {% highlight CSHTML %}
 
-<ej-list-box id="listboxsample" datasource="ViewBag.datasource" selected-index="2">
-    <e-list-box-fields id="empid" text="text"/>
-</ej-list-box> 
+ <div id="control">
 
+     <h5 class="ctrllabel">
+
+         Select a font style
+
+     </h5>
+    <ej-list-box id="listboxsample" datasource="ViewBag.datasource" selected-index="2">
+        <e-list-box-fields id="empid" text="text"/>
+     </ej-list-box> 
+</div>
 {% endhighlight %}
    
 {% highlight C# %}
@@ -142,20 +149,24 @@ The following steps explains you the configuration of selected-index= property i
 
 This features enables you to set the enable or disable options for ListBox by setting Boolean type value to enabled property. 
 
-The following steps explains you the configuration of Enabled property in ListBox.
+The following steps explains you the configuration of enabled property in ListBox.
 
-1. Add the below code in your view page to render the Disabled ListBox
+1. Add the below code in your view page to render the disabled ListBox
 
 
 
   {% highlight CSHTML %}
 
 	// Add the following code in View page to configure ListBox widget
+<div id="control">
 
-<ej-list-box id="listboxsample" datasource="ViewBag.datasource" enabled="false">
-    <e-list-box-fields id="empid" text="text"/>
-</ej-list-box>  
-		
+     <h5 class="ctrllabel">
+
+         Select a skill
+        <ej-list-box id="listboxsample" datasource="ViewBag.datasource" enabled="false">
+             <e-list-box-fields id="empid" text="text"/>
+        </ej-list-box>  
+</div>		
 {% endhighlight %}
    
 
