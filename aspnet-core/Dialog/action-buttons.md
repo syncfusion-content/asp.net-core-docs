@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Action Buttons | Dialog | Syncfusion
+title: Action Buttons | Dialog | ASP.NET Core| Syncfusion
 description: How to enable the Interaction button like “Close”, “Minimize” and etc., in Dialog Widget.
 platform: aspnet-core
 control: Dialog

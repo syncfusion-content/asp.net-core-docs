@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To? | Dialog  | Syncfusion
+title: How To? | Dialog  | ASP.NET Core| Syncfusion
 description: How to achieve specific requirements in Dialog widget.
 platform: aspnet-core
 control: Dialog

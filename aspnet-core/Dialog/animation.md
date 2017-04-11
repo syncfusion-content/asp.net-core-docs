@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation | Dialog  | Syncfusion
+title: Animation | Dialog | ASP.NET Core  | Syncfusion
 description: How to apply animation effects.
 platform: aspnet-core
 control: Dialog
