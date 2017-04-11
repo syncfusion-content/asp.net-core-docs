@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Interaction | Dialog | Syncfusion
+title: Keyboard Interaction | Dialog | ASP.NET Core| Syncfusion
 description: Keyboard Interaction with Dialog widget.
 platform: aspnet-core
 control: Dialog

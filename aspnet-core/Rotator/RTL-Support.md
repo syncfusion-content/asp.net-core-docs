@@ -2,7 +2,7 @@
 layout: post
 title: RTL Support | Rotator | ASP.NET Core | Syncfusion
 description: rtl support
-platform: ejmvc
+platform: aspnet-core
 control: Rotator
 documentation: ug
 ---
