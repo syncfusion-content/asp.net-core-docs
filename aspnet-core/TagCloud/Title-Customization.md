@@ -72,7 +72,7 @@ The following step explains us to configure TitleImage for a TagCloud.
 
 1. Using CSS class you can resize the Title image content as follows.
 
-{% highlight CSHTML %}
+{% highlight CSS %}
 
 	<style type="text/css">
 
