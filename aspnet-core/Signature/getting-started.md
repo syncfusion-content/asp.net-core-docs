@@ -1,6 +1,6 @@
 ---
 layout: post
-title: getting started
+title: getting started | Signature | ASP.NET Core | Syncfusion
 description: getting started
 platform: ASP.NET core
 control: Signature
