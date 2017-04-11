@@ -109,13 +109,6 @@ The output for Splitter when enable-auto-resize is tTrue”.
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
-
-
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
-
-
 ## Animation Support
 
 The Splitter provides you animation support when you expand or collapse the pane. The animation speed can be modified by using the AnimationSpeed property, that has values in milliseconds.

@@ -12,7 +12,7 @@ keywords : dialog
 
 ## Create Multiple Dialogs
 
-Essential Studio for ASP.NET library supports multiple Dialog widgets in the same web page with different contents and different functionalities.
+Essential Studio for ASP.NET Core library supports multiple Dialog widgets in the same web page with different contents and different functionalities.
 
 Initialize the Dialog widgets by configuring as below.
 
