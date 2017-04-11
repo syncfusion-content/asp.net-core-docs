@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load Conent | Dialog | ASP.NET Core | Syncfusion
+title: Load Content | Dialog | ASP.NET Core | Syncfusion
 description: How to load content to dialog widget either using the Ajax, iframe, and Image.
 platform: aspnet-core
 control: Dialog
