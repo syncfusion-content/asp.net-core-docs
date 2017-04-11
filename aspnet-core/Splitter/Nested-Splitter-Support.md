@@ -36,7 +36,7 @@ p =>
 
 				<h3 class="h3">
 
-					ASP.NET MVC
+					ASP.NET Core
 
 				</h3>
 
@@ -76,7 +76,7 @@ p =>
 
 					   Essential Tools is an collection of user interface components used to create interactive
 
-						ASP.NET MVC applications.
+						ASP.NET Core applications.
 
 					</div>
 
@@ -108,7 +108,7 @@ p =>
 
 			</h3>
 
-			Essential MVC Grid offers full featured a Grid control with extensive support for
+			Essential Asp.NET Core Grid offers full featured a Grid control with extensive support for
 
 			Grouping and the display of hierarchical data.
 
