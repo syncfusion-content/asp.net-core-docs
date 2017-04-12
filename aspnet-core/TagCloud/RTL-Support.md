@@ -2,7 +2,7 @@
 layout: post
 title: RTL Support | TagCloud | ASP.NET Core | Syncfusion
 description: rtl support
-platform: ASP.NET Core
+platform: aspnet-core
 control: TagCloud
 documentation: ug
 ---

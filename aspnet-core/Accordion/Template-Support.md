@@ -2,7 +2,7 @@
 layout: post
 title: Template Support | Accordion  | ASP.NET Core | Syncfusion
 description: template support
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---

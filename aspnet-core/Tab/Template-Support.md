@@ -2,7 +2,7 @@
 layout: post
 title: Template Support | Tab  | ASP.NET Core | Syncfusion
 description: template support
-platform: ASP.NET Core
+platform: aspnet-core
 control: Tab 
 documentation: ug
 ---

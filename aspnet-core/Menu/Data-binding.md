@@ -2,7 +2,7 @@
 layout: post
 title: Data binding | Menu | ASP.NET Core | Syncfusion
 description: data binding
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Icons and navigation | Menu | ASP.NET Core | Syncfusion
 description: icons and navigation
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Scroll Support | Tab  | ASP.NET Core | Syncfusion
 description: scroll support
-platform: ASP.NET Core
+platform: aspnet-core
 control: Tab 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Integration with other widgets | Tab  | ASP.NET Core | Syncfusion
 description: integration with other widgets
-platform: ASP.NET Core
+platform: aspnet-core
 control: Tab 
 documentation: ug
 ---

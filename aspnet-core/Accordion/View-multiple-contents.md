@@ -2,7 +2,7 @@
 layout: post
 title: View multiple contents | Accordion  | ASP.NET Core | Syncfusion
 description: view multiple contents
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---

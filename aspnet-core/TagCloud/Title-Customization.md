@@ -2,7 +2,7 @@
 layout: post
 title: Title Customization | TagCloud | ASP.NET Core | Syncfusion
 description: title customization
-platform: ASP.NET Core
+platform: aspnet-core
 control: TagCloud
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Define value | Progress Bar | ASP.NET Core | Syncfusion
 description: define value
-platform: ASP.NET Core
+platform: aspnet-core
 control: Progress Bar
 documentation: ug
 ---

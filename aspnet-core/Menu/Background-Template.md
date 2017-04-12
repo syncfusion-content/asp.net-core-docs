@@ -2,7 +2,7 @@
 layout: post
 title: Background Template | Menu | ASP.NET Core | Syncfusion
 description: background template
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: State Persistence | Accordion  | ASP.NET Core | Syncfusion
 description: state persistence
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---

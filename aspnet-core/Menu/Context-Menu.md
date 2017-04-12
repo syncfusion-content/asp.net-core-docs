@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu | Menu | ASP.NET Core | Syncfusion
 description: context menu
-platform: ASP.NET Core 
+platform: aspnet-core 
 control: Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding | TagCloud | ASP.NET Core | Syncfusion
 description: data-binding
-platform: ASP.NET Core
+platform: aspnet-core
 control: TagCloud
 documentation: ug
 ---

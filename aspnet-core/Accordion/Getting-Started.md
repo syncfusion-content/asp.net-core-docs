@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | Accordion  | ASP.NET Core | Syncfusion
 description: getting started
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 keywords: ejAccordion, accordion, ASP.NET Core Accordion

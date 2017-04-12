@@ -2,7 +2,7 @@
 layout: post
 title: Header customization | Accordion  | ASP.NET Core | Syncfusion
 description: header customization
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Separators | Menu | ASP.NET Core | Syncfusion
 description: separators
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

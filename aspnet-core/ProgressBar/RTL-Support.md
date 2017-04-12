@@ -2,7 +2,7 @@
 layout: post
 title: RTL Support | Progress Bar | ASP.NET Core | Syncfusion
 description: rtl support
-platform: ASP.NET Core
+platform: aspnet-core
 control: Progress Bar
 documentation: ug
 ---

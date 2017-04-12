@@ -2,7 +2,7 @@
 layout: post
 title: Miscellaneous | Menu | ASP.NET Core | Syncfusion
 description: miscellaneous
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

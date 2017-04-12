@@ -2,7 +2,7 @@
 layout: post
 title: Look and feel | Menu | ASP.NET Core | Syncfusion
 description: look and feel
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

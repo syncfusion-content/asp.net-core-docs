@@ -2,7 +2,7 @@
 layout: post
 title: Orientation | Menu | ASP.NET Core | Syncfusion
 description: orientation
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

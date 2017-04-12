@@ -2,7 +2,7 @@
 layout: post
 title: Accordion Panel enabler | Accordion  | ASP.NET Core | Syncfusion
 description: accordion panel enabler
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---

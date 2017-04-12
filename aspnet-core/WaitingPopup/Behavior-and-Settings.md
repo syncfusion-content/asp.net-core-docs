@@ -2,7 +2,7 @@
 layout: post
 title: Behavior and Settings | WaitingPopup | ASP.NET Core | Syncfusion
 description: behavior and settings
-platform: ASP.NET Core
+platform: aspnet-core
 control: WaitingPopup
 documentation: ug
 ---

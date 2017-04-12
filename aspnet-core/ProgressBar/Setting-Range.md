@@ -2,7 +2,7 @@
 layout: post
 title: Setting Range | Progress Bar | ASP.NET Core | Syncfusion
 description: setting range
-platform: ASP.NET Core
+platform: aspnet-core
 control: Progress Bar
 documentation: ug
 ---

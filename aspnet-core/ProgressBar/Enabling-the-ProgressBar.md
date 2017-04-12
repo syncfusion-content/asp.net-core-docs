@@ -2,7 +2,7 @@
 layout: post
 title: Enabling the ProgressBar | Progress Bar | ASP.NET Core | Syncfusion
 description: enabling the progressbar
-platform: ASP.NET Core
+platform: aspnet-core
 control: Progress Bar
 documentation: ug
 ---

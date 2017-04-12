@@ -2,7 +2,7 @@
 layout: post
 title: Customizing the Submenu direction | Menu | ASP.NET Core | Syncfusion
 description: customizing the submenu direction
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

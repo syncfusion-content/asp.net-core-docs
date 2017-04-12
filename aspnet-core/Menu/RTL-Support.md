@@ -2,7 +2,7 @@
 layout: post
 title: RTL Support | Menu | ASP.NET Core | Syncfusion
 description: rtl support
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

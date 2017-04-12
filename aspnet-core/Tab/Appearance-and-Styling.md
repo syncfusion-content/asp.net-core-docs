@@ -2,7 +2,7 @@
 layout: post
 title: Appearance and Styling | Tab  | ASP.NET Core | Syncfusion
 description: appearance and styling
-platform: ASP.NET Core
+platform: aspnet-core
 control: Tab 
 documentation: ug
 ---

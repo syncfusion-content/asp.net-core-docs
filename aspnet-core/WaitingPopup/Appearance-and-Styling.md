@@ -2,7 +2,7 @@
 layout: post
 title: Appearance and Styling | WaitingPopup | ASP.NET Core | Syncfusion
 description: appearance and styling 
-platform: ASP.NET Core
+platform: aspnet-core
 control: WaitingPopup
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Navigation | Menu | ASP.NET Core | Syncfusion
 description: keyboard navigation
-platform: ASP.NET Core
+platform: aspnet-core
 control: Menu
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Behavior Settings | Tab  | ASP.NET Core | Syncfusion
 description: behavior settings
-platform: ASP.NET Core
+platform: aspnet-core
 control: Tab 
 documentation: ug
 ---

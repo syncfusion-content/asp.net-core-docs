@@ -2,7 +2,7 @@
 layout: post
 title: State Maintenance | Progress Bar | ASP.NET Core | Syncfusion
 description: state maintenance
-platform: ASP.NET Core
+platform: aspnet-core
 control: Progress Bar
 documentation: ug
 ---
