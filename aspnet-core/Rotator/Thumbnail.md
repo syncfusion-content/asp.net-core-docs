@@ -13,7 +13,7 @@ This feature implements Thumbnail in Rotator control. You can view or access any
 
 The property thumbnail-source-id is Boolean type, which allow us to Show or Hide the Thumbnail in Rotator control. Thumbnail is used to navigate between slides. Thumbnail supports only single slide transition. You must specify the source for thumbnail elements through the thumbnail-source-id property. The default value is ‘false’.
 
-The property ThumbnailSourceID specifies the source for thumbnail elements. The default value is null. The value set to this property is object. 
+The property  thumbnail-source-id specifies the source for thumbnail elements. The default value is null. The value set to this property is object. 
 
 You can refer the following code example of show-thumbnail property in Rotator.
 
