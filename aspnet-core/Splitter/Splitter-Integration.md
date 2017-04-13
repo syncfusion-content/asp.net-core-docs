@@ -21,60 +21,71 @@ The following steps explain the implementation of Splitter integration.
 
 {% highlight CSHTML %}
 
-@{IDictionary<string, object> htmlAttribute = new Dictionary<string, object>();
-  htmlAttribute.Add("class", "_child");}@{Html.EJ().Splitter("outterSplitter").PaneProperties(p =>    {
-  p.Add().ContentTemplate(
-  @<div class="cont">
-  <h3 class="h3">
-  ASP.NET MVC
-  </h3>
-  @Html.EJ().TreeView("treeview").Items(items =>
-  {
-      items.Add().Text("Mobile").Expanded(true).Children(child =>
-	  {                        
-	       child.Add().Id("tools").Text("Galaxy").HtmlAttributes(htmlAttribute);
-		   });
-		   items.Add().Text("Harddisk").Expanded(true).Children(child =>
-		   { 
-      		   child.Add().Id("chart").Text("Segate").HtmlAttributes(htmlAttribute);
-		    });
-		   items.Add().Text("Logo").Expanded(true).Children(child =>
-		   {
-			   child.Add().Id("grid").Text("Amazon").HtmlAttributes(htmlAttribute);
-           });
-  }).ClientSideEvents(e=>e.NodeSelect("treeClicked"))
-</div>).PaneSize("200");
-p.Add().ContentTemplate(
-@<div class="cont">
-<div class="_content">
-Select any product from the tree to show the description.
-</div>
-<div class="tools des">
-<h3>
-Tools 
-</h3> 
-<p>
-Essential Tools is an collection of user interface components used to create interactive
-ASP.NET MVC applications.
-</p>
-</div>
-<div class="chart des">
-<h3> 
-Chart 
-</h3> 
-<p> Essential Chart is a business-oriented charting component.</p> 
-</div> 
-<div class="grid des"> 
-<h3>
-Grid
-</h3>
-<p>
-Essential MVC Grid offers full featured a Grid control with extensive support for
-Grouping and the display of hierarchical data.
-</p>
-</div>
-</div>).PaneSize("200");
-}).Height("400").Width("100%").Render();}<style type="text/css">
+<ej-splitter id="outterSplitter" is-responsive="true" enable-auto-resize="true" height="250" width="485">
+    <e-split-panes>
+        <e-split-pane paneSize="200">
+            <e-content-template>
+                <div class="cont">
+                    <ul id="treeView" class="visibleHide">
+                        <li>
+                            Tools
+                            <ul>
+                                <li id="tools" class="_child">Description</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Chart
+                            <ul>
+                                <li id="chart" class="_child">Description </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Grid
+                            <ul>
+                                <li id="grid" class="_child">Description</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </e-content-template>
+        </e-split-pane>
+        <e-split-pane pane-size="200">
+            <e-content-Template>
+                <div class="cont">
+                    <div class="_content">
+                        Select any product from the tree to show the description.
+                    </div>
+                    <div class="tools des">
+                        <h3>
+                            Tools
+                        </h3>
+                        <p>
+                            Essential Tools is an collection of user interface components used to create interactive
+                            ASP.NET MVC applications.
+                        </p>
+                    </div>
+                    <div class="chart des">
+                        <h3>
+                            Chart
+                        </h3>
+                        <p> Essential Chart is a business-oriented charting component.</p>
+                    </div>
+                    <div class="grid des">
+                        <h3>
+                            Grid
+                        </h3>
+                        <p>
+                            Essential MVC Grid offers full featured a Grid control with extensive support for
+                            Grouping and the display of hierarchical data.
+                        </p>
+                    </div>
+                </div>
+            </e-content-Template>
+        </e-split-pane>
+    </e-split-panes>
+</ej-splitter>
+
+<style type="text/css">
 #outterSplitter {
 margin: 0 auto;
 }    .cont #treeView_Container {

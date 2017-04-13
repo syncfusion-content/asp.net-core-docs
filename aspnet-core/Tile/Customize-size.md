@@ -10,14 +10,14 @@ keywords: animation
 
 # Customize size
 
-You can customize the size of the Tile by using TileSize property. The following built-in tile sizes are supported.
+You can customize the size of the Tile by using  tile-size property. The following built-in tile sizes are supported.
 
 1. Medium
 2. Small
 3. Large
 4. Wide
 
-The default TileSize value is set to Small.
+The default  tile-size value is set to Small.
 
 Refer to the following code examples.
 

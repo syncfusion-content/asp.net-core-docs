@@ -17,7 +17,7 @@ ImagePosition property is used to adjust the position of Tile image at the Cente
 4. RightCenter
 5. LeftCenter
 6. TopLeft
-7. TopRight
+7. TopRight 
 8. BottomRight
 9. BottomLeft 
 10. Fill
@@ -28,7 +28,7 @@ Refer to the following code examples.
 
 {% highlight CSHTML %}
 
-@Html.EJ().Tile("tile").Text("Weather").ImagePosition(TileImagePosition.Center).TileSize(TileSize.Wide).ImageUrl("http://js.syncfusion.com/UG/web/Content/tile/Weather_2.png ")
+<ej-tile id="tile" image-position="@TileImagePosition.Center" tile-size="@TileSize.Wide" image-url="../images/tile/windows/weather.png" text="Pictures"></ej-tile>
 
 {% endhighlight %}
 
@@ -44,21 +44,21 @@ Refer to the following code examples.
 
 {% highlight CSHTML %}
 
-@Html.EJ().Tile("tile").Text("Pictures").ImagePosition(TileImagePosition.Center).TileSize(TileSize.Medium).ImageClass("pictures")
+<ej-tile id="tile" image-position="@TileImagePosition.Center" tile-size="@TileSize.Wide" image-class="Pictures" text="Pictures"></ej-tile>
 
-       <style>
-
+  <style>
+    
         .pictures
 
          {
 
-            background: url("http://js.syncfusion.com/UG/web/Content/tile/pictures.png ");
+            background: url("../images/tile/windows/pictures.png");
 
             background-size:30px 30px;
 
          }
+</style>
 
-    </style>
 
 {% endhighlight %}
 
