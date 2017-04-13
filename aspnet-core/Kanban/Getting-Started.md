@@ -331,7 +331,7 @@ Filter allows to filter the collection of cards from `DataSource` which meets th
             </e-kanbanfield>
              <e-kanbanfilter-settings>
                   <e-kanbanfilter-setting text="Janet Issues" query="new ej.Query().where('Assignee', 'equal', 'Janet Leverling')" description="Displays issues which matches the assignee as 'Janet Leverling`"></e-kanbanfilter-setting>
-                  <e-kanbanfilter-setting text="Testing Issues" query="new ej.Query().where('Status', 'equal', 'Testing')" description="Display the issues of 'Testing'"></e-kanbanfilter-setting>
+                  <e-kanbanfilter-setting text="Closed Issues" query="new ej.Query().where('Status', 'equal', 'Close')" description="Display the issues of 'Closed' state"></e-kanbanfilter-setting>
              </e-kanbanfilter-settings>
      </ej-kanban>
 
