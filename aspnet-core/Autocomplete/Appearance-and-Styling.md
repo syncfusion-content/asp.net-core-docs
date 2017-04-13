@@ -252,7 +252,7 @@ The following steps allow you to configure CssClass for an AutoComplete textbox.
 
     <ej-autocomplete id="autocomplete" datasource="ViewBag.datasource" watermark-text="Select a car" css-class="customCss">
                 <e-autocomplete-fields text="Text" key="UniqueKey" />
-            </ej-autocomple
+            </ej-autocomple>
 
 {% endhighlight %}
    
