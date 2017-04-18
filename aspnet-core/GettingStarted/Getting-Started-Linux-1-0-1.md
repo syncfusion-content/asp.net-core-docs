@@ -253,7 +253,7 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
 
 <script src="~/lib/jquery/dist/jquery.js"></script>
 
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
+<script src="~/lib/jsrender/jsrender.min.js"></script>
 
 <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
 
