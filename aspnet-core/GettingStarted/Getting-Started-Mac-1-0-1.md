@@ -217,7 +217,7 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
 
 <script src="~/js/site.js" asp-append-version="true"></script>
 
-<script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
+<script src="~/lib/jsrender/jsrender.min.js"></script>
 
 <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
 
