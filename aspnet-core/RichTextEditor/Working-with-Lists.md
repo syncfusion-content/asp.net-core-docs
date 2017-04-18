@@ -64,16 +64,26 @@ Summary<br/><br/></th></tr>
 
 {% highlight CSHTML %}
 
-@{Html.EJ().RTE("rteSample").Width("800px").ContentTemplate(@<div>
-    The Rich Text Editor
-    (RTE) control is an easy to render in client side. Customer easy to edit the contents
-    and get the HTML content for the displayed content. A rich text editor control provides
-    users with a toolbar that helps them to apply rich text formats to the text entered
-    in the text area.
-</div>)
-.Tools(tool => tool.CustomOrderList(customOrder => customOrder.Css("e-rte-toolbar-icon e-rte-listitems customOrder").ListStyle("lower-greek").Name("orderInsert").Tooltip("Custom OrderList").Text("Lower-Greek").Add()))
-.Render();}
-<br />
+@{
+    List<String> toolsList = new List<string>() { "lists" };
+    List<String> lists = new List<string>() { "orderedList" };
+}
+<ej-rte id="rteSample" tools-list="toolsList">
+    <e-content-template>
+        <p>
+            The Rich Text Editor
+            (RTE) control is an easy to render in client side. Customer easy to edit the contents
+            and get the HTML content for the displayed content. A rich text editor control provides
+            users with a toolbar that helps them to apply rich text formats to the text entered
+            in the text area.
+        </p>
+    </e-content-template>
+    <e-tools lists="lists">
+        <e-custom-ordered-lists>
+            <e-custom-ordered-list css="e-rte-toolbar-icon e-rte-listitems customOrder" list-style="lower-greek" name="orderInsert" tooltip="Custom Orderlist" text="Lower-Greek" />
+        </e-custom-ordered-lists>
+    </e-tools>
+</ej-rte>
 
 {% endhighlight %}
 
@@ -100,16 +110,26 @@ Summary<br/><br/></th></tr>
 
 {% highlight CSHTML %}
 
-@{Html.EJ().RTE("rteSample").Width("800px").ContentTemplate(@<div>
-    The Rich Text Editor
-    (RTE) control is an easy to render in client side. Customer easy to edit the contents
-    and get the HTML content for the displayed content. A rich text editor control provides
-    users with a toolbar that helps them to apply rich text formats to the text entered
-    in the text area.
-</div>)
-.Tools(tool => tool.CustomOrderList(customOrder => customOrder.Css("e-rte-toolbar-icon e-rte-listitems customOrder").ListStyle("lower-greek").Name("orderInsert").Tooltip("Custom OrderList").Text("Lower-Greek").Add()))
-.Render();}
-<br />
+@{
+    List<String> toolsList = new List<string>() { "lists" };
+    List<String> lists = new List<string>() { "unorderedList" };
+}
+<ej-rte id="rteSample" tools-list="toolsList">
+    <e-content-template>
+        <p>
+            The Rich Text Editor
+            (RTE) control is an easy to render in client side. Customer easy to edit the contents
+            and get the HTML content for the displayed content. A rich text editor control provides
+            users with a toolbar that helps them to apply rich text formats to the text entered
+            in the text area.
+        </p>
+    </e-content-template>
+    <e-tools lists="lists">
+            <e-custom-unordered-lists>
+                <e-custom-unordered-list css="e-rte-toolbar-icon e-rte-unlistitems customUnOrder" list-image="url('../images/rte/smiley-gif.gif')" name="unOrderInsert" text="Smiley" tooltip="Custom UnOrderList" />
+            </e-custom-unordered-lists>   
+    </e-tools>
+</ej-rte>
 
 {% endhighlight %}
 
