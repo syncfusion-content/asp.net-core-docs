@@ -59,10 +59,11 @@ You can bind the data to Grid control by either locally or remotely. Assign the 
 
 In `e-columns` definition, the `text-align` property allows you to align text of the columns, the `width` property is used to define width of the columns and `format` property allows you to format the particular columns value.
 
+
+{% tabs %}
 {% highlight cshtml %}
 
-<ej-grid id="FlatGrid">
-     <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource">
      <e-columns>
         <e-column field="OrderID" header-text="Order ID" text-align="Right" width="70"></e-column>
         <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
@@ -74,6 +75,22 @@ In `e-columns` definition, the `text-align` property allows you to align text of
 </ej-grid>
 
 {% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.Take(12).ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -86,8 +103,7 @@ The Paging feature in Grid offers complete navigation support to easily switch
 
 {% highlight cshtml %}
  
- <ej-grid id="FlatGrid" allow-paging="true" >
-     <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+ <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
      <e-columns>
         <e-column field="OrderID" header-text="OrderID"></e-column>
         <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
@@ -99,6 +115,22 @@ The Paging feature in Grid offers complete navigation support to easily switch
 
 
 {% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -111,10 +143,10 @@ The Filtering feature in Grid is used to facilitate the extraction of a subse
 
 To enable filtering, use the `allow-filtering` property of Grid as follows.
 
+{% tabs %}
 {% highlight cshtml %}
 
- <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true">
-     <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+ <ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-filtering="true">
      <e-columns>
         <e-column field="OrderID" header-text="OrderID"></e-column>
         <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
@@ -126,6 +158,22 @@ To enable filtering, use the `allow-filtering` property of Grid as follows.
 
 
 {% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -138,9 +186,9 @@ The Grouping feature in Grid is used to consolidate the Grid data into gro
 
 To enable grouping, use the `allow-grouping` property of Grid as follows.
 
+{% tabs %}
 {% highlight cshtml %}
- <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true">
-     <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+ <ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true">
      <e-group-settings grouped-columns="ShipCountry" />
      <e-columns>
         <e-column field="OrderID" header-text="OrderID" ></e-column>
@@ -152,6 +200,22 @@ To enable grouping, use the `allow-grouping` property of Grid as follows.
 </ej-grid>
 
 {% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
@@ -162,10 +226,10 @@ The following output is displayed as a result of the above code example.
 
 Summaries can be added by setting the `show-summary` to `true` and adding required summary rows and columns in the `summary-rows` property. 
 
+{% tabs %}
 {% highlight cshtml %}
  
-<ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" show-summary="True">
-     <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/Orders/?$top=45" offline="true"></e-datamanager> 
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true" show-summary="True">
          <e-group-settings grouped-columns="ShipCity" />
          <e-summary-rows>
            <ej-summary-row title="Sum">
@@ -184,6 +248,22 @@ Summaries can be added by setting the `show-summary` to `true` and adding requir
 </ej-grid>
 
 {% endhighlight  %}
+{% highlight c# %}
+
+      namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}    
+{% endtabs %}  
 
 The following output is displayed as a result of the above code example.
 
