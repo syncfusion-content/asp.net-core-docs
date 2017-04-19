@@ -43,7 +43,7 @@ Apart from the above mentioned predefined size option, you can set your own widt
 
 In the View page, add the following GroupButton elements to configure GroupButton for configure the size
 
-{% highlight html %}
+{% highlight CSHTML %}
 
 <%--Set the different size options and custom size Groupbutton control as follows--%>
 
@@ -60,7 +60,7 @@ In the View page, add the following GroupButton elements to configure GroupButto
 
 ![](Easy-Customization_images/mini.png)
 
-{% highlight html %}
+{% highlight CSHTML %}
 
 <%--Set the different size options and custom size Groupbutton control as follows--%>
 
@@ -83,7 +83,7 @@ In the View page, add the following GroupButton elements to configure GroupButto
 Groupbutton element can be rendered either in vertical or horizontal orientation by means of the orientation property available in GroupButton.
 You can change the orientation of Groupbutton as given in the below code snippet.
 
-{% highlight html %}
+{% highlight CSHTML %}
 
     <ej-group-button id="GroupButton" orientation="@Orientation.Vertical" width="500px">
         <e-group-button-items>

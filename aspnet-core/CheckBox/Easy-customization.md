@@ -167,7 +167,7 @@ Checkbox in different sizes
 
 ## Text
 
-It specifies the text content for Checkbox. In previous programs, separate label for each Checkbox is created. You can also set the text for checkbox using Text property. Therefore, it is not essential to add label tag for each checkbox in HTML code.
+It specifies the text content for Checkbox. In previous programs, separate label for each Checkbox is created. You can also set the text for checkbox using text property. Therefore, it is not essential to add label tag for each checkbox in HTML code.
 
 The following steps explains you the details about rendering the Checkbox with text content and without writing label tag
 
