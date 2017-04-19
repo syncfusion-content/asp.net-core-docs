@@ -1,111 +1,136 @@
 ---
 layout: post
-title: DataSource Support
-description: datasource
+title: Easy Customization | GroupButton | ASP.NET Core | Syncfusion
+description: easy customization
 platform: aspnet-core
-control: GroupButton
+control: GroupButton 
 documentation: ug
 ---
 
 # DataSource
 
-GroupButton can populate the button items based on data source and by specifying the associated fields. 
-
+GroupButton can populate the groupbutton items based on datasource and by specifying the associated fields. You can bind data from both remote and local sources.
 Refer the below table to know about the available fields
+
+Field is a property that includes the object type. Fields are used to bind the data source and it includes following field members to make binding easier.
+
+_List of Field members_
 
 <table>
 <tr>
-<td>
-text<br/><br/></td><td>
-Text to be displayed in button<br/><br/></td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
-prefix-icon<br/><br/></td><td>
-Icon class name – prefixIcon will be displayed from the left margin of the button.<br/><br/></td></tr>
+DataSource</td><td>
+Datasource receives Essential DataManager object and JSON object. </td></tr>
 <tr>
 <td>
-suffix-icon<br/><br/></td><td>
-Icon class name – suffixIcon will be displayed from the left margin of the button.<br/><br/></td></tr>
+Id</td><td>
+Specifies the id to Groupbutton item</td></tr>
+<td>
+Text</td><td>
+Specifies the text of Groupbutton item</td></tr>
 <tr>
 <td>
-content-type<br/><br/></td><td>
-Specifies content type of button item<br/><br/></td></tr>
+SpriteCssClass</td><td>
+Specifies the sprite CSS class to “LI” item list</td></tr>
 <tr>
 <td>
-image-position<br/><br/></td><td>
-Specifies position of the image in a button item<br/><br/></td></tr>
+Url</td><td>
+Specifies the href attribute of "A" tag in item list</td></tr>
 <tr>
 <td>
-selected<br/><br/></td><td>
-Specifies the selection state of button item<br/><br/></td></tr>
+PrefixIcon</td><td>
+Specifies the PrefixIcon class for Groupbutton item list</td></tr>
 <tr>
 <td>
-url<br/><br/></td><td>
-Used to include the URL tag to the button item<br/><br/></td></tr>
+SuffixIcon</td><td>
+Specifies the SuffixIcon class for Groupbutton item list</td></tr>
 <tr>
 <td>
-html-attribute<br/><br/></td><td>
-It defines the HTML attributes such as class and styles for an button item.<br/><br/></td></tr>
+ImagePosition</td><td>
+Specifies the position of Image in Groupbutton item list</td></tr>
 <tr>
 <td>
-link-attribute<br/><br/></td><td>
-It defines the image attributes such as height, width, styles, etc.<br/><br/></td></tr>
+LinkAttribute</td><td>
+Specifies the link attribute to “A” tag in item list</td></tr>
+<tr>
+<td>
+HtmlAttribute</td><td>
+Specifies the HTML attribute to “li” tag in item list</td></tr>
+<tr>
+<td>
+ContentTemplate</td><td>
+Specifies the template content for customizing the Groupbutton items</td></tr>
+<tr>
+<td>
+Selected</td><td>
+Specifies initial selection state of GroupButton item</td></tr>
+<tr>
+<td>
+ContentType</td><td>
+Specifies Content type of Groupbutton Item. The possible values are <br/>
+1. TextOnly <br/>
+2. ImageOnly <br/>
+3. ImageBoth <br/>
+4. TextAndImage <br/>
+5. ImageTextImage <br/>
+</td></tr>
 </table>
 
+## Local data
 
-## Local Data
+To populate the Groupbutton items with the local data, map the field names mentioned in the above table with the property names.
 
-To set the local JSON data, define a JSON array and initialize the GroupButton with **dataSource** property. Specify the column names in the fields’ property.
+1. Add the following code in your view page to render GroupButton with local data
 
-N> the columns are bounded automatically when the fields are specified with the default names like id, text, etc...
 
-Below is the sample to code to render the GroupButton JSON dataSource,
+{% highlight CSHTML %}
 
-~~~ cshtml
+// Add the following code in your CSHTML page.
 
-<ej-group-button id="GroupButton" width="100%" group-button-mode="@GroupButtonMode.RadioButton" show-rounded-corner="true" datasource="ViewBag.datasource">
-    <e-group-button-fields id="BtnID" text="Text" content-type="ContentType" selected="Selected" />    
-</ej-group-button>
-
-~~~
+    <ej-group-button id="GroupButton" datasource="ViewBag.Model" width="500px">
+        <e-group-button-fields text="text" />
+    </ej-group-button>
+	   
+{% endhighlight %}
 
 {% highlight c# %}
-   
-	// Add the following code to add list items in the controller page
-	public class Btn
+
+using System;
+using System.Collections.Generic;
+using System.Web.Mvc;
+using Groupbutton_mvc.Models;
+namespace Groupbutton_mvc
+{
+    public class ButtonController: Controller
+    {
+        public class Groupbutton
         {
-            public string Text { get; set; }
-            public string ContentType { get; set; }
-            public string BtnID { get; set; }
-            public string Selected { get; set; }
+            public string text { get; set; }
         }
-        List<Btn> file = new List<Btn>();
-        public IActionResult Index()
+
+        public List<Groupbutton> model = new List<Groupbutton>();
+
+        public ActionResult ButtonFeatures()
         {
-            file.Add(new Btn { BtnID = "btn1", Text = "Day" });
-            file.Add(new Btn { BtnID = "btn2", Text = "Week" });
-            file.Add(new Btn { BtnID = "btn3", Text = "Work Week" });
-            file.Add(new Btn { BtnID = "btn4", Text = "Month", Selected="selected" });
-            file.Add(new Btn { BtnID = "btn5", Text = "Agenda" });
-            ViewBag.datasource = file;
+            model.Add(new Groupbutton { text = "Item1" });
+            model.Add(new Groupbutton { text = "Item2" });
+            model.Add(new Groupbutton { text = "Item3" });
+            ViewBag.Model = model;
             return View();
-        }
+         } 
+    }
+}
 
 {% endhighlight %}
 
+The following screenshot displays the output of the above code.
 
-![](DataSource_images/DataSoruce_img1.jpg)
+![](Datasource_images/object.png)
 
+Local data of GroupButton
+{:.caption}
 
-## Remote Data
-
-To bind remote data to the GroupButton, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property along with the fields mapping.
-
-~~~ cshtml
-
-<ej-group-button id="groupButton" query="ej.Query().from('Orders').take(6)" width="100%">
-    <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/" offline="false"></e-datamanager>
-    <e-group-button-fields text="CustomerID" />
-</ej-group-button>
-
-~~~
