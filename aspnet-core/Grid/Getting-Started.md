@@ -101,6 +101,7 @@ The following output is displayed as a result of the above code example.
 
 The Paging feature in Grid offers complete navigation support to easily switch between the pages, using the page bar available at the bottom of the Grid control. To enable paging, use `allow-paging` property of Grid as follows.
 
+{% tabs %}
 {% highlight cshtml %}
  
  <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
