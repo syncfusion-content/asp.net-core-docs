@@ -154,6 +154,7 @@ In the CSHTML page, add the following button elements to configure Radio Button 
     <br />
     <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false" text="Female" enable-rtl="true" />
 
+{% endhighlight %}
 
 The following image is displayed as the output for the above steps.
 
