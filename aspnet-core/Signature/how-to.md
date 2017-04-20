@@ -21,9 +21,7 @@ In the View page, define the following code.
 
 <ej-signature id="mysign" height="400px" width="500" stroke-width="3" background-image="../images/water.png" is-responsive="true" save-with-background="true" />
 
-<a id="download">
-    <input id="signsave" class="e-btn" type="button" value="Save" />
-</a>
+<ej-button id="signsave" text="Save" show-rounded-corner="true" click="onsave" />
 
 {% endhighlight %}
 
@@ -32,27 +30,12 @@ Add the following script to define the download format for the canvas.
 {% highlight js %}
 
 <script type="text/javascript">
-        $(function () {
-            
-            $("#signsave").ejButton({
-                size: "normal",
-                showRoundedCorner: true,
-            });
-            var client = document.getElementById('download');
-            if (client.addEventListener)
-                client.addEventListener('click', downloadClient, false);
-            else
-                client.attachEvent('onclick', downloadClient, false);
-
-            function downloadClient(e) {
-                var sign = $("signature").ejSignature("instance");
-                sign.option("saveImageFormat", "jpg")                   // set the save image format dynamically
-                this.download = "Signature." + sign.model.saveImageFormat + "";
-                var div = $("signature");
-                var canvas = div["children"]()[0];
-                this.href = canvas.toDataURL("image/" + sign.model.saveImageFormat + "", 1.0);
-            }
-        });
+        
+         function onsave() {
+            var sign = $("#mysign").ejSignature("instance");
+            sign.option("saveImageFormat", "jpg") 
+            sign.save("MySignature");
+        }
 
     </script>
 
