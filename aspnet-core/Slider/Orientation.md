@@ -32,7 +32,6 @@ Horizontal (default value)</td><td>
 Displays the Slider in horizontal direction</td></tr>
 </table>
 
-
 The following steps explains you on how to configure the Orientation property.
 
 1. In an view page, add a Tag helper element to render it as a Slider widget.
@@ -45,7 +44,6 @@ The following steps explains you on how to configure the Orientation property.
 
 
 {% endhighlight %}
-
 
 Execute the above code example to render the following output.
 
