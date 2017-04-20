@@ -61,13 +61,13 @@ N> the columns are bounded automatically when the fields are specified with the 
 
 Below is the sample to code to render the GroupButton JSON dataSource,
 
-~~~ cshtml
+{% highlight CSHTML %}
 
 <ej-group-button id="GroupButton" width="100%" group-button-mode="@GroupButtonMode.RadioButton" show-rounded-corner="true" datasource="ViewBag.datasource">
     <e-group-button-fields id="BtnID" text="Text" content-type="ContentType" selected="Selected" />    
 </ej-group-button>
 
-~~~
+{% endhighlight %}
 
 {% highlight c# %}
    
@@ -101,11 +101,12 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 To bind remote data to the GroupButton, you can assign a service data as an instance of `ejDataManager` to the `dataSource` property along with the fields mapping.
 
-~~~ cshtml
+
+{% highlight CSHTML %}
 
 <ej-group-button id="groupButton" query="ej.Query().from('Orders').take(6)" width="100%">
     <e-datamanager url="//mvc.syncfusion.com/Services/Northwnd.svc/" offline="false"></e-datamanager>
     <e-group-button-fields text="CustomerID" />
 </ej-group-button>
 
-~~~
+{% endhighlight %}
