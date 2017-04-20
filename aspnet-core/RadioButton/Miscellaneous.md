@@ -15,22 +15,23 @@ Radio Button id is not shown in the user interface. Here Id denotes the Id attri
 
 Set Id for Radio Button control as follows.
 
+
+
 {% highlight CSHTML %}
 
 @*set new id value as follows*@
 
-<ej-radio-button id="RadBtn_Male" name="Gender" />
+    <ej-radio-button id="radiobutton"  name="Gender" size="@RadioButtonSize.Small" checked="true"/>
 
-<br />
-
-<ej-radio-button id="RadBtn_female" name="Gender" />
+    <br />
+    <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false"  />")
 
 {% endhighlight %}
 
 
 ## Radio Button Prefix id
 
-Id prefix value is appended to the element id value. It is used to mention the prefix for the wrapper’s id attribute. When you assign a value for IdPrefix property, the older prefix id gets replaced by the new prefix id. 
+Id prefix value is appended to the element id value. It is used to mention the prefix for the wrapper’s id attribute. When you assign a value for id-prefix property, the older prefix id gets replaced by the new prefix id. 
 
 Setting a new prefix id for Radio Button control is as follows.
 
@@ -40,11 +41,11 @@ Setting a new prefix id for Radio Button control is as follows.
 
 @*set new idPrefix  value as follows*@
 
-<ej-radio-button id="RadBtn_Male" name="Gender" id-prefix="sync_"/>
+    <ej-radio-button id="radiobutton"  name="Gender" size="@RadioButtonSize.Small" checked="true" id-prefix="sync_" text="Male" enable-rtl="true" />
 
-<br />
+    <br />
+    <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false" id-prefix="sync_" text="Female" enable-rtl="true" />
 
-<ej-radio-button id="Radio_Female" name="Gender" id-prefix="sync_"/>
 
 {% endhighlight %}
 
@@ -60,7 +61,7 @@ The Name attribute is also used to identify form data after it has been submitte
 
 The Value setting defines what can be submitted when checked.
 
-For Radio Buttons, the contents of the value property do not appear in the user interface. The Value property only has meaning when submitting a form. If a radio button is in the checked state when the form is submitted, the name of the Radio Button is sent along with the value of the value property, if the radio button is not checked, no information is sent.
+For Radio Buttons, the contents of the value property do not appear in the user interface. The value property only has meaning when submitting a form. If a radio button is in the checked state when the form is submitted, the name of the Radio Button is sent along with the value of the value property, if the radio button is not checked, no information is sent.
 
 To identify, on the server side, which one was checked, give different values for radio buttons in the same group, 
 
@@ -70,11 +71,9 @@ Set name and value for each radio button control as follows.
 {% highlight CSHTML %}
 
 @*set name and value for each radio button as follows*@
+    <ej-radio-button id="radiobutton"  name="Gender" size="@RadioButtonSize.Small" checked="true"  value="Male" />
 
-<ej-radio-button id="RadBtn_Female" name="Gender" value="male"/>
-
-<br />
-
-<ej-radio-button id="RadBtn_Male" name="Gender" value="female"/>
+    <br />
+    <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false" value="Female" />
 
 {% endhighlight %}
