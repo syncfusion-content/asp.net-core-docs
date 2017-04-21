@@ -75,9 +75,9 @@ The dataSource is populated with USA population data inside the controller relat
 	public IActionResult Map()
 
 	{
-		ViewData["mapdata"] = GetUSMap();
+		ViewBag.mapdata = GetUSMap();
 
-		ViewData["datasource"] = GetUSPopulationData();
+		ViewBag.datasource = GetUSPopulationData();
 
 		return View();
 
@@ -243,27 +243,6 @@ The dataSource is populated with USA population data inside the controller relat
 		}
 
 	}
-
-
-
-{% endhighlight %}
-
-
-
-You can refer to shape data and datasource as illustrated in the following “Map.cshtml”,
-
-
-
-{% highlight CSHTML %}
-
-	@{       
-
-    	var mapData = ViewData["mapdata"];
-
-        var dataSource = ViewData["datasource"];    	 
-	 
-	}
-
 {% endhighlight %}
 
 ## Initialize Map
@@ -281,60 +260,17 @@ You can refer to shape data and datasource as illustrated in the following “Ma
 
 * Add the following code sample in “Map.cshtml” file, to create the Map control in the View page.
 
-
-
 {% highlight CSHTML %}
 
-	<div style="width:900px; height:600px;"> 
-
-		@{Html.EJ().Map("container")
-
-			.Layers(lr =>
-
-			{
-
-				lr.ShapeData(mapData).Add();
-
-			})
-			.Render();
-		}     
-
-	</div>
-
-{% endhighlight %}
-   
-
-* The Final Map.cshtml file appears as follows.
-
-
-{% highlight CSHTML %}
-
-
-	@{
-
-			var mapData = ViewData["mapdata"];
-
-			var datasource = ViewData["datasource"];
-
-	}
-
-		<div style="height:600px;width:900px;">
-
-			@{Html.EJ().Map("container")
-
-				.Layers(lr =>
-
-				{
-
-					lr.ShapeData(mapData).Add();
-
-				})
-			.Render();
-			}     
-		</div>   
-
-		<ej-script-manager></ej-script-manager>
-
+<div style="height:600px;width:900px;">
+<ej-map id="maps">
+<e-layers>
+<e-layer shape-data="ViewBag.mapdata">       
+</e-layer>
+</e-layers>
+</ej-map>             
+</div>   
+		
 {% endhighlight %}
    
 
@@ -354,92 +290,46 @@ The following properties in shape layers is used for binding data in Maps contro
 
 ### DataSource
 
-The `DataSource` property accepts collection values as input. For example, you can provide the list of objects as input.
+The `datasource` property accepts the collection values as input. For example, you can provide the list of objects as input.
 
 ### Shape Data Path 
 
-The `ShapeDataPath` property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The `ShapeDataPath` and `ShapePropertyPath` properties are related to each other (refer to `ShapePropertyPath` for more details).
+The `shape-data-path` property is used to refer the data ID in DataSource. For example, population MapData contains data ids ‘Name’ and ‘Population’. The `shape-data-path` and the `shape-property-path` properties are related to each other (refer to `shape-property-path` for more details).
 
 ### Shape Property Path
 
-The `ShapePropertyPath` property is similar to the `ShapeDataPath` that refers the column name in the Data property of shape layers to identify the shape. When the values of the `ShapeDataPath` property in the `DataSource` property and the value of `ShapePropertyPath` in the Data property match, then the associated object from the `DataSource` is bound to the corresponding shape.
-
-
+The `shape-property-path` property is similar to the `shape-data-path` that refers to the column name in the `data` property of shape layers to identify the shape. When the values of the `shape-data-path` property in the `datasource` property and the value of ` shape-property-path` in the `Data` property match, then the associated object from the DataSource is bound to the corresponding shape.
 
 {% highlight CSHTML %}
 
-	@{Html.EJ().Map("container")            
-
-	.Layers(lr =>
-
-	{         
-
-		lr.ShapeData(mapData) 
-
-		.ShapeDataPath("name")
-
-		.ShapePropertyPath("name")
-
-		.DataSource(datasource)
-
-		.Add();           
-
-	}) .Render();
-   }  
+<div style="height:600px;width:900px;">
+<ej-map id="maps">
+<e-layers >
+<e-layer shape-data-path="name" shape-property-path="name" shape-data="ViewBag.shapeData"
+datasource="ViewBag.datasource">             
+</e-layer>
+</e-layers>
+</ej-map>           
+</div>   
 	
 {% endhighlight %}
 
 ### Customize Map Appearance 
 
-You can customize the shape’s color by using `Fill`, `Stroke` and `StrokeThickness` properties in `ShapeSettings`.
-
-
+You can customize the shape’s color by using `fill`, `stroke` and `stroke-thickness` properties in `shape-settings`.
 
 {% highlight CSHTML %}
 
-
-@{Html.EJ().Map("container")            
-
-	.Layers(lr =>
-
-	{
-
-		lr.ShapeData(mapData)              
-
-	 	.ShapeDataPath("name")
-
-		.ShapePropertyPath("name")
-
-		.DataSource(datasource)
-
-		.EnableSelection(false)
-
-		.EnableMouseHover(true)
-
-		.ShapeSettings(ss  =>
-
-		{
-
-	   		ss.Fill("#9CBF4E")
-
-			.StrokeThickness(0.5)
-
-			.Stroke("White")
-
-			.HighlightStroke ("White")                           
-
-			.HighlightColor("#BC5353")
-
-			.HighlightBorderWidth(1);			
-
-		})
-   		
-		.Add();         
-
-	}).Render();
-}  
-
-
+<ej-map id="maps">
+<e-layers >
+<e-layer  shape-data-path="mapData" enable-mouse-hover="true" >
+<e-shape-settings  highlight-color="#BC5353" stroke-thickness="0.5"
+stroke="white" highlight-stroke="white" fill="#9CBF4E"
+highlight-border-width="1">
+</e-shape-settings>
+</e-layer>
+</e-layers>
+</ej-map>
 
 {% endhighlight %}
 
@@ -450,76 +340,57 @@ You can customize the shape’s color by using `Fill`, `Stroke` and `StrokeThick
 
 ### Customizing Map Appearance by Range
 
-The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The `From` and `To` properties defines the value ranges and the `GradientColors` property defines the equivalent color ranges respective to their value ranges.
+The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The `from` and `to` properties defines the value ranges and the `gradient-colors` property defines the equivalent color ranges respective to their value ranges.
 
-N> The `EnableGradient` property value should be true to apply gradient colors for maps.
+N> The `enable-gradient` property value should be true to apply gradient colors for maps.
 
 
 {% highlight CSHTML %}
 
-	@{Html.EJ().Map("container")
+<div style="height:600px;width:900px;">
+<ej-map id="maps">
+<e-layers >
+<e-layer shape-data-path="name" shape-property-path="name" shape-data="ViewBag.shapeData"
+datasource="ViewBag.datasource" show-map-items="false" enable-selection="false" enable-mouse-hover="true">
+<e-shape-settings   stroke="white" fill="#9CBF4E" value-path="population" enable-gradient="true"
+stroke-thickness="0.5" highlight-stroke="white" highlight-color="#BC5353" highlight-border-width="1">
+</e-shape-settings>             
+</e-layer>
+</e-layers>
+</ej-map>           
+</div>   
 
-	.Layers(lr =>
+<script>
+   $("document").ready(function () {
+           var mapObj = $("#maps").data("ejMap");
+           mapObj.model.layers[0].shapeSettings.colorMappings =
+            {rangeColorMapping: rangeColorMapping: [
+                        {
+                            from: 500000,
+                            to: 1000000,
+                            gradientColors: ["#9CBF4E", "#B8CE7B"]
+                        },
+                        {
+                            from: 1000001,
+                            to: 5000000,
+                            gradientColors: ["#B8CE7B", "#CBD89A"]
+                        },
+                        {
+                            from: 5000001,
+                            to: 10000000,
+                            gradientColors: ["#CBD89A", "#DEE2B9"]
+                        },
+                        {
+                            from: 10000001,
+                            to: 40000000,
+                            gradientColors: ["#DEE2B9", "#F1ECD8"]
+                        }]
+             };
+           $("#maps").ejMap("refresh");
+          
+       });
 
-	{                                          
-
-		lr.ShapeData(mapData)              
-
-		.ShapeDataPath("name")
-
-		.ShapePropertyPath("name")
-
-		.DataSource(datasource)
-
-		.ShowMapItems(false)
-
-		.EnableSelection(false)
-
-		.EnableMouseHover(true)
-
-		.ShapeSettings(ss  =>
-
-		{
-
-			ss.Fill("#9CBF4E")
-
-			.StrokeThickness(0.5)
-
-			.Stroke("White")
-
-			.HighlightStroke("White")                           
-
-			.HighlightColor("#BC5353")
-
-			.HighlightBorderWidth(1)	
-
-			.ValuePath("population")
-
-			.EnableGradient(true)
-
-			.RangeColorMappings(cm =>
-
-			{
-
-				cm.From(500000).To(1000000).GradientColors(new List<string> { "#9CBF4E", "#B8CE7B" }).Add();
-
-				cm.From(1000001).To(5000000).GradientColors(new List<string> { "#B8CE7B", "#CBD89A" }).Add();
-
-				cm.From(5000001).To(10000000).GradientColors(new List<string> { "#CBD89A", "#DEE2B9" }).Add();
-
-				cm.From(10000001).To(40000000).GradientColors(new List<string> { "#DEE2B9", "#F1ECD8" }).Add();
-
-			});									
-
-		})
-
-		.Add();         
-
-		}).Render();
-	}  
-
-
-
+</script>
 {% endhighlight %}
 
 
@@ -533,31 +404,21 @@ The following screenshot illustrates a Map with gradient color property enable.
 
 ## Enable Tooltip
 
-The tooltip is displayed only when `ShowTooltip` is set to ‘True’ in the shape layers. By default, it takes the property of the bound object that is referred in the `ValuePath` and displays its content on hovering the corresponding shape. The `TooltipTemplate` property is used for customizing the template for tooltip.
-
-
+The tooltip is displayed only when `show-tooltip` is set to ‘True’ in the shape layers. By default, it takes the property of the bound object that is referred in the `value-path` and displays its content on hovering the corresponding shape. The `tooltip-template` property is used for customizing the template for tooltip.
 
 {% highlight CSHTML %}
 
+<div style="height:600px;width:900px;">
+<ej-map id="maps">
+<e-layers >
+<e-layer show-tooltip="true">
+<e-shape-settings  value-path="name">
+</e-shape-settings>             
+</e-layer>
+</e-layers>
+</ej-map>           
+</div>   
 
-	@{Html.EJ().Map("container")
-
-	.Layers(lr =>
-
-	{                                          
-
-		.ShapeSettings(ss  =>
-
-		{
-
-			.ValuePath("name")
-
-		})
-
-		.ShowTooltip(true);
-
-		}).Render();
-	}  
 
 {% endhighlight %}
 
@@ -584,96 +445,61 @@ Use `Title` property to provide title for interactive legend.
 
 #### Label
 
-You can use `LeftLabel` and `RightLabel` property to provide left and right labels for interactive legend. 
+You can use `left-label` and `right-label` property to provide left and right labels for interactive legend. 
 
 
 {% highlight CSHTML %}
+<div style="height:600px;width:900px;">
 
-	@{Html.EJ().Map("container")
+<ej-map id="maps">
+<e-layers >
+<e-layer shape-data-path="name" shape-property-path="name" shape-data="ViewBag.shapeData"
+datasource="ViewBag.datasource" show-map-items="false" enable-selection="false" enable-mouse-hover="true">
+<e-shape-settings   stroke="white" fill="#9CBF4E" value-path="population" enable-gradient="true"
+stroke-thickness="0.5" highlight-stroke="white" highlight-color="#BC5353" highlight-border-width="1">
+</e-shape-settings>
+<e-legend-settings show-legend="true" height="15" width="150" position="@DockPosition.TopLeft" 
+type="@LegendType.Layers" mode="@LegendMode.Interactive" title="populaiton" left-label="0.5M" right-label="40M"></e-legend-settings>             
+</e-layer>
+</e-layers>
+</ej-map>           
+</div>   
 
-	.Layers(lr =>
+<script>
+   $("document").ready(function () {
+           var mapObj = $("#maps").data("ejMap");
+           mapObj.model.layers[0].shapeSettings.colorMappings =
+            {rangeColorMapping: rangeColorMapping: [
+                        {
+                            from: 500000,
+                            to: 1000000,
+                            gradientColors: ["#9CBF4E", "#B8CE7B"]
+                        },
+                        {
+                            from: 1000001,
+                            to: 5000000,
+                            gradientColors: ["#B8CE7B", "#CBD89A"]
+                        },
+                        {
+                            from: 5000001,
+                            to: 10000000,
+                            gradientColors: ["#CBD89A", "#DEE2B9"]
+                        },
+                        {
+                            from: 10000001,
+                            to: 40000000,
+                            gradientColors: ["#DEE2B9", "#F1ECD8"]
+                        }]
+             };
+           $("#maps").ejMap("refresh");
+          
+       });
 
-	{                                          
-		
-		lr.ShapeData(mapData)              
+</script>
 
-		.ShapeDataPath("name")
 
-		.ShapePropertyPath("name")
 
-		.DataSource(datasource)
 
-		.ShowMapItems(false)
-
-		.EnableSelection(false)
-
-		.EnableMouseHover(true)
-
-		.ShapeSettings(ss  =>
-
-		{
-			
-			ss.Fill("#9CBF4E")
-
-			.StrokeThickness(0.5)
-
-			.Stroke("White")
-
-			.HighlightStroke("White")                           
-
-			.HighlightColor("#BC5353")
-
-			.HighlightBorderWidth(1)	
-
-			.ValuePath("population")
-
-			.EnableGradient(true)
-
-			.RangeColorMappings(cm =>
-
-			{
-
-				cm.From(500000).To(1000000).GradientColors(new List<string> { "#9CBF4E", "#B8CE7B" }).Add();
-
-				cm.From(1000001).To(5000000).GradientColors(new List<string> { "#B8CE7B", "#CBD89A" }).Add();
-
-				cm.From(5000001).To(10000000).GradientColors(new List<string> { "#CBD89A", "#DEE2B9" }).Add();
-
-				cm.From(10000001).To(40000000).GradientColors(new List<string> { "#DEE2B9", "#F1ECD8" }).Add();
-
-			});									
-
-		})
-
-		.LegendSettings(ml =>
-
-		{
-
-			ml.ShowLegend(true)
-
-			.Height(15)
-
-			.Width(150)
-
-			.Position(Syncfusion.JavaScript.DataVisualization.Models.DockPosition.Topleft)
-
-			.Type(Syncfusion.JavaScript.DataVisualization.Models.LegendType.Layers)
-
-			.Mode(Syncfusion.JavaScript.DataVisualization.Models.LegendMode.Interactive)
-
-			.Title("Population")
-
-			.LeftLabel("0.5 M")
-
-			.RightLabel("40 M");                        
-
-		})
-
-		.Add(); 
-
-		}).Render();
-
-	}
 {% endhighlight %}
 
 
@@ -683,4 +509,3 @@ The following screenshot illustrates a map displaying an interactive legend.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
-The complete code sample can be found [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Map_GettingStarted-1349939768)
