@@ -30,7 +30,7 @@ The following steps explains you the behavior of template support with ListBox.
     </div>
 }
 	
-  {% endhighlight 
+ {% endhighlight  %}
    
    
 {% highlight C# %}
@@ -59,7 +59,7 @@ The following steps explains you the behavior of template support with ListBox.
 
     }
 
-   {% endhighlight 
+ {% endhighlight  %}
    
 
 
@@ -124,7 +124,7 @@ The following steps explains you the behavior of template support with ListBox.
 
 	</style>
 
-   {% endhighlight 
+  {% endhighlight  %}
    
 
 
