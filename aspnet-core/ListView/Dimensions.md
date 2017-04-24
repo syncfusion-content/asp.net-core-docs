@@ -17,30 +17,19 @@ Refer to the following code examples.
 
 {% highlight CSHTML %}
 
-@Html.EJMobile().ListView("lb").Height(600).Width(300).Items(items =>
-
-{
-
-    items.Add().Text("ArtWork");
-
-    items.Add().Text("Abstract");
-
-    items.Add().Text("2 Acrylic Mediums");
-
-    items.Add().Text("Creative Acrylic");
-
-    items.Add().Text("Canvas Art");
-
-    items.Add().Text("Black white");
-
-    items.Add().Text("Children");
-
-    items.Add().Text("Preschool Crafts");
-
-    items.Add().Text("School-age Crafts");
-
-})
-
+    <ej-list-view id="checklist" width="600" height="300">
+    <e-list-view-items>
+        <e-list-view-item text="Artwork"></e-list-view-item>
+        <e-list-view-item text="Abstract"></e-list-view-item>
+        <e-list-view-item text="2 Acrylic Mediums"></e-list-view-item>
+        <e-list-view-item text="Creative Acrylic"></e-list-view-item>
+        <e-list-view-item text="Canvas Art"></e-list-view-item>
+        <e-list-view-item text="Black white"></e-list-view-item>
+        <e-list-view-item text="Children"></e-list-view-item>
+        <e-list-view-item text="Preschool Crafts"></e-list-view-item>
+        <e-list-view-item text="School-age Crafts"></e-list-view-item>
+    </e-list-view-items>
+</ej-list-view>   
 
 {% endhighlight %}
 

@@ -65,10 +65,7 @@ The following steps explains you the configuration of scroll-one-step-by propert
 	
 {% endhighlight %}
    
+The following screenshot displays the Scroller control with scroll step value.
 
-	The following screenshot displays the Scroller control with scroll step value.
+![](Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png)
 
-	![](Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png)
-
-	Scroller Control with scroll step value
-	{:.caption}
