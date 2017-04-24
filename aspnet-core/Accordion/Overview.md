@@ -2,7 +2,7 @@
 layout: post
 title:  Accordion | Accordion  | ASP.NET Core | Syncfusion
 description: overview
-platform: ASP.NET Core
+platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---
