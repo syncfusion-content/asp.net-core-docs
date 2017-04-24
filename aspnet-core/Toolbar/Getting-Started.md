@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create a Toolbar in your ASP.NET Core application. 
 
-## Create your first Toolbar in MVC
+## Create your first Toolbar in ASP.NET Core
 
 ### Create Toolbar for PDF Reader
 
