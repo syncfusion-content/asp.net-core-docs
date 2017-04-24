@@ -103,13 +103,8 @@ Using this CssClass you can override the existing styles under the theme style s
  {% endhighlight %}
    
 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
-    
-
-
-
-	![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
-    Showcase for DateTimePicker with cssClass “Purple-dark”
+ Showcase for DateTimePicker with cssClass “Purple-dark”
     {:.caption}
 
