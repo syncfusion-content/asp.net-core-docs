@@ -70,6 +70,7 @@ In the View page, add a scroller helper to configure Scroller widget.
     }
 
 </style>
+{% endhighlight %}
 
 The following screenshot displays the Scroller control in RTL direction.
 
