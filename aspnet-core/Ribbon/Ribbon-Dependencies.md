@@ -49,7 +49,7 @@ This file is used to render scroller in the {{ '_Ribbon_' | markdownify }} contr
 <tr>
 <td>
 ej.checkbox.min.js</td><td>
-This file is used to render checkboxes in the {{ '_Ribbon_'' | markdownify }} control.</td></tr>
+This file is used to render checkboxes in the {{ '_Ribbon_' | markdownify }} control.</td></tr>
 <tr>
 <td>
 ej.tab.min.js</td><td>
