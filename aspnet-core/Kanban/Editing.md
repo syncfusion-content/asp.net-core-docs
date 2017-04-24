@@ -248,7 +248,7 @@ The following code example describes the above behavior.
                                 <td style="text-align: right;">Id
                                 </td>
                                 <td style="text-align: left">
-                                    <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+                                    <input id="Id" name="Id" value="{{"{{"}}:Id{{}}}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
                                 </td>
                                 <td style="text-align: right;">Status
                                 </td>
@@ -264,7 +264,7 @@ The following code example describes the above behavior.
                                 <td style="text-align: right;">Estimate
                                 </td>
                                 <td style="text-align: left">
-                                    <input type="text" id="Estimate" name="Estimate" value="{{:Estimate}}" />
+                                    <input type="text" id="Estimate" name="Estimate" value="{{"{{"}}:Estimate{{}}}}" />
                                 </td>
                                 <td style="text-align: right;">Assignee
                                 </td>
@@ -619,7 +619,7 @@ The following code example describes the above behavior.
                 Id
             </td>
             <td style="text-align: left">
-                <input id="Id" name="Id" value="{{: Id}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
+                <input id="Id" name="Id" value="{{"{{"}}:Id{{}}}}" class="e-field e-ejinputtext valid e-disable" style="text-align: right; width: 175px; height: 28px" disabled="disabled" />
             </td>
         </tr>
         <tr>
