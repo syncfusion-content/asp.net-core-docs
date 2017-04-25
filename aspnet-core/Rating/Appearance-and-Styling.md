@@ -17,8 +17,6 @@ The following code example is used to render the Rating control without tooltip.
 
 1. Add the following code in your view page to render Rating with Tooltip.
 
-
-
 {% highlight CSHTML %}
 
 // Add the following code example to the corresponding CSHTML page to render Rating without Tooltip
@@ -47,15 +45,9 @@ The following code example is used to render the Rating control without tooltip.
 {% endhighlight %}
 
 
-
-
 The following screenshot illustrates Rating without Tooltip.
 
-
-
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)' 
-
-
 
 ## Adjusting Rating Size
 
@@ -68,8 +60,6 @@ The following code example is used to render the Rating control with customized 
 In this sample, the default rating star is replaced by crystal-stars.png local image by overriding the Rating control CSS.
 
 Add the following code in your view page to render the Rating with customized ShapeWidth and ShapeHeight.
-
-
 
 {% highlight CSHTML %}
 
@@ -173,9 +163,7 @@ Add the following styles.
 
 The following screenshot illustrates Rating with customized ShapeWidth and ShapeHeight.
 
-
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
 
 ### Theme
 
@@ -208,7 +196,6 @@ The style of the Rating control is customized by CssClass property.
 The following code example is used to render the Rating control with customized style.
 
 Add the following HTML to render the Rating with customized style. In this, hovering behaviors, tooltip position and display have been customized by using custom CSS class.
-
 
 {% highlight CSHTML %}
 
@@ -253,9 +240,6 @@ Add the following styles.
         margin-top: -7px;
 
     }
-
-
-
 	.customCss.e-horizontal .e-shape-list, .e-rating.e-vertical .e-shape-list,
 
 	.customCss.e-horizontal .e-shape, .e-rating.e-vertical .e-shape, .e-rating.e-horizontal .e-ul, .customCss.e-vertical .e-ul, .e-rating.e-horizontal .e-reset, .e-rating.e-vertical .e-reset 
@@ -268,9 +252,6 @@ Add the following styles.
 		background: url(../../Content/ej/default-theme/images/crystal-stars.png) no-repeat repeat;
 
 	}
-
-
-
 	.customCss.e-horizontal .e-reset, .customCss.e-vertical .e-reset 
 	{
 
@@ -279,54 +260,36 @@ Add the following styles.
 		margin-left: 2px;
 
 	}
-
-
-
 	.customCss.e-horizontal .e-shape-list 
 	{
 
 		background-position: 0 -56px;
 
 	}
-
-
-
 	.customCss.e-horizontal .e-reset:hover 
 	{
 
 		background-position: 0 42px;
 
 	}
-
-
-
 	.customCss .e-shape.inactive 
 	{
 
 		background-position: 0 -84px;
 
 	}
-
-
-
 	.customCss .e-shape.active 
 	{
 
 		background-position: 0 -112px;
 
 	}
-
-
-
 	.customCss .e-shape.selected 
 	{
 
 		background-position: 0 -84px;
 
 	}
-
-
-
     .customCss.e-tooltip 
 	{
 
@@ -342,10 +305,6 @@ Add the following styles.
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the Rating with customized style.
-
-
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
