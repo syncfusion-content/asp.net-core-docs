@@ -13,7 +13,7 @@ The AsyncUpload property is Boolean type, which allow us to upload and remove fi
 
 The following steps guide you in uploading the file asynchronously.
 
-1.  In the VIEW page, add the below code to configure the UploadBox element.
+In the VIEW page, add the below code to configure the UploadBox element.
 
 {% highlight CSHTML %}
 

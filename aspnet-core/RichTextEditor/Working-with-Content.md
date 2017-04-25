@@ -36,7 +36,6 @@ attrib.Add("style", "background-color:#e0ffff;color:#6495ed;");
 {% endhighlight %}
 
 N> Background image for the RTE control : {{'[Link](http://jsplayground.syncfusion.com/Sync_cpaoqshs)'| markdownify }} <BR>
-Set default font for the Iframe : {{'[Link](http://jsplayground.syncfusion.com/Sync_k2uwsibi)'| markdownify }}
 
 ## Adding CSS File
 

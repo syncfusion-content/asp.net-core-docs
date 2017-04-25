@@ -15,7 +15,7 @@ To save the uploaded file in ASP.NET Core, create an ActionResult and trigger th
 
 The following steps explain the configuration of SaveUrl property in the UploadBox. 
 
-1. In the VIEW page, add the below code to configure the UploadBox element.
+In the VIEW page, add the below code to configure the UploadBox element.
 
 {% highlight CSHTML %}
 
@@ -57,7 +57,7 @@ public IActionResult Index()
 
 {% endhighlight %}
 
-2. The following screenshot displays the output. 
+The following screenshot displays the output. 
 
 ![](File-Actions_images/File-Actions_img1.png)
 
