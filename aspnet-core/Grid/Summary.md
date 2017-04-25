@@ -18,7 +18,7 @@ Summary rows visibility can be controlled by `show-summary` property and it can 
         <e-summary-rows>
            <e-summary-row title="Sum">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
          </e-summary-rows>
@@ -75,22 +75,22 @@ Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined 
       <e-summary-rows>
            <e-summary-row title="Sum">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
             <e-summary-row title="Average">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Average" format="{0:C}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Average" format="{0:C}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
            <e-summary-row title="Maximum">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Maximum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Maximum" format="{0:C}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
            <e-summary-row title="Minimum">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Minimum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Minimum" format="{0:C}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
          </e-summary-rows>
@@ -134,12 +134,12 @@ Summaries with `True` and `False` count aggregate can be defined by using `summa
       <e-summary-rows>
            <e-summary-row title="False Count">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Falsecount" display-column="Verified" data-member="Verified"/>
+                     <e-summary-column summary-type="Falsecount" display-column="Verified" datamember="Verified"/>
                    </e-summary-columns>
            </e-summary-row>
            <e-summary-row title="True Count">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Truecount" display-column="Verified" data-member="Verified"/>
+                     <e-summary-column summary-type="Truecount" display-column="Verified" datamember="Verified"/>
                    </e-summary-columns>
            </e-summary-row>
          </e-summary-rows>
@@ -241,7 +241,7 @@ Group Summary is used to summarize values of a particular column based on group 
         <e-summary-rows>
            <e-summary-row show-total-summary="false" >
                    <e-summary-columns>
-                     <e-summary-column summary-type="Sum" prefix=@("Sum=") format="{0:C2}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Sum" prefix=@("Sum=") format="{0:C2}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
         </e-summary-rows>
@@ -287,7 +287,7 @@ To show summaries in each Group's Caption row, particular summary row should hav
         <e-summary-rows>
            <e-summary-row show-total-summary="false" show-caption-summary="true" >
                    <e-summary-columns>
-                     <e-summary-column summary-type="Sum" prefix=@("Sum=") format="{0:C2}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Sum" prefix=@("Sum=") format="{0:C2}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
         </e-summary-rows>
@@ -334,7 +334,7 @@ To format Summary values, `format` property needs to be assigned in `e-summary-c
         <e-summary-rows>
            <e-summary-row title="Sum">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" data-member="Freight" />
+                     <e-summary-column summary-type="Sum" format="{0:C}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
         </e-summary-rows>

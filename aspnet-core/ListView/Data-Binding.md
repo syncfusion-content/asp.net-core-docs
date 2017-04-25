@@ -18,7 +18,7 @@ Please refer the following code examples.
 
 
 
-For MVC Wrapper example, you need to create model file for data-binding. Add the following model code to a CS file and save it as ListLocalData.cs.
+For ASP.NET Core  Wrapper example, you need to create model file for data-binding. Add the following model code to a CS file and save it as ListLocalData.cs.
 
 
 
@@ -126,7 +126,7 @@ You can use the following code example to give you the exact output.
 
 @{
 
-    @Html.EJ().ListView("localListView").Width(400).DataSource(Model)
+    <ej-list-view  id="localListView" width="400" datasource="Model"></ej-list-view>
 
 }
 
