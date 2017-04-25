@@ -13,7 +13,7 @@ The Enabled property is Boolean type, which allow us to set the enable or disabl
 
 The following steps explain the configuration of Enabled property in UploadBox. 
 
-1. In the VIEW page, add below code to configure the UploadBox element.
+In the VIEW page, add below code to configure the UploadBox element.
 
 {% highlight CSHTML %}
    
@@ -21,6 +21,6 @@ The following steps explain the configuration of Enabled property in UploadBox.
 
 {% endhighlight %}   
 
-2. The following screenshot displays the output. 
+The following screenshot displays the output. 
 
 ![](Enable-or-Disable-the-UploadBox_images/Enable-or-Disable-the-UploadBox_img1.png)

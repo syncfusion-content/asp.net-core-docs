@@ -17,8 +17,6 @@ The following code example is used to render the Rating control with the customi
 
 Add the following code in your view page to render the Rating with the customized value.
 
-
-
 {% highlight CSHTML %}
 
 // Add the following code example to the corresponding CSHTML page to render Rating with customized value.
@@ -28,14 +26,14 @@ Add the following code in your view page to render the Rating with the customize
     <table>
 
         <tr>
-                <td valign="top">Rating:
-                
-                </td>
-                <td>
+            <td valign="top">Rating:
+            
+            </td>
+            <td>
 
-                    <ej-rating id="Rating" value="4"/>
-                   
-                </td>
+                <ej-rating id="Rating" value="4"/>
+                
+            </td>
 
             </tr>
 
@@ -45,15 +43,9 @@ Add the following code in your view page to render the Rating with the customize
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the Rating with custom defined value.
 
-
-
 ![](Rating-Customization_images/Rating-Customization_img1.png)' 
-
-
 
 ## Min Value
 
@@ -62,8 +54,6 @@ Rating control provides support for setting the MinimumValue. This is achieved b
 The following code example is used to render the Rating control with minimum rating value specified.
 
 Add the following code in your view page to render the Rating with Minimum value.
-
-
 
 {% highlight CSHTML %}
 
@@ -93,8 +83,6 @@ Add the following code in your view page to render the Rating with Minimum value
 
 {% endhighlight %}
 
-
-
 The following screenshot Rating value starts with 4 since MinValue value is set as 3.
 
 ![](Rating-Customization_images/Rating-Customization_img2.png)
@@ -109,8 +97,6 @@ Rating control provides support for setting Maximum value. This is achieved by a
 The following code example is used to render the Rating control with maximum rating value specified
 
 Add the following code in your view page to render the Rating with maximum value.
-
-
 
 {% highlight CSHTML %}
 
@@ -140,11 +126,7 @@ Add the following code in your view page to render the Rating with maximum value
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the Rating with maximum value.
-
-
 
 ![](Rating-Customization_images/Rating-Customization_img3.png)
 
@@ -156,8 +138,6 @@ You can set Precision in Rating value between two whole numbers such as 2.5 or 3
 The following code example is used to render the Rating control with Precision.
 
 Add the following code in your view page to render the Rating with Precision.
-
-
 
 {% highlight CSHTML %}
 
@@ -198,11 +178,7 @@ Add the following code in your view page to render the Rating with Precision.
 
 The following screenshot illustrates the Rating with Precision.
 
-
-
 ![](Rating-Customization_images/Rating-Customization_img4.png)
-
-
 
 ## Increment Step
 
@@ -211,8 +187,6 @@ Rating control supports customized increment value for Rating. This is achieved 
 The following code example is used to render the Rating control with customized increment.
 
 Add the following code in your view page to render the Rating with customized increment.
-
-
 
 {% highlight CSHTML %}
 
@@ -242,15 +216,11 @@ Add the following code in your view page to render the Rating with customized in
 
 {% endhighlight %}
 
-
-
 The following screenshot illustrates the Rating with customized increment.
 
 ![](Rating-Customization_images/Rating-Customization_img5.png)
 
 ![](Rating-Customization_images/Rating-Customization_img6.png)
-
-
 
 ## Resetting values
 
@@ -259,8 +229,6 @@ Rating control provides support for value reset at runtime. This is achieved by 
 The following code example is used to render the Rating control with AllowReset.
 
 Add the following code in your view page to render the Rating with AllowReset.
-
-
 
 {% highlight CSHTML %}
 
@@ -306,11 +274,7 @@ Add the following code in your view page to render the Rating with AllowReset.
 
 The following illustrates the Rating with allowReset.
 
-
-
 ![](Rating-Customization_images/Rating-Customization_img7.png)
-
-
 
 ## Read only
 
@@ -319,8 +283,6 @@ Rating control provides support for changeable or unchangeable values for Rating
 The following code example is used to render the Rating control with ReadOnly.
 
 Add the following code in your view page to render Rating with readOnly.
-
-
 
 {% highlight CSHTML %}
 
@@ -354,11 +316,7 @@ Add the following code in your view page to render Rating with readOnly.
 
 The following screenshot illustrates the Rating with ReadOnly.
 
-
-
 ![](Rating-Customization_images/Rating-Customization_img8.png)
-
-
 
 ## Enable or Disable
 
@@ -367,8 +325,6 @@ Rating control provides support to Enable or Disable the control. This is achiev
 The following code example is used to render the Rating control with Enable or Disable support.
 
 Add the following code in your view page to render the Rating with enable or disable support.
-
-
 
 {% highlight CSHTML %}
 
@@ -397,9 +353,6 @@ Add the following code in your view page to render the Rating with enable or dis
 </div>
 {% endhighlight %}
 
-
 The following screenshot illustrates the Rating in a disabled form.
-
-
 
 ![](Rating-Customization_images/Rating-Customization_img9.png)

@@ -21,7 +21,7 @@ AllowDragAndDrop property is Boolean type which allow us to enable or disable th
 
 The following steps explain how to enable the drag and drop in the UploadBox control.
 
-1. In the VIEW page, add the below code to enable the drag and drop in UploadBox control.
+In the VIEW page, add the below code to enable the drag and drop in UploadBox control.
 
 {% highlight CSHTML %}
 
@@ -30,7 +30,7 @@ The following steps explain how to enable the drag and drop in the UploadBox con
 
 {% endhighlight %}   
 
-2. The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code.
 
    ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png)
 
@@ -48,7 +48,7 @@ The following steps explain how to enable the drag and drop in the UploadBox con
    {% endhighlight %}   
 
 
-3. The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code.
 
    ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png)
 
@@ -68,7 +68,7 @@ The following steps explain how to enable the drag and drop in the UploadBox con
    {% endhighlight %}   
   
 
-4. The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code.
 
    ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png)
 
@@ -90,6 +90,6 @@ The following steps explain how to enable the drag and drop in the UploadBox con
 
    {% endhighlight %}    
 
-5. The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code.
 
  ![](Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png)

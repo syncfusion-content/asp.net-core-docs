@@ -13,7 +13,7 @@ documentation: ug
 
 In the UploadBox control, you can browse files with the size going up to gigabytes. You can restrict the files from being browsed using the FileSize property. When you do not use this property, it takes a default size, 31457280B, that is, 31MB. When this size exceeds, we cannot browse the file. 
 
-1. Add the following code example to the corresponding View page to render the UploadBox control with the customized file size.
+Add the following code example to the corresponding View page to render the UploadBox control with the customized file size.
 
 {% highlight CSHTML %}
 

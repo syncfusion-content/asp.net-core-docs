@@ -15,7 +15,7 @@ N> The Multiple file selection supports all the latest versions of browser excep
 
 The following steps explain the configuration of MultipleFilesSelection property in UploadBox. 
 
-1. In the VIEW page, add the below code  to configure the UploadBox element.
+In the VIEW page, add the below code  to configure the UploadBox element.
 
 {% highlight CSHTML %}
 

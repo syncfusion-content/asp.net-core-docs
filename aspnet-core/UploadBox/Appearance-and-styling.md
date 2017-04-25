@@ -42,7 +42,7 @@ String</td></tr>
 
 The following steps explain the configuration of UploadBoxButtonText property in UploadBox. 
 
-1. In the VIEW page, add the below code to configure the UploadBox element.
+In the VIEW page, add the below code to configure the UploadBox element.
 
 {% highlight CSHTML %}
 
@@ -87,7 +87,7 @@ Sets the alternative text for status column.</td></tr>
 
 The following steps explain the configuration of UploadBoxDialogText property in UploadBox. 
 
-1. In the VIEW page, add the below code to configure the UploadBox element.
+In the VIEW page, add the below code to configure the UploadBox element.
 
 {% highlight CSHTML %}
 
@@ -107,7 +107,7 @@ The ShowFileDetails property is Boolean type, which allow us to show or hide fil
 
 The following steps explains the configuration of ShowFileDetails property in UploadBox.
 
-1. In the VIEW page, add the below code to configure the UploadBox element.
+In the VIEW page, add the below code to configure the UploadBox element.
 
 {% highlight CSHTML %}
 
