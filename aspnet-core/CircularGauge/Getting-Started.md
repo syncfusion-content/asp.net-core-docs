@@ -148,7 +148,6 @@ To display the value around the scales, labels are used. By customizing the labe
 
 
 <ej-circular-gauge id="circulargauge">
-
         <e-circular-scale-collections>
             <e-circular-scales>
                 <e-label-collections>
@@ -156,7 +155,6 @@ To display the value around the scales, labels are used. By customizing the labe
                 </e-label-collections>
              </e-circular-scales>
         </e-circular-scale-collections>
-
 </ej-circular-gauge>
 
 {% endhighlight %}
