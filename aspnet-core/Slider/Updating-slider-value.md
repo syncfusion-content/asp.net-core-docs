@@ -35,10 +35,7 @@ The following steps explains you the configuration of “Value” and “Values�
 
 Execute the above code example to render the following output.
 
-
 ![](Updating-slider-value_images/Updating-slider-value_img1.png)
-
-
 
 ### MinValue
 
@@ -62,14 +59,11 @@ The following steps explains you on how to configure MinValue and MaxValue prope
 
 {% endhighlight %}
 
-
 Execute the above code example to render the following output.
 
 ![](Updating-slider-value_images/Updating-slider-value_img2.png)
 
 
-
 In the above example, for Default Slider the slider value starts from “40” (min value) and ends in “80” (max value), so the slider handle is placed at the center of the Slider while specifying the value as “60”.
 
 For Range Slider, the value starts from “10” (min value) and ends in “90” (max value). The range shadow occupies the entire Slider, since the range (values) is specified as “[10, 90]”.
-

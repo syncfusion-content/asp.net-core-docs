@@ -77,7 +77,6 @@ The following steps explains you on how to enable keyboard support in Slider.
 
 </script>
 
-
 {% endhighlight %}
 Run the sample and press, Alt + j keys to set focus in the Slider handle and you can handle the Slider operations using the keyboard shortcut keys.
 
@@ -87,6 +86,3 @@ When clicked the Alt + J key, the slider was focused.
 
 Slider with Keyboard Interaction.
 {:.caption}
-
-
-

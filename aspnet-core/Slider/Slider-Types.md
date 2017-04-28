@@ -55,8 +55,6 @@ The following steps explains you on how to configure the SliderType property to 
 
 Execute the above code example to render the following output.
 
-
-
 ![](Slider-Types_images/Slider-Types_img1.png)
 
 Shows different Slider types (Range and Min-Range sliders)

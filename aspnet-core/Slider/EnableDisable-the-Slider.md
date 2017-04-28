@@ -29,8 +29,4 @@ The following steps explains you on how to disable the Slider.
 
 Execute the above code example to render the following output.
 
-
 ![](EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png)
-
-
-
