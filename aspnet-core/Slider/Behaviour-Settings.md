@@ -34,7 +34,6 @@ Execute the above code example to render the following output.
 ![](Behaviour-Settings_images/Behaviour-Settings_img1.png)
 
 
-
 ### IncrementStep
 
 This property sets the incremental step value for the Slider. When the Slider handle slides through mouse or keyboard, it increments / decrements the value based on the step value. By default, when the slider handle is moved, single value increments / decrements. Using IncrementStep property you can change the increment step value. Data type of this property is number.
@@ -79,8 +78,3 @@ The following steps explains you on how to enable the ReadOnly property.
 After you execute the above code example, the Slider values cannot be changed in any ways.
 
 ![](Behaviour-Settings_images/Behaviour-Settings_img3.png)
-
-
-
-
-
