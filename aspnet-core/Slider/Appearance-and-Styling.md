@@ -29,9 +29,6 @@ Slider widget looks sleek and enriched with good UI appearance. It is included w
 * office-365
 * material
 
-
-
-
 In order to apply different themes, you can refer the “ej.web.all.min.css” file from the corresponding theme folders. This file is a combination of two style sheets “ej.widgets.core.min.css” and “ej.theme.min.css”. Instead of including “ej.web.all.min.css” file you can also refer the “ej.widgets.core.min.css” and “ej.theme.min.css” files separately. 
 
 The following steps explains you on how to apply “flat-lime-dark” theme to the Slider widget
@@ -39,6 +36,7 @@ The following steps explains you on how to apply “flat-lime-dark” theme to t
 1. In an view page, specify the desired “ej.web.all.min.css” file to load the corresponding theme.
 
 {% highlight CSHTML %}
+
 //In _Layout page, specify the desired
  “ej.web.all.min.css” file to load the corresponding theme.
  <head>
@@ -59,13 +57,9 @@ The following steps explains you on how to apply “flat-lime-dark” theme to t
 	
 {% endhighlight %}
 
-
-
 Execute the above code example to render the following output.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
-
-
 
 ## CSS Class
 
@@ -83,9 +77,7 @@ The following steps explains you on how to configure the Slider with custom them
 
    ~~~
    
-
 2. Include the “CssClass” value before each style of the Slider widget and customize the styles as follows.
-
 
    ~~~ css
 
@@ -155,14 +147,12 @@ The following steps explains you on how to configure the Slider with custom them
 	  background-image: url(images/dot.png);
 
 	}
+
    ~~~
    
-
 Execute the above code example to render the following output.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
-
 
 ### Show Tooltip
 
@@ -181,10 +171,6 @@ The following steps explains you on how to disable the tooltip in Slider.
 {% endhighlight %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-
-
-
-
 
 ### Show Rounded Corner
 
@@ -205,6 +191,3 @@ The following steps explains you on how to disable the tooltip in Slider.
 Execute the above code example to render the following output.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
-
-
-

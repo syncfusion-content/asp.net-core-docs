@@ -19,8 +19,6 @@ The following steps explains you on how to enable RTL support in Slider.
 
 1. In an view page, specify the Tag helper elements to render the Range Slider.
 
-
-
 {% highlight CSHTML %}
 
     @*Add this code in your view page*@
@@ -30,11 +28,6 @@ The following steps explains you on how to enable RTL support in Slider.
 
 {% endhighlight %}
 
-
 Execute the above code example to render the following output.
 
-
 ![](RTL-support_images/RTL-support_img1.png)
-
-
-
