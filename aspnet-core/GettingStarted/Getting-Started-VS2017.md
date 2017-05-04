@@ -23,7 +23,7 @@ To work with ASP.NET Core 1.1 you need to make sure, whether you have installed 
 
 #### Configure Syncfusion UI Components in ASP.NET Core Application
 
-You can configure Syncfusion components into an ASP.NET Core Application in three ways.
+You can configure Syncfusion components into an ASP.NET Core Application in following ways.
 
 * Using Syncfusion Project Templates
 * Using Syncfusion Project Conversion utility
