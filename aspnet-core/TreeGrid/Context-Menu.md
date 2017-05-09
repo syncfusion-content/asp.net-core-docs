@@ -9,11 +9,11 @@ documentation: ug
 
 # Context Menu
 
-Context menu in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with ContextMenuSettings API. The ContextMenuSettings property contains two inner properties ShowContextMenu and ContextMenuItems.
+Context menu in TreeGrid control is used to manipulate (add, edit and delete) the tree grid rows. In TreeGrid, context menu can be enabled with context-menu-settings API. The context-menu-settings property contains two inner properties show-context-menu and context-menu-items.
 
-The ShowContextMenu property is used to enable or disable the context menu, default value for this property is false.
+The show-context-menu  property is used to enable or disable the context menu, default value for this property is false.
 
-The ContextMenuItems property is used to add the menu items to context menu, this property renders ‘Add’ and ‘Delete’ by default when the menu items are not provided.
+The  context-menu-items property is used to add the menu items to context menu, this property renders ‘Add’ and ‘Delete’ by default when the menu items are not provided.
 {% tabs %}
 
 {% highlight C# %}
@@ -246,7 +246,7 @@ The following screenshot displays the Context menu in TreeGrid control.
 
 ## ContextMenu Customization
 
-Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using ContextMenuOpen client side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event,
+Context menu can be customized by adding a new custom menu item to it. In TreeGrid, context menu can be customized using context-menu-open client side event. This event is triggered when the context menu is rendered with mouse right click action. The following properties are available in the event,
 
 * headerText: Display text for menu item.
 * iconPath: Image location for menu item.

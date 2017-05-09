@@ -298,9 +298,9 @@ The output of the above steps is as follows:
 
 TreeGrid is rendered from Self-Referential data structures by providing two fields: ID field and parent ID field.
 
-•ID Field- This field contains unique values used to identify nodes. Its name is assigned to the IdMapping property.
+•ID Field- This field contains unique values used to identify nodes. Its name is assigned to the id-mapping property.
 
-•Parent ID Field- This field contains values that indicate parent nodes. Its name is assigned to the ParentIdMapping property.
+•Parent ID Field- This field contains values that indicate parent nodes. Its name is assigned to the parent-id-mapping property.
 
 
 {% tabs %}

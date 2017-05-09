@@ -9,9 +9,9 @@ documentation: ug
 
 # Toolbar
 
-TreeGrid control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGridToolbar tools by using ToolbarSettings API. 
+TreeGrid control contains toolbar options for adding, deleting and editing the records. You can customize the TreeGridToolbar tools by using toolbar-settings API. 
 
-In TreeGrid by using RowPosition API, the index position for the newly added row can be provided. Default value of the RowPosition property is top. The Enum values for RowPosition API are,
+In TreeGrid by using row-position API, the index position for the newly added row can be provided. Default value of the row-position property is top. The Enum values for row-position API are,
 
 * top
 * bottom
@@ -229,7 +229,7 @@ You can enable toolbar for TreeGrid, using the following code example.
 {% highlight CSHTML %}
 
 <ej-tree-grid id="TreeGridContainer" datasource="ViewBag.datasource" child-mapping="Children" tree-column-index="1">
-    <e-tree-grid-edit-settings allow-editing="true" row-position="@TreeGridRowPosition.AboveSelectedRow"></e-tree-grid-edit-settings>
+    <e-tree-grid-edit-settings allow-editing="true" row-position="AboveSelectedRow"></e-tree-grid-edit-settings>
     <e-tree-grid-toolbar-settings show-toolbar="true" toolbar-items="ViewBag.toolbarItems" >
     </e-tree-grid-toolbar-settings>
     <e-tree-grid-columns>

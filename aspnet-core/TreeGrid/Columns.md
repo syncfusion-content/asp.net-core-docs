@@ -397,13 +397,13 @@ The following screenshot displays the column filtering in TreeGrid control.
 
 ## Column Chooser
 
-TreeGrid supports enabling and disabling the visibility of the columns dynamically with the ShowColumnChooser property. By using this property, the visibility of the custom columns can also be toggled. The Column chooser option is rendered as sub menu item within column menu in the TreeGrid columns.
+TreeGrid supports enabling and disabling the visibility of the columns dynamically with the show-column-chooser property. By using this property, the visibility of the custom columns can also be toggled. The Column chooser option is rendered as sub menu item within column menu in the TreeGrid columns.
 
 ![](Columns_images/Columns_img3.png)
 
 
 
-The column menu is enabled with the ShowColumnChooser property and the default value for this property is false
+The column menu is enabled with the show-column-chooser  property and the default value for this property is false
 
 The column menu provides the following options
 
@@ -411,7 +411,7 @@ The column menu provides the following options
 * Sort Descending
 * Columns 
 
-The Sort Ascending and Sort Descending options are enabled or disabled by using the AllowSorting property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the AllowMultiSorting property should be enabled. 
+The Sort Ascending and Sort Descending options are enabled or disabled by using the allow-sorting property. With these options, single level sorting can be performed in the TreeGrid columns. To perform multilevel sorting, the allow-multi-sorting property should be enabled. 
 
 You can also disable the visibility of the particular column in column collection manually by setting the Visible property to false.
 
