@@ -17,14 +17,9 @@ TreeGrid allows the items to be sorted in ascending or descending order based o
 
 {% highlight CSHTML %}
 
-@(Html.EJ().TreeGrid("TreeGridContainer")    
+<ej-tree-grid id="TreeGridContainer" allow-sorting="true">
 
-//...
-
- .AllowSorting(true)  
-
-)        
-
+</ej-tree-grid>  
 {% endhighlight %}
 
 ## Multicolumn sorting
