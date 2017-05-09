@@ -354,7 +354,7 @@ The following screenshot displays the customized column in TreeGrid control.
 
 ## Column Filtering
 
-Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with AllowFiltering property, by setting this property to ‘true’, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting ‘false’ to allow-filtering property in each column object.
+Column Filtering in TreeGrid is used to filter the records by single or multiple column conditions. In TreeGrid control, column filtering can be enabled with  allow-filtering property, by setting this property to ‘true’, a filter bar is rendered in all available columns, providing filtering support to every columns. You can also limit filtering to specific column by setting ‘false’ to allow-filtering property in each column object.
 
 Filtering modes can be toggled between Immediate and OnEnter modes using FilterBarMode property.
 
