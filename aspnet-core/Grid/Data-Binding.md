@@ -15,10 +15,7 @@ Grid `datasource` property allows to bind datasource as the instance of one of t
 *	Table – Allows to bind HTML Table and it accepts table template script "ID".
 *	ORM components such as Entity Framework/Linq to SQL.
      
-We can also bind the above type of datasource by using lambda Expressions of Grid `datasource` Property.
-  
-In the following section, let us see on how to bind various datasources to Grid using `datasource` API.
-  
+
 ## IEnumerable
  
 The Grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) interface. It can be assigned to Grid’s `datasource` property.
@@ -75,8 +72,6 @@ The following output is displayed as a result of the above code example.
 
 The Grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot or using lambda Expression.   
 
-N> 1. To display navigation properties using complex binding, the corresponding property should be eager loaded. Lazy loading is not supported for complex binding. 
-  
 The following code example describes the above behavior.
 
 {% tabs %} 
@@ -151,7 +146,7 @@ The following output is displayed as a result of the above code example.
 
 Web API Adaptor is used for processing request and response messages from Web API Service.
 
-To consume Web API service, set the service link to the `url` property of Grid `datamanager` and you can set adaptor type as `AdaptorType.WebApiAdaptor` to the `Adaptor` Property of Grid `datamanager`
+To consume Web API service, set the service link to the `url` property of Grid `datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of Grid `datamanager`
 
  I> The datasource from Web API service must be returned as object that has property `Items` with its value as datamanager and another property `Count` with its value as datamanager total records count.
 
@@ -177,28 +172,25 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% highlight c# %} 
     
-        namespace EJGrid.Controllers
-         {
-        
-         public partial class GridController : Controller
-             {  
-                 // GET: /<controller>/
+        public partial class GridController : Controller
+        {
+            // GET: /<controller>/
             private NORTHWNDContext _context;
 
-           public GridController(NORTHWNDContext context)
-        {
-            _context = context;
+            public GridController(NORTHWNDContext context)
+            {
+                _context = context;
+            }
+            public object Get()
+            {
+                var queryString = Request.Query;
+                int skip = Convert.ToInt32(queryString["$skip"]);
+                int take = Convert.ToInt32(queryString["$top"]);
+                var data = _context.Orders.Skip(skip).Take(take).ToList();
+                return new { Items = data.Skip(skip).Take(take), Count = data.Count() };
+            }
         }
-        public object Get()
-        {
-            var queryString = Request.Query;
-            int skip = Convert.ToInt32(queryString["$skip"]);
-            int take = Convert.ToInt32(queryString["$top"]);
-            var data = _context.Orders.Skip(skip).Take(take).ToList();
-            return new { Items = data.Skip(skip).Take(take), Count = data.Count() };
-        }
-          } 
-        }
+    
 {% endhighlight  %}
 {% endtabs %}        
 
@@ -208,7 +200,7 @@ The following output is displayed as a result of the above code example.
 
 ##  HTML Table binding
 
-HTML table can be set as a data source for grid. The ID of the HTML table should be assigned to the `Table` property of the `DataManager` API.
+HTML table can be set as a data source for grid. The ID of the HTML table should be assigned to the `table` property of the `DataManager`.
 
 I> HTML table is the only valid element to use through `DataManager`.
   
@@ -222,7 +214,7 @@ The following code example describes the above behavior.
     <e-columns>
         <e-column field="Laptop" header-text="Laptop" text-align="Left"></e-column>
         <e-column field="Model" header-text="Model"></e-column>
-        <e-column field="Price" header-text="Price"></e-column>
+        <e-column field="Price" header-text="Price" text-align="Right"></></e-column>
         <e-column field="OS" header-text="OS" text-align="Left"></e-column>
         <e-column field="RAM" header-text="RAM" text-align="Left"></e-column>
         <e-column field="ScreenSize" header-text="ScreenSize"></e-column>
@@ -367,7 +359,7 @@ The following code example describes the above behavior.
 {% highlight razor %} 
    
 <ej-grid id="Grid"  allow-paging="true">
-    <e-datamanager url="DataSource" enable-caching="true" caching-page-size="4" time-till-expiration="120000" adaptor="@AdaptorType.UrlAdaptor"></e-datamanager>
+    <e-datamanager url="DataSource" enable-caching="true" caching-page-size="4" time-till-expiration="120000" adaptor="UrlAdaptor"></e-datamanager>
     <e-columns>
         <e-column field="OrderID" header-text="Order ID"></e-column>
         <e-column field="CustomerID" header-text="Customer ID"></e-column>
@@ -416,7 +408,7 @@ The following output is displayed as a result of the above code example.
 
 ####  Adding custom HTTP headers
 
-The Custom header can be added through `DataManager` `Headers` options. While performing, CRUD operations, the `addParams` cannot be used to send additional parameters to the server in such cases the parameters can be send as custom header.
+The Custom header can be added through `DataManager` `headers` options. While performing, CRUD operations, the `addParams` cannot be used to send additional parameters to the server in such cases the parameters can be send as custom header.
 
 The following code example describes the above behavior.
 
@@ -427,7 +419,7 @@ The following code example describes the above behavior.
     str.Add(new Syncfusion.JavaScript.Models.KeyValue() {Key ="Syncfusion", Value = false });
 
                 <ej-grid id="Grid" allow-paging="true">
-                <e-datamanager url="DataSource" adaptor="@AdaptorType.UrlAdaptor" headers="@(str)"></e-datamanager>
+                <e-datamanager url="DataSource" adaptor="UrlAdaptor" headers="@(str)"></e-datamanager>
                 <e-columns>
                     <e-column field="OrderID" header-text="Order ID"></e-column>
                     <e-column field="CustomerID" header-text="Customer ID"></e-column>

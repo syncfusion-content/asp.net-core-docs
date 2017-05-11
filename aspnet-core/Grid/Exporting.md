@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting
 
-"export-to-pdf-action","export-to-word-action","export-to-excel-action"  attribute  provides support to export Grid data into excel, word and PDF files. To export the grid, `export` JavaScript method should be called with export action as parameter. To make it work from grid tool bar, `ExcelExport`, `WordExport`, `PdfExport` toolbar items needs to be added in grid tool bar using `toolbar-items` property of `toolbar-settings` which are used to perform exporting. When you click the toolbar exporting icon, it internally invokes the `export` public method of Grid object to export.The code snippet for this is
+Exporting   provides support to export Grid data into excel, word and PDF files. To export the grid, `export` JavaScript method should be called with export action as parameter. To make it work from grid tool bar, `ExcelExport`, `WordExport`, `PdfExport` toolbar items needs to be added in grid tool bar using `toolbar-items` property of `toolbar-settings` which are used to perform exporting. When you click the toolbar exporting icon, it internally invokes the `export` public method of Grid object to export.The code snippet for this is
 
 {% tabs %}
  
@@ -190,7 +190,7 @@ On Exporting, the default routing path to server-side that contains the action n
 
 ## Export Mapper in MVC
 
-`export-to-pdf-action`, `export-to-word-action`,`export-to-excel-action` Grid property is used to modify the default routing path during exporting. By using Mappers, you can use any action name in Controller for exporting and the action can be in any controller (Need not to be in Grid View Page Controller).
+`export-to-pdf-action`, `export-to-word-action`,`export-to-excel-action` Grid property is used to modify the default routing path during exporting. By using these properties, you can use any action name in Controller for exporting and the action can be in any controller (Need not to be in Grid View Page Controller).
 
 {% tabs %}
  
@@ -479,10 +479,10 @@ Also, it has `none` option which will export the grid without any theme.  The de
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
-            <e-column field="EmployeeID" header-text="Employee ID" text-align="@TextAlign.Right"></e-column>
-            <e-column field="Freight" header-text="Freight" text-align=Right></e-column>
-            <e-column field="OrderDate" header-text="Order Date" text-align="@TextAlign.Right"></e-column>
-            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity" text-align=Right></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
         </e-columns>
     </ej-grid
 
@@ -569,12 +569,12 @@ The background color of the alternative row of the grid content</td></tr>
            
         </e-toolbar-settings>
         <e-columns>
-            <e-column field="OrderID" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID"></e-column>
-            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
-            <e-column field="Freight" header-text="Freight" text-align=Right></e-column>
-            <e-column field="OrderDate" header-text="Order Date" text-align="Right"></e-column>
-            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="OrderID" header-text="OrderID" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="CustomerID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID" text-align="Right"></e-column>
+            <e-column field="ShipCity" header-text="Freight" text-align=Right></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" text-align="Right"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
         </e-columns>
     </ej-grid>
 
@@ -775,12 +775,12 @@ You can customize the particular cell or particular  row of exporting files usin
            
         </e-toolbar-settings>
         <e-columns>
-            <e-column field="OrderID" header-text="Order ID" text-align="Right"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
-            <e-column field="EmployeeID" header-text="Employee ID" text-align="@TextAlign.Right"></e-column>
-            <e-column field="Freight" header-text="Freight" text-align=Right></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="@TextAlign.Right"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" text-align=Right></e-column>
             <e-column field="OrderDate" header-text="Order Date" text-align="@TextAlign.Right"></e-column>
-            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
     </ej-grid> 
 

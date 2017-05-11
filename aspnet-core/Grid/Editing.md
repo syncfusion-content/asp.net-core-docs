@@ -1081,7 +1081,7 @@ The following output is displayed as a result of the above code example.
 
 Edited data can be persisted in database using RESTful web services. 
 
-All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the ['link'] to know about the DataManager.
+All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the ['link'](https://help.syncfusion.com/aspnet-core/datamanager/overview) to know about the DataManager.
 
 For you information ODataAdaptor persist data in server as per OData protocol.
 
@@ -1191,13 +1191,13 @@ __Parameters__ __Table__
                 value
             </td>
             <td rowspan="2">
-                public ActionResult Update(EditableOrder value){ }
+                public ActionResult Update(CRUDModel<Orders> value){ }
             </td>
         </tr>
         <tr>
            
             <td>
-                public ActionResult Insert(EditableOrder value){ }
+                public ActionResult Insert(CRUDModel<Orders> value){ }
             </td>
         </tr>
         <tr>
@@ -1219,7 +1219,7 @@ __Parameters__ __Table__
                 added
             </td>
             <td rowspan="3">
-                public ActionResult BatchUpdate(string action, List &lt;EditableOrder&gt; added, List &lt;EditableOrder&gt; changed, List &lt;EditableOrder&gt; deleted, int? key){ }
+                public ActionResult BatchUpdate(string action, List &lt;CRUDModel<Orders>&gt; added, List &lt;CRUDModel<Orders>&gt; changed, List &lt;CRUDModel<Orders>&gt; deleted, int? key){ }
             </td>
         </tr>
         <tr>
@@ -1248,7 +1248,7 @@ __Parameters__ __Table__
                 value, action
             </td>
             <td>
-                public ActionResult CrudUrl(EditableOrder value, string action){ }
+                public ActionResult CrudUrl(CRUDModel<Orders> value, string action){ }
             </td>
         </tr>
         <tr>
@@ -1270,7 +1270,7 @@ __Parameters__ __Table__
                 action, key, deleted
             </td>
             <td>
-                public ActionResult CrudUrl(string action, string key, List &lt;EditableOrder&gt; deleted){ }
+                public ActionResult CrudUrl(string action, string key, List &lt;CRUDModel<Orders>&gt; deleted){ }
             </td>
         </tr>
  </table>
