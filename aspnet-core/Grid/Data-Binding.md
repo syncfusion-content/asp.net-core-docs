@@ -11,8 +11,6 @@ documentation: ug
 Grid `datasource` property allows to bind datasource as the instance of one of the following types.
    
 *	Collection that implements IEnumerable or IEnumerable&lt;T&gt;.
-*	DataTable.
-*	ITypedList.
 *	REST Service URL as string.
 *	Table – Allows to bind HTML Table and it accepts table template script "ID".
 *	ORM components such as Entity Framework/Linq to SQL.
@@ -73,169 +71,6 @@ The following output is displayed as a result of the above code example.
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-##  DataTable
-
-A DataTable, which represents one table of in-memory relational data that has in-built schema to work easily with data column and data row objects.
-
-Binding DataTable to Grid is a very simpler way that you only need to set DataTable model to Grid `datasource` API.
-
-The following code example describes the above behavior.
-
-{% tabs %} 
-{% highlight razor %}
-
- <ej-grid id="Grid" datasource="ViewBag.datasource">
-</ej-grid>
-
-{% endhighlight  %}
-{% highlight c# %}
-        
-        namespace EJGrid.Controllers
-         {
-          public class HomeController : Controller
-           {
-            public ActionResult Index()
-            {
-              DataTable dt = new DataTable("Table1");
-              DataColumn cl = new DataColumn("No");
-              dt.Columns.Add(cl);
-              cl = new DataColumn("Name");
-              dt.Columns.Add(cl);
-
-              DataRow dr = dt.NewRow();
-              dr[0] = 1;
-              dr[1] = "John";
-              dt.Rows.Add(dr);
-              
-              dr = dt.NewRow();
-              dr[0] = 2;
-              dr[1] = "Smith";
-              dt.Rows.Add(dr);
-
-              dr = dt.NewRow();
-              dr[0] = 3;
-              dr[1] = "Tomps";
-              dt.Rows.Add(dr);
-
-              dr = dt.NewRow();
-              dr[0] = 4;
-              dr[1] = "Hanar";
-              dt.Rows.Add(dr);
-
-              dr = dt.NewRow();
-              dr[0] = 5;
-              dr[1] = "Reek";
-              dt.Rows.Add(dr);
-
-              ViewBag.dataSource = dt;
-             return View();
-            }
-          }
-       }
-{% endhighlight  %}
-{% endtabs %} 
-
-The following output is displayed as a result of the above code example.
-
-![](Data-Binding_images/Data-Binding_img2.png)
-
-##  ITypedList Binding 
-      
-ITypedList provides functionality to discover the schema for a binding list, where the properties available to bind differ from the public properties of the object to bind.
-
-To implement ITypedList binding, create a generic type named class that derives from ITypedList interface. Define the named class based on properties descriptor of the Grid Model class, to return list according to the custom implementation.
-
-Create a collection of ITypedList and bind it to Grid using `datasource` property.
-
-The following code example describes the above behavior.
-
-{% tabs %} 
-{% highlight razor %} 
-
-<ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
-    <e-columns>
-        <e-column field="OrderID"></e-column>
-        <e-column field="CustomerID"></e-column>
-        <e-column field="Freight"></e-column>
-        <e-column field="ShipCountry"></e-column>
-        <e-column field="ShipCity"></e-column>
-    </e-columns>
-</ej-grid>
-
-{% endhighlight  %}
-{% highlight c# %} 
-
-         [Serializable()]
-         public class SortableBindingList<T> : BindingList<T>, ITypedList
-         {
-          [NonSerialized()]
-          private PropertyDescriptorCollection properties;
-          public SortableBindingList()
-             : base()
-            {
-               // Get the 'shape' of the list. 
-              // Only get the public properties marked with Browsable = true.
-             PropertyDescriptorCollection pdc = TypeDescriptor.GetProperties(
-                 typeof(T),
-                 new Attribute[] { new BrowsableAttribute(true) });
-
-             // Sort the properties.
-             properties = pdc.Sort();
-            }
-          #region ITypedList Implementation
-          public PropertyDescriptorCollection GetItemProperties(PropertyDescriptor[] listAccessors)
-          {
-             PropertyDescriptorCollection pdc;
-             if (listAccessors != null && listAccessors.Length > 0)
-             {
-                // Return child list shape.
-                pdc = ListBindingHelper.GetListItemProperties(listAccessors[0].PropertyType);
-             }
-             else
-             {
-                // Return properties in sort order.
-                pdc = properties;
-             }
-             return pdc;
-          }
-          // This method is only used in the design-time framework 
-         // and by the obsolete DataGrid control.
-         public string GetListName(PropertyDescriptor[] listAccessors)
-         {
-           return typeof(T).Name;
-         }
-        #endregion
-      }
-
-     namespace EJGrid.Controllers
-     {
-      public class HomeController : Controller
-       {
-         public ActionResult Index()
-         {
-            var data = OrderRepository.GetAllRecords();
-            SortableBindingList<EditableOrder> ord = new SortableBindingList<EditableOrder>();
-            
-            foreach (var temp in data)
-            {
-                ord.Add(temp);
-            }
-            ViewBag.dataSource = ord;
-            return View();
-          }
-        }
-      }
-{% endhighlight  %}
-{% endtabs %} 
-
-The following output is displayed as a result of the above code example.
-
-![](Data-Binding_images/Data-Binding_img5.png)
-
-See Also
-
-For more information on ITypedList interface please refer to this [link](https://msdn.microsoft.com/en-us/library/System.ComponentModel.ITypedList.aspx).
-
 ##  Complex Binding
 
 The Grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot or using lambda Expression.   
@@ -265,7 +100,7 @@ The following code example describes the above behavior.
            {        
            public ActionResult Index()
             {
-             List<Person> Persons = new List<Person>();
+            List<Person> Persons = new List<Person>();
             Persons.Add(new Person() { FirstName = "John", LastName = "Beckett", Email = "john@syncfusion.com", Designation = new Designation{ Position = "Manager"  } });
             Persons.Add(new Person() { FirstName = "Ben", LastName = "Beckett", Email = "ben@syncfusion.com", Designation = new Designation{ Position = "Asst. Manager" } });
             Persons.Add(new Person() { FirstName = "Andrew", LastName = "Beckett", Email = "andrew@syncfusion.com", Designation = new Designation{ Position = "Engineer"  } });
@@ -344,18 +179,24 @@ The following code example describes the above behavior.
     
         namespace EJGrid.Controllers
          {
-          public class OrdersController: ApiController 
-           { 
-            // GET: api/Orders 
-            NORTHWNDEntities db = new NORTHWNDEntities(); 
-            public object Get() 
-           { 
-             var queryString = HttpContext.Current.Request.QueryString; 
-             int skip = Convert.ToInt32(queryString["$skip"]); 
-             int take = Convert.ToInt32(queryString["$top"]); 
-             var data = db.Orders.Skip(skip).Take(take).ToList(); 
-             return new { Items = data.Skip(skip).Take(take), Count = data.Count() }; 
-            } 
+        
+         public partial class GridController : Controller
+             {  
+                 // GET: /<controller>/
+            private NORTHWNDContext _context;
+
+           public GridController(NORTHWNDContext context)
+        {
+            _context = context;
+        }
+        public object Get()
+        {
+            var queryString = Request.Query;
+            int skip = Convert.ToInt32(queryString["$skip"]);
+            int take = Convert.ToInt32(queryString["$top"]);
+            var data = _context.Orders.Skip(skip).Take(take).ToList();
+            return new { Items = data.Skip(skip).Take(take), Count = data.Count() };
+        }
           } 
         }
 {% endhighlight  %}

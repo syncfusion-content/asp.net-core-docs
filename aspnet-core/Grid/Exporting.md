@@ -581,102 +581,96 @@ The background color of the alternative row of the grid content</td></tr>
 {% endhighlight %}
 {% highlight c# %}
 
-    public partial class GridController : Controller
-
+       public partial class GridController : Controller
     {
 
-	public void ExportToExcel(string GridModel)
+        private NORTHWNDContext _context;
 
-	{
+        public GridController(NORTHWNDContext context)
+        {
+            _context = context;
+        }
+        // GET: /<controller>/
+        public ActionResult Exporting()
+        {
+            ViewBag.datasource = _context.Orders.Take(100).ToList();
+            return View();
+        }
+        public ActionResult ExportToExcel(string GridModel)
+        {
+            ExcelExport exp = new ExcelExport();
+            var DataSource = _context.Orders.Take(100).ToList();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridExcelExport excelExp = new GridExcelExport();
+            excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
+            excelExp.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, excelExp);
+        }
 
-		ExcelExport exp = new ExcelExport();
+        public ActionResult ExportToWord(string GridModel)
+        {
+            WordExport exp = new WordExport();
+            var DataSource = _context.Orders.Take(100).ToList();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridWordExport wrdExp = new GridWordExport();
+            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, wrdExp);
+        }
+        public ActionResult ExportToPdf(string GridModel)
+        {
+            PdfExport exp = new PdfExport();
+            var DataSource = _context.Orders.Take(100).ToList();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridPdfExport pdfExp = new GridPdfExport();
+            pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, pdfExp);
+        }
+        private GridProperties ConvertGridObject(string gridProperty)
+        {
+            GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
 
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+            GridExtensions ext = new GridExtensions();
 
-		GridProperties obj = ConvertGridObject(GridModel);
+            AutoFormat auto = new AutoFormat();
 
-		exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
+            ext.SetTheme(auto, "flat-saffron");
 
-	}
 
-	public void ExportToWord(string GridModel)
+            auto.FontFamily = "Arial";
 
-	{
 
-		WordExport exp = new WordExport();
+            auto.ContentBorderColor = new Syncfusion.JavaScript.Models.Color(165, 42, 42, "brown");
 
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+            auto.ContentFontSize = 10;
 
-		GridProperties obj = ConvertGridObject(GridModel);
+            auto.GCaptionBorderColor = new Syncfusion.JavaScript.Models.Color(255, 248, 220, "Cornsilk");
 
-		exp.Export(obj, DataSource, "Export.docx", false, false, ExportTheme.FlatSaffron);
+            auto.GContentFontColor = new Syncfusion.JavaScript.Models.Color(0, 0, 139, "DarkBlue");
 
-	}
+            auto.HeaderFontSize = 12;
 
-	public void ExportToPdf(string GridModel)
+            auto.HeaderBorderColor = new Syncfusion.JavaScript.Models.Color(255, 0, 0, "Red");
 
-	{
+            auto.ContentBgColor = new Syncfusion.JavaScript.Models.Color(245, 222, 179, "Wheat");
 
-		PdfExport exp = new PdfExport();
+            auto.GHeaderBgColor = new Syncfusion.JavaScript.Models.Color(220, 20, 60, "Crimson");
 
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+            auto.AltRowBgColor = new Syncfusion.JavaScript.Models.Color(224, 255, 255, "LightCyan");
 
-		GridProperties obj = ConvertGridObject(GridModel);
+            gridProp.AutoFormat = auto;
+            return gridProp;
+        }
+        public ActionResult ExportingGrid()
 
-		exp.Export(obj, DataSource, "Export.pdf", false, false, "flat-saffron");
+        {
 
-	}
+            var DataSource = _context.Orders.Take(100).ToList();
 
-	private GridProperties ConvertGridObject(string gridProperty)
+            ViewBag.datasource = DataSource;
 
-	{
+            return View();
 
-		GridProperties gridProp = Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties),gridProperty);
-		
-		GridExtensions ext = new GridExtensions();
-
-		AutoFormat auto = new AutoFormat();
-
-		auto.FontFamily = "Arial";
-
-		auto.ContentBorderColor = Color.Brown;
-
-		auto.ContentFontSize = 10;
-
-		auto.GCaptionBorderColor = Color.Cornsilk;
-
-		auto.GContentFontColor = Color.DarkBlue;
-
-		auto.HeaderFontSize = 12;
-
-		auto.HeaderBorderColor = Color.Red;
-
-		auto.ContentBgColor = Color.Wheat;
-
-		auto.GHeaderBgColor = Color.Crimson;
-
-		auto.AltRowBgColor = Color.LightCyan;
-		
-		ext.SetTheme(auto, "flat-saffron");
-
-		gridProp.AutoFormat = auto;
-
-		return gridProp;
-
-	}
-	
-	public ActionResult ExportingGrid()
-
-	{
-
-		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
-		ViewBag.datasource = DataSource;
-
-		return View();
-
-	}
-	
+        }
     }
 
 {% endhighlight %}

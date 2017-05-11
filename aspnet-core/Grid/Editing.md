@@ -1294,8 +1294,6 @@ The following code example describes the above behavior.
 
 The newly added record details are bound to the 'value' parameter. Please refer the below image.
 
-![](Editing_images/Editing_img21.png)
-
 
 ### Update Record:
 
@@ -1315,8 +1313,6 @@ The following code example describes the above behavior.
 
 The updated record details are bound to the 'value' parameter. Please refer the below image.
 
-![](Editing_images/Editing_img22.png)
-
 
 ### Delete Record:
 
@@ -1333,8 +1329,6 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 The deleted record primary key value is bound to the 'key' parameter. Please refer the below image.
-
-![](Editing_images/Editing_img23.png)
 
 
 ### CRUD URL:
