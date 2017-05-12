@@ -495,8 +495,6 @@ When the theme is set as none and the autoFormat is not set to the grid, then no
 
 ## AutoFormat Class
 
-
-
 The **AutoFormat** Class can be used to customize the styles or themes applied to the exported grid. With the autoFormat class, you can provide required color to the grid content, alt row background or border color.
 
 The various properties available under the autoFormat class are listed in the following table.
@@ -777,9 +775,9 @@ You can customize the particular cell or particular  row of exporting files usin
         <e-columns>
             <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
-            <e-column field="Freight" header-text="Freight" text-align="@TextAlign.Right"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right"></e-column>
             <e-column field="ShipCity" header-text="Ship City" text-align=Right></e-column>
-            <e-column field="OrderDate" header-text="Order Date" text-align="@TextAlign.Right"></e-column>
+            <e-column field="OrderDate" header-text="Order Date" text-align="Right"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
     </ej-grid> 

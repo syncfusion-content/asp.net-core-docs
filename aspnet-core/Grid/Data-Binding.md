@@ -70,7 +70,7 @@ The following output is displayed as a result of the above code example.
 
 ##  Complex Binding
 
-The Grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot or using lambda Expression.   
+The Grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot.   
 
 The following code example describes the above behavior.
 
@@ -114,7 +114,7 @@ The following output is displayed as a result of the above code example.
 
 ##  WCF DataService / OData Service
 
-To consume WCF DataService in Grid control, provide the service link directly to the Grid `datamanager` property.
+To consume WCF DataService in Grid control, provide the service link directly to the  `url` property of Grid  `datamanager` .
 
 We have an online OData Service `http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders` created specifically for Syncfusion Controls
 
