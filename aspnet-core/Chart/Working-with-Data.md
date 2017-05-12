@@ -1,0 +1,66 @@
+---
+layout: post
+title: Data binding| Chart  | ASP.NET CORE | Syncfusion
+description: Learn how to bind Chart with JSON data from a remote server or locally in client browser.
+platform: aspnet-core
+control: Chart
+documentation: ug
+---
+
+# Working with Data
+
+## Local Data
+
+There are two ways to provide local data to chart.
+
+1. You can bind the data to the chart by using the **DataSource** property of the series and then you need to map the X and Y value with the *XName* and *YName* properties respectively.
+
+N> For the **OHLC** type series, you have to map four dataSource fields *High, Low, Open* and *Close* to bind the data source and for the **bubble** series you have to map the *Size* field along with the *XName* and *YName*. 
+
+
+{% highlight cshtml %}
+
+    <ej-chart id="chart" load="onchartload"></ej-chart>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+var chartData = [
+          { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },  { month: 'Mar', sales: 34 },
+          { month: 'Apr', sales: 32 },{ month: 'May', sales: 40 },{ month: 'Jun', sales: 32 },
+          { month: 'Jul', sales: 35 },  { month: 'Aug', sales: 55 }, { month: 'Sep', sales: 38 },
+          { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
+          
+    function onchartload(sender) {
+        sender.model.series[0].dataSource = chartData;
+        sender.model.series[0].xName = "month";
+        sender.model.series[0].yName = "sales";
+    }
+   
+{% endhighlight %}
+
+![](Working-with-Data_images/Working-with-Data_img1.png)
+
+
+2.You can also plot data to chart using **Points** option in the series. Using this property you can customize each and every point in the data.
+
+{% highlight cshtml %}
+
+<ej-chart id="chart">
+    <e-chart-series>
+        <e-series>
+            <e-points>
+                <e-point x="John" y="10000"></e-point>
+                <e-point x="Jake" y="12000"></e-point>
+                <e-point x="Petter" y="18000"></e-point>
+                <e-point x="James" y="11000"></e-point>
+                <e-point x="Mary" y="9700"></e-point>
+            </e-points>
+        </e-series>
+    </e-chart-series>
+</ej-chart>
+
+{% endhighlight %}
+
+![](Working-with-Data_images/Working-with-Data_img2.png)
