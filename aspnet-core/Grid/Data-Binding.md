@@ -27,7 +27,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="Grid" datasource=" ViewBag.datasource">
+<ej-grid id="Grid" datasource="ViewBag.datasource">
     <e-columns>
         <e-column field="FirstName" header-text="First Name" text-align="Left" ></e-column>
         <e-column field="LastName" header-text="Last Name" text-align="Left"></e-column>

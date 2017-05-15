@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-Context menu is used to improve user action with Grid using popup menu. It can be shown by defining `EnableContextMenu` property of `ContextMenuSettings` as true. Context menu has option to add default items in `ContextMenuItems` property of `ContextMenuSettings` and customized items in `CustomContextMenuItems` property of `ContextMenuSettings`.
+Context menu is used to improve user action with Grid using popup menu. It can be shown by defining `enable-context-menu` property of `context-menu-settings` as true. Context menu has option to add default items in `context-menu-items` property of `context-menu-settings` and customized items in `context-menu-items` property of `context-menu-settings`.
 
 ## Default Context Menu items
 
@@ -145,57 +145,37 @@ Please find the below table for default context menu items and its actions.
 {% tabs %}
 {% highlight RAZOR %}
 
-    @{Html.EJ().Grid<object>("FlatGrid")
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-        .EditSettings(edit =>
-        {
-            edit.AllowAdding().AllowDeleting().AllowEditing();
-        })
-        .ToolbarSettings(toolbar =>
-        {
-            toolbar.ShowToolbar().ToolbarItems(items =>
-            {
-                items.AddTool(ToolBarItems.Add);
-                items.AddTool(ToolBarItems.Edit);
-                items.AddTool(ToolBarItems.Delete);
-                items.AddTool(ToolBarItems.Update);
-                items.AddTool(ToolBarItems.Cancel);
-            });
-        })
-        .ContextMenuSettings(contextMenu =>
-        {
-            contextMenu.EnableContextMenu();
-        })
-        .AllowPaging()
-        .AllowSorting()
-        .AllowGrouping()
-        .Columns(col =>
-        {
-            col.Field("OrderID").IsPrimaryKey(true).HeaderText("Order ID").TextAlign(TextAlign.Right).Width(90).Add();
+<ej-grid id="FlatGrid" allow-paging="true" allow-sorting="true" allow-grouping="true" datasource="ViewBag.DataSource">
+    <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+    <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
+    <e-context-menu-settings enable-context-menu="true"></e-context-menu-settings>
+    <e-columns>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+        <e-column field="CustomerID" header-text="CustomerID"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+        <e-column field="Freight" format="{0:c2}" header-text="Freight"></e-column>
+        <e-column field="ShipName" header-text="ShipName"></e-column>
+    </e-columns>
+</ej-grid>
 
-            col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(90).Add();
-
-            col.Field("Freight").Format("{0:c2}").HeaderText("Freight").Width(80).TextAlign(TextAlign.Right).Add();
-
-            col.Field("ShipName").HeaderText("Ship Name").Width(150).Add();
-
-        }).Render();
-    }
 {% endhighlight  %}
 
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+    public partial class GridController : Controller
     {
-        public class GridController : Controller
+
+        private NORTHWNDContext _context;
+
+        public GridController(NORTHWNDContext context)
         {
-            public IActionResult Index(){
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-            }
+            _context = context;
+        }
+        // GET: /<controller>/
+        public ActionResult Default()
+        {
+            ViewBag.datasource = _context.Orders.Take(100).ToList();
+            return View();
         }
     }
 
@@ -218,40 +198,27 @@ Context menu at body
 
 Context menu at pager
 
-N> `AllowGrouping`, `AllowSorting` should be enabled to perform default context menu actions in Grid header. `AllowEditing`, `AllowDeleting` and `AllowAdding` should be enabled to perform default actions in body.
+N> `allow-grouping`, `allow-sorting` should be enabled to perform default context menu actions in Grid header. `allow-editing`, `allow-deleting` and `allow-adding` should be enabled to perform default actions in body.
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use `ContextMenuSettings.CustomContextMenuItems` property and to bind required actions for this, use `ContextClick` event.
-
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use `context-menu-items` property and to bind required actions for this, use `context-click` event.
 
 {% tabs %}
 {% highlight RAZOR %}
 
-    @{Html.EJ().Grid<object>("FlatGrid")
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-        .ContextMenuSettings(contextMenu =>
-        {
-            contextMenu.EnableContextMenu();
-            contextMenu.DisableDefaultItems();
-            contextMenu.CustomContextMenuItems(c => c.AddItem("clear_selection", "Clear Selection"));
-        })
-        .AllowPaging()        
-        .ClientSideEvents(eve => {eve.ContextClick("contextclick");})
-        .Columns(col =>
-        {
-            col.Field("OrderID").IsPrimaryKey(true).HeaderText("Order ID").TextAlign(TextAlign.Right).Width(90).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(90).Add();
-
-            col.Field("Freight").Format("{0:c2}").HeaderText("Freight").Width(80).TextAlign(TextAlign.Right).Add();
-
-            col.Field("ShipCountry").HeaderText("Ship Country").Width(150).Add();
-
-        }).Render();
-    }
+<ej-grid id="FlatGrid" allow-paging="true" context-click="contextclick" datasource="ViewBag.DataSource">
+    <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
+    <e-context-menu-settings enable-context-menu="true" context-menu-items='@new List<string> {"Clear Selection"}'>
+    </e-context-menu-settings>
+    <e-columns>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+        <e-column field="CustomerID" header-text="CustomerID"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
+        <e-column field="Freight" format="{0:c2}" header-text="Freight"></e-column>
+        <e-column field="ShipCountry" header-text="Ship Country" text-align="Right"></e-column>
+    </e-columns>
+</ej-grid>
     <script type="text/javascript">
         function contextclick(args) {
             if (args.text == "Clear Selection")
@@ -263,15 +230,20 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+ public partial class GridController : Controller
     {
-        public class GridController : Controller
+
+        private NORTHWNDContext _context;
+
+        public GridController(NORTHWNDContext context)
         {
-            public IActionResult Index(){
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-            }
+            _context = context;
+        }
+        // GET: /<controller>/
+        public ActionResult Default()
+        {
+            ViewBag.datasource = _context.Orders.Take(100).ToList();
+            return View();
         }
     }
 
@@ -284,43 +256,26 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use `ContextMenuSettings.SubContextMenu` property and to bind required actions for this, use `ContextClick` event.
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use `sub-context-menu` property and to bind required actions for this, use `ContextClick` event.
 
 {% tabs %}
 {% highlight RAZOR %}
 
-    @{Html.EJ().Grid<object>("FlatGrid")
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-        .ContextMenuSettings(contextMenu =>
-        {
-            contextMenu.EnableContextMenu();
-            contextMenu.DisableDefaultItems();
-            contextMenu.CustomContextMenuItems(c => 
-            { 
-                c.AddItem("clear_selection", "Clear Selection");
-                c.AddItem("Hide_column", "Hide Column");
-            });
-            contextMenu.SubContextMenu(submenu =>
-            {
-                submenu.ContextMenuItem("Hide Column").SubMenu(new List<string>() { "Order ID", "Customer ID", "Employee ID" }).Add();
-            });
-        })
-        .AllowPaging()        
-        .ClientSideEvents(eve => {eve.ContextClick("contextclick");})
-        .Columns(col =>
-        {
-            col.Field("OrderID").IsPrimaryKey(true).HeaderText("Order ID").TextAlign(TextAlign.Right).Width(90).Add();
-
-            col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(90).Add();
-
-            col.Field("Freight").Format("{0:c2}").HeaderText("Freight").Width(80).TextAlign(TextAlign.Right).Add();
-
-            col.Field("ShipCountry").HeaderText("Ship Country").Width(150).Add();
-
-        }).Render();
-    }
+<ej-grid id="FlatGrid" allow-paging="true" context-click="contextclick" datasource="ViewBag.DataSource">
+    <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
+    <e-context-menu-settings enable-context-menu="true" disable-default-items="true" context-menu-items='@new List<string> {"clear_selection", "Clear Selection","Hide_column", "Hide Column"}'>
+        <e-sub-context-menu>
+            <e-sub-context-menu-option context-menu-item="Hide Column" sub-menu='@new List<string> {"Order ID", "Customer ID", "Employee ID"}'></e-sub-context-menu-option>
+        </e-sub-context-menu>
+    </e-context-menu-settings>
+    <e-columns>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
+        <e-column field="CustomerID" header-text="CustomerID"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
+        <e-column field="Freight" format="{0:c2}" header-text="Freight"></e-column>
+        <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+    </e-columns>
+</ej-grid>
 
     <script type="text/javascript">
         function contextclick(args) {
@@ -335,15 +290,20 @@ Sub context menu is used to add customized sub menu to the custom context menu i
 
 {% highlight c# %}
 
-    namespace MVCSampleBrowser.Controllers
+    public partial class GridController : Controller
     {
-        public class GridController : Controller
+
+        private NORTHWNDContext _context;
+
+        public GridController(NORTHWNDContext context)
         {
-            public IActionResult Index(){
-                var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                ViewBag.datasource = DataSource;
-                return View();
-            }
+            _context = context;
+        }
+        // GET: /<controller>/
+        public ActionResult Default()
+        {
+            ViewBag.datasource = _context.Orders.Take(100).ToList();
+            return View();
         }
     }
 
