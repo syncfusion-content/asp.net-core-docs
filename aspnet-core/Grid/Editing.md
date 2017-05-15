@@ -1077,6 +1077,342 @@ The following output is displayed as a result of the above code example.
 ![](Editing_images/Editing_img19.png)
 
 
+## Persisting data in Server
+
+Edited data can be persisted in database using RESTful web services. 
+
+All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the ['link'](https://help.syncfusion.com/aspnet-core/datamanager/overview) to know about the DataManager.
+
+For you information ODataAdaptor persist data in server as per OData protocol.
+
+In the below section, we have explained how to get the edited data details at the server side using URLAdaptor. 
+
+
+### URL Adaptor
+
+You can use the `UrlAdaptor` of `datamanager` when binding datasource from remote data. At initial load of Grid, using url property of datamanager, data are fetched from remote data and bound to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+
+        <ej-grid id="FlatGrid" allow-paging="true" >
+        <e-datamanager url="Home/DataSource" update-url="Home/Update" insert-url="Home/Insert" remove-url="Home/Delete" adaptor="UrlAdaptor"></e-datamanager>
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" }) >
+        </e-toolbar-settings>
+        <e-edit-settings allow-adding="true" allow-deleting="true" allow-editing="true"></e-edit-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+        </e-columns>
+    </ej-grid>
+
+{% endhighlight  %}
+
+Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
+
+The following code example describes the above behavior.
+
+{% highlight c# %}
+
+    namespace MVCSampleBrowser.Controllers
+        {
+         public partial class GridController : Controller
+             {  // GET: /<controller>/
+        private NORTHWNDContext _context;
+
+        public GridController(NORTHWNDContext context)
+        {
+            _context = context;
+        }
+        public ActionResult DataSource(DataManager dm)
+        {
+            IEnumerable DataSource = _context.Orders.ToList();
+            DataOperations operation = new DataOperations();
+            var count = DataSource.AsQueryable().Count();
+            if (dm.Skip > 0)
+                DataSource = operation.PerformSkip(DataSource, dm.Skip);
+            if (dm.Take > 0)
+                DataSource = operation.PerformTake(DataSource, dm.Take);
+            return Json(new { result = DataSource, count = count });
+        }
+        public class DataResult
+        {
+            public IEnumerable result { get; set; }
+            public int count { get; set; }
+        }
+     } 
+{% endhighlight  %}
+    
+{% endtabs %} 
+
+The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the 'DataManager' class. While initializing the grid, paging only enabled hence in the below screen shot paging details are bound to the DataManager class.
+
+
+Also, using 'DataOperations' helper class you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
+
+1. PerformSorting
+2. PerformFiltering
+3. PerformSearching
+4. PerformSkip
+5. PerformTake
+6. PerformWhereFilter
+7. PerformSelect
+8. Execute
+
+### Accessing CRUD action request details in server side:
+
+The 'Server-Side' function must be declared with the following parameter name for each editing functionality.
+
+__Parameters__ __Table__
+
+<table>
+        <tr>
+            <th>
+                Action
+            </th>
+            <th>
+                Parameter Name</th>
+            <th>
+                Example
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Update,Insert
+            </td>
+            <td>
+                value
+            </td>
+            <td rowspan="2">
+                public ActionResult Update(CRUDModel<Orders> value){ }
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                public ActionResult Insert(CRUDModel<Orders> value){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Remove
+            </td>
+            <td>
+                key
+            </td>
+            <td>
+                public ActionResult Remove(int key){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Batch Add
+            </td>
+            <td>
+                added
+            </td>
+            <td rowspan="3">
+                public ActionResult BatchUpdate(string action, List &lt;CRUDModel<Orders>&gt; added, List &lt;CRUDModel<Orders>&gt; changed, List &lt;CRUDModel<Orders>&gt; deleted, int? key){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Batch Update
+            </td>
+            <td>
+                changed
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                Batch Delete
+            </td>
+            <td>
+                deleted
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                Crud Update,Crud Insert
+            </td>
+            <td>
+                value, action
+            </td>
+            <td>
+                public ActionResult CrudUrl(CRUDModel<Orders> value, string action){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Crud Remove
+            </td>
+            <td>
+                action, key, keyColumn
+            </td>
+            <td>
+                public ActionResult CrudUrl(string action, int? key, string keyColumn){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Crud Remove - Multi Delete
+            </td>
+            <td>
+                action, key, deleted
+            </td>
+            <td>
+                public ActionResult CrudUrl(string action, string key, List &lt;CRUDModel<Orders>&gt; deleted){ }
+            </td>
+        </tr>
+ </table>
+
+	
+### Insert Record:
+
+Using `insert-url ` property, you can specify the controller action mapping URL to perform insert operation at server side.
+
+The following code example describes the above behavior.
+
+{% highlight c# %}
+     
+        public ActionResult Insert(CRUDModel<Orders> value)
+        {
+          //Insert record in database
+            return null;
+            
+        }
+{% endhighlight %}
+
+The newly added record details are bound to the 'value' parameter. Please refer the below image.
+
+
+### Update Record:
+
+Using `update-url` property, you can specify the controller action mapping URL to perform save/update operation at server side.
+
+The following code example describes the above behavior.
+
+{% highlight c# %}
+          
+     public ActionResult Update(CRUDModel<Orders> value)
+        {
+              //Update record in database
+            return null;
+            
+        }
+{% endhighlight %}
+
+The updated record details are bound to the 'value' parameter. Please refer the below image.
+
+
+### Delete Record:
+
+Using ` remove-url` property, you can specify the controller action mapping URL to perform delete operation at server side.
+
+The following code example describes the above behavior.
+
+{% highlight c# %}
+       
+       public ActionResult Remove(int key)
+        {
+	         //Delete record in database
+        }
+{% endhighlight %}
+
+The deleted record primary key value is bound to the 'key' parameter. Please refer the below image.
+
+
+### CRUD URL:
+
+Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crud-url` property you can specify the controller action mapping URL to perform all the CRUD operation at server side using single method.
+
+The action parameter of `crud-url` is used to get the corresponding CRUD action.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+
+    <ej-grid id="FlatGrid" allow-paging="true">
+        <e-datamanager url="Home/DataSource" crud-url="Home/CrudUpdate" adaptor="@AdaptorType.UrlAdaptor"></e-datamanager>
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" }) >
+        </e-toolbar-settings>
+        <e-edit-settings allow-adding="true" allow-deleting="true" allow-editing="true"></e-edit-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="@EditingType.Numeric"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+        </e-columns>
+    </ej-grid>
+   
+{% endhighlight  %}
+
+{% highlight c# %}
+        public ActionResult CrudUpdate(CRUDModel<Orders> value, string action)
+        {
+            //Delete record in database
+            return null;
+        }
+{% endhighlight %}
+
+{% endtabs %} 
+
+
+N> If you specify `insert-url` along with `crud-url` then while adding `insert-url` only called.
+
+
+### Batch URL:
+
+The `batch-url` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation at server side.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+
+        <ej-grid id="FlatGrid" allow-paging="true">
+        <e-datamanager url="Home/DataSource" batch-url="Home/BatchUpdate" adaptor="@AdaptorType.UrlAdaptor"></e-datamanager>
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" }) >
+        </e-toolbar-settings>
+        <e-edit-settings allow-adding="true" allow-deleting="true" allow-editing="true"></e-edit-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="@EditingType.Numeric"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+        </e-columns>
+    </ej-grid>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+        public ActionResult BatchUpdate(string action, List<CRUDModel<Orders>> added, List<CRUDModel<Orders>> changed, List<CRUDModel<Orders>> deleted, int? key)
+        {
+            //Save the batch changes in database
+            return null;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding New Row Position
 
 To add new row in the top or bottom position of grid content, set `row-position` property of `e-edit-settings` depending on the requirement.
