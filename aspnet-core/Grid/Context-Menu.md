@@ -200,57 +200,6 @@ Context menu at pager
 
 N> `allow-grouping`, `allow-sorting` should be enabled to perform default context menu actions in Grid header. `allow-editing`, `allow-deleting` and `allow-adding` should be enabled to perform default actions in body.
 
-## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use `context-menu-items` property and to bind required actions for this, use `context-click` event.
-
-{% tabs %}
-{% highlight RAZOR %}
-
-<ej-grid id="FlatGrid" allow-paging="true" context-click="contextclick" datasource="ViewBag.DataSource">
-    <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
-    <e-context-menu-settings enable-context-menu="true" context-menu-items='@new List<string> {"Clear Selection"}'>
-    </e-context-menu-settings>
-    <e-columns>
-        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-        <e-column field="CustomerID" header-text="CustomerID"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
-        <e-column field="Freight" format="{0:c2}" header-text="Freight"></e-column>
-        <e-column field="ShipCountry" header-text="Ship Country" text-align="Right"></e-column>
-    </e-columns>
-</ej-grid>
-    <script type="text/javascript">
-        function contextclick(args) {
-            if (args.text == "Clear Selection")
-                this.clearSelection();
-        }
-    </script>
-
-{% endhighlight  %}
-
-{% highlight c# %}
-
- public partial class GridController : Controller
-    {
-
-        private NORTHWNDContext _context;
-
-        public GridController(NORTHWNDContext context)
-        {
-            _context = context;
-        }
-        // GET: /<controller>/
-        public ActionResult Default()
-        {
-            ViewBag.datasource = _context.Orders.Take(100).ToList();
-            return View();
-        }
-    }
-
-{% endhighlight  %}
-    
-{% endtabs %}
-
-![](Context-Menu_images/ContextMenu_img4.png)
 
 
