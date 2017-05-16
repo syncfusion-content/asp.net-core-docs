@@ -1115,10 +1115,6 @@ The following code example describes the above behavior.
 
 {% endhighlight  %}
 
-Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
-
-The following code example describes the above behavior.
-
 {% highlight c# %}
 
     namespace MVCSampleBrowser.Controllers
@@ -1151,6 +1147,8 @@ The following code example describes the above behavior.
 {% endhighlight  %}
     
 {% endtabs %} 
+
+Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
 
 The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the 'DataManager' class. While initializing the grid, paging only enabled hence in the below screen shot paging details are bound to the DataManager class.
 
@@ -1274,6 +1272,7 @@ __Parameters__ __Table__
             </td>
         </tr>
  </table>
+
 
 	
 ### Insert Record:

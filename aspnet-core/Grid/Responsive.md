@@ -102,18 +102,25 @@ Searching in mobile layout
 {% tabs %}
 
 {% highlight razor %}
-<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" is-responsive="true" enable-responsive-row="true" allow-paging="true" allow-filtering="true" allow-sorting="true" allow-multi-sorting="true">
-    <e-page-settings page-count="3" page-size="7"></e-page-settings>
+
+@{ 
+    Dictionary<string, object> dict = new Dictionary<string, object>();
+    dict.Add("required", true);
+    dict.Add("number", true);
+    Dictionary<string, object> dict1 = new Dictionary<string, object>();
+    dict1.Add("required", true);
+}
+
+<ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" is-responsive="true" enable-responsive-row="true">
     <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
     <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
-    <e-filter-settings filter-type="Menu"></e-filter-settings> 
+    <e-context-menu-settings enable-context-menu="true"></e-context-menu-settings>
     <e-columns>
-        <e-column field="OrderID" header-text="Order ID" is-primary-key="true">
-        </e-column>
-        <e-column field="CustomerID" header-text="Customer ID"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
-        <e-column field="ShipCity" format="{0:c2}" header-text="Ship city"></e-column>
-        <e-column field="Freight" header-text="Freight" format="{0:C}"></e-column>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align=Right validation-rules="dict"></e-column>
+        <e-column field="CustomerID" header-text="CustomerID" validation-rules="dict1"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" edit-type="Dropdown"></e-column>
+        <e-column field="ShipCity"  header-text="ShipCity" edit-type="Dropdown"></e-column>
+        <e-column field="Freight" header-text="Freight" edit-type="Numeric" numeric-edit-options="new EditorProperties() { DecimalPlaces = 2 }" format="{0:C}"></e-column>
     </e-columns>
 </ej-grid>
     
@@ -199,12 +206,13 @@ By default, the grid is adaptable to its parent container. It can adjust its wid
 {% tabs %}
 
 {% highlight razor %}
-<ej-grid id="FlatGrid" datasource="ViewBag.DataSource"> 
+
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource">
     <e-columns>
-        <e-column field="OrderID" header-text="Order ID" is-primary-key="true" text-align="Right" width="10%">
+        <e-column field="OrderID" header-text="Order ID" is-primary-key="true" text-align="Right" width=@("10%")>
         </e-column>
-        <e-column field="CustomerID" header-text="Customer ID" width="15%"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="10%"></e-column>
+        <e-column field="CustomerID" header-text="Customer ID" validation-rules="dict" width=@("15%")></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width=@("10%")></e-column>
     </e-columns>
 </ej-grid>
 

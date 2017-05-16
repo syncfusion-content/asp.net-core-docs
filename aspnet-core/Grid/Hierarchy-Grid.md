@@ -64,7 +64,7 @@ public partial class GridController : Controller
 
 {% endtabs %} 
 
-![](Hierarchy-Grid_images/HierarchyGrid_img1.png)
+![](Hierarchy-Grid_images/Hierarchy-Grid_img1.png)
 
 
 ## Expand or Collapse All Child's
