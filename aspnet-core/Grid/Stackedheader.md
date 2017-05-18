@@ -9,66 +9,55 @@ documentation: ug
 
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in grid. It can be shown by setting `ShowStackedHeader` as `true` and by defining `StackedHeaderRows`.
+The stacked headers helps you to group the logical columns in grid. It can be shown by setting `show-stacked-header` as `true` and by defining `stacked-header-rows`.
 
 ## Adding Stacked header columns
 
-To stack columns in stacked header, you need to define `Column` property in `StackedHeaderColumns` with field names of visible columns.
+To stack columns in stacked header, you need to define `column` property in `stacked-header-columns` with field names of visible columns.
 
 {% tabs %}
 
 {% highlight CSHTML %}
 
-@{Html.EJ().Grid<OrdersView>("Grid")
-	.Datasource((IEnumerable<object>)ViewBag.datasource)
-	 .ShowStackedHeader()
-        .StackedHeaderRows(row =>
-        {
-            row.StackedHeaderColumns(column =>
-            {
-                column.HeaderText("OrderDetails").Column(col =>
-                {
-                    col.Add("OrderID");
-                    col.Add("OrderDate");
-                    col.Add("Freight");
-                }).Add();
-                column.HeaderText("Ship Details").Column(col =>
-                {
-                    col.Add("ShipName");
-                    col.Add("ShipCity");
-                    col.Add("ShipCountry");
-                }).Add();
-            }).Add();
-        })
-        .Columns(col =>
-        {
-            col.Field("OrderID").HeaderText("Order ID").Width(80).Add();
-            col.Field("OrderDate").HeaderText("Order Date").Width(80).Format("{0:MM/dd/yyyy}").TextAlign(TextAlign.Right).Add();
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-            col.Field("ShipName").HeaderText("Ship Name").Width(110).Add();
-            col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
-            col.Field("ShipCountry").HeaderText("Ship Country").Width(110).Add();
-        }).Render();
-       }
-
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" show-stacked-header="true">
+    <e-stacked-header-rows>
+        <e-stacked-header-row>
+            <e-stacked-header-columns>
+                <e-stacked-header-column header-text="OrderDetails" column='@new List<string> {"OrderID","OrderDate","Freight"}'>
+                </e-stacked-header-column>
+                <e-stacked-header-column header-text="Ship Details" column='@new List<string> {"ShipName","ShipCity","ShipCountry"}'></e-stacked-header-column>
+            </e-stacked-header-columns>
+        </e-stacked-header-row>
+    </e-stacked-header-rows>
+    <e-columns>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
+        <e-column field="OrderDate" header-text="Order Date"  format="{0:MM/dd/yyyy}" text-align="Right"></e-column>
+        <e-column field="Freight" header-text="Freight" text-align="Right" format="{0:C}"></e-column>
+        <e-column field="ShipName" format="{0:c2}" header-text="Ship Name"></e-column>
+        <e-column field="ShipCity" header-text="Ship City"></e-column>
+        <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+    </e-columns>
+</ej-grid>
 
 {% endhighlight %}
 {% highlight C# %}
 
-namespace SyncfusionMvcApplication3.Controllers
-
-{
-    public class HomeController : Controller
+ public partial class GridController : Controller
     {
-        public IActionResult Index()
-        {
-            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-            ViewBag.datasource = DataSource;
-            return View();
 
+        private NORTHWNDContext _context;
+
+        public GridController(NORTHWNDContext context)
+        {
+            _context = context;
+        }
+        // GET: /<controller>/
+        public ActionResult Default()
+        {
+            ViewBag.datasource = _context.Orders.Take(100).ToList();
+            return View();
         }
     }
-}
 
 
 {% endhighlight  %}

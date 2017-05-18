@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting with Grid widget for Syncfusion Essential ASP.NET Core
+title: Sorting with Grid widget for Syncfusion Essential Core
 description: How to enable sorting and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---
 # Sorting
 
-The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting `AllowSorting` property as `true`. 
+The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting `allow-sorting` property as `true`. 
 
 To dynamically sort a particular column, click on its column header. The order switch between ascending and descending each time you click a column header for sorting.
 
@@ -17,34 +17,29 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight  razor %}
 
-     @{Html.EJ().Grid<object>("Grid")
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-        .AllowPaging()
-        .AllowSorting()
-        .Columns(col =>
-           {
-              col.Field("OrderID").Add();
-              col.Field("EmployeeID").Add();
-              col.Field("ShipCity").Add();
-              col.Field("ShipCountry").Add();
-              col.Field("Freight").Add();
-            }).Render();
-         }
+<ej-grid id="Grid" allow-paging="true" allow-sorting="true">
+    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="ShipCity"></e-column>
+        <e-column field="ShipCountry" ></e-column>
+        <e-column field="Freight"></e-column>
+    </e-columns>
+</ej-grid>
+
 {% endhighlight  %}
 {% highlight c# %}
 
-     namespace MVCSampleBrowser.Controllers
-       {
-         public class GridController : Controller
-           {
-            public IActionResult GridFeatures()
-                 {
-                   var DataSource = OrderRepository.GetAllRecords();
-                   ViewBag.datasource = DataSource;
-                   return View();
-                 }
-            }
-       }
+public partial class GridController : Controller
+    {
+        // GET: /<controller>/
+        public ActionResult Sorting()
+        {
+            return View();
+        }
+    }
+
 {% endhighlight  %}
 {% endtabs %} 
 The following output is displayed as a result of the above code example.
@@ -53,45 +48,44 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Sorting
 
-Through `SortedColumns` property of `SortSettings`, you can sort the columns while initializing the grid itself. You need to specify the `Field` (Columns) name and `Direction` in the `SortedColumns`.
+Through `sorted-columns` property of `sort-settings`, you can sort the columns while initializing the grid itself. You need to specify the `field` (Columns) name and `direction` in the `sorted-columns`.
 
-N> 1. For `Direction` property you can assign either `string` value ("Descending") or `enum` value (`SortOrder.Descending`). 
-N> 2. You can add multiple columns in `SortedColumns` for multi column sorting while initializing the grid itself.
+N> 1. For `direction` property you can assign either `string` value ("Descending") or `enum` value (`SortOrder.Descending). 
+N> 2. You can add multiple columns in `sorted-columns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight  razor %}
 
-     @{Html.EJ().Grid<object>("Grid")
-         .Datasource((IEnumerable<object>)ViewBag.datasource)
-         .AllowPaging()
-         .AllowSorting()
-         .SortSettings(sort => sort.SortedColumns(col => col.Field("EmployeeID").Direction(SortOrder.Descending).Add()))
-         .Columns(col =>
-             {
-               col.Field("OrderID").Add();
-               col.Field("EmployeeID").Add();
-               col.Field("CustomerID").Add();
-               col.Field("ShipCountry").Add();
-               col.Field("Freight").Add();
-            }).Render();
-          }
+<ej-grid id="Grid" allow-paging="true" allow-sorting="true">
+    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
+    <e-sort-settings>
+        <e-sorted-columns>
+            <e-sorted-column field="EmployeeID" direction="Descending"></e-sorted-column>
+        </e-sorted-columns>
+    </e-sort-settings>
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="ShipCity"></e-column>
+        <e-column field="ShipCountry" ></e-column>
+        <e-column field="Freight"></e-column>
+    </e-columns>
+</ej-grid>
+
 {% endhighlight  %}
 {% highlight c# %}
 
-     namespace MVCSampleBrowser.Controllers
-      {
-       public class GridController : Controller
-         {
-           public IActionResult GridFeatures()
-              {
-                var DataSource = OrderRepository.GetAllRecords();
-                 ViewBag.datasource = DataSource;
-                 return View();
-                }
-           }
+public partial class GridController : Controller
+    {
+        // GET: /<controller>/
+        public ActionResult Sorting()
+        {
+            return View();
         }
+    }
+
 {% endhighlight  %}
 {% endtabs %} 
 
@@ -101,51 +95,44 @@ The following output is displayed as a result of the above code example.
 
 ## Multi-Column Sorting
 
-Sort multiple columns in grid by setting `AllowMultiSorting` property as true. The sorting order is displayed in the header while doing multi sorting.
+Sort multiple columns in grid by setting `allow-multi-sorting` property as true. The sorting order is displayed in the header while doing multi sorting.
 
 You can sort more than one column by pressing "Ctrl key + mouse left click" on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
 
-N> `AllowSorting` must be true while enabling multi sort.
+N> `allow-sorting` must be true while enabling multi sort.
 
 The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight  razor %}
-
-     @{Html.EJ().Grid<object>("Grid")
-         .Datasource((IEnumerable<object>)ViewBag.datasource)
-         .AllowPaging()
-         .AllowSorting()
-         .AllowMultiSorting()
-         .SortSettings(sort =>
-            {
-             sort.SortedColumns(col => col.Field("EmployeeID").Direction(SortOrder.Descending).Add());
-             sort.SortedColumns(col => col.Field("CustomerID").Add());
-             })
-         .Columns(col =>
-                {
-                   col.Field("OrderID").Add();
-                   col.Field("EmployeeID").Add();
-                   col.Field("CustomerID").Add();
-                   col.Field("ShipCountry").Add();
-                   col.Field("Freight").Add();
-                }).Render();
-            }
+<ej-grid id="Grid" allow-paging="true" allow-sorting="true" allow-multi-sorting="true">
+    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
+    <e-sort-settings>
+        <e-sorted-columns>
+            <e-sorted-column field="EmployeeID" direction="Descending"></e-sorted-column>
+             <e-sorted-column field="CustomerID"></e-sorted-column>
+        </e-sorted-columns>
+    </e-sort-settings>
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="CustomerID"></e-column>
+        <e-column field="ShipCountry" ></e-column>
+        <e-column field="Freight"></e-column>
+    </e-columns>
+</ej-grid>
+    
 {% endhighlight  %}
 {% highlight c# %}
+public partial class GridController : Controller
+    {
+        // GET: /<controller>/
+        public ActionResult Sorting()
+        {
+            return View();
+        }
+    }
 
-     namespace MVCSampleBrowser.Controllers
-      {
-       public class GridController : Controller
-          {
-            public IActionResult GridFeatures()
-             {
-               var DataSource = OrderRepository.GetAllRecords();
-               ViewBag.datasource = DataSource;
-               return View();
-             }
-         }
-      }
 {% endhighlight  %}
 {% endtabs %} 
 
@@ -168,35 +155,29 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight  razor %}
 
-     @{Html.EJ().Grid<object>("Grid")
-         .Datasource((IEnumerable<object>)ViewBag.datasource)
-         .AllowPaging()
-         .AllowSorting()
-         .AllowMultiSorting()
-         .Columns(col =>
-               {
-                   col.Field("OrderID").Add();
-                   col.Field("EmployeeID").Add();
-                   col.Field("ShipCity").Add();
-                   col.Field("ShipCountry").Add();
-                   col.Field("Freight").Add();
-               }).Render();
-         }
+<ej-grid id="Grid" allow-paging="true" allow-sorting="true" allow-multi-sorting="true">
+    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="ShipCity"></e-column>
+        <e-column field="ShipCountry" ></e-column>
+        <e-column field="Freight"></e-column>
+    </e-columns>
+</ej-grid>
+
 {% endhighlight  %}
 {% highlight c# %}
 
-     namespace MVCSampleBrowser.Controllers
-      {
-      public class GridController : Controller
-          {
-            public IActionResult GridFeatures()
-             {
-               var DataSource = OrderRepository.GetAllRecords();
-               ViewBag.datasource = DataSource;
-                return View();
-              }
-           }
-      }
+public partial class GridController : Controller
+    {
+        // GET: /<controller>/
+        public ActionResult Sorting()
+        {
+            return View();
+        }
+    }
+
 {% endhighlight  %}
 {% highlight js %} 
       <script type="text/javascript">
@@ -215,41 +196,34 @@ While using Grid in a touch device, you have an option for multi sorting in sing
 
 Again if you tap the popup symbol, then the single tap multi sorting will be disabled. 
 
-N> `AllowMultiSorting` and `AllowSorting` should be `true` then only the popup will be shown.
+N> `allow-multi-sorting` and `allow-sorting` should be `true` then only the popup will be shown.
 
 The following code example describes the above behavior.
 {% tabs %}
 {% highlight  razor %}
+<ej-grid id="Grid" allow-paging="true" allow-sorting="true" allow-multi-sorting="true">
+    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="EmployeeID"></e-column>
+        <e-column field="CustomerID"></e-column>
+        <e-column field="ShipCountry" ></e-column>
+        <e-column field="Freight"></e-column>
+    </e-columns>
+</ej-grid>
 
-     @{Html.EJ().Grid<object>("Grid")
-         .Datasource((IEnumerable<object>)ViewBag.datasource)
-         .AllowPaging()
-         .AllowMultiSorting()
-         .AllowSorting()
-         .Columns(col =>
-             {
-                 col.Field("OrderID").Add();
-                 col.Field("EmployeeID").Add();
-                 col.Field("CustomerID").Add();
-                 col.Field("ShipCountry").Add();
-                 col.Field("Freight").Add();
-             }).Render();
-           }
 {% endhighlight  %}
 {% highlight c# %}
 
-      namespace MVCSampleBrowser.Controllers
-       {
-         public class GridController : Controller
-          {
-             public IActionResult GridFeatures()
-                 {
-                   var DataSource = OrderRepository.GetAllRecords();
-                   ViewBag.datasource = DataSource;
-                   return View();
-                 }
-           }
-       }
+public partial class GridController : Controller
+    {
+        // GET: /<controller>/
+        public ActionResult Sorting()
+        {
+            return View();
+        }
+    }
+
 {% endhighlight  %}
 {% endtabs %} 
 
