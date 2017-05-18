@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Data Binding
 
-Grid `datasource` property allows to bind datasource as the instance of one of the following types.
+Grid `datasource` property or  `e-datamanager` child tag allows to bind datasource as the instance of one of the following types.
    
 *	Collection that implements IEnumerable or IEnumerable&lt;T&gt;.
 *	REST Service URL as string.
@@ -27,7 +27,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="Grid" datasource=" ViewBag.datasource">
+<ej-grid id="Grid" datasource="ViewBag.datasource">
     <e-columns>
         <e-column field="FirstName" header-text="First Name" text-align="Left" ></e-column>
         <e-column field="LastName" header-text="Last Name" text-align="Left"></e-column>

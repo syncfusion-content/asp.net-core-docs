@@ -9,7 +9,7 @@ documentation: ug
 
 # Toolbar
 
-Toolbar can be shown by defining `ShowToolbar` property in `ToolbarSettings`. Toolbar has option to add default items in `ToolbarItems` and customized items in `CustomToolbarItems`.
+Toolbar can be shown by defining `show-toolbar` property in `toolbar-settings`. Toolbar has option to add default items in `toolbar-items` and customized items in ` custom-toolbar-items`.
 
 ## Default Toolbar items
 
@@ -76,32 +76,18 @@ namespace SyncfusionMvcApplication1.Controllers
 
 {% highlight razor %}
 
-@{Html.EJ().Grid<object>("FlatGrid")
-        .Datasource((IEnumerable<object>)ViewBag.datasource)
-        .EditSettings(edit => { edit.AllowAdding().AllowDeleting().AllowEditing(); })
-        .ToolbarSettings(toolbar =>
-        {
-            toolbar.ShowToolbar().ToolbarItems(items =>
-            {
-                items.AddTool(ToolBarItems.Add);
-                items.AddTool(ToolBarItems.Edit);
-                items.AddTool(ToolBarItems.Delete);
-                items.AddTool(ToolBarItems.Update);
-                items.AddTool(ToolBarItems.Cancel);
-            });
-
-        })
-        .AllowPaging()
-        .Columns(col =>
-        {
-            col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(90).Add();
-            col.Field("CustomerID").HeaderText("Customer ID").Width(90).Add();
-            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(80).Add();
-            col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(80).Format("{0:C}").Add();
-            col.Field("ShipName").HeaderText("Ship Name").Width(150).Add();
-
-        }).Render();
- }
+<ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
+    <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
+    <e-context-menu-settings enable-context-menu="true"></e-context-menu-settings>
+    <e-columns>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right" width="90"></e-column>
+        <e-column field="CustomerID" header-text="CustomerID" width="90"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="80"></e-column>
+        <e-column field="Freight" format="{0:c2}" header-text="Freight" text-align="Right"></e-column>
+        <e-column field="ShipName" header-text="Ship Name" width="150"></e-column>
+    </e-columns>
+</ej-grid>
 
 {% endhighlight %}
 {% endtabs %}  
@@ -109,4 +95,4 @@ namespace SyncfusionMvcApplication1.Controllers
 ![](Toolbar_images/Toolbar_img1.png)
 
 
-I> `AllowAdding`, `AllowEditing` and `AllowDeleting` need to be enabled for add, delete, edit, save & cancel in `ToolbarItems`. `AllowSearching` to be enabled while adding Search in toolbar to perform search action.
+I> `allow-adding`, `allow-editing` and `allow-deleting` need to be enabled for add, delete, edit, save & cancel in `toolbar-items`. `allow-searching` to be enabled while adding Search in toolbar to perform search action.
