@@ -154,7 +154,7 @@ Please find the below table for default context menu items and its actions.
         <e-column field="CustomerID" header-text="CustomerID"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID"></e-column>
         <e-column field="Freight" format="{0:c2}" header-text="Freight"></e-column>
-        <e-column field="ShipName" header-text="ShipName"></e-column>
+        <e-column field="ShipName" header-text="Ship Name"></e-column>
     </e-columns>
 </ej-grid>
 

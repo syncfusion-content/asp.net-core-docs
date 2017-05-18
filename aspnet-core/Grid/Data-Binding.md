@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Data Binding
 
-Grid `datasource`  property allows to bind datasource as the instance of one of the following types.
+Grid `datasource` property or  `e-datamanager` child tag allows to bind datasource as the instance of one of the following types.
    
 *	Collection that implements IEnumerable or IEnumerable&lt;T&gt;.
 *	REST Service URL as string.

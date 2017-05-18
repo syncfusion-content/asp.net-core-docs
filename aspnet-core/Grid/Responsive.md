@@ -33,7 +33,7 @@ Enabling Responsive row makes the Grid to render the record values in vertical o
         <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
         <e-column field="CustomerID" header-text="Customer ID"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
-        <e-column field="ShipCity" format="{0:c2}" header-text="Ship city"></e-column>
+        <e-column field="ShipCity" header-text="Ship city"></e-column>
         <e-column field="Freight" header-text="Freight" format="{0:C}"></e-column>
     </e-columns>
 </ej-grid>
@@ -119,8 +119,10 @@ Searching in mobile layout
         <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align=Right validation-rules="dict"></e-column>
         <e-column field="CustomerID" header-text="CustomerID" validation-rules="dict1"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" edit-type="Dropdown"></e-column>
-        <e-column field="ShipCity"  header-text="ShipCity" edit-type="Dropdown"></e-column>
-        <e-column field="Freight" header-text="Freight" edit-type="Numeric" numeric-edit-options="new EditorProperties() { DecimalPlaces = 2 }" format="{0:C}"></e-column>
+        <e-column field="ShipCity" header-text="ShipCity" edit-type="Dropdown"></e-column>
+        <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>
+        </e-column>
     </e-columns>
 </ej-grid>
     
@@ -155,8 +157,8 @@ If the client width is between 321px and 800px, then the grid will render in tab
 
 {% highlight razor %}
 
-<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" is-responsive="true" allow-paging="true">
-    <e-page-settings page-count="3" page-size="7"></e-page-settings>
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" is-responsive="true" allow-paging="true" allow-filtering="true">
+    <e-page-settings page-count="3" page-size="8"></e-page-settings>
     <e-filter-settings filter-type="Menu"></e-filter-settings> 
     <e-columns>
         <e-column field="OrderID" header-text="Order ID" is-primary-key="true" text-align="Right" width="90">
@@ -164,7 +166,7 @@ If the client width is between 321px and 800px, then the grid will render in tab
         <e-column field="CustomerID" header-text="Customer ID" width="100"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="90"></e-column>
         <e-column field="ShipCity" format="{0:c2}" header-text="Ship city" width="120"></e-column>
-        <e-column field="Freight" header-text="Freight" format="{0:C}" width="80"></e-column>
+        <e-column field="Freight" header-text="Freight" width="80"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -254,7 +256,7 @@ Min Width is used to maintain minimum width for the Grid. To enable Min Width, `
         </e-column>
         <e-column field="CustomerID" header-text="Customer ID" width="100"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="90"></e-column>
-        <e-column field="ShipCity" format="{0:c2}" header-text="Ship city" width="120"></e-column>
+        <e-column field="ShipCity" header-text="Ship city" width="120"></e-column>
         <e-column field="Freight" header-text="Freight" format="{0:C}" width="80"></e-column>
     </e-columns>
 </ej-grid>
@@ -298,7 +300,7 @@ Priority makes column to be visible or hidden based on the `priority` value and 
         </e-column>
         <e-column field="CustomerID" header-text="Customer ID" width="100" priority="2"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="90" priority="1"></e-column>
-        <e-column field="ShipCity" format="{0:c2}" header-text="Ship city" width="120" priority="3"></e-column>
+        <e-column field="ShipCity" header-text="Ship city" width="120" priority="3"></e-column>
         <e-column field="Freight" header-text="Freight" format="{0:C}" width="80" priority="4"></e-column>
     </e-columns>
 </ej-grid>

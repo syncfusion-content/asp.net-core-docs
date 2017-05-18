@@ -81,11 +81,11 @@ namespace SyncfusionMvcApplication1.Controllers
     <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
     <e-context-menu-settings enable-context-menu="true"></e-context-menu-settings>
     <e-columns>
-        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align=Right></e-column>
-        <e-column field="CustomerID" header-text="CustomerID"></e-column>
-        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right"></e-column>
-        <e-column field="Freight" format="{0:c2}" header-text="Freight"></e-column>
-        <e-column field="ShipName" header-text="ShipName"></e-column>
+        <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align=Right width="90"></e-column>
+        <e-column field="CustomerID" header-text="CustomerID" width="90"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="80"></e-column>
+        <e-column field="Freight" format="{0:c2}" header-text="Freight" text-align="Right"></e-column>
+        <e-column field="ShipName" header-text="Ship Name" width="150"></e-column>
     </e-columns>
 </ej-grid>
 

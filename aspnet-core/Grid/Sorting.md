@@ -109,7 +109,7 @@ The following code example describes the above behavior.
     <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
     <e-sort-settings>
         <e-sorted-columns>
-            <e-sorted-column field="EmployeeID" direction="@SortOrder.Descending"></e-sorted-column>
+            <e-sorted-column field="EmployeeID" direction="Descending"></e-sorted-column>
              <e-sorted-column field="CustomerID"></e-sorted-column>
         </e-sorted-columns>
     </e-sort-settings>
@@ -146,7 +146,7 @@ For sorting, grid uses default browser's sort function for better performance. O
 
 To resolve this, you need to set `ej.support.stableSort` as `false`.
 
-This will tell the "datamanager" to use custom sort function for sorting data. 
+This will tell the "DataManager" to use custom sort function for sorting data. 
 
 Please refer the [link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "link"), to know more information about stable sort.
 
