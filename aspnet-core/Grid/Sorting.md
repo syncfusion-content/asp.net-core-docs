@@ -50,7 +50,7 @@ The following output is displayed as a result of the above code example.
 
 Through `sorted-columns` property of `sort-settings`, you can sort the columns while initializing the grid itself. You need to specify the `field` (Columns) name and `direction` in the `sorted-columns`.
 
-N> 1. For `direction` property you can assign either `string` value ("Descending") or `enum` value (`@SortOrder.Descending). 
+N> 1. For `direction` property you can assign either `string` value ("Descending") or `enum` value (`SortOrder.Descending). 
 N> 2. You can add multiple columns in `sorted-columns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
