@@ -166,7 +166,7 @@ If the client width is between 321px and 800px, then the grid will render in tab
         <e-column field="CustomerID" header-text="Customer ID" width="100"></e-column>
         <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="90"></e-column>
         <e-column field="ShipCity" header-text="Ship city" width="120"></e-column>
-        <e-column field="Freight" header-text="Freight" width="80"></e-column>
+        <e-column field="Freight" header-text="Freight" width="80" format="{0:c2}"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}

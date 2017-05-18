@@ -62,7 +62,7 @@ The following code example describes the above behavior.
     <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=45" cross-domain="true" offline="true"></e-datamanager>
     <e-sort-settings>
         <e-sorted-columns>
-            <e-sorted-column field="EmployeeID" direction="@SortOrder.Descending"></e-sorted-column>
+            <e-sorted-column field="EmployeeID" direction="Descending"></e-sorted-column>
         </e-sorted-columns>
     </e-sort-settings>
     <e-columns>
