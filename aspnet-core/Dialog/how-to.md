@@ -48,7 +48,7 @@ Initialize the Dialog widgets by configuring as below.
 
 N> If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other.
 
-![](how-to_images\create-multiple-dialogs_img1.png)
+![](how-to_images/create-multiple-dialogs_img1.png)
 
 
 ## Create Nested Dialog
@@ -93,4 +93,68 @@ Add the below script to the view page
 
 
 {% endhighlight %}
+
+## Create a Confirmation Dialog with Footer section
+
+Essential MVC Dialog supports Alert type Dialog widgets.
+
+Using `ShowFooter` property to render Alert Dialog with Footers in Dialog widget.
+
+Create a Dialog Widget with enabling Footer property.
+
+{% highlight razor %}
+    <ej-button id="btnOpen" text="Click to open dialog" click="onclick" />
+    <ej-dialog id="dialogIcon" title="Audi Q8" width="325" enable-resize="false" is-responsive="true"  show-footer="true" footer-template-id="samplefooter" before-open="onbeforeopen" close="onDialogClose" >
+            <e-content-template>
+                <div>
+                    The Audi R8 was initially equipped with a 4.2 litre V8 engine. Specifically, it is an all-aluminum alloy 32-valve (four valves per cylinder) petrol engine, utilising Fuel Stratified Injection (FSI), and has a displacement of 4,163 cubic centimetres (254.0 cu in).
+                </div>
+            </e-content-template>
+        </ej-dialog>
+	
+{% endhighlight %}
+
+Add the following script to close and open the Dialog widget.
+
+{% highlight javascript %}
+
+    $("#btnOpen").hide();
+    function onclick() {
+            $("#dialogIcon").ejDialog("open");
+            $("#btnOpen").hide();
+        }
+        function onDialogClose(args) {
+            $("#btnOpen").show();
+        }
+
+
+{% endhighlight %}
+
+Initialize Footer in Dialog widgets by adding the script section as below.
+
+{% highlight javascript %}
+
+    <script id="samplefooter" type="text/x-jsrender">
+        <div class="footerspan" style="float:right">
+            <button id='btn1'>Ok</button>
+            <button id='btn2'>Cancel</button>
+        </div>
+        <div class="condition" style="float:left; margin-left:15px;">
+            <input type="checkbox" id="check1">
+        </div>
+    </script>
+
+     <script>
+       function onbeforeopen(e) {
+
+           $("#check1").ejCheckBox({ text: "Don't ask me this again" })
+           $("#btn1").ejButton({ size: "mini", height: 30, width: 70 });
+           $("#btn2").ejButton({ size: "mini", height: 30, width: 70 });
+       }
+       
+    </script>
+ 
+{% endhighlight %}
+
+![Create Alert Dialog](how-to_images/dialog-footer1.png)
 
