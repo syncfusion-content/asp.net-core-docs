@@ -12,9 +12,9 @@ keywords : dialog
 
 ## Create Multiple Dialogs
 
-Essential Studio for ASP.NET Core library supports multiple Dialog widgets in the same web page with different contents and different functionalities.
+Essential Studio for ASP.NET Core library supports multiple Dialog control in the same web page with different contents and different functionalities.
 
-Initialize the Dialog widgets by configuring as below.
+Initialize the Dialog control by configuring as below.
 
 {% highlight cshtml %}
 
@@ -53,9 +53,9 @@ N> If the position of the dialog is not set as above, all the three dialogs will
 
 ## Create Nested Dialog
 
-A Dialog widget can be nested within another Dialog control.
+A Dialog control can be nested within another Dialog control.
 
-Create a div element to render the child Dialog widget and use it as a content of parent Dialog control.
+Create a div element to render the child Dialog control and use it as a content of parent Dialog control.
 
 {% highlight cshtml %}
 
@@ -100,7 +100,7 @@ Essential MVC Dialog supports Alert type Dialog control.
 
 Using `ShowFooter` property to render Alert Dialog with Footers in Dialog control.
 
-Create a Dialog Widget with enabling Footer property.
+Create a Dialog control with enabling Footer property.
 
 {% highlight razor %}
     <ej-button id="btnOpen" text="Click to open dialog" click="onclick" />
@@ -114,7 +114,7 @@ Create a Dialog Widget with enabling Footer property.
 	
 {% endhighlight %}
 
-Add the following script to close and open the Dialog widget.
+Add the following script to close and open the Dialog control.
 
 {% highlight javascript %}
 
@@ -130,7 +130,7 @@ Add the following script to close and open the Dialog widget.
 
 {% endhighlight %}
 
-Initialize Footer in Dialog widgets by adding the script section as below.
+Initialize Footer in Dialog control by adding the script section as below.
 
 {% highlight javascript %}
 
