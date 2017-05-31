@@ -53,9 +53,9 @@ N> If the position of the dialog is not set as above, all the three dialogs will
 
 ## Create Nested Dialog
 
-A Dialog widget can be nested within another Dialog widget.
+A Dialog widget can be nested within another Dialog control.
 
-Create a div element to render the child Dialog widget and use it as a content of parent Dialog widget.
+Create a div element to render the child Dialog widget and use it as a content of parent Dialog control.
 
 {% highlight cshtml %}
 
@@ -96,9 +96,9 @@ Add the below script to the view page
 
 ## Create a Confirmation Dialog with Footer section
 
-Essential MVC Dialog supports Alert type Dialog widgets.
+Essential MVC Dialog supports Alert type Dialog control.
 
-Using `ShowFooter` property to render Alert Dialog with Footers in Dialog widget.
+Using `ShowFooter` property to render Alert Dialog with Footers in Dialog control.
 
 Create a Dialog Widget with enabling Footer property.
 
