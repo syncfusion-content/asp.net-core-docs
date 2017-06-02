@@ -15,6 +15,12 @@ The grid control has support for responsive behavior based on client browser's w
 * Tablet (321px to 800px)
 * Desktop(>800px)
 
+N> The following features are not supported by Grid's Responsive
+N> 1. Virtual Scrolling 
+N> 2. Frozen Rows and Frozen Columns 
+N> 3. Hierarchy
+N> 4. Detail template 
+
 ## Mobile Layout
 
 If client width is less than 321px, the grid will render in mobile mode. In which, you can see that grid user interface is customized and redesigned for best view in small screens. The customized features includes responsive row rendering, filtering, sorting, searching and editing.
