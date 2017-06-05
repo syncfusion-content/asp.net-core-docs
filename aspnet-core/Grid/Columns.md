@@ -1021,3 +1021,48 @@ The following code example describes the above behavior.
 The following output is displayed as a result of the above code example.
 
 ![](columns_images/columns_img24.png)
+
+## Column Layout
+
+You can set the Grid's columns layout based on either Grid width or its columns width using `column-layout` property of Grid. There are two ways to set the column layout, they are 
+
+1. Auto
+2. Fixed
+
+{% tabs %}
+{% highlight razor %}
+
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" column-layout="Fixed">
+        <e-columns>
+            <e-column field="OrderID" width="80"></e-column>
+            <e-column field="EmployeeID" width="80"></e-column>
+            <e-column field="ShipCity" width="90"></e-column>
+            <e-column field="ShipName" width="110"></e-column>
+            <e-column field="ShipCountry" width="100"></e-column>
+            <e-column field="Freight" width="80"></e-column>
+        </e-columns>
+    </ej-grid>
+                   
+{% endhighlight  %}
+{% highlight c# %}
+
+       namespace MVCSampleBrowser.Controllers
+        {
+          public class GridController : Controller
+           { 
+             public ActionResult GridFeatures()
+              {
+                var DataSource1 = new NorthwindDataContext().OrdersViews.ToList();
+                ViewBag.DataSource = DataSource1;
+                return View();
+              }
+           }
+         }
+{% endhighlight  %}
+{% endtabs %} 
+
+
+The following output is displayed as a result of the above code example.
+
+![](columns_images/columns_img25.png)
+
