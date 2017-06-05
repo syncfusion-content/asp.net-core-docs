@@ -73,7 +73,7 @@ Select multiple rows in grid by using Checkbox column and it can be enabled by s
 
 If the `field` property of Checkbox column is not defined, then it acts as a template column. So `field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
 
-N> The primary key for the data source should be defined in `Columns` definition, for checkbox selection to work properly. In `Columns` definition, particular primary column’s `IsPrimaryKey` property should be set to `true`.
+N> The primary key for the data source should be defined in `Columns` definition, for checkbox selection to work properly. In `Columns` definition, particular primary column’s `is-primary-key` property should be set to `true`.
 
 
 The following code example describes the above behavior.
