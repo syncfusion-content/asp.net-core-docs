@@ -1024,7 +1024,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Layout
 
-You can set the Grid's columns layout based on either Grid width or its columns width using [`column-layout`] property of Grid. There are two ways to set the column layout, they are 
+You can set the Grid's columns layout based on either Grid width or its columns width using `column-layout` property of Grid. There are two ways to set the column layout, they are 
 
 1. Auto
 2. Fixed
