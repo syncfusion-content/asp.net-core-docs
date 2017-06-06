@@ -201,7 +201,7 @@ The following code example describes the above behavior.
 
 ## Column Selection
 
-Column selection can be enabled by setting `SelectionMode` property of `e-selection-settings` as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
+Column selection can be enabled by setting `selection-mode` property of `e-selection-settings` as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
 
 The following code example describes the above behavior.
 
