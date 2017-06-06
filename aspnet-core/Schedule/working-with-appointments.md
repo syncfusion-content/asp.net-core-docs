@@ -39,6 +39,7 @@ Appointments play a dynamic role within the Schedule control with which the user
 The appointments can be added/edited in the Scheduler using any one of the following ways,
 
 * Quick window
+* Inline Appointment creation/editing
 * Default appointment window
 * [Context menu](/aspnetmvc/schedule/context-menu)
 * Through programmatically
@@ -97,6 +98,59 @@ Another way to disable the quick window option at dynamic time can be achieved t
 <script>
 function onCellClick(args) {
     args.cancel = true;
+}
+</script>
+
+{% endhighlight %}
+
+
+#### Inline Appointment creation/editing
+
+Another easier way, alternative to quick window for adding or editing the appointment’s subject alone on the Scheduler in a quicker manner can be achieved using inline Add/Edit support. It allows the user to add and edit the appointments inline.
+To get familiar with inline adding mode, single click on any of the Scheduler cells or press `enter` key on the selected cells. When the inline adding mode is ON, a text box will get created within the clicked Scheduler cells with a blinking cursor in it requiring the user to enter the subject of the appointment. Once the subject is typed, the appointment will be saved on pressing the `enter` key. 
+To enable the inline edit mode, single click on any of the existing appointment’s subject, so that the user can edit the subject of that appointment. The edited subject of that appointment is then updated on pressing the `enter` key.
+
+The inline option can be enabled/disabled on Scheduler by using the `allow-inline` API, whereas its default value is set to **false**.
+
+{% highlight razor %}
+
+@using MyProject.Models; // Here MyProject defines your project name to access the model class
+@{
+    <!-- Datasource for Appointments -->
+    List<ScheduleFields> Appoint = new List<ScheduleFields>();
+    Appoint.Add(new ScheduleFields { Id = "1", Subject = "Meeting", StartTime = new DateTime(2015, 11, 10, 10, 00, 00), EndTime = new DateTime(2015, 11, 10, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "" });
+}
+
+<ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" allow-inline="true">   
+    <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
+    </e-appointment-settings>
+</ej-schedule>
+
+{% endhighlight %}
+
+A workaround can be done with Scheduler to disable the inline appointment creation and enabling only the editing mode of inline by making use of the `CellClick` event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on the appointment’s subject.
+
+{% highlight razor %}
+
+@using MyProject.Models; // Here MyProject defines your project name to access the model class
+@{
+    <!-- Datasource for Appointments -->
+    List<ScheduleFields> Appoint = new List<ScheduleFields>();
+    Appoint.Add(new ScheduleFields { Id = "1", Subject = "Meeting", StartTime = new DateTime(2015, 11, 10, 10, 00, 00), EndTime = new DateTime(2015, 11, 10, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "" });
+}
+
+<ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" allow-inline="true" cell-click="onCellClick">   
+    <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
+    </e-appointment-settings>
+</ej-schedule>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script>
+function onCellClick(args) {
+    args.cancel = true;   // Prevents inline appointment creation on clicking the cells. 
 }
 </script>
 
