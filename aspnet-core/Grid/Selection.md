@@ -73,9 +73,6 @@ Select multiple rows in grid by using Checkbox column and it can be enabled by s
 
 If the `field` property of Checkbox column is not defined, then it acts as a template column. So `field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
 
-N> The primary key for the data source should be defined in `Columns` definition, for checkbox selection to work properly. In `Columns` definition, particular primary column’s `is-primary-key` property should be set to `true`.
-
-
 The following code example describes the above behavior.
 
 {% tabs %}
@@ -204,7 +201,7 @@ The following code example describes the above behavior.
 
 ## Column Selection
 
-Column selection can be enabled by setting `SelectionMode` property of `e-selection-settings` as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
+Column selection can be enabled by setting `selection-mode` property of `e-selection-settings` as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
 
 The following code example describes the above behavior.
 
