@@ -888,11 +888,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="@ViewBag.DataSource1">
        <e-edit-settings allow-editing="true" allow-adding="true" allow-editing="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
-            <e-column field="EmployeeID" header-text="first Name" foreign-key-field="EmployeeID" foreign-key-value="FirstName"></e-column>
+            <e-column field="EmployeeID" header-text="first Name" foreign-key-field="EmployeeID" foreign-key-value="FirstName" datasource="@ViewBag.DataSource2"></e-column>
             <e-column field="CustomerID"></e-column>
             <e-column field="Freight"></e-column>
             <e-column field="ShipCity"></e-column>
