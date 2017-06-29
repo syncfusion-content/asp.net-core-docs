@@ -158,6 +158,48 @@ You can sort a field either to ascending or descending order using the "sort-ord
 
 ![](Getting-Started_images/purejssorting.png)
 
+### Sort Row/Column by Date
+
+You can sort a field either to ascending or descending order acording to date by using the **sortOrder** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+
+N> To apply sorting by date, you need to specify the require `format` and `formatString` to the field.
+
+{% highlight cshtml %}
+
+<ej-pivot-grid id="PivotGrid1" load="onload">
+    <e-data-source>
+        <e-pivot-rows>
+            <e-row-field field-name="Date" field-caption="Date" format="date" format-string="dd-MM-yyy" sort-order="Descending"></e-row-field>
+        </e-pivot-rows>
+        <e-pivot-columns>
+            <e-column-field field-name="Day" field-caption="Day" format="date" format-string="ddd" sort-order="Ascending"></e-column-field>
+        </e-pivot-columns>
+        <e-pivot-values>
+            <e-value-field field-name="Amount" field-caption="Amount"></e-value-field>
+        </e-pivot-values>
+    </e-data-source>
+</ej-pivot-grid>
+
+<script type="text/javascript">
+function onload(args) {
+    args.model.dataSource.data = [
+            { Amount: 100, Date: "5-1-2017", Day: "Wednesday" },
+            { Amount: 200, Date: "1-2-2017", Day: "Sunday" },
+            { Amount: 300, Date: "1-1-2018", Day: "Thursday" },
+            { Amount: 150, Date: "5-1-2018", Day: "Wednesday" },
+            { Amount: 200, Date: "1-2-2017", Day: "Thursday" },
+            { Amount: 100, Date: "1-1-2018", Day: "Sunday" },
+            { Amount: 200, Date: "5-1-2017", Day: "Wednesday" },
+            { Amount: 250, Date: "1-2-2017", Day: "Sunday" }
+            //....
+        ];
+}
+</script>
+
+{% endhighlight %}
+
+![](Getting-Started_images/sortbydate.png)
+
 ### Apply Summary Types
 
 Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"Sum"** is the default summary type. Following are the summary types that are supported:
