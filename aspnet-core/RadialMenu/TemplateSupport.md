@@ -9,7 +9,7 @@ documentation: ug
 
 ## Template Support
 
- Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) permittable tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use **prepend-to** property.
+ Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) permittable tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [prepend-to](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
 
  ### Add SVG to item Icon
 
