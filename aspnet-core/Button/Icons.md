@@ -25,13 +25,13 @@ Also in the button sample, you can use the icon class names as follows,
 {% highlight CSHTML %}
 
 
-<ej-button id="button" size="Small" content-type="ImageOnly" prefix-icon="e-icon e-handup /">
+<ej-button id="button" size="Small" content-type="ImageOnly" prefix-icon="e-icon e-handup"/>
 
 
-<ej-split-button id="splitButton" content-type="ImageOnly" prefix-icon="e-icon e-calender" />
+<ej-split-button id="splitButton" content-type="ImageOnly" width="90px" prefix-icon="e-icon e-calender"/>
 
 
-<ej-toggle-button id="toggleButton" size="Small" content-type="ImageOnly" default-prefix-icon="e-icon e-mediaplay" default-suffix-icon="e-icon e-mediapause">
+<ej-toggle-button id="toggleButton" size="Small" content-type="ImageOnly" default-prefix-icon="e-icon e-mediaplay" default-suffix-icon="e-icon e-mediapause"/>
 
 
 {% endhighlight %}
