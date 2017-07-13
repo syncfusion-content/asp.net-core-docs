@@ -637,3 +637,85 @@ List of Column type and Filter operators
         </tr>
     </table>
 
+## FilterBar Template
+
+Usually enabling `allow-filtering`, will create default textbox in Grid FilterBar. So, Using [`e-filter-bar-template`] property of `e-columns` we can render any other controls like AutoComplete, DropDownList etc in filterbar to filter the grid data for the particular column.  
+It has three functions. They are    
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read`   - It is used to read the Filter value selected.
+3. `write`  - It is used to render the control and assign the value selected for filtering.
+
+The following code example describes the above behavior.
+{% tabs %}
+
+{% highlight razor %}
+ <ej-grid  id="FlatGrid" datasource=ViewBag.datasource allow-paging="true" allow-filtering="true">
+     <e-columns>
+        <e-column field="OrderID" header-text="Order ID" />
+        <e-column field="CustomerID" header-text="Customer ID">
+            <e-filter-bar-template read="autoComplete_read" create="autoComplete_create" write="autoComplete_write"/>
+        </e-column>
+        <e-column field="EmployeeID" header-text="Employee ID">
+            <e-filter-bar-template read="dropdown_read" write="dropdown_write" />
+        </e-column>
+        <e-column field="ShipCity" header-text="Ship City" />       
+        <e-column field="ShipAddress"  header-text="Ship Address"/>
+   </e-columns>
+</ej-grid>
+{% endhighlight  %}
+
+{% highlight js %}
+     <script type="text/javascript">      
+    function autoComplete_create(args) {
+        return "<input>"
+    }
+    function autoComplete_write(args) {
+        var gridObj = $('#FlatGrid ').data("ejGrid");
+        var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
+        args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
+    }
+    function autoComplete_read(args) {
+        this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+    }
+    function dropdown_write(args) {
+        var data = [{ text: "clear", value: "clear" }, { text: "1", value: 1 }, { text: "2", value: 2 }, { text: "3", value: 3 }, { text: "4", value: 4 },
+                                                        { text: "5", value: 5 }, { text: "6", value: 6 }, { text: "7", value: 7 }, { text: "8", value: 8 }, { text: "9", value: 9 }
+        ]
+        args.element.ejDropDownList({ width: "100%", dataSource: data, change: ej.proxy(args.column.filterBarTemplate.read, this, args) })
+    }
+    function dropdown_read(args) {
+        if (args.element.val() == "clear") {
+            this.clearFiltering(args.column.field);
+            args.element.val("")
+        }
+        this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+    }
+    </script>
+{% endhighlight %}
+
+{% highlight c# %}
+
+        namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+              }
+           } 
+
+{% endhighlight  %}
+    
+{% endtabs %}
+
+The following output is displayed as a result of the above code example.
+
+
+![](filtering_images/filtering_img11.png)
+{:caption}
+After Filtering
