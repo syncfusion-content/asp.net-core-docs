@@ -128,6 +128,8 @@ The inline option can be enabled/disabled on Scheduler by using the `allow-inlin
     </e-appointment-settings>
 </ej-schedule>
 
+{% endhighlight %}
+
 ##### Enabling Inline Edit alone
 
 It is possible to disable the inline appointment creation and enabling only the editing mode of inline by making use of the `CellClick` event. The below code example shows the way to disable the inline appointment creation while clicking on the cells, but appointments can be edited while clicking on it’s subject.
