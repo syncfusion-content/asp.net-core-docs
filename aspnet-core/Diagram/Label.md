@@ -335,6 +335,21 @@ Diagram allows to create read only labels. You have to set the `ReadOnly` proper
 
 {% endhighlight %}
 
+### Drag Limit
+
+The diagram control now supports defining the drag limit to the label while dragging from the connector and also update the postion to the nearest segment offset.
+
+{% highlight razor %}
+
+    <ej-diagram id="diagram" width="1000px" height="600px" enable-context-menu="false">
+    <e-connectors>
+                  <e-connector name="Connector4" constraints="Default|ConnectorConstraints.DragLabel|ConnectorConstraints.DragLimit">                 
+                </e-connector>  
+    </e-connectors>
+    </ej-diagram>
+{% endhighlight %}
+
+
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
