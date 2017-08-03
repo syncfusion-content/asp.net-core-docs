@@ -86,6 +86,36 @@ You can set headers for each level by setting the `ShowHeader` property of the e
 ![](TreeMap-Elements_images/TreeMap-Elements_img2.png)
 
 
+## Customizing the header
+
+The text in the header can be customized by triggering the event `HeaderTemplateRendering`of the **TreeMap**. This event is triggered before rendering the header template. 
+
+{% highlight CSHTML %}
+
+<div style="height:400px;width:700px;">
+    <ej-tree-map id="treemap" highlight-border-brush="fdaa" datasource="ViewBag.datasource" color-value-path="Growth"
+                 weight-value-path="Population" show-legend="true" header-template-rendering="loadtemplate">
+        <e-legend-settings icon-width="17" icon-height="17">
+        </e-legend-settings>
+        <e-levels>
+            <e-level group-path="Continent" group-gap="5" header-height="30"></e-level>
+        </e-levels>        
+    </ej-tree-map>
+</div>
+
+<script type="application/jsrender">
+   
+    function loadtemplate(){
+        //...
+    }
+
+</script>   
+
+{% endhighlight %}
+
+![](TreeMap-Elements_images/TreeMap-Elements_img4.png)
+
+
 ## Label
 
 You can also set labels for the leaf nodes by setting the `ShowLabels` property as true. `GroupPath` value is displayed as a label for leaf nodes. You can customize the default label appearance by setting the `LabelTemplate` of the TreeMap levels.
@@ -126,3 +156,42 @@ You can also set labels for the leaf nodes by setting the `ShowLabels` property 
 {% endhighlight %}
 
 ![](TreeMap-Elements_images/TreeMap-Elements_img3.png)
+
+## Customizing the Overflow labels
+
+You can handle the label overflow, by specifying any one of the following values to the property `textOverflow`as
+
+**None**       - By specifying textOverflow as “none”, it displays the default label text.
+**Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
+**Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
+**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+
+
+{% highlight CSHTML %}
+
+<div style="height:400px;width:700px;">
+<ej-tree-map id="treemap" highlight-border-brush="fdaa" datasource="ViewBag.datasource" color-value-path="Growth" weight-value-path="Population" show-legend="true">
+	<e-legend-settings icon-width="17" icon-height="17">
+	</e-legend-settings>
+	<e-levels>
+		<e-level group-path="Continent" group-gap="5" header-height="30" header-template="headertemplate"></e-level>
+	</e-levels>	
+	<e-leaf-item-settings show-labels="true" text-over-flow="Wrap"></e-leaf-item-settings>
+</ej-tree-map>
+</div>
+
+</div><script id="headertemplate" type="application/jsrender">
+
+    <div>
+        <span style="color:gray;font-size:16px;font-weight:normal;">{{:header}}</span><br />
+    </div>
+
+</script>
+<script id="labeltemplate" type="application/jsrender">
+
+    <div style="background-color: transparent;">
+        <span style="color:gray;font-size:large;font-weight:normal;">{{:label}}</span><br />
+    </div>
+</script>
+
+{% endhighlight %}
