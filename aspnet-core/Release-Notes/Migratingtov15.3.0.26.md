@@ -13,48 +13,63 @@ keywords: migration, upgradation, upgrade-changes, 2017vol3-changes
 <table class="params">
 <tbody>
 <tr>
-<th>Deprecated packages</th>
-<th>New packages</th>
+<th>Deprecated .NET Standard 1.2 packages</th>
+<th>New .NET Standard 1.2 packages</th>
+<th>New .NET Standard 1.4 packages</th>
 </tr>
 <tr>
 <td>Syncfusion.Compression.Portable</td>
 <td>
-.NET Standard 1.2: <br/> Syncfusion.Compression.NETStandard12 <br/>
-.NET Standard 1.4: <br/> Syncfusion.Compression.NETStandard14
+Syncfusion.Compression.NETStandard12
+</td>
+<td>
+Syncfusion.Compression.NETStandard14
 </td>
 </tr>
 <tr>
 <td>Syncfusion.DocIO.Portable</td>
 <td>
-.NET Standard 1.2: <br/> Syncfusion.DocIO.NETStandard12 <br/>
-.NET Standard 1.4: <br/> Syncfusion.DocIO.NETStandard14
+Syncfusion.DocIO.NETStandard12
+</td>
+<td>
+Syncfusion.DocIO.NETStandard14
 </td>
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.Portable</td>
 <td>
-.NET Standard 1.2: <br/> Syncfusion.OfficeChart.NETStandard12 <br/>
-.NET Standard 1.4: <br/> Syncfusion.OfficeChart.NETStandard14
+Syncfusion.OfficeChart.NETStandard12
+</td>
+<td>
+Syncfusion.OfficeChart.NETStandard14
 </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.Portable</td>
 <td>
-.NET Standard 1.2: <br/> Syncfusion.Pdf.NETStandard12 <br/>
-.NET Standard 1.4: <br/> Syncfusion.Pdf.NETStandard14
+Syncfusion.Pdf.NETStandard12
+</td>
+<td>
+Syncfusion.Pdf.NETStandard14
 </td>
 </tr>
 <tr>
 <td>Syncfusion.Presentation.Portable</td>
 <td>
-.NET Standard 1.2: <br/> Syncfusion.Presentation.NETStandard12 <br/>
-.NET Standard 1.4: <br/> Syncfusion.Presentation.NETStandard14
+Syncfusion.Presentation.NETStandard12
+</td>
+<td>
+Syncfusion.Presentation.NETStandard14
+</td>
 </tr>
 <tr>
 <td>Syncfusion.XlsIO.Portable</td>
 <td>
-.NET Standard 1.2: <br/> Syncfusion.XlsIO.NETStandard12 <br/>
-.NET Standard 1.4: <br/> Syncfusion.XlsIO.NETStandard14
+Syncfusion.XlsIO.NETStandard12
+</td>
+<td>
+Syncfusion.XlsIO.NETStandard14
+</td>
 </tr>
 </tr>
 </tbody>
