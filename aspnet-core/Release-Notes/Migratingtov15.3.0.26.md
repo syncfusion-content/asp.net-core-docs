@@ -3,12 +3,12 @@ title: Essential Studio for ASP.NET Core 2017 Volume 3 Migration document
 description: Essential Studio for ASP.NET Core 2017 Volume 3 Migration document
 platform: aspnet-core
 documentation: ug
-keywords: migration, upgradation, upgrade-changes, 2017vol1-changes
+keywords: migration, upgradation, upgrade-changes, 2017vol3-changes
 ---
 
 # Common Changes
 
-* As a part of NET Standard support, we are deprecating the existing packages and adding new packages as mentioned below. So the older packages are no longer shipped along with Essential Studio release.
+* As a part of .NET Standard 1.4 version support, we are deprecating the existing packages and adding new packages as mentioned below. So the older packages are no longer shipped along with Essential Studio release.
 
 <table class="params">
 <tbody>
