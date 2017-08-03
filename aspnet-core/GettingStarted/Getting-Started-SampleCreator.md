@@ -77,7 +77,7 @@ Based on the controls, the Feature is enabled to choose the features of the corr
 
    * Restored the required Syncfusion NuGet/Bower packages for selected controls under dependencies.
 
-     ![](getting-started-SampleCreator-images/SampleCreator_img9.jpeg)
+     ![](getting-started-SampleCreator-images/SampleCreator_img9.png)
 
 3. Once the project is created you can open the project by clicking the Yes button. If you click No button the corresponding location of the project will be opened. Refer the following screenshot for more information.
 
