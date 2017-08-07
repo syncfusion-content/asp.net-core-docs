@@ -65,7 +65,7 @@ The following steps direct you to create the **Syncfusion** **ASP****.****NET** 
 
 5. Required Syncfusion NuGet/Bower packages, Scripts and CSS are added to the Project.
 
-   ![](getting-started_images/Syncfusion-Project-Templates_img3.jpeg)
+   ![](getting-started_images/Syncfusion-Project-Templates_img3.png)
 
    ![](getting-started_images/Syncfusion-Project-Templates_img4.jpeg)
 
@@ -119,7 +119,7 @@ The following steps direct you to use the Syncfusion Project Conversion in the e
 
 5. The required Syncfusion NuGet/Bower packages, Scripts and CSS are included in the ASP.NET Core Web Application. Refer to the following screenshots for more information.
 
-   ![](getting-started_images/Project-Conversion_img7.jpeg)
+   ![](getting-started_images/Project-Conversion_img7.png)
 
    ![](getting-started_images/Project-Conversion_img8.jpeg)
    
