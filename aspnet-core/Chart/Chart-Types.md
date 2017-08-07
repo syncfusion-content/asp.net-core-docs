@@ -339,6 +339,46 @@ To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the 
 ![](Chart-Types_images/Chart-Types_img16.png)
 
 
+## Stacked Spline Area Chart
+
+To render a Stacked Spline Area Chart, set the Type as **StackingSplineArea** in the chart series. 
+
+{% highlight cshtml %}
+
+ <ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series type="StackingSplineArea"></e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img97.png)
+
+
+## 100% Stacked Spline Area Chart  
+
+To render a 100% Stacked Spline Area Chart, set the Type as **StackingSplineArea100** in the chart series. 
+
+{% highlight cshtml %}
+
+ <ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series type="StackingSplineArea100"></e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+
+![](Chart-Types_images/Chart-Types_img98.png)
+
+
 ## Column Chart
 
 To render a Column Chart, set the Type as **Column** in the chart series. To change the color of the column series, you can use the Fill property.  
@@ -823,6 +863,42 @@ To render a Spline Chart, set the Type as **Spline** in the chart series. To cha
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img35.png)
+
+
+### Spline Types
+
+Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the **SplineType** property in the series. 
+
+{% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+       <e-series type="Spline" spline-type="Natural">
+        </e-series>    
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+
+### Change the cardinal spline tension
+
+To change cardinal spline tension, you can use the [`cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
+
+{% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+       <e-series type="Spline" spline-type="Cardinal" cardinal-spline-tension="0.7">
+        </e-series>    
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
 
 
 ### Change the spline width
@@ -1913,3 +1989,83 @@ Outlier symbol, width and height can be customized using outlierSettings through
 {% endhighlight %}
 
 ![](Chart-Types_images/Chart-Types_img92.png)
+
+## Pie Of Pie Chart
+To render the pie of pie chart, set the series `Type` as **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
+
+{% highlight cshtml %}
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series type="pieofpie">
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img93.png)
+
+
+### Split Mode and Split Value 
+The points to be displayed in the second pie is decided based on the `splitMode` property.**SplitMode** property takes the following values. 
+* Position – Have to split the data points based on its position
+* Value – Have to split the data points based on its Y value
+* Percentage – Have to split the points based on the percentage value
+* Indexes – The data points with the specified indexes are split separately 
+ By default, the splitMode is set to  **Value**. 
+
+{% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series split-mode="Position" split-value="3">
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img94.png)
+
+### Changing Pie Of Pie Size
+The size of the second Pie can be customized by using the `PieOfPieCoefficient` property. The default value of pieOfPieCoefficient is **0.6**.Its value ranges from 0 to 1.
+
+{% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series pie-of-pie-coefficient="1">
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1
+
+![](Chart-Types_images/Chart-Types_img95.png)
+
+#### Customizing the Gap
+
+The distance between the two pies in the pie of pie chart can be controlled by using the `GapWidth` property. The default value is **50**.
+
+ {% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series gap-width="150">
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %}
+
+![](Chart-Types_images/Chart-Types_img96.png)
