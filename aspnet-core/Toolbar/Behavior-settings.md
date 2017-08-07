@@ -113,3 +113,95 @@ The Hide property is Boolean type, which allow us to show or hide the Toolbar. D
 </ej-toolbar>
 
 {% endhighlight %}
+
+## Disable Or Enable Separate Toolbar Item
+
+We can enable or disable a separate toolbar item by using the following methods.
+
+### Disable Item
+
+The **Toolbar** method **disableItem** and **disableItemByID** can be used to disable separate toolbar item. In the below code we have disabled the third toolbar item by using these two methods
+
+{% highlight html %}
+
+      <ej-toolbar id="editingToolbar" create="create">
+        <e-toolbar-items>
+            <e-toolbar-item sprite-css-class="e-icon e-cut_01" tooltip-text="Cut" />
+            <e-toolbar-item sprite-css-class="e-icon e-copy_02" tooltip-text="Copy" />
+            <e-toolbar-item sprite-css-class="e-icon e-paste_01" tooltip-text="paste" />
+            <e-toolbar-item sprite-css-class="e-icon e-bold_01" tooltip-text="Bold" />
+            <e-toolbar-item sprite-css-class="e-icon e-underline_01" tooltip-text="Underline" />
+            <e-toolbar-item sprite-css-class="e-icon  e-strikethrough_01" tooltip-text="StrikeThrough" />
+            <e-toolbar-item sprite-css-class="e-icon e-align-left_01" tooltip-text="Left" />
+            <e-toolbar-item sprite-css-class="e-icon e-align-center_01" tooltip-text="Center" />
+            <e-toolbar-item sprite-css-class="e-icon e-align-right_01" tooltip-text="Right" />
+            <e-toolbar-item sprite-css-class="e-icon  e-align-justify_01" tooltip-text="Justify" />
+        </e-toolbar-items>
+    </ej-toolbar> 
+    
+{% endhighlight %}
+
+{% highlight javascript %}
+           function create() {
+            var obj = $("#editingToolbar").data("ejToolbar");
+            obj.disableItem($(".e-toolbar li")[2]);
+        }
+{% endhighlight %}
+
+OR
+
+{% highlight javascript %}
+       function create() {
+            var obj = $("#editingToolbar").data("ejToolbar");
+             obj.disableItemByID("paste");
+        }
+        
+{% endhighlight %}
+
+
+![](Behavior-settings_images/Behaviour-settings1.jpg)
+
+### Enable Item
+
+The **Toolbar** method **enableItem** and **enableItemByID** can be used to enable separate toolbar item. In the below code we have disbaled the first five items initially and enabled the third toolbar item by using these two methods
+
+{% highlight html %}
+      @{
+           List<int> index = new List<int> { 0,1,2,3,4 };
+       }
+	 <ej-toolbar id="editingToolbar" create="create"  disabled-item-indices="index">
+        <e-toolbar-items>
+            <e-toolbar-item sprite-css-class="e-icon e-cut_01" tooltip-text="Cut" />
+            <e-toolbar-item sprite-css-class="e-icon e-copy_02" tooltip-text="Copy" />
+            <e-toolbar-item sprite-css-class="e-icon e-paste_01" tooltip-text="paste" />
+            <e-toolbar-item sprite-css-class="e-icon e-bold_01" tooltip-text="Bold" />
+            <e-toolbar-item sprite-css-class="e-icon e-underline_01" tooltip-text="Underline" />
+            <e-toolbar-item sprite-css-class="e-icon  e-strikethrough_01" tooltip-text="StrikeThrough" />
+            <e-toolbar-item sprite-css-class="e-icon e-align-left_01" tooltip-text="Left" />
+            <e-toolbar-item sprite-css-class="e-icon e-align-center_01" tooltip-text="Center" />
+            <e-toolbar-item sprite-css-class="e-icon e-align-right_01" tooltip-text="Right" />
+            <e-toolbar-item sprite-css-class="e-icon  e-align-justify_01" tooltip-text="Justify" />
+        </e-toolbar-items>
+    </ej-toolbar> 
+    
+{% endhighlight %}
+
+{% highlight javascript %}
+           function create() {
+            var obj = $("#editingToolbar").data("ejToolbar");
+            obj.enableItem($(".e-toolbar li")[2]);
+        }
+{% endhighlight %}
+
+OR
+
+{% highlight javascript %}
+       function create() {
+            var obj = $("#editingToolbar").data("ejToolbar");
+             obj.enableItemByID("paste");
+        }
+        
+{% endhighlight %}
+
+![](Behavior-settings_images/Behaviour-settings2.jpg)
+
