@@ -26,7 +26,7 @@ Use the following code example to enable/disable the ruler to the Diagram.
 
 {% endhighlight %}
 
-![](/aspnet-core/Diagram/Rulers_images/Rulers_images1.png)
+![](/aspnet-core/Diagram/Rulers_images/Rulers_image1.png)
 
 ## Customizing the Ruler
 
@@ -87,5 +87,5 @@ Use the following code example to customize the ruler's tick.
 
 {% endtabs %}
 
-![](/aspnet-core/Diagram/Rulers_images/Rulers_images2.png)
+![](/aspnet-core/Diagram/Rulers_images/Rulers_image2.png)
 
