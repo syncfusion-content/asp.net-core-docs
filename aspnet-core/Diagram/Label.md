@@ -343,8 +343,13 @@ The diagram control now supports defining the drag limit to the label while drag
 
     <ej-diagram id="diagram" width="1000px" height="600px" enable-context-menu="false">
     <e-connectors>
-                  <e-connector name="Connector4" constraints="Default|ConnectorConstraints.DragLabel|ConnectorConstraints.DragLimit">                 
-                </e-connector>  
+     <e-connector name="Connector4" constraints="Default|ConnectorConstraints.DragLabel|ConnectorConstraints.DragLimit">  
+      <e-labels>
+       <e-diagram-label  text="Meeting with board" font-color="White">
+         <e-drag-limit left="30" right="30" bottom="30" top="30"></e-drag-limit>
+        </e-diagram-label>    
+      </e-labels>           
+     </e-connector>  
     </e-connectors>
     </ej-diagram>
 {% endhighlight %}
