@@ -233,6 +233,29 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
 
 ![](Data-Markers_images/Data-Markers_img13.png)
 
+
+## Contrast Color for the data label
+
+ 
+To change the contrast color for the data label, you can set the **EnableContrastColor** as **true** in the dataLabel property of the chart series.
+
+When we enable this property, the data label text will be rendered in contrast color based on the segment on which it is placed.
+If the data label is placed inside the data points segment, then that particular point's color is taken. Else the chart area or chart background color is considered for deriving the contrast color.
+ 
+{% highlight javascript %} 
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series>            
+           <e-marker><e-data-label visible="true" enable-contrast-color></e-data-label></e-marker>
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>
+
+{% endhighlight %} 
+
 ## Connect Line
 
 This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. **ConnectorLine** types can be set as *Bezier* or *Line* by using the **Type** option.
