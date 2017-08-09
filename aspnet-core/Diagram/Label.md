@@ -335,6 +335,28 @@ Diagram allows to create read only labels. You have to set the `ReadOnly` proper
 
 {% endhighlight %}
 
+### Drag Limit
+
+Diagram label dragging can be restricted by enabling/disabling `DragLimit` constraints of the connectors. Also we can define the drag limit in all direction using `DragLimit` property of the connector. Drag limit only applicable for connector labels.
+
+{% highlight razor %}
+
+    <ej-diagram id="diagram" width="1000px" height="600px" enable-context-menu="false">
+    <e-connectors>
+    @* Enable DragLimit constraints to the connector. *@
+     <e-connector name="Connector4" constraints="Default|ConnectorConstraints.DragLabel|ConnectorConstraints.DragLimit">  
+      <e-labels>
+       <e-diagram-label  text="Meeting with board" font-color="White">
+       @* Defines the drag limit property in all direction. *@
+         <e-drag-limit left="30" right="30" bottom="30" top="30"></e-drag-limit>
+        </e-diagram-label>    
+      </e-labels>           
+     </e-connector>  
+    </e-connectors>
+    </ej-diagram>
+{% endhighlight %}
+
+
 ## Multiple labels
 
 You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
