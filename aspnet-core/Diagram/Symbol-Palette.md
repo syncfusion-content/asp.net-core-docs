@@ -2,7 +2,7 @@
 layout: post
 title: Define and add the frequently used nodes/connectors to the symbol palette.
 description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
-platform: ejmvc
+platform: aspnet-core
 control: Diagram
 documentation: ug
 ---
