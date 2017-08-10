@@ -521,7 +521,7 @@ function save() {
 
 ## Scheduler Customization using QueryCellInfo
 
-It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using `QueryCellEvent` event. 
+It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using `QueryCellInfo` event. 
 
 The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
      
