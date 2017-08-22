@@ -230,14 +230,15 @@ You can also customize the preview size of the all palette items. The `PreviewWi
     </e-palettes>
     </ej-symbol-palette>
 
-{% highlight razor %}
+{% endhighlight %}
 
 ![](Symbol-Palette_images/Symbol-Palette_img5.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
 {% tabs %}
-{% highlight razor %}
+
+{% highlight Razor %}
 
     @* defines the preview offset *@
     <ej-symbol-palette id="symbolpalette" width="300px" height="500px" preview-offset="ViewBag.previewOffset">
@@ -261,7 +262,8 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
     ViewBag.previewOffset = Point;
 
 {% endhighlight %}
-{% endtabs %} 
+
+{% endtabs %}  
 
 ![](Symbol-Palette_images/Symbol-Palette_img6.png)
 
@@ -283,12 +285,12 @@ Symbol preview size will be set based on the following precedence.
 
 You can show/hide the symbol text by using the `ShowPaletteItemText` property of symbol palette.
 
-{% highlight razor %}
+{% highlight Razor %}
 
     @*Specifies whether palette item text should be visible or not*@ 
     <ej-symbol-palette id="symbolpalette" width="300px" height="500px" show-palette-item-text="true">
- 
-</ej-symbol-palette>
+    </ej-symbol-palette>
 
 {% endhighlight %}
+
 To explore the properties of symbol palette, refer to [Symbol Palette Properties](/api/aspnet/ejsymbolpalette#members "Symbol Palette Properties").
