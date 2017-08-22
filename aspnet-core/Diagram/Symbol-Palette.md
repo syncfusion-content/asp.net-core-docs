@@ -252,7 +252,8 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
 
 {% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
+
     //Defines the preview offset
     DiagramPoint Point = new DiagramPoint();
     Point.X = 50;
@@ -260,7 +261,7 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
     ViewBag.previewOffset = Point;
 
 {% endhighlight %}
- {% endtabs %} 
+{% endtabs %} 
 
 ![](Symbol-Palette_images/Symbol-Palette_img6.png)
 
