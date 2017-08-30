@@ -76,6 +76,28 @@ Working hours indicates the work hour limit within the Scheduler, which is highl
 
 N> By default, work hour **Start** is set to **9** and **End** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the starting work hour, to make the user to view that particular time initially.
 
+## Hide Weekend days
+
+The Scheduler can be customized to display only the working days, thus hiding the weekend days from it. The working days render based on the values given in the `WorkWeek` property. The days that are not mentioned in the `WorkWeek` collection is considered to be the weekend days and it can be hidden from the Scheduler by setting `false` to the `ShowWeekend` property.
+
+The following code example renders the Scheduler by hiding the weekend days.
+
+{% highlight razor %}
+
+@using MyProject.Models; // Here MyProject defines your project name to access the model class
+@{
+    <!-- Datasource for Appointments -->
+    List<ScheduleFields> Appoint = new List<ScheduleFields>();
+    Appoint.Add(new ScheduleFields { Id = "1", Subject = "Meeting", StartTime = new DateTime(2015, 11, 10, 10, 00, 00), EndTime = new DateTime(2015, 11, 10, 11, 00, 00), Description = "", AllDay = false, Recurrence = false, RecurrenceRule = "" });
+}
+
+<ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2015, 11, 8)" show-weekend="false">
+    <e-appointment-settings datasource="Appoint" id="Id" subject='"Subject"' start-time='"StartTime"' end-time='"EndTime"' description='"Description"' all-day='"AllDay"' recurrence='"Recurrence"' recurrence-rule='"RecurrenceRule"'>
+    </e-appointment-settings>
+</ej-schedule>
+
+{% endhighlight %}
+
 ## TimeScale
 
 The `TimeScale` allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
@@ -499,7 +521,7 @@ function save() {
 
 ## Scheduler Customization using QueryCellInfo
 
-It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using `QueryCellEvent` event. 
+It is possible to format and customize almost every child elements of scheduler such as work cells, header cells, time cells and so on using `QueryCellInfo` event. 
 
 The following code snippet shows how to customize the appointment and work cells based on the query cell info event.
      
