@@ -248,13 +248,84 @@ If the data label is placed inside the data points segment, then that particular
     // ...
     <e-chart-series>
         <e-series>            
-           <e-marker><e-data-label visible="true" enable-contrast-color></e-data-label></e-marker>
+           <e-marker><e-data-label visible="true" enable-contrast-color="true"></e-data-label></e-marker>
         </e-series>
     </e-chart-series>
     // ...
 </ej-chart>
 
 {% endhighlight %} 
+
+
+## Binding label from the datasource
+
+You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the **TextMappingName** properties respectively.
+
+
+{% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series type="Column" load="onchartload" point-color-mapping-name="color"> 
+            //Mapping the text name 
+            <e-marker><e-data-label visible="true" text-mapping-name="text"></e-data-label></e-marker>           
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>    
+
+{% endhighlight %}
+
+{% highlight js %}
+
+var chartData = [
+          { month: 'Jan', sales: 35, text: 'January' },
+          { month: 'Feb', sales: 28, text: 'February' }
+          //..
+];
+          
+    function onchartload(sender) {
+        sender.model.series[0].dataSource = chartData;
+        sender.model.series[0].xName = "month";
+        sender.model.series[0].yName = "sales";
+    }
+   
+{% endhighlight %}
+
+## Binding fill color to the points from the datasource
+
+You can bind the color value to the points from the datasource and then you need to map the color value field to the **PointColorMappingName** property respectively.
+
+
+{% highlight cshtml %}
+
+<ej-chart id="chartContainer">
+    // ...
+    <e-chart-series>
+        <e-series type="Column" load="onchartload" point-color-mapping-name="color">            
+        </e-series>
+    </e-chart-series>
+    // ...
+</ej-chart>    
+
+{% endhighlight %}
+
+{% highlight js %}
+
+var chartData = [
+          { month: 'Jan', sales: 35, color: 'red' },
+          { month: 'Feb', sales: 28: color:'blue' }
+          //..
+];
+          
+    function onchartload(sender) {
+        sender.model.series[0].dataSource = chartData;
+        sender.model.series[0].xName = "month";
+        sender.model.series[0].yName = "sales";
+    }
+   
+{% endhighlight %}
 
 ## Connect Line
 
