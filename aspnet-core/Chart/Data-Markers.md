@@ -259,7 +259,7 @@ If the data label is placed inside the data points segment, then that particular
 
 ## Binding label from the datasource
 
-You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the **TextMappingName** properties respectively.
+You can bind the text value to the datalabel from the datasource and then you need to map the text value field with the [`TextMappingName`](../api/ejchart#members:commonseriesoptions-marker-datalabel-textmappingname) property respectively.
 
 
 {% highlight cshtml %}
@@ -267,7 +267,7 @@ You can bind the text value to the datalabel from the datasource and then you ne
 <ej-chart id="chartContainer">
     // ...
     <e-chart-series>
-        <e-series type="Column" load="onchartload" point-color-mapping-name="color"> 
+        <e-series type="Column" load="onchartload"> 
             //Mapping the text name 
             <e-marker><e-data-label visible="true" text-mapping-name="text"></e-data-label></e-marker>           
         </e-series>
@@ -285,17 +285,17 @@ var chartData = [
           //..
 ];
           
-    function onchartload(sender) {
-        sender.model.series[0].dataSource = chartData;
-        sender.model.series[0].xName = "month";
-        sender.model.series[0].yName = "sales";
-    }
+function onchartload(sender) {
+    sender.model.series[0].dataSource = chartData;
+    sender.model.series[0].xName = "month";
+    sender.model.series[0].yName = "sales";
+}
    
 {% endhighlight %}
 
 ## Binding fill color to the points from the datasource
 
-You can bind the color value to the points from the datasource and then you need to map the color value field to the **PointColorMappingName** property respectively.
+You can bind the color value to the points from the datasource and then you need to map the color value field to the [`PointColorMappingName`](../api/ejchart#members:commonseriesoptions-pointcolormappingname) property respectively.
 
 
 {% highlight cshtml %}
@@ -315,15 +315,15 @@ You can bind the color value to the points from the datasource and then you need
 
 var chartData = [
           { month: 'Jan', sales: 35, color: 'red' },
-          { month: 'Feb', sales: 28: color:'blue' }
+          { month: 'Feb', sales: 28: color: 'blue' }
           //..
 ];
           
-    function onchartload(sender) {
-        sender.model.series[0].dataSource = chartData;
-        sender.model.series[0].xName = "month";
-        sender.model.series[0].yName = "sales";
-    }
+function onchartload(sender) {
+    sender.model.series[0].dataSource = chartData;
+    sender.model.series[0].xName = "month";
+    sender.model.series[0].yName = "sales";
+}
    
 {% endhighlight %}
 
