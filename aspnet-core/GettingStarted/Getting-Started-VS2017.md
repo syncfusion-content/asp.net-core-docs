@@ -9,19 +9,17 @@ documentation: ug
 
 
 # Getting Started
+ 
+## ASP.NET Core 1.1 Application Using Visual Studio 2017
 
-## ASP.NET Core 1.1 Application 
-
-### Using Visual Studio 2017
-
-#### System Requirements
+### System Requirements
 
 To work with ASP.NET Core 1.1 you need to make sure, whether you have installed the following software on your machine
 
 * Visual Studio 2017.
 * DotNetCore [1.1 SDK](https://go.microsoft.com/fwlink/?LinkID=835014)
 
-#### Configure Syncfusion UI Components in ASP.NET Core Application
+### Configure Syncfusion UI Components in ASP.NET Core Application
 
 You can configure Syncfusion components into an ASP.NET Core Application in following ways.
 
@@ -29,7 +27,7 @@ You can configure Syncfusion components into an ASP.NET Core Application in foll
 * Using Syncfusion Project Conversion utility
 * Configure the project manually
 
-##### Using Syncfusion Project Templates
+#### Using Syncfusion Project Templates
 
 Syncfusion provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion ASP.NET Core platform to create Syncfusion ASP.NET Core Web Application.
 
@@ -47,7 +45,7 @@ The following steps direct you to create the **Syncfusion** **ASP****.****NET** 
    
 3. Choose the options to configure the Syncfusion ASP.NET Core Application by using the following Project Configuration dialog.
 
-   ### Project configurations:
+   ## Project configurations:
 
    **Project Type:** Select the type of ASP.NET Core Project, either .NET Core or .NET Framework.
 
@@ -69,7 +67,7 @@ The following steps direct you to create the **Syncfusion** **ASP****.****NET** 
 
    ![](getting-started_images/Syncfusion-Project-Templates_img4.jpeg)
 
-##### Using Syncfusion Project Conversion utility
+#### Using Syncfusion Project Conversion utility
 
 Syncfusion Project Conversion is a Visual Studio add-in that converts an existing ASP.NET Core application into a Syncfusion ASP.NET Core Web application by adding the required assemblies and resource files.
 
@@ -136,7 +134,7 @@ Once you converted your ASP.NET Core Web Application to Syncfusion ASP.NET Core 
    
    I> Refer all the required external and internal scripts only once in the page with proper order. Refer this [link](https://help.syncfusion.com/js/control-initialization#adding-the-required-javascript-files) to know about order of script reference.
    
-##### Configure the project manually
+#### Configure the project manually
 
 The following steps helps to create an ASP.NET Core web application to utilize Syncfusion components.
 
@@ -237,7 +235,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
    ![](getting-started_images/getting-started_img4.png)
    
-#### Syncfusion Project Migration
+### Syncfusion Project Migration
 
 Syncfusion Project Migration is a Visual Studio add-in that allows you to migrate the existing Syncfusion ASP.NET Core Web Application from one Essential Studio version to another version.
 
