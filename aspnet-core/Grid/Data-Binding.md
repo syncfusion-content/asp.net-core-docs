@@ -186,7 +186,7 @@ The following code example describes the above behavior.
                 var queryString = Request.Query;
                 int skip = Convert.ToInt32(queryString["$skip"]);
                 int take = Convert.ToInt32(queryString["$top"]);
-                var data = _context.Orders.Skip(skip).Take(take).ToList();
+                var data = _context.Orders.ToList();
                 return new { Items = data.Skip(skip).Take(take), Count = data.Count() };
             }
         }
