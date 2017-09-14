@@ -11,8 +11,7 @@ documentation: ug
 
 ## Overcome model expression known issue in ASP.NET Core 2.0
 
-The latest ASP.NET Core 2.0 SDK has below mentioned known [issue](https://github.com/aspnet/Razor/issues/1618)
-while using the model expression within a rendering section. This same issue occured in our components while using model expressions.
+The latest ASP.NET Core 2.0 SDK has below mentioned known [issue](https://github.com/aspnet/Razor/issues/1618) while using the model expression within a rendering section. This same issue occured in our components while using model expressions.
 
 > A local or parameter named '__model' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter. 
 
@@ -22,7 +21,7 @@ Declare the model expressions related code blocks in your partial view and call 
 
 For exmaple view:
 
-   ~~~ cshtml
+   {% highlight cshtml %}
            
         <div>  
 
@@ -30,11 +29,12 @@ For exmaple view:
             @Html.Partial("dateview")
 
         </div>
-   ~~~
+
+   {% endhighlight %}
 
 For example partial view ('dateview'):
    
-   ~~~ cshtml
+   {% highlight cshtml %}
    
         @model sample.models.datemodel
 
@@ -44,4 +44,5 @@ For example partial view ('dateview'):
             @* in partial view, mandatory to define the script manager for control rendering*@ 
             <ej-script-manager></ej-script-manager>
         </div>
-   ~~~
+
+   {% endhighlight %}
