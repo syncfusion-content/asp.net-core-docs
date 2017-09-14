@@ -11,7 +11,7 @@ documentation: ug
 
 ## Overcome model expression known issue in ASP.NET Core 2.0
 
-The latest ASP.NET Core 2.0 SDK has below mentioned known [issue](https://github.com/aspnet/Razor/issues/1618) while using the model expression within a rendering section. So, you will also face the same issue when you are using the Syncfusion components with model expressions.
+The latest ASP.NET Core 2.0 SDK has the following known [issue](https://github.com/aspnet/Razor/issues/1618) while using the model expression within a rendering section. Also, you will face the same issue when you are using the Syncfusion components with model expressions.
 
 > A local or parameter named '__model' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter. 
 
