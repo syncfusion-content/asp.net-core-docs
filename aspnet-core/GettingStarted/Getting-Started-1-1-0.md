@@ -9,12 +9,10 @@ documentation: ug
 
 
 # Getting Started
+ 
+## ASP.NET Core 1.1.0 Application Using Visual Studio 2015
 
-## ASP.NET Core 1.1.0 Application 
-
-### Using Visual Studio 2015
-
-#### System Requirements:
+### System Requirements:
 
 To work with ASP.NET Core 1.1.0, you need to make sure is whether you have installed the following software on your machine
 
@@ -22,7 +20,7 @@ To work with ASP.NET Core 1.1.0, you need to make sure is whether you have insta
 
 * DotNetCore [1.1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkID=835014).
 
-#### Configure Syncfusion UI Components in ASP.NET Core Application:
+### Configure Syncfusion UI Components in ASP.NET Core Application:
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
 
@@ -113,7 +111,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
    ![](getting-started_images/getting-started_img4.png)
 
-#### Configure Syncfusion File Format Components in ASP.NET Core Application:
+### Configure Syncfusion File Format Components in ASP.NET Core Application:
 
 The following steps helps to create a ASP.NET Core web application to configure our File Format components.
 
@@ -128,9 +126,9 @@ The following steps helps to create a ASP.NET Core web application to configure 
 N> 1. You can refer [Installation](https://help.syncfusion.com/aspnet-core/installation) procedure to configure Syncfusion NuGet packages.
 N> 2. The File format component packages has been modified from Volume 3, 2017 (15.3.0.26) release. You can refer [migration document](https://help.syncfusion.com/aspnet-core/release-notes/migratingtov15.3.0.26) for more details.
 
-### Using Command Prompt with Visual Studio Code
+## ASP.NET Core 1.1.0 Application Using Command Prompt with Visual Studio Code
 
-#### System Requirements:
+### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
 * DotNetCore [1.1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkID=835014).
@@ -164,7 +162,7 @@ dotnet new -t web
   ![](getting-started_images/getting-started_img10.JPG)
 
 
-#### Configure Syncfusion Components in ASP.NET Core Application
+### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
@@ -272,9 +270,9 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
   ![](getting-started_images/getting-started_img17.JPG)
 
 
-### Using Yeoman with Visual Studio Code:
+## ASP.NET Core 1.1.0 Application Using Yeoman with Visual Studio Code:
 
-#### System Requirements:
+### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
 * DotNetCore [1.1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkID=835014).
@@ -321,7 +319,7 @@ yo aspnet
   ![](getting-started_images/getting-started_img9.JPG)
 
 
-#### Configure Syncfusion Components in ASP.NET Core Application
+### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 

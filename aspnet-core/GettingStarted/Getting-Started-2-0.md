@@ -9,12 +9,10 @@ documentation: ug
 
 
 # Getting Started
+  
+## ASP.NET Core 2.0 Application Using Visual Studio 2017 version 15.3
 
-## ASP.NET Core 2.0 Application 
-
-### Using Visual Studio 2017 version 15.3
-
-#### System Requirements:
+### System Requirements:
 
 To work with ASP.NET Core 2.0, you need to make sure, whether you have installed the following software on your machine
 
@@ -24,7 +22,7 @@ To work with ASP.NET Core 2.0, you need to make sure, whether you have installed
 
 * DotNetCore 2.0 [x86 Installer](https://download.microsoft.com/download/0/F/D/0FD852A4-7EA1-4E2A-983A-0484AC19B92C/dotnet-sdk-2.0.0-win-x86.exe).
 
-#### Configure Syncfusion UI Components in ASP.NET Core Application:
+### Configure Syncfusion UI Components in ASP.NET Core Application:
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
 
@@ -125,9 +123,9 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
 
    ![](getting-started_images/getting-started_image4.png)
 
-### Using Command Prompt with Visual Studio Code
+## ASP.NET Core 2.0 Application Using Command Prompt with Visual Studio Code
 
-#### System Requirements:
+### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
 
@@ -163,7 +161,7 @@ dotnet new mvc
   ![](getting-started_images/getting-started_image21.png)
 
 
-#### Configure Syncfusion Components in ASP.NET Core Application
+### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
@@ -276,9 +274,9 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
   ![](getting-started_images/getting-started_image27.png)
 
 
-### Using Yeoman with Visual Studio Code:
+## ASP.NET Core 2.0 Application Using Yeoman with Visual Studio Code:
 
-#### System Requirements:
+### System Requirements:
 
 * Visual Studio [Code](https://code.visualstudio.com/#)
 
@@ -326,7 +324,7 @@ yo aspnet
 
 * And then provide the project name or simply press the enter key to create the project with default name.
 
-#### Configure Syncfusion Components in ASP.NET Core Application
+### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
