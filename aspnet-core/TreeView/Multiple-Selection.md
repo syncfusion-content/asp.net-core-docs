@@ -21,11 +21,11 @@ In the controller page, create a data list that contains the details about tree 
 		List<LoadData> tree1 = new List<LoadData>();
 		public ActionResult Index()
 		{
-			tree1.Add(new LoadData { Id = 1, Parent = 0, Text = "Item 1" });
+			tree1.Add(new LoadData { Id = 1, Parent = 0, Text = "Item 1",selected=true });
 			tree1.Add(new LoadData { Id = 2, Parent = 0, Text = "Item 2" });
 			tree1.Add(new LoadData { Id = 3, Parent = 0, Text = "Item 3" });
 			tree1.Add(new LoadData { Id = 4, Parent = 0, Text = "Item 4" });
-			tree1.Add(new LoadData { Id = 5, Parent = 1, Text = "Item 1.1" });
+			tree1.Add(new LoadData { Id = 5, Parent = 1, Text = "Item 1.1", ,selected=true });
 			tree1.Add(new LoadData { Id = 6, Parent = 1, Text = "Item 1.2" });
 			tree1.Add(new LoadData { Id = 7, Parent = 1, Text = "Item 1.3" });
 			tree1.Add(new LoadData { Id = 8, Parent = 3, Text = "Item 3.1" });
@@ -54,6 +54,8 @@ In the view page, add the below code and map the properties defined in to the co
 	
 {% endhighlight %}
 
+By running the above code, output will be below.
+![](Fullrowselection_images/multiselect.png)
 ## Select Nodes
 
 To select more than one nodes of TreeView, you can use [selectedNodes](http://help.syncfusion.com/js/api/ejtreeview#members:selectednodes) property. It will select the TreeView nodes from the given indexes.
