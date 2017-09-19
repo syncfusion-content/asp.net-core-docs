@@ -58,6 +58,15 @@ represents the dragged node to be dropped in between the nodes as siblings
 </tr>
 </table>
 
+While dragged node to be added as child of targeted node,it will look like below.
+![](Drag_drop_images/plus.png) 
+
+While dragged node not to be dropped at the hovered region, it will look like below.
+![](Drag_drop_images/minus.png)
+
+While dragged node to be dropped in between the nodes as siblings, it will look like below.
+![](Drag_drop_images/sibling.png)
+
 ## Restriction
 
 You can restrict the dragged nodes to be dropped at siblings or children’s level by using **AllowDropSibling** and **AllowDropChild** properties.
@@ -120,6 +129,8 @@ In the view page, add the below code and map the properties defined in to the c
       <ej-tree-view id="treeview2" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true"><e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
 
     {% endhighlight %}
+
+![](Drag_drop_images/twocontrols.png)
 
 ## Auto node structuring
 
