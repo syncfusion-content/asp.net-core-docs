@@ -20,6 +20,9 @@ TreeView supports tristate checkboxes in addition with standard two state checkb
 
     {% endhighlight %}
     
+By running the above code, output will be look like below image.
+![](Checkboxes_images/checkbox_images_img1.png)
+
 ## Auto Checkable
 
 By default checkbox state of child nodes depends up on parent node checkbox state and also parent node state gets updated based on child nodes state. You can turn off this option by setting **AutoCheck** as false to make independent parent and child nodes checkboxes. 

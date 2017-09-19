@@ -69,19 +69,19 @@ In the view page, specify template format and add the below code.
     {% highlight razor %}
     
     <script id="treeTemplate" type="text/x-jsrender">
-        {{"{{"}}if HasChild{{}}}}
-        <div class={{"{{"}}>Cls{{}}}}>{{"{{"}}>Name{{}}}}</div>
-        {{"{{"}}else{{}}}}
+        {{if HasChild}}
+        <div class={{>Cls}}>{{>Name}}</div>
+        {{else}}
         <div class="cont-list">
-            <img class="con-img" src="http://mvc.syncfusion.com/demos/web/images/treeview/template-image-{{"{{"}}>ImgId{{}}}}.png" />
+            <img class="con-img" src="http://mvc.syncfusion.com/demos/web/images/treeview/template-image-{{>ImgId}}.png" />
             <div class="cont-del"></div>
-            <b>{{"{{"}}>Name{{}}}}</b><br />
-            <span>{{"{{"}}>City{{}}}}</span>
+            <b>{{>Name}}</b><br />
+            <span>{{>City}}</span>
             <br />
-            <span>{{"{{"}}>Phone{{}}}}</span>
+            <span>{{>Phone}}</span>
         </div>
         <div class="treeFooter"></div>
-        {{"{{"}}/if{{}}}}
+        {{/if}}
     
     </script>
     
@@ -162,6 +162,9 @@ In the view page, specify template format and add the below code.
     </script>
     
     {% endhighlight %}
+
+By running the above code, output will look like below,
+![](Template_images/template.png)
 
 **Custom action in nodes**
 
