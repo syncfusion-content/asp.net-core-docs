@@ -71,6 +71,9 @@ In the view page, add the below code and map the properties defined in to the co
 
 {% endhighlight %}
 
+By running the above code, output will look like below.
+![](Fullrowselection_images/selection1.png)
+
 ## Customization
 
 You can customize the TreeView full row selection for template support by using **CssClass** property. Based on this custom class, you can customize the height of the highlighting TreeView node.
@@ -117,10 +120,10 @@ In the view page, add the below code and map the properties defined in to the co
 
 <script id="treeTemplate" type="text/x-jsrender">
 
-    {{"{{"}}if !hasChild{{}}}}
-    <span class="con-img {{"{{"}}>cls{{}}}}"></span>
-    {{"{{"}}/if{{}}}}
-    {{"{{"}}>name{{}}}}
+    {{if !hasChild}}
+    <span class="con-img {{>cls}}"></span>
+    {{/if}}
+    {{>name}}
 
 </script>
 	
@@ -178,3 +181,6 @@ In the view page, add the below code and map the properties defined in to the co
 </style>
 
 {% endhighlight %}
+
+By running the above code, output will be below.
+![](Fullrowselection_images/custom.png)
