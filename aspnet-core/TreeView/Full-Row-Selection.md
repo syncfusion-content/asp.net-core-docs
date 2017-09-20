@@ -120,10 +120,10 @@ In the view page, add the below code and map the properties defined in to the co
 
 <script id="treeTemplate" type="text/x-jsrender">
 
-    {{if !hasChild}}
-    <span class="con-img {{>cls}}"></span>
-    {{/if}}
-    {{>name}}
+    {{"{{"}}if !hasChild{{}}}}
+    <span class="con-img {{"{{"}}>cls{{}}}}"></span>
+    {{"{{"}}/if{{}}}}
+    {{"{{"}}>name{{}}}}
 
 </script>
 	

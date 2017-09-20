@@ -56,6 +56,8 @@ In the view page, add the below code and map the properties defined in to the co
 
 By running the above code, output will be below.
 ![](Fullrowselection_images/multiselect.png)
+
+
 ## Select Nodes
 
 To select more than one nodes of TreeView, you can use [selectedNodes](http://help.syncfusion.com/js/api/ejtreeview#members:selectednodes) property. It will select the TreeView nodes from the given indexes.
