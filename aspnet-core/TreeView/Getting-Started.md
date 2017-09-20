@@ -54,7 +54,7 @@ In the view page, add TreeView helper as shown below. It will render the TreeVie
 By running the above code, output will like below image,
 ![](Getting_started_images/getting_started_img1.png)
 
-##Render TreeView using Razor Syntax   
+## Render TreeView using Razor Syntax   
 
 You can create a tree using “Items” API of TreeView control. Here there is no necessary to use a data source for rendering TreeView.
 
@@ -201,6 +201,8 @@ Above data can be directly assigned to DataSource property and mapping data fiel
     
 By running the above code, result will like below image,
 ![](Getting_started_images/getting_started_img3.png)
+
+
 ## Create Instance for TreeView
 
 You can create an instance for existing TreeView in following ways. Once a reference has been established, you can use the [API’s](http://help.syncfusion.com/js/api/ejtreeview) of TreeView to control its behavior.
