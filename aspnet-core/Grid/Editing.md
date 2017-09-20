@@ -1217,7 +1217,7 @@ __Parameters__ __Table__
                 added
             </td>
             <td rowspan="3">
-                public ActionResult BatchUpdate(string action, List &lt;CRUDModel<Orders>&gt; added, List &lt;CRUDModel<Orders>&gt; changed, List &lt;CRUDModel<Orders>&gt; deleted, int? key){ }
+                public ActionResult BatchUpdate([FromBody]CRUDModel&lt;OrderDetails&gt; myObject) { }
             </td>
         </tr>
         <tr>
@@ -1402,7 +1402,7 @@ The following code example describes the above behavior.
 
 {% highlight c# %}
 
-        public ActionResult BatchUpdate(string action, List<CRUDModel<Orders>> added, List<CRUDModel<Orders>> changed, List<CRUDModel<Orders>> deleted, int? key)
+        public ActionResult BatchUpdate([FromBody]CRUDModel<OrderDetails> myObject)
         {
             //Save the batch changes in database
             return null;
