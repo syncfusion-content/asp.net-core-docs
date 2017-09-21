@@ -9,7 +9,7 @@ documentation: ug
 
 # Separators
 
-Menu can also contain separators that are horizontal bars between menu items. You cannot select a separator. Separators are somewhat similar to [borders](http://docs.oracle.com/javase/tutorial/uiswing/components/border.html), except that they are genuine components and, as such, are drawn inside a control, rather than around the edges of the Menu control. EnableSeparator is the property that is used to display the separators in the Menu control. It accepts the Boolean type value. Its default value is true. 
+Separators can be added to menu items to display a horizontal bars between menu items. Separators are similar to borders and cannot be selected.**enableSeparator** is the property that is used to display the separators in the Menu control. It accepts Boolean type value. Its default value is true. 
 
 1. Add the following code in your view page.
 
