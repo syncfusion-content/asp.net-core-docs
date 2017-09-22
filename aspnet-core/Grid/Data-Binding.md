@@ -184,10 +184,11 @@ The following code example describes the above behavior.
             public object Get()
             {
                 var queryString = Request.Query;
-                int skip = Convert.ToInt32(queryString["$skip"]);
-                int take = Convert.ToInt32(queryString["$top"]);
-                var data = _context.Orders.ToList();
-                return new { Items = data.Skip(skip).Take(take), Count = data.Count() };
+                StringValues Skip;
+                StringValues Take;
+                int skip = (queryString.TryGetValue("$skip", out Skip)) ? Convert.ToInt32(Skip[0]) : 0;
+                int top = (queryString.TryGetValue("$top", out Take)) ? Convert.ToInt32(Take[0]) : 12;
+                return new { Items = _context.Orders.Skip(skip).Take(top), Count = _context.Orders.Count() };
             }
         }
     
