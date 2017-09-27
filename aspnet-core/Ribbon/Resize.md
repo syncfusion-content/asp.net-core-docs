@@ -190,7 +190,7 @@ Set `IsResponsive` as true to enable responsive mode in Ribbon.
            width: 205,
            contentType: "textandimage",
            imagePosition: "imagetop",
-           prefixIcon: "e-blank e-infopageicon"
+           prefixIcon: "e-icon e-blank e-infopageicon"
          });
      </script>
      } 
