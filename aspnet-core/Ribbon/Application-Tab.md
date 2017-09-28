@@ -213,7 +213,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
            width: 205,
            contentType: "textandimage",
            imagePosition: "imagetop",
-           prefixIcon: "e-blank e-infopageicon"
+           prefixIcon: "e-icon e-blank e-infopageicon"
          });
      </script>
    }

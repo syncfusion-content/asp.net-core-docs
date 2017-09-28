@@ -115,7 +115,7 @@ Set `enable-on-demand` as true to enable load tab and backstage contents dynamic
            width: 205,
            contentType: "textandimage",
            imagePosition: "imagetop",
-           prefixIcon: "e-blank e-infopageicon"
+           prefixIcon: "e-icon e-blank e-infopageicon"
          });
 </script>
 }
@@ -263,7 +263,7 @@ While using initially collapsible ribbon with `enable-on-demand` feature improve
            width: 205,
            contentType: "textandimage",
            imagePosition: "imagetop",
-           prefixIcon: "e-blank e-infopageicon"
+           prefixIcon: "e-icon e-blank e-infopageicon"
          });
 </script>
 }
