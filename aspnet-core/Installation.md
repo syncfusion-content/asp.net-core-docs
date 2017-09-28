@@ -18,6 +18,8 @@ documentation: ug
 
 Syncfusion ASP.NET Core NuGet packages are available [here](http://nuget.syncfusion.com/package/aspnetcore).
 
+N> If you wish to use the ASP.NET Core NuGet packages then Essential Studio or ASP.NET Core platform installation not required to implement with Syncfusion ASP.NET Core controls. 
+
 ### NuGet Configuration  
 
 Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
