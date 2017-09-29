@@ -165,4 +165,4 @@ namespace SyncfusionMvcApplication1.Controllers
 {% endhighlight %}
 {% endtabs %}  
 
-![](Toolbar_images/Toolbar_img3.png)
+![](Toolbar_images/Toolbar_img4.png)
