@@ -74,7 +74,7 @@ To access and process the data back and forth the Scheduler, define it with data
  
     <ej-schedule id="Schedule1" width="100%" height="525px" current-date="new DateTime(2014, 5, 6)" time-zone="UTC -05:00" read-only="true">
         <e-appointment-settings id='"ProgramId"' subject='"ProgramName"' start-time='"ProgramStartTime"' end-time='"ProgramEndTime"' description='"Comments"' all-day='"IsAllDay"' recurrence='"IsRecurrence"' recurrence-rule='"RecurrenceRule"'>
-            <e-datamanager url="Home/GetData" adaptor="UrlAdaptor"></e-datamanager>
+            <e-datamanager url="/Home/GetData" adaptor="UrlAdaptor"></e-datamanager>
         </e-appointment-settings>
     </ej-schedule>
 
