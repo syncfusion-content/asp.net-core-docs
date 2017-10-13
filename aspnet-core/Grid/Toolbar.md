@@ -99,7 +99,7 @@ I> `allow-adding`, `allow-editing` and `allow-deleting` need to be enabled for a
 
 ## Custom Toolbar items
 
-Custom toolbar is used to create your own toolbar items in toolbar. It can add by defining `custom-toolbar-items` in `toolbar-settings`.  Actions for this customized toolbar is defined in `toolbar-click` event.
+Custom toolbar is used to create your own toolbar items in toolbar. Using custom-toolbar-items property of toolbar-settingswe can define our own toolbar items. Actions for this customized toolbar item is defined in toolbar-click event.
 
 {% tabs %}
 {% highlight C# %}
