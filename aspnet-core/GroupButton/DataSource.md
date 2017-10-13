@@ -63,11 +63,25 @@ Below is the sample to code to render the GroupButton JSON dataSource,
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render GroupButton*/
+
 <ej-group-button id="GroupButton" width="100%" group-button-mode="@GroupButtonMode.RadioButton" show-rounded-corner="true" datasource="ViewBag.datasource">
     <e-group-button-fields id="BtnID" text="Text" content-type="ContentType" selected="Selected" />    
 </ej-group-button>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render GroupButton*/
+
+     @{Html.EJ().GroupButton("GroupButton").Width("100%").GroupButtonMode(GroupButtonMode.RadioButton).ShowRoundedCorner(true).Datasource((IEnumerable<Groupbutton_core.ButtonController.Groupbutton>)ViewBag.Model).GroupButtonFields(e => e.Text("text").Selected("Selected")).Render(); }
+
+
+{% endhighlight %}
+
+N> To render the GroupButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 {% highlight c# %}
    

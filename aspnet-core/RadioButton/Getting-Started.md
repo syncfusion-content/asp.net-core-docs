@@ -29,6 +29,8 @@ Essential Studio ASP.NET Core RadioButton widget has a built-in feature to selec
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 <div class="frame">
 	<div>
 		<div >
@@ -118,6 +120,198 @@ Essential Studio ASP.NET Core RadioButton widget has a built-in feature to selec
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+<div class="frame">
+
+    <div>
+
+        <div>
+
+            <br />
+
+            1. What is the Expansion for MVC<br />
+
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio1").Name("rad1").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio1" class="clslab">
+
+                            Model View Controller
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio2").Name("rad1").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio2" class="clslab">
+
+                            Model Virtual Container
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio3").Name("rad1").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio3" class="clslab">
+
+                            Model Visual Controller
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br />
+
+            <br />
+
+            2.What is the Expansion for USB<br />
+
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio4").Name("rad2").Size(RadioButtonSize.Medium).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio4" class="clslab">
+
+                            Universal Serial Bus
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio5").Name("rad2").Size(RadioButtonSize.Medium).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio5" class="clslab">
+
+                            Universal Serial Buffer
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio6").Name("rad2").Size(RadioButtonSize.Medium).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio6" class="clslab">
+
+                            Universal Serialized Buffer
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br />
+
+            <br />
+
+            3.What is the Expansion for JS<br />
+
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio7").Name("rad3").Size(RadioButtonSize.Medium).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio7" class="clslab">
+
+                            Jquery Script
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio8").Name("rad3").Size(RadioButtonSize.Medium).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio8" class="clslab">
+
+                            Java Script
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+
+
+                        @{Html.EJ().RadioButton("Radio9").Name("rad3").Size(RadioButtonSize.Medium).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio9" class="clslab">
+
+                            Json Script
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+
+
+            </table>
+
+            <center>
+
+                <table>
+
+            	@{Html.EJ().Button("Submit").Width("100px").Size(ButtonSize.Large).Text("Submit").ClientSideEvents(s => s.Click("button")).Render(); }
+
+            </center>
+
+            </table>
+
+           <br />
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endhighlight %}
+
+N> To render the RadioButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+
+
 ### Add Script
 
 
@@ -186,6 +380,8 @@ Add the following code example in the index page.
 
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render RadioButton*/
 
 <div class="frame">
 
@@ -340,6 +536,166 @@ Add the following code example in the index page.
 
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+<div class="frame">
+
+    <div>
+
+        <div>
+
+            <br />
+
+            1. Are you a Fresher ?<br />
+
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio1").Name("rad1").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio1" class="clslab">
+
+                            Yes
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio2").Name("rad1").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio2" class="clslab">
+
+                            No
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br />
+
+            <br />
+
+
+
+            2. Do you complete any .NET certification courses ?<br />
+
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio3").Name("rad2").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio1" class="clslab">
+
+                            Yes
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio4").Name("rad2").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio2" class="clslab">
+
+                            No
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br />
+
+            <br />
+
+
+
+            3. Are you interested to work in .NET platform ?<br />
+
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio5").Name("rad3").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio1" class="clslab">
+
+                            Yes
+
+                        </label>
+
+                    </td>
+
+                    <td>
+
+                        @{Html.EJ().RadioButton("Radio6").Name("rad3").Size(RadioButtonSize.Small).Checked(false).Enabled(true).Render(); }
+
+                        <label for="Radio2" class="clslab">
+
+                            No
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br />
+
+            <br />
+
+            <center>
+
+                <table>
+
+                    @{Html.EJ().Button("Submit").Width("100px").Size(ButtonSize.Large).Text("Submit").ClientSideEvents(s => s.Click("button")).Render(); }
+
+            </center>
+
+            </table>
+
+
+
+            <br />
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endhighlight %}
+
 
 ### Add Script
 

@@ -35,6 +35,7 @@ The following steps explains you the details about rendering the Button with abo
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render Button*/
 
 @*Add the code in CSHTML page to configure and initialize the control*@
 
@@ -59,6 +60,27 @@ The following steps explains you the details about rendering the Button with abo
 </div>
 
 {% endhighlight  %}
+
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+<div class="control">
+
+        @{ Html.EJ().Button("button_button").Text("button").ShowRoundedCorner(true).Size(ButtonSize.Mini).Type(ButtonType.Submit).Render(); }
+     <br />
+     <br />
+        @{ Html.EJ().Button("button_submit").Text("submit").ShowRoundedCorner(true).Size(ButtonSize.Mini).Type(ButtonType.Submit).Render(); }
+     <br />
+     <br />
+        @{ Html.EJ().Button("button_reset").Text("reset").ShowRoundedCorner(true).Size(ButtonSize.Mini).Type(ButtonType.Reset).Render(); }
+
+</div>
+
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 

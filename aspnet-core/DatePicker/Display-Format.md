@@ -117,11 +117,24 @@ By default **en-US** culture Date format is "M/d/yyyy".
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*sets en-US culture with specified date format*@
 
         <ej-date-picker id="datePicker" locale="en-US" value="DateTime.Now" date-format="yyyy/dd/MM"></ej-date-picker>
  
 {% endhighlight %}
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+         @{ Html.EJ().DatePicker("datePicker").Locale("en-US").Value(DateTime.Now).DateFormat("yyyy/dd/MM").Render();}
+
+{% endhighlight %}
+
+N> To render the DatePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 To get the culture and date format of DatePicker, refer the below code example
 
@@ -150,10 +163,20 @@ EJMVC DatePicker calendar consists of header, day header, days and footer sectio
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*sets the selected header format to display in header*@
 
         <ej-date-picker id="datepick" header-format="yyyy MMMM"></ej-date-picker>
   
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+        @{ Html.EJ().DatePicker("datepick").HeaderFormat("yyyy MMMM").Render();}
 
 {% endhighlight %}
 
@@ -163,10 +186,20 @@ Day header determines the days name to be displayed in terms of short, medium an
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
             @*sets the day header as long*@
 
           <ej-date-picker id="datepick" day-header-format="Long"></ej-date-picker>
   
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+        @{ Html.EJ().DatePicker("datepick").DayHeaderFormat(Header.Long).Render();}
 
 {% endhighlight %}
 
@@ -177,9 +210,19 @@ The EJMVC DatePicker calendar shows tooltip on hovering the date by specifying t
 You can also change the format of tooltip by using [TooltipFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:tooltipformat) property. Below codes example allows to show tooltip and format its value. 
 
 {% highlight cshtml %}
+
+/*ej-Tag Helper code to render DatePicker*/
    
     @*sets and shows tooltip on hovering date on calendar*@
 
       <ej-date-picker id="datepick" show-tooltip="true" tooltip-format="dd/MM/yy"></ej-date-picker>
  
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+        @{ Html.EJ().DatePicker("datepick").ShowTooltip(true).TooltipFormat("dd/MM/yy").Render();}     
+
 {% endhighlight %}

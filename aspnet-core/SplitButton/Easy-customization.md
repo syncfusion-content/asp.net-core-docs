@@ -22,6 +22,8 @@ The following script explains you the details about rendering the Split Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render SplitButton*/
+
 @*Add the code in the CSHTML page to configure and initialize the control*@
 
     @*Set the content for split button control as follows. *@	
@@ -36,6 +38,27 @@ The following script explains you the details about rendering the Split Button w
 </div>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+    @{Html.EJ().SplitButton("spltbutton").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-login").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul11").Render();}
+
+<ul id="Ul11">
+
+    <li><span>User</span></li>
+
+    <li><span>Guest</span></li>
+
+    <li><span>Admin</span></li>
+
+</ul>
+
+
+{% endhighlight %}
+
+N> To render the SplitButton Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 
@@ -80,6 +103,8 @@ The following steps explains you the details about rendering the Split Button wi
 
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render SplitButton*/
 
 @*Add the code in the CSHTML page to configure and initialize the control*@
 
@@ -193,6 +218,126 @@ The following steps explains you the details about rendering the Split Button wi
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+<div class="control">
+
+    <table>
+
+        <tr>
+
+            <td class="btnsht">
+
+                <div class="spltspan">
+
+                    @{Html.EJ().SplitButton("splitButton_normal").Text("login").ShowRoundedCorner(true).Size(ButtonSize.Normal).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-login").TargetID("Ul11").Render(); }
+
+                    <ul id="Ul11">
+
+                        <li><span>User</span></li>
+
+                        <li><span>Guest</span></li>
+
+                        <li><span>Admin</span></li>
+
+                    </ul>
+
+                </div>
+
+            </td>
+
+            <td>
+
+                @{Html.EJ().SplitButton("splitButton_mini").Text("login").ShowRoundedCorner(true).Size(ButtonSize.Mini).TargetID("Ul21").Render(); }
+
+                <ul id="Ul21">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_small").Text("login").ShowRoundedCorner(true).Size(ButtonSize.Small).TargetID("Ul31").Render(); }
+
+                <ul id="Ul31">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_medium").Text("login").ShowRoundedCorner(true).Size(ButtonSize.Medium).TargetID("Ul41").Render(); }
+
+                <ul id="Ul41">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_large").Text("login").ShowRoundedCorner(true).Size(ButtonSize.Large).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-login").TargetID("Ul51").Render(); }
+
+                <ul id="Ul51">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_customSize").Text("login").ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-login").TargetID("Ul61").Height("50").Width("150").Render();}
+
+                <ul id="Ul61">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+
+{% endhighlight %}
+
+
 {% highlight CSS %}
 
 <style type="text/css">
@@ -271,6 +416,8 @@ The following steps explains you the details on rendering the Split Button with 
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render SplitButton*/
+
 //Add the code in the CSHTML page to configure and initialize the control
 
 
@@ -279,102 +426,199 @@ The following steps explains you the details on rendering the Split Button with 
 
 <div class="control">
 
-	<table>
+    <table>
 
-		<tr>
+        <tr>
 
-			<td class="btnsht">
+            <td class="btnsht">
 
-				<div class="spltspan">
+                <div class="spltspan">
+                    <ej-split-button id="spltbutton_imageOnly" text="login" size="Medium" show-rounded-corner="true" content-type="ImageOnly" prefix-icon="e-icon e-handup" target-id="Ul11"></ej-split-button>
+                     <ul id="Ul11">
 
-					@Html.EJ().SplitButton("spltbutton_imageOnly").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-handup").TargetID("Ul11")
+                        <li><span>User</span></li>
 
-					<ul id="Ul11">
+                        <li><span>Guest</span></li>
 
-						<li><span>User</span></li>
+                        <li><span>Admin</span></li>
 
-						<li><span>Guest</span></li>
+                    </ul>
 
-						<li><span>Admin</span></li>
+                </div>
 
-					</ul>
+            </td>
 
-				</div>
+            <td>
+                <ej-split-button id="spltbutton_textOnly" text="login" size="Medium" show-rounded-corner="true" content-type="TextOnly" target-id="Ul21"></ej-split-button>
 
-			</td>
+                   <ul id="Ul21">
 
-			<td>
+                    <li><span>User</span></li>
 
-				@Html.EJ().SplitButton("spltbutton_textOnly").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextOnly).TargetID("Ul21")
+                    <li><span>Guest</span></li>
 
-				<ul id="Ul21">
+                    <li><span>Admin</span></li>
 
-					<li><span>User</span></li>
+                </ul>
 
-					<li><span>Guest</span></li>
+            </td>
 
-					<li><span>Admin</span></li>
+            <td class="btnsht">
+                <ej-split-button id="spltbutton_imageBoth" text="login" size="Medium" show-rounded-corner="true" content-type="ImageBoth" prefix-icon="e-icon e-handup" suffix-icon="e-icon e-palette" target-id="Ul31"></ej-split-button>
 
-				</ul>
+                   <ul id="Ul31">
 
-			</td>
+                    <li><span>User</span></li>
 
-			<td class="btnsht">
+                    <li><span>Guest</span></li>
 
-				@Html.EJ().SplitButton("spltbutton_imageBoth").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.ImageBoth).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").TargetID("Ul31")
+                    <li><span>Admin</span></li>
 
-				<ul id="Ul31">
+                </ul>
 
-					<li><span>User</span></li>
+            </td>
 
-					<li><span>Guest</span></li>
+            <td class="btnsht">
 
-					<li><span>Admin</span></li>
+                <ej-split-button id="spltbutton_textAndImage" text="login" size="Medium" show-rounded-corner="true" content-type="TextAndImage" prefix-icon="e-icon e-handup" target-id="Ul41"></ej-split-button>
 
-				</ul>
+                <ul id="Ul41">
 
-			</td>
+                    <li><span>User</span></li>
 
-			<td class="btnsht">
+                    <li><span>Guest</span></li>
 
-				@Html.EJ().SplitButton("spltbutton_textAndImage").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").TargetID("Ul41")
+                    <li><span>Admin</span></li>
 
-				<ul id="Ul41">
+                </ul>
 
-					<li><span>User</span></li>
+            </td>
 
-					<li><span>Guest</span></li>
+            <td class="btnsht">
+                <ej-split-button id="spltbutton_imageTextImage" text="login" size="Medium" show-rounded-corner="true" content-type="ImageTextImage" prefix-icon="e-icon e-handup" suffix-icon="e-icon e-palette" target-id="Ul51"></ej-split-button>
 
-					<li><span>Admin</span></li>
+                <ul id="Ul51">
 
-				</ul>
+                    <li><span>User</span></li>
 
-			</td>
+                    <li><span>Guest</span></li>
 
-			<td class="btnsht">
+                    <li><span>Admin</span></li>
 
-				@Html.EJ().SplitButton("spltbutton_imageTextImage").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.ImageTextImage).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").TargetID("Ul51")
+                </ul>
 
-				<ul id="Ul51">
+            </td>
 
-					<li><span>User</span></li>
+        </tr>
 
-					<li><span>Guest</span></li>
-
-					<li><span>Admin</span></li>
-
-				</ul>
-
-			</td>
-
-		</tr>
-
-	</table>
+    </table>
 
 </div>
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+<div class="control">
+
+    <table>
+
+        <tr>
+
+            <td class="btnsht">
+
+                <div class="spltspan">
+
+                    @{Html.EJ().SplitButton("splitButton_imageOnly").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-handup").TargetID("Ul11").Render(); }
+
+                    <ul id="Ul11">
+
+                        <li><span>User</span></li>
+
+                        <li><span>Guest</span></li>
+
+                        <li><span>Admin</span></li>
+
+                    </ul>
+
+                </div>
+
+            </td>
+
+            <td>
+
+                @{Html.EJ().SplitButton("splitButton_textOnly").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextOnly).TargetID("Ul211").Render(); }
+
+                <ul id="Ul21">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_imageBoth").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.ImageBoth).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").TargetID("Ul31").Render(); }
+
+                <ul id="Ul31">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_textAndImage").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").TargetID("Ul41").Render(); }
+
+                <ul id="Ul41">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_imageTextImage").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.ImageTextImage).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").TargetID("Ul51").Render(); }
+
+                <ul id="Ul51">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -412,6 +656,8 @@ The following steps explains you the details on rendering the Split Button with 
 
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render SplitButton*/
 
 @*Add the code in the CSHTML page to configure and initialize the control*@
 
@@ -510,6 +756,110 @@ The following steps explains you the details on rendering the Split Button with 
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+<div class="control">
+
+    @*Set the different image position for split button control as follows.*@
+
+    <table>
+
+        <tr>
+
+            <td class="btnsht">
+
+                <div class="spltspan">
+
+                    @{Html.EJ().SplitButton("splitButton_normal_imageLeft").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul11").Render(); }
+
+                    <ul id="Ul11">
+
+                        <li><span>User</span></li>
+
+                        <li><span>Guest</span></li>
+
+                        <li><span>Admin</span></li>
+
+                    </ul>
+
+                </div>
+
+            </td>
+
+            <td>
+
+                @{Html.EJ().SplitButton("splitButton_small_imageLeft").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul21").Render(); }
+
+                <ul id="Ul21">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_medium_imageLeft").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul31").Render(); }
+
+                <ul id="Ul31">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_large_imageLeft").Text("login").Size(ButtonSize.Large).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageRight).TargetID("Ul41").Render(); }
+
+                <ul id="Ul41">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+            <td>
+
+                @{Html.EJ().SplitButton("splitButton_imageBottom").Text("login").Size(ButtonSize.Normal).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageBottom).TargetID("Ul101").Height("60").Render(); }
+
+                <ul id="Ul101">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -544,6 +894,8 @@ The following steps explains you the details about rendering the Split Button wi
 1. In the VIEW page, add the following button elements to configure Split Button widget.
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render SplitButton*/
 
 	@*Add the code in the CSHTML page to configure and initialize the control*@
 
@@ -624,7 +976,95 @@ The following steps explains you the details about rendering the Split Button wi
     </div>
 
 {% endhighlight %}
-  
+
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+<div class="control">
+
+    @*Set Custom CSS class for split button control as follows*@
+
+    <table>
+
+        <tr>
+
+            <td class="btnsht">
+
+                <div class="spltspan">
+
+                    @{Html.EJ().SplitButton("splitButton_customCSS").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul11").CssClass("customCss1").Render(); }
+
+                    <ul id="Ul11">
+
+                        <li><span>User</span></li>
+
+                        <li><span>Guest</span></li>
+
+                        <li><span>Admin</span></li>
+
+                    </ul>
+
+                </div>
+
+            </td>
+
+            <td>
+
+                @{Html.EJ().SplitButton("splitButton_customCSS").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul21").CssClass("customCss2").Render(); }
+
+                <ul id="Ul21">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+                
+                @{Html.EJ().SplitButton("splitButton_customCSS").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).TargetID("Ul31").CssClass("customCss3").Render(); }
+
+                <ul id="Ul31">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+
+            <td class="btnsht">
+
+                @{Html.EJ().SplitButton("splitButton_customCSS").Text("login").Size(ButtonSize.Large).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageRight).TargetID("Ul41").CssClass("customCss4").Render();}
+
+                <ul id="Ul41">
+
+                    <li><span>User</span></li>
+
+                    <li><span>Guest</span></li>
+
+                    <li><span>Admin</span></li>
+
+                </ul>
+
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+{% endhighlight %}
+ 
 
 2. Configure the CSS styles to apply on buttons
 

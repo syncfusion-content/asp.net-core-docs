@@ -17,11 +17,24 @@ Refer below code to start Wednesday as start day.
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*sets start day as Wednesday in calendar*@
 
-        @Html.EJ().DatePicker("datepick").StartDay(3)
+     <ej-date-picker id="datepick" start-day="3"></ej-date-picker>
 
 {% endhighlight %}
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+         @{Html.EJ().DatePicker("datepick").StartDay(3).Render(); }
+
+{% endhighlight %}
+
+N> To render the DatePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 
 ## Step Months
@@ -31,10 +44,19 @@ The EJMVC DatePicker calendar allows you to quick navigate back and forth from o
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*skips the one months from current month(July to Sept to Nov)*@
 
-        @Html.EJ().DatePicker("datepick").StepMonths(2)
+         <ej-date-picker id="datepick" step-months="2"></ej-date-picker>
 
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+         @{Html.EJ().DatePicker("datepick").StepMonths(2).Render(); }
 
 {% endhighlight %}
 
@@ -46,9 +68,19 @@ You can make EJMVC DatePicker as read only by setting [ReadOnly](http://help.syn
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*sets DatePicker as read only*@
 
-        @Html.EJ().DatePicker("datepick").ReadOnly(true)
+        <ej-date-picker id="datepick" read-only="true"></ej-date-picker>
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+         @{Html.EJ().DatePicker("datepick").ReadOnly(true).Render(); }
 
 {% endhighlight %}
 
@@ -60,10 +92,22 @@ You can enable or disable the EJMVC DatePicker textbox by using [Enabled](http:/
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*disables the DatePicker textbox*@
 
-        @Html.EJ().DatePicker("datepick").Enabled(false)
-    
+         <ej-date-picker id="datepick" enabled="false"></ej-date-picker>    
 
 {% endhighlight %}
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+        @{Html.EJ().DatePicker("datepick").Enabled(false).Render(); }
+
+
+{% endhighlight %}
+
 

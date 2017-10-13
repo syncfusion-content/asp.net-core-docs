@@ -38,6 +38,8 @@ The following steps explains you the details about rendering the Toggle Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ToggleButton*/
+
 @*Add the code in CSHTML page to configure the widget and initialize the control*@
 
 
@@ -74,6 +76,45 @@ The following steps explains you the details about rendering the Toggle Button w
 
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ToggleButton*/
+
+<div class="one">
+
+    @*set toggle button type using type property*@
+
+    <table>
+
+        <tr>
+
+            <td class="btnsht">
+
+                @{Html.EJ().ToggleButton("toggleButton_button").Size(ButtonSize.Mini).ShowRoundedCorner(true).ContentType(ContentType.TextOnly).DefaultText("Button").ActiveText("Next").Type(ButtonType.Button).Render(); }
+
+            </td>
+
+             <td class="btnsht">
+
+                @{Html.EJ().ToggleButton("toggleButton_submit").Size(ButtonSize.Mini).ShowRoundedCorner(true).ContentType(ContentType.TextOnly).DefaultText("Submit").ActiveText("Next").Type(ButtonType.Submit).Render(); }
+
+            </td>
+            <td class="btnsht">
+
+                @{Html.EJ().ToggleButton("toggleButton_reset").Size(ButtonSize.Mini).ShowRoundedCorner(true).ContentType(ContentType.TextOnly).DefaultText("Reset").ActiveText("Next").Type(ButtonType.Reset).Render(); }
+
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+{% endhighlight %}
+
+N> To render the ToggleButton Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 
 Execute the above code to render the following output.

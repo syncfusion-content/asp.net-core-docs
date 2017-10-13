@@ -40,10 +40,22 @@ The following steps explains you on how to enable Locale property for TimePicker
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render TimePicker*/
+
 @*Add the following code example to the corresponding CSHTML page to render TimePicker widget with Spanish culture*@
  <ej-time-picker id="time" locale="es-ES"></ej-time-picker>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render TimePicker*/
+
+    @{Html.EJ().TimePicker("time").Locale("es-ES").Render();}   
+
+{% endhighlight %}
+
+N> To render the TimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 

@@ -19,6 +19,8 @@ Set Id for Radio Button control as follows.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 @*set new id value as follows*@
 
     <ej-radio-button id="radiobutton"  name="Gender" size="@RadioButtonSize.Small" checked="true"/>
@@ -28,6 +30,20 @@ Set Id for Radio Button control as follows.
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+    @{Html.EJ().RadioButton("radiobutton").Id("male_type").Name("Gender").Size(RadioButtonSize.Small).Checked(true).Render(); }
+
+    <br />
+
+    @{Html.EJ().RadioButton("radiobutton1").Id("female_type").Size(RadioButtonSize.Small).Checked(false).Name("Gender").Render();}
+
+
+{% endhighlight %}
+
+N> To render the RadioButton Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 ## Radio Button Prefix id
 
@@ -39,6 +55,8 @@ Setting a new prefix id for Radio Button control is as follows.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 @*set new idPrefix  value as follows*@
 
     <ej-radio-button id="radiobutton"  name="Gender" size="@RadioButtonSize.Small" checked="true" id-prefix="sync_" text="Male" enable-rtl="true" />
@@ -49,6 +67,18 @@ Setting a new prefix id for Radio Button control is as follows.
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+    @{Html.EJ().RadioButton("radiobutton").IdPrefix("sync_").Name("Gender").Size(RadioButtonSize.Small).Checked(true).Text("Male").EnableRTL(true).Render(); }
+
+    <br />
+
+    @{Html.EJ().RadioButton("radiobutton1").IdPrefix("sync_").Name("Gender").Size(RadioButtonSize.Small).Checked(false).Text("Female").EnableRTL(true).Render(); }
+
+
+{% endhighlight %}
 
 
 ## Radio Button Name
@@ -70,6 +100,8 @@ Set name and value for each radio button control as follows.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 @*set name and value for each radio button as follows*@
     <ej-radio-button id="radiobutton"  name="Gender" size="@RadioButtonSize.Small" checked="true"  value="Male" />
 
@@ -77,3 +109,17 @@ Set name and value for each radio button control as follows.
     <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false" value="Female" />
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+    @{Html.EJ().RadioButton("radiobutton").Name("Gender").Value("male").Size(RadioButtonSize.Small).Checked(true).Render();}
+
+    <br />
+
+    @{Html.EJ().RadioButton("radiobutton1").Name("Gender").Value("female").Size(RadioButtonSize.Small).Checked(false).Render();}
+
+
+{% endhighlight %}
+
