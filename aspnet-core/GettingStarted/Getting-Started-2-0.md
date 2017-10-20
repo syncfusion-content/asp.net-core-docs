@@ -52,8 +52,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 ![](getting-started_images/getting-started_image2.png)
 
-* Then the packages will get installed and it will be automatically reffered to your application. Open your **bower.json** file and specify our bower name **"syncfusion-javascript"** and the value
-with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure will look like in below structure.
+* Then the packages will get installed and it will be automatically referred to your application. Open your **bower.json** file and specify our bower name **"syncfusion-javascript"** and the value with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure will look like in below structure.
 
 ![](getting-started_images/getting-started_image3.png)
 
