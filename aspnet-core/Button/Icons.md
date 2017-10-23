@@ -24,19 +24,35 @@ Also in the button sample, you can use the icon class names as follows,
 
 {% highlight CSHTML %}
 
-
-<ej-button id="button" size="Small" content-type="ImageOnly" prefix-icon="e-icon e-handup"/>
-
-
-<ej-split-button id="splitButton" content-type="ImageOnly" width="90px" prefix-icon="e-icon e-calender"/>
+/*ej-Tag Helper code to render Button*/
 
 
-<ej-toggle-button id="toggleButton" size="Small" content-type="ImageOnly" default-prefix-icon="e-icon e-mediaplay" default-suffix-icon="e-icon e-mediapause"/>
+<ej-button id="button" size="Small" content-type="ImageOnly" prefix-icon="e-icon e-handup" show-rounded-corner="true" />
+
+
+<ej-split-button id="splitButton" content-type="ImageOnly" width="90px" prefix-icon="e-icon e-calender" show-rounded-corner="true" />
+
+
+<ej-toggle-button id="toggleButton" size="Small" content-type="ImageOnly" show-rounded-corner="true"  default-prefix-icon="e-icon e-mediaplay" default-suffix-icon="e-icon e-mediapause"/>
 
 
 {% endhighlight %}
 
 
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+     @{  Html.EJ().Button("button").Size(ButtonSize.Small).ContentType(ContentType.ImageOnly).ShowRoundedCorner(true).PrefixIcon("e-icon e-handup").Render(); }
+
+     @{ Html.EJ().SplitButton("splitButton").ContentType(ContentType.ImageOnly).Width("90px").ShowRoundedCorner(true).PrefixIcon("e-icon e-calender").Render(); }
+
+     @{ Html.EJ().ToggleButton("toggleButton").Size(ButtonSize.Small).ContentType(ContentType.ImageOnly).ShowRoundedCorner(true).DefaultPrefixIcon("e-icon e-mediaplay").DefaultSuffixIcon("e-icon e-mediapause").Render(); }
+
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 

@@ -37,14 +37,28 @@ The following list is of the twelve themes supported by DateTimePicker:
 1. Add the following code in your CSHTML page to render DateTimePicker widget. 
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render DateTimePicker*/
    
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with right to left appearance*@
 
-	@Html.EJ().DateTimePicker("DateTime").Width("175px")
+     <ej-date-time-picker id="DateTime" width="175px"></ej-date-time-picker>
 
 {% endhighlight %}
+
    
-   
+     <ej-date-time-picker id="DateTime2" css-class="Purple-dark"></ej-date-time-picker>
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+     @{Html.EJ().DateTimePicker("dt").CssClass("Purple-dark").Render(); }
+
+{% endhighlight %}
+
+N> To render the DateTimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
    
 
 2. The following screenshot displays the output for the above code.

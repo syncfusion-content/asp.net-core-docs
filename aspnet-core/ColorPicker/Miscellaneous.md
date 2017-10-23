@@ -18,6 +18,8 @@ The getValue() method in ColorPicker returns the hexadecimal value.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
   <ej-color-picker id="colorPicker" value="#278787"> </ej-color-picker>
 
@@ -36,6 +38,16 @@ The getValue() method in ColorPicker returns the hexadecimal value.
 
 {% endtabs %}  
 
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+	@{Html.EJ().ColorPicker("colorPicker").Render();}
+
+{% endhighlight %}
+
+N> To render the ColorPicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 ## setValue
 
 The setValue() method in ColorPicker is used to set the color value. The given value is in hexadecimal form.
@@ -44,6 +56,8 @@ The setValue() method in ColorPicker is used to set the color value. The given v
 {% tabs %}
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render ColorPicker*/
 
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
   <ej-color-picker id="colorPicker"> </ej-color-picker>
@@ -62,7 +76,16 @@ The setValue() method in ColorPicker is used to set the color value. The given v
 
 {% endhighlight  %}
 
-{% endtabs %}  
+{% endtabs %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+	@{Html.EJ().ColorPicker("colorPicker").Render();}
+
+{% endhighlight %}
+
 ## getColor
 
 The getColor() method in ColorPicker control returns the color value in r,g,b,a form.
@@ -74,6 +97,9 @@ The getColor() method in ColorPicker control returns the color value in r,g,b,a 
 
 
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@ 
+
+/*ej-Tag Helper code to render ColorPicker*/
+
  <ej-color-picker id="colorPicker" value="#278787"> </ej-color-picker>
 
 {% endhighlight  %}
@@ -91,3 +117,11 @@ The getColor() method in ColorPicker control returns the color value in r,g,b,a 
 {% endhighlight  %}
 
 {% endtabs %}  
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+@{Html.EJ().ColorPicker("colorPicker").Render();}
+
+{% endhighlight %}

@@ -17,6 +17,8 @@ The following steps explains you the details about rendering the button with Rig
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render SplitButton*/
+
 @*Add the code in the CSHTML page to configure and initialize the control*@
 
 @*Enable the alignment format for split button control as follows.*@
@@ -40,6 +42,29 @@ The following steps explains you the details about rendering the button with Rig
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+<div class="spltspan">
+
+    @{Html.EJ().SplitButton("dropdownbtn").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-login").TargetID("menu1").EnableRTL(true).Render();   }
+
+    <ul id="menu1">
+
+        <li><span>User</span></li>
+
+        <li><span>Guest</span></li>
+
+        <li><span>Admin</span></li>
+
+    </ul>
+
+</div>
+
+{% endhighlight %}
+
+N> To render the SplitButton Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 

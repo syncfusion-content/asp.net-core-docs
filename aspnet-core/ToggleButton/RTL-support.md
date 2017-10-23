@@ -18,6 +18,8 @@ The following steps explains you the details about rendering the Toggle Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ToggleButton*/
+
 //Add the code in CSHTML page to configure the widget and initialize the control
 
 <div class="one">
@@ -29,6 +31,18 @@ The following steps explains you the details about rendering the Toggle Button w
 </div>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ToggleButton*/
+
+	@{Html.EJ().ToggleButton("toggleButton_preventToggle").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).DefaultText("Play").ActiveText("Next").DefaultPrefixIcon("e-icon e-mediaplay").ActivePrefixIcon("e-icon e-medianext").EnableRTL(true).Render();}
+
+
+{% endhighlight %}
+
+N> To render the ToggleButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 In above mentioned code example PrefixIcon property is used and the icon that is to be on left side, (before text) is rendered on right side as EnableRTL property is used with PrefixIcon. Consequently, the alignment is changed in right to left order.
 

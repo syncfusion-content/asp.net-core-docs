@@ -26,6 +26,8 @@ Essential ASP.NET Core DatePicker allows you to restrict date selection in speci
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     @*handler to listen each date create*@
 
     <ej-date-picker id="datepick" before-date-create="restrictDate"></ej-date-picker>
@@ -47,11 +49,38 @@ Essential ASP.NET Core DatePicker allows you to restrict date selection in speci
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{Html.EJ().DatePicker("datepick").ClientSideEvents(clientSideEvent => clientSideEvent.BeforeDateCreate("restrictDate")).Render(); }
+
+    <script>   
+   
+    //event get triggered for each date create.
+    function restrictDate(args) {
+       //date to disable in calendar to restrict selection.
+       var disableDate = new Date("09/22/2015"); 
+       //compares two and adds the disable class.
+       if (+args.date === +disableDate)                
+           args.element.addClass('e-disable');  
+           // args contains current date and its element.          
+    }
+         
+    </script>
+
+
+{% endhighlight %}
+
+N> To render the DatePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 ## How to integrate with bootstrap grid system? 
 
 Essential ASP.NET Core  DatePicker is responsive control, you have to just set the input element width as 100%. In Bootstrap grid layout use the below code example to get responsive textbox 
 
 {% highlight cshtml %}
+
+/*ej-Tag Helper code to render DatePicker*/
 
     @*sets the width to 100%*@
 
@@ -59,3 +88,14 @@ Essential ASP.NET Core  DatePicker is responsive control, you have to just set t
 
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{Html.EJ().DatePicker("datepick").Width("100%").Render(); }
+
+
+{% endhighlight %}
+
+

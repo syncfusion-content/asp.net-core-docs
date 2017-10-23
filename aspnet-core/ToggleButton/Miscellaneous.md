@@ -19,6 +19,8 @@ The following steps explains you the details about rendering the Toggle Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ToggleButton*/
+
 @*Add the code in CSHTML page to configure the widget and initialize the control*@
 
 <div class="one">
@@ -30,6 +32,23 @@ The following steps explains you the details about rendering the Toggle Button w
 </div>
 
 {%  endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ToggleButton*/
+
+<div class="one">
+
+    @*set rounded corner for toggle button*@
+    
+	@{Html.EJ().ToggleButton("toggleButton_button").Size(ButtonSize.Mini).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).DefaultText("Play").ActiveText("Next").DefaultPrefixIcon("e-icon e-mediaplay").ActivePrefixIcon("e-icon e-medianext").Render();}
+
+</div>
+
+{% endhighlight %}
+
+N> To render the ToggleButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 Execute the above code to render the following output.
 
@@ -48,6 +67,8 @@ The following steps explains you the details about rendering the Toggle Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ToggleButton*/
+
 @*Add the code in CSHTML page to configure the widget and initialize the control*@
 
 <div class="one">
@@ -59,6 +80,23 @@ The following steps explains you the details about rendering the Toggle Button w
 </div>
 	
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ToggleButton*/
+
+<div class="one">
+
+    @* set prevent toggle property for preventing states*@
+
+    @{Html.EJ().ToggleButton("toggleButton_preventToggle").Size(ButtonSize.Small).ContentType(ContentType.TextAndImage).DefaultText("Play").ActiveText("Next").DefaultPrefixIcon("e-icon e-mediaplay").ActivePrefixIcon("e-icon e-medianext").PreventToggle(true).Render();
+    
+    }
+
+</div>
+
+{% endhighlight %}
+
 
 Execute the above code to render the following output.
 

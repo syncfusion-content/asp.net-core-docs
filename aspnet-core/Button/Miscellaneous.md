@@ -21,6 +21,9 @@ The following steps explains you the details about rendering the button with spe
    ~~~ cshtml
 
 
+    /*ej-Tag Helper code to render Button*/
+
+
 	@*Add the code in CSHTML page to configure and initialize the control*@
 
 
@@ -34,6 +37,21 @@ The following steps explains you the details about rendering the button with spe
 	</div>
 
    ~~~
+
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+ <div class="control">
+
+	 @{ Html.EJ().Button("Button").Text("Enter").Size(ButtonSize.Mini).Render(); }
+
+ </div> 
+
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
   
    
 	In the above code, the content of button “button” is replaced by the text value “Enter” that is given using text property.
@@ -55,6 +73,8 @@ The following steps explains you the details about rendering the button with spe
 
    ~~~ cshtml
 
+    /*ej-Tag Helper code to render Button*/
+
 	@*Add the code in CSHTML page to configure and initialize the control*@
 
 	@* Enable the rounded corner for button control as follows.*@
@@ -67,6 +87,18 @@ The following steps explains you the details about rendering the button with spe
 	</div>
    ~~~
   
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+<div class="control">
+
+     @{ Html.EJ().Button("Button").Text("Enter").Size(ButtonSize.Mini).ShowRoundedCorner(true).Render(); }
+
+</div>
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 

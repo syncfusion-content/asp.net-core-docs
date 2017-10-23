@@ -21,12 +21,23 @@ The following steps explains you to change the time format for the TimePicker.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render TimePicker*/
+
 @*Add the following code example to the corresponding CSHTML page to render TimePicker widget with time format*@
 
 <ej-time-picker id="time" time-format="hh:mm:tt ss"></ej-time-picker>
   
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render TimePicker*/
+
+    @{Html.EJ().TimePicker("time").TimeFormat("hh:mm:ss tt").Render();}
+
+{% endhighlight %}
+
+N> To render the TimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 

@@ -31,6 +31,8 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
 
 {% highlight html %}
 
+/*ej-Tag Helper code to render Button*/
+
   <table>
         <tr>
             <td>
@@ -61,9 +63,34 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
             </td>
         <tr>
     </table>
+
 {% endhighlight  %}
 
+{% highlight html %}
 
+/*Razor code to render Button*/
+ 
+    <table>
+      <tr>
+        <td>
+          @{ Html.EJ().ToggleButton("Bold").ActiveText("Pause").DefaultText("Play").ActivePrefixIcon("e-icon e-mediapause").DefaultPrefixIcon("e-icon e-mediaplay").ToggleState(true).ContentType(ContentType.TextAndImage).ShowRoundedCorner(true).Size(ButtonSize.Large).ClientSideEvents(e => e.Create("play").Click("pause").Change("play")).Render(); }
+        </td>
+        <td>
+         @{   Html.EJ().Button("mute").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("Mute").Render();}
+        </td>
+        <td>
+          @{ Html.EJ().Button("unmute").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("UnMute").Render(); }
+        </td>
+        <td>
+          @{ Html.EJ().Button("stop").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("Stop").Render(); }
+        
+        </td>
+     </tr>
+    </table>
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 ### Create Multimedia Player
 
@@ -88,6 +115,8 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
 
 
 {% highlight html %}
+
+/*ej-Tag Helper code to render Button*/
    
 <div class="audiodiv">
 
@@ -138,7 +167,31 @@ Essential ASP.NET Core Button control contains built-in features like Click and 
 </div>
 
 {% endhighlight  %}
-  
+
+{% highlight html %}
+
+/*Razor code to render Button*/
+ 
+    <table>
+      <tr>
+        <td>
+          @{ Html.EJ().ToggleButton("Bold").ActiveText("Pause").DefaultText("Play").ActivePrefixIcon("e-icon e-mediapause").DefaultPrefixIcon("e-icon e-mediaplay").ToggleState(true).ContentType(ContentType.TextAndImage).ShowRoundedCorner(true).Size(ButtonSize.Large).ClientSideEvents(e => e.Create("play").Click("pause").Change("play")).Render(); }
+        </td>
+        <td>
+         @{   Html.EJ().Button("mute").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("Mute").Render();}
+        </td>
+        <td>
+          @{ Html.EJ().Button("unmute").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("UnMute").Render(); }
+        </td>
+        <td>
+          @{ Html.EJ().Button("stop").Size(ButtonSize.Large).ShowRoundedCorner(true).Text("Stop").Render(); }
+        
+        </td>
+     </tr>
+    </table>
+
+{% endhighlight %}
+
 
 3. Add the following event function to script section in your view page to use Button control feature as the Multimedia player control.
 
@@ -217,6 +270,8 @@ In this section, you can learn how to create a Microsoft Office Ribbon used to c
 
 {% highlight html %}
 
+/*ej-Tag Helper code to render Button*/
+
 <table>
    <tr>
      <td>                 
@@ -249,6 +304,27 @@ In this section, you can learn how to create a Microsoft Office Ribbon used to c
 
       </tr>
  </table>
+
+{% endhighlight  %}
+
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+    <table>
+      <tr>
+        <td>
+           @{ Html.EJ().ToggleButton("Bold").Size(ButtonSize.Mini).ShowRoundedCorner(true).DefaultText("<b>B</b>").ActiveText("B").ClientSideEvents(e => e.Click("bold")).Render();  }
+        </td>
+        <td>
+            @{ Html.EJ().ToggleButton("italic").Size(ButtonSize.Mini).ShowRoundedCorner(true).DefaultText("I").ActiveText("<li>I</li>").ClientSideEvents(e => e.Click("italic")).Render();  }
+        </td>
+        <td>
+            @{ Html.EJ().ToggleButton("underline").Size(ButtonSize.Mini).ShowRoundedCorner(true).DefaultText("U").ActiveText("<u>U</u>").ClientSideEvents(e => e.Click("underline")).Render();  }
+        </td>
+     </tr>
+    </table>
+
 
 {% endhighlight  %}
 

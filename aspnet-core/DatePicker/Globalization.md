@@ -44,10 +44,24 @@ Set German culture to DatePicker at initialization.
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     <ej-date-picker id="datepick" locale="de-DE" value="DateTime.Now"></ej-date-picker>
 
 
 {% endhighlight %}
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{Html.EJ().DatePicker("datepick").Value(DateTime.Now).Locale("de-DE").Render(); }
+
+{% endhighlight %}
+
+N> To render the DatePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 ## Watermark and Today Button Text
 
@@ -55,12 +69,24 @@ By default the EJMVC DatePicker input has “select date” as watermark text, y
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     @*sets watermark text and button text*@
 
    <ej-date-picker id="datepick" value="DateTime.Now" watermark-text="enter the date value" button-text="current date"></ej-date-picker>
 
 
 {% endhighlight %}
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{Html.EJ().DatePicker("datepick").Value(DateTime.Now).WatermarkText("enter the date value").ButtonText("current date").Render();}
+
+{% endhighlight %}
+
 
 Based on culture specific, only date gets localized but by changing the watermark and button text, you can completely localize the DatePicker UI too.
 

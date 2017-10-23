@@ -16,6 +16,9 @@ Using checked property, you can set the state of Checkbox. When checked property
 
 {% highlight CSHTML %}
 
+
+/*ej-Tag Helper code to render CheckBox*/
+
 @*Add the code in CSHTML page to configure and initialize the control*@
 
 @* set the state for non Tri-state checkbox using Checked property*@
@@ -29,7 +32,20 @@ Using checked property, you can set the state of Checkbox. When checked property
 
 {% endhighlight %}
 
+{% highlight html %}
 
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").Checked(false).Render();}
+    <label for="checkbox_unchecked" class="clslab">Male</label>
+
+    @{ Html.EJ().CheckBox("checkbox1").Checked(true).Render();}
+    <label for="checkbox_checked" class="clslab">Female</label>
+
+
+{% endhighlight %}
+
+N> To render the CheckBox Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 
@@ -49,6 +65,8 @@ The following steps explains you the details about rendering the Checkbox with T
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*Add the code in CSHTML page to configure and initialize the control*@
 
 @* Enable or disable the Tri-state using enable-tri-stat property *@
@@ -59,6 +77,15 @@ The following steps explains you the details about rendering the Checkbox with T
 
 {% endhighlight %}
 
+{% highlight html %}
+
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox11").EnableTriState(false).Text("Male").Render();}
+    <br />
+    @{ Html.EJ().CheckBox("checkbox12").EnableTriState(true).Text("Female").Render();}
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -95,11 +122,11 @@ The following steps explains you the details about rendering the Checkbox with s
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*Add the code in CSHTML page to configure and initialize the control*@
 
 @*set the state of Tri-state checkbox using CheckState property*@
-
-@Html.EJ().CheckBox("checkbox_check").EnableTriState(true).CheckState(CheckState.Check)
 
     <ej-check-box id="checkbox" enable-tri-state="true" text="Checked state" check-state="@CheckState.Check"/>
     <br />
@@ -110,6 +137,18 @@ The following steps explains you the details about rendering the Checkbox with s
 
 {% endhighlight %}
 
+{% highlight html %}
+
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").EnableTriState(true).Text("Checked state").CheckState(CheckState.Check).Render();}
+    <br />
+    @{ Html.EJ().CheckBox("checkbox1").EnableTriState(true).Text("UnChecked state").CheckState(CheckState.Uncheck).Render();}
+    <br />
+    @{ Html.EJ().CheckBox("checkbox2").EnableTriState(true).Text("Indeterminate state").CheckState(CheckState.Indeterminate).Render();}
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -143,6 +182,7 @@ The following steps explains you the details about rendering the Checkbox with d
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
 
 @*Add the code in CSHTML page to configure and initialize the control*@
 
@@ -155,7 +195,16 @@ The following steps explains you the details about rendering the Checkbox with d
 
 {% endhighlight %}
 
+{% highlight html %}
 
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").Text("small").Size(Size.Small).Render();}
+    <br />
+    @{ Html.EJ().CheckBox("checkbox1").Text("Medium").Size(Size.Medium).Render();}
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -175,6 +224,8 @@ The following steps explains you the details about rendering the Checkbox with t
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*Add the code in CSHTML page to configure and initialize the control*@
 
 @*set text for checkbox using text property *@
@@ -184,7 +235,16 @@ The following steps explains you the details about rendering the Checkbox with t
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
 
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").Text("Male").Render();}
+    <br />
+    @{ Html.EJ().CheckBox("checkbox1").Text("Female").Render();}
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
@@ -202,6 +262,8 @@ The following steps explains you the details about rendering the Checkbox with r
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*Add the code in CSHTML page to configure and initialize the control*@
 
 @*set the rounded corner for checkbox *@
@@ -214,7 +276,16 @@ The following steps explains you the details about rendering the Checkbox with r
 {% endhighlight %}
 
 
+{% highlight CSHTML%}
 
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").Text("checkbox with rounded corner").ShowRoundedCorner(true).Render();}
+    <br />
+    @{ Html.EJ().CheckBox("checkbox1").Text("checkbox without rounded corner").ShowRoundedCorner(false).Render();}
+
+
+{% endhighlight %}
 
 Execute the above code to render the following output.
 
