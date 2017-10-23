@@ -17,6 +17,7 @@ The following steps explain how to change the Split Button as Dropdown Button.
 
  {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render SplitButton*/
 
 	@*Add the code in the CSHTML page to configure and initialize the control*@
 
@@ -37,8 +38,26 @@ The following steps explain how to change the Split Button as Dropdown Button.
 
 {% endhighlight %}
   
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+    @{Html.EJ().SplitButton("dropdownbtn").Text("login").ShowRoundedCorner(true).Size(ButtonSize.Medium).ContentType(ContentType.TextOnly).TargetID("menu").ButtonMode(ButtonMode.Dropdown).Render();}
+
+<ul id="menu">
+
+    <li><span>User</span></li>
+
+    <li><span>Guest</span></li>
+
+    <li><span>Admin</span></li>
+
+</ul>
 
 
+{% endhighlight %}
+
+N> To render the SplitButton Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 2. Execute the above code to render the following output.
 

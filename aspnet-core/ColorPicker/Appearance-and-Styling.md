@@ -47,11 +47,23 @@ In the following code example, the ColorPicker popup model type is set as Palett
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
  <ej-color-picker id="colorPicker" value="#278787" model-type="Palette"></ej-color-picker>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").ModelType(ModelType.Palette).Render(); }
+
+{% endhighlight %}
+
+N> To render the ColorPicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 The following screenshot displays the output of the above code example.
 
@@ -160,11 +172,21 @@ PresetType(PresetsType.CandyCrush)</td></tr>
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
  <ej-color-picker id="colorPicker" value="#278787" model-type="Palette" preset-type="FlatColors"></ej-color-picker>
 
 {% endhighlight  %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").ModelType(ModelType.Palette).PresetType(PresetsType.FlatColors).Render(); }
+
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -183,11 +205,23 @@ The CustomPalette property is a dependent property of Palette and ModelType prop
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
 @{List<String> colors = new List<string>() { "ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff", "cc99ff", "cc66ff", "cc33ff", "cc00ff", "99ffff", "99ccff", "9999ff", "9966ff", "9933ff", "9900ff", "ffffcc", "ffcccc" };}
 
 <ej-color-picker id="colorPicker" value="#278787" model-type="Palette" preset-type="FlatColors" custom="colors"></ej-color-picker>
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+@{List<String> colors = new List<string>() { "ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff", "cc99ff", "cc66ff", "cc33ff", "cc00ff", "99ffff", "99ccff", "9999ff", "9966ff", "9933ff", "9900ff", "ffffcc", "ffcccc" };}
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").ModelType(ModelType.Palette).Palette(PaletteType.CustomPalette).Custom(colors).Render(); }
 
 {% endhighlight %}
 
@@ -211,9 +245,19 @@ The following steps explain you how to get the ColorPicker popup in DisplayInlin
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
   <ej-color-picker id="colorPicker" value="#278787" display-inline="true" tag-name="div"></ej-color-picker>
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").DisplayInline(true).TagName("div").Render();}
 
 {% endhighlight %}
 
@@ -254,6 +298,8 @@ The core style sheet applies styles related to positioning and size, but are not
 
 {% highlight html %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
 <!doctype html>
@@ -291,6 +337,19 @@ The core style sheet applies styles related to positioning and size, but are not
 
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+   <div id="control">
+    
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").Render(); }
+
+
+   </div>                    
+
+{% endhighlight %}
+
 The following screenshot displays the output of the above code example.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
@@ -308,6 +367,7 @@ Using this property you can override the existing styles under the theme style s
    
    ~~~ cshtml
 
+    /*ej-Tag Helper code to render ColorPicker*/
 
 		@*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
@@ -315,6 +375,16 @@ Using this property you can override the existing styles under the theme style s
 
 
    ~~~
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").CssClass("Light-Blue").Render(); }	
+
+
+{% endhighlight %}
+
    {:.prettyprint }
 
 2. Custom CSS Styles.

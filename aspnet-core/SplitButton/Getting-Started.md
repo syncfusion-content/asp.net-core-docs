@@ -25,9 +25,21 @@ Essential ASP.NET Core Split Button control contains built-in features such as C
 
    ~~~ cshtml
 
+/*ej-Tag Helper code to render SplitButton*/   
+
 	<ej-split-button id="sbutton" text="Save" show-rounded-corner="true" size="Large" target-id="target" />
 
    ~~~
+
+{% highlight CSHTML%}
+
+/*Razor code to render SplitButton*/
+
+    @{Html.EJ().SplitButton("sbutton").Text("Save").ShowRoundedCorner(true).Size(ButtonSize.Large).TargetID("target").Render();}
+
+{% endhighlight %}
+
+N> To render the SplitButton Control you can use either Razor or Tag helper code as given in the above code snippet.
   
 
 3. Add the following <UL>, <LI> elements to render Split Button with popup option.

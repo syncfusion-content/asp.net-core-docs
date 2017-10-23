@@ -66,12 +66,24 @@ In the following example, set DateTimeFormat to full datetime format.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DateTimePicker*/
+
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized date time format*@
 	
     <ej-date-time-picker id="DateTime" time-display-format="hh:mm:ss tt" time-popup-width="150" width="300" date-time-format="dddd, MMMM dd, yyyy hh:mm:ss tt"></ej-date-time-picker>
 
 {% endhighlight %}
-   
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+     @{ Html.EJ().DateTimePicker("DateTime").TimePopupWidth(150).TimeDisplayFormat("hh:mm:ss tt").Width("300px").DateTimeFormat("dddd, MMMM dd, yyyy hh:mm:ss tt").Render(); }
+
+{% endhighlight %}
+
+N> To render the Tab Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 2. The following screenshot displays the output for the above code.
 
@@ -115,6 +127,8 @@ You can also customize the format according to your needs. This is achieved by c
 1. Add the following code in your CSHTML page to render DateTimePicker widget.
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render DateTimePicker*/
    
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized day header format*@
 
@@ -122,6 +136,14 @@ You can also customize the format according to your needs. This is achieved by c
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+     @{Html.EJ().DateTimePicker("DateTime").DayHeaderFormat(Header.Long).Value(DateTime.Now).Render(); }
+
+
+{% endhighlight %}
 
 2. The following screenshot displays the output for the above code.
 

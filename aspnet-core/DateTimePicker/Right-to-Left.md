@@ -14,12 +14,25 @@ RTL control supports right-to-left functionality and features for languages th
 1. Add the following code in your CSHTML page to render DateTimePicker widget.
 
 {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render DateTimePicker*/
    
         @*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with right to left appearance*@
 
         <ej-date-time-picker id="DateTime" enable-rtl="true" ></ej-date-time-picker>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+        @{Html.EJ().DateTimePicker("DateTime").EnableRTL(true).Render();}
+
+{% endhighlight %}
+
+N> To render the DateTimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
    
   
 

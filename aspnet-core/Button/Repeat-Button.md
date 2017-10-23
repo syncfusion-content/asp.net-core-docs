@@ -17,6 +17,8 @@ The following steps explains you the details about rendering the Repeat Button.
  
    ~~~ cshtml
 
+    /*ej-Tag Helper code to render Button*/
+
 	@*Add the code in CSHTML page to configure and initialize the control*@
 	@* Enable the button in repeat action mode and specifies time interval.*@
 	<div class="control"> 
@@ -30,6 +32,16 @@ The following steps explains you the details about rendering the Repeat Button.
 	</div>
 
    ~~~
+
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+	 @{ Html.EJ().Button("repeatButton").Text("click").Size(ButtonSize.Mini).ShowRoundedCorner(true).RepeatButton(true).TimeInterval("200").ClientSideEvents(e => e.Click("btnClick")).Render(); }
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
   
    
    ~~~ javascript

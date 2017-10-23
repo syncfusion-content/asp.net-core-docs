@@ -37,9 +37,21 @@ Creating category application involves the following steps:
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
         <ej-color-picker id="CategoryColor" value="#278787"></ej-color-picker>
 
 {% endhighlight %}  
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{ Html.EJ().ColorPicker("CategoryColor").Value("#278787").Render();}
+
+{% endhighlight %}
+
+N> To render the ColorPicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 The above code will render a simple Colorpicker control as shown below.
 
@@ -57,6 +69,8 @@ You can refer to the following link for more information on rendering ListBox co
 1. The following code example is used to create the Priority form using ListBox control and ColorPicker control.
 
 ~~~ html
+
+/*ej-Tag Helper code to render ColorPicker*/
 
 <div class="content-container-fluid">
 
@@ -140,6 +154,91 @@ You can refer to the following link for more information on rendering ListBox co
         </div>
 
 ~~~
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+<div class="content-container-fluid">
+
+    <div class="row">
+
+        <div class="sample-area">
+
+            <div class="frame">
+
+                <div id="control">
+
+                    <ul id="ColorValues1">
+
+                        <li><span class="color high"></span>High</li>
+
+                        <li><span class="color normal"></span>Normal</li>
+
+                        <li><span class="color low"></span>Low</li>
+
+                    </ul>
+
+                    @*Assign default value and client side event*@
+                    @{ Html.EJ().ListBox("selectPriority").TargetID("ColorValues1").Render(); }
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="Properties">
+
+            <table class="prop-grid">
+
+                <tr class="row">
+
+                    <td class="column">
+                        Name
+
+                    </td>
+
+                    <td class="column">
+
+                        <input type="text" id="categoryName" />
+
+                    </td>
+
+                </tr>
+
+                <tr class="row">
+
+                    <td class="column">
+                        Color
+
+                    </td>
+
+                    <td class="column">
+
+                        @*Colorpicker element*@
+                        @*Assign default value and bind client side event*@
+    @{ Html.EJ().ColorPicker("CategoryColor").Value("#278787").ClientSideEvents(e => e.Create("initColorObj")).Render(); }
+                          </td>
+
+                    <td class="column">
+
+                        @*Add button for to add new category*@
+    @{Html.EJ().Button("AddCategory").Text("Add").Width("82px").Height("28px").Type(ButtonType.Button).ClientSideEvents(events => events.Click("addCategoryValue")).Render(); }
+                    </td>
+
+                </tr>
+
+                <tr class="row"></tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endhighlight %}
 
 2. Add the following style section to align form fields.
 

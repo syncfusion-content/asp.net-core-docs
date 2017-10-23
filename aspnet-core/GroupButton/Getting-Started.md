@@ -19,6 +19,8 @@ This section explains you briefly on how to create a GroupButton in your applic
 
 ~~~ html
 
+/*ej-Tag Helper code to render GroupButton*/
+
 <ej-group-button id="GroupButton" width="100%" group-button-mode="@GroupButtonMode.RadioButton" show-rounded-corner="true">
     <e-group-button-items>
         <e-group-button-item text="Day"></e-group-button-item>
@@ -28,6 +30,23 @@ This section explains you briefly on how to create a GroupButton in your applic
 </ej-group-button>
 
 ~~~
+
+{% highlight CSHTML%}
+
+/*Razor code to render GroupButton*/
+
+    @{Html.EJ().GroupButton("GroupButton").GroupButtonMode(GroupButtonMode.RadioButton).ShowRoundedCorner(true).Items(item =>
+    {
+        item.Add().Text("Day");
+        item.Add().Text("Week");
+        item.Add().Text("Month");
+    }).Render();
+    }
+
+{% endhighlight %}
+
+N> To render the GroupButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 Also we can use the dataSource, to create the GroupButton which is explained under the dataSource section in this documentation.
 

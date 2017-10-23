@@ -27,11 +27,24 @@ EJMVC DatePicker provides an option to restrict the user to pick the date from s
 Refer below example to set min and max date range in DatePicker at initialization (You can change the **‘MinDate’** and **‘MaxDate’** value dynamical as like ‘Value’ property)
 
 {% highlight cshtml %}
+
+/*ej-Tag Helper code to render DatePicker*/
    
     @*sets min and max date to be pick able in datepicker*@
       <ej-date-picker id="datepicker" value="@DateTime.Now" min-date="2014/06/03" max-date="2014/06/19"></ej-date-picker>        
         
 {% endhighlight %}
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+    @{Html.EJ().DatePicker("datePicker").Value(DateTime.Now).MinDate("2014/06/03").MaxDate("2014/06/19").Render(); }
+
+{% endhighlight %}
+
+N> To render the DatePicker  Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 N> You can change the **MinDate** and **MaxDate** value dynamically like **Value** property
 
@@ -48,10 +61,21 @@ By default DatePicker starts with month view and can be drill down into year, de
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         @*sets the start view and defines when the DatePicker calendar to return date*@
          <ej-date-picker id="datepicker" value="@DateTime.Now" start-level="Year" depth-level="Year" date-format="MMMM yyyy"></ej-date-picker>      
   
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+      @{ Html.EJ().DatePicker("datepicker").Value(DateTime.Now).StartLevel(Period.Year).DepthLevel(Period.Year).DateFormat("MMMM yyyy").Render(); }
+
+{% endhighlight %}
+
 
 ## Display Inline Mode
 
@@ -60,11 +84,22 @@ Refer below code example to represent DatePicker as calendar.
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     @*sets inline to represent datePicker as DatePicker calendar*@
   <ej-date-picker id="datepicker" value="@DateTime.Now" display-inline="true"></ej-date-picker>      
   
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{ Html.EJ().DatePicker("datepicker").Value(DateTime.Now).DisplayInline(true).Render(); }
+
+{% endhighlight %}
+
 
 ## Strict Mode
 
@@ -76,6 +111,8 @@ By default **EnableStrictMode** is true, so you can enter any value other than
 
 {% highlight cshtml %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     @*sets active strict mode*@
 
     <ej-date-picker id="datepicker" value="@DateTime.Now" enable-strict-mode="false"></ej-date-picker>      
@@ -83,9 +120,21 @@ By default **EnableStrictMode** is true, so you can enter any value other than
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{ Html.EJ().DatePicker("datepicker").Value(DateTime.Now).EnableStrictMode(false).Render(); }
+
+
+{% endhighlight %}
+
+
 You can also override the  **error** class to highlight when invalid date is entered.
 
 {% highlight cshtml %}
+
+/*ej-Tag Helper code to render DatePicker*/
 
     @*sets inactive strict mode*@
 
@@ -93,6 +142,15 @@ You can also override the  **error** class to highlight when invalid date is ent
    
  
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+     @{ Html.EJ().DatePicker("datepicker").Value(DateTime.Now).EnableStrictMode(true).Render(); }
+
+{% endhighlight %}
+
 
 {% highlight css %}
 

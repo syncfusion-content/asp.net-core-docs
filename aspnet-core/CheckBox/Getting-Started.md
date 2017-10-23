@@ -33,6 +33,8 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 
 {% highlight html %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 <div class="frame">
 
 	<div class="control">
@@ -128,6 +130,106 @@ ASP.NET Core Checkbox widget has built-in features like multiple selections. You
 {% endhighlight  %}
 
 
+{% highlight html %}
+
+/*Razor code to render CheckBox*/
+
+<div class="frame">
+
+    <div class="control">
+
+        <div class="chkalign">
+
+            <h4>Hobbies</h4>
+
+            <table>
+
+                <tr>
+                    <td class="chkrad">
+
+                        @{  Html.EJ().CheckBox("check1").Value("Music").Render(); }
+
+                      <label for="check1" class="clslab">
+                    
+                            Music
+
+                        </label>
+
+                    </td>
+
+                    <td class="chkrad">
+
+                        @{ Html.EJ().CheckBox("Checkbox3").Value("Sports").Render(); }
+
+
+                        <label for="Checkbox3" class="clslab">
+
+                            Sports
+
+                        </label>
+
+                    </td>
+
+                    <td class="chkrad">
+
+                        @{ Html.EJ().CheckBox("Checkbox4").Value("Bike Riding").Render(); }
+
+                        <label for="Checkbox4" class="clslab">
+
+                            Bike Riding
+
+                        </label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <h4>Interest List</h4>
+
+            <table>
+
+                <tr>
+
+                    <td class="chkrad">
+
+                        @{ Html.EJ().CheckBox("Checkbox1").Value("Playing Games").Size(Size.Medium).Render(); }
+
+                        <label for="Checkbox1" class="clslab">Playing Games</label>
+
+                    </td>
+
+                    <td class="chkrad">
+
+                        @{ Html.EJ().CheckBox("Checkbox5").Value("Hearing Songs").Size(Size.Medium).Render(); }
+
+                        <label for="Checkbox5" class="clslab">Hearing Songs</label>
+
+                    </td>
+
+                    <td class="chkrad">
+
+                        @{ Html.EJ().CheckBox("Checkbox6").Value("Reading Books").Size(Size.Medium).Render(); }
+
+                        <label for="Checkbox6" class="clslab">Reading Books</label>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endhighlight %}
+
+N> To render the CheckBox Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 
 3. Add the following styles to the corresponding view page to show the Checkbox in horizontal order.
@@ -174,6 +276,7 @@ ASP.NET Core Tri-State Checkbox widget renders by setting EnableTriState propert
 
 {% highlight js %}
 
+/*ej-Tag Helper code to render CheckBox*/
 
 
 <h4>Social networks</h4>
@@ -208,7 +311,37 @@ ASP.NET Core Tri-State Checkbox widget renders by setting EnableTriState propert
 
 {% endhighlight %}
 
+{% highlight html %}
 
+/*Razor code to render CheckBox*/
+
+<table>
+    <tr>
+        <td class="chkrad">
+
+	 @{ Html.EJ().CheckBox("Checkbox2").Value("Facebook").Size(Size.Medium).EnableTriState(true).CheckState(CheckState.Indeterminate).Render(); }
+            <label for="Checkbox2" class="clslab">Facebook</label>
+
+        </td>
+
+        <td class="chkrad">
+
+	 @{ Html.EJ().CheckBox("Checkbox7").Value("GPlus").Size(Size.Medium).EnableTriState(true).CheckState(CheckState.Uncheck).Render(); }
+            <label for="Checkbox7" class="clslab">GPlus</label>
+
+        </td>
+
+        <td class="chkrad">
+
+	 @{ Html.EJ().CheckBox("Checkbox8").Value("Twitter").Size(Size.Medium).EnableTriState(true).CheckState(CheckState.Check).Render();}
+            <label for="Checkbox8" class="clslab">Twitter</label>
+
+        </td>
+    </tr>
+</table>
+
+
+{% endhighlight %}
 
 Run the above code to render the following output.
 
@@ -230,7 +363,57 @@ You can receive the Hobbies and Interest values using Checkbox. You can create a
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 <ej-button id="buttonnormal" text="Submit" size="Normal">
+
+{% endhighlight %}
+
+
+
+ Add the script into your view page.	
+
+
+
+{% highlight js %}
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $("button").click(function () {
+
+            var checkeditem = [];                                               
+
+            $(".e-checkbox").each(function () {
+
+             if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
+
+                 checkeditem.push($("#" + $(this)[0].id).ejCheckBox("option","value"));
+
+             });
+
+            alert(checkeditem);        
+		});
+    });
+
+</script>
+
+
+{% endhighlight %}
+
+{% endtabs %}  
+
+
+{% tabs %}
+
+{% highlight CSHTML %}
+
+/*Razor code to render CheckBox*/
+
+	 @{ Html.EJ().Button("buttonnormal").Text("Submit").Size(ButtonSize.Normal).Render(); }
 
 {% endhighlight %}
 
@@ -291,6 +474,7 @@ You can get the Media Player file type application like video, audio and picture
 
 {% highlight html %}
 
+/*ej-Tag Helper code to render CheckBox*/
 
 			<table>
 
@@ -367,7 +551,83 @@ You can get the Media Player file type application like video, audio and picture
 {% endhighlight  %}
 
 
+{% highlight html %}
 
+/*Razor code to render CheckBox*/
+
+<table>
+
+    <label for="check2" class="clslab">
+
+        Audio
+
+    </label>
+
+    <tr>
+
+        <td class="chkrad">
+
+            @{Html.EJ().CheckBox("Checkboxs3").Value(".mp3").Size(Size.Medium).Render(); }
+
+            <label for="Checkboxs3" class="clslab">
+
+                .mp3
+
+            </label>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td class="chkrad">
+
+            @{Html.EJ().CheckBox("Checkboxs4").Value(".AVI").Size(Size.Medium).Render(); }
+
+            <label for="Checkboxs4" class="clslab">
+
+                .AVI
+
+            </label>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<table>
+
+    <label for="Checkboxs1" class="clslab">Video</label>
+
+    <tr>
+
+        <td class="chkrad">
+
+            @{Html.EJ().CheckBox("Checkboxs5").Value(".mp4").Size(Size.Medium).Render(); }
+
+            <label for="Checkboxs5" class="clslab">.mp4</label>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td class="chkrad">
+
+     @{Html.EJ().CheckBox("Checkboxs6").Value(".wave").Size(Size.Medium).Render(); }
+
+            <label for="Checkboxs6" class="clslab">.wave</label>
+
+        </td>
+
+    </tr>
+
+</table>
+
+{% endhighlight %}
 
 Execute the above code to render the following output.	
 

@@ -32,6 +32,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
    {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render TimePicker*/
 
 	@*Add the following code example to the corresponding CSHTML page to render TimePicker widget*@
 
@@ -102,6 +103,82 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
         </table>
 
    {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render TimePicker*/
+
+<table>
+
+    <tr>
+
+        <td class="table-cell">Date</td>
+
+        <td class="table-cell">Time</td>
+
+        <td class="table-cell">Person</td>
+
+    </tr>
+
+    <tr>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().DatePicker("startDate").Render(); }
+
+            </span>
+
+        </td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().TimePicker("timeStart").Render(); }
+
+            </span>
+
+        </td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().NumericTextbox("NumericTextbox").Value("0").Render(); }
+
+            </span>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td></td>
+
+        <td></td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().Button("Submit").Width("100px").Size(ButtonSize.Small).Text("Submit").ClientSideEvents(s => s.Click("button")).Render(); }
+
+            </span>
+
+        </td>
+
+    </tr>
+
+</table>
+
+
+{% endhighlight %}
+
+N> To render the TimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
    
 3. Add the following styles to show the TimePicker control in horizontal order in the Content folder.
 
@@ -176,6 +253,8 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 1. Add the following code to the corresponding view page to render the TimePicker.
 
    {% highlight CSHTML %}
+
+/*ej-Tag Helper code to render TimePicker*/
 
 	@*Add the following code example to the corresponding CSHTML page to render TimePicker widget*@
 
@@ -260,6 +339,92 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
    {% endhighlight %}
    
+{% highlight CSHTML%}
+
+/*Razor code to render TimePicker*/
+
+<table>
+
+    <tr>
+
+        <td class="table-cell">Date</td>
+
+        <td class="table-cell">StartTime</td>
+
+        <td class="table-cell">EndTime</td>
+
+        <td class="table-cell">Person</td>
+
+    </tr>
+
+    <tr>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().DatePicker("startDate").Value(DateTime.Now).MinDate(DateTime.Now).MaxDate(DateTime.Now.AddDays(1)).Render(); }
+
+            </span>
+
+        </td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().TimePicker("timeStart").MinTime("9:00 AM").MaxTime("10:00 PM").Interval(60).ClientSideEvents(e => e.Select("selectedStartTime")).Render(); }
+
+            </span>
+
+        </td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().TimePicker("timeEnd").MinTime("9:00 AM").MaxTime("10:00 PM").Interval(60).Render(); }
+
+            </span>
+
+        </td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().NumericTextbox("NumericTextbox").Value("0").Render(); }
+
+            </span>
+
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td></td>
+
+        <td></td>
+
+        <td></td>
+
+        <td class="table-cell">
+
+            <span class="inner-display">
+
+                @{Html.EJ().Button("Submit").Width("100px").Size(ButtonSize.Small).Text("Submit").ClientSideEvents(s => s.Click("button")).Render(); }
+
+            </span>
+
+        </td>
+
+    </tr>
+
+</table>
+
+
+{% endhighlight %}
 
 2. Add the following styles to show the TimePicker control in horizontal order in the Content folder.
 

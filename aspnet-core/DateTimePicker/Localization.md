@@ -45,6 +45,8 @@ Refer the below Spanish culture file in head section of HTML page after the refe
    1. Add the following code in your CSHTML page to render DateTimePicker widget.
 
  {% highlight CSHTML %}
+
+ /*ej-Tag Helper code to render DateTimePicker*/
 	 
 	    @*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized localization*@
 
@@ -63,6 +65,16 @@ Refer the below Spanish culture file in head section of HTML page after the refe
 </script>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+     @{ Html.EJ().DateTimePicker("dateTime").Value(DateTime.Now).Locale("zh-CN").Width("180px").ClientSideEvents(e => e.Create("onOpen")).Render();}
+
+{% endhighlight %}
+
+N> To render the DateTimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
    
    
 2. The following screenshot displays the output for the above code.

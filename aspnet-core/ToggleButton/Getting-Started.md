@@ -39,10 +39,22 @@ Essential Studio ASP.NET Core Toggle Button control has a built-in feature to cu
 
    ~~~ cshtml
 
-	@Html.EJ().ToggleButton("tbutton").Size(ButtonSize.Mini).ShowRoundedCorner(true).DefaultText("Play")
+/*ej-Tag Helper code to render ToggleButton*/
 
+	<ej-toggle-button id="tbutton" size="Mini" show-rounded-corner="true" default-text="Play" />
+    
    ~~~
-   
+
+{% highlight CSHTML%}
+
+/*Razor code to render ToggleButton*/
+
+    @{Html.EJ().ToggleButton("tbutton").Size(ButtonSize.Mini).ShowRoundedCorner(true).DefaultText("Play").Render();}
+
+{% endhighlight %}
+
+N> To render the ToggleButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+  
 
 3. Output of the above steps.
 
