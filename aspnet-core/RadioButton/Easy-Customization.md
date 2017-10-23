@@ -21,6 +21,8 @@ In the CSHTML page, add the following input elements to configure Radio Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 // Add the code in CSHTML page to configure Radio Button
 
 @* Here checked and unchecked type of radio buttons are rendered in same group
@@ -39,7 +41,24 @@ set checked state of radio button as follows*@
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
 
+/*Razor code to render RadioButton*/
+
+    @{Html.EJ().RadioButton("Radio_checked").Name("Gender").Size(RadioButtonSize.Small).Checked(true).Render(); }
+
+    <label for="Radio_checked" class="clslab">Male</label>
+
+    <br />
+
+    @{Html.EJ().RadioButton("Radio_unchecked").Name("Gender").Size(RadioButtonSize.Small).Checked(false).Render();}
+
+    <label for="Radio_unchecked" class="clslab">Female</label>
+
+
+{% endhighlight %}
+
+N> To render the RadioButton Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 The following image is displayed as the output for the above steps.
 
@@ -58,6 +77,8 @@ In the CSHTML page, add the following input elements to configure the Radio Butt
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 // Add the code in CSHTML page to configure Radio Button
 
 @*radio button with text property*@
@@ -66,6 +87,19 @@ In the CSHTML page, add the following input elements to configure the Radio Butt
 
     <br />
     <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false" text="Female" />
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+    @{Html.EJ().RadioButton("radiobutton1").Name("Gender").Size(RadioButtonSize.Small).Checked(true).Text("Male").Render(); }
+
+    <br />
+
+    @{Html.EJ().RadioButton("radiobutton1").Name("Gender").Size(RadioButtonSize.Small).Checked(false).Text("Female").Render();}
+
 
 {% endhighlight %}
 
@@ -106,6 +140,8 @@ In the CSHTML page, add the following input elements to configure Radio Button w
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 // Add the code in CSHTML page to configure Radio Button
 
 @* small and medium size of radio buttons in same group
@@ -129,6 +165,41 @@ By default, here no one radio button is checked*@
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+Small size radio buttons<br />
+
+    @{Html.EJ().RadioButton("radiobutton").Name("Gender").Size(RadioButtonSize.Small).Checked(true).Render(); }
+
+    <label for="radiobutton">Male</label>
+
+    <br />
+
+    @{Html.EJ().RadioButton("radiobutton1").Name("Gender").Size(RadioButtonSize.Small).Checked(false).Render(); }
+
+    <label for="radiobutton1">Female</label>
+
+    <br/>
+
+Medium size radio buttons
+
+    <br />
+
+    @{Html.EJ().RadioButton("radiobutton2").Name("Gender1").Size(RadioButtonSize.Medium).Checked(true).Render(); }
+
+    <label for="radiobutton2">Male</label>
+
+    <br/>
+
+    @{Html.EJ().RadioButton("radiobutton3").Name("Gender1").Size(RadioButtonSize.Medium).Checked(false).Render();}
+
+    <label for="radiobutton3">Female</label>
+
+
+{% endhighlight %}
+
 The following image is displayed as the output for the above steps.
 
 ![](Easy-Customization_images/Easy-Customization_img3.png)
@@ -145,6 +216,8 @@ In the CSHTML page, add the following button elements to configure Radio Button 
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render RadioButton*/
+
 // Add the code in CSHTML page to configure Radio Button
 
 @*set radio button with right to left format*@
@@ -155,6 +228,19 @@ In the CSHTML page, add the following button elements to configure Radio Button 
     <ej-radio-button id="radiobutton1" name="Gender" size="@RadioButtonSize.Small" checked="false" text="Female" enable-rtl="true" />
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render RadioButton*/
+
+    @{Html.EJ().RadioButton("radiobutton").Name("Gender").Size(RadioButtonSize.Small).Checked(true).Text("Male").EnableRTL(true).Render(); }
+
+    @{Html.EJ().RadioButton("radiobutton1").Name("Gender").Size(RadioButtonSize.Small).Checked(false).Text("Female").EnableRTL(true).Render();}
+
+
+
+{% endhighlight %}
+
 
 The following image is displayed as the output for the above steps.
 

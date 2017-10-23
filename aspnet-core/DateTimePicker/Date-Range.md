@@ -28,12 +28,24 @@ In the following example May 10, 2017 09:00 AM is set as max-date-time and May 2
 
   {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DateTimePicker*/
+
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized Mintime and Maxtime*@
 
 	<ej-date-time-picker id="DateTime" min-date-time=@("05/10/2017 09:00 AM") max-date-time=@("05/20/2017 09:00 PM") interval="30" width="175px"></ej-date-time-picker>
 
 {% endhighlight %}
    
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+	 @{Html.EJ().DateTimePicker("DateTime").MinDateTime("05/10/2017 09:00 AM").MaxDateTime("05/20/2017 09:00 PM").Interval(30).Width("175px").Render(); }
+
+
+{% endhighlight %}
+
+N> To render the DateTimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 
 2. The following screenshot displays the output for the above code.

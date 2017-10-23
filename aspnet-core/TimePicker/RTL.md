@@ -20,12 +20,25 @@ The following steps explains you in enabling the right-to-left property for the 
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render TimePicker*/
+
 @*Add the following code example to the corresponding CSHTML page to render TimePicker widget with right to left apperence*@
  
  <ej-time-picker id="time" enable-rtl="true"></ej-time-picker>
  
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render TimePicker*/
+
+    @{Html.EJ().TimePicker("time").EnableRTL(true).Render();}
+
+{% endhighlight %}
+
+N> To render the TimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 The following screenshot illustrates a TimePicker control when EnableRTL is set to “true”
 

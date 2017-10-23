@@ -23,9 +23,22 @@ The ShowPreview property is Boolean type and its default value is true.
 
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
+/*ej-Tag Helper code to render ColorPicker*/
+
+
 <ej-color-picker id="colorPicker" value="#278787" show-preview="true"></ej-color-picker>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").ShowPreview(true).Render(); }
+
+{% endhighlight %}
+
+N> To render the ColorPicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 The following screenshot displays the output of the above code example.
 
@@ -44,11 +57,21 @@ The ShowRecentColors property is Boolean type and its default value is false.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
     <ej-color-picker id="colorPicker" value="#278787" show-recent-colors="true"></ej-color-picker>
 
 {% endhighlight  %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").ShowRecentColors(true).Render();}
+
+{% endhighlight %}
 
 The following screenshot displays the output of the above code example.
 
@@ -68,6 +91,7 @@ The EnableOpacity property is Boolean type and its default value is true.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
 
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
@@ -75,6 +99,15 @@ The EnableOpacity property is Boolean type and its default value is true.
 
 
 {% endhighlight  %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").EnableOpacity(false).Render(); }
+
+{% endhighlight %}
+
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png)
@@ -93,6 +126,7 @@ The Columns property is Number type and its default value is 10.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
 
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
@@ -100,6 +134,16 @@ The Columns property is Number type and its default value is 10.
 
 
 {% endhighlight  %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{ Html.EJ().ColorPicker("colorPicker7").Value("#278787").Columns(9).Render(); }
+
+
+{% endhighlight %}
+
 The following screenshot displays the output of the above code example.
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)

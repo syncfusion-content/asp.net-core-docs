@@ -15,6 +15,8 @@ In the view page, add the following Groupbutton to configure the Items with Righ
 
 {% highlight html %}
 
+/*ej-Tag Helper code to render GroupButton*/
+
 <%--Enable the alignment format for GroupButton control as follows--%>
 
     <ej-group-button id="GroupButton" enable-rtl="true" width="500px">
@@ -26,6 +28,24 @@ In the view page, add the following Groupbutton to configure the Items with Righ
     </ej-group-button>
 
 {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render GroupButton*/
+
+    @{Html.EJ().GroupButton("GroupButton").Width("500px").EnableRTL(true).Items(item =>
+    {
+        item.Add().Text("Save");
+        item.Add().Text("Open");
+        item.Add().Text("Delete");
+    }).Render();
+    }
+
+
+{% endhighlight %}
+
+N> To render the GroupButton Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 Here the items are rendered in the reverse order.
 

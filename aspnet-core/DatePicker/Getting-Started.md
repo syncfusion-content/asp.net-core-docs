@@ -21,12 +21,24 @@ This section expalins the essential steps required to render a DatePicker contro
 
     {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
         <ej-date-picker id="startDate" value="DateTime.Now"></ej-date-picker>
                
     {% endhighlight %}
 
 N>  DatePicker is a form control, so in form submission its value can be retrieved as a name value pair. By default, ID will be set as name attribute to achieve uniqueness. If you want to set the name manually you can use our HtmlAttributes API as given in the below code.
     
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+    @{Html.EJ().DatePicker("startDate1").Value(DateTime.Now).Render();}
+
+{% endhighlight %}
+
+N> To render the DatePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
     {% highlight CSHTML %}
 
     @{
@@ -34,10 +46,25 @@ N>  DatePicker is a form control, so in form submission its value can be retriev
             htmlAttr.Add("name", "dp_startval");
     }
 
-    
+/*ej-Tag Helper code to render DatePicker*/
+
     <ej-date-picker id="startDate" value="DateTime.Now" html-attributes="htmlAttr"></ej-date-picker>
 
     {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+@{
+     Dictionary<string, object> htmlAttr = new Dictionary<string, object>();
+     htmlAttr.Add("name", "dp_startval");
+}
+
+    @{Html.EJ().DatePicker("startDate1").Value(DateTime.Now).HtmlAttributes(htmlAttr).Render(); }
+
+
+{% endhighlight %}
 
 ## Get / Set value
 
@@ -45,9 +72,19 @@ The Essential DatePicker provides an options to configure all its properties and
 
     {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     <ej-date-picker id="startDate" value="DateTime.Now"  date-format="yyyy/MM/dd"></ej-date-picker>
 
     {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+    @{Html.EJ().DatePicker("startDate1").Value(DateTime.Now).DateFormat("yyyy/MM/dd").Render(); }
+
+{% endhighlight %}
 
 You can assign values to existing DatePicker using its instance. Consider that you going to set date value at button click, refer the below code example.
 
@@ -82,6 +119,8 @@ You can handle the all available client side events in Essential JavaScript Date
 
     {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     <ej-date-picker id="startDate" value="DateTime.Now" change="onChange"></ej-date-picker>
 	
     <script>    
@@ -96,6 +135,23 @@ You can handle the all available client side events in Essential JavaScript Date
 
     {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+    @{ Html.EJ().DatePicker("startDate").Value(DateTime.Now).ClientSideEvents(e => e.Change("onChange")).Render(); } 
+      <script>    
+    
+    function onChange(args) {
+        //args contains entire model of DatePicker to get the value of all properties.
+
+        //alert popup shows the previous date and selected date.
+        alert(" previous date is : " + args.prevDate + " \n selected date is : " + args.value);
+    }     
+    </script>
+
+{% endhighlight %}
+
 ## Strongly Typed Tag Helper
 
 Essential DatePicker can be created using DatePickerFor extension, which behaves like strongly typed HTML helper. This reduces the run time issues while using model values in DatePickerFor, since it will find the issues, if any in compilation phase itself.
@@ -103,8 +159,18 @@ Please refer the below code to create the DatePickerFor control in your applicat
 
     {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DatePicker*/
+
     @* bind the "date" property in model to strongly typed Datepicker *@
     <ej-date-picker id="dp" ej-for="date" min-date="DateTime.Now"></ej-date-picker>
     @Html.ValidationMessageFor(model => model.date)
 
     {% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render DatePicker*/
+
+    @{Html.EJ().DatePickerFor(model => model.datepicker, (Syncfusion.JavaScript.Models.DatePickerProperties)ViewData["date"]).Render(); }
+
+{% endhighlight %}

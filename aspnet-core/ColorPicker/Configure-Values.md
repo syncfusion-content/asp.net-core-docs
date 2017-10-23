@@ -19,12 +19,24 @@ The OpacityValue property is Number type and its default value is 100.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
   <ej-color-picker id="colorPicker" value="#278787" opacity-value="40"></ej-color-picker>
 
 
 {% endhighlight  %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker").Value("#278787").OpacityValue(40).Render();}
+
+{% endhighlight %}
+
+N> To render the ColorPicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 The following screenshot displays the output of the above code example.
 
@@ -144,6 +156,8 @@ When it is necessary to set the button text and TooltipText values in Spanish cu
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget*@
 
  <ej-color-picker id="colorPicker" value="#278787">
@@ -151,6 +165,15 @@ When it is necessary to set the button text and TooltipText values in Spanish cu
         <e-color-picker-tooltip-text sandy="arenoso"/>
     </ej-color-picker>
   
+
+{% endhighlight %}
+
+{% highlight CSHTML%}
+
+/*Razor code to render ColorPicker*/
+
+    @{Html.EJ().ColorPicker("colorPicker4").Value("#278787").ColorPickerButtonText(color => color.Apply("aplicar").Cancel("cancelar")).ColorPickerTooltipText(tooltip => tooltip.Sandy("arenoso")).Render();}
+
 
 {% endhighlight %}
 

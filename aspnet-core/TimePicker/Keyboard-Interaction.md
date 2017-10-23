@@ -80,6 +80,8 @@ The following steps explains you on how to enable keyboard interaction for the T
 
    ~~~ cshtml
 
+   /*ej-Tag Helper code to render TimePicker*/
+
 	@*Add the following code example to the corresponding CSHTML page to render TimePicker widget*@
 
 	@{IDictionary<string, object> parameters = new Dictionary<string, object>();
@@ -92,6 +94,16 @@ The following steps explains you on how to enable keyboard interaction for the T
 
    ~~~
    
+{% highlight CSHTML%}
+
+/*Razor code to render TimePicker*/
+
+	@{Html.EJ().TimePicker("time").HtmlAttributes(parameters).Render(); }
+
+{% endhighlight %}
+
+N> To render the TimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 2. Run the code sample, press [Access key](http://en.wikipedia.org/wiki/Access_key) + J to focus in the TimePicker widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 

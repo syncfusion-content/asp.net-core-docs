@@ -73,6 +73,8 @@ The following steps explain how you can enable keyboard interaction for ColorPic
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render ColorPicker*/
+
 @*In the CSHTML page, add the Html helpers to render ColorPicker widget and enable keyboard interaction by the accesskey property*@
  <ej-color-picker id="colorPicker" value="#278787"> </ej-color-picker>
 
@@ -90,6 +92,17 @@ The following steps explain how you can enable keyboard interaction for ColorPic
 
 {% endhighlight  %}
 {% endtabs %}  
+
+{% highlight CSHTML %}
+
+/*Razor code to render ColorPicker*/
+
+	@{Html.EJ().ColorPicker("colorPicker).Value("#278787").Render();}
+
+{% endhighlight  %}
+
+
+N> To render the ColorPicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 The following screenshot displays the output of the above code example.
 

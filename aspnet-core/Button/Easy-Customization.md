@@ -47,6 +47,8 @@ The following steps explains you the details about rendering the button with dif
 
 {% highlight CSHTML%}
 
+/*ej-Tag Helper code to render Button*/
+
 @*Add the code in CSHTML page to configure and initialize the control*@
 
 @*Set the different size types for button control as follows.*@
@@ -64,6 +66,26 @@ The following steps explains you the details about rendering the button with dif
 </div>
 
 {% endhighlight  %}
+
+
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+<div class="control">
+
+     @{ Html.EJ().Button("button_normal").Text("login").Size(ButtonSize.Normal).ShowRoundedCorner(true).ContentType(ContentType.ImageBoth).PrefixIcon("e-icon e-handup").Render();  }
+     @{ Html.EJ().Button("button_mini").Text("login").Size(ButtonSize.Mini).ShowRoundedCorner(true).Render();  }
+     @{ Html.EJ().Button("button_small").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).Render(); }
+     @{ Html.EJ().Button("button_medium").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).Render(); }
+     @{ Html.EJ().Button("button_large").Text("login").Size(ButtonSize.Large).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").Render(); }
+     @{ Html.EJ().Button("button_customSize").Text("login").Size(ButtonSize.Normal).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").Height("50").Width("50").Render(); }
+
+</div>
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 Execute the above code to render the following output.
 
@@ -139,6 +161,8 @@ The following steps explains you the details about rendering the Button with abo
 
    ~~~ cshtml
 
+    /*ej-Tag Helper code to render Button*/
+
 	@*Add the code in CSHTML page to configure and initialize the control*@
 
 	@* Set the different content types and use the necessary build-in icons for button control as follows.*@
@@ -168,7 +192,31 @@ The following steps explains you the details about rendering the Button with abo
 	</div>
 
    ~~~
-  
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+<div class="control">
+
+     @{ Html.EJ().Button("button_imageOnly").Text("login").ShowRoundedCorner(true).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-handup").Render(); }
+	 @{ Html.EJ().Button("button_textOnly").Text("login").ContentType(ContentType.TextOnly).ShowRoundedCorner(true).Render(); }
+	 @{ Html.EJ().Button("button_imageBoth").Text("login").ContentType(ContentType.ImageBoth).ShowRoundedCorner(true).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").Render(); }
+	 @{ Html.EJ().Button("button_textAndImage").Text("login").ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").Render(); }
+	 @{ Html.EJ().Button("button_imageTextImage").Text("login").ShowRoundedCorner(true).ContentType(ContentType.ImageTextImage).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").Render(); }
+<br />
+<br />
+	 @{ Html.EJ().Button("button_small_imageOnly").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-handup").Render(); }
+	 @{ Html.EJ().Button("button_small_textOnly").Text("login").Size(ButtonSize.Small).ContentType(ContentType.TextOnly).ShowRoundedCorner(true).Render(); }
+	 @{ Html.EJ().Button("button_small_imageBoth").Text("login").Size(ButtonSize.Small).ContentType(ContentType.ImageBoth).ShowRoundedCorner(true).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").Render(); }
+	 @{ Html.EJ().Button("button_small_textAndImage").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").Render(); }
+   	 @{ Html.EJ().Button("button_small_imageTextImage").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.ImageTextImage).PrefixIcon("e-icon e-handup").SuffixIcon("e-icon e-palette").Render(); }
+		
+</div>
+
+{% endhighlight %}
+
+N> To render the Button Control you can use either Razor or Tag helper code as given in the above code snippet.
+
 
 	 Execute the above code to render the following output.
 
@@ -209,7 +257,8 @@ The following steps explains you the details about rendering the Button with abo
 
 
    ~~~ cshtml
-
+    
+	/*ej-Tag Helper code to render Button*/
 
 	@*Add the code in CSHTML page to configure and initialize the control*@
 
@@ -247,6 +296,33 @@ The following steps explains you the details about rendering the Button with abo
 
    ~~~
   
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+<div class="control">
+
+	 @{ Html.EJ().Button("button_normal_left").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).Render(); }
+	 @{ Html.EJ().Button("button_mini_left").Text("login").Size(ButtonSize.Mini).ShowRoundedCorner(true).ImagePosition(ImagePosition.ImageLeft).Render(); }
+	 @{ Html.EJ().Button("button_small_left").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ImagePosition(ImagePosition.ImageLeft).Render(); }
+	 @{ Html.EJ().Button("button_medium_left").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ImagePosition(ImagePosition.ImageLeft).Render(); }
+	 @{ Html.EJ().Button("button_large_left").Text("login").Size(ButtonSize.Large).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).Render(); }
+<br />
+<br />
+	 @{ Html.EJ().Button("button_normal_right").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.ImageOnly).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageRight).Render(); }
+	 @{ Html.EJ().Button("button_mini_right").Text("login").Size(ButtonSize.Mini).ShowRoundedCorner(true).ImagePosition(ImagePosition.ImageRight).Render(); }
+	 @{ Html.EJ().Button("button_small_right").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ImagePosition(ImagePosition.ImageRight).Render(); }
+	 @{ Html.EJ().Button("button_medium_right").Text("login").Size(ButtonSize.Medium).ShowRoundedCorner(true).ImagePosition(ImagePosition.ImageRight).Render(); }
+	 @{ Html.EJ().Button("button_large_right").Text("login").Size(ButtonSize.Large).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageRight).Render(); }
+<br />
+<br />
+	 @{ Html.EJ().Button("button_imageTop").Text("login").ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageTop).Render(); }
+	 @{ Html.EJ().Button("button_imageBottom").Text("login").ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageBottom).Render();}
+
+</div>
+
+
+{% endhighlight %}
 
 
 	Execute the above code to render the following output.
@@ -284,7 +360,9 @@ The following steps explains you the details about rendering the Button with abo
 3. In the CSHTML page, configure the Button widget as follows.
 
    ~~~ cshtml
-
+ 
+ 
+    /*ej-Tag Helper code to render Button*/
 
 	@*Add the code in CSHTML page to configure and initialize the control*@
 
@@ -309,6 +387,22 @@ The following steps explains you the details about rendering the Button with abo
 
    ~~~
   
+{% highlight html %}
+
+/*Razor code to render Button*/
+
+<div class="control">
+
+	 @{ Html.EJ().Button("customCss1").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).CssClass("customCss1").Render(); }
+	 @{ Html.EJ().Button("customCss2").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).CssClass("customCss2").Render(); }
+	 @{ Html.EJ().Button("customCss3").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).CssClass("customCss3").Render(); }
+	 @{ Html.EJ().Button("customCss4").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).CssClass("customCss4").Render(); }
+	 @{ Html.EJ().Button("customCss5").Text("login").Size(ButtonSize.Small).ShowRoundedCorner(true).ContentType(ContentType.TextAndImage).PrefixIcon("e-icon e-handup").ImagePosition(ImagePosition.ImageLeft).CssClass("customCss5").Render(); }
+	 
+</div>
+
+
+{% endhighlight %}
 
 4. Configure the CSS styles to apply on buttons.
 

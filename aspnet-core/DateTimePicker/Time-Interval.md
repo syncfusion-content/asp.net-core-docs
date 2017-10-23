@@ -15,12 +15,24 @@ You can set time interval between two adjacent time values in the time popup man
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DateTimePicker*/
+
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized interval*@
 
 	 <ej-date-time-picker id="DateTime" interval="60"></ej-date-time-picker>
 
 {% endhighlight %}
    
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+	 @{Html.EJ().DateTimePicker("DateTime").Interval(60).Render();}
+
+{% endhighlight %}
+
+N> To render the DateTimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
    
    
 2. The following screenshot displays the output for the above code.

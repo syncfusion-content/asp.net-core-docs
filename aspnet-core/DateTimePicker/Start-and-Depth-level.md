@@ -51,12 +51,24 @@ In the following example DateTimePicker popup Start level view is set to “cent
 
  {% highlight CSHTML %}
 
+ /*ej-Tag Helper code to render DateTimePicker*/
+
      @*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized Start level*@
      
       <ej-date-time-picker id="DateTime" start-level="@Period.Century"></ej-date-time-picker>
 
 {% endhighlight %}
-   
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+     @{ Html.EJ().DateTimePicker("DateTime").StartLevel(Period.Century).Render(); }
+
+{% endhighlight %}
+
+N> To render the DateTimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
+  
 
 2. The following screenshot displays the output for the above code.
 
@@ -78,12 +90,24 @@ The following code snippet is set to depth-level in DateTimePicker.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render DateTimePicker*/
+
 	@*Add the following code example to the corresponding CSHTML page to render DateTimePicker widget with customized Depth level*@
 
  <ej-date-time-picker id="DateTime" start-level="@Period.Century" depth-level="@Period.Month"></ej-date-time-picker>
 
 {% endhighlight %}
-   
+
+
+{% highlight CSHTML%}
+
+/*Razor code to render DateTimePicker*/
+
+     @{Html.EJ().DateTimePicker("DateTime").StartLevel(Period.Century).DepthLevel(Period.Year).Render(); }
+
+
+{% endhighlight %}
+ 
 
 2. The following screenshot displays the output for the above code.
 

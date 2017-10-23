@@ -19,13 +19,23 @@ Set id for Checkbox control as follows.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*set id for checkbox *@
 
 <ej-check-box id="checkbox" text="Checkbox" />
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
 
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").Text("Checkbox").Render(); }
+
+{% endhighlight %}
+
+N> To render the CheckBox Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 ## Checkbox Id Prefix
 
@@ -37,12 +47,21 @@ Set prefix id for Checkbox control as follows.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*set prefix id for checkbox *@
 
 <ej-check-box id="checkbox"  text="Checkbox" id-prefix="aspnetcore"/>
 
 {% endhighlight %}
 
+{% highlight CSHTML%}
+
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox").Text("Checkbox").IdPrefix("aspnetcore").Render(); }
+
+{% endhighlight %}
 
 
 ## Checkbox Name
@@ -59,6 +78,8 @@ You can set name and value for Checkbox control as follows.
 
 {% highlight CSHTML %}
 
+/*ej-Tag Helper code to render CheckBox*/
+
 @*set name and value for checkbox *@
 
    <ej-check-box id="checkbox" name="conformation" value="Received"/>
@@ -67,6 +88,13 @@ You can set name and value for Checkbox control as follows.
 
 
 
+{% highlight CSHTML%}
+
+/*Razor code to render CheckBox*/
+
+    @{ Html.EJ().CheckBox("checkbox5").Name("conformation").Value("Received").Render(); }
+
+{% endhighlight %}
 
 
 
