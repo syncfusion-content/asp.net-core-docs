@@ -75,7 +75,7 @@ always</td><td>
 Tooltip get displayed for RangeNavigator always.</td></tr>
 <tr>
 <td>
-ondemand</td><td>
+onDemand</td><td>
 Tooltip get displayed only when we move the slider.</td></tr>
 </table>
 
@@ -88,7 +88,7 @@ Tooltip get displayed only when we move the slider.</td></tr>
             </e-series>
         </e-chart-series>
         <e-selected-range-settings start="2010/5/1" end="2011/10/1"></e-selected-range-settings>
-        <e-range-tooltip-settings tooltip-display-mode="ondemand"></e-range-tooltip-settings>
+        <e-range-tooltip-settings tooltip-display-mode="onDemand"></e-range-tooltip-settings>
     </ej-range-navigator>
 </div>
 
