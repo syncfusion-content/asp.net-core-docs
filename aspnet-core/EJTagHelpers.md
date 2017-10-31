@@ -21,9 +21,9 @@ We can enable the EJ tag helper support by adding the namespaces for component r
 
    ~~~ cshtml
 
-   @using Syncfusion.JavaScript
+        @using Syncfusion.JavaScript
 
-   @addTagHelper “*, Syncfusion.EJ
+        @addTagHelper “*, Syncfusion.EJ
 
    ~~~
 
@@ -35,7 +35,7 @@ Open a view page to render Syncfusion UI components in Tag Helper Syntax. The fo
 
    ~~~ cshtml
 
-   <ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
+        <ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
 
    ~~~
 
@@ -51,7 +51,7 @@ Client side events can be wired in the same way as properties. But here all the 
 
    ~~~ cshtml
 
-   <ej-date-picker id="DatePick" date-format="MM/dd/yyyy"  change="ChangeValue" select="SelectOn"></ej-date-picker>
+        <ej-date-picker id="DatePick" date-format="MM/dd/yyyy"  change="ChangeValue" select="SelectOn"></ej-date-picker>
 
    ~~~
 
