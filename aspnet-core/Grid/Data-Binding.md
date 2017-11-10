@@ -148,12 +148,10 @@ Web API Adaptor is used for processing request and response messages from Web AP
 
 To consume Web API service, set the service link to the `url` property of Grid `datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of Grid `datamanager`
 
- I> The datasource from Web API service must be returned as object that has property `Items` with its value as datamanager and another property `Count` with its value as datamanager total records count.
+ I> The datasource from Web API service must be returned as object that has property `result` with its value as datamanager and another property `count` with its value as datamanager total records count.
 
 DataOperation queries such as sorting, filtering, etc., would be sent to Web API Service corresponding to Grid actions performed and they need to be handled manually as Web API Service does not process it by default.
 
- N> In ASP.NET core default casing as camelCase.So, we need to return the data as JSON and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
- 
 The following code example describes the above behavior.
     
 {% tabs %} 
@@ -188,7 +186,7 @@ The following code example describes the above behavior.
                 StringValues Take;
                 int skip = (queryString.TryGetValue("$skip", out Skip)) ? Convert.ToInt32(Skip[0]) : 0;
                 int top = (queryString.TryGetValue("$top", out Take)) ? Convert.ToInt32(Take[0]) : 12;
-                return new { Items = _context.Orders.Skip(skip).Take(top), Count = _context.Orders.Count() };
+                return new { result = _context.Orders.Skip(skip).Take(top), count = _context.Orders.Count() };
             }
         }
     
