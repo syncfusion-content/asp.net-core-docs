@@ -10,11 +10,11 @@ keywords: CORS Data Fetching, SAME-ORIGIN POLICY, Access-Control-Allow-Origin, A
 ---
 # CORS Data Fetching
 
-The Cross-Origin Resource Sharing (CORS) mechanism gives web servers cross-domain access controls, which enable secure cross-domain data transfers. Modern browsers use CORS in an API container - such as XMLHttpRequest or Fetch - to mitigate risks of cross-origin HTTP requests.
+The Cross-Origin Resource Sharing (CORS) mechanism enable secure cross-domain data transfers.
 
 ## SAME-ORIGIN POLICY
 
-This is a security policy who defines the rules of how a web page can access an external resource (e.g. fonts, AJAX requests). Under the same-origin policy, web browsers do not permit a web page to access resources who origin differ than that of the current page. The origin is considered to be different when the scheme, hostname or port of the resource do not match that of the page. Overcoming the limitations of same-origin security policy is possible using a technique called Cross-origin resource sharing or simply CORS.
+This policy defined the rule for, “how a web page can be accessed by an external resource”. Browsers wont permits a request to access the resources who origin is differ than the current page. To overcome the restriction of same-origin policy, we can use a technique called Cross-origin resource sharing
 
 ![](CORS_images/SAME-ORIGIN1.png) 
 
