@@ -30,14 +30,14 @@ First, we need to add required Packages to sample application, here we have adde
 
 {% endhighlight %}
 
-Cross-domain requests require mutual consent between the Web page and the server. You can initiate a cross-domain request in your Web page and opening a connection to a particular domain. The browser will request data from the domain's server by sending an Origin header with the value of the origin. It will only complete the connection if the server responds with an Access-Control-Allow-Origin header of either * or the exact URL of the requesting page.
-When you set, Access-Control-Allow-Origin value as “site1.com”.
+Cross-domain requests require common procedure between the Web page and the server. Initiate a cross-domain request in a web page and opening a connection to the mentioned domain. The browser will request the service (i.e data) from the domain’s server by sending an Origin header with the value of the origin. It will only complete the connection if the server responds with an Access-Control-Allow-Origin header of either * or the exact URL of the requesting page.
+When you set, Access-Control-Allow-Origin value as “Testing1.com”.
 
-builder.WithOrigins("http://site1.com")
+With this rule, only scripts that originate from http://“Testing1.com are allowed to load resources. Any other domain trying to use AJAX to load resources will be given the security error message.
 
-With this configuration, only scripts that originate from http://site1.com are allowed to load resources. Any other domain trying to use AJAX to load resources will be given the standard security error message. In this way, site owners can limit which domains are allowed to load their resources with CORS.
+By using this rule, the domain owners can restrict which domains are allowed to use the resource.
 
-Alternatively, site owners can grant wide-open access,
+Alternatively, the  owners can grant wide-open access with the always ready to party asterisk: __Access-Control-Allow-Origin: *__.
 
 {% highlight html %}
 
@@ -56,11 +56,11 @@ Alternatively, site owners can grant wide-open access,
 
 {% endhighlight %}
 
-Now, any site that wants to load a resource directly using AJAX can do so without getting the browser security error. It's a very helpful technique for modern apps that often load data using JavaScript, and hopefully more modern web APIs will start to support CORS.
+Now, any website that wants to load a resource using AJAX can do so without getting the security error.
 
 ## Access-Control-Request-Method
 
-The Access-Control-Request-Method is used when issuing a preflight request to let the server know what HTTP method will be used when the actual request is made.
+The Access-Control-Request-Method is used when issuing a preflight request to let the server know what HTTP method will be used when the  request is made.
 
 {% highlight html %}
 
@@ -84,7 +84,7 @@ Setting custom headers to XHR triggers a preflight request. With simple words th
 
 ## Access-Control-Request-Headers
 
-The Access-Control-Request-Headers header is used when issuing a preflight request to let the server know what HTTP headers will be used when the actual request is made.
+The Access-Control-Request-Headers header is used when issuing a preflight request to let the server know what HTTP headers will be used when the  request is made.
 
 {% highlight html %}
 
