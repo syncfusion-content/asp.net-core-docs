@@ -106,7 +106,7 @@ Render the employees table and create the tooltip. Once the tooltip created, the
                 dataType: "json",
                 url: "tooltipData.js",
                 success: function (result) {
-                    var emp = [
+                    var employee = [
                         { photo: "http://aspnetcore.syncfusion.com/images/Employees/2.png" },
                         { photo: "http://aspnetcore.syncfusion.com/images/Employees/4.png" },
                         { photo: "http://aspnetcore.syncfusion.com/images/Employees/8.png" },
@@ -116,7 +116,7 @@ Render the employees table and create the tooltip. Once the tooltip created, the
                     ];
                     for (i = 0; i < result.length ; i++) {
                         if (result[i].LastName == $(proxy.event.target).attr("data-content"))
-                            content = '<div class="main"> <img src=' + emp[i].photo + ' class="logo"/><div class="des"><table> <tr> <th> ' + result[i].TitleOfCourtesy + ' ' + result[i].LastName + '</th> </tr> <tr> <td> Title </td> <td>&nbsp;&nbsp;: ' + result[i].Title + '</td> </tr> <tr><td> Address</td><td>&nbsp;&nbsp;: ' + result[i].Address + '</td> </tr><tr> <td> City </td> <td>&nbsp;&nbsp;: ' + result[i].City + '</td> </tr> <tr> <td> PostalCode </td> <td>&nbsp;&nbsp;: ' + result[i].PostalCode + '</td> </tr> </table></div></div>';
+                            content = '<div class="main"> <img src=' + employee[i].photo + ' class="logo"/><div class="des"><table> <tr> <th> ' + result[i].TitleOfCourtesy + ' ' + result[i].LastName + '</th> </tr> <tr> <td> Title </td> <td>&nbsp;&nbsp;: ' + result[i].Title + '</td> </tr> <tr><td> Address</td><td>&nbsp;&nbsp;: ' + result[i].Address + '</td> </tr><tr> <td> City </td> <td>&nbsp;&nbsp;: ' + result[i].City + '</td> </tr> <tr> <td> PostalCode </td> <td>&nbsp;&nbsp;: ' + result[i].PostalCode + '</td> </tr> </table></div></div>';
                     }
                     target.setModel({ content: content });
                 }
