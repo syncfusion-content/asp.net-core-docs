@@ -139,7 +139,7 @@ You can select the cells programmatically using `selectCells` public method. Fin
 
 {% highlight cshtml %}
 
-<button id="selectMultiplecells">SelectMultipleCells</button>
+<button id="selectMultiple">SelectMultipleCells</button>
 
 <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
     //...
@@ -151,7 +151,7 @@ You can select the cells programmatically using `selectCells` public method. Fin
 {% highlight javascript %}
 
 
-$("#selectMultiplecells").click(function(args) {
+$("#selectMultiple").click(function(args) {
 
     //create Gantt object
 
