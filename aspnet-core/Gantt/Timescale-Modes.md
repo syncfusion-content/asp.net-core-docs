@@ -32,7 +32,7 @@ In the Week schedule mode, the upper part of the schedule header displays the we
     //...>
         <e-schedule-header-settings week-header-format="MMM dd , yyyy" schedule-header-type="Week" day-header-format="ddd">
         </e-schedule-header-settings>
-    </ejGantt>
+    </ej-gantt> 
 {% endhighlight %}
 
 The following screenshot illustrates the Week Schedule in Gantt control.
@@ -48,7 +48,7 @@ In the Week schedule mode, the upper part of the schedule header displays the Mo
         //...>
         <e-schedule-header-settings week-header-format="M/dd" schedule-header-type="Month" month-header-format="MMM yyyy">
         </e-schedule-header-settings>
-    </ejGantt>
+     </ej-gantt> 
 {% endhighlight %}
 
 The following screenshot illustrates the Month Schedule in Gantt control.
@@ -65,7 +65,7 @@ In the Week schedule mode, the upper schedule header displays the Years, whereas
         //...>
        <e-schedule-header-settings year-header-format="yyyy" schedule-header-type="Year" month-header-format="MMM">
        </e-schedule-header-settings>
-  </ejGantt>
+  </ej-gantt> 
 
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ In the Week schedule mode, the upper part of the header displays the Days, where
         //...>
       <e-schedule-header-settings day-header-format="dd,MM,yy " schedule-header-type="Day" hour-header-format="HH">
       </e-schedule-header-settings>
-  </ejGantt>
+   </ej-gantt> 
 
 {% endhighlight %}
 
@@ -111,11 +111,25 @@ The value `Auto`, automatically calculates the interval depending upon the `sche
         duration-unit="Minute">
       <e-schedule-header-settings schedule-header-type="Hour" minutes-per-interval="FiveMinutes">
       </e-schedule-header-settings>
-  </ejGantt>
+   </ej-gantt> 
 
 {% endhighlight %}
 
 ![](Timescale-Modes_images/Timescale-Modes_img5.png)
+
+## Week start day customization
+
+In Gantt, we can customize week start day by using `week-start-day` property.
+By default the `week-start-day` will be assigned with 0 which specifies the start day of the week.
+
+In week schedule mode, week starts with Sunday by default. But we can customize the week start day by using below code example
+ 
+{% highlight cshtml %}
+  <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
+        //...>        
+      <e-schedule-header-settings schedule-header-type="Week" week-start-day=2 />    
+  </ej-gantt> 
+{% endhighlight %}
 
 ## Rounding off timescale (schedule) start date
 
@@ -135,7 +149,7 @@ The value `Auto`, automatically calculates the schedule header depending on the 
         duration-unit="Minute">
       <e-schedule-header-settings schedule-header-type="Hour" minutes-per-interval="FiveMinutes">
       </e-schedule-header-settings>
-  </ejGantt>
+  </ej-gantt>
 {% endhighlight %}
 
 ![](Timescale-Modes_images/Timescale-Modes_img6.png)
