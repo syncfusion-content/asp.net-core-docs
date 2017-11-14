@@ -144,10 +144,8 @@ The value `Auto`, automatically calculates the schedule header depending on the 
 
 {% highlight cshtml %}
   <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
-        //...
-        date-format="M/d/yyyy hh:mm:ss tt"
-        duration-unit="Minute">
-      <e-schedule-header-settings schedule-header-type="Hour" minutes-per-interval="FiveMinutes">
+        //... >
+      <e-schedule-header-settings schedule-header-type="Year" timescale-start-date-mode="Month" >
       </e-schedule-header-settings>
   </ej-gantt>
 {% endhighlight %}
