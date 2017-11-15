@@ -639,9 +639,7 @@ Content displayed within the PivotClient control are obtained from the OLAP cube
 * To bind the globalized content in PivotClient control, we need to set **"locale"** property to a specific culture and the specific culture file is referred in the sample. 
  
 N> Culture files are present under **"[installed drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\ASP.NET Core\Web\samplebrowser\wwwroot\scripts\cultures".**
- 
- C:\Users\sasthapradeep.selvam\AppData\Local\Syncfusion\EssentialStudio\15.4.0.17\ASP.NET Core\Web\samplebrowser\wwwroot\scripts\cultures
- 
+  
 {% highlight CSHTML %}
 
 //1036 refers to "fr-FR" culture.
