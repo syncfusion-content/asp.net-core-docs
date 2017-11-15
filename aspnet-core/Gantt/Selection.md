@@ -17,7 +17,7 @@ You can enable or disable the row selection in Gantt, by using `allow-selection`
 <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
     //...
     allow-selection="false">
-</ejGantt> 
+</ej-gantt>  
 
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ You can select a row on load time by setting the index of the row to `selected-r
 <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
     //...
     selected-row-index=3>
-</ejGantt> 
+</ej-gantt>  
 
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ You can also select a row programmatically by setting index of the row value to 
     <button id="selectRow">SelectRow</button>
     <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
         //...>
-    </ejGantt> 
+    </ej-gantt>  
 {% endhighlight %}
 
 {% highlight javascript %}
@@ -53,6 +53,49 @@ $("#selectRow").click(function(args) {
     $("#ganttSample ").ejGantt("option", "selectedRowIndex", 4);
 })
 
+{% endhighlight %}
+
+### Multiple row selection
+
+It is also possible to select multiple rows by setting `selection-type` as `Multiple`. You can select more than one row by holding down `CTRL` key while selecting multiple rows.
+The following code example explains how to enable multiple selection in Gantt.
+
+{% highlight cshtml %}
+
+<ej-gantt id="ganttSample" datasource="ViewBag.datasource"
+    //...
+    selection-mode="Row"
+    selection-type="Multiple">
+</ej-gantt> 
+
+{% endhighlight %}
+
+The output of the Gantt with multiple row selection is as follows.
+
+![](Selection_images/Selection_img5.png)
+
+
+### Selecting multiple rows programmatically 
+
+You can also select multiple rows programmatically  by using `selectMultipleRows` public method. The following code example explains how to enable multiple selection in Gantt.
+
+{% highlight cshtml %}
+
+<button id="selectMultipleRows">selectMultipleRows</button>
+<ej-gantt id="ganttSample" datasource="ViewBag.datasource"
+    //...
+    selection-mode="Row"
+    selection-type="Multiple">
+</ej-gantt> 
+{% endhighlight %}
+
+{% highlight javascript %}
+
+$("#selectMultipleRows").click(function(args) {
+     var ganttObj = $("#ganttSample").data("ejGantt"),
+     multipleRowIndex = [1,0,5,7];   
+     ganttObj.selectMultipleRows(multipleRowIndex);
+})
 {% endhighlight %}
 
 ## Cell selection
@@ -66,7 +109,7 @@ Find the code example below to enable the cell selection in Gantt.
 <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
     //...
     selection-mode="Cell">
-</ejGantt> 
+</ej-gantt>  
 
 {% endhighlight %}
 
@@ -84,7 +127,7 @@ You can also select multiple cells by setting `selection-type` property as `Mult
     //...
     selection-mode="Cell"
     selection-type="Multiple">
-</ejGantt> 
+</ej-gantt>  
 
 {% endhighlight %}
 
@@ -96,19 +139,19 @@ You can select the cells programmatically using `selectCells` public method. Fin
 
 {% highlight cshtml %}
 
-<button id="selectcells">SelectCells</button>
+<button id="selectMultiple">SelectMultipleCells</button>
 
 <ej-gantt id="ganttSample" datasource="ViewBag.datasource"
     //...
     selection-mode="Cell"
     selection-type="Multiple">
-</ejGantt>
+</ej-gantt> 
 {% endhighlight %}
 
 {% highlight javascript %}
 
 
-$("#selectcells").click(function(args) {
+$("#selectMultiple").click(function(args) {
 
     //create Gantt object
 
@@ -128,3 +171,23 @@ $("#selectcells").click(function(args) {
 {% endhighlight %}
 
 ![](Selection_images/Selection_img4.png)
+
+## MultiSelection - Touch Option
+
+It is possible to select rows using touch action in Gantt. Gantt provides support for both single selection and multiple row selection using touch action. For multiple row selection, when we tap on a cell, a helper icon will be displayed using which we can select multiple rows.
+
+The following code example describes how to enable multiple selection in Gantt.
+
+{% highlight cshtml %}
+
+<ej-gantt id="ganttSample" datasource="ViewBag.datasource"
+    //...
+    selection-mode="Row"
+    selection-type="Multiple">
+</ej-gantt>  
+
+{% endhighlight %}
+
+The following output is displayed the result of multiple selection in touch device environment.
+
+![](Selection_images/Selection_img6.png)
