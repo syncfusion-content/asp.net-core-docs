@@ -15,7 +15,9 @@ Tag Helpers are used to write server-side code in razor view page. It is a featu
 
 We can easily configure Syncfusion UI Components in Razor view using EJ Tag helpers in ASP.NET Core application.
 
-## Adding Tag Helpers
+[Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
+
+## Adding Tag Helpers 
 
 We can enable the EJ tag helper support by adding the namespaces for component references and **@addTagHelper** directive to the cshtml file.
 
