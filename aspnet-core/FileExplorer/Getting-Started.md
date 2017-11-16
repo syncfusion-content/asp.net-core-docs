@@ -42,7 +42,6 @@ To get the current path, we have used the `IHostingEnvironment` interface. For u
 
 public partial class FileExplorerController : Controller
 {
-       public FileExplorerOperations operation;
        public FileExplorerController(IHostingEnvironment hostingEnvironment)
         {
             this.operation = new FileExplorerOperations(hostingEnvironment.ContentRootPath);
