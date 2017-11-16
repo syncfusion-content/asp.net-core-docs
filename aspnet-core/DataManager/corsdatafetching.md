@@ -10,11 +10,11 @@ keywords: CORS Data Fetching, SAME-ORIGIN POLICY, Access-Control-Allow-Origin, A
 ---
 # CORS Data Fetching
 
-The Cross-Origin Resource Sharing (CORS) mechanism gives web servers cross-domain access controls, which enable secure cross-domain data transfers. Modern browsers use CORS in an API container - such as XMLHttpRequest or Fetch - to mitigate risks of cross-origin HTTP requests.
+The Cross-Origin Resource Sharing (CORS) mechanism enable secure cross-domain data transfers.
 
 ## SAME-ORIGIN POLICY
 
-This is a security policy who defines the rules of how a web page can access an external resource (e.g. fonts, AJAX requests). Under the same-origin policy, web browsers do not permit a web page to access resources who origin differ than that of the current page. The origin is considered to be different when the scheme, hostname or port of the resource do not match that of the page. Overcoming the limitations of same-origin security policy is possible using a technique called Cross-origin resource sharing or simply CORS.
+This policy defined the rule for, “how a web page can be accessed by an external resource”. Browsers wont permits a request to access the resources who origin is differ than the current page. To overcome the restriction of same-origin policy, we can use a technique called Cross-origin resource sharing
 
 ![](CORS_images/SAME-ORIGIN1.png) 
 
@@ -30,14 +30,14 @@ First, we need to add required Packages to sample application, here we have adde
 
 {% endhighlight %}
 
-Cross-domain requests require mutual consent between the Web page and the server. You can initiate a cross-domain request in your Web page and opening a connection to a particular domain. The browser will request data from the domain's server by sending an Origin header with the value of the origin. It will only complete the connection if the server responds with an Access-Control-Allow-Origin header of either * or the exact URL of the requesting page.
-When you set, Access-Control-Allow-Origin value as “site1.com”.
+Cross-domain requests require common procedure between the Web page and the server. Initiate a cross-domain request in a web page and opening a connection to the mentioned domain. The browser will request the service (i.e data) from the domain’s server by sending an Origin header with the value of the origin. It will only complete the connection if the server responds with an Access-Control-Allow-Origin header of either * or the exact URL of the requesting page.
+When you set, Access-Control-Allow-Origin value as “Testing1.com”.
 
-builder.WithOrigins("http://site1.com")
+With this rule, only scripts that originate from http://“Testing1.com are allowed to load resources. Any other domain trying to use AJAX to load resources will be given the security error message.
 
-With this configuration, only scripts that originate from http://site1.com are allowed to load resources. Any other domain trying to use Ajax to load resources will be given the standard security error message. In this way, site owners can limit which domains are allowed to load their resources with CORS.
+By using this rule, the domain owners can restrict which domains are allowed to use the resource.
 
-Alternatively, site owners can grant wide-open access,
+Alternatively, the  owners can grant wide-open access with the always ready to party asterisk: __Access-Control-Allow-Origin: *__.
 
 {% highlight html %}
 
@@ -56,11 +56,11 @@ Alternatively, site owners can grant wide-open access,
 
 {% endhighlight %}
 
-Now, any site that wants to load a resource directly using Ajax can do so without getting the browser security error. It's a very helpful technique for modern apps that often load data using JavaScript, and hopefully more modern web APIs will start to support CORS.
+Now, any website that wants to load a resource using AJAX can do so without getting the security error.
 
 ## Access-Control-Request-Method
 
-The Access-Control-Request-Method is used when issuing a preflight request to let the server know what HTTP method will be used when the actual request is made.
+The Access-Control-Request-Method is used when issuing a preflight request to let the server know what HTTP method will be used when the  request is made.
 
 {% highlight html %}
 
@@ -79,12 +79,12 @@ The Access-Control-Request-Method is used when issuing a preflight request to le
 {% endhighlight %}
 
 N> 
-Preflightedrequests: <BR>
+Preflighted requests: <BR>
 Setting custom headers to XHR triggers a preflight request. With simple words this mean that preflight request first sends an HTTP request by the OPTIONS method to the resource on the remote domain, to make sure that the request is safe to send. According W3C for non-same origin requests using the HTTP GET method a preflight request is made when headers other than Accept and Accept-Language are set.
 
 ## Access-Control-Request-Headers
 
-The Access-Control-Request-Headers header is used when issuing a preflight request to let the server know what HTTP headers will be used when the actual request is made.
+The Access-Control-Request-Headers header is used when issuing a preflight request to let the server know what HTTP headers will be used when the  request is made.
 
 {% highlight html %}
 
