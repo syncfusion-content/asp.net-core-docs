@@ -37,11 +37,11 @@ Add the following code in your CSHTML page to render DateRangePicker with value.
 {%end highlight%} 
 
 
-## Seperator
+## separator
 
-The value of the DateRangePicker popup will be presented with two date strings which is separated by **Separator** (e.g “11/1/2016 - 11/2/2017”).By default , the symbol "-" seperates the two date strings of the value and this can be changed using API called **Separator**. Please check with below code example to setting the separator using **Separator** API.
+The value of the DateRangePicker popup will be presented with two date strings which is separated by **Separator** (e.g “11/1/2016 - 11/2/2017”).By default , the symbol "-" separates the two date strings of the value and this can be changed using API called **Separator**. Please check with below code example to setting the separator using **Separator** API.
 
-Add the following code in your CSHTML page to render DateRangePicker widget with value seperated by separator.
+Add the following code in your CSHTML page to render DateRangePicker widget with value separated by separator.
 
    ~~~ cshtml
     <ej-date-range-picker id="DateRange" separator="$" width="35%"></ej-date-range-picker>

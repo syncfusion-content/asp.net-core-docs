@@ -11,7 +11,7 @@ documentation: ug
 
 Customization of DateRangePicker will be easier with its flexible customization options.
 
-## Setting Dimention
+## Setting Dimension
 
 Height and width of the DateRangePicker can be changed using corresponding API (**Height**,**Width**) like below code examples.
 
