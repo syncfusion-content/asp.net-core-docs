@@ -176,4 +176,4 @@ Initializes the OLAP datasource for PivotClient control as shown below.
 
 Now, PivotClient is rendered with PivotChart and PivotGrid with “Customer Geography” field in Column, “Fiscal” field in Row and “Internet Sales Amount” field in Value section.
 
-![](Getting-Started_images/Olap.png)
+![](Getting-Started_images/OlapClientside.png)
