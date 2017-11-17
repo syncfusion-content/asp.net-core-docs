@@ -15,17 +15,19 @@ Tag Helpers are used to write server-side code in razor view page. It is a featu
 
 We can easily configure Syncfusion UI Components in Razor view using EJ Tag helpers in ASP.NET Core application.
 
-## Adding Tag Helpers
+[Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
+
+## Adding Tag Helpers 
 
 We can enable the EJ tag helper support by adding the namespaces for component references and **@addTagHelper** directive to the cshtml file.
 
-   ~~~ cshtml
+{% highlight cshtml %}
 
-        @using Syncfusion.JavaScript
+    @using Syncfusion.JavaScript
 
-        @addTagHelper “*, Syncfusion.EJ
+    @addTagHelper "*, Syncfusion.EJ"
 
-   ~~~
+{% endhighlight %}
 
 To add EJ tag helpers globally in your project, add the component references and **@addTagHelper** directive to **Views/_ViewImports.cshtml**.
 
@@ -33,11 +35,11 @@ To add EJ tag helpers globally in your project, add the component references and
 
 Open a view page to render Syncfusion UI components in Tag Helper Syntax. The following example demonstrates how to render the Essential DatePicker using EJ TagHelper.
 
-   ~~~ cshtml
+{% highlight cshtml %}
 
-        <ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
+    <ej-date-picker id="datepicker" value="@DateTime.Now"></ej-date-picker>
 
-   ~~~
+{% endhighlight %}
 
 ## API Configuration with Tag Helpers
 
@@ -49,11 +51,11 @@ We can configure the EJ components with its properties by using tag attributes. 
 
 Client side events can be wired in the same way as properties. But here all the client side events are grouped into **ClientSideEvents** Action method. The events can be set with tag-attributes as a string literal that points to a JavaScript function handler.
 
-   ~~~ cshtml
+{% highlight cshtml %}
 
-        <ej-date-picker id="DatePick" date-format="MM/dd/yyyy"  change="ChangeValue" select="SelectOn"></ej-date-picker>
+    <ej-date-picker id="DatePick" date-format="MM/dd/yyyy"  change="ChangeValue" select="SelectOn"></ej-date-picker>
 
-   ~~~
+{% endhighlight %}
 
 ## Related Links
 
