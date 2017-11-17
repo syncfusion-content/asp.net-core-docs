@@ -72,6 +72,8 @@ You can enable menu filter by setting `filter-type` as `Menu` in `e-filter-setti
 
 There is an option to show or hide the additional filter options in the Menu by setting `show-predicate` as `true` or `false` in `e-filter-settings` respectively.
 
+We have the support for filtering the specified range of values by using the `between` operator for the column type number and date.
+
 The following code example describes the above behavior.
 
 {% tabs %}
