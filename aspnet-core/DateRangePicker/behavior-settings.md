@@ -21,9 +21,9 @@ Add the following code in your CSHTML page to render DateRangePicker with value.
 
      <ej-date-range-picker id="DateRange" value="5/12/2017 - 12/5/2017" change="onChange"></ej-date-range-picker>
 
-{%end highlight%} 
+{% endhighlight %} 
 
-{%highlight javascript%}
+{% highlight javascript %}
 
     function onChange(args) {
 
@@ -34,7 +34,7 @@ Add the following code in your CSHTML page to render DateRangePicker with value.
             alert(" start date is : " + args.startDate + " \n end date is : " + args.endDate);
 
         }
-{%end highlight%} 
+{% endhighlight %} 
 
 
 ## separator
@@ -43,9 +43,11 @@ The value of the DateRangePicker popup will be presented with two date strings w
 
 Add the following code in your CSHTML page to render DateRangePicker widget with value separated by separator.
 
-   ~~~ cshtml
+{% highlight cshtml %}
+
     <ej-date-range-picker id="DateRange" separator="$" width="35%"></ej-date-range-picker>
-   ~~~
+
+{% endhighlight %} 
 
 Execute the above code to render the following output.
   
