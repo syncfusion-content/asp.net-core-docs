@@ -133,7 +133,7 @@ Run the above code to get the below output.
 
 ## Custom CSS
 
-Pager control allows you to customize the appearance using user defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, we can make use of cssClass property. Using cssClass property, we can override the existing theme styles. In the following sample, value for cssClass property is set as customCss and this root class is used to customize the pager control theme.
+Pager control allows you to customize the appearance using user defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, we can make use of **CssClass** property. Using cssClass property, we can override the existing theme styles. In the following sample, value for cssClass property is set as customCss and this root class is used to customize the pager control theme.
 
 
 {% highlight CSHTML %}
@@ -150,7 +150,7 @@ Pager control allows you to customize the appearance using user defined CSS and 
 
         /*ej-Tag Helper code to render Pager*/
 
-        <ej-pager id="pager" total-records-count="20" page-size="1" page-count="3" css-Class="customCss"></ej-pager>
+        <ej-pager id="pager" total-records-count="20" page-size="1" page-count="3" css-class="customCss"></ej-pager>
 
 {% endhighlight %}
 
@@ -160,7 +160,7 @@ Defining custom class.
 
 <style>
         .e-pager.customCss .e-link.e-currentitem{
-                background:lightblue;
+                background:rgba(173,216,230,1);
         }
         .e-pager.customCss .e-numericitem, .e-pager.customCss .e-pagermsg{
             font-family:monospace;
