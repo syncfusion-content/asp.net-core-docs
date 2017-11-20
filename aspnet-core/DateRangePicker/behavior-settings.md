@@ -17,7 +17,7 @@ DateRangePicker value can be selected through picking two date values from avail
 
 Add the following code in your CSHTML page to render DateRangePicker with value.
 
-{%highlight cshtml%}
+{% highlight cshtml %}
 
      <ej-date-range-picker id="DateRange" value="5/12/2017 - 12/5/2017" change="onChange"></ej-date-range-picker>
 
