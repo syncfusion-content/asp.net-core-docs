@@ -1,0 +1,263 @@
+---
+layout: post
+title: How to ComboBox control for Syncfusion ASP.NET CORE
+description: How to
+platform: core
+control: ComboBox
+documentation: ug
+keywords: dataBind, ComboBox, cascading, autofill, icons
+---
+
+# How To
+
+## Configure the Cascading ComboBox
+
+The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends
+upon  another's value. This can be configured by using the `change` event of the parent ComboBox.
+Within that change event handler, data has to be loaded to the child ComboBox based on the selected
+value of the parent ComboBox.
+
+The following example, shows the cascade behavior of country, state, and city
+ComboBox. Here, the `dataBind` method is used to reflect the property changes immediately
+to the ComboBox.
+
+{% tabs %}
+
+{% highlight html %}
+
+    <div class="frame">
+       <div class="row">
+                  <div class="col-xs-8 col-sm-4">
+            <span class="txt">Select Group</span>
+            <ej-combo-box id="groupsList" datasource="(IEnumerable<groups>)ViewBag.datasource" placeholder="Select" change="onChange">
+                <e-combo-box-fields text="text" value="parentId"/>
+            </ej-combo-box>
+         </div>
+                    <div class="col-xs-8 col-sm-4" >
+            <span class="txt">Select Country</span>
+             <ej-combo-box id="countryList" datasource="(IEnumerable<Countries>)ViewBag.datasource1" enabled="false">
+                <e-combo-box-fields text="text" />
+            </ej-combo-box>
+        </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function onChange(e) {
+            var ctry = $('#countryList').data("ejComboBox");
+            if (e.model.value == null) ctry.option({ enabled: false });
+            else ctry.option({ enabled: true, query: new ej.Query().where('parentId', 'equal', e.model.value), value: null });
+        }
+    </script>
+
+{% endhighlight %}
+
+{% highliht c# %}
+
+        
+        List<groups> group = new List<groups>();
+        List<Countries> country = new List<Countries>();
+        public ActionResult Cascading()
+        {
+            group.Add(new groups { parentId = "a", text = "Group A" });
+            group.Add(new groups { parentId = "b", text = "Group B" });
+            group.Add(new groups { parentId = "c", text = "Group C" });
+            group.Add(new groups { parentId = "d", text = "Group D" });
+            group.Add(new groups { parentId = "e", text = "Group E" });
+            ViewBag.datasource = group;
+            country.Add(new Countries { value = 11, parentId = "a", text = "Algeria", sprite = "flag-dz" });
+            country.Add(new Countries { value = 12, parentId = "a", text = "Armenia", sprite = "flag-am" });
+            country.Add(new Countries { value = 13, parentId = "a", text = "Bangladesh", sprite = "flag-bd" });
+            country.Add(new Countries { value = 14, parentId = "a", text = "Cuba", sprite = "flag-cu" });
+            country.Add(new Countries { value = 15, parentId = "b", text = "Denmark", sprite = "flag-dk" });
+            country.Add(new Countries { value = 16, parentId = "b", text = "Egypt", sprite = "flag-eg" });
+            country.Add(new Countries { value = 17, parentId = "c", text = "Finland", sprite = "flag-fi" });
+            country.Add(new Countries { value = 18, parentId = "c", text = "India", sprite = "flag-in" });
+            country.Add(new Countries { value = 19, parentId = "c", text = "Malaysia", sprite = "flag-my" });
+            country.Add(new Countries { value = 20, parentId = "d", text = "New Zealand", sprite = "flag-nz" });
+            country.Add(new Countries { value = 21, parentId = "d", text = "Norway", sprite = "flag-no" });
+            country.Add(new Countries { value = 22, parentId = "d", text = "Romania", sprite = "flag-ro" });
+            country.Add(new Countries { value = 23, parentId = "e", text = "Singapore", sprite = "flag-sg" });
+            country.Add(new Countries { value = 24, parentId = "e", text = "Thailand", sprite = "flag-th" });
+            country.Add(new Countries { value = 25, parentId = "e", text = "Ukraine", sprite = "flag-ua" });
+            ViewBag.datasource1 = country;
+            return View();
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+
+{% endtab %}
+
+Output for combobox control is as follows.
+
+
+![](Combobox_howto_images/howto_cascading.png)
+
+
+## Show the list items with icons
+
+You can render **icons** to the list items by mapping the
+**iconCss**
+&nbsp;field. This `iconCss` field create a span in the list item with mapped class name
+to allow styling as per your need.
+
+In the following sample, icon classes are mapped with `iconCss` field.
+
+{% tabs %}
+
+{% highlight html %}
+
+   <div class="frame">
+        <div class="control">
+           <ej-combo-box id="selectmailtools" datasource="(IEnumerable<IconCss>)ViewBag.datasource" placeholder="Select a icon" width="100%">
+                <e-combo-box-fields text="Name" icon-css="IconClass" />
+            </ej-combo-box>
+        </div>
+    </div>
+    <style>
+    .mailtools {
+    display: block;
+    background-image: url('../../Images/dropdownlist/iconsapps.png');
+    height: 25px;
+    width: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+    .mailtools.done {
+        background-position: 0 0;
+    }
+
+    .mailtools.movetofolder {
+        background-position: 0 -22px;
+    }
+
+    .mailtools.categorize {
+        background-position: 0 -46px;
+    }
+
+    .mailtools.flag {
+        background-position: 0 -70px;
+    }
+
+    .mailtools.forward {
+        background-position: 0 -94px;
+    }
+
+    .mailtools.newmail {
+        background-position: 0 -116px;
+    }
+
+    .mailtools.reply {
+        background-position: 0 -140px;
+    }
+
+    .mailtools.meeting {
+        background-position: 0 -164px;
+    }
+
+.control {
+    margin-left: 20px;
+}
+
+.ctrllabel {
+    padding-bottom: 3px;
+}
+    </style>
+
+{% endhighlight %}
+
+{% highliht c# %}
+
+        
+         public string Name { get; set; }
+        public string IconClass { get; set; }
+        public static List<IconCss> GetIconList()
+        {
+            List<IconCss> icon = new List<IconCss>();
+            icon.Add(new IconCss { Name = "Categorize and Move", IconClass = "mailtools categorize" });
+            icon.Add(new IconCss { IconClass = "mailtools done", Name = "Done" });
+            icon.Add(new IconCss { IconClass = "mailtools flag", Name = "Flag & Move" });
+            icon.Add(new IconCss { IconClass = "mailtools forward", Name = "Forward" });
+            icon.Add(new IconCss { IconClass = "mailtools movetofolder", Name = "Move to Folder" });
+            icon.Add(new IconCss { IconClass = "mailtools newmail", Name = "New E-mail" });
+            icon.Add(new IconCss { IconClass = "mailtools meeting", Name = "New Meeting" });
+            icon.Add(new IconCss { IconClass = "mailtools reply", Name = "Reply & Delete" });
+            return icon;
+        }
+         public ActionResult Icons()
+        {
+            ViewBag.datasource = IconCss.GetIconList();
+            return View();
+        }
+    }
+}
+
+{% endhighlight %}
+
+
+{% endtab %}
+
+Output for combobox control is as follows.
+
+
+![](Combobox_howto_images/howto_icon.png)
+
+## Autofill supported with ComboBox
+
+The ComboBox supports the `autofill` behaviour with the help
+of **autofill** property. Whenever you change the input value,
+the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
+found then, comboBox doesn't suggest any item.
+
+In the following sample, showcase that how to work autofill with ComboBox.
+
+{% tabs %}
+
+{% highlight html%}
+
+<div class="frame">
+        <div class="control">
+           <ej-combo-box id="select" auto-fill="true" datasource="(IEnumerable<Countries>)ViewBag.datasource" placeholder="Select a country">
+            <e-combo-box-fields text="text" />
+        </ej-combo-box>
+        </div>
+    </div>
+
+{% endhighlight%}
+
+{% highliht c# %}
+
+        public string text { get; set; }
+        public string category { get; set; }
+        public static List<Countries> GetCountries()
+        {
+            List<Countries> country = new List<Countries>();
+            country.Add(new Countries { text = "Austria", category = "A" });
+            country.Add(new Countries { text = "Australia", category = "A" });
+            country.Add(new Countries { text = "Antarctica", category = "A" });
+            country.Add(new Countries { text = "Bangladesh", category = "B" });
+            country.Add(new Countries { text = "Brazil", category = "B" });
+            country.Add(new Countries { text = "Canada", category = "C" });
+            country.Add(new Countries { text = "Cuba", category = "C" });
+            country.Add(new Countries { text = "Denmark", category = "D" });
+            country.Add(new Countries { text = "Dominica", category = "D" });
+            return country;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtab %}
+
+Output for grouping combobox control is as follows.
+
+
+![](Combobox_howto_images/autofill.png)
+
