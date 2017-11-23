@@ -78,15 +78,13 @@ The following code example describes the above behavior.
 
 {% highlight c# %}
 
-    namespace samplebrowser.Controllers
-{
     public partial class KanbanBoardController : Controller
     {
         List<Tasks> Task = new List<Tasks>();
 
         public ActionResult Default()
         {
-            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy", "../content/images/kanban/1.png", 1));
             Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
             Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
             Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
@@ -94,13 +92,13 @@ The following code example describes the above behavior.
             Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
             Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
             Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
-            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
-            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret", "../content/images/kanban/4.png", 3));
             Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
             Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
             Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
             Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
-            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret", "../content/images/kanban/4.png", 4));
             ViewBag.datasource = Task;
             return View();
         }
@@ -110,7 +108,7 @@ The following code example describes the above behavior.
         public Tasks()
         {
         }
-        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImageUrl, int RankId)
         {
             this.Id = Id;
             this.Status = Status;
@@ -120,7 +118,7 @@ The following code example describes the above behavior.
             this.Tags = Tags;
             this.Estimate = Estimate;
             this.Assignee = Assignee;
-            this.ImgUrl = ImgUrl;
+            this.ImageUrl = ImageUrl;
             this.RankId = RankId;
         }
         public int Id { get; set; }
@@ -131,10 +129,10 @@ The following code example describes the above behavior.
         public string Tags { get; set; }
         public double Estimate { get; set; }
         public string Assignee { get; set; }
-        public string ImgUrl { get; set; }
+        public string ImageUrl { get; set; }
         public int RankId { get; set; }
     }
-}
+
 {% endhighlight  %}
 
 {% endtabs %}  
@@ -162,7 +160,7 @@ The following code example describes the above behavior.
         <tbody>
             <tr>
                 <td class="photo">                    
-                    <img src="../lib/syncfusion-javascript/Content/images/kanban/{{"{{"}}:Priority{{}}}}.png"/>
+                    <img src="../lib/syncfusion-javascript/Content/images/kanban/{{'{{'}} :Priority {{'}}'}}.png"/>
                 </td>
                 <td class="details">
                     <table>
@@ -173,15 +171,15 @@ The following code example describes the above behavior.
                         <tbody>
                             <tr>
                                 <td class="CardHeader">   Assignee: </td>
-                                 <td>{{"{{"}}:Assignee{{}}}}</td>
+                                 <td>{{'{{'}} :Assignee {{'}}'}}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader">   Summary: </td>
-                                 <td>{{"{{"}}:Summary{{}}}}</td>
+                                 <td>{{'{{'}} :Summary {{'}}'}}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader">   Type: </td>
-                                 <td>{{"{{"}}:Type{{}}}}</td>
+                                 <td>{{'{{'}} :Type {{'}}'}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -251,15 +249,13 @@ The following code example describes the above behavior.
 
 {% highlight c# %}
 
-namespace samplebrowser.Controllers
-{
     public partial class KanbanBoardController : Controller
     {
         List<Tasks> Task = new List<Tasks>();
 
         public ActionResult Default()
         {
-            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy", "../content/images/kanban/1.png", 1));
             Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
             Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
             Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
@@ -267,13 +263,13 @@ namespace samplebrowser.Controllers
             Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
             Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
             Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
-            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
-            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret", "../content/images/kanban/4.png", 3));
             Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
             Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
             Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
             Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
-            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret", "../content/images/kanban/4.png", 4));
             ViewBag.datasource = Task;
             return View();
         }
@@ -283,7 +279,7 @@ namespace samplebrowser.Controllers
         public Tasks()
         {
         }
-        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImageUrl, int RankId)
         {
             this.Id = Id;
             this.Status = Status;
@@ -293,7 +289,7 @@ namespace samplebrowser.Controllers
             this.Tags = Tags;
             this.Estimate = Estimate;
             this.Assignee = Assignee;
-            this.ImgUrl = ImgUrl;
+            this.ImageUrl = ImageUrl;
             this.RankId = RankId;
         }
         public int Id { get; set; }
@@ -304,10 +300,10 @@ namespace samplebrowser.Controllers
         public string Tags { get; set; }
         public double Estimate { get; set; }
         public string Assignee { get; set; }
-        public string ImgUrl { get; set; }
+        public string ImageUrl { get; set; }
         public int RankId { get; set; }
     }
-}
+
 {% endhighlight  %}
 
 {% endtabs %}  
@@ -343,15 +339,13 @@ The following code example describes the above behavior.
 
 {% highlight c# %}
 
-namespace samplebrowser.Controllers
-{
     public partial class KanbanBoardController : Controller
     {
         List<Tasks> Task = new List<Tasks>();
 
         public ActionResult Default()
         {
-            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy", "../content/images/kanban/1.png", 1));
             Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
             Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
             Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
@@ -359,13 +353,13 @@ namespace samplebrowser.Controllers
             Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
             Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
             Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
-            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
-            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret", "../content/images/kanban/4.png", 3));
             Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
             Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
             Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
             Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
-            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret", "../content/images/kanban/4.png", 4));
             ViewBag.datasource = Task;
             return View();
         }
@@ -375,7 +369,7 @@ namespace samplebrowser.Controllers
         public Tasks()
         {
         }
-        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImageUrl, int RankId)
         {
             this.Id = Id;
             this.Status = Status;
@@ -385,7 +379,7 @@ namespace samplebrowser.Controllers
             this.Tags = Tags;
             this.Estimate = Estimate;
             this.Assignee = Assignee;
-            this.ImgUrl = ImgUrl;
+            this.ImageUrl = ImageUrl;
             this.RankId = RankId;
         }
         public int Id { get; set; }
@@ -396,10 +390,10 @@ namespace samplebrowser.Controllers
         public string Tags { get; set; }
         public double Estimate { get; set; }
         public string Assignee { get; set; }
-        public string ImgUrl { get; set; }
+        public string ImageUrl { get; set; }
         public int RankId { get; set; }
     }
-}
+
 {% endhighlight  %}
 
 {% endtabs %}  
@@ -422,7 +416,7 @@ The following code example describes the tooltip template.
                     <tr>
                         <td class="photo">
                         
-                            <img src="{{"{{"}}:ImgUrl{{}}}}">
+                            <img src="{{'{{'}} :ImgUrl {{'}}'}}">
                         </td>
                         <td class="details">
                             <table>
@@ -433,21 +427,20 @@ The following code example describes the tooltip template.
                                 <tbody>
                                     <tr>
                                         <td class="CardHeader">Assignee:</td>
-                                        <td>{{"{{"}}:Assignee{{}}}}</td>
+                                        <td>{{'{{'}} :Assignee {{'}}'}}</td>
                                     </tr>
                                     <tr>
                                         <td class="CardHeader">Type:</td>
-                                        <td>{{"{{"}}:Type{{}}}}</td>
+                                        <td>{{'{{'}} :Type {{'}}'}}</td>
                                      
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Estimate:</td>
-                                         <td>{{"{{"}}:Estimate{{}}}}</td>
-                                        
+                                         <td>{{'{{'}} :Estimate {{'}}'}}</td>
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Summary:</td>
-                                        <td>{{"{{"}}:Summary{{}}}}</td>
+                                        <td>{{'{{'}} :Summary {{'}}'}}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -510,15 +503,13 @@ The following code example describes the tooltip template.
 
 {% highlight c# %}
 
-    namespace samplebrowser.Controllers
-{
     public partial class KanbanBoardController : Controller
     {
         List<Tasks> Task = new List<Tasks>();
 
         public ActionResult Default()
         {
-            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy Davloio", "../content/images/kanban/1.png", 1));
+            Task.Add(new Tasks(1, "Open", "Analyze the new requirements gathered from the customer.", "Story", "Low", "Analyze,Customer", 3.5, "Nancy", "../content/images/kanban/1.png", 1));
             Task.Add(new Tasks(2, "InProgress", "Improve application performance", "Improvement", "Normal", "Improvement", 6, "Andrew Fuller", "../content/images/kanban/2.png", 1));
             Task.Add(new Tasks(3, "Open", "Arrange a web meeting with the customer to get new requirements.", "Others", "Critical", "Meeting", 5.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
             Task.Add(new Tasks(4, "InProgress", "Fix the issues reported in the IE browser.", "Bug", "Release Breaker", "IE", 2.5, "Janet Leverling", "../content/images/kanban/3.png", 2));
@@ -526,13 +517,13 @@ The following code example describes the tooltip template.
             Task.Add(new Tasks(6, "Close", "Arrange a web meeting with the customer to get the login page requirements.", "Others", "Low", "Meeting", 2, "Michael Suyama", "../content/images/kanban/6.png", 1));
             Task.Add(new Tasks(7, "Validate", "Validate new requirements", "Improvement", "Low", "Validation", 1.5, "Robert King", "../content/images/kanban/7.png", 4));
             Task.Add(new Tasks(8, "Close", "Login page validation", "Story", "Release Breaker", "Validation,Fix", 2.5, "Laura Callahan", "../content/images/kanban/8.png", 2));
-            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy Davloio", "../content/images/kanban/1.png", 2));
-            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 3));
+            Task.Add(new Tasks(9, "Testing", "Fix the issues reported in Safari browser.", "Bug", "Release Breaker", "Fix,Safari", 1.5, "Nancy", "../content/images/kanban/1.png", 2));
+            Task.Add(new Tasks(10, "Close", "Test the application in the IE browser.", "Story", "Low", "Testing,IE", 5.5, "Margaret", "../content/images/kanban/4.png", 3));
             Task.Add(new Tasks(11, "Validate", "Validate the issues reported by the customer.", "Story", "High", "Validation,Fix", 1, "Steven walker", "../content/images/kanban/5.png", 5));
             Task.Add(new Tasks(12, "Testing", "Check Login page validation.", "Story", "Release Breaker", "Testing", 0.5, "Michael Suyama", "../content/images/kanban/6.png", 3));
             Task.Add(new Tasks(13, "Open", "API improvements.", "Improvement", "High", "Grid,API", 3.5, "Robert King", "../content/images/kanban/7.png", 3));
             Task.Add(new Tasks(14, "InProgress", "Add responsive support to application", "Epic", "Critical", "Responsive", 6, "Laura Callahan", "../content/images/kanban/8.png", 3));
-            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret hamilt", "../content/images/kanban/4.png", 4));
+            Task.Add(new Tasks(15, "Open", "Show the retrieved data from the server in grid control.", "Story", "High", "Database,SQL", 5.5, "Margaret", "../content/images/kanban/4.png", 4));
             ViewBag.datasource = Task;
             return View();
         }
@@ -542,7 +533,7 @@ The following code example describes the tooltip template.
         public Tasks()
         {
         }
-        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImgUrl, int RankId)
+        public Tasks(int Id, string Status, string Summary, string Type, string Priority, string Tags, double Estimate, string Assignee, string ImageUrl, int RankId)
         {
             this.Id = Id;
             this.Status = Status;
@@ -552,7 +543,7 @@ The following code example describes the tooltip template.
             this.Tags = Tags;
             this.Estimate = Estimate;
             this.Assignee = Assignee;
-            this.ImgUrl = ImgUrl;
+            this.ImageUrl = ImageUrl;
             this.RankId = RankId;
         }
         public int Id { get; set; }
@@ -563,10 +554,10 @@ The following code example describes the tooltip template.
         public string Tags { get; set; }
         public double Estimate { get; set; }
         public string Assignee { get; set; }
-        public string ImgUrl { get; set; }
+        public string ImageUrl { get; set; }
         public int RankId { get; set; }
     }
-}
+    
 {% endhighlight  %}
 
 {% endtabs %}  
