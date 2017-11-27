@@ -54,7 +54,7 @@ The following steps explain the implementation of the “Nested Splitter” opti
 											<div>
 												<div class="content">
 													<h3 class="h3">CAMEMBERT</h3>
-													The village in the Orne département of Normandy where the famous French cheese is originated from.
+													The village in the Orne departement of Normandy where the famous French cheese is originated from.
 												</div>
 											</div>
 										</e-content-template>
