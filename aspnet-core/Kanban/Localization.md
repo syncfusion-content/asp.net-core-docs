@@ -50,7 +50,7 @@ Add New Card
 <td>
 SwimlaneCaptionFormat
 </td><td>
-"- {{'{{'}} :count {{'}}'}} {{'{{'}} if count == 1 {{'}}'}} item {{else}} items {{'{{'}} /if {{'}}'}}"
+"- {{'{{'}} :count {{}}'}} {{'{{'}} if count == 1 {{}}'}} item {{else}} items {{'{{'}} /if {{}}'}}"
 </td></tr>
 <tr>
 <td>
@@ -192,7 +192,7 @@ The following code example describes the above behavior.
             CancelButton: "stornieren",
             EditFormTitle: "Details von ",
             AddFormTitle: "Neue Karte hinzufügen",
-            SwimlaneCaptionFormat: "- {{'{{'}} :count {{'}}'}}{{'{{'}}if count == 1{{'}}'}} Artikel {{else}} Artikel {{'{{'}}/if{{'}}'}}",
+            SwimlaneCaptionFormat: "- {{'{{'}} :count {{}}'}}{{'{{'}}if count == 1{{}}'}} Artikel {{else}} Artikel {{'{{'}}/if{{}}'}}",
             FilterSettings: "Filter:",
             FilterOfText: "Von",
             Max: "Max.",
@@ -304,7 +304,7 @@ The following code example describes the above behavior.
       CancelButton: "إلغاء",
       EditFormTitle: "تفاصيل ",
       AddFormTitle: "إضافة بطاقة جديدة",
-      SwimlaneCaptionFormat: "- {{'{{'}}:count{{'}}'}}{{'{{'}}if count == 1{{'}}'}} بند {{else}} العناصر {{'{{'}}/if{{'}}'}}",
+      SwimlaneCaptionFormat: "- {{'{{'}}:count{{}}'}}{{'{{'}}if count == 1{{}}'}} بند {{else}} العناصر {{'{{'}}/if{{}}'}}",
       FilterSettings: "مرشحات:",
       FilterOfText: "من",
       Max: "ماكس",
