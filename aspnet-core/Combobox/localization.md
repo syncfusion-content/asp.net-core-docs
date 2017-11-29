@@ -10,10 +10,7 @@ keywords: locale, ComboBox
 
 # Localization
 
-The Localization library allows you to localize the static text content of the
-**noRecordsTemplate**
- and **actionFailureTemplate**
-&nbsp;properties according to the culture currently assigned to the ComboBox.
+The Localization library allows you to localize the static text content of the **noRecordsTemplate** and **actionFailureTemplate** &nbsp;properties according to the culture currently assigned to the ComboBox.
 
 | Locale key | en-US (default)  |
 |------|------|-------------|

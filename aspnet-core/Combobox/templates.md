@@ -10,14 +10,11 @@ keywords: itemTemplate, ComboBox, groupTemplate, headerTemplate, footerTemplate,
 
 # Templates
 
-The ComboBox has been provided with several options to customize each list item, group title,
-selected value, header, and footer elements. 
+The ComboBox has been provided with several options to customize each list item, group title, selected value, header, and footer elements. 
 
 ## Item template
 
-The content of each list item within the ComboBox can be customized with the
-help of **itemTemplate**
-property.
+The content of each list item within the ComboBox can be customized with the help of **itemTemplate** property.
 
 In the following sample, each list item is splitted into two columns to display the relevant data.
 
@@ -81,9 +78,7 @@ Output for item template combobox control is as follows.
 
 ## Group template
 
-The group header title with appropriate sub-items are categorized that is customized with the help of
-the **groupTemplate** property.
-This template is common for both inline and floating group header template.
+The group header title with appropriate sub-items are categorized that is customized with the help of the **groupTemplate** property. This template is common for both inline and floating group header template.
 
 In the following sample, employees are grouped according to their city.
 
@@ -148,12 +143,9 @@ Output for group template combobox control is as follows.
 
 ## Header template
 
-The header element is shown statically at the top of the popup list items within the
-ComboBox, and any custom element can be placed as a header element using the
-**headerTemplate** property.
+The header element is shown statically at the top of the popup list items within the ComboBox, and any custom element can be placed as a header element using the **headerTemplate** property.
 
-In the following sample, the list items and its headers are designed, and displayed as two columns
-similar to the multiple columns of the grid.
+In the following sample, the list items and its headers are designed, and displayed as two columns similar to the multiple columns of the grid.
 
 
 {% highlight html %}
@@ -223,8 +215,7 @@ Output for item template combobox control is as follows.
 
 ## Footer template
 
-The ComboBox has an option to show a footer element at the bottom of the list items in the popup list.
-Here, you can place any custom element as a footer element by using the **footerTemplate** property.
+The ComboBox has an option to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element by using the **footerTemplate** property.
 
 In the following sample, footer element displays the total number of list items present in the ComboBox.
 
@@ -295,9 +286,7 @@ Output for footer template combobox control is as follows.
 
 ## No records template
 
-The ComboBox is provided with support to custom design the popup list content when no data is found
-and no matches found on search with the help of
-the **noRecordsTemplate** property.
+The ComboBox is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of the **noRecordsTemplate** property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -331,9 +320,7 @@ Output for no records template combobox control is as follows.
 
 ## Action failure template
 
-There is also an option to custom design the popup list content when the data fetch request
-fails at the remote server. This can be achieved by using the
-**actionFailureTemplate** property.
+There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved by using the **actionFailureTemplate** property.
 
 In the following sample, when the data fetch request fails, the ComboBox displays the notification as Data fetch get fails.
 
