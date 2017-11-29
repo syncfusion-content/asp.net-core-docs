@@ -341,30 +341,30 @@ The below given example explains the behavior of grouping with List data binding
     {% highlight c# %}
         public ActionResult Index()
         {
-            List<VegetableList> VegeList = new List<VegetableList>();
-            VegeList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Wheatgrass", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Green bean", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Horse gram", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous"}); 
-            VegeList.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
-            ViewBag.datasource = VegeList;
+            List<VegetableList> vegetableList = new List<VegetableList>();
+            vegetableList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Wheat grass", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Green bean", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Horse gram", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
+            vegetableList.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
+            vegetableList.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous"}); 
+            vegetableList.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
+            ViewBag.datasource = vegetableList;
             return View();
         }
         public class VegetableList
@@ -606,12 +606,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
 
 	{% highlight C# %}
     
-    public partial class DropdownlistController: Controller
+    public partial class DropdownController: Controller
     {
         List<groups> group = new List<groups>();
         List<Countries> country = new List<Countries>();
         List<Capital> capital = new List<Capital>();
-        public ActionResult DropdownlistFeatures()
+        public ActionResult DropdownFeatures()
         {
             group.Add(new groups { parentId = "a", text = "Group A" });
             group.Add(new groups { parentId = "b", text = "Group B" });
@@ -644,7 +644,7 @@ The below scenario can be explained with three DropDownList for the multi-level 
             capital.Add(new Capital { value = 17, text = "Copenhagen" });
             capital.Add(new Capital { value = 18, text = "New Delhi" });
             capital.Add(new Capital { value = 19, text = "Havana" });
-            capital.Add(new Capital { value = 20, text = "Brasília" });
+            capital.Add(new Capital { value = 20, text = "Brasilia" });
             capital.Add(new Capital { value = 21, text = "Lima" });
             capital.Add(new Capital { value = 22, text = "Canberra" });
             capital.Add(new Capital { value = 23, text = "Wellington" });
