@@ -22,140 +22,80 @@ The following steps explain the implementation of the “Nested Splitter” opti
 
 {% highlight CSHTML %}
 
-@{Html.EJ().Splitter("outterSplitter").Height("300").Width("600").Orientation(Orientation.Vertical).PaneProperties(
-
-p =>
-
-{
-
-	p.Add().ContentTemplate(
-
-		@<div>
-
-			<div class="content" style="padding: 0px 15px;">
-
-				<h3 class="h3">
-
-					ASP.NET Core
-
-				</h3>
-
-			</div>
-
-		</div>).PaneSize("60");
-
-	p.Add().ContentTemplate(
-
-		@<div style="height: 100%; width: 100%">
-
-			@innerSplitter()
-
-		</div>);
-
-}).Render();}
-
-
-
-@helper innerSplitter()
-
-{
-
-@Html.EJ().Splitter("innerSplitter").Width("600").PaneProperties(p1 =>
-
-			{
-
-				p1.Add().ContentTemplate(@<div>
-
-					<div class="content">
-
-						<h3 class="h3">
-
-							Tools
-
-						</h3>
-
-					   Essential Tools is an collection of user interface components used to create interactive
-
-						ASP.NET Core applications.
-
-					</div>
-
-				</div>).PaneSize("200");
-
-				p1.Add().ContentTemplate(@<div>
-
-		<div class="content">
-
-			<h3 class="h3">
-
-				Chart
-
-			</h3>
-
-			Essential Chart is a business-oriented charting component.
-
-		</div>
-
-	</div>).PaneSize("200");
-
-				p1.Add().ContentTemplate(@<div>
-
-		<div class="content">
-
-			<h3 class="h3">
-
-				Grid
-
-			</h3>
-
-			Essential Asp.NET Core Grid offers full featured a Grid control with extensive support for
-
-			Grouping and the display of hierarchical data.
-
-		</div>
-
-	</div>).PaneSize("200");
-
-			})
-
-}
+	<ej-splitter id="outterSplitter" is-responsive="true" enable-auto-resize="true" height="350" width="487" orientation="@Orientation.Vertical">
+			<e-split-panes>
+				<e-split-pane pane-size="60" min-size="30">
+					<e-content-template>
+						<div>
+							<div class="content" style="padding: 0px 15px;">
+								<h3> FRENCH CITIES
+								</h3>
+							</div>
+						</div>
+					</e-content-template>
+				</e-split-pane>
+				<e-split-pane minSize="30">
+					<e-content-template>
+						<div style="height:100%">
+							<ej-Splitter id="innerSplitter" is-responsive="true" width="485" enable-auto-resize="true" >
+								<e-split-panes>
+									<e-split-pane pane-size="33%" minSize="30">
+										<e-content-template>
+											<div>
+												<div class="content">
+													<h3 class="h3">PARIS</h3>
+													Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism...
+												</div>
+											</div> 
+										</e-content-template>
+									</e-split-pane>
+									<e-split-pane pane-size="33%" min-size="30">
+										<e-content-template>
+											<div>
+												<div class="content">
+													<h3 class="h3">CAMEMBERT</h3>
+													The village in the Orne department of Normandy where the famous French cheese is originated from.
+												</div>
+											</div>
+										</e-content-template>
+									</e-split-pane>
+									<e-split-pane min-size="30">
+										<e-content-template>
+											<div>
+												<div class="content">
+													<h3 class="h3">GRENOBLE</h3>
+													The capital city of the French Alps and a major scientific center surrounded by many ski resorts, host of the Winter Olympics in 1968.
+												</div>
+											</div>
+										</e-content-template>
+									</e-split-pane>
+								</e-split-panes>
+							</ej-Splitter>
+						</div>
+					</e-content-template>
+				</e-split-pane>
+			</e-split-panes>
+		</ej-splitter>
 
 {% endhighlight %}
 
 {% highlight CSS %}
 
 
-<style type="text/css" >
+	<style type="text/css" class="cssStyles">
+			.content>h3 {
+				font-size: 14px;
+				font-weight: 600;
+			}
 
-	#outterSplitter 
-	{
+			#innerSplitter {
+				border: 0 none;
+			}
 
-		margin: 0 auto;
-
-	}
-
-	.h3 
-	{
-
-		font-size: 14px;
-
-	}
-
-	#innerSplitter 
-	{
-
-		border: 0 none;
-
-	}
-
-	.content 
-	{
-
-		padding: 15px;
-
-	}
-
-</style>
+			.content {
+				padding: 15px;
+			}
+		</style>
 
 
 
