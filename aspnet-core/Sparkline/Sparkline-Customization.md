@@ -102,7 +102,7 @@ You can control whether Sparkline has to be rendered as SVG or `Canvas`. Canvas 
 
 {% highlight html %}
 
-<ej-spark-line id="spark" enable-canvas-rendering="0.5">          
+<ej-spark-line id="spark" enable-canvas-rendering="true">          
                                
 </ej-spark-line>
 
