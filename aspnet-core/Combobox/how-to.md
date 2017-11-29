@@ -21,7 +21,7 @@ The following example, shows the cascade behavior of country, state, and city
 ComboBox. Here, the `dataBind` method is used to reflect the property changes immediately
 to the ComboBox.
 
-{% tabs %}
+
 
 {% highlight html %}
 
@@ -53,7 +53,7 @@ to the ComboBox.
 
 {% endhighlight %}
 
-{% highliht c# %}
+{% highlight c# %}
 
         
         List<groups> group = new List<groups>();
@@ -91,8 +91,6 @@ to the ComboBox.
 {% endhighlight %}
 
 
-{% endtab %}
-
 Output for combobox control is as follows.
 
 
@@ -103,12 +101,11 @@ Output for combobox control is as follows.
 
 You can render **icons** to the list items by mapping the
 **iconCss**
-&nbsp;field. This `iconCss` field create a span in the list item with mapped class name
+&nbsp;field. This `iconCss` field create a span in the list item with the mapped class name
 to allow styling as per your need.
 
-In the following sample, icon classes are mapped with `iconCss` field.
+In the following sample, icon classes are mapped with the `iconCss` field.
 
-{% tabs %}
 
 {% highlight html %}
 
@@ -172,7 +169,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 
 {% endhighlight %}
 
-{% highliht c# %}
+{% highlight c# %}
 
         
          public string Name { get; set; }
@@ -201,7 +198,6 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% endhighlight %}
 
 
-{% endtab %}
 
 Output for combobox control is as follows.
 
@@ -212,12 +208,11 @@ Output for combobox control is as follows.
 
 The ComboBox supports the `autofill` behaviour with the help
 of **autofill** property. Whenever you change the input value,
-the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches
-found then, comboBox doesn't suggest any item.
+the ComboBox will autocomplete your data by matching the typed character. If no matches
+found, the comboBox will not suggest any item.
 
 In the following sample, showcase that how to work autofill with ComboBox.
 
-{% tabs %}
 
 {% highlight html%}
 
@@ -231,7 +226,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 
 {% endhighlight%}
 
-{% highliht c# %}
+{% highlight c# %}
 
         public string text { get; set; }
         public string category { get; set; }
@@ -254,7 +249,6 @@ In the following sample, showcase that how to work autofill with ComboBox.
 
 {% endhighlight %}
 
-{% endtab %}
 
 Output for grouping combobox control is as follows.
 

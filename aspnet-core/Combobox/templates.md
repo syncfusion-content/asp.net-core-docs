@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Templates in ComboBox control for Syncfusion ASP.NET MVC
-description: Template support to ComboBox control for Syncfusion ASP.NET MVC
-platform: mvc
+title: Templates in ComboBox control for Syncfusion ASP.NET CORE
+description: Template support to ComboBox control for Syncfusion ASP.NET CORE
+platform: core
 control: ComboBox
 documentation: ug
 keywords: itemTemplate, ComboBox, groupTemplate, headerTemplate, footerTemplate, noRecordsTemplate, actionFailureTemplate
@@ -19,9 +19,9 @@ The content of each list item within the ComboBox can be customized with the
 help of **itemTemplate**
 property.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item is splitted into two columns to display the relevant data.
 
-{% tabs %}
+
 
 {% highlight html %}
 <div class="frame">
@@ -31,6 +31,9 @@ In the following sample, each list item is split into two columns to display rel
             </ej-combo-box>
         </div>
     </div>
+{% endhighlight %}
+
+{% highlight css %}
     <style>
         
         .ename {
@@ -70,7 +73,6 @@ In the following sample, each list item is split into two columns to display rel
 
 {% endhighlight %}
 
-{% endtab %}
 
 Output for item template combobox control is as follows.
 
@@ -79,16 +81,14 @@ Output for item template combobox control is as follows.
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be
-customize with the help of
-**groupTemplate** property.
+The group header title with appropriate sub-items are categorized that is customized with the help of
+the **groupTemplate** property.
 This template is common for both inline and floating group header template.
 
 In the following sample, employees are grouped according to their city.
 
- {% tabs %}
 
-{%  endhighlight html %}
+{%  highlight html %}
 
 <div class="frame">
         <div class="control">
@@ -97,6 +97,11 @@ In the following sample, employees are grouped according to their city.
             </ej-combo-box>
         </div>
     </div>
+
+{% endhighlight %}
+
+{% highlight css %}
+
     <style>
         
         .ename {
@@ -133,8 +138,13 @@ In the following sample, employees are grouped according to their city.
             display: block;
         }
     </style>
+{% endhighlight %}
 
-{% endtab %}
+Output for group template combobox control is as follows.
+
+
+![](Combobox_templates_images/group_template.png)
+
 
 ## Header template
 
@@ -142,10 +152,9 @@ The header element is shown statically at the top of the popup list items within
 ComboBox, and any custom element can be placed as a header element using the
 **headerTemplate** property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns
-similar to multiple columns of the grid.
+In the following sample, the list items and its headers are designed, and displayed as two columns
+similar to the multiple columns of the grid.
 
-{% tabs %}
 
 {% highlight html %}
 
@@ -156,6 +165,11 @@ similar to multiple columns of the grid.
             </ej-combo-box>
         </div>
     </div>
+
+{% endhighlight %}
+
+{% highlight css %}
+
     <style>
          .head {
             background-color: #a9a9a9;
@@ -201,7 +215,6 @@ similar to multiple columns of the grid.
     </style>
 {% endhighlight %}
 
-{% endtab %}
 
 Output for item template combobox control is as follows.
 
@@ -210,12 +223,12 @@ Output for item template combobox control is as follows.
 
 ## Footer template
 
-The ComboBox has options to show a footer element at the bottom of the list items in the popup list.
-Here, you can place any custom element as a footer element using the **footerTemplate** property.
+The ComboBox has an option to show a footer element at the bottom of the list items in the popup list.
+Here, you can place any custom element as a footer element by using the **footerTemplate** property.
 
 In the following sample, footer element displays the total number of list items present in the ComboBox.
 
-{% tabs %}
+{% highlight html %}
 
 <div class="frame">
         <div class="control">
@@ -224,6 +237,11 @@ In the following sample, footer element displays the total number of list items 
             </ej-combo-box>
         </div>
     </div>
+
+{% endhighlight %}
+
+{% highlight css %}
+
     <style>
         
         .Foot {
@@ -268,7 +286,7 @@ In the following sample, footer element displays the total number of list items 
         }
     </style>
 
-{% endtab %}
+{% endhighlight %}
 
 Output for footer template combobox control is as follows.
 
@@ -279,13 +297,13 @@ Output for footer template combobox control is as follows.
 
 The ComboBox is provided with support to custom design the popup list content when no data is found
 and no matches found on search with the help of
-**noRecordsTemplate** property.
+the **noRecordsTemplate** property.
 
 In the following sample, popup list content displays the notification of no data available.
 
-{% tabs %}
 
-{%  hightlight html %}
+
+{%  highlight html %}
 <div class="frame">
         <div class="control">
             <ej-combo-box id="searchCustomer" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName').take(0)" no-records-template="<span class='norecord'> NO DATA AVAILABLE</span>" placeholder="Select a customer" width="100%">
@@ -314,14 +332,12 @@ Output for no records template combobox control is as follows.
 ## Action failure template
 
 There is also an option to custom design the popup list content when the data fetch request
-fails at the remote server. This can be achieved using the
+fails at the remote server. This can be achieved by using the
 **actionFailureTemplate** property.
 
-In the following sample, when the data fetch request fails, the ComboBox displays the notification.
+In the following sample, when the data fetch request fails, the ComboBox displays the notification as Data fetch get fails.
 
-{% tabs %}
-
-{%  hightlight html %}
+{%  highlight html %}
 <div class="frame">
         <div class="control">
              <ej-combo-box id="searchCustomer" query="ej.Query().from('Suppliers').select('SupplierID', 'ContactName')" .action-failure-template="<span class='action-failure'>Data fetch get fails</span>" placeholder="Select a customer" width="100%">

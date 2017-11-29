@@ -10,14 +10,13 @@ keywords: groupBy, ComboBox, groupTemplate
 
 # Grouping
 
-The ComboBox supports wrapping nested elements into a group based on different categories. The category
+The ComboBox supports the wrapping of nested elements into a group based on different categories. The category
 of each list item can be mapped through the **groupBy** &nbsp;field in
 the data table. The group header is displayed both as inline and fixed headers. The fixed group header content
 is updated dynamically on scrolling the popup list with its category value.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according on its category using the `groupBy` field.
 
-{% tab %}
 
 {% highlight html%}
 
@@ -31,7 +30,7 @@ In the following sample, vegetables are grouped according on its category using 
 
 {% endhighlight%}
 
-{% highliht c# %}
+{% highlight c# %}
 
         public string text { get; set; }
         public string category { get; set; }
@@ -54,7 +53,7 @@ In the following sample, vegetables are grouped according on its category using 
 
 {% endhighlight %}
 
-{% endtab %}
+
 
 Output for grouping combobox control is as follows.
 
@@ -64,5 +63,5 @@ Output for grouping combobox control is as follows.
 
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom designing using the `groupTemplate` property for both inline and fixed headers as referred here:
+The grouping header is also provided with the customization option. This allows custom designing using the `groupTemplate` property for both the inline and fixed headers as referred here:
 **Group Template support to ComboBox**.

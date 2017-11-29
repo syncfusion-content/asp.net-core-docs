@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Binding in ComboBox control for Syncfusion ASP.NET MVC
-description: DataBinding support to ComboBox control for Syncfusion ASP.NET MVC
-platform: mvc
+title: Data Binding in ComboBox control for Syncfusion ASP.NET CORE
+description: DataBinding support to ComboBox control for Syncfusion ASP.NET CORE
+platform: CORE
 control: ComboBox
 documentation: ug
 keywords: remote date, ComboBox, json data, local data
@@ -10,7 +10,7 @@ keywords: remote date, ComboBox, json data, local data
 
 # Data Binding
 
-The ComboBox loads the data either from local data sources or
+The ComboBox loads the data either from the local data sources or
 remote data services using the `dataSource` property. It supports
 the data type of `array` or **DataManager**.
 
@@ -23,7 +23,7 @@ The ComboBox also supports different kinds of data services such as OData, OData
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-> When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> When binding complex data to the ComboBox, the fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 
@@ -31,12 +31,17 @@ Local data can be represented in two ways as described below.
 
 ### 1. Array of simple data
 
-The ComboBox has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The ComboBox has the support to load array of primitive data such as strings and numbers. Here, both the value and text field act as the same.
 
 {% highlight CSHTML %}
 
  @{string[] datasource = new string[] { "Badminton", "Cricket", "Football", "Golf", "Tennis" };
     }
+
+{% endhighlight %}
+
+{% highlight html %}
+
     <div class="frame">
         <div class="control"> 
         <ej-combo-box id="selectCar" datasource="datasource" placeholder="Select">
@@ -47,6 +52,9 @@ The ComboBox has support to load array of primitive data such as strings and num
 
 {% endhighlight %}
 
+Output for array-data combobox control is as follows.
+
+![](Combobox_databinding_images/array_data.png) 
 
 ### 2. Array of JSON data
 
@@ -55,7 +63,7 @@ the appropriate columns should be mapped to the **fields** property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
-{% highlight CSHTML %}
+{% highlight html %}
 
 <div class="frame">
         <div class="control"> 
@@ -94,12 +102,11 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 ## Binding remote data
 
-The ComboBox supports retrieval of data from remote data services with the help of **DataManager** component. The **Query** property is used to fetch
+The ComboBox supports retrieval of data from the remote data services with the help of **DataManager** component. The **Query** property is used to fetch
 data from the database and bind it to the ComboBox.
 
 In the following sample, displayed first 6 contacts from the `customer` table of `Northwind` Data Service.
 
-{% tabs%}
 
 {% highlight html %}
 
@@ -123,9 +130,9 @@ public ActionResult Databindingremote()
 
 {% endhighlight %}
 
-{% endtabs %}
 
-Output for remote-data combobox control is as follows.
+
+Output for remote-data combobox control is as follows:
 
 
 ![](Combobox_databinding_images/remote_data.png) 

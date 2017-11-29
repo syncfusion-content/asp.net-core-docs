@@ -10,7 +10,7 @@ keywords: allowCustom, ComboBox, dataSource, popupHeight, popupWidth
 
 # Getting Started
 
-This section explains how to create a simple **ComboBox** component and configure its available functionalities in TypeScript, using [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation
+This section explains how to create a simple **ComboBox** component and configure its available functionalities in TypeScript, using [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
 
 {% highlight CSHTML %}
   
@@ -29,15 +29,13 @@ This section explains how to create a simple **ComboBox** component and configur
 
   {% endhighlight  %}
 
-N> To render the ComboBox Control you can use either Razor or Tag helper code as given in the above code snippet.
-
-3.Execute the code and get the DropDownList control rendered as below
+N> To render the ComboBox Control, you can use either Razor or Tag helper code as given in the above code snippet.
 
 ## Initialize the ComboBox
 
-The ComboBox can be initialized as
+The ComboBox can be initialized as:
 
-{% highlight CSHTML %}
+{% highlight html %}
 
 <div class="frame">
         <div class="control"> 
@@ -100,8 +98,8 @@ Here, an array of string values is passed to the ComboBox component.
 ## Custom values
 
 The ComboBox allows the user to give input as custom value which is not required to present in predefined
-set of values. By default, this support is enabled by **allowCustom**
- property. In this case, both text field and value field considered as same.
+set of values. By default, this support is enabled by the **allowCustom**
+ property. In this case, both text field and value field are considered as same.
 The custom value will be sent to post back handler when a form is about to be submitted.
 
 {% highlight CSHTML %}
