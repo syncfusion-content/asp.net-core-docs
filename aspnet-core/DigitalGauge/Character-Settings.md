@@ -129,7 +129,7 @@ Digital Gauge control with shadow option
 
 ## Font Customization
 
-You can customize the **font** of the text as per your requirement. To customize the font, you have to set `enablecustomfont`. Following font customization options are available.
+You can customize the **font** of the text as per your requirement. To customize the font, you have to set `enable-custom-font`. Following font customization options are available.
 
 **Font-family**- used to set the font-family of the text.
 
