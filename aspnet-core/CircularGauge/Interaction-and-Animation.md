@@ -52,5 +52,102 @@ Circular Gauge with basic Animation property
 {:.caption}
 
 
+## Gradient
+
+You can change the interior gradient of **Circular Gauge** by using `InteriorGradient` property. The `isRadialGradient` property is used to check whether the gradient is circular or not.  
+
+{% highlight html %}
+
+<ej-circular-gauge id="circularGauge1" is-radial-gradient ="true" >
+    
+    <% Code %>
+
+    <% Code %>
+    
+</ej-circular-gauge>
+    
+{% endhighlight %}
+
+## Distance From Corner
+
+You can display the circular gauge from distance apart from the corner by specifying value for `distance-from-corner` property. 
+
+{% highlight html %}
+
+<ej-circular-gauge id="circularGauge1" distance-from-corner="5" >
+        
+</ej-circular-gauge>
+
+{% endhighlight %}
+
+## Resize
+
+Circular gauge can be responsive while resizing by specifying `enable-resize` property as true. 
+
+{% highlight html %}
+
+<ej-circular-gauge id="circularGauge1" enable-resize="true" >
+        
+</ej-circular-gauge>
+
+{% endhighlight %}
+
+## Localization
+
+The circular gauge can be localized based on name of culture specified in `Locale` property.
+
+{% highlight html %}
+
+<ej-circular-gauge id="circularGauge1" locale="en-fr" >
+        
+</ej-circular-gauge>
+
+{% endhighlight %}
+
+## Themes
+
+**CircularGauge** `Theme` is a set of pre-defined options that are applied to the control before **CircularGauge** is instantiated. Following predefined themes are available in JavaScript **CircularGauge**.
+
+1. flatlight
+2. flatdark
+3. gradientlight 
+4. gradientdark 
+5. azure                      
+6. azuredark               
+7. lime 
+8. limedark
+9. saffron
+10. saffrondark
+11. gradientazure
+12. gradientazuredark
+13. gradientlime
+14. gradientlimedark
+15. gradientsaffron
+16. gradientsaffrondark
+
+The theme for circular gauge can be specified using `Theme` property.
+
+{% highlight html %}
+
+<ej-circular-gauge id="circularGauge1" theme="saffron" >
+        
+</ej-circular-gauge>
+
+{% endhighlight %}
+
+## Circular Gauge Values 
+
+The `minimum`, `maximum`, `radius` and `value` attributes of circular gauge are used to render the circular gauge with specified location. 
+
+{% highlight html %}
+
+<ej-circular-gauge id="circularGauge1" minimum="10"  maximum="100" radius="50" value="30">
+        
+</ej-circular-gauge>
+
+{% endhighlight %}
+
+
+
 
 
