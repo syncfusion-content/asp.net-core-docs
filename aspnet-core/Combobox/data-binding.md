@@ -58,8 +58,7 @@ Output for array-data combobox control is as follows.
 
 ### 2. Array of JSON data
 
-The ComboBox can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the **fields** property.
+The ComboBox can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the **fields** property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -102,8 +101,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 ## Binding remote data
 
-The ComboBox supports retrieval of data from the remote data services with the help of **DataManager** component. The **Query** property is used to fetch
-data from the database and bind it to the ComboBox.
+The ComboBox supports retrieval of data from the remote data services with the help of **DataManager** component. The **Query** property is used to fetch data from the database and bind it to the ComboBox.
 
 In the following sample, displayed first 6 contacts from the `customer` table of `Northwind` Data Service.
 
