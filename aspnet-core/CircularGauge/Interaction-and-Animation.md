@@ -108,22 +108,22 @@ The circular gauge can be localized based on name of culture specified in `Local
 
 **CircularGauge** `Theme` is a set of pre-defined options that are applied to the control before **CircularGauge** is instantiated. Following predefined themes are available in JavaScript **CircularGauge**.
 
-1. flatlight
-2. flatdark
-3. gradientlight 
-4. gradientdark 
+1. flat light
+2. flat dark
+3. gradient light 
+4. gradient dark 
 5. azure                      
-6. azuredark               
+6. azure dark               
 7. lime 
-8. limedark
+8. lime dark
 9. saffron
-10. saffrondark
-11. gradientazure
-12. gradientazuredark
-13. gradientlime
-14. gradientlimedark
-15. gradientsaffron
-16. gradientsaffrondark
+10. saffron dark
+11. gradient azure
+12. gradient azure dark
+13. gradient lime
+14. gradient lime dark
+15. gradient saffron
+16. gradient saffron dark
 
 The theme for circular gauge can be specified using `Theme` property.
 
