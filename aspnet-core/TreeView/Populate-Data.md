@@ -328,6 +328,52 @@ Above data can be directly assigned to `DataSource` property and mapping data fi
     <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
     
     {% endhighlight %}   
+
+### Nested Object Support
+
+The nested object support is provided for the TreeView component. 
+
+In the controller page, create a data list which contains the details about tree nodes.
+    
+    {% highlight c# %}
+    
+        public partial class TreeViewController : Controller
+        {
+            List<LoadData> load = new List<LoadData>();
+            public ActionResult TreeViewFeatures()
+            {
+                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { fName = "Item 1" } });
+                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { fName = "Item 2" } });
+                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { fName = "Item 3" } });
+                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { fName = "Item 1.1" } });
+                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { fName = "Item 1.2" } });
+                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { fName = "Item 3.1" } });
+                ViewBag.datasource = load;
+                return View();
+            }
+            public class LoadData
+            {
+                public int Id { get; set; }
+                public int Parent { get; set; }
+                public InnerData Text { get; set; }
+            }
+            public class InnerData
+            {
+                public string fName { get; set; }
+            }
+
+        }
+        
+    {% endhighlight %}  
+    
+    
+Above data can be directly assigned to `DataSource` property and mapping data fields with respect to the mapper field in order to form TreeView.
+           
+    {% highlight CSHTML %}
+    
+    <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text.fName"></e-tree-view-fields></ej-tree-view>
+    
+    {% endhighlight %}   
     
     
 ## Remote Data
