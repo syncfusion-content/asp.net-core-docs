@@ -12,6 +12,8 @@ When an arrow icon accompanied with this component is pressed, the dropdown disp
 
 * **[Filtering](https://help.syncfusion.com/aspnet-core/combobox/filtering)** - Allows filtering of list items based on a character typed in the component.
 
+* **Sorting** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+
 * **[Templates](https://help.syncfusion.com/aspnet-core/combobox/templates)** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
 * **[Accessibility](https://help.syncfusion.com/aspnet-core/combobox/accessibility)** - Provided with built-in accessibility support that helps to access all the ComboBox component features through the keyboard, screen readers, or other assistive technology devices.
