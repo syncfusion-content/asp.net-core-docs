@@ -229,6 +229,19 @@ The panning feature enables the Map navigation. The `enable-pan` property is use
 {% endhighlight %}
 
 
+### Factor
+
+Specifies the zoom factor for map zoom value, you can use `factor` property.
+
+{% highlight html %}
+
+<ej-map id="mapcontrol" factor=''>
+</ej-map> 
+
+{% endhighlight %}
+
+
+
 
 ## Navigation Control
 
@@ -298,6 +311,91 @@ dock-position="@DockPosition.None">
 </ej-map>
   
 {% endhighlight %}
+
+
+#### Orientation
+
+Set the `orientation` value for navigation control.
+
+
+{% highlight html %}
+
+<ej-map id="maps" >
+<e-navigation-control enable-navigation="true" orientation="@Orientation.Vertical" 
+dock-position="@DockPosition.None">
+<e-absolute-position  x="05" y="10" >                          
+</e-absolute-position>
+</e-navigation-control>
+</ej-map>
+
+
+{% endhighlight %}
+
+#### Content
+
+
+Specifies the navigation control template for map, you can use `content` property.
+
+
+{% highlight html %}
+ 
+<ej-map id="maps" >
+<e-navigation-control enable-navigation="true" content="">
+<e-absolute-position  x="05" y="10" >                          
+</e-absolute-position>
+</e-navigation-control>
+</ej-map>
+
+{% endhighlight %}
+
+
+
+### Animation
+
+ **Animation** is enabled or disabled using `enable-animation`property. 
+
+{% highlight html %}
+
+<ej-map id="mapcontrol" enable-animation="true">
+</ej-map>
+
+{% endhighlight %}
+
+
+#### Enable Layer Change Animation 
+
+Enables or Disables the animation for layer change in map, you can use `enable-layer-change-animation` property and the default value is false.
+
+
+{% highlight html %}
+ 
+{% highlight html %}
+
+<ej-map id="mapcontrol" enable-layer-change-animation="true">
+</ej-map>
+
+{% endhighlight %}
+
+
+{% endhighlight %}
+
+
+### Responsiveness during browser resize
+
+**Map** is made responsive when resizing the browser by using `is-responsive` property.
+
+{% highlight javascript %}
+
+{% highlight html %}
+
+<ej-map id="mapcontrol" is-responsive="true">
+</ej-map>
+
+{% endhighlight %}
+
+
+{% endhighlight %}
+
 
 
 

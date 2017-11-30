@@ -98,3 +98,43 @@ You can customize the appearance of the data point using the `e-sunburstchart-fo
 {% endhighlight %}
 
 ![](DataLabel_images/DataLabel_img6.png)
+
+## Sunburst Chart Title & Subtitle
+
+### Title & TextAlignment
+
+By using the title option, you can add the `title-text` as well as customize its `title-border`, `title-background` and `title-font`.
+
+You can change the title alignment to center, far and near by using the `title-textAlignment` property of the Title.
+
+{% highlight cshtml %}
+
+<ej-sunburstchart id="sunburst">
+    <e-title visible="true">
+        <e-font color="black" font-weight="bold" size="15px">
+            <e-border color="black" width="2"></e-border>
+        </e-font>
+    </e-title>
+</ej-sunburstchart>
+
+{% endhighlight %}
+
+
+### Sub Title & TextAlignment
+
+By using the subTitle option, you can add the `title-subTitle-text` as well as customize its `title-subTitle-border`, `title-subTitle-background` and `title-subTitle-font`.
+
+{% highlight cshtml %}
+
+<ej-sunburstchart id="sunburst">
+    <e-title>
+        <e-sub-title visible="true">
+            <e-font color="black" font-weight="bold" size="15px">
+                <e-border color="black" width="2"></e-border>
+            </e-font>
+        </e-sub-title>
+    </e-title>
+</ej-sunburstchart>
+
+{% endhighlight %}
+

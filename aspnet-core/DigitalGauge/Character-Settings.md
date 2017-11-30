@@ -127,5 +127,26 @@ Execute the above code examples to render the DigitalGauge as follows.
 Digital Gauge control with shadow option
 {:.caption}
 
+## Font Customization
+
+You can customize the **font** of the text as per your requirement. To customize the font, you have to set `enable-custom-font`. Following font customization options are available.
+
+**Font-family**- used to set the font-family of the text.
+
+**Font-style**- used to set the font-style of the text.
+
+**Font-size**- used to set the font-size of the text.
+
+{% highlight html %}
+
+<ej-digital-gauge id="DigitalGauge1">
+    <e-items>
+        <e-font font-family="Arial" font-style="Italic" size="18px" opacity="0.5"> </e-font>
+    </e-items>
+</ej-digital-gauge>
+
+{% endhighlight %}
+
+
 
 

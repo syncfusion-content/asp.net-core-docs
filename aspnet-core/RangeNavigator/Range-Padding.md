@@ -63,6 +63,74 @@ The following screenshot illustrates a RangeNavigator with RangePadding set to R
 
 ![](Range-Padding_images/Range-Padding_img4.png)
 
+## Padding
+
+The gap between the container and the **Range-Navigator** can be specified using `padding` property.
+
+{% highlight html %}
+
+<ej:range-navigator ID="RangeNavigator1" padding="15"> 
+</ej:range-navigator>
+
+{% endhighlight %}
+
+## AllowSnapping
+
+An `allow-snapping` property toggles the placement of slider exactly on the place it left or on the nearest interval.
+
+{% highlight html %}
+
+<ej:range-navigator ID="RangeNavigator1"  allow-snapping="true"> 
+</ej:range-navigator>
+
+{% endhighlight %}
+
+## Responsive
+
+Set `is-responsive` value to make the **Range-Navigator** responsive on resize.
+
+{% highlight html %}
+
+<ej:range-navigator ID="RangeNavigator1"  is-responsive="true"> 
+</ej:range-navigator>
+
+{% endhighlight %}
+
+## Auto Resizing
+
+Enable `enable-auto-resizing` option to resize the **Range-Navigator**.
+
+{% highlight html %}
+
+<ej:range-navigator ID="RangeNavigator1"  enable-auto-resizing="true"> 
+</ej:range-navigator>
+
+{% endhighlight %}
+
+## Customize range Navigator border
+
+**Range-Navigator** provides options to customize the `color`, `opacity` and `width` of range navigator `border`.
+
+{% highlight html %}
+
+<ej:range-navigator ID="RangeNavigator1"> 
+<e-border color="green" opacity="0.5" width="2"></e-border>    
+</ej-range-navigator>
+
+{% endhighlight %}
+
+## Customize size of range navigator
+
+The `height` and `width` of **Range-Navigator** can be customized using `size-settings` property.
+
+{% highlight html %}
+
+<ej:range-navigator ID="RangeNavigator1" height="" width="">     
+</ej:range-navigator>
+
+{% endhighlight %}
+
+
 
 ## DateTime
 
