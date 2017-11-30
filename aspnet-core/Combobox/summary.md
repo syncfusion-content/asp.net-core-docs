@@ -1,8 +1,0 @@
-* [Getting Started](getting-started.md)
-* [Data Binding](data-binding.md)
-* [Templates](templates.md)
-* [Grouping](grouping.md)
-* [Filtering](filtering.md)
-* [Localization](localization.md)
-* [Accessibility](accessibility.md)
-* [How To](how-to.md)
