@@ -79,6 +79,21 @@ You can change the size of the legend items by using the **LegendItemStyle-Width
 ![](Legend_images/Legend_img4.png)
 
 
+## Legend Alignment
+
+You can align the legend to the `center`, `far` or `near` based on its position by using the `legend-alignment` option.
+
+{% highlight cshtml %}
+
+<ej-sunburstchart  id="sunburst">   
+<e-sunburstchart-legend visible="true" alignment="@SunburstLegendAlignment.Near" >
+</e-sunburstchart-legend>
+</ej-sunburstchart>
+
+{% endhighlight %}
+
+
+
 ## Legend  Size 
 
 By default, legend takes 20% of the height horizontally when it was placed on the top or bottom position and 20% of the width vertically while placing on the left or right position of the chart. You can change this default legend size by using the **size** property of the legend.
@@ -94,6 +109,35 @@ By default, legend takes 20% of the height horizontally when it was placed on th
 {% endhighlight %}
 
 ![](Legend_images/Legend_img5.png)
+
+## Legend title
+
+To add the title to the legend, you have to specify the `legend-title`  option.
+
+{% highlight cshtml %}
+
+<ej-sunburstchart  id="sunburst">   
+    <e-sunburstchart-legend title=""></e-sunburstchart-legend>
+</ej-sunburstchart>
+
+
+{% endhighlight %}
+
+## Customize the legend text
+
+To customize the legend item text and title you can use the `legend-title-font` and `legend-title` options. You can change the legend title alignment by using the `legend-title-textAlignment` option of the legend title.
+
+{% highlight cshtml %}
+
+<ej-sunburstchart  id="sunburst">   
+    <e-sunburstchart-legend title="">
+    <e-sunburstchart-font font-family="Arial" font-style="italic" size="15px" text-alignment=""></e-sunburstchart-font>
+    </e-sunburstchart-legend>
+</ej-sunburstchart>
+
+
+{% endhighlight %}
+
 
 ## Legend Row and Colums
 
