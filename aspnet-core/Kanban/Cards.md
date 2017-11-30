@@ -160,7 +160,7 @@ The following code example describes the above behavior.
         <tbody>
             <tr>
                 <td class="photo">                    
-                    <img src="../lib/syncfusion-javascript/Content/images/kanban/{{'{{'}} :Priority {{}}'}}.png"/>
+                    <img src="../lib/syncfusion-javascript/Content/images/kanban/{% raw%}{{:Priority}}{% endraw%}.png"/>
                 </td>
                 <td class="details">
                     <table>
@@ -171,15 +171,15 @@ The following code example describes the above behavior.
                         <tbody>
                             <tr>
                                 <td class="CardHeader">   Assignee: </td>
-                                 <td>{{'{{'}} :Assignee {{}}'}}</td>
+                                 <td>{% raw%}{{:Assignee}}{% endraw%}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader">   Summary: </td>
-                                 <td>{{'{{'}} :Summary {{}}'}}</td>
+                                 <td>{% raw%}{{:Summary}}{% endraw%}</td>
                             </tr>
                             <tr>
                                 <td class="CardHeader">   Type: </td>
-                                 <td>{{'{{'}} :Type {{}}'}}</td>
+                                 <td>{% raw%}{{:Type}}{% endraw%}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -415,7 +415,7 @@ The following code example describes the tooltip template.
                 <table>
                     <tr>
                         <td class="photo">
-                            <img src="{{'{{'}} :ImgUrl {{}}'}}">
+                            <img src={% raw%}"{{:ImgUrl}}"{% endraw%}>
                         </td>
                         <td class="details">
                             <table>
@@ -426,20 +426,20 @@ The following code example describes the tooltip template.
                                 <tbody>
                                     <tr>
                                         <td class="CardHeader">Assignee:</td>
-                                        <td>{{'{{'}} :Assignee {{}}'}}</td>
+                                        <td>{% raw%}{{:Assignee}}{% endraw%}</td>
                                     </tr>
                                     <tr>
                                         <td class="CardHeader">Type:</td>
-                                        <td>{{'{{'}} :Type {{}}'}}</td>
+                                        <td>{% raw%}{{:Type}}{% endraw%}</td>
                                      
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Estimate:</td>
-                                         <td>{{'{{'}} :Estimate {{}}'}}</td>
+                                         <td>{% raw%}{{:Estimate}}{% endraw%}</td>
                                     </tr>                                
                                     <tr>
                                         <td class="CardHeader">Summary:</td>
-                                        <td>{{'{{'}} :Summary {{}}'}}</td>
+                                        <td>{% raw%}{{:Summary}}{% endraw%}</td>
                                     </tr>
                                 </tbody>
                             </table>
