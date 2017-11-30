@@ -80,21 +80,21 @@ You can also customize the `Border` `Color` and `Width`, `Fill`, `GridLineStyle`
 
 RangeNavigator theme is a set of pre-defined options that are applied to the control before each RangeNavigator is instantiated. Following predefined themes are available in RangeNavigator.
 
-1. flatlight                  
-2. flatdark                  
-3. gradientlight           
-4. gradientdark           
+1. flat light                  
+2. flat dark                  
+3. gradient light           
+4. gradient dark           
 5. azure                      
-6. azuredark               
+6. azure dark               
 7. lime 
-8. limedark
+8. lime dark
 9. saffron
-10. saffrondark
-11. gradientazure
-12. gradientazuredark
-13. gradientlime
-14. gradientlimedark
-15. gradientsaffron
+10. saffron dark
+11. gradient azure
+12. gradient azure dark
+13. gradient lime
+14. gradient lime dark
+15. gradient saffron
 
 ### gradientsaffrondark
 
