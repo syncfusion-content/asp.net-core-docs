@@ -497,8 +497,8 @@ In the view page, add the below code and specify the custom adaptor as shown bel
             var treeObj = $("#tree").ejTreeView("instance");
             var treeData = treeObj.model.fields.dataSource;
             var customAdaptor = new ej.Adaptor().extend({
-                insert: function (datamanager, data) {
-                    return datamanager.dataSource.json.push(data);
+                insert: function (dataManager, data) {
+                    return dataManager.dataSource.json.push(data);
                 },
                 processQuery: ej.JsonAdaptor.prototype.processQuery
             });
