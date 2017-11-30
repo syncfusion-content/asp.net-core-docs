@@ -341,30 +341,30 @@ The below given example explains the behavior of grouping with List data binding
     {% highlight c# %}
         public ActionResult Index()
         {
-            List<VegetableList> VegeList = new List<VegetableList>();
-            VegeList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Wheatgrass", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" }); 
-            VegeList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Green bean", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Horse gram", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
-            VegeList.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" }); 
-            VegeList.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
-            VegeList.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" }); 
-            VegeList.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" }); 
-            VegeList.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous"}); 
-            VegeList.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
-            ViewBag.datasource = VegeList;
+            List<VegetableList> vegetableList = new List<VegetableList>();
+            vegetableList.Add(new VegetableList { Name = "Cabbage", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Pea", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Spinach", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Wheat grass", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Yarrow", Category = "Leafy and Salad" }); 
+            vegetableList.Add(new VegetableList { Name = "Chickpea", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Green bean", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Horse gram", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Peanut", Category = "Beans" });
+            vegetableList.Add(new VegetableList { Name = "Pigeon pea", Category = "Beans" }); 
+            vegetableList.Add(new VegetableList { Name = "Garlic", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Garlic Chives", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Lotus root", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Nopal", Category = "Bulb and Stem" });
+            vegetableList.Add(new VegetableList { Name = "Onion", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Shallot", Category = "Bulb and Stem" }); 
+            vegetableList.Add(new VegetableList { Name = "Beetroot", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Carrot", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Ginger", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Potato", Category = "Root and Tuberous" }); 
+            vegetableList.Add(new VegetableList { Name = "Radish", Category = "Root and Tuberous"}); 
+            vegetableList.Add(new VegetableList { Name = "Turmeric", Category = "Root and Tuberous" });
+            ViewBag.datasource = vegetableList;
             return View();
         }
         public class VegetableList
@@ -606,12 +606,12 @@ The below scenario can be explained with three DropDownList for the multi-level 
 
 	{% highlight C# %}
     
-    public partial class DropdownlistController: Controller
+    public partial class DropdownController: Controller
     {
         List<groups> group = new List<groups>();
         List<Countries> country = new List<Countries>();
         List<Capital> capital = new List<Capital>();
-        public ActionResult DropdownlistFeatures()
+        public ActionResult DropdownFeatures()
         {
             group.Add(new groups { parentId = "a", text = "Group A" });
             group.Add(new groups { parentId = "b", text = "Group B" });
@@ -644,7 +644,7 @@ The below scenario can be explained with three DropDownList for the multi-level 
             capital.Add(new Capital { value = 17, text = "Copenhagen" });
             capital.Add(new Capital { value = 18, text = "New Delhi" });
             capital.Add(new Capital { value = 19, text = "Havana" });
-            capital.Add(new Capital { value = 20, text = "Brasília" });
+            capital.Add(new Capital { value = 20, text = "Brasilia" });
             capital.Add(new Capital { value = 21, text = "Lima" });
             capital.Add(new Capital { value = 22, text = "Canberra" });
             capital.Add(new Capital { value = 23, text = "Wellington" });
@@ -702,91 +702,3 @@ The below scenario can be explained with three DropDownList for the multi-level 
 
 First two DropDownList cascaded based on the parentId, and then from second to third, cascading performed based on the value field.
 
-## Search
-
-Items are searched based on the keyed in values to the textbox. There are two types of searches,
-
-* Incremental Search
-* Filter Search
-
-### Incremental Search
-
-Selects the item in the popup list based on the keyed in value. If the time taken to type exceeds 1000 milliseconds then filtered items will be reset based on the current input value. By default this mode of search is enabled. Incremental search can be case sensitive or case insensitive. To make case sensitive, you can use CaseSensitiveSearch property.
-
-{% tabs %}
-
-	{% highlight CSHTML %}
-
-    <ej-drop-down-list id="dropdown" datasource="ViewBag.datasource" enable-incremental-search="true" case-sensitive-search="true">
-        <e-drop-down-list-fields text="Text" value="Value" />
-    </ej-drop-down-list>
-
-	{% endhighlight %}
-    
-    {% highlight c# %}
-        public ActionResult Index()
-        {
-            List<Data> DropDownData = new List<Data>();
-            DropDownData.Add(new Data { Value = "emp1", Text = "Adams"});
-            DropDownData.Add(new Data { Value = "emp2", Text = "James"});
-            DropDownData.Add(new Data { Value = "emp3", Text = "Maria"});
-            DropDownData.Add(new Data { Value = "emp4", Text = "Jessica"});
-            DropDownData.Add(new Data { Value = "emp5", Text = "Jenneth"});
-            ViewBag.datasource=DropDownData;
-            return View();
-        }
-        public class Data
-        {
-            public string Value { get; set; }
-            public string Text { get; set; }
-        }
-    {% endhighlight %}
-    
-{% endtabs %}
-
-![](Functionalities_images/Functionalities_img8.png)
-
-### Filter search
-
-You can quickly locate specific item within a large data source by filtering matches with a search box. A text box appears in the popup list for searching when EnableFilterSearch property is enabled. By default, filtering returns the matched items list based on text in search textbox. 
-You can configure the search filter by using FilterType property that takes SearchFilterType enum values. There is two types of filter options,
-
-* Starts With 
-* Contains
-
-N> Items are filtered based on “SearchFilterType.Contains” filter type by default.
-
-{% tabs %}
-
-	{% highlight CSHTML %}
-
-    <ej-drop-down-list id="dropdown" datasource="ViewBag.datasource" enable-filter-search="true" filter-type="@SearchFilterType.StartsWith">
-    <e-drop-down-list-fields text="Text" value="Value" />
-    </ej-drop-down-list>
-
-	{% endhighlight %}
-    
-    {% highlight c# %}
-        public ActionResult Index()
-        {
-            List<Data> DropDownData = new List<Data>();
-            DropDownData.Add(new Data { Value = "emp1", Text = "Adams", Selected = true });
-            DropDownData.Add(new Data { Value = "emp2", Text = "James", Selected = false });
-            DropDownData.Add(new Data { Value = "emp3", Text = "Maria", Selected = true });
-            DropDownData.Add(new Data { Value = "emp4", Text = "Jessica", Selected = false });
-            DropDownData.Add(new Data { Value = "emp5", Text = "Jenneth", Selected = false });
-            ViewBag.datasource=DropDownData;
-            return View();
-        }
-        public class Data
-        {
-            public string Value { get; set; }
-            public string Text { get; set; }
-        }
-    {% endhighlight %}
-    
-{% endtabs %}
-
-![](Functionalities_images/Functionalities_img9.png)
-
-I> When VirtualScrolling enabled with searching, then filter will be applied only on the DropDownList items available at the moment.
