@@ -31,6 +31,18 @@ is-responsive="true">
 
 {% endhighlight %}
 
+Responsiveness of the bullet graph is controlled by using enableResize property.
+
+
+{% highlight html %}
+
+<ej-bullet-graph id="bullet1" enable-resize="true">         
+       
+</ej-bullet-graph>
+
+{% endhighlight %}
+
+
 ## Applying same color to all ticks and labels in a range
 
 Background color for qualitative range is applied to major ticks and minor ticks of the Bullet Graph using ApplyRangeStrokeToTicks property. The range colors are applied to labels using ApplyRangeStrokeToLabels property. By default same colors are not applied to a qualitative range and its corresponding ticks or labels. 

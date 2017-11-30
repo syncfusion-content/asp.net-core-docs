@@ -244,3 +244,21 @@ text-alignment="@BulletTextAlignment.Center" padding="10">
 
 Bullet graph with 10 pixel padding between the title text and quantitative scale
 {:.caption}
+
+
+## Localization
+
+Bullet graph supports localization for its axis labels and tooltip. To render the bullet graph with specific culture you have to refer the corresponding globalize culture script and need to specify the culture name in locale property of bullet graph.
+
+Enable Group Separator is used to Convert the date object to string while using the locale settings, you can set enableGroupSeparator property as true.
+
+
+
+{% highlight html %}
+
+<ej-bullet-graph id="bullet1" locale="fr-FR" enable-group-seperator="true">         
+          
+</ej-bullet-graph>
+
+{% endhighlight %}
+
