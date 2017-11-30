@@ -139,7 +139,7 @@ To customize the legend item text and title you can use the `legend-title-font` 
 {% endhighlight %}
 
 
-## Legend Row and Colums
+## Legend Row and Column
 
 You can arrange the legend items horizontally and vertically by using the **row-count** and **column-count** properties of the legend.
 •	When only the rowCount is specified, the legend items are arranged according to the rowCount and number of columns may vary based on the number of legend items.
@@ -165,7 +165,7 @@ You can select a specific category while clicking on corresponding legend item t
 
 It has three types of action
 *	ToggleSegmentSelection
-*	ToggleSegmentVisiblity
+*	ToggleSegmentVisibility
 *	None
 
 ## ToggleSegmentSelection
