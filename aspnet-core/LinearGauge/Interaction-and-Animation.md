@@ -50,4 +50,17 @@ Execute the above code to render the following output.
 ![](Interaction-and-Animation_images/Interaction-and-Animation_img1.png)
 
 
+### Enable Marker Pointer Animation
+
+Specifies the animate state for marker pointer, you can set `enable-marker-pointer`property as **true**
+
+{% highlight html %}
+
+<ej-linear-gauge id="lineargauge" value=78 enable-marker-pointer="true">    
+</ej-linear-gauge>
+
+{% endhighlight %}
+
+
+
 
