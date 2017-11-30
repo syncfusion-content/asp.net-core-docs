@@ -96,7 +96,7 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 14. gradient lime dark
 15. gradient saffron
 
-### gradientsaffrondark
+### gradient saffron dark
 
 {% highlight CSHTML %}
 
