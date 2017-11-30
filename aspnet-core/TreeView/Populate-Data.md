@@ -196,7 +196,7 @@ In the controller page, create a data list which contains the details about tree
                     Text = "Item 1",
                     Expanded = true,
                     NodeProperty = new Dictionary<string, string>() {
-                    { "class", "textblue" },
+                    { "class", "text-blue" },
                     { "value", "Item 1" }
                     }
                 });
@@ -206,7 +206,7 @@ In the controller page, create a data list which contains the details about tree
                     Parent = 0,
                     Text = "Item 2",
                     LinkProperty = new Dictionary<string, string>() {
-                    { "class", "textunderline" },
+                    { "class", "text-underline" },
                     { "href", "http://www.syncfusion.com" },
                     { "target", "_blank"}
                     }
