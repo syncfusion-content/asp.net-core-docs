@@ -25,7 +25,7 @@ The following screen shot illustrates both the lower and higher level labels tha
 {% highlight CSHTML %}
 
 <div>
-	<ej-range-navigator id="range" load="loadingdata">
+	<ej-range-navigator id="range" load="loadingData">
 		<e-chart-series>
 			<e-series name="Product A" type="Line" fill="#69D2E7">
 			</e-series>
@@ -101,7 +101,7 @@ RangeNavigator theme is a set of pre-defined options that are applied to the con
 {% highlight CSHTML %}
 
 <div>
-	<ej-range-navigator id="range" load="loadingdata" theme="azuredark">
+	<ej-range-navigator id="range" load="loadingData" theme="azuredark">
 		<e-chart-series>
 			<e-series name="Product A" type="Line">
 			</e-series>

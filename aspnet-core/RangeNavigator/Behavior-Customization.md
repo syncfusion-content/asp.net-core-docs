@@ -18,7 +18,7 @@ If you set EnableDeferredUpdate to true, the RangeChanged event gets fired after
 {% highlight CSHTML %}
   
 <div>
-	<ej-range-navigator id="range" load="loadingdata" enable-deferred-update="true">
+	<ej-range-navigator id="range" load="loadingData" enable-deferred-update="true">
 		<e-chart-series>
 			<e-series name="Product A" type="Line" fill="#69D2E7">
 			</e-series>
@@ -42,7 +42,7 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 {% highlight CSHTML %}
 
 <div>
-	<ej-range-navigator id="range" loaded="loadingdata">
+	<ej-range-navigator id="range" loaded="loadingData">
 		<e-chart-series>
 			<e-series name="Product A" type="Line" fill="#69D2E7">
 			</e-series>
@@ -52,7 +52,7 @@ This event is handled when the RangeNavigator gets loaded. A parameter sender is
 
 <script type="text/javascript">
 
-	function loadingdata(sender) 
+	function loadingData(sender) 
 	{
 
 		 sender.model.isResponsive = false;
@@ -70,7 +70,7 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 {% highlight CSHTML %}
 
 <div>
-	<ej-range-navigator id="range" range-changed="loadingdata">
+	<ej-range-navigator id="range" range-changed="loadingData">
 		<e-chart-series>
 			<e-series name="Product A" type="Line" fill="#69D2E7">
 			</e-series>
@@ -80,7 +80,7 @@ This event gets fired whenever the selected range changes in RangeNavigator. A p
 
 <script type="text/javascript">
 
-   function loadingdata(sender) 
+   function loadingData(sender) 
    {
 
 		 console.log(sender.selectedRangeSettings.start);
@@ -99,7 +99,7 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 {% highlight CSHTML %}
 
 <div>
-	<ej-range-navigator id="range" range-changed="loadingdata">
+	<ej-range-navigator id="range" range-changed="loadingData">
 		<e-chart-series>
 			<e-series name="Product A" type="Line" fill="#69D2E7">
 			</e-series>
@@ -110,17 +110,17 @@ You can easily update the data for chart by assigning the ZoomFactor and ZoomPos
 
 	// setting zoom factor and position for chart axis in rangeChanged event.
 
-	function loadingdata(sender) 
+	function loadingData(sender) 
 	{
 
-	 var chartobj = $("#container").data("ejChart");
+	 var chartObj = $("#container").data("ejChart");
 
-	 if (chartobj != null) 
+	 if (chartObj != null) 
 	 {
 
-		 chartobj.model.axes[0].zoomPosition = sender. zoomPosition;                                                               
+		 chartObj.model.axes[0].zoomPosition = sender. zoomPosition;                                                               
 
-		 chartobj.model.axes[0].zoomFactor = sender. zoomFactor;
+		 chartObj.model.axes[0].zoomFactor = sender. zoomFactor;
 
 		}
 

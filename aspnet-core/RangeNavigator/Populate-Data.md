@@ -22,7 +22,7 @@ Animation can be enabled by setting `Enable-Animation` property as true and the 
 {% highlight CSHTML %}
  
 <div>
-<ej-range-navigator id="range" load="loadingdata">
+<ej-range-navigator id="range" load="loadingData">
 	<e-chart-series>
 		<e-series name="Product A" type="Line" enable-animation="false" fill="#69D2E7" opacity="0.5">
 		</e-series>
@@ -33,7 +33,7 @@ Animation can be enabled by setting `Enable-Animation` property as true and the 
 
 <script type="text/javascript">
 
-    function loadingdata(sender) {
+    function loadingData(sender) {
 
         data = GetData();
 
@@ -45,7 +45,7 @@ Animation can be enabled by setting `Enable-Animation` property as true and the 
 
     }
 
-    // Method to get data in json format
+    // Method to get data in JSON format
 
     function GetData() {
 
