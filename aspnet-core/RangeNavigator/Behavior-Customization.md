@@ -175,3 +175,39 @@ You can customize Thumb template by using LeftThumbTemplate and RightThumbTempla
 The following screenshot displays the RangeNavigator using thumb template.
 
 ![](Behavior-Customization_images/Behavior-Customization_img3.png)
+
+
+## Value Axis Settings
+
+You can customize the line, `Font` `Size`, gridline, tickline, range, `Range-Padding` and visibility of **Range-Navigator** axis.
+
+To enable the visibility of axis line, you need to set `Visible` property of `AxisLine` in `Value-Axis-Settings`. 
+
+You can customize the axis range by specifying `Min`, `Max` and `Interval` for `Range` property.
+
+The `Major-Grid-Lines` can be enabled by specifying `Visible` property. The `Size`, `Width` and `Visible` property of `Major-Tick-Lines` is used to customize the axis tick lines.
+
+The visibility of `Value-Axis-Settings` is enabled by setting `Visible` property as true. 
+
+{% highlight html %}
+
+<ej-range-navigator id="rangecontainer">
+<e-value-axis-settings min="10" max="50" interval="5" size="2" width="2">
+<e-major-tick-lines visible="true"></e-major-tick-lines>
+<e-major-grid-lines visible="true"></e-major-grid-lines>
+</e-value-axis-settings>
+</ej-range-navigator>
+
+{% endhighlight %}
+
+## Selected Range Settings
+
+The start and end range values of selected range can be customized using `Start` and `End` property of `SelectedRangeSettings`.
+
+{% highlight html %}
+
+<ej:range-navigator ID="Range1">
+<e-selected-range-settings start="" end=""></e-selected-range-settings>               
+</ej:range-navigator>  
+
+{% endhighlight %}
