@@ -890,6 +890,40 @@ range
 It returns the current row of PDF.
 </td>
 </tr>
+<tr>
+<td>
+ExcelChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+<tr>
+<td>
+PdfChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grids
+</td>
+</tr>
+<tr>
+<td>
+WordChildGridInfo
+</td>
+<td>
+current row, row data, GridProperties
+</td>
+<td>
+Customize the cell and child Grid
+</td>
+</tr>
+
 </table>
 
 
