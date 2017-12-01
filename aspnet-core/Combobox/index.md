@@ -15,9 +15,11 @@ When an arrow icon accompanied with this component is pressed, the dropdown disp
 ## Key features
 * **[Data binding](https://help.syncfusion.com/aspnet-core/combobox/data-binding)** - Allows binding and accessing the list of items from local or server-side data source.
 
-* **[Custom values](https://help.syncfusion.com/aspnet-core/combobox/getting-started#custom values)** - Allows setting user-defined values that is not in the popup list.
+* **[Custom values](https://help.syncfusion.com/aspnet-core/combobox/getting-started#custom-values)** - Allows setting user-defined values that is not in the popup list.
 
 * **[Grouping](https://help.syncfusion.com/aspnet-core/combobox/grouping)** - Supports grouping of logically related items under a single or specific category.
+
+* **[Sorting](https://help.syncfusion.com/aspnet-core/combobox/sorting)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
 * **[Filtering](https://help.syncfusion.com/aspnet-core/combobox/filtering)** - Allows filtering of list items based on a character typed in the component.
 

@@ -5,7 +5,7 @@ description: DataBinding support to ComboBox control for Syncfusion ASP.NET CORE
 platform: CORE
 control: ComboBox
 documentation: ug
-keywords: remote date, ComboBox, json data, local data
+keywords: remote data, ComboBox, json data, local data
 ---
 
 # Data Binding
@@ -44,7 +44,7 @@ The ComboBox has the support to load array of primitive data such as strings and
 
     <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="selectCar" datasource="datasource" placeholder="Select">
+        <ej-combo-box id="Localdata" datasource="datasource" placeholder="Select a game">
             <e-combo-box-fields text="text"/>
         </ej-combo-box>
         </div>
