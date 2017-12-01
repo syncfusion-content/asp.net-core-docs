@@ -196,7 +196,7 @@ In the controller page, create a data list which contains the details about tree
                     Text = "Item 1",
                     Expanded = true,
                     NodeProperty = new Dictionary<string, string>() {
-                    { "class", "textblue" },
+                    { "class", "text-blue" },
                     { "value", "Item 1" }
                     }
                 });
@@ -206,7 +206,7 @@ In the controller page, create a data list which contains the details about tree
                     Parent = 0,
                     Text = "Item 2",
                     LinkProperty = new Dictionary<string, string>() {
-                    { "class", "textunderline" },
+                    { "class", "text-underline" },
                     { "href", "http://www.syncfusion.com" },
                     { "target", "_blank"}
                     }
@@ -217,7 +217,7 @@ In the controller page, create a data list which contains the details about tree
                     Parent = 0,
                     Text = "Item 3",
                     Selected = true,
-                    SpriteImage = "mailicon sprite-calendar"
+                    SpriteImage = "mail-icon sprite-calendar"
                 });
                 treeData.Add(new LoadData
                 {
@@ -328,6 +328,52 @@ Above data can be directly assigned to `DataSource` property and mapping data fi
     <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
     
     {% endhighlight %}   
+
+### Nested Object Support
+
+The nested object support is provided for the TreeView component. 
+
+In the controller page, create a data list which contains the details about tree nodes.
+    
+    {% highlight c# %}
+    
+        public partial class TreeViewController : Controller
+        {
+            List<LoadData> load = new List<LoadData>();
+            public ActionResult TreeViewFeatures()
+            {
+                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { fName = "Item 1" } });
+                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { fName = "Item 2" } });
+                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { fName = "Item 3" } });
+                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { fName = "Item 1.1" } });
+                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { fName = "Item 1.2" } });
+                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { fName = "Item 3.1" } });
+                ViewBag.datasource = load;
+                return View();
+            }
+            public class LoadData
+            {
+                public int Id { get; set; }
+                public int Parent { get; set; }
+                public InnerData Text { get; set; }
+            }
+            public class InnerData
+            {
+                public string fName { get; set; }
+            }
+
+        }
+        
+    {% endhighlight %}  
+    
+    
+Above data can be directly assigned to `DataSource` property and mapping data fields with respect to the mapper field in order to form TreeView.
+           
+    {% highlight CSHTML %}
+    
+    <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text.fName"></e-tree-view-fields></ej-tree-view>
+    
+    {% endhighlight %}   
     
     
 ## Remote Data
@@ -355,7 +401,7 @@ The following steps explain how you can bind remote data to TreeView control.
     
     @{
         DataSource treeData = new DataSource();
-        treeData.URL = "//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/";
+        treeData.URL = "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/";
     }
      <ej-tree-view id="treeview"><e-tree-view-fields datasource="treeData" query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName"><e-child datasource="treeData" table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"></e-child></e-tree-view-fields></ej-tree-view>
    
@@ -451,8 +497,8 @@ In the view page, add the below code and specify the custom adaptor as shown bel
             var treeObj = $("#tree").ejTreeView("instance");
             var treeData = treeObj.model.fields.dataSource;
             var customAdaptor = new ej.Adaptor().extend({
-                insert: function (dm, data) {
-                    return dm.dataSource.json.push(data);
+                insert: function (dataManager, data) {
+                    return dataManager.dataSource.json.push(data);
                 },
                 processQuery: ej.JsonAdaptor.prototype.processQuery
             });
@@ -477,36 +523,36 @@ In the controller page, create a data list that contains the details about tree 
     
 public class HomeController : Controller
 {
-    List<loadondemand> data = new List<loadondemand>();
+    List<load> data = new List<load>();
     public ActionResult Index()
     {
-        data.Add(new loadondemand { id = 1, name = "Local Disk(C:)", hasChild = true });
-        data.Add(new loadondemand { id = 2, name = "Local Disk(D:)", hasChild = true });
-        data.Add(new loadondemand { id = 3, name = "Local Disk(E:)", hasChild = true });
-        data.Add(new loadondemand { id = 4, parentId = 1, name = "Folder 1", hasChild = true });
-        data.Add(new loadondemand { id = 5, parentId = 1, name = "Folder 2" });
-        data.Add(new loadondemand { id = 6, parentId = 1, name = "Folder 3" });
-        data.Add(new loadondemand { id = 7, parentId = 2, name = "Folder 4" });
-        data.Add(new loadondemand { id = 8, parentId = 2, name = "Folder 5", hasChild = true });
-        data.Add(new loadondemand { id = 9, parentId = 2, name = "Folder 6" });
-        data.Add(new loadondemand { id = 10, parentId = 3, name = "Folder 7" });
-        data.Add(new loadondemand { id = 11, parentId = 3, name = "Folder 8" });
-        data.Add(new loadondemand { id = 12, parentId = 3, name = "Folder 9", hasChild = true });
-        data.Add(new loadondemand { id = 13, parentId = 4, name = "File 1" });
-        data.Add(new loadondemand { id = 14, parentId = 4, name = "File 2" });
-        data.Add(new loadondemand { id = 15, parentId = 4, name = "File 3" });
-        data.Add(new loadondemand { id = 16, parentId = 8, name = "File 4" });
-        data.Add(new loadondemand { id = 17, parentId = 8, name = "File 5" });
-        data.Add(new loadondemand { id = 18, parentId = 8, name = "File 6" });
-        data.Add(new loadondemand { id = 19, parentId = 12, name = "File 7" });
-        data.Add(new loadondemand { id = 20, parentId = 12, name = "File 8" });
-        data.Add(new loadondemand { id = 21, parentId = 12, name = "File 9" });
+        data.Add(new load { id = 1, name = "Local Disk(C:)", hasChild = true });
+        data.Add(new load { id = 2, name = "Local Disk(D:)", hasChild = true });
+        data.Add(new load { id = 3, name = "Local Disk(E:)", hasChild = true });
+        data.Add(new load { id = 4, parentId = 1, name = "Folder 1", hasChild = true });
+        data.Add(new load { id = 5, parentId = 1, name = "Folder 2" });
+        data.Add(new load { id = 6, parentId = 1, name = "Folder 3" });
+        data.Add(new load { id = 7, parentId = 2, name = "Folder 4" });
+        data.Add(new load { id = 8, parentId = 2, name = "Folder 5", hasChild = true });
+        data.Add(new load { id = 9, parentId = 2, name = "Folder 6" });
+        data.Add(new load { id = 10, parentId = 3, name = "Folder 7" });
+        data.Add(new load { id = 11, parentId = 3, name = "Folder 8" });
+        data.Add(new load { id = 12, parentId = 3, name = "Folder 9", hasChild = true });
+        data.Add(new load { id = 13, parentId = 4, name = "File 1" });
+        data.Add(new load { id = 14, parentId = 4, name = "File 2" });
+        data.Add(new load { id = 15, parentId = 4, name = "File 3" });
+        data.Add(new load { id = 16, parentId = 8, name = "File 4" });
+        data.Add(new load { id = 17, parentId = 8, name = "File 5" });
+        data.Add(new load { id = 18, parentId = 8, name = "File 6" });
+        data.Add(new load { id = 19, parentId = 12, name = "File 7" });
+        data.Add(new load { id = 20, parentId = 12, name = "File 8" });
+        data.Add(new load { id = 21, parentId = 12, name = "File 9" });
         ViewBag.datasource = data;
         return View();
     }
 }
 
-public class loadondemand
+public class load
 {
     public int id { get; set; }
     public int? parentId { get; set; }
