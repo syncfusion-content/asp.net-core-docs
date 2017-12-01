@@ -306,7 +306,7 @@ In the following sample, popup list content displays the notification of no data
 
 {% highlight c# %}
 
-public ActionResult Databinding()
+public ActionResult Data()
         {
             return View();
         }
@@ -339,7 +339,7 @@ In the following sample, when the data fetch request fails, the ComboBox display
 
 {% highlight c# %}
 
-public ActionResult Databinding()
+public ActionResult Data()
         {
             return View();
         }
