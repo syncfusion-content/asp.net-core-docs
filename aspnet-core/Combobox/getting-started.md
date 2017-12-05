@@ -39,7 +39,7 @@ The ComboBox can be initialized as:
 
 <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="select" datasource="(IEnumerable<Customer>)ViewBag.datasource" placeholder="Select">
+        <ej-combo-box id="select" datasource="(IEnumerable<Flowers>)ViewBag.datasource" placeholder="Select">
             <e-combo-box-fields text="text"/>
         </ej-combo-box>
         </div>
@@ -49,28 +49,29 @@ The ComboBox can be initialized as:
 
 {% highlight c# %}
 
-  
-        List<Customers> customer = new List<Customers>();
-        public ActionResult Index()
+  public class Flowers
+    { 
+        public string text { get; set; }
+        public static List<Flowers> GetFlowers()
         {
-            customer.Add(new Customers { id = "1", text = "ALFKI" });
-            customer.Add(new Customers { id = "2", text = "ANATR" });
-            customer.Add(new Customers { id = "3", text = "ANTON" });
-            customer.Add(new Customers { id = "4", text = "AROUT" });
-            customer.Add(new Customers { id = "5", text = "BERGS" });
-            customer.Add(new Customers { id = "6", text = "BLAUS" });
-            ViewBag.datasource = customer;
-            return View();
+            List<Flowers> flower = new List<Flowers>();
+            flower.Add(new Flowers { text = "Anemone Galilee" });
+            flower.Add(new Flowers { text = "Allium drumstick" });
+            flower.Add(new Flowers { text = "Artichoke thistle" });
+            flower.Add(new Flowers { text = "Boronia" });
+            flower.Add(new Flowers { text = "Bouvardia" });
+            flower.Add(new Flowers { text = "Blue lace flower" });
+            flower.Add(new Flowers { text = "Bird of paradise" });
+            flower.Add(new Flowers { text = "Cone flower" });
+            flower.Add(new Flowers { text = "Cosmos" });
+            ...
+            return flower;
         }
-
-       public class Customers
-        {
-            public string id { get; set; }
-            public string text { get; set; }
-        }
+    }
+       
   {% endhighlight  %}
 
-![](Combobox_getting_started_images/Getting-Started2.png)
+![](Combobox_getting_started_images/Getting-Started.png)
 
 ## Binding data source
 
@@ -102,7 +103,7 @@ The ComboBox allows the user to give input as custom value which is not required
 
 <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="select" datasource="(IEnumerable<Customer>)ViewBag.datasource" allow-custom="true" placeholder="Select">
+        <ej-combo-box id="select" datasource="(IEnumerable<Flowers>)ViewBag.datasource" allow-custom="true" placeholder="Select">
             <e-combo-box-fields text="text" value="id"/>
         </ej-combo-box>
         </div>
@@ -112,28 +113,22 @@ The ComboBox allows the user to give input as custom value which is not required
 
 {% highlight c# %}
 
-  
-        List<Customers> customer = new List<Customers>();
-        public ActionResult Index()
+  public class Flowers
+    { 
+        public string text { get; set; }
+        public static List<Flowers> GetFlowers()
         {
-            customer.Add(new Customers { id = "1", text = "ALFKI" });
-            customer.Add(new Customers { id = "2", text = "ANATR" });
-            customer.Add(new Customers { id = "3", text = "ANTON" });
-            customer.Add(new Customers { id = "4", text = "AROUT" });
-            customer.Add(new Customers { id = "5", text = "BERGS" });
-            customer.Add(new Customers { id = "6", text = "BLAUS" });
-            ViewBag.datasource = customer;
-            return View();
+            List<Flowers> flower = new List<Flowers>();
+            flower.Add(new Flowers { text = "Anemone Galilee" });
+            flower.Add(new Flowers { text = "Allium drumstick" });
+            flower.Add(new Flowers { text = "Artichoke thistle" });
+            flower.Add(new Flowers { text = "Boronia" });
+            return flower;
         }
-
-       public class Customers
-        {
-            public string id { get; set; }
-            public string text { get; set; }
-        }
+    }
   {% endhighlight  %}
 
-![](Combobox_getting_started_images/Getting-Started3.png)
+![](Combobox_getting_started_images/Combobox_data_binding_img1.png)
 
 ## Configure the popup list
 
@@ -147,7 +142,7 @@ In the following sample, popup list's width and height are configured.
 
 <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="select" datasource="(IEnumerable<Customer>)ViewBag.datasource" popup-height="100px" popup-width="200px" placeholder="Select">
+        <ej-combo-box id="select" datasource="(IEnumerable<Flowers>)ViewBag.datasource" popup-height="100px" popup-width="200px" placeholder="Select">
             <e-combo-box-fields text="text" value="id"/>
         </ej-combo-box>
         </div>
@@ -158,25 +153,26 @@ In the following sample, popup list's width and height are configured.
 {% highlight c# %}
 
   
-        List<Customers> customer = new List<Customers>();
-        public ActionResult Index()
+       public class Flowers
+    { 
+        public string text { get; set; }
+        public static List<Flowers> GetFlowers()
         {
-            customer.Add(new Customers { id = "1", text = "ALFKI" });
-            customer.Add(new Customers { id = "2", text = "ANATR" });
-            customer.Add(new Customers { id = "3", text = "ANTON" });
-            customer.Add(new Customers { id = "4", text = "AROUT" });
-            customer.Add(new Customers { id = "5", text = "BERGS" });
-            customer.Add(new Customers { id = "6", text = "BLAUS" });
-            ViewBag.datasource = customer;
-            return View();
+            List<Flowers> flower = new List<Flowers>();
+            flower.Add(new Flowers { text = "Anemone Galilee" });
+            flower.Add(new Flowers { text = "Allium drumstick" });
+            flower.Add(new Flowers { text = "Artichoke thistle" });
+            flower.Add(new Flowers { text = "Boronia" });
+            flower.Add(new Flowers { text = "Bouvardia" });
+            flower.Add(new Flowers { text = "Blue lace flower" });
+            flower.Add(new Flowers { text = "Bird of paradise" });
+            flower.Add(new Flowers { text = "Cone flower" });
+            flower.Add(new Flowers { text = "Cosmos" });
+            ...
+            return flower;
         }
-
-       public class Customers
-        {
-            public string id { get; set; }
-            public string text { get; set; }
-        }
+    }
   {% endhighlight  %}
 
-![](Combobox_getting_started_images/Getting-Started4.png)
+![](Combobox_getting_started_images/popup.png)
 
