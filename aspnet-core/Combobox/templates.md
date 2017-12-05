@@ -16,7 +16,7 @@ The ComboBox has been provided with several options to customize each list item,
 
 The content of each list item within the ComboBox can be customized with the help of **itemTemplate** property.
 
-In the following sample, each list item is splitted into two columns to display the relevant data.
+In the following sample, each list item is split into two columns to display the relevant data.
 
 
 
@@ -152,7 +152,7 @@ In the following sample, the list items and its headers are designed, and displa
 
 <div class="frame">
         <div class="control">
-            <ej-combo-box id="selectCountry" datasource="(IEnumerable<empList>)ViewBag.datasource" placeholder="Select a country" width="100%" header-template="<div class='head'>  Photo  <span style='padding-left:42px'> Contact Info </span></div>" item-template="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>">
+            <ej-combo-box id="selectCountry" datasource="(IEnumerable<empList>)ViewBag.datasource" placeholder="Select a country" width="100%" header-template="<div class='head'>  Photo  <span style='padding-left:42px'> Contact Info </span></div>" item-template="<div><img class='eimg' src='../images/combobox/${eimg}.png' alt='employee'/><div class='ename'> ${text} </div><div class='temp'> ${country} </div></div>" footer-template="<div class='Foot'> Total Items Count: 5 </div>">
                 <e-combo-box-fields text="text" />
             </ej-combo-box>
         </div>
@@ -306,7 +306,7 @@ In the following sample, popup list content displays the notification of no data
 
 {% highlight c# %}
 
-public ActionResult Databindingremote()
+public ActionResult Data()
         {
             return View();
         }
@@ -339,7 +339,7 @@ In the following sample, when the data fetch request fails, the ComboBox display
 
 {% highlight c# %}
 
-public ActionResult Databindingremote()
+public ActionResult Data()
         {
             return View();
         }
