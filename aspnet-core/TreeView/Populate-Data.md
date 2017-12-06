@@ -342,12 +342,12 @@ In the controller page, create a data list which contains the details about tree
             List<LoadData> load = new List<LoadData>();
             public ActionResult TreeViewFeatures()
             {
-                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { fName = "Item 1" } });
-                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { fName = "Item 2" } });
-                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { fName = "Item 3" } });
-                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { fName = "Item 1.1" } });
-                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { fName = "Item 1.2" } });
-                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { fName = "Item 3.1" } });
+                load.Add(new LoadData { Id = 1, Parent = 0, Text = new InnerData { nodeName = "Item 1" } });
+                load.Add(new LoadData { Id = 2, Parent = 0, Text = new InnerData { nodeName = "Item 2" } });
+                load.Add(new LoadData { Id = 3, Parent = 0, Text = new InnerData { nodeName = "Item 3" } });
+                load.Add(new LoadData { Id = 4, Parent = 1, Text = new InnerData { nodeName = "Item 1.1" } });
+                load.Add(new LoadData { Id = 5, Parent = 1, Text = new InnerData { nodeName = "Item 1.2" } });
+                load.Add(new LoadData { Id = 6, Parent = 3, Text = new InnerData { nodeName = "Item 3.1" } });
                 ViewBag.datasource = load;
                 return View();
             }
@@ -359,7 +359,7 @@ In the controller page, create a data list which contains the details about tree
             }
             public class InnerData
             {
-                public string fName { get; set; }
+                public string nodeName { get; set; }
             }
 
         }
@@ -371,7 +371,7 @@ Above data can be directly assigned to `DataSource` property and mapping data fi
            
     {% highlight CSHTML %}
     
-    <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text.fName"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text.nodeName"></e-tree-view-fields></ej-tree-view>
     
     {% endhighlight %}   
     
