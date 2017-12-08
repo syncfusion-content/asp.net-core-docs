@@ -115,7 +115,7 @@ Create a new class file namely _ScheduleData_ within the **Models** folder in or
                     ProgramEndTime = new DateTime(2016, 6, 3, 2, 0, 0)
              },
              new ScheduleData {
-                    ProgramName = "Estivation",
+                    ProgramName = "Aestivation",
                     Comments = "Sleeping in hot season",
                     ProgramStartTime = new DateTime(2016, 6, 4, 3, 0, 0),
                     ProgramEndTime = new DateTime(2016, 6, 4, 4, 0, 0)
