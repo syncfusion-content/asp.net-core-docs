@@ -140,6 +140,8 @@ Now, define the action _GetData_ within the **Home** controller page as shown be
 {% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
  
 
