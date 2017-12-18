@@ -64,3 +64,19 @@ var chartData = [
 {% endhighlight %}
 
 ![](Working-with-Data_images/Working-with-Data_img2.png)
+
+## Remote Data
+
+You can bind the remote data to the chart by using the DataManager and you can use the **query** property of the series to filter the data from the dataSource.
+
+{% hightlight cshtml %}
+    <ej-chart id="container">
+            <e-chart-series>
+                <e-series type="Column" query="ej.Query().from('Orders').take(10)" x-name="ShipCity" y-name="Freight" >
+                    <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/" cross-domain="true"></e-datamanager>
+                </e-series>
+            </e-chart-series>
+        </ej-chart>
+{% endhighlight %}
+
+![](Working-with-Data_images/Working-with-Data_img3.png)
