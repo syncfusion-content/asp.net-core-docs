@@ -11,16 +11,16 @@ documentation: ug
 
 ## Local Data
 
-There are two ways to provide local data to chart.
+The local data can be provided to the chart by using following two ways:
 
-1. You can bind the data to the chart by using the **DataSource** property of the series and then you need to map the X and Y value with the *XName* and *YName* properties respectively.
+1. Bind the data to the chart by using the **DataSource** property of the series, and then map the X and Y values with *XName* and *YName* properties, respectively.
 
-N> For the **OHLC** type series, you have to map four dataSource fields *High, Low, Open* and *Close* to bind the data source and for the **bubble** series you have to map the *Size* field along with the *XName* and *YName*. 
+N> For the **OHLC** type series, you should map four dataSource fields, namely *High, Low, Open*, and *Close* to bind the data source, and for the **bubble** series, you should map the *Size* field along with the *XName* and *YName* properties. 
 
 
 {% highlight cshtml %}
 
-    <ej-chart id="chart" load="onchartload"></ej-chart>
+    <ej-chart id="chart" load="onChartLoad"></ej-chart>
 
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ var chartData = [
           { month: 'Jul', sales: 35 },  { month: 'Aug', sales: 55 }, { month: 'Sep', sales: 38 },
           { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
           
-    function onchartload(sender) {
+    function onChartLoad(sender) {
         sender.model.series[0].dataSource = chartData;
         sender.model.series[0].xName = "month";
         sender.model.series[0].yName = "sales";
@@ -43,7 +43,7 @@ var chartData = [
 ![](Working-with-Data_images/Working-with-Data_img1.png)
 
 
-2.You can also plot data to chart using **Points** option in the series. Using this property you can customize each and every point in the data.
+2. You can also plot the data to chart by using **Points** option in the series. By using this property, you can customize each and every point in the data.
 
 {% highlight cshtml %}
 
@@ -64,3 +64,19 @@ var chartData = [
 {% endhighlight %}
 
 ![](Working-with-Data_images/Working-with-Data_img2.png)
+
+## Remote Data
+
+The remote data can be bound to the chart by using the DataManager. You can use the **query** property of the series to filter the data from the dataSource.
+
+{% hightlight cshtml %}
+    <ej-chart id="container">
+            <e-chart-series>
+                <e-series type="Column" query="ej.Query().from('Orders').take(10)" x-name="ShipCity" y-name="Freight" >
+                    <e-datamanager url="http://mvc.syncfusion.com/Services/Northwnd.svc/" cross-domain="true"></e-datamanager>
+                </e-series>
+            </e-chart-series>
+        </ej-chart>
+{% endhighlight %}
+
+![](Working-with-Data_images/Working-with-Data_img3.png)
