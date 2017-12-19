@@ -20,7 +20,7 @@ N> For the **OHLC** type series, you should map four dataSource fields, namely *
 
 {% highlight cshtml %}
 
-    <ej-chart id="chart" load="onchartload"></ej-chart>
+    <ej-chart id="chart" load="onChartLoad"></ej-chart>
 
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ var chartData = [
           { month: 'Jul', sales: 35 },  { month: 'Aug', sales: 55 }, { month: 'Sep', sales: 38 },
           { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
           
-    function onchartload(sender) {
+    function onChartLoad(sender) {
         sender.model.series[0].dataSource = chartData;
         sender.model.series[0].xName = "month";
         sender.model.series[0].yName = "sales";
