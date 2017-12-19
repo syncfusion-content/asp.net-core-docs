@@ -113,12 +113,6 @@ Create a new class file namely _ScheduleData_ within the **Models** folder in or
                     Comments = "Long sleep during winter season",
                     ProgramStartTime = new DateTime(2016, 6, 3, 1, 0, 0),
                     ProgramEndTime = new DateTime(2016, 6, 3, 2, 0, 0)
-             },
-             new ScheduleData {
-                    ProgramName = "Estivation",
-                    Comments = "Sleeping in hot season",
-                    ProgramStartTime = new DateTime(2016, 6, 4, 3, 0, 0),
-                    ProgramEndTime = new DateTime(2016, 6, 4, 4, 0, 0)
              }
            };
            return data;
@@ -139,6 +133,8 @@ Now, define the action _GetData_ within the **Home** controller page as shown be
 
 {% endhighlight %}
 
+
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
  
