@@ -69,7 +69,7 @@ var chartData = [
 
 The remote data can be bound to the chart by using the DataManager. You can use the **query** property of the series to filter the data from the dataSource.
 
-{% hightlight cshtml %}
+{% highlight cshtml %}
     <ej-chart id="container">
             <e-chart-series>
                 <e-series type="Column" query="ej.Query().from('Orders').take(10)" x-name="ShipCity" y-name="Freight" >
