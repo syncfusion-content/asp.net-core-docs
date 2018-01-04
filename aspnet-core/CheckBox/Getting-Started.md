@@ -270,7 +270,7 @@ Checkbox Creation
 
 ### Create a Tri-State Checkbox
 
-ASP.NET Core Tri-State Checkbox widget renders by setting EnableTriState property to True. You can add the following code to create Tri-state Checkbox in the <div> element of the corresponding view page.
+ASP.NET Core Tri-State Checkbox widget renders by setting EnableTriState property to true. You can add the following code to create Tri-state Checkbox in the <div> element of the corresponding view page.
 
 
 
