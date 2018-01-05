@@ -385,17 +385,17 @@ You can receive the Hobbies and Interest values using Checkbox. You can create a
 
         $("button").click(function () {
 
-            var checkeditem = [];                                               
+            var checked = [];                                               
 
             $(".e-checkbox").each(function () {
 
              if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
 
-                 checkeditem.push($("#" + $(this)[0].id).ejCheckBox("option","value"));
+                 checked.push($("#" + $(this)[0].id).ejCheckBox("option","value"));
 
              });
 
-            alert(checkeditem);        
+            alert(checked);        
 		});
     });
 
@@ -413,7 +413,7 @@ You can receive the Hobbies and Interest values using Checkbox. You can create a
 
 /*Razor code to render CheckBox*/
 
-	 @{ Html.EJ().Button("buttonnormal").Text("Submit").Size(ButtonSize.Normal).Render(); }
+	 @{ Html.EJ().Button("button").Text("Submit").Size(ButtonSize.Normal).Render(); }
 
 {% endhighlight %}
 
@@ -433,17 +433,17 @@ You can receive the Hobbies and Interest values using Checkbox. You can create a
 
         $("button").click(function () {
 
-            var checkeditem = [];                                               
+            var checked = [];                                               
 
             $(".e-checkbox").each(function () {
 
              if ($("#" + $(this)[0].id).ejCheckBox("option", "checked"))
 
-                 checkeditem.push($("#" + $(this)[0].id).ejCheckBox("option","value"));
+                 checked.push($("#" + $(this)[0].id).ejCheckBox("option","value"));
 
              });
 
-            alert(checkeditem);        
+            alert(checked);        
 		});
     });
 
