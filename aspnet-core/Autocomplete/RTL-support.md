@@ -33,7 +33,7 @@ The following steps explain how you can enable the right-to-left property for an
 
 
 
-The following image is the output for AutoComplete when EnableRTL is set to “True”.
+The following image is the output for AutoComplete when EnableRTL is set to “true”.
 
 
 
