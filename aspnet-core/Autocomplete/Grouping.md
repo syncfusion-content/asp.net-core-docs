@@ -34,7 +34,7 @@ The following steps explain you how to configure Grouping for an AutoComplete te
             public string Category { get; set; }
 
         }
-        public ActionResult Localdata()
+        public ActionResult AutocompleteFeatures()
         {
             List<CarsList> cars = new List<CarsList>();
             cars.Add(new CarsList { UniqueKey = 1, Text = "Audi S6", Category = "Audi" });

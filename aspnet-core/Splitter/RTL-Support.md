@@ -22,7 +22,7 @@ In the View page add the Splitter helper to enable the RTL functionality.
 
 {% highlight CSHTML %}
 
-<ej-splitter id="outterSplitter" height="300" width="600" orientation="@Orientation.Vertical" enable-rtl="true">
+<ej-splitter id="splitter" height="300" width="600" orientation="@Orientation.Vertical" enable-rtl="true">
     <e-split-panes>
         <e-split-pane pane-size="60" min-size="30">
             <e-content-template>
@@ -110,7 +110,7 @@ In the View page add the Splitter helper to enable the RTL functionality.
 
 <style type="text/css">
 
-    #outterSplitter 
+    #splitter 
 	{
 
         margin: 0 auto;
