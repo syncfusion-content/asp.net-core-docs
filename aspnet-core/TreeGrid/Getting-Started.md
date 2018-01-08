@@ -16,7 +16,7 @@ This section explains you on how to create the TreeGrid control in your applicat
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
-1. Create Syncfusion ASP.NET core Application. You can refer the [ASP.NET core Getting Started documentation](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-0-1)to create new project and add necessary DLL’s and script files.
+1. Create Syncfusion ASP.NET core Application. You can refer the [ASP.NET core Getting Started documentation](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-0-1) to create new project and add necessary DLL’s and script files.
 
 2. Add a TreeGrid Control in index.cshtml page with an empty datasource like as follows.
 
@@ -272,7 +272,7 @@ You are also provided with the following editors’ support in TreeGrid control
 * Numeric
 * Dropdown
 * Datepicker
-* Datetimepicker
+* DateTimePicker
 
 You can set the editor type for particular column as illustrated in the following code example.
 
