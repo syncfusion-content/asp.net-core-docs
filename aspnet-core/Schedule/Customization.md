@@ -274,9 +274,9 @@ The following code example lets you create the custom appointment window (using 
     <div id="recWindow" style="display: none">
         <div style="margin: 0 15%;">
             @{
-                List<string> Freqencies = new List<string> { "daily", "weekly", "monthly", "yearly", "everyweekday" };
+                List<string> Frequencies = new List<string> { "daily", "weekly", "monthly", "yearly", "everyweekday" };
             }
-            <ej-recurrence-editor id="recurrenceEditor" selected-recurrence-type="0" frequencies="Freqencies"></ej-recurrence-editor>
+            <ej-recurrence-editor id="recurrenceEditor" selected-recurrence-type="0" frequencies="Frequencies"></ej-recurrence-editor>
         </div>
         <div>
             <button type="submit" id="reccancel">Cancel</button>
@@ -504,7 +504,7 @@ function save() {
         }
     }
 
-// This function executes when the subject text field is currently being focussed
+// This function executes when the subject text field is currently being focused
     function temp() {
         $("#subject").removeClass("error");
     }
