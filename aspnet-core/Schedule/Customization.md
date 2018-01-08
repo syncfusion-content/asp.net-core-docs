@@ -102,7 +102,7 @@ The following code example renders the Scheduler by hiding the weekend days.
 
 The `TimeScale` allows the user to set the required time slot duration for the work cells that displays on the Scheduler. It provides option to customize both the major and minor slots using template option. It includes the below properties such as,
 
-* `Enable` - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `True`.
+* `Enable` - It accepts true or false value, denoting whether to show or hide the time slots. Its default value is `true`.
 * `MajorSlot` – Specifies the major time slot duration.
 * `MinorSlotCount` – Specifies the value, based on which the minor time slots are divided into appropriate count. 
 * TimeScale Templates – 2 template options available for customizing time scales namely `MinorSlotTemplateId` and `MajorSlotTemplateId`.  
