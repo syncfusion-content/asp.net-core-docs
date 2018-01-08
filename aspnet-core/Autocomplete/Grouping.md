@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping
 
-AutoComplete widget provides Grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to ‘False’. To enable Grouping for your AutoComplete widget, set the value to ‘True’.
+AutoComplete widget provides Grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to ‘false’. To enable Grouping for your AutoComplete widget, set the value to ‘true’.
 
 ## Configuring Grouping for AutoComplete
 
