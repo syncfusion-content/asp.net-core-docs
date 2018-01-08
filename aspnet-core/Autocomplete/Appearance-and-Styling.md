@@ -47,7 +47,7 @@ AutoComplete with Customized dimensions
 
 ## Rounded corner
 
-By enabling the ShowRoundedCorner property, you can customize the shape of the AutoComplete widget from a regular rectangular shape to a rounded rectangle shape that is set to ‘False’ by default.
+By enabling the ShowRoundedCorner property, you can customize the shape of the AutoComplete widget from a regular rectangular shape to a rounded rectangle shape that is set to ‘false’ by default.
 
 ### Enabling Rounded corner 
 
@@ -72,7 +72,7 @@ The following steps explain enabling the show-rounded-corner property for an Aut
 {% endhighlight %}
 
 
-The following image is the output for AutoComplete when ShowRoundedCorner is set to “True”.
+The following image is the output for AutoComplete when ShowRoundedCorner is set to “true”.
 
 
 
