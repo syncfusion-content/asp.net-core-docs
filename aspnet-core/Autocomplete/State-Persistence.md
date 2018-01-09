@@ -31,7 +31,7 @@ The following steps explain you how to enable state maintenance for AutoComplete
 
 {% endhighlight %}
 
-The following image is the output for AutoComplete when EnablePersistence is set to ‘True’.
+The following image is the output for AutoComplete when EnablePersistence is set to ‘true’.
 
 <table>
 <tr>

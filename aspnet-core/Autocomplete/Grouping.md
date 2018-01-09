@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping
 
-AutoComplete widget provides Grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to ‘False’. To enable Grouping for your AutoComplete widget, set the value to ‘True’.
+AutoComplete widget provides Grouping support for the suggestions list based on the category specified in the dataSource. By default AllowGrouping is set to ‘false’. To enable Grouping for your AutoComplete widget, set the value to ‘true’.
 
 ## Configuring Grouping for AutoComplete
 
@@ -34,7 +34,7 @@ The following steps explain you how to configure Grouping for an AutoComplete te
             public string Category { get; set; }
 
         }
-        public ActionResult Localdata()
+        public ActionResult AutocompleteFeatures()
         {
             List<CarsList> cars = new List<CarsList>();
             cars.Add(new CarsList { UniqueKey = 1, Text = "Audi S6", Category = "Audi" });

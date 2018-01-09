@@ -51,7 +51,7 @@ Enable Check Mark
 
 When selecting a specific list item, it is highlighted with an active color. prevent-selection property is used to prevent this behavior by setting it to “true”. 
 
-N> When the click or select action is completed, the highlight is undone automatically even when the property is set to “False”.
+N> When the click or select action is completed, the highlight is undone automatically even when the property is set to “false”.
 
 Refer the following code examples.
 
