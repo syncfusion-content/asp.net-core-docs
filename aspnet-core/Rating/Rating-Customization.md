@@ -141,7 +141,7 @@ Add the following code in your view page to render the Rating with Precision.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Rating with Precison.
+// Add the following code example to the corresponding CSHTML page to render Rating with Precision.
 
 <div id="container" style="border: 1px solid black; width: 300px; padding: 2px">
         <table>
