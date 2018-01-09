@@ -224,7 +224,7 @@ The following screenshot illustrates the Rating with customized increment.
 
 ## Resetting values
 
-Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to True. By default, the property value is set to True.
+Rating control provides support for value reset at runtime. This is achieved by enabling the AllowReset property to true. By default, the property value is set to true.
 
 The following code example is used to render the Rating control with AllowReset.
 
@@ -278,7 +278,7 @@ The following illustrates the Rating with allowReset.
 
 ## Read only
 
-Rating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+Rating control provides support for changeable or unchangeable values for Rating control. This is achieved by the ReadOnly property. When this property is set to true, the Rating value becomes unchangeable. By default, this property value is set to false.
 
 The following code example is used to render the Rating control with ReadOnly.
 
