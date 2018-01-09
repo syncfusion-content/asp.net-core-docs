@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show ToolTip
 
-Rating control provides support for Tooltip values. This is achieved by enabling the ShowTooltip property to True. When you move the mouse over the Rating control, it displays the Tooltip value as rating value. By default, this property value is set to True.
+Rating control provides support for Tooltip values. This is achieved by enabling the ShowTooltip property to true. When you move the mouse over the Rating control, it displays the Tooltip value as rating value. By default, this property value is set to true.
 
 The following code example is used to render the Rating control without tooltip.
 
