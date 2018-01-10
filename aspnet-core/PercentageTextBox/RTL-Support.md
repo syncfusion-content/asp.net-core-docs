@@ -21,6 +21,6 @@ In the View page add the below code and configure the EnableRTL property.
 
 {% endhighlight %}
 
-Output of PercentageTextBox when EnableRTL is “True” is as follows. 
+Output of PercentageTextBox when EnableRTL is “true” is as follows. 
 
 ![](RTL-Support_images/RTL-Support_img1.png)
