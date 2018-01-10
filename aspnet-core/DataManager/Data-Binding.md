@@ -263,7 +263,7 @@ Refer to the following code example for consuming Web API data using ej.DataMana
                     code += 5;
                 }
                 var list = order.ToList();
-                return Json(new { result = list, count = list.Count });
+                return JSON(new { result = list, count = list.Count });
             }
             public class OrderDetails
             {
@@ -343,3 +343,69 @@ The result for the above code example is illustrated as follows.
 
 _Web API data binding_
 
+
+## Complex Data Sorting
+
+You can perform a data operation based on nested column data and bind to the data control. Here, if you want to perform the server side data operation for the nested dataSource like sorting, grouping, filtering, searching, take, or skip then we have to define the generic type of dataSource.
+
+{% highlight CSHTML %}
+
+ <ej-grid id="FlatGrid" allow-paging="true" allow-sorting="true" >
+        <e-datamanager json="ViewBag.data"  adaptor="remoteSaveAdaptor"></e-datamanager>
+          <e-toolbar-settings show-toolbar="true" toolbar-items="@(new List<string>() {"add","edit","delete","update","cancel" })"></e-toolbar-settings>
+         <e-columns>
+            <e-column field="orderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="customerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="employeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="freight" header-text="Freight" text-align="Right" width="75"></e-column>
+
+            <e-column field="shipCity" header-text="Ship City" width="75"></e-column>
+           <e-column field="customer.0.customerNumber" header-text="Customer Number0" width="60"></e-column>
+    <e-column field="customer.0.otherAddress" header-text="Customer Address2 0" width="60"></e-column>
+    <e-column field="customer.1.customerNumber" header-text="Customer Number1" width="60"></e-column>
+    <e-column field="customer.1.otherAddress" header-text="Customer Address2 1" width="60"></e-column>
+
+
+        </e-columns>
+           </ej-grid>
+
+{%endhighlight%}
+
+{% highlight C# %}
+
+       public IActionResult About()
+        {  
+            BindDataSource();
+            ViewBag.data = order;
+            return View();
+        }
+      public void BindDataSource()
+        {
+            int code = 10000;
+            Customer[] cs = { new Customer { customerNumber = 4, otherAddress = "Hello" }, new Customer { customerNumber = 986, otherAddress = "bOther" } };
+          Customer[] cos = { new Customer { otherAddress = "a", customerNumber = 5 }, new Customer { customerNumber = 777, otherAddress = "other" } };
+
+            for (int i = 1; i < 10; i++)
+            {
+                order.Add(new Orders(code + 1, "ALs", i + 0, 2.3 * i, new DateTime(1991, 05, 15), "Berlin", true,cs));
+                order.Add(new Orders(code + 2, "ANATR", i + 2, 3.3 * i, new DateTime(1990, 04, 04), "Madrid", false,cos));
+                order.Add(new Orders(code + 3, "ANTON", i + 1, 4.3 * i, new DateTime(1957, 11, 30), "Cholchester", false,cs));
+                order.Add(new Orders(code + 4, "BLONP", i + 3, 5.3 * i, new DateTime(1930, 10, 22), "Marseille", true,cos));
+                order.Add(new Orders(code + 5, "BOLID", i + 4, 6.3 * i, new DateTime(1953, 02, 18), "Tsawassen", true,cos));
+                code += 5;
+            }
+            Sort sortingObject = new Sort();
+            IEnumerable<Orders> List = order;
+            sortingObject.Name = "customer.0.otherAddress";
+            sortingObject.Direction = "ascending";
+            List<Sort> listToSort = new List<Sort>();
+            listToSort.Add(sortingObject);
+            Syncfusion.JavaScript.DataSources.DataOperations operation = new Syncfusion.JavaScript.DataSources.DataOperations();
+            List = operation.PerformSorting(List, listToSort);
+            order = List.Cast<Orders>().ToList();
+
+        }
+
+{%endhighlight%}
+
+![](CORE_Sorting_images/complexdata.png)
