@@ -61,14 +61,14 @@ In the View page add the below code and configure the EnableStrictMode property.
 
 {% endhighlight %}
 
-Output when EnableStrictMode is “True” is as follows.
+Output when EnableStrictMode is “true” is as follows.
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)
 
 
 ## Enabled or Disabled
 
-NumericTextBox has an option to enable or disable its element. You can set the Enabled property as “False” to enable the Textbox controls.
+NumericTextBox has an option to enable or disable its element. You can set the Enabled property as “false” to enable the Textbox controls.
 
 ### Configure Enabled or Disabled 
 
@@ -80,7 +80,7 @@ In the View page add the below code and configure the Enabled property.
 
 {% endhighlight %}
 
-Output when Enabled is “True” and when Enabled is “False”.
+Output when Enabled is “true” and when Enabled is “false”.
 
 ![](Behavior-Settings_images/Behavior-Settings_img5.png)
 
@@ -184,7 +184,7 @@ Output of NumericTextBox with MaxValue and MinValue is as follows.
 
 ## Read Only Support
 
-NumericTextBox supports read only option. When you enable the ReadOnly property to the control, the value cannot be changed in the NumericTextBox. You can set the ReadOnly property as “True” to enable this option.
+NumericTextBox supports read only option. When you enable the ReadOnly property to the control, the value cannot be changed in the NumericTextBox. You can set the ReadOnly property as “true” to enable this option.
 
 ### Configure Read Only
 
@@ -196,7 +196,7 @@ In the View page add the below code and configure the ReadOnly property.
 
 {% endhighlight %}
 
-Output of NumericTextBox when ReadOnly is “True” is as follows. NumericTextBox values cannot be edited or changed.
+Output of NumericTextBox when ReadOnly is “true” is as follows. NumericTextBox values cannot be edited or changed.
 
 ![](Behavior-Settings_images/Behavior-Settings_img13.png)
 
@@ -288,7 +288,7 @@ In the View page add the below code and configure the ShowRoundedCorner property
 
 {% endhighlight %}
 
-Output of NumericTextBox when ShowRoundedCorner is “True”.
+Output of NumericTextBox when ShowRoundedCorner is “true”.
 
 ![](Behavior-Settings_images/Behavior-Settings_img15.png)
 
@@ -306,7 +306,7 @@ In the View page add the below code and configure the ShowSpinButton property.
 
 {% endhighlight %}
 
-Output of NumericTextBox when ShowSpinButton is “False”.
+Output of NumericTextBox when ShowSpinButton is “false”.
 
 ![](Behavior-Settings_images/Behavior-Settings_img16.png)
 
