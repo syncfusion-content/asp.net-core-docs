@@ -52,7 +52,7 @@ N> In **Desktop** mode, the default height value of the cells is set to **20px**
 
 ## Cell Auto-Height
 
-The height of the cells specifically in timeline view can be made to adjust automatically based on its exceeding appointment count. It is controlled by an API named `show-overflow-button' which accepts true or false value, denoting whether to enable/disable the cell auto-height adjusting option. To enable this option, set the value of `show-overflow-button` as `false` whereas its default value is `true`.
+The height of the cells specifically in timeline view can be made to adjust automatically based on its exceeding appointment count. It is controlled by an API named `show-overflow-button` which accepts true or false value, denoting whether to enable/disable the cell auto-height adjusting option. To enable this option, set the value of `show-overflow-button` as `false` whereas its default value is `true`.
 
 In **Vertical** view, the same functionality is made applicable only in the **Month View** whereas in **Horizontal** mode, it is applicable in all the views.
 
