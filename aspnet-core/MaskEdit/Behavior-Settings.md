@@ -40,7 +40,7 @@ MaskEditTextBox after changing the value and after page refresh
 
 ## Enabled or Disabled
 
-MaskEditTextBox has an option to enable or disable its element. You can set the Enabled property as “False” to enable the Textbox controls.
+MaskEditTextBox has an option to enable or disable its element. You can set the Enabled property as “false” to enable the Textbox controls.
 
 ### Configure Enabled or Disabled 
 
@@ -54,16 +54,16 @@ In the View page add MaskEditTextBox helper, and configure the Enabled property.
 
 {% endhighlight %}
 
-Output when Enabled is “True” and when Enabled is “False”.
+Output when Enabled is “true” and when Enabled is “false”.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png)
 
-Textboxes with enabled as True
+Textboxes with enabled as true
 {:.caption}
 
 ![](Behavior-Settings_images/Behavior-Settings_img4.png)
 
-Textboxes with enabled as False
+Textboxes with enabled as false
 {:.caption}
 
 ## Adjusting Textbox Size
@@ -113,7 +113,7 @@ MaskEditTextBox with value
 
 ## Read Only Support
 
-MaskEditTextBox supports read only option. When you enable the ReadOnly property to the control, the value cannot be changed in the MaskEditTextBox. You can set the ReadOnly property as “True” to enable this option.
+MaskEditTextBox supports read only option. When you enable the ReadOnly property to the control, the value cannot be changed in the MaskEditTextBox. You can set the ReadOnly property as “true” to enable this option.
 
 ### Configure Read Only
 
@@ -125,7 +125,7 @@ In the View page add MaskEditTextBox helper, and configure the ReadOnly property
 
 {% endhighlight %}
 
-Output of MaskEditTextBox when ReadOnly is “True” is as follows. MaskEditTextBox values cannot be edited or changed.
+Output of MaskEditTextBox when ReadOnly is “true” is as follows. MaskEditTextBox values cannot be edited or changed.
 
 
 
@@ -136,7 +136,7 @@ MaskEditTextBox with readOnly
 
 ## Error Visibility
 
-The MaskEditTextBox has an option that shows the error value with red colored text. It is used to validate the Mask Edit value. You can set the ShowError property as “True” to enable this option.
+The MaskEditTextBox has an option that shows the error value with red colored text. It is used to validate the Mask Edit value. You can set the ShowError property as “true” to enable this option.
 
 ### Configure Error Visibility
 
@@ -152,7 +152,7 @@ In the View page use the corresponding Textbox helper for rendering Textbox cont
 
 {% endhighlight %}
 
-Output for MaskEditTextBox when ShowError is “True” is as follows. 
+Output for MaskEditTextBox when ShowError is “true” is as follows. 
 
 
 
@@ -337,7 +337,7 @@ In the View page add MaskEditTextBox helper, and configure the ShowRoundedCorner
 
 {% endhighlight %}
 
-Output of MaskEditTextBox when ShowRoundedCorner is “True”.
+Output of MaskEditTextBox when ShowRoundedCorner is “true”.
 
 ![](Behavior-Settings_images/Behavior-Settings_img16.png)
 
