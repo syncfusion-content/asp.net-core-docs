@@ -32,7 +32,7 @@ In View page, add the tag helper as shown in the following.
 In the above code block, `path` denotes the URL of filesystem that are to be explored in “FileExplorer” and `ajax-action` specifies the URL of server side AJAX handling method that handles the file operations of file explorer control.
 The `e-file-ajax-settings` that specifies the URL of the server side AJAX handling method for image preview, file download and upload actions.
 
-So the [path](https://help.syncfusion.com/api/js/ejfileexplorer#members:path), [ajax-action](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxaction) and [e-file-ajax-settings](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxsettings) for getimage, download and upload are mandatory configuration here.
+So the [path](https://help.syncfusion.com/api/js/ejfileexplorer#members:path), [ajax-action](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxaction) and [e-file-ajax-settings](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxsettings) for get image, download and upload are mandatory configuration here.
 
 Add the following code example to the corresponding controller page.
 
