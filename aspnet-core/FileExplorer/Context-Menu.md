@@ -9,11 +9,11 @@ keywords: FileExplorer,  Syncfusion, Asp.Net Core FileExplorer, UG document, Con
 
 # Context Menu
 
-The context-menu has [list of items](#context-menu-items) which helps to perform FileExplorer operations, and it appears based on the target such as file or folder.
+The context-menu has [list of items](#context-menu-items) that helps you to perform file explorer operations, and it appears based on the target such as file or folder.
 
 ## Context menu items
 
-The below table shows the context menu items corresponding to the location where it is opened:
+The following table shows the context menu items corresponding to the location where it is opened:
 
 <table>
 <tr>
@@ -37,7 +37,7 @@ While right click on tree view nodes (from navigation pane)<br/><br/></td>
 </tr>
 <tr>
 <td>
-While right click on File / Folder<br/><br/></td>
+While right click the File/Folder<br/><br/></td>
 <td>
 * Open<br/>* Download<br/>* Upload<br/>* Delete<br/>* Rename<br/>* Cut<br/>* Copy<br/>* Paste<br/>* Get info<br/>*Open folder location<br/><br/><br/><br/></td>
 <td>
@@ -52,55 +52,55 @@ While right click on layout (content pane)<br/><br/></td>
 <br/><br/><br/><br/></td>
 </tr>
 </table>
-The below table explains the behavior of each context menu item:
+The following table explains the behavior of each context menu item:
 <table>
 <tr>
 <td>
 Open<br/><br/></td>
 <td>
-It opens the selected folder. When an image file selected it opens the preview of the image. For the remaining files this option becomes disabled.<br/><br/></td>
+It opens the selected folder. When an image file is selected, it opens the preview of the image. For the remaining files this option becomes disabled.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Download<br/><br/></td>
 <td>
-It downloads the selected file. When a file or number of files selected at that time only download option enabled.<br/><br/>If multiple files selected then it downloads all the files in a zip format.<br/><br/></td>
+It downloads the selected file. Download option is enabled only when you select a file or number of files.<br/><br/>If multiple files are selected, it downloads all the selected files in a zip format.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Cut<br/><br/></td>
 <td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files in any location, the files are removed from the source location.<br/><br/></td>
+It makes the copy of the selected files or folders from the clipboard. When the user paste the files in any location, the files are removed from the source location.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Copy<br/><br/></td>
 <td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files, the copy of the files only pasted in the target location.<br/><br/></td>
+It makes the copy of the selected files or folders from the clipboard. When the user paste the files, only the copied files are pasted in the target location.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Paste<br/><br/></td>
 <td>
-It paste the files from the clipboard into the current selected folder. Note that when the files are copied into the clipboard at that time only it enabled.<br/><br/></td>
+It paste the files from the clipboard into the current selected folder. Note: it is enabled only when the files are copied from the clipboard.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Delete<br/><br/></td>
 <td>
-It deletes the current selected file or folder. When you select any file or folder at that time only this option gets enabled.<br/><br/>If multiple files selected then it deletes all the selected items.<br/><br/></td>
+It deletes the currently selected file or folder. This option gets enabled only when you select any file or folder.<br/><br/>If multiple files are selected, it will delete all the selected items.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Rename<br/><br/></td>
 <td>
-This is used to rename the current selected file or folder. When you select any file or folder at that time only this option gets enabled.<br/><br/>Even multiple files selected it renames the single file only.<br/><br/></td>
+This is used to rename the currently selected file or folder. This option gets enabled only when you select any file or folder.<br/><br/>Even if multiple files are selected, it renames the single file only.<br/><br/></td>
 </tr>
 <tr>
 <td>
 New Folder<br/><br/></td>
 <td>
-It creates a new folder on the current directory.<br/><br/>While click on the “NewFolder” item a dialog appears to get the folder name. Based on the user input, a new folder create on the current directory.<br/><br/></td>
+It creates a new folder on the current directory.<br/><br/>When you click the “NewFolder” item, the dialog box will be displayed to get the folder name. Based on the user input, the file explorer creates new folder on the current directory.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -112,12 +112,12 @@ It uploads a file or list of files into the current directory.<br/><br/></td>
 <td>
 Get info<br/><br/></td>
 <td>
-It displays the details of the current selected file or folder.<br/><br/></td>
+It displays the details of the currently selected file or folder.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Sort By<br/><br/></td><td>
-It's used to sorting the files and folders from the current directory.The sorting can be done based on the columns available from grid,in both ascending and descending order.<br/><br/></td>
+It is used to sort the files and folders from the current directory. Sorting can be done based on the columns available from grid, in both the ascending and descending order.<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -132,7 +132,7 @@ It helps to open a file location from the filtered list.
 
 ## Context menu Visibility
 
-The presence of the context menu can be controlled by the “[ShowContextMenu](http://help.syncfusion.com/js/api/ejfileexplorer#members:showcontextmenu)” property. This was enabled by default, and by disabling this property you can prevent our built-in context menu.
+The presence of the context menu can be controlled by the “[ShowContextMenu](http://help.syncfusion.com/js/api/ejfileexplorer#members:showcontextmenu)” property. This is enabled by default, and by disabling this property you can prevent our built-in context menu.
 
 In the view page, add FileExplorer and specify the context menu visibility as false.
 
@@ -148,17 +148,17 @@ In the view page, add FileExplorer and specify the context menu visibility as fa
 
 {% endhighlight %}
 
-## Enable / Disable the Context menu Item
+## Enable/Disable the Context menu Item
 
 The context menu items can be enabled or disabled through the client side public methods. It enables or disables the item from all the context menu where it is present.
 
-For example, if you disable the “Upload” item, it disables in all places wherever it appears such as open the context menu on “TreeView”, open on file/folder, and open on layout.
+For example, if you disable the “Upload” item, it is disabled in all places wherever it appears such as open the context menu on “TreeView”, open on file/folder, and open on layout.
 
 * [enableMenuItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:enablemenuitem)
 
 * [disableMenuItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:disablemenuitem)
 
-These methods only accepts the context menu item name as the parameter.
+These methods accepts only the context menu item name as the parameter.
     
     {% highlight javascript %}
     
@@ -174,11 +174,11 @@ These methods only accepts the context menu item name as the parameter.
 
 ## Context Menu Customization
 
-You can customize the ContextMenu of FileExplorer control by using [ContextMenuSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings) property. 
+You can customize the ContextMenu of FileExplorer control by using [ContextMenuSettings](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings) property.
 
-You can add your own context menu items and its action along with default context menu items of FileExplorer control. You can also remove the default context menu items in FileExplorer control. 
+You can add your own context menu items and its action along with default context menu items of file explorer control. You can also remove the default context menu items in file explorer control.
 
-To add/remove/re-arrange context menu items, you need to use [ContextMenuSettings.items](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings-items) property and to bind required actions for newly added menu items and add sub menu items, use [ContextMenuSettings.CustomMenuFields](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings-custommenufields) property. 
+To add/remove/re-arrange context menu items, you need to use the [ContextMenuSettings.items](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings-items) property and to bind required actions for newly added menu items and add sub menu items, use the [ContextMenuSettings.CustomMenuFields](https://help.syncfusion.com/api/js/ejfileexplorer#members:contextmenusettings-custommenufields) property.
 
 
 {% highlight CSHTML %}
@@ -227,14 +227,14 @@ Icons of context menu items can be customized by overriding the default context 
 {% endhighlight %}
 
 
-The following screenshot displays the customization of context menu in FileExplorer control.
+The following screenshot displays the customization of context menu in file explorer control.
 
 ![](Context-Menu_images/Context-Menu_img1.png)
 
 
 ## Context Menu Events
 
-You would be notified with events when you try to open the context menu items (**MenuBeforeOpen**), after context menu items is opened (**MenuOpen**) and when you click the menu items (**MenuClick**). The following code example illustrates how to define those events.
+You will be notified with events when you try to open the context menu items (**MenuBeforeOpen**), after context menu items is opened (**MenuOpen**), and when you click the menu items (**MenuClick**). The following code example illustrates how to define those events.
 
 {% highlight CSHTML %}
 

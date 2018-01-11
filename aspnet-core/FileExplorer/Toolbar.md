@@ -8,11 +8,11 @@ keywords: FileExplorer,  Syncfusion, Asp.Net Core FileExplorer, UG document, Too
 ---
 # Toolbar
 
-The toolbar element having the number of tools, and each tool can be configurable.
+The toolbar element have number of tools, and each tool can be configured.
 
 ## Toolbar items
 
-The toolbar having the list of items to perform various operations and grouped into some categorizes.
+The toolbar has the list of items to perform various operations and it is grouped into some categorizes.
 
  
 The following table explains the functionality of each toolbar item:
@@ -31,7 +31,7 @@ Description
 Layout
 </td>
 <td>
-In FileExplorer, files have been displayed in 3 types of views “Grid”, “Tile” and “Large Icons”. Using this tool, you can change the view type from one to another.
+In file explorer, files have been displayed in 3 types of views “Grid”, “Tile”, and “Large Icons”. Using this tool, you can change the view type from one to another.
 
 </td>
 </tr>
@@ -39,19 +39,19 @@ In FileExplorer, files have been displayed in 3 types of views “Grid”, “Ti
 <td>
 NewFolder <br/><br/></td>
 <td>
-It creates a new folder on the current directory.<br/><br/>While click on the “NewFolder” item, the dialog displays to get the folder name. Based on the user input, FileExplorer creates new folder on the current directory.<br/><br/><br/><br/></td>
+It creates a new folder on the current directory.<br/><br/>When you click the “NewFolder” item, the dialog box will be displayed to get the folder name. Based on the user input, the file explorer creates new folder on the current directory.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Back <br/><br/></td>
 <td>
-It navigates to the previous directory from the user history. When the backward history is not available when it is disabled state.<br/><br/><br/><br/></td>
+It navigates to the previous directory from the user history. When the backward history is not available, it will be in disabled state.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Forward <br/><br/></td>
 <td>
-It navigates to the next directory from the user history. When the forward history is not available when it is disable state.<br/><br/><br/><br/></td>
+It navigates to the next directory from the user history. When the forward history is not available, it will be in disable state.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -63,7 +63,7 @@ It navigates to the parent directory of the current folder.<br/><br/><br/><br/><
 <td>
 Address bar<br/><br/></td>
 <td>
-The “address bar” is the textbox which displays the path of the current directory, as a series of its parent directory separated by slash (“/”).<br/><br/>And the address bar is an editable area, so you can enter any directory’s path to a quick navigation.<br/><br/><br/><br/></td>
+The “address bar” is the textbox that displays the path of the current directory, as a series of its parent directory will be separated by slash (“/”).<br/><br/>And the address bar is an editable area, where you can enter any directory’s path for a quick navigation.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -75,25 +75,25 @@ It refreshes the current directory.<br/><br/><br/><br/></td>
 <td>
 Upload <br/><br/></td>
 <td>
-It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check <br/>{{'[here](#_Customizing_the_Upload)'| markdownify }}.<br/><br/><br/><br/></td>
+It uploads a file or list of files into the current directory.<br/><br/>And you can customize the uploaded configurations, for details check <br/>{{'[here](#_Customizing_the_Upload)'| markdownify }}.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Delete <br/><br/></td>
 <td>
-It delete the current selected file or folder. The delete icon is enable state if you select any file or folder.<br/><br/>If you selected the multiple files, it deletes all the selected items.<br/><br/><br/><br/></td>
+It deletes the currently selected file or folder. The delete icon will be in enable state, when you select any file or folder.<br/><br/>If you select multiple files, it deletes all the selected items.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Rename <br/><br/></td>
 <td>
-This is used to rename the current selected file or folder. The rename icon is enable state if you select any file or folder.<br/><br/>Even if you selected multiple files, it renames the last selected file only.<br/><br/><br/><br/></td>
+This is used to rename the currently selected file or folder. The rename icon will be in enable state, when you select any file or folder.<br/><br/>Even if you select multiple files, it renames the last selected file only.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Download <br/><br/></td>
 <td>
-It downloads the selected files. The download icon is enable state if you select any file or folder.<br/><br/>If you select multiple files, it downloads all the files in a zip format.<br/><br/><br/><br/></td>
+It downloads the selected files. The download icon will be in enable state, when you select any file or folder.<br/><br/>If you select multiple files, it downloads all the files in a zip format.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -105,38 +105,38 @@ It makes the copy of the selected files or folders into the clipboard. When the 
 <td>
 Copy <br/><br/></td>
 <td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files, the copy of the files only pasted in the target location.<br/><br/><br/><br/></td>
+It makes the copy of the selected files or folders into the clipboard. When the user paste the files, only the copied files will be pasted in the target location.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Paste <br/><br/></td>
 <td>
-It paste the files from the clipboard into the currently selected folder. <br/><br/>Note: when the files are copied into the clipboard, at that time only it enabled.<br/><br/><br/><br/></td>
+It paste the files from the clipboard into the currently selected folder. <br/><br/>Note: It is enabled only when the files are copied from the clipboard.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Details <br/><br/></td>
 <td>
-It displays the details of the current selected file or folder.<br/><br/><br/><br/></td>
+It displays the details of the currently selected file or folder.<br/><br/><br/><br/></td>
 </tr>
 <tr>
 <td>
 Search bar<br/><br/></td>
 <td>
-The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the “search bar” can be customize, for details check <br/>{{'[here](#_Search_bar)'| markdownify }}.<br/><br/></td>
+The Search bar is the textbox that is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the “search bar” can be customized. For more details, check <br/>{{'[here](#_Search_bar)'| markdownify }}.<br/><br/></td>
 </tr>
 <tr>
 <td>
 Sort by <br/><br/></td><td>
-It's used to sorting the files from the current directory.The sorting can be done based on the columns available from grid,in both ascending and descending order.<br/><br/><br/><br/></td>
+It is used to sort the files from the current directory. The sorting can be done based on the columns available from grid, in both ascending and descending order.<br/><br/><br/><br/></td>
 </tr>
 </table>
 
-## Toolbar Visibility
+## Toolbar visibility
 
-The visibility of the toolbar can be customized through the “[ShowToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar)” property. By disabling this property you can remove the toolbar from FileExplorer.
+The visibility of the toolbar can be customized through the “[ShowToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar)” property. By disabling this property you can remove the toolbar from the file explorer.
 
-In the view page, add FileExplorer and specify “ShowToolbar” as false
+In the view page, add FileExplorer and specify “ShowToolbar” as false.
 
 {% highlight CSHTML %}
 
@@ -153,9 +153,9 @@ In the view page, add FileExplorer and specify “ShowToolbar” as false
 
 
 
-## Toolbar Configuration
+## Toolbar configuration
 
-From the list of available items, you can configure and group your required toolbar items only through the “[Tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools)” property. And also you can arrange the toolbar items by the “[ToolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist)” property.
+From the list of available items, you can configure and group your required toolbar items only through the “[Tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools)” property. And also, you can arrange the toolbar items by the “[ToolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist)” property.
 
   
 {% highlight CSHTML %}
@@ -174,17 +174,17 @@ From the list of available items, you can configure and group your required tool
     
 ## Search bar
 
-The Search bar can be customize through the “[FilterSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings)” property. By default the search doesn’t consider the case sensitivity, and the search works based on “[FilterType](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings-filtertype)”.
+The Search bar can be customize through the “[FilterSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings)” property. By default, the search does not consider the case sensitivity, and the search work is based on the “[FilterType](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings-filtertype)”.
 
-The FileExplorer allows the following filter types in the search functionality.
+The file explorer allows the following filter types in the search functionality.
 
-* “FilterOperator.StartsWith” – Supports to search text with starts with
+* “FilterOperator.StartsWith”: Supports to search text with starts with
 
-* “FilterOperator.Contains” – Supports to search text with contains with
+* “FilterOperator.Contains”: Supports to search text with contains with
 
-* “FilterOperator.EndsWith” – Supports to search text with ends with
+* “FilterOperator.EndsWith”: Supports to search text with ends with
 
-In the view page, you can configure the filter type with enabling case sensitivity and filter type like below:
+In the view page, you can configure the filter type with enabling case sensitivity and filter type like in the following:
 
 {% highlight CSHTML %}
     
@@ -203,9 +203,9 @@ In the view page, you can configure the filter type with enabling case sensitivi
 ## Custom Tool in Toolbar
 
 From the toolbar items, you can see the list of built-in tools to perform the operations. Along with this built-in tools, you can add your custom tool with the custom functionality.
-You can find an online demo sample of FileExplorer with custom tool from [here](http://aspnetcore.syncfusion.com/fileexplorer/customtool). 
+You can find an online demo sample of file explorer with custom tool from [here](http://aspnetcore.syncfusion.com/fileexplorer/customtool).
 
-In the view page, add FileExplorer and specify custom tool as shown below
+In the view page, add FileExplorer and specify custom tool as shown in the following:
     
 {% highlight CSHTML %}
 
@@ -261,9 +261,9 @@ In the view page, add FileExplorer and specify custom tool as shown below
         </style>
 {% endhighlight %}
     
-## Enable / Disable the Toolbar Item
+## Enable/Disable the Toolbar item
 
-Each toolbar item can be enabled or disabled through the below client-side public methods.
+Each toolbar item can be enabled or disabled through the following client-side public methods.
 
 * [enableToolbarItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:enabletoolbaritem)
 
@@ -287,17 +287,17 @@ These methods accepts the tool name as the parameter. It also allows the paramet
     
 ## Customizing the Upload Functionality
 
-FileExplorer helps you to upload the file using “[Upload](http://help.syncfusion.com/js/uploadbox/overview#)” component. File upload can be done through the toolbar item or context menu item. The “[UploadSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:uploadsettings)” property is used to configure the upload functionalities.
+The file explorer helps you to upload the file using the “[Upload](http://help.syncfusion.com/js/uploadbox/overview#)” component. File upload can be done through the toolbar item or context menu item. The “[UploadSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:uploadsettings)” property is used to configure the upload functionalities.
 
-This property has the below sub properties with the default values:
+This property has the following sub properties with the default values:
         
-**AllowMultipleFile**: This property used to control the behavior of multiple files upload and this was enabled by default so you can upload multiple files at a time. If you disable this “AllowMultipleFile” property then you can upload only one file at a time.
+**AllowMultipleFile**: This property is used to control the behavior of multiple files upload and this is enabled by default, so you can upload multiple files at a time. If you disable this “AllowMultipleFile” property, you can upload only one file at a time.
 
 **MaxFileSize**: The property limits the maximum file size to upload. It accepts the value in bytes.
 
-**AutoUpload**: when you enable this property, the upload action performed automatically after select the files. When you disable this property, it shows a confirmation dialog with the selected file details and perform the upload action on press the “upload” button.
+**AutoUpload**: When you enable this property, the upload action is performed automatically after selecting the files. When you disable this property, it shows a confirmation dialog with the selected file details and perform the upload action by pressing the “upload” button.
 
-In the view page, add FileExplorer and specify the upload settings as shown below
+In the view page, add file explorer and specify the upload settings as shown in the following:
     
    {% highlight CSHTML %}
 
