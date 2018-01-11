@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a FileExplorer in ASP.NET Core platform.
+This section briefly explains about how to create a file explorer in ASP.NET Core platform.
 
-## Create your first FileExplorer in ASP.NET Core
+## Create your first file explorer in ASP.NET Core
 
-Create an ASP.NET Core Project and add Syncfusion assembly packages, CSS and scripts with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation. After creating this project, you can create a FileExplorer in following ways.
+Create an ASP.NET Core Project and add Syncfusion assembly packages, CSS and scripts with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation. After the project creation, create a file explorer in the following ways.
 
 ## FileExplorer using tag helper
 
-In View page, add the tag helper as shown below.
+In View page, add the tag helper as shown in the following.
 
 {% highlight CSHTML %}
 <ej-file-explorer id="default" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")">
@@ -27,16 +27,16 @@ In View page, add the tag helper as shown below.
     <e-upload url="/FileExplorer/Upload{0}"></e-upload>
 </e-file-ajax-settings>
 </ej-file-explorer>
-{% endhighlight %} 
+{% endhighlight %}
 
-In above code block, `path` denotes the URL of filesystem that are to be explored in “FileExplorer” and `ajax-action` specifies the URL of server side AJAX handling method that handles the file operations of FileExplorer control.
-`e-file-ajax-settings` which specifies the URL of the server side AJAX handling method for image preview, file download and upload actions.
+In the above code block, `path` denotes the URL of filesystem that are to be explored in “FileExplorer” and `ajax-action` specifies the URL of server side AJAX handling method that handles the file operations of file explorer control.
+The `e-file-ajax-settings` that specifies the URL of the server side AJAX handling method for image preview, file download and upload actions.
 
-so [path](https://help.syncfusion.com/api/js/ejfileexplorer#members:path), [ajax-action](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxaction) and [e-file-ajax-settings](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxsettings) for getimage, download and upload are mandatory configuration here.
+So the [path](https://help.syncfusion.com/api/js/ejfileexplorer#members:path), [ajax-action](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxaction) and [e-file-ajax-settings](https://help.syncfusion.com/api/js/ejfileexplorer#members:ajaxsettings) for get image, download and upload are mandatory configuration here.
 
 Add the following code example to the corresponding controller page.
 
-To get the current path, we have used the `IHostingEnvironment` interface. For using `IHostingEnvironment`, need to add the namespace `Microsoft.AspNetCore.Hosting` in your controller part.
+The `IHostingEnvironment` interface is used to get the current path. To use the `IHostingEnvironment`, you need to add the namespace `Microsoft.AspNetCore.Hosting` in your controller part.
 
 {% highlight c# %}
 
@@ -56,7 +56,7 @@ public partial class FileExplorerController : Controller
         public ActionResult Upload(FileExplorerParams args)
         {
             operation.Upload(args.FileUpload, args.Path);
-            return Json("");            
+            return Json("");
         }
         public ActionResult GetImage(FileExplorerParams args)
         {
