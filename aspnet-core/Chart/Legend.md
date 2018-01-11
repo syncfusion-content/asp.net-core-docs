@@ -185,7 +185,7 @@ You can customize the legend border by using the **Border** option in the legend
 
 ### Scrollbar for legend
 
-You can enable or disable the legend scrollbar by using the **EnableScrollbar** option of the legend. When you disable the scrollbar option, the legend does not consider the default size and chart draws in the reaming space. The default value of EnableScrollbar option is **True**.  
+You can enable or disable the legend scrollbar by using the **EnableScrollbar** option of the legend. When you disable the scrollbar option, the legend does not consider the default size and chart draws in the reaming space. The default value of EnableScrollbar option is **true**.  
 
 {% highlight cshtml %}
 
@@ -273,7 +273,7 @@ var legendItem = sender.data;
 
 ## Series selection on legend item click
 
-You can select a specific series or point while clicking on the corresponding legend item through disabling the **ToggleSeriesVisibility** option of the legend. The default value of toggleSeriesVisibility option is **True**. To customize the series selection refer to the series Selection.
+You can select a specific series or point while clicking on the corresponding legend item through disabling the **ToggleSeriesVisibility** option of the legend. The default value of toggleSeriesVisibility option is **true**. To customize the series selection refer to the series Selection.
 
 {% highlight cshtml %}
 

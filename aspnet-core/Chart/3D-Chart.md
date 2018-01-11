@@ -13,7 +13,7 @@ Essential 3D Chart for ASP.NET CORE allows you to view 8 chart types in 3D view 
 
 ## 3D Column Chart
 
-For rendering a 3D Column Chart, specify the series **Type** as **Column** in the chart series and set **Enable3D** option as **True** in the chart.
+For rendering a 3D Column Chart, specify the series **Type** as **Column** in the chart series and set **Enable3D** option as **true** in the chart.
 
 {% highlight cshtml %}
 
@@ -202,7 +202,7 @@ To render the Doughnut Chart in 3D view, enable the **Enbel3D** option in the ch
 
 ### 3D View
 
-To render the EjChart in 3D view, set the **Enable3D** option as **True** in the chart.
+To render the EjChart in 3D view, set the **Enable3D** option as **true** in the chart.
 
 {% highlight cshtml %}
 

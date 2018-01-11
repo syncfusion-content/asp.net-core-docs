@@ -720,7 +720,7 @@ The axis is placed at the crossing value without the axis elements
 
 ### Axis Visibility
 
-Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **True**. 
+Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **true**. 
 
 {% highlight cshtml %}
 
@@ -874,7 +874,7 @@ The **MajorTickLines** and **MinorTickLines** properties in the axis are used to
   
 ### Inversing axis
 
-Axis can be inversed by using the **IsInversed** property of the axis. The default value of the IsInversed property is **False**.
+Axis can be inversed by using the **IsInversed** property of the axis. The default value of the IsInversed property is **false**.
 
 {% highlight cshtml %}
 
@@ -899,7 +899,7 @@ Axis can be inversed by using the **IsInversed** property of the axis. The defau
 
 ### Place axes at the opposite side
 
-The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the OpposedPosition property is **False**. 
+The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the OpposedPosition property is **false**. 
 
 {% highlight cshtml %}
 
