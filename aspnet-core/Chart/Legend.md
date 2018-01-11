@@ -257,14 +257,14 @@ You can get the legend item details such as *Index*, *Bounds*, *Shape* and *Seri
 
 {% highlight cshtml %}
 
-<ej-chart id="chartContainer" legend-item-click="onlegendclicked">
+<ej-chart id="chartContainer" legend-item-click="onLegendClicked">
     // ...
     <e-legend visible="true">        
     </e-legend>
     // ...
 </ej-chart>
 
-function onlegendclicked(sender) {
+function onLegendClicked(sender) {
 //Get legend item details on legend item click.
 var legendItem = sender.data;
 }
