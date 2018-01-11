@@ -8,7 +8,7 @@ keywords: FileExplorer,  Syncfusion, Asp.Net Core FileExplorer, UG document, Key
 ---
 # Keyboard Navigation
 
-The FileExplorer control can be fully accessible with the help of keyboard shortcuts. The below table shows the list of keyboard shortcuts to access the FileExplorer control.
+The file explorer control can be fully accessible with the help of keyboard shortcuts. The following table shows the list of keyboard shortcuts to access the FileExplorer control.
 
 
 N> Set focus on FileExplorer component to access the keyboard shortcuts.
@@ -71,19 +71,19 @@ Focuses the Status bar<br/><br/></td>
 <td>
 Right<br/><br/></td>
 <td>
-Focusing next item<br/><br/></td>
+Focuses next item<br/><br/></td>
 </tr>
 <tr>
 <td>
 Left<br/><br/></td>
 <td>
-Focusing previous item<br/><br/></td>
+Focuses previous item<br/><br/></td>
 </tr>
 <tr>
 <td>
 Enter<br/><br/></td>
 <td>
-Selection the focused item<br/><br/></td>
+Selects the focused item<br/><br/></td>
 </tr>
 <tr>
 <td>
@@ -101,7 +101,7 @@ Renames the selected item<br/><br/></td>
 <td>
 Ctrl + A<br/><br/></td>
 <td>
-Selects the all items<br/><br/></td>
+Selects all items<br/><br/></td>
 </tr>
 <tr>
 <td>
