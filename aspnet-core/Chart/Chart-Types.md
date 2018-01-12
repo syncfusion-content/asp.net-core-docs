@@ -1653,7 +1653,7 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Polar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **False**.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **false**.
 
 {% highlight cshtml %}
 
@@ -1714,7 +1714,7 @@ Radar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Radar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *False*.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *false*.
 
 {% highlight cshtml %}
 
@@ -1946,8 +1946,8 @@ To customize the errorBar cap visibility, length, width and fill color, you can 
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series *type* as **boxandwhisker** .Box and Whisker chart requires
-2 fields (x and y) to plot a segment. The feild y requires n number of data or it should  contain minimum of five values to plot a segment.
+To render a Box and Whisker Chart, set the series *type* as **boxAndWhisker** .Box and Whisker chart requires
+2 fields (x and y) to plot a segment. The field y requires n number of data or it should  contain minimum of five values to plot a segment.
 
 ![](Chart-Types_images/Chart-Types_img90.png)
 
