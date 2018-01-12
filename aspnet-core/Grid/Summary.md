@@ -125,7 +125,7 @@ Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined 
 
 ### True and False Count 
 
-Summaries with `True` and `False` count aggregate can be defined by using `summary-type`,`e-summary-columns` collections. `True` and `False` count aggregates are used for Boolean columns.
+Summaries with `true` and `false` count aggregate can be defined by using `summary-type`,`e-summary-columns` collections. `true` and `false` count aggregates are used for Boolean columns.
 
 {% tabs %}
 {% highlight razor %}
