@@ -9,13 +9,13 @@ keywords: FileExplorer, Syncfusion, Asp.Core FileExplorer, UG document, Behavior
 
 # Behavior Settings
 
-Here are the some properties to customize the behavior of FileExplorer.
+Here are some properties to customize behavior of the file explorer.
 
 ## File type restriction
 
-FileExplorer control showcase all the files from the filesystem, here you can customize the file types that what you want to show by using “[FileTypes](http://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes)” property. It filter the files based on the file extensions.
-By default it having the value " \*.\* ", so it allows all the file types. In case of image browser you can allow the image files only by setting “*.png, *.gif, *.jpg, *.jpeg”, so it doesn’t allow the other type of files.
-In the view page, add FileExplorer helper and specify the file type restriction as shown below.
+The file explorer control showcase all the files from the filesystem and you can customize the file types that you want to show by using the “[FileTypes](http://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes)” property. It filter the files based on the file extensions.
+By default it has the value " \*.\* ", so it allows all the file types. In case of image browser, you can allow the image files only by setting “*.png, *.gif, *.jpg, *.jpeg” and it does not allow the other type of files.
+In the view page, add FileExplorer helper and specify the file type restriction as shown in the following:
 
 {% highlight CSHTML %}
 
@@ -27,13 +27,13 @@ In the view page, add FileExplorer helper and specify the file type restriction 
 </e-file-ajax-settings>
 </ej-file-explorer>
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ## Customize the AJAX request settings
 
-As you already know FileExplorer is a client – server based control and each action performed in th e client sends an AJAX request to the server to perform the server side operations. While the AJAX request, the AJAX configurations can be customized through “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
+As you already know file explorer is a client – server based control and each action performed in the client sends an AJAX request to the server to perform the server side operations. While sending the AJAX request, the AJAX configurations can be customized through the “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
 
-You can see the following requests passed during the **client – server** actions:
+The following requests are passed during the **client – server** actions:
 
 * Read
 
@@ -55,10 +55,10 @@ You can see the following requests passed during the **client – server** acti
 
 * Search
 
-The actions “Read, CreateFolder, Remove, Rename, Paste, GetDetails, Search” are supported all the jQuery AJAX configurations. The remaining actions “Upload, Download, GetImage” are accepted the URL only.
-If you want to customize read action alone, the AJAX “**Url**” and “**DataType**” are changed for the “Read” action.
+The actions “Read, CreateFolder, Remove, Rename, Paste, GetDetails, Search” supports all the jQuery AJAX configurations. The remaining actions “Upload, Download, GetImage” will accepts only the URL.
+If you want to customize Read action alone, the AJAX “**Url**” and “**DataType**” should be changed for the “Read” action.
 
-In the view page, add FileExplorer and specify the AJAX settings for Read request as shown below.
+In the view page, add the FileExplorer and specify the AJAX settings for Read request as shown in the following.
 
 {% highlight CSHTML %}
 
@@ -71,4 +71,4 @@ In the view page, add FileExplorer and specify the AJAX settings for Read reques
 </e-file-ajax-settings>
 </ej-file-explorer>
 
-{% endhighlight %} 
+{% endhighlight %}

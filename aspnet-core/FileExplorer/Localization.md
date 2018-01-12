@@ -8,9 +8,9 @@ keywords: FileExplorer,  Syncfusion, Asp.Net Core FileExplorer, UG document, Loc
 ---
 # Localization
 
-The FileExplorer control provides the translations for all static texts and messages. By default the FileExplorer uses the US English (en-US) language, and it having the built-in values of all texts with the corresponding key.
+The file explorer control provides the translations for all the static texts and messages. By default, the file explorer uses the US English (en-US) language, and it has the built-in values of all texts with the corresponding key.
 
-The below table lists out the keys with corresponding texts in English culture.
+The following table list out the keys with corresponding texts in English culture.
     
     {% highlight javascript %}
     
@@ -37,7 +37,7 @@ The below table lists out the keys with corresponding texts in English culture.
         NewFolder: "New folder",
         Size: "Size",
         RenameAlert: "Please enter new name",
-        NewFolderAlert: "Please enter new folder name",        
+        NewFolderAlert: "Please enter new folder name",
         ContextMenuOpen: "Open",
         ContextMenuNewFolder: "New folder",
         ContextMenuDelete: "Delete",
@@ -110,13 +110,13 @@ The below table lists out the keys with corresponding texts in English culture.
         
     {% endhighlight %}
     
-## Change the Culture
+## Change the culture
 
-The language of the FileExplorer can be changed by the “[Locale](http://help.syncfusion.com/js/api/ejfileexplorer#members:locale)” property. This property allows the culture code of the country as input. The culture code has to specify in the standard format as **[Language Code]-[County/Region Code]**.
+The language of the FileExplorer can be changed by the “[Locale](http://help.syncfusion.com/js/api/ejfileexplorer#members:locale)” property. This property allows the culture code of the country as input. The culture code has to be specified in the standard format as the **[Language Code]-[County/Region Code]**.
 
 For example the culture code for German is “**de-DE**”.
 
-You can customize built-in text and messages based on your culture. The below example shows the usage of FileExplorer with German (de-DE) culture.
+You can customize the built-in text and messages based on your culture. The following example shows the usage of file explorer with German (de-DE) culture.
     
     {% highlight javascript %}
     
