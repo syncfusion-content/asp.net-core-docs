@@ -230,7 +230,7 @@ Summaries can be added by setting the `show-summary` to `true` and adding requir
 {% tabs %}
 {% highlight cshtml %}
  
-<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true" show-summary="True">
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true" show-summary="true">
          <e-group-settings grouped-columns="ShipCity" />
          <e-summary-rows>
            <ej-summary-row title="Sum">
