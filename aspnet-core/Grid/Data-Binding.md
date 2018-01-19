@@ -1,14 +1,14 @@
 ---
 layout: post
-title: DataBinding with Grid widget for Syncfusion Essential ASPNET Core
-description: How to bind in-memory JSON and remote web services in Grid
+title: DataBinding with grid widget for Syncfusion Essential ASPNET Core
+description: How to bind in-memory JSON and remote web services in grid
 platform: aspnet-core
-control: Grid
+control: grid
 documentation: ug
 --- 
 # Data Binding
 
-Grid `datasource` property or  `e-datamanager` child tag allows to bind datasource as the instance of one of the following types.
+The grid `datasource` property or  `e-datamanager` child tag allows to bind datasource as the instance of one of the following types.
    
 *	Collection that implements IEnumerable or IEnumerable&lt;T&gt;.
 *	REST Service URL as string.
@@ -18,7 +18,7 @@ Grid `datasource` property or  `e-datamanager` child tag allows to bind datas
 
 ## IEnumerable
  
-The Grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) interface. It can be assigned to Grid’s `datasource` property.
+The grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) interface. It can be assigned to the grid’s `datasource` property.
     
 N> The IEnumerable datasource can be passed as either directly to the datasource property or to the json property of the child tag.
   
@@ -27,7 +27,7 @@ The following code example describes the above behavior.
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="Grid" datasource="ViewBag.datasource">
+<ej-grid id="grid" datasource="ViewBag.datasource">
     <e-columns>
         <e-column field="FirstName" header-text="First Name" text-align="Left" ></e-column>
         <e-column field="LastName" header-text="Last Name" text-align="Left"></e-column>
@@ -36,7 +36,7 @@ The following code example describes the above behavior.
 </ej-grid>
 {% endhighlight  %}
 {% highlight c# %}
-namespace samplebrowser.Controllers.Grid
+namespace samplebrowser.Controllers.grid
 {
     public class Person
     {
@@ -45,7 +45,7 @@ namespace samplebrowser.Controllers.Grid
         public string Email { get; set; }
     }
 
-    public partial class GridController : Controller
+    public partial class gridController : Controller
     {
         // GET: /<controller>/
         public ActionResult Databinding()
@@ -68,16 +68,16 @@ The following output is displayed as a result of the above code example.
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-##  Complex Binding
+##  Complex binding
 
-The Grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot.   
+The grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot.   
 
 The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight razor %}
         
-<ej-grid id="Grid" datasource="ViewBag.datasource">
+<ej-grid id="grid" datasource="ViewBag.datasource">
         <e-columns>
             <e-column field="FirstName" header-text="First Name" text-align="Left"></e-column>
             <e-column field="LastName" header-text="Last Name" text-align="Left"></e-column>
@@ -89,7 +89,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% highlight c# %} 
        
-        namespace Grid.Controllers
+        namespace grid.Controllers
         {    
           public class HomeController : Controller
            {        
@@ -112,18 +112,18 @@ The following output is displayed as a result of the above code example.
 ![](Data-Binding_images/Data-Binding_img6.png)
 
 
-##  WCF DataService / OData Service
+##  WCF DataService / OData service
 
-To consume WCF DataService in Grid control, provide the service link directly to the  `url` property of Grid  `datamanager` .
+To consume WCF DataService in grid control, provide the service link directly to the  `url` property of grid  `datamanager` .
 
-We have an online OData Service `http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders` created specifically for Syncfusion Controls
+There is an online OData Service `http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders` created specifically for Syncfusion Controls
 
 The following code example describes the above behavior.
 
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
+<ej-grid id="Flatgrid" datasource="ViewBag.dataSource" allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -144,20 +144,20 @@ The following output is displayed as a result of the above code example.
 
 ##  Web API Service
 
-Web API Adaptor is used for processing request and response messages from Web API Service.
+The web API Adaptor is used for processing request and response messages from Web API Service.
 
-To consume Web API service, set the service link to the `url` property of Grid `datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of Grid `datamanager`
+To consume Web API service, set the service link to the `url` property of grid `datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of grid `datamanager`
 
  I> The datasource from Web API service must be returned as object that has property `result` with its value as datamanager and another property `count` with its value as datamanager total records count.
 
-DataOperation queries such as sorting, filtering, etc., would be sent to Web API Service corresponding to Grid actions performed and they need to be handled manually as Web API Service does not process it by default.
+DataOperation queries such as sorting, filtering, etc., would be sent to Web API Service corresponding to grid actions performed and they need to be handled manually as Web API Service does not process it by default.
 
 The following code example describes the above behavior.
     
 {% tabs %} 
 {% highlight razor %}
     
-     <ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
+     <ej-grid id="Flatgrid" datasource="ViewBag.dataSource" allow-paging="true">
     <e-datamanager url="/api/Orders" adaptor="WebApiAdaptor"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -170,12 +170,12 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% highlight c# %} 
     
-        public partial class GridController : Controller
+        public partial class gridController : Controller
         {
             // GET: /<controller>/
             private NORTHWNDContext _context;
 
-            public GridController(NORTHWNDContext context)
+            public gridController(NORTHWNDContext context)
             {
                 _context = context;
             }
@@ -199,7 +199,7 @@ The following output is displayed as a result of the above code example.
 
 ##  HTML Table binding
 
-HTML table can be set as a data source for grid. The ID of the HTML table should be assigned to the `table` property of the `DataManager`.
+The HTML table can be set as a data source for grid. The ID of the HTML table should be assigned to the `table` property of the `DataManager`.
 
 I> HTML table is the only valid element to use through `DataManager`.
   
@@ -208,8 +208,8 @@ The following code example describes the above behavior.
 {% tabs %}  
 {% highlight razor %}
 
-<ej-grid id="Grid" allow-paging="true">
-    <e-datamanager table="#GridTable"></e-datamanager>
+<ej-grid id="grid" allow-paging="true">
+    <e-datamanager table="#gridTable"></e-datamanager>
     <e-columns>
         <e-column field="Laptop" header-text="Laptop" text-align="Left"></e-column>
         <e-column field="Model" header-text="Model"></e-column>
@@ -223,7 +223,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% highlight js %}
     
-      <script id="GridTable" type="text/template">
+      <script id="gridTable" type="text/template">
        <table>
           <thead>
                <tr>
@@ -288,16 +288,16 @@ The following output is displayed as a result of the above code example.
 
 ##  Miscellaneous
 
-###  Load On Demand
+###  Load on demand
 
-By default, Grid with remote data binding will work in `On-Demand` concept for which either `Paging` or `VirtualScrolling` feature should be enabled in Grid. It helps improving performance of loading a large data set.
+By default, the grid with remote data binding will work in `On-Demand` concept for which either `Paging` or `VirtualScrolling` feature should be enabled in it. It helps in improving the performance of loading a large data set.
 
 The following code example describes the above behavior.
 
  {% tabs %}  
  {% highlight razor %} 
 
-<ej-grid id="FlatGrid" allow-paging="true">
+<ej-grid id="Flatgrid" allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -317,16 +317,16 @@ The following output is displayed as a result of the above code example.
 
 ###  Load at once
 
-`Load at once` concept in Grid can be used to load all data from remote service at a single request and all further Grid action will be performed at client-side on the cached data.
+The `Load at once` concept in grid can be used to load all data from remote service at a single request and all further grid action will be performed at client-side on the cached data.
 
-`offline` property of Grid `DataManager` is used to enable `Load at once` in Grid control
+The `offline` property of grid `DataManager` is used to enable `Load at once` in grid control
 
 The following code example describes the above behavior.
 
 {% tabs %}  
 {% highlight razor %} 
 
-<ej-grid id="FlatGrid"  allow-paging="true">
+<ej-grid id="Flatgrid"  allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders" offline="true"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -350,14 +350,14 @@ The `datamanager` can cache loaded data. The caching functionality can be enable
     
 The `time-till-expiration` and `caching-page-size` properties are used to control the expiration time of data and the cache page size settings respectively.
 
-N> window`s localStorage is used to cache the loaded data. 
+N> The window`s localStorage is used to cache the loaded data. 
 
 The following code example describes the above behavior.
 
 {% tabs %}  
 {% highlight razor %} 
    
-<ej-grid id="Grid"  allow-paging="true">
+<ej-grid id="grid"  allow-paging="true">
     <e-datamanager url="DataSource" enable-caching="true" caching-page-size="4" time-till-expiration="120000" adaptor="UrlAdaptor"></e-datamanager>
     <e-columns>
         <e-column field="OrderID" header-text="Order ID"></e-column>
@@ -374,11 +374,11 @@ The following output is displayed as a result of the above code example.
 
 ![](Data-Binding_images/Data-Binding_img13.png)
 
-###  Custom request parameters and HTTP Header
+###  Custom request parameters and HTTP header
 
 ####  Adding request parameters
 
-The ‘addParams’ function in DataManager’s Query class can be used to add additional custom parameter in data requests. The Grid has an option to set default Query which can be used to add custom parameter.
+The ‘addParams’ function in DataManager’s Query class is used to add additional custom parameter in data requests. The grid has an option to set default query which can be used to add custom parameter.
       
 The following code example describes the above behavior.
 
@@ -399,7 +399,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}
 
-E> Attempting to add custom parameters with key name same as any default AJAX parameters used by `DataManager` will results in error.
+E> Attempting to add custom parameters with key name same as any default AJAX parameters used by the `DataManager` will results in error.
 
 The following output is displayed as a result of the above code example.
 
@@ -417,7 +417,7 @@ The following code example describes the above behavior.
     str = new List<Syncfusion.JavaScript.Models.KeyValue>();
     str.Add(new Syncfusion.JavaScript.Models.KeyValue() {Key ="Syncfusion", Value = false });
 
-                <ej-grid id="Grid" allow-paging="true">
+                <ej-grid id="grid" allow-paging="true">
                 <e-datamanager url="DataSource" adaptor="UrlAdaptor" headers="@(str)"></e-datamanager>
                 <e-columns>
                     <e-column field="OrderID" header-text="Order ID"></e-column>
@@ -438,9 +438,9 @@ The following output is displayed as a result of the above code example.
 
 ###  Handling HTTP Errors
 
-During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using `action-failure` event of Grid control.
+During server interaction from the grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using `action-failure` event of grid control.
 
-The argument passed to the `action-failure` Grid event contains the error details returned from server. Please refer the following table for some error details that would be acquired in client-side event arguments.
+The argument passed to the `action-failure` grid event contains the error details returned from server. Please refer to the following table for some error details that would be acquired in client-side event arguments.
               
 <table>
 <tr>
@@ -461,7 +461,7 @@ The following code example describes the above behavior.
 {% tabs %}  
 {% highlight razor %} 
 
-    <ej-grid id="Grid" allow-paging="true" action-failure="OnActionFailure">
+    <ej-grid id="grid" allow-paging="true" action-failure="OnActionFailure">
         <e-datamanager url="DataSource" adaptor="UrlAdaptor"></e-datamanager>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>

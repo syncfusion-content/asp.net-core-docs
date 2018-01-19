@@ -11,23 +11,23 @@ documentation: ug
 
 ## Auto wrap 
 
-Auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set `allow-text-wrap` property as `true`. 
+The auto wrap enables the Grid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width. To enable auto wrap, set the `allow-text-wrap` property as `true`. 
 
-We can specify the mode of auto wrap using `wrap-mode` property of the `e-text-wrap-settings`. 
+The mode of auto wrap can be specified using the `wrap-mode` property of `e-text-wrap-settings`. 
 
-Three types of `wrap-mode` are available and they are,
+The three types of `wrap-mode` available are as follows.
   
  1. Both
  2. Header
  3. Content 
  
-N> 1. By default the `wrap-mode` will be set as `Both`. 
-N> 2. While using `e-text-wrap-settings` then it is must to set `allow-text-wrap` as `true`.
-N> 3. For `wrapMode` property you can assign `enum` value (`Syncfusion.JavaScript.WrapMode.Both`).
+N> 1. The `wrap-mode` by default  will be set as `Both`. 
+N> 2. While using the `e-text-wrap-settings` then it is must to set the `allow-text-wrap` as `true`.
+N> 3. For the `wrapMode` property you can assign `enum` value (`Syncfusion.JavaScript.WrapMode.Both`).
  
 ## Both
 
-When `wrap-mode` of `e-text-wrap-settings` property set as `Both` then the auto wrap will be enable for both grid content and header. 
+When the `wrap-mode` of `e-text-wrap-settings` property is set as `Both` then the auto wrap will be enabled for both the Grid content and header. 
 
 The following code example describes the above behavior.
 
@@ -69,7 +69,7 @@ The following output is displayed as a result of the above code example.
 
 ### Header
 
-When `wrap-mode` of `e-text-wrap-settings` property set as `Header` then the auto wrap will be enable only for grid header alone. 
+When the `wrap-mode` of `e-text-wrap-settings` property is set as `Header` then the auto wrap will be enabled only for the Grid header alone. 
 
 The following code example describes the above behavior.
 
@@ -112,7 +112,7 @@ The following output is displayed as a result of the above code example.
 
 ### Content
 
-When `wrap-mode` of `e-text-wrap-settings` property set as `Content` then the auto wrap will be enable only for grid content alone. 
+When the `wrap-mode` of `e-text-wrap-settings` property is set as `Content` then the auto wrap will be enabled only for Grid content alone. 
 
 The following code example describes the above behavior.
 
@@ -153,11 +153,11 @@ The following output is displayed as a result of the above code example.
 
 ![](Cell_images/Cell_img1_2.png)
 
-## Cell Merging
+## Cell merging
 
-The grid has options to merge the grid cells based on the required conditions. This can be enabled by setting `allow-cell-merging` property as `true` and the merge conditions can be defined in `merge-cell-info` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The Grid has options to merge its cells based on the required conditions. This can be enabled by setting the `allow-cell-merging` property as `true` and the merge conditions can be defined in `merge-cell-info` event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
-You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in `merge-cell-info` event's argument.
+You can merge the rows and cells of Grid, using the `rowMerge`, `colMerge` and `merge` functions available in `merge-cell-info` event's argument.
 
 The following code example describes the above behavior.
 
@@ -213,7 +213,7 @@ The following output is displayed as a result of the above code example.
 
 ## Displaying HTML content
 
-This will helps you to show actual HTML value in grid content and header. To disable HTML code, set `disable-html-encode` property of `columns` as true. 
+This will help you to show the actual HTML value in Grid content and header. To disable HTML code, set the `disable-html-encode` property of `columns` as true. 
 
 The following code example describes the above behavior.
 
@@ -259,7 +259,7 @@ When you move the cursor over the particular cell it provides an information abo
 
 HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
-N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender". 
+N> It is a standard way to enclose the template within the `script` tag with `type` as the "text/x-jsrender". 
 N> The `tooltip` template must contain `value` property to bind the corresponding cell text in tooltip
  
 The following code example describes the above behavior.
@@ -319,7 +319,7 @@ N> By default the `clip-mode` will be set as `Clip`.
  
 ### Clip
 
-When the content overflows, the remaining content will be hidden in the particular cell
+When the content overflows, the remaining content will be hidden in the particular cell.
 
 The following code example describes the above behavior.
 
@@ -359,7 +359,7 @@ The following output is displayed as a result of the above code example.
  
 ### Ellipsis
 
-Ellipsis will be displayed when the content overflows its column width. Here Tooltip will not be shown for corresponding columns.
+Ellipsis will be displayed when the content overflows its column width. Here the Tooltip will not be shown for corresponding columns.
 
 The following code example describes the above behavior.
 
@@ -397,11 +397,11 @@ The following output is displayed as a result of the above code example.
 
 ![](Cell_images/Cell_img7.png)
 
-### Ellipsis With Tooltip
+### Ellipsis with tooltip
 
 Ellipsis will be displayed when the content overflows its column width. Here tooltip will be shown only for the corresponding column cells that shows ellipsis.
 
-N> If `clip-mode` is set as `EllipsisWithTooltip`, then `tooltip` must be given.
+N> If the `clip-mode` is set as `EllipsisWithTooltip`, then the `tooltip` must be given.
 
 The following code example describes the above behavior.
 
