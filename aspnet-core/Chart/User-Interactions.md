@@ -13,7 +13,7 @@ documentation: ug
 
 ### Enable tooltip for data point
 
-Tooltip for the data points can be enabled by using the *Visible* option of the **Tooltip** in the series.
+Tooltip for the data points can be enabled by using the **Visible** option of the **Tooltip** in the series.
 
 {% highlight cshtml %}
 
@@ -33,9 +33,9 @@ Tooltip for the data points can be enabled by using the *Visible* option of the 
 
 ### Format the tooltip 
 
-Tooltip displays data specified by the **Format** option of the tooltip. The default value of the format option is * **#point.x# : #point.y#** *. Here, * **#point.x#** * is the placeholder for x value of the point and * **#point.y#** * is the placeholder for y value of the point.
+Tooltip displays the data that is specified by the **Format** option of the tooltip. The default value of the format option is **#point.x# : #point.y#**. Here, **#point.x#** is the placeholder for x value of the point, and **#point.y#** is the placeholder for y value of the point.
 
-You can also use * **#series.<optionname>#** * as placeholder to display the value of an option in corresponding series and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point.
+You can also use **#series.<optionname>#** to placeholder to display the value of an option in corresponding series and use **#point.<optionname>#** as placeholder to display the value of an option in the corresponding point.
 
 {% highlight cshtml %}
 
@@ -54,11 +54,11 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 ![](User-Interactions_images/User-Interactions_img2.png)
 
 
-### Tooltip Template
+### Tooltip template
 
-HTML elements can be displayed in the tooltip by using the **Template** option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the * **#point.x#** * and * **#point.y#** * as place holders in the HTML element to display the x and y values of the corresponding data point. 
+HTML elements can be displayed in the tooltip by using the **Template** option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the **#point.x#** and **#point.y#** to placeholders in the HTML element to display the x and y values of the corresponding data point. 
 
-You can also use * **#series.<optionname>#** * as place holder to display the value of an option in corresponding series of the tooltip and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point for which the tooltip is displayed.
+You can also use **#series.<optionname>#** as placeholder to display the value of an option in corresponding series of the tooltip and use **#point.<optionname>#** as placeholder to display the value of an option in the corresponding point for the tooltip, which is displayed.
   
 
 {% highlight cshtml %}
@@ -90,7 +90,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 #### Tooltip template animation
 
-You can enable animation by setting the *EnableAnimation* to true. Tooltip animates when the mouse moves from one data point to another point. The Duration property in tooltip specifies the time taken to animate the tooltip. the duration is set to **"500ms"**, by default.
+You can enable animation by setting the **EnableAnimation** to true. Tooltip animates when the mouse moves from one data point to another point. The **Duration** property in tooltip specifies the time taken to animate the tooltip. The duration is set to 500ms, by default.
 
 N> Tooltip is animated only if the template is specified for tooltip.
 
@@ -111,7 +111,7 @@ N> Tooltip is animated only if the template is specified for tooltip.
 
 ### Customize the appearance of tooltip   
 
-The *Fill* and *Border* options are used to customize the background color and border of the tooltip respectively. The *Font* option in the tooltip is used to customize the font of the tooltip text.
+The **Fill** and **Border** options are used to customize the background color and border of the tooltip, respectively. The **Font** option in the tooltip is used to customize the font of the tooltip's text.
 
 {% highlight cshtml %}
 
@@ -132,7 +132,7 @@ The *Fill* and *Border* options are used to customize the background color and b
 
 #### Tooltip with rounded corners
 
-The options *RX* and *RY* are used to customize the corner radius of the tooltip rectangle.
+The options *RX* and *RY* are used to customize the corner radius of the tooltip's rectangle.
 
 {% highlight cshtml %}
 
@@ -151,11 +151,11 @@ The options *RX* and *RY* are used to customize the corner radius of the tooltip
 
 ![](User-Interactions_images/User-Interactions_img5.png)
 
-## Zooming and Panning
+## Zooming and panning
 
-### Enable Zooming
+### Enable zooming
 
-There are two ways you can zoom the chart,
+You can zoom the chart in the following two ways:
 
 * When the **Zooming.Enable** option is set to true, you can zoom the chart by using the rubber band selection.
 
@@ -163,7 +163,7 @@ There are two ways you can zoom the chart,
 
 * When **Zooming.EnablePinching** option is set to *true*, you can zoom the chart through pinch gesture.
 
-N> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently IE10, IE11, Chrome and Opera browsers support multi-touch in desktop devices.
+N> Pinch zooming is supported only in browsers that support multi-touch gestures. Currently, Internet Explorer 10, Internet Explorer 11, Google Chrome, and Opera browsers support multi-touch in desktop devices.
 
 {% highlight cshtml %}
 
@@ -178,13 +178,13 @@ N> Pinch zooming is supported only in browsers that support multi-touch gestures
 ![](User-Interactions_images/User-Interactions_img6.png)
 
 
-After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
+After zooming the chart, a zooming toolbar will appear with options to zoom, pan, and reset. Selecting the Pan option will allow to pan the chart and selecting the Reset option will allow reset the zoomed chart.
 
 ![](User-Interactions_images/User-Interactions_img7.png)
 
 ### Types of zooming
 
-The *Type* option in zooming specifies whether the chart is allowed to scale along the horizontal axis(X) or vertical axis(Y) or along both axis(X,Y). The default value of the Type is **"X,Y"** (both axis).
+The **Type** option in zooming specifies whether the chart is allowed to scale along with horizontal axis(X), vertical axis(Y), or both axes(X,Y). The default value is "X,Y" (both axis).
 
 {% highlight cshtml %}
 
@@ -199,7 +199,7 @@ The *Type* option in zooming specifies whether the chart is allowed to scale alo
 
 ### Customizing zooming toolbar
 
-The user can choose the items displayed in the zooming toolbar by specifying the property **ToolBarItems**.
+You can choose the items to be displayed in the zooming toolbar by specifying the **ToolBarItems** property.
 
 {% highlight cshtml %}
 
@@ -217,9 +217,9 @@ The user can choose the items displayed in the zooming toolbar by specifying the
 ![](User-Interactions_images/User-Interactions_img8.png)
 
 
-### Enable ScrollBar
+### Enable scrollbar
 
-EjChart provides scrollbar support to view the other portions of chart area which is not shown in the view port when zoomed, by setting true to **EnableScrollbar** option in **Zooming**.  
+Chart provides scrollbar support to view other portions of chart area, which is not shown in the view port. By setting **EnableScrollbar** option to true in **Zooming**, you can view the other portions.  
 
 {% highlight cshtml %}
 
@@ -237,9 +237,9 @@ EjChart provides scrollbar support to view the other portions of chart area whic
 
 Crosshair is used to view the value of an axis at mouse position or touch contact point. 
 
-### Enable Crosshair and Crosshair label
+### Enable crosshair and crosshair label
 
-Crosshair can be enabled by using the **Visible** option in the Crosshair. Crosshair label for an axis can be enabled by using the Visible option of CrosshairLabel in the corresponding axis.
+Crosshair can be enabled by using the **Visible** option in the crosshair. Crosshair label for an axis can be enabled by using the **Visible** option of CrosshairLabel in the corresponding axis.
 
 {% highlight cshtml %}
 
@@ -256,9 +256,9 @@ Crosshair can be enabled by using the **Visible** option in the Crosshair. Cross
 ![](User-Interactions_images/User-Interactions_img10.png)
 
 
-### Customize the Crosshair line and Crosshair label
+### Customize the crosshair line and crosshair label
 
-The *Fill* and *Border* options of the **CrosshairLabel** is used to customize the background color and border of the crosshair label respectively. Color and width of the crosshair line can be customized by using the **Line** option in the Crosshair.
+The Fill and Border options of the **CrosshairLabel** are used to customize the background color and border of the crosshair label, respectively. Color and width of the crosshair line can be customized by using the **Line** option in the Crosshair.
 
 {% highlight cshtml %}
 
@@ -276,11 +276,11 @@ The *Fill* and *Border* options of the **CrosshairLabel** is used to customize t
 
 ## Trackball
 
-Trackball is used to track a data point close to the mouse position or touch contact point. Trackball marker indicates the closest point and trackball tooltip displays the information about the point.
+Trackball is used to track a data point close to the mouse position or touch contact point. Trackball marker indicates the closest point. Trackball tooltip displays the information about the point.
 
-### Enable Trackball
+### Enable trackball
 
-Trackball can be enabled by setting the *Visible* option of the crosshair to *true* and then set the **Type** as *Trackball*. The default value of type is *Crosshair*.
+Trackball can be enabled by setting the **Visible** option of the crosshair to true and Type as **Trackball**. The default value of type is **Crosshair**.
 
 {% highlight cshtml %}
 
@@ -297,7 +297,7 @@ Trackball can be enabled by setting the *Visible* option of the crosshair to *tr
 
 #### Customize trackball marker and trackball line
 
-Shape and size of the trackball marker can be customized by using the *Shape* and *Size* options of the Crosshair marker. Color and width of the trackball line can be customized by using the *Line* option in the crosshair.
+Shape and size of the trackball marker can be customized by using the **Shape** and **Size** options of the crosshair marker. Color and width of the trackball line can be customized by using the **Line** option in the crosshair.
 
 {% highlight cshtml %}
 
@@ -318,9 +318,9 @@ Shape and size of the trackball marker can be customized by using the *Shape* an
 ![](User-Interactions_images/User-Interactions_img13.png)
 
 
-### Format Trackball tooltip
+### Format trackball tooltip
 
-X and Y values displayed in the trackball tooltip are formatted based on its axis *LabelFormat*.  
+X and Y values, which were displayed in the trackball tooltip are formatted based on its axis **LabelFormat**.  
 
 {% highlight cshtml %}
 
@@ -340,10 +340,10 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 ![](User-Interactions_images/User-Interactions_img14.png)
 
 
-You can able to show the trackball tooltip in two modes, using trackballTooltipSettings.
+You can show the trackball tooltip in two modes by using **trackballTooltipSettings**.
 
-                1.	Grouping.
-                2.	Float. 
+1.	Grouping
+2.	Float
 
 {% highlight cshtml %}
 
@@ -364,9 +364,9 @@ You can able to show the trackball tooltip in two modes, using trackballTooltipS
 
 ## Highlight
 
-EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the *Enable* property to *true* in the **HighlightSettings** of the series.
+Chart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the **Enable** property to true in the **HighlightSettings** of the series.
 
-N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
+N> When hovering the mouse on the data points, the corresponding series legend also will be highlighted.
 
 {% highlight cshtml %}
 
@@ -382,9 +382,9 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 
 {% endhighlight %}
 
-### Highlight Mode
+### Highlight mode
 
-You can set three different highlight mode for the highlighting data point and series by using the **Mode** property of the *HighlightSettings*.
+You can set three different highlight modes for the highlighting data point and series by using the **Mode** property of the **HighlightSettings**.
 
 * Series
 * Points
@@ -392,7 +392,7 @@ You can set three different highlight mode for the highlighting data point and s
 
 **Series mode**
 
-To highlight all the data points of the specified series, you can set the **Series** value to the *Mode* option in the HighlightSettings. 
+To highlight all the data points of the specified series, set the **Series** value to the Mode option in the **HighlightSettings**. 
 
 
 {% highlight cshtml %}
@@ -413,7 +413,7 @@ To highlight all the data points of the specified series, you can set the **Seri
 
 **Point mode**
 
-To highlight a single point, you can set the **Point** value to the *Mode* option.
+To highlight a single point, set the **Point** value to the Mode option.
 
 {% highlight cshtml %}
 
@@ -434,7 +434,7 @@ To highlight a single point, you can set the **Point** value to the *Mode* optio
 
 **Cluster mode**
 
-To highlight the points that corresponds to the same index in all the series, set the **Cluster** value to the *Mode* option.
+To highlight the points that corresponds to the same index in all the series, set the **Cluster** value to the Mode option.
 
 {% highlight cshtml %}
 
@@ -454,7 +454,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 ### Customize the highlight styles
 
-To customize the highlighted series, use the *Color*, *Border* and *Opacity* options in the HighlightSettings.
+To customize the highlighted series, use the Color, Border, and Opacity options in the **HighlightSettings**.
 
 {% highlight cshtml %}
 
@@ -476,7 +476,7 @@ To customize the highlighted series, use the *Color*, *Border* and *Opacity* opt
 
 ### Patterns to highlight
 
-EjChart provides pattern support for highlighting the data by setting the value to the **Pattern** property of the HighlightSettings. The different types of highlight patterns are as follows.
+Chart provides pattern support for highlighting the data by setting the value to the **Pattern** property of the **HighlightSettings**. The different types of highlight patterns are follows:
 
 1.	Chessboard
 2.	Crosshatch
@@ -518,7 +518,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 #### Custom pattern
 
-To create a custom pattern for the highlighting data points, set the pattern type as **Custom** and add the custom pattern *Id* in the **CustomPattern** option of the HighlightSettings.
+To create a custom pattern for highlighting the data points, set the pattern type as **Custom**, and add the custom pattern ID in the **CustomPattern** option of the HighlightSettings.
 
 {% highlight cshtml %}
 
@@ -544,7 +544,7 @@ To create a custom pattern for the highlighting data points, set the pattern typ
 
 ## Selection
 
-EjChart provides selection support for the series and data points on mouse click. To enable the selection option, set the *Enable* property to *true* in the SelectionSettings* of the series.
+Chart provides selection support for the series and data points on mouse click. To enable the selection option, set the **Enable** property to true in the **SelectionSettings** of the series.
 
 N> When mouse is clicked on the data points, the corresponding series legend also will be selected.
 
@@ -563,9 +563,9 @@ N> When mouse is clicked on the data points, the corresponding series legend als
 
 {% endhighlight %}
 
-### Selection Mode
+### Selection mode
 
-You can set four different selection mode for highlighting the data point and series by using the **Mode** property of the SelectionSettings.
+You can set four different selection modes for highlighting the data point and series by using the **Mode** property of the **SelectionSettings**.
 
 * Series
 * Points
@@ -574,7 +574,7 @@ You can set four different selection mode for highlighting the data point and se
 
 **Series mode**
 
-To select all the data points of the specified series, you can set the **Series** value to the *Mode* option in the SelectionSettings.
+To select all the data points of the specified series, set the **Series** value to Mode in the **SelectionSettings**.
 
 {% highlight cshtml %}
 
@@ -595,7 +595,7 @@ To select all the data points of the specified series, you can set the **Series*
 
 **Point mode**
 
-To highlight a single point, you can set the **Point** value to the *Mode* option. 
+To highlight a single point, set the **Point** value to the Mode. 
 
 {% highlight cshtml %}
 
@@ -617,7 +617,7 @@ To highlight a single point, you can set the **Point** value to the *Mode* optio
 
 **Cluster mode**
 
-To select the points that corresponds to the same index in all the series, set the **Cluster** value to the *Mode* option.
+To select the points that corresponds to the same index in all the series, set the **Cluster** value to Mode.
 
 {% highlight cshtml %}
 
@@ -639,7 +639,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 **Range mode**
 
-To fetch the selected area data points value, you can set the selectionSettings Mode as **Range** in the chart series. The selection rectangle can be drawn as horizontally, vertically or in both direction by using **RangeType** property and the selected data’s are returned as an array collection in the **RangeSelected** event.  
+To fetch the selected area data points value, set the **selectionSettings** Mode to **Range** in the chart series. The selection rectangle can be drawn as horizontally, vertically, or in both directions by using **RangeType** property, and selected data are returned as an array collection in the **RangeSelected** event.  
 
 {% highlight cshtml %}
 
@@ -668,16 +668,16 @@ var selectedData = sender.data.selectedDataCollection;
 
 ![](User-Interactions_images/User-Interactions_img23.png)
 
-### Selection Type
+### Selection type
 
-You can set two different selection type for selecting the data point and series on mouse click by using the **Type** property of the SelectionSettings. 
+You can set two different selection types for selecting the data point and series on mouse click by using the **Type** property of the **SelectionSettings**. 
 
 * Single 
 * Multiple 
 
-**Single Type**
+**Single type**
 
-To select a data point or a series on mouse click based on the **SelectionSettings.Mode**, set **SelectionSettings.Type** as **Single** in the series.
+To select a data point or a series on mouse click based on the **SelectionSettings.Mode**, set **SelectionSettings.Type** to **Single** in the series.
 
 {% highlight cshtml %}
 
@@ -696,9 +696,9 @@ To select a data point or a series on mouse click based on the **SelectionSettin
 
 ![](User-Interactions_images/User-Interactions_img24.png)
 
-**Multiple Type**
+**Multiple type**
 
-For selecting multiple data points or series on mouse click, set **SelectionSettings.Type** as **Multiple** in the series.
+For selecting multiple data points or series on mouse click, set **SelectionSettings.Type** to **Multiple** in the series.
 
 {% highlight cshtml %}
 
@@ -720,7 +720,7 @@ For selecting multiple data points or series on mouse click, set **SelectionSett
 
 ### Customizing selection styles
 
-To customize the selection styles, use the *Color*, *Border* and *Opacity* options in the SelectionSettings.
+To customize the selection styles, use Color, Border and Opacity options in the SelectionSettings.
 
 {% highlight cshtml %}
 
@@ -743,7 +743,7 @@ To customize the selection styles, use the *Color*, *Border* and *Opacity* optio
 
 ### Patterns for selection
 
-EjChart provides pattern support for the data selection by setting the value to the **Pattern** property of the SelectionSettings. The different types of selection patterns are as follows.
+Chart provides pattern support for the data selection by setting the value to **Pattern** property of **SelectionSettings**. The different types of selection patterns are follows:
 
 1.	Chessboard
 2.	Crosshatch
@@ -785,7 +785,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 #### Custom pattern
 
-To create a custom pattern for selecting the data points, set the *Pattern* type as **Custom** and add the custom pattern *id* in the **CustomPattern** option of the SelectionSettings.
+To create a custom pattern for selecting the data points, set the **Pattern** type to **Custom**, and add custom pattern ID in the **CustomPattern** option of the **SelectionSettings**.
 
 {% highlight cshtml %}
 
@@ -813,9 +813,9 @@ To create a custom pattern for selecting the data points, set the *Pattern* type
 ![](User-Interactions_images/User-Interactions_img28.png)
 
 
-### Handling Series Selection
+### Handling series selection
 
-To get the series information when selecting the specific series, subscribe to the **SeriesRegionClick** event and set the **SelectionSettings.Mode** as *Series*.
+To get the series information when selecting the specific series, subscribe to the **SeriesRegionClick** event, and set the **SelectionSettings.Mode** to Series.
 
 {% highlight cshtml %}
 
@@ -841,9 +841,9 @@ function seriesSelection(sender) {
 
 {% endhighlight %}
 
-### Selection on Load
+### Selection on load
 
-We can able to select the point/series programmatically on chart load, by setting series and point index in the selectedDataPointIndexes property.
+You can select the point/series programmatically on chart load by setting series and point index in the **selectedDataPointIndexes** property.
 
 {% highlight javascript %}
 
@@ -860,9 +860,9 @@ We can able to select the point/series programmatically on chart load, by settin
 
 ![](User-Interactions_images/User-Interactions_img29.png)
 
-## Data Editing
+## Data editing
 
-EjChart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the **enable** property to true in the *dragSettings* of the series.
+Chart provides support to change the location of the rendered points. This can be done by dragging the point and dropping it on another location in chart. To enable the data editing, set the **enable** property to true in the **dragSettings** of the series.
 
 {% highlight cshtml %}
 
@@ -876,9 +876,9 @@ EjChart provides support to change the location of the rendered points. This can
 
 ![](User-Interactions_images/User-Interactions_img31.png)
 
-### Customize Dragging direction
+### Customize dragging direction
 
-To drag the point along x and y axes, you can specify **type** as xy in *dragSettings*. And to drag along x axis alone, specify the type as x and to drag along y axis, specify type as y.
+To drag the point along x and y axes, specify type to xy in **dragSettings**. To drag along x axis alone, specify the type to x. To drag along y axis, specify type as y.
 
 {% highlight cshtml %}
 
