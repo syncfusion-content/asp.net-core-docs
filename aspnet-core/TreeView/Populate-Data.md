@@ -9,13 +9,13 @@ documentation: UG
 
 # Populate Data
 
-TreeView can be populated with local or remote data source using a property `DataSource` which is the member of “**TreeViewFields**” property.
+Tree view can be populated with local or remote data source by using the `DataSource` property that is the member of **TreeViewFields** property.
 
-In TreeView, you should use “**TreeViewFields**” property to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data and field mappers to map the data members.
+In Tree view, you should use the **TreeViewFields** property to go with data source. It specifies the mapping fields for the data source to receive the data, query to process the data, and field mappers to map the data members.
 
 ## Fields
 
-Below table list outs the field members with description.
+The following table list out the field members with description.
   
 <table>
 <tr>
@@ -31,7 +31,7 @@ Below table list outs the field members with description.
 DataSource
 </td>
 <td>
-The data source contains the list of data for generating the TreeView list. Also contains properties to load data from remote data source.
+The data source contains the list of data for generating the tree view list. Also, it contains properties to load data from remote data source.
 </td>
 </tr>
 <tr>
@@ -39,7 +39,7 @@ The data source contains the list of data for generating the TreeView list. Also
 Query
 </td>
 <td>
-It specifies the query to retrieve the data from the online server.
+Specifies the query to retrieve data from the online server.
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ It specifies the query to retrieve the data from the online server.
 TableName
 </td>
 <td>
-It specifies the name of the table from which data to be processed from given data source.
+Specifies the name of the table from which the data to be processed from given data source.
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ It specifies the name of the table from which data to be processed from given da
 Id
 </td>
 <td>
-It specifies the ID of the node.
+Specifies the ID of the node.
 </td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@ It specifies the ID of the node.
 ParentId
 </td>
 <td>
-It specifies the parent id of the node
+Specifies the parent id of the node.
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ It specifies the parent id of the node
 Text
 </td>
 <td>
-It specifies the text content of the node.
+Specifies the text content of the node.
 </td>
 </tr>
 <tr>
@@ -79,7 +79,7 @@ It specifies the text content of the node.
 HasChild
 </td>
 <td>
-It specifies the node has child (which is the nested or inner level of nodes). Also it’s used in load on demand of tree data.
+Specifies the node has child (nested or inner level of nodes). Also it is used in load on demand of tree data.
 </td>
 </tr>
 <tr>
@@ -87,7 +87,7 @@ It specifies the node has child (which is the nested or inner level of nodes). A
 Expanded
 </td>
 <td>
-It specifies the tree node to be in expanded state
+Specifies the tree node to be in expanded state.
 </td>
 </tr>
 <tr>
@@ -95,15 +95,15 @@ It specifies the tree node to be in expanded state
 Selected
 </td>
 <td>
-It specifies the select node at initialize. [note: only one node get selected]
+Specifies the selected node at initial rendering. (note: only one node get selected)
 </td>
 </tr>
 <tr>
 <td>
-IsChecked 
+IsChecked
 </td>
 <td>
-It specifies the node to be in checked state, if tree node represented with checkboxes. 
+Specifies the node to be in checked state, if tree node is represented with checkboxes.
 </td>
 </tr>
 <tr>
@@ -111,7 +111,7 @@ It specifies the node to be in checked state, if tree node represented with chec
 ImageUrl
 </td>
 <td>
-It defines the image location.
+Defines the image location.
 </td>
 </tr>
 <tr>
@@ -119,7 +119,7 @@ It defines the image location.
 ImageAttribute
 </td>
 <td>
-It defines the image attributes such as height, width, styles, etc.
+Defines the image attributes such as height, width, styles, etc.
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ It defines the image attributes such as height, width, styles, etc.
 SpriteCssClass
 </td>
 <td>
-It defines the sprite CSS for the image tag.
+Defines the sprite CSS for the image tag.
 </td>
 </tr>
 <tr>
@@ -135,7 +135,7 @@ It defines the sprite CSS for the image tag.
 HtmlAttribute
 </td>
 <td>
-It defines the HTML attributes such as class and styles for a node ("li" tag).
+Defines the HTML attributes such as class and styles for a node ("li" tag).
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ It defines the HTML attributes such as class and styles for a node ("li" tag).
 LinkAttribute
 </td>
 <td>
-It defines the HTML attributes such as class and styles for a link tag, which is child of node.
+Defines the HTML attributes such as class and styles for a link tag that is the child of node.
 </td>
 </tr>
 <tr>
@@ -151,14 +151,14 @@ It defines the HTML attributes such as class and styles for a link tag, which is
 Child
 </td>
 <td>
-It used to specify the properties of child nodes in TreeView
+Specifies the properties of child nodes in tree view.
 </td>
 </tr>
 </table>
 
-Mapping all fields with data source
+Mapping all fields with data source.
 
-In the model page, specify the TreeView node properties as shown below.
+In the model page, specify the tree view node properties as shown in the following:
         
     {% highlight c# %}
     
@@ -180,7 +180,7 @@ In the model page, specify the TreeView node properties as shown below.
         
     {% endhighlight %}
     
-In the controller page, create a data list which contains the details about tree nodes.    
+In the controller page, create a data list that contains details about the tree nodes.
       
     {% highlight c# %}
     
@@ -275,7 +275,7 @@ In the controller page, create a data list which contains the details about tree
     {% endhighlight %}
       
     
-In the view page, add the below code and map the properties defined to the corresponding fields in data source.
+In the view page, add the following code and map the properties defined to the corresponding fields in a data source.
   
    {% highlight CSHTML %}
 
@@ -287,13 +287,13 @@ In the view page, add the below code and map the properties defined to the corre
     
     {% endhighlight %}    
        
-N>**If you want to display nodes in root level, exclude parent attribute or specify “0” in corresponding value.**
+N>**If you want to display nodes in root level, exclude parent attribute or specify “0” in the corresponding value.**
 
 ## Local data
 
-TreeView can be rendered from a self-referential data by providing the two required fields “**id”**and “**parent**”. 
+The tree view can be rendered from a self-referential data by providing the two required fields **id**and **parent**.
 
-In the controller page, create a data list which contains the details about tree nodes.
+In the controller page, create a data list that contains details about the tree nodes.
     
     {% highlight c# %}
     
@@ -321,7 +321,7 @@ In the controller page, create a data list which contains the details about tree
     {% endhighlight %}  
     
     
-Above data can be directly assigned to `DataSource` property and mapping data fields with respect to the mapper field in order to form TreeView.
+Previous data can be directly assigned to the `DataSource` property and you can map data fields with respect to the mapper field in order to form the tree view.
            
     {% highlight CSHTML %}
     
@@ -329,11 +329,11 @@ Above data can be directly assigned to `DataSource` property and mapping data fi
     
     {% endhighlight %}   
 
-### Nested Object Support
+### Nested object support
 
-The nested object support is provided for the TreeView component. 
+The nested object support is provided for the tree view component.
 
-In the controller page, create a data list which contains the details about tree nodes.
+In the controller page, create a data list that contains details about the tree nodes.
     
     {% highlight c# %}
     
@@ -367,7 +367,7 @@ In the controller page, create a data list which contains the details about tree
     {% endhighlight %}  
     
     
-Above data can be directly assigned to `DataSource` property and mapping data fields with respect to the mapper field in order to form TreeView.
+Previous data can be directly assigned to the `DataSource` property and you can map data fields with respect to the mapper field in order to form the tree view.
            
     {% highlight CSHTML %}
     
@@ -376,25 +376,25 @@ Above data can be directly assigned to `DataSource` property and mapping data fi
     {% endhighlight %}   
     
     
-## Remote Data
+## Remote data
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays a vital role in processing queries to make them suitable to send along with data request, and also process the response data from the server.
 
-The following steps explain how you can bind remote data to TreeView control.
+The following steps explain you to bind remote data to the tree view control.
 
-* In the view page, add the below code to configure TreeView.
+* In the view page, add the following code to configure the tree view.
 
-* In the DataSource field assign remote data source. Here DataManager gets the remote web service and filters the data using Query API. The select property of ej.Query is used to retrieve the specified columns from the data source.
+* In the DataSource field, assign remote data source. Here, DataManager gets the remote web service and filters the data using Query API. The select property of ej.Query is used to retrieve the specified columns from the data source.
 
-* Assign DataSource and Query property values to bind the remote data. Map the corresponding fields in TreeView control 
+* Assign the DataSource and Query property values to bind the remote data. Map the corresponding fields in tree view control.
 
 ### OData
 
-**OData** is a standardized protocol for creating and consuming data. You can bind [OData service](http://www.odata.org/#) data to TreeView in two ways using `DataSource` API of “TreeView” control.
+**OData** is a standardized protocol for creating and consuming data. Bind the [OData service](http://www.odata.org/#) data to tree view in two ways by using `DataSource` API of tree view control.
     
    **Using Datasource(DataSource) API**
     
-   Create an object for `DataSource` class using OData service URL and then assign it to `DataSource` API of “TreeView”. 
+   Create an object for `DataSource` class by using OData service URL and then assign it to the `DataSource` API of tree view.
        
     
     {% highlight CSHTML %}
@@ -409,7 +409,7 @@ The following steps explain how you can bind remote data to TreeView control.
     
    **Using Datasource(Action&lt;DataSourceBuilder&gt;) API**
     
-   Here directly, you can specify the OData service URL.
+   Here, directly you can specify the OData service URL.
     {% highlight CSHTML %}
     
        <ej-tree-view id="treeview"><e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager><e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager></e-child></e-tree-view-fields></ej-tree-view>
@@ -417,9 +417,9 @@ The following steps explain how you can bind remote data to TreeView control.
     {% endhighlight %}
     
     
-In above methods, you may also specify the **adaptor** as [ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
+In the previous methods, you may also specify the **adaptor** as [ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
 
-You can provide adaptor value either as string value (“ODataAdaptor”) or Enum type (AdaptorType.ODataAdaptor)
+Provide the adaptor value either as string value (“ODataAdaptor”) or Enum type (AdaptorType.ODataAdaptor).
     
     {% highlight CSHTML %}
     
@@ -428,7 +428,7 @@ You can provide adaptor value either as string value (“ODataAdaptor”) or Enu
     {% endhighlight %}   
     
     
-N>**You can use above code until OData service version 3. For OData Service version 4 End Point, we have created a separate adaptor [ej.ODataV4Adaptor](http://helpjs.syncfusion.com/js/datamanager/data-binding#odata-v4) for data binding.**
+N>**You can use the previous code until OData service version 3. For OData Service version 4 End Point, a separate adaptor [ej.ODataV4Adaptor](http://helpjs.syncfusion.com/js/datamanager/data-binding#odata-v4) is created for data binding.**
     
     {% highlight CSHTML %}
     
@@ -440,7 +440,7 @@ N>**You can use above code until OData service version 3. For OData Service vers
     
 ### Web API
 
-Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to TreeView as shown in below code example.
+Using the [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to the tree view as shown in the following code example.
     
     
     {% highlight CSHTML %}
@@ -450,15 +450,15 @@ Using [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adapto
     {% endhighlight %}   
     
     
-### Other Restful web services
+### Other restful web services
 
-The Custom Adaptor concept of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allow you to customize or generate your own adaptor which is used to process query and result data. 
+The Custom Adaptor concept of the [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allows you to customize or generate your own adaptor which is used to process query and result data.
 
 [http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays a vital role in processing queries to make them suitable to send along with the data request, and also process the response data from the server.
 
-In the controller page, create a data list that contains the details about tree nodes.    
+In the controller page, create a data list that contains the details about the tree nodes.
     
     {% highlight c# %}
     
@@ -486,7 +486,7 @@ In the controller page, create a data list that contains the details about tree 
     {% endhighlight %}
     
     
-In the view page, add the below code and specify the custom adaptor as shown below.
+In the view page, add the following code and specify the custom adaptor as shown in the following:
     
     {% highlight CSHTML %}
     
@@ -513,11 +513,11 @@ In the view page, add the below code and specify the custom adaptor as shown bel
         
 ## Load on demand
 
-Load on demand is a technique (Lazy load) that is used to reduce the bandwidth size of consuming huge data. You can load data on demand in TreeView by using “**LoadOnDemand**” property when you’re going to use huge data.
+Load on demand is a technique (Lazy load) used to reduce the bandwidth size of consuming huge data. When you are going to use huge data, load data on demand in the tree view by using the “**LoadOnDemand**” property.
 
-For local data source, TreeView loads the first level nodes initially. While expand a parent node then TreeView loads it’s their child nodes from the data source based on the parentId member. It reduces the time to render TreeView with huge data.
+For a local data source, tree view loads the first level nodes initially. While expanding a parent node, the tree view loads its child nodes from the data source based on the parentId member. It reduces the time to render the tree view with huge data.
 
-In the controller page, create a data list that contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
 
 {% highlight c# %}
     
@@ -566,7 +566,7 @@ public class load
         
 {% endhighlight %}
     
-In the view page, add the below code and map the properties defined in to the corresponding fields in “Datasource” with that enable load on demand option.
+In the view page, add the following code and map the properties defined to the corresponding fields in Datasource. This enables the load on demand option.
    
 {% highlight CSHTML %}
     
@@ -574,7 +574,7 @@ In the view page, add the below code and map the properties defined in to the c
     
 {% endhighlight %}
 
-The following screenshot displays the load on demand for local data source in TreeView control.
+The following screenshot displays the load on demand for a local data source in the tree view control.
 
 ![](Populate-Data_images/Populate-Data_img1.png)
 
@@ -586,9 +586,9 @@ While expanding the parent node
 After expanding the parent node
 {:.caption}
 
-For remote data source, TreeView loads the first level nodes initially. While expand the node from TreeView, the data manager passes the query to the controller. Based on this query, you can filter the data from table and return to TreeView.
+For remote data source, the tree view loads the first level nodes initially. While expanding the node from tree view, the data manager passes the query to the controller. Based on this query, you can filter the data from table and return it to the tree view.
    
-Refer below code example to load data on demand from remote data source.
+Refer the following code example to load data on demand from remote data source.
     
 {% highlight CSHTML %}
     
