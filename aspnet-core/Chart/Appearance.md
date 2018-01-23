@@ -16,7 +16,7 @@ The chart displays different series in different colors, by default. You can cus
 {% highlight cshtml %}
 
     @{
-        List<string> palette = new List<string> { "grey", "skyblue", "yellow" };
+        List<string> palette = new List<string> { "Grey", "Skyblue", "Yellow" };
     }
     <ej-chart id="container" palette="palatte">
     </ej-chart>
@@ -34,15 +34,15 @@ N> The color palette is applied to the points in accumulation type of series
 The built-in themes available in the chart are follows:
 
 * Azure
-* Azuredark
-* Flatdark
-* Flatlight
-* GradientDark
-* GradientLight
+* Azure dark
+* Flat dark
+* Flat light
+* Gradient dark
+* Gradient light
 * Lime
-* LimeDark
+* Lime dark
 * Saffron
-* SaffronDark
+* Saffron dark
 
 You can set the desired theme by using the **Theme** property. The default theme is **FlatLight**.
 
