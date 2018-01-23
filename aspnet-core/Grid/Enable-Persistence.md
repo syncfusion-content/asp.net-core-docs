@@ -9,13 +9,13 @@ documentation: ug
 
 # State Persistence 
 
-State Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining `enable-persistence` as true. 
+The state persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining `enable-persistence` as true. 
 
 I>  [localStorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below IE9 then grid state persistence technique is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
 ## List of properties are not Persisted by default
 
-The following properties are not included while maintaining Grid state in local storage to keep localStorage compact.
+The following properties are not included while maintaining grid state in local storage to keep localStorage compact.
 
 * Query
 * isEdit
@@ -56,13 +56,13 @@ The following properties are not included while maintaining Grid state in local 
 * editSettings.showAddNewRow 
 * contextMenuSettings.enableContextMenu
 
-I> The given excluded properties can be included in persist state using `_ignoreOnPersist` in grid prototype. 
+I> The given excluded properties can be included in persist state using the  `_ignoreOnPersist` property in grid prototype. 
 
 
 
 ## Accessing currently stored state
 
-Persisted state can be accessed through local storage using corresponding key name. Key name is the combination of plugin name and control id.
+The persisted state can be accessed through local storage using corresponding key name. Key name is the combination of plugin name and control id.
 
 {% highlight js %}
 var gridStateString = window.localStorage.ejGridGrid; // grid state as string
@@ -72,5 +72,5 @@ var gridStateObject = JSON.parse(window.localStorage.ejGridGrid);//grid state as
 {% endhighlight %}
 
 
-I> In the above example, "ejGrid" is plugin name and "Grid" is control id.        
+I> In the above example, the "ejGrid" is plugin name and "Grid" is control id.        
 

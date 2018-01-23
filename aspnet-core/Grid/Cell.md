@@ -29,7 +29,7 @@ N> 3. For the `wrapMode` property you can assign `enum` value (`Syncfusion.JavaS
 
 When the `wrap-mode` of `e-text-wrap-settings` property is set as `Both` then the auto wrap will be enabled for both the Grid content and header. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -63,7 +63,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img1.png)
 
@@ -71,7 +71,7 @@ The following output is displayed as a result of the above code example.
 
 When the `wrap-mode` of `e-text-wrap-settings` property is set as `Header` then the auto wrap will be enabled only for the Grid header alone. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -106,7 +106,7 @@ The following code example describes the above behavior.
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img1_1.png)
 
@@ -114,7 +114,7 @@ The following output is displayed as a result of the above code example.
 
 When the `wrap-mode` of `e-text-wrap-settings` property is set as `Content` then the auto wrap will be enabled only for Grid content alone. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -149,7 +149,7 @@ The following code example describes the above behavior.
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img1_2.png)
 
@@ -159,7 +159,7 @@ The Grid has options to merge its cells based on the required conditions. This c
 
 You can merge the rows and cells of Grid, using the `rowMerge`, `colMerge` and `merge` functions available in `merge-cell-info` event's argument.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -206,7 +206,7 @@ The following code example describes the above behavior.
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img2.png)
 
@@ -215,7 +215,7 @@ The following output is displayed as a result of the above code example.
 
 This will help you to show the actual HTML value in Grid content and header. To disable HTML code, set the `disable-html-encode` property of `columns` as true. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -247,7 +247,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img4.png)
 
@@ -262,7 +262,7 @@ HTML templates can be specified in the `tooltip` property of the particular colu
 N> It is a standard way to enclose the template within the `script` tag with `type` as the "text/x-jsrender". 
 N> The `tooltip` template must contain `value` property to bind the corresponding cell text in tooltip
  
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -301,7 +301,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img5.png)
 
@@ -321,7 +321,7 @@ N> By default the `clip-mode` will be set as `Clip`.
 
 When the content overflows, the remaining content will be hidden in the particular cell.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -353,7 +353,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img6.png)
  
@@ -361,7 +361,7 @@ The following output is displayed as a result of the above code example.
 
 Ellipsis will be displayed when the content overflows its column width. Here the Tooltip will not be shown for corresponding columns.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -393,7 +393,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img7.png)
 
@@ -403,7 +403,7 @@ Ellipsis will be displayed when the content overflows its column width. Here too
 
 N> If the `clip-mode` is set as `EllipsisWithTooltip`, then the `tooltip` must be given.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -442,6 +442,6 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Cell_images/Cell_img8.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Responsive
 
-The grid control has support for responsive behavior based on client browser's width and height. To enable responsive, `is-responsive>` property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
+The grid control has support for responsive behavior based on client browser's width and height. To enable responsive, the `is-responsive` property should be true. Following are three modes of responsive layout available in grid based on client width. 
 
 * Mobile(<321px)
 * Tablet (321px to 800px)
@@ -21,13 +21,13 @@ N> 2. Frozen Rows and Frozen Columns
 N> 3. Hierarchy
 N> 4. Detail template 
 
-## Mobile Layout
+## Mobile layout
 
 If client width is less than 321px, the grid will render in mobile mode. In which, you can see that grid user interface is customized and redesigned for best view in small screens. The customized features includes responsive row rendering, filtering, sorting, searching and editing.
 
-### Responsive Row
+### Responsive row
 
-Enabling Responsive row makes the Grid to render the record values in vertical order which removes the need for horizontal scrolling to view complete record details. It can be enabled by defining `enable-responsive-row` property as `true`.
+Enabling responsive row makes the grid to render the record values in vertical order which removes the need for horizontal scrolling to view complete record details. It can be enabled by defining the `enable-responsive-row` property as `true`.
 
 {% tabs %}
 
@@ -70,15 +70,15 @@ public partial class GridController : Controller
 ![](Responsive_images/Responsive_img1.png)
 
 
-W> IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should be referred to display Responsive Row.
+W> IE8 and IE9 does not support responsive row. The `ejgrid.responsive.css` should be referred to display Responsive Row.
 
-### Customized Features
+### Customized features
 
-The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen following screen shots.
+The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen in the following screenshots.
 
 ![](Responsive_images/Responsive_img2.png)
 {:caption}
-Responsive row with Filtering , Sorting and Searching
+Responsive row with Filtering, Sorting and Searching.
 
 ![](Responsive_images/Responsive_img3.png)
 
@@ -157,7 +157,7 @@ public partial class GridController : Controller
 
 ## Tablet Layout
 
-If the client width is between 321px and 800px, then the grid will render in tablet mode. Also it has customized filtering design to match tablet screen size.
+If the client width is between 321px and 800px, then the grid will render in tablet mode. Also, it has customized filtering design to match tablet screen size.
 
 {% tabs %}
 
@@ -209,7 +209,7 @@ Filtering design in tab layout.
 
 ## Width
 
-By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign `width` of `columns` in percentage. 
+By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign them `width` of `columns` in percentage. 
 
 {% tabs %}
 
@@ -246,11 +246,11 @@ public partial class GridController : Controller
 {% endhighlight  %}
 {% endtabs %} 
 
-I>  `AllowScrolling` should be false while defining Width in percentage.
+I>  The `AllowScrolling` should be false while defining width in percentage.
 
-## Min Width
+## Min width
 
-Min Width is used to maintain minimum width for the Grid. To enable Min Width, `min-width` should be defined. If the grid width is less than `min-width` then the scrollbar will be displayed to maintain minimum width.
+Min width is used to maintain minimum width for the grid. To enable min width, `min-width` should be defined. If the grid width is less than `min-width` then the scrollbar will be displayed to maintain minimum width.
 
 {% tabs %}
 
@@ -290,13 +290,13 @@ public partial class GridController : Controller
 {% endhighlight  %}
 {% endtabs %} 
 
-MinWidth set to Grid
+MinWidth set to grid
 
-N> We can render the Grid with height responsive by setting the scroll `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
+N> The Grid can be rendred with height responsive by setting the scroll `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
 
-## Priority for Columns
+## Priority for columns
 
-Priority makes column to be visible or hidden based on the `priority` value and browser's width to best accommodate the possible columns. To enable `Priority` for `Columns`, `Priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on the `priority` value and browser's width to best accommodate the possible columns. To enable the `Priority` for `Columns`, `Priority` needs to be defined in columns collection. These Priority values are from one to six.
 
 {% tabs %}
 
@@ -335,4 +335,4 @@ public partial class GridController : Controller
 {% endhighlight  %}
 {% endtabs %} 
 
-I> `ejgrid.responsive.css` should be referred.
+I> The `ejgrid.responsive.css` should be referred.

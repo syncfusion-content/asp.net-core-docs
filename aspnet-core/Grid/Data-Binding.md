@@ -22,7 +22,7 @@ The grid can be bound with either non-generic collection or generic collection t
     
 N> The IEnumerable datasource can be passed as either directly to the datasource property or to the json property of the child tag.
   
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
   
 {% tabs %} 
 {% highlight razor %}
@@ -64,7 +64,7 @@ namespace samplebrowser.Controllers.grid
 {% endhighlight  %}
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
@@ -72,7 +72,7 @@ The following output is displayed as a result of the above code example.
 
 The grid can display nested or navigation properties in the column that would provide the way to display the field from another entity. The complex property can be provided in the `field` property  either as string value concatenated by dot.   
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %} 
 {% highlight razor %}
@@ -107,7 +107,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img6.png)
 
@@ -118,7 +118,7 @@ To consume WCF DataService in grid control, provide the service link directly to
 
 There is an online OData Service `http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders` created specifically for Syncfusion Controls
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %} 
 {% highlight razor %}
@@ -137,7 +137,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img7.png)
 
@@ -152,7 +152,7 @@ To consume Web API service, set the service link to the `url` property of grid `
 
 DataOperation queries such as sorting, filtering, etc., would be sent to Web API Service corresponding to grid actions performed and they need to be handled manually as Web API Service does not process it by default.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
     
 {% tabs %} 
 {% highlight razor %}
@@ -193,7 +193,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}        
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img9.png)
 
@@ -203,7 +203,7 @@ The HTML table can be set as a data source for grid. The ID of the HTML table sh
 
 I> HTML table is the only valid element to use through `DataManager`.
   
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
  
 {% tabs %}  
 {% highlight razor %}
@@ -282,7 +282,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img10.png)
 
@@ -292,7 +292,7 @@ The following output is displayed as a result of the above code example.
 
 By default, the grid with remote data binding will work in `On-Demand` concept for which either `Paging` or `VirtualScrolling` feature should be enabled in it. It helps in improving the performance of loading a large data set.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
  {% tabs %}  
  {% highlight razor %} 
@@ -311,7 +311,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img11.png)
 
@@ -321,7 +321,7 @@ The `Load at once` concept in grid can be used to load all data from remote serv
 
 The `offline` property of grid `DataManager` is used to enable `Load at once` in grid control
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}  
 {% highlight razor %} 
@@ -340,7 +340,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img12.png)
 
@@ -352,7 +352,7 @@ The `time-till-expiration` and `caching-page-size` properties are used to contro
 
 N> The window`s localStorage is used to cache the loaded data. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}  
 {% highlight razor %} 
@@ -370,7 +370,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img13.png)
 
@@ -380,7 +380,7 @@ The following output is displayed as a result of the above code example.
 
 The ‘addParams’ function in DataManager’s Query class is used to add additional custom parameter in data requests. The grid has an option to set default query which can be used to add custom parameter.
       
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}  
 {% highlight razor %} 
@@ -401,7 +401,7 @@ The following code example describes the above behavior.
 
 E> Attempting to add custom parameters with key name same as any default AJAX parameters used by the `DataManager` will results in error.
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img14.png)
 
@@ -409,7 +409,7 @@ The following output is displayed as a result of the above code example.
 
 The Custom header can be added through `DataManager` `headers` options. While performing, CRUD operations, the `addParams` cannot be used to send additional parameters to the server in such cases the parameters can be send as custom header.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}  
 {% highlight razor %} 
@@ -432,7 +432,7 @@ The following code example describes the above behavior.
 
 N>  To add custom headers to the DataManager through JavaScript, refer to this [link]( https://www.syncfusion.com/kb/5963)
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img15.png)
 
@@ -456,7 +456,7 @@ The argument passed to the `action-failure` grid event contains the error detail
 </tr>
  </table>
               
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}  
 {% highlight razor %} 
@@ -482,6 +482,6 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Data-Binding_images/Data-Binding_img16.png)

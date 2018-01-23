@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-The context menu is used to improve user action with grid using popup menu. It can be shown by defining the `enable-context-menu` property of `context-menu-settings` as true. Context menu has option to add default items in the `context-menu-items` property of `context-menu-settings` and customized items in the `context-menu-items` property of `context-menu-settings`.
+The context menu is used to improve user action with the grid using popup menu. It can be shown by defining the `enable-context-menu` property of `context-menu-settings` as true. Context menu has option to add default items in the `context-menu-items` property of `context-menu-settings` and customized items in the `context-menu-items` property of `context-menu-settings`.
 
 ## Default context menu items
 
@@ -198,7 +198,7 @@ Context menu at body
 
 Context menu at pager
 
-N> The `allow-grouping`, `allow-sorting` should be enabled to perform default context menu actions in grid header. The `allow-editing`, `allow-deleting` and `allow-adding` should be enabled to perform default actions in body.
+N> The `allow-grouping`, `allow-sorting` should be enabled to perform default context menu actions in the grid header. The `allow-editing`, `allow-deleting` and `allow-adding` should be enabled to perform default actions in body.
 
 
 

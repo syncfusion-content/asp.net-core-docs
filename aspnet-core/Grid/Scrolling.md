@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Scrolling
 
-Scrolling can be enabled by setting `allow-scrolling` as `true`. The height and width can be set to grid by using the properties `height` and `width` property of `e-scroll-settings`. 
+Scrolling can be enabled by setting the `allow-scrolling` as `true`. The height and width can be set to grid by using the properties `height` and `width` property of the `e-scroll-settings`. 
 
  N> If `width` and `height` is not defined in the `e-scroll-settings` property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
@@ -56,9 +56,9 @@ The following output is displayed as a result of the above code example.
 
 ![](Scrolling_images/Scrolling_img1.png)
 
-## Set Width and Height in pixel 
+## Set width and height in pixel 
 
-To specify the `width` and `height` property of `e-scroll-settings` in pixel, by set the pixel value as integer. 
+To specify the `width` and `height` property of the `e-scroll-settings` in pixel, by setting the pixel value as integer. 
 
 The following code example describes the above behavior.
 
@@ -102,9 +102,9 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img2.png)
 
-## Set Width and Height in percentage
+## Set width and height in percentage
 
-To specify the `width` and `height` property of  `e-scroll-settings` in percentage, by set the percentage value as string.
+To specify the `width` and `height` property of  the `e-scroll-settings` in percentage, by setting the percentage value as string.
 
 The following code example describes the above behavior.
 
@@ -195,11 +195,11 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img4.png)
 
-## Frozen Columns
+## Frozen columns
 
-Specify `frozen-columns` property of `e-scroll-settings` to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying `frozen-columns` then only you can scroll and see the remaining columns with freeze pane.
+Specify the `frozen-columns` property of `e-scroll-settings` to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabled while specifying the `frozen-columns` then only you can scroll and see the remaining columns with freeze pane.
 
-N> `allow-scrolling` must be `true` while specifying `frozen-columns`.
+N> The `allow-scrolling` must be `true` while specifying `frozen-columns`.
 
 {% tabs %}
 {% highlight razor %}
@@ -243,7 +243,7 @@ The following output is displayed as a result of the above code example.
 
 ### Freeze particular columns:
 
-To freeze selected columns in grid at the time of scrolling, by set `is-frozen` property of columns as `true`.`is-frozen` columns are rendered first in the grid even the columns index is different while declaring the `e-columns` .
+To freeze selected columns in grid at the time of scrolling, by setting the `is-frozen` property of columns as `true`. The `is-frozen` columns are rendered first in the grid even the columns index is different while declaring the `e-columns` .
 
 The following code example describes the above behavior.
 
@@ -290,11 +290,11 @@ The following output is displayed as a result of the above code example.
 ![](scrolling_images/scrolling_img6.png)
 
 
-### Frozen Columns alert Messages:
+### Frozen columns alert Messages:
 
 1. If `allow-scrolling` is false while using `frozen-columns`  then "Enable `allow-scrolling` while using frozen Columns" alert message is thrown.
 2. If `frozen-columns` is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
-3. Frozen Rows and Columns are not supported the following features
+3. Frozen Rows and Columns are not supported in the following features.
  Grouping
  Row Template
  Detail Template
@@ -303,11 +303,11 @@ The following output is displayed as a result of the above code example.
 
 If any one of the above feature is enabled along with Frozen Rows and Columns, then "Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing" alert message is thrown.
 
-## Frozen Rows
+## Frozen rows
 
-Specify `frozen-rows` property of `e-scroll-settings` to freeze rows(upto the specified FrozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying `frozen-rows` then only you can scroll and see the remaining rows with freeze pane.
+Specify the `frozen-rows` property of `e-scroll-settings` to freeze rows (upto the specified FrozenRows value) at the time of scrolling. Vertical scrollbar must be enabled while specifying the `frozen-rows` then only you can scroll and see the remaining rows with freeze pane.
 
-N> `allow-scrolling` must be `true` while specifying `frozen-rows` .
+N> The `allow-scrolling` must be `true` while specifying `frozen-rows` .
 
 The following code example describes the above behavior.
 
@@ -353,7 +353,7 @@ The following output is displayed as a result of the above code example.
 
 ## Touch scroll
 
-In touch supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting `enable-touch-scroll` property of `e-scroll-settings` as `false`.
+In touch supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting the `enable-touch-scroll` property of `e-scroll-settings` as `false`.
 
 The following code example describes the above behavior.
  
@@ -392,17 +392,17 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-## Virtual Scrolling
+## Virtual scrolling
 
-The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting `allow-virtual-scrolling` property of `e-scroll-settings` as `true`. 
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting the `allow-virtual-scrolling` property of `e-scroll-settings` as `true`. 
 
-We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting `enable-virtualization` property of `e-scroll-settings` as true and it doesn't requires `allow-virtual-scrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable `enable-virtualization` property of the `e-scroll-settings`. Some of the relevant functionalities of this are,
+We also have an enhanced virtual scrolling feature with an improvised virtual scrolling performance. To enable improvised virtual scrolling feature by setting the `enable-virtualization` property of `e-scroll-settings` as true and it doesn't requires the `allow-virtual-scrolling` to enabled. It allows you to load the grid with data while scrolling. In order to enable this, you need to enable the `enable-virtualization` property of the `e-scroll-settings`. Some of the relevant functionalities of this are in the following three.
 
 1.	White space will not be appeared in the Grid. 
 2.	Improved page rendering performance. 
 3.  It can render nearly 500 thousand records.
 
-It supports two mode of virtualization. They are,
+It supports two mode of virtualization. They are as follows
 
 1. Normal Mode
 2. Continuous Mode
@@ -416,9 +416,9 @@ N> 4. Detail template
 N> 5. Hierarchy
 N> 6. Editing
 
-### Normal Mode:
+### Normal mode:
 
-It allows you to load the grid with data while scrolling. This can be achieved by setting `virtual-scroll-mode` as `Normal`.
+It allows you to load the grid with data while scrolling. This can be achieved by setting the `virtual-scroll-mode` as `Normal`.
 
 The following code example describes the above behavior.
 
@@ -461,7 +461,7 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img8.png)
 
-#### Enhanced Virtual Scrolling:
+#### Enhanced virtual scrolling:
 
 In order to enable this, you need to set the `enable-virtualization` property of the `e-scroll-settings` as true. 
 
@@ -506,7 +506,7 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img10.png)
 
-### Continuous Mode:
+### Continuous mode:
 
 In Continuous mode, the data is loaded in grid when the scrollbar reaches the end. You can enable the continuous mode by setting the `virtual-scroll-mode` property as `Continuous`.
 
