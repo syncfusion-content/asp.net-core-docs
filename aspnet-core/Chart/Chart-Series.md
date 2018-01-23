@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in the **Series** options. The series are rendered in the order it is added to the Series option, by default. You can change this order by using the **ZOrder** option.  
+In chart, you can add multiple series object in **Series** option. The series are rendered based on the order the object is added to the series option, by default. You can change this order by using the **ZOrder** option.  
 
 {% highlight cshtml %}
 
@@ -42,11 +42,11 @@ In EjChart, you can add multiple series object in the **Series** options. The se
 
 ### Customizing all series together
 
-By using the **CommonSeriesOptions**, you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
+By using the **CommonSeriesOptions** property, you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
 
-N> The inline properties of the series has the first priority and override the commonSeriesOptions.
+N> The inline properties of the series have the first priority and they can override the commonSeriesOptions.
 
-The following code example explains on how to enable marker, tooltip and animation for the chart series by using the commonSeriesOptions.
+The following code example explains how to enable marker, tooltip, and animation for the chart series by using the **commonSeriesOptions** property.
 
 {% highlight cshtml %}
 
@@ -82,7 +82,7 @@ The following code example explains on how to enable marker, tooltip and animati
 
 ## Combination Series
 
-EjChart allows you to render the combination of different series in the chart. 
+Chart allows you to render the combination of different series in the chart. 
 
 {% highlight cshtml %}
 
@@ -109,13 +109,13 @@ EjChart allows you to render the combination of different series in the chart.
 
 ### Limitation of combination chart
 
-* Bar, StackingBar, and StackingBar100 cannot be combined with the other Cartesian type series.
+* Bar, stacking bar, and stacking bar 100 series cannot be combined with the other Cartesian type series.
 
-* Cartesian type series cannot be combined with the accumulation series Pie, Doughnut, Funnel, and Pyramid.
+* Cartesian type series cannot be combined with the accumulation series such as pie, doughnut, funnel, and pyramid.
 
-* Polar and Radar series cannot be combined with the accumulation and Cartesian type series.
+* Polar and radar series cannot be combined with the accumulation and Cartesian type series.
 
-When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered and other series are ignored. The following code example illustrates this,  
+When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered, and other series are ignored. The following code example illustrates this,  
 
 {% highlight cshtml %}
 

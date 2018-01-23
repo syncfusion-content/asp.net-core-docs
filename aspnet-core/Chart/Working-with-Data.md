@@ -11,11 +11,11 @@ documentation: ug
 
 ## Local Data
 
-The local data can be provided to the chart by using following two ways:
+The local data can be provided to chart by using the following two ways:
 
-1. Bind the data to the chart by using the **DataSource** property of the series, and then map the X and Y values with *XName* and *YName* properties, respectively.
+1. Bind the data to chart by using the **DataSource** property of the series, and then map the X and Y values with *XName* and *YName* properties, respectively.
 
-N> For the **OHLC** type series, you should map four dataSource fields, namely *High, Low, Open*, and *Close* to bind the data source, and for the **bubble** series, you should map the *Size* field along with the *XName* and *YName* properties. 
+N> For **OHLC** type series, you should map four data source fields, namely *High*, *Low*, *Open*, and *Close* to bind the data source. For **bubble** series, you should map the *Size* field along with the *XName* and *YName* properties. 
 
 
 {% highlight cshtml %}
@@ -43,7 +43,7 @@ var chartData = [
 ![](Working-with-Data_images/Working-with-Data_img1.png)
 
 
-2. You can also plot the data to chart by using **Points** option in the series. By using this property, you can customize each and every point in the data.
+2. You can also plot the data to chart by using **Points** option in the series. By using this option, you can customize each and every point in the data.
 
 {% highlight cshtml %}
 
@@ -67,7 +67,7 @@ var chartData = [
 
 ## Remote Data
 
-The remote data can be bound to the chart by using the DataManager. You can use the **query** property of the series to filter the data from the dataSource.
+The remote data can be provided to the chart by using the DataManager option. You can use the **query** property of the series to filter the data from the data source.
 
 {% highlight cshtml %}
     <ej-chart id="container">

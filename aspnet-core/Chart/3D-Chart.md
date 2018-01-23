@@ -9,11 +9,11 @@ documentation: ug
 
 # 3D Chart
 
-Essential 3D Chart for ASP.NET CORE allows you to view 8 chart types in 3D view such as Bar, StackingBar, StackingBar100, Column, Stacked Column, 100% Stacked Column, Pie, Doughnut.
+Essential 3D chart for ASP.NET Core allows you to view 8 chart types in 3D view such as bar, stacking bar, stacking bar 100, column, stacked column, 100% stacked column, pie, and doughnut.
 
-## 3D Column Chart
+## 3D column chart
 
-For rendering a 3D Column Chart, specify the series **Type** as **Column** in the chart series and set **Enable3D** option as **true** in the chart.
+For rendering a 3D column chart, specify the series type to **Column** in the chart series, and set **Enable3D** option to true in the chart.
 
 {% highlight cshtml %}
 
@@ -32,9 +32,9 @@ For rendering a 3D Column Chart, specify the series **Type** as **Column** in th
 ![](3D-Chart_images/3D-Chart_img1.png)
 
 
-## 3D Bar Chart
+## 3D bar chart
 
-You can create a 3D Bar Chart by setting the series **Type** as **Bar** in the chart series and enable Enable3D option in the chart.
+You can create a 3D bar chart by setting the series type to **Bar** in the chart series, and enabling **Enable3D** option in the chart.
 
 {% highlight cshtml %}
 
@@ -53,9 +53,9 @@ You can create a 3D Bar Chart by setting the series **Type** as **Bar** in the c
 ![](3D-Chart_images/3D-Chart_img2.png)
 
 
-## 3D Stacked Column Chart
+## 3D stacked column chart
 
-You can create a 3D Stacked Column Chart by setting the series **Type** as **StackingColumn** in the chart series and enable Enable3D option in the chart.
+You can create a 3D stacked column chart by setting the series type to **StackingColumn** in the chart series, and enabling **Enable3D** option in the chart.
 
 {% highlight cshtml %}
 
@@ -78,9 +78,9 @@ You can create a 3D Stacked Column Chart by setting the series **Type** as **Sta
 
 ![](3D-Chart_images/3D-Chart_img3.png)
 
-## 3D 100% Stacked Column Chart
+## 3D 100% stacked column chart
 
-100% Stacking Column 3DChart is rendered by specifying the series **Type** as **StackingColumn100** in the chart series and enable Enable3D option in the chart.
+100% stacking column 3D chart is rendered by specifying the series type to **StackingColumn100** in the chart series, and enabling **Enable3D** option in the chart.
 
 {% highlight cshtml %}
 
@@ -104,9 +104,9 @@ You can create a 3D Stacked Column Chart by setting the series **Type** as **Sta
 ![](3D-Chart_images/3D-Chart_img4.png)
 
 
-## 3D Stacked Bar Chart
+## 3D stacked bar chart
 
-To create Stacking Bar 3DChart, set the series **Type** as **StackingBar** in the chart series and enable Eenable3D option in the chart.
+To create stacking bar 3D chart, set the series type to **StackingBar** in the chart series, and enabling **Eenable3D** option in the chart.
 
 {% highlight cshtml %}
 
@@ -130,9 +130,9 @@ To create Stacking Bar 3DChart, set the series **Type** as **StackingBar** in th
 ![](3D-Chart_images/3D-Chart_img5.png)
 
 
-## 3D 100% Stacked Bar Chart
+## 3D 100% stacked bar chart
 
-You can create 100% Stacking Bar 3DChart by setting the series **Type** as **StackingBar100** in the chart series and enable Eenable3D option in chart.
+You can create 100% stacking bar 3D chart by setting the series type to **StackingBar100** in the chart series, and enabling **Eenable3D** option in chart.
 
 {% highlight cshtml %}
 
@@ -156,9 +156,9 @@ You can create 100% Stacking Bar 3DChart by setting the series **Type** as **Sta
 ![](3D-Chart_images/3D-Chart_img6.png)
 
 
-## 3D Pie Chart
+## 3D pie chart
 
-To render the Pie Chart in 3D view, enable the **Enbel3D** option in the chart and set the series **Type** as **Pie** in the chart series.
+To render the pie chart in 3D view, enable the **Enbel3D** option in the chart, and set the series type to **Pie** in the chart series.
 
 {% highlight cshtml %}
 
@@ -177,9 +177,9 @@ To render the Pie Chart in 3D view, enable the **Enbel3D** option in the chart a
 ![](3D-Chart_images/3D-Chart_img7.png)
 
 
-## 3D Doughnut Chart
+## 3D doughnut chart
 
-To render the Doughnut Chart in 3D view, enable the **Enbel3D** option in the chart and set the series **Type** as **Doughnut** in the chart series.
+To render the doughnut chart in 3D view, enable the **Enbel3D** option in the chart, and set the series type to **Doughnut** in the chart series.
 
 {% highlight cshtml %}
 
@@ -198,11 +198,11 @@ To render the Doughnut Chart in 3D view, enable the **Enbel3D** option in the ch
 ![](3D-Chart_images/3D-Chart_img8.png)
 
 
-## Configure 3D Chart
+## Configure 3D chart
 
-### 3D View
+### 3D view
 
-To render the EjChart in 3D view, set the **Enable3D** option as **true** in the chart.
+To render the chart in 3D view, set the **Enable3D** option to true in the chart.
 
 {% highlight cshtml %}
 
@@ -218,11 +218,11 @@ To render the EjChart in 3D view, set the **Enable3D** option as **true** in the
 ![](3D-Chart_images/3D-Chart_img9.png)
 
 
-### Placing Bar / Column kind of series side-by-side
+### Placing bar/column kind of series side-by-side
+
+The **SideBySideSeriesPlacement** property defines the appearance of the different sets of data in 3D chart. When this property is enabled, the data is displayed side by side, otherwise it is displayed along the depth of the axis.
  
- The **SideBySideSeriesPlacement** defines the appearance of the different sets of data on the 3D Chart. When this property is enabled, the data is displayed side by side, otherwise it is displayed along the depth of the axis.
- 
- {% highlight cshtml %}
+{% highlight cshtml %}
 
 <ej-chart id="container" enable3d="true" side-by-side-series-placement="true">
 
@@ -236,9 +236,9 @@ To render the EjChart in 3D view, set the **Enable3D** option as **true** in the
 ![](3D-Chart_images/3D-Chart_img10.png)
 
 
-### Setting Axis Wall Size
+### Setting axis wall size
 
-In 3DChart, Cartesian axes lines are represented as walls and it defines the width of the 3D wall. 3D Pie and Doughnut Chart does not support **WallSize** because they don’t have axes.  
+In 3D chart, Cartesian axes lines are represented as walls, and they define the width of the 3D wall. 3D pie and doughnut chart does not support **WallSize** because they do not have axes.
 
 {% highlight cshtml %}
 
@@ -254,9 +254,9 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 ![](3D-Chart_images/3D-Chart_img11.png)
 
 
-### 3D Depth
+### 3D depth
 
-By using the **Depth** property, you can view the 3D Chart from the front view of the series to the background wall.
+By using the **Depth** property, you can view the 3D chart from the front view of the series to the background wall.
 
 {% highlight cshtml %}
 
@@ -272,9 +272,9 @@ By using the **Depth** property, you can view the 3D Chart from the front view o
 ![](3D-Chart_images/3D-Chart_img12.png)
 
 
-### Rotating and Tilting 3D Chart
+### Rotating and tilting 3D chart
 
-To spin the 3D Chart on mouse dragging, enable **EnableRotation** option in the chart. The **Tilt** property specifies the angle of the slope of the 3D Chart. The positive and negative values are declared to the side where the slope is present. The **Rotation** option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends upon the positive and negative values of the angle.  
+To spin the 3D chart by dragging the mouse, enable **EnableRotation** option in the chart. The **Tilt** property specifies the angle of the slope of the 3D chart. The positive and negative values are declared to the side where the slope is present. The **Rotation** option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends on the positive and negative values of the angle.
 
 {% highlight cshtml %}
 
@@ -292,7 +292,7 @@ To spin the 3D Chart on mouse dragging, enable **EnableRotation** option in the 
 
 ### PerspectiveAngle	
 
-The **PerspectiveAngle** specifies the appearance of the height, width, depth and wall of the 3D Chart. When the PerspectiveAngle is decreased, the 3D object appears very close to the viewer. But when it is increased, the 3D object appears far away from the viewer. 
+The **PerspectiveAngle** specifies the appearance of the height, width, depth, and wall of the 3D chart. When the PerspectiveAngle is decreased, the 3D object appears very close to the viewer. But when it is increased, the 3D object appears far away from the viewer. 
 
 {% highlight cshtml %}
 
