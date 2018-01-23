@@ -9,11 +9,11 @@ documentation: ug
 
 # Technical Indicators
 
-EjChart control supports 10 types of technical indicators. 
+Chart supports 10 types of technical indicators. 
 
 ## Bind data to render the indicator
 
-You can bind the series **DataSource** to the indicator by setting the specific series name to the indicator by using the *Indicators.SeriesName* property.
+You can bind the series data source to the indicator by setting the specific series name to the indicator by using the **Indicators.SeriesName** property.
 
 {% highlight cshtml %}
 
@@ -44,7 +44,7 @@ You can bind the series **DataSource** to the indicator by setting the specific 
 
 {% endhighlight %}
 
-Also, you can add data to the indicator directly by using the DataSource option of the indicator.  
+Also, you can add data to the indicator directly by using the **DataSource** option of the indicator.
 
 {% highlight cshtml %}
 
@@ -58,11 +58,11 @@ Also, you can add data to the indicator directly by using the DataSource option 
 
 {% endhighlight %}
 	
-## Indicator Types
+## Indicator types
 
 ### Accumulation Distribution
 
-To create an Accumulation Distribution indicator, set the *Indicators.Type* as **AccumulationDistribution**. Accumulation Distribution require **Volume** field additionally with the DataSource to calculate the signal line.
+To create an accumulation distribution indicator, set the Indicators.Type as **AccumulationDistribution**. Accumulation distribution requires **Volume** field additionally with the data source to calculate the signal line.
 
 {% highlight cshtml %}
 
@@ -85,7 +85,7 @@ To create an Accumulation Distribution indicator, set the *Indicators.Type* as *
 
 ### Average True Range (ATR)
 
-You can create an ATR indicator by setting the Indicators.Type as **ATR** in the Indicators. 
+You can create an ATR indicator by setting the Indicators.Type as **ATR** in the indicators. 
 
 {% highlight cshtml %}
 
@@ -107,7 +107,7 @@ You can create an ATR indicator by setting the Indicators.Type as **ATR** in the
 
 ### Bollinger Band 
 
-Bollinger Band indicator is created by setting the Indicators.Type as **BollingerBand**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of the *Period* is 14 and *StandardDeviations* is 2.
+Bollinger band indicator is created by setting the Indicators.Type as **BollingerBand**. It contains three lines, namely upper band, lower band, and signal line. Its default value for **Period** is 14 and **StandardDeviations** is 2.
 
 {% highlight cshtml %}
 
@@ -129,7 +129,7 @@ Bollinger Band indicator is created by setting the Indicators.Type as **Bollinge
 
 ### Exponential Moving Average (EMA)
 
-To render an EMA indicator, you have to set the Indicators.Type as **EMA**.  
+To render an EMA indicator, set the Indicators.Type as **EMA**.  
 
 {% highlight cshtml %}
 
@@ -150,7 +150,7 @@ To render an EMA indicator, you have to set the Indicators.Type as **EMA**.
 
 ### Momentum 
 
-Momentum Technical indicator is created by setting the Indicators.Type as **Momentum**. The momentum indicator renders two lines, namely upper band and signal line. Upper band always rendered at the value 100 and the signal line is calculated based on the momentum of the data.
+Momentum technical indicator is created by setting the Indicators.Type as **Momentum**. The momentum indicator renders two lines, namely upper band and signal line. Upper band is always rendered at the value of 100, and the signal line is calculated based on the momentum of the data.
 
 {% highlight cshtml %}
 
@@ -171,7 +171,7 @@ Momentum Technical indicator is created by setting the Indicators.Type as **Mome
 
 ### Moving Average Convergence Divergence (MACD)
 
-To render an MACD indicator, you have to set the Indicators.Type as **MACD**.  MACD indicator contains MACD line, Signal line and Histogram column. Histogram is used to differentiate MACD and signal line.
+To render an MACD indicator, set the Indicators.Type as **MACD**. MACD indicator contains MACD line, signal line, and histogram column. Histogram is used to differentiate MACD and signal line.
 
 {% highlight cshtml %}
 
@@ -192,7 +192,7 @@ To render an MACD indicator, you have to set the Indicators.Type as **MACD**.  M
 
 #### MacdType
 
-By using the **MacdType** enumeration property, you can change the MACD rendering as *Line*, *Histogram* or *Both*. 
+By using the **MacdType** enumeration property, you can change the MACD rendering type to Line, Histogram, or Both. 
 
 {% highlight cshtml %}
 
@@ -213,7 +213,7 @@ By using the **MacdType** enumeration property, you can change the MACD renderin
 
 ### Relative Strength Index (RSI)
 
-To render the RSI indicator, set the Indicators.Type as **RSI**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the *RSI* formula.
+To render a RSI indicator, set the Indicators.Type as **RSI**. It contains three lines, namely upper band, lower band, and signal line. Upper and lower bands are always rendered at value of 70 and 30, respectively and signal line is calculated based on the RSI formula.
 
 {% highlight cshtml %}
 
@@ -234,7 +234,7 @@ To render the RSI indicator, set the Indicators.Type as **RSI**. It contains thr
 
 ### Simple Moving Average (SMA)
 
-To render the SMA indicator, you should specify the Indicators.Type as **SMA**.  
+To render an SMA indicator, specify the Indicators.Type as **SMA**.  
 
 {% highlight cshtml %}
 
@@ -256,7 +256,7 @@ To render the SMA indicator, you should specify the Indicators.Type as **SMA**.
 
 ### Stochastic 
 
-For the Stochastic indicator, you need to set the Indicators.Type as **Stochastic**. The Stochastic indicator renders four lines namely, upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on the stochastic formula.
+For rendering the Stochastic indicator, set the Indicators.Type as **Stochastic**. The Stochastic indicator renders four lines namely, upper line, lower line, stochastic line, and the signal line. Upper line is always rendered at value of 80, and the lower line is rendered at value of 20. Stochastic and signal lines are calculated based on the stochastic formula.
 
 {% highlight cshtml %}
 
@@ -277,7 +277,7 @@ For the Stochastic indicator, you need to set the Indicators.Type as **Stochasti
 
 ### Triangular Moving Average (TMA)
 
-To render the TMA indicator, you should specify the Indicators.Type as **TMA**. 
+To render a TMA indicator, specify the Indicators.Type as **TMA**. 
 
 {% highlight cshtml %}
 

@@ -9,9 +9,9 @@ documentation: ug
 
 # Appearance
 
-## Custom Color Palette
+## Custom color palette
 
-The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the **Palette** property. 
+The chart displays different series in different colors, by default. You can customize the color of each series by providing a custom color palette by using the **Palette** property. 
 
 {% highlight cshtml %}
 
@@ -27,11 +27,11 @@ The Chart displays different series in different colors by default. You can cust
 ![](Appearance_images/Appearance_img1.png)
 
 
-N> The Color palette is applied to the points in accumulation type series
+N> The color palette is applied to the points in accumulation type of series
 
-## Built-in Themes
+## Built-in themes
 
-Following are the built-in themes available in the Chart
+The built-in themes available in the chart are follows:
 
 * Azure
 * Azuredark
@@ -44,7 +44,7 @@ Following are the built-in themes available in the Chart
 * Saffron
 * SaffronDark
 
-You can set your desired theme by using the **Theme** property. FlatLight is the default theme used in the Chart.
+You can set the desired theme by using the **Theme** property. The default theme is **FlatLight**.
 
 {% highlight cshtml %}
 
@@ -58,7 +58,7 @@ You can set your desired theme by using the **Theme** property. FlatLight is the
 
 ## Point level customization
 
-Marker, DataLabel and Fill color of each point in a series can be customized individually by using the **Points** collection.
+Marker, data label, and fill color of each point in a series can be customized individually by using the **Points** collection.
 
 {% highlight cshtml %}
 
@@ -79,7 +79,7 @@ Marker, DataLabel and Fill color of each point in a series can be customized ind
 
 ## Series border customization
 
-To customize the series border color, width and dashArray, you can use **Series.Border** option. The series border styles can be applied only to the column, bar and area type of series.
+To customize the series border color, width, and dash array, use **Series.Border** option. The series border styles can be applied only to the column, bar, and area type of series.
 
 {% highlight cshtml %}
 
@@ -101,7 +101,7 @@ To customize the series border color, width and dashArray, you can use **Series.
 
 ### Customize chart background
 
-The Chart background can be customized by using the **Background** property of the Chart. To customize the chart border, use **Border** option of the chart. 
+The chart background can be customized by using the **Background** property. To customize the chart border, use **Border** option of the chart. 
 
 {% highlight cshtml %}
 
@@ -116,7 +116,7 @@ The Chart background can be customized by using the **Background** property of t
 
 **Chart Margin**
 
-The Chart **Margin** property is used to add the margin to the chart area at the Left, Right, Top and Bottom position.
+**Margin** property is used to add margin to the chart area at the Left, Right, Top, and Bottom positions.
 
 {% highlight cshtml %}
 
@@ -147,7 +147,7 @@ Background image can be added to the chart by using the **BackGroundImageUrl** p
 
 **Chart area background**
 
-The Chart area background can be customized by using the **Background** property in the chart area. 
+The chart area background can be customized by using the **Background** property. 
 
 {% highlight cshtml %}
 
@@ -165,7 +165,7 @@ The Chart area background can be customized by using the **Background** property
 
 ### Customize chart area grid bands
 
-You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the **AlternateGridBand** property of the axis. The properties **Odd** and **Even** are used to customize the grid bands at odd and even positions respectively. 
+You can provide different color for alternate grid's rows and columns formed by the grid lines in the chart area by using the **AlternateGridBand** property of the axis. The properties **Odd** and **Even** are used to customize the grid bands at odd and even positions, respectively. 
 
 {% highlight cshtml %}
 
@@ -183,7 +183,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 ### Animation
 
-You can enable animation by using the **EnableAnimation** property of the series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
+You can enable animation by using the **EnableAnimation** property of the series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the **type** property.
 
 {% highlight cshtml %}
 
@@ -213,7 +213,7 @@ However, you can force the chart to animate series by calling the animate method
 
 {% highlight js %}
 
-//Dynamically animating Chart
+//Dynamically animating chart
 function animateChart(){
 
     //Calling the animate method for dynamic animation
@@ -223,9 +223,9 @@ function animateChart(){
 
 {% endhighlight %}
 
-### Control the Speed of animation
+### Control the speed of animation
 
-To control the speed of animation, you can use the **AnimationDuration** property in the series. 
+To control the speed of animation, use the **AnimationDuration** property in the series. 
 
 {% highlight cshtml %}
 

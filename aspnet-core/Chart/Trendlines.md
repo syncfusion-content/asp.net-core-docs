@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines
 
-EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatter, Area, Candle, HiLo etc.)* except Bar type series. You can add more than one trendline object to the **Trendlines** option.
+Chart can generate trendlines for Cartesian type series such as line, column, scatter, area, candle, HiLo, etc., except bar type series. You can add more than one trendline object to the **Trendlines** option.
 
 {% highlight cshtml %}
 
@@ -31,7 +31,7 @@ EjChart can generate Trendlines for Cartesian type series *(Line, Column, Scatte
 
 ## Customize the trendline styles
 
-A trendline can be customized by using the properties such as *Fill*, *Width*, *DashArray* and *Opacity*. The default type of Trendline is **Linear**.
+A trendline can be customized by using the properties such as **Fill**, **Width**, **DashArray**, and **Opacity**. The default type of trendline is **Linear**.
 
 {% highlight cshtml %}
 
@@ -52,9 +52,9 @@ A trendline can be customized by using the properties such as *Fill*, *Width*, *
 ![](Trendlines_images/Trendlines_img2.png)
 
 
-## Types of Trendline
+## Types of trendline
 
-EjChart supports the following type of Trendlines.
+Chart supports the following types of Trendline:
 
 * Linear
 * Exponential
@@ -65,7 +65,7 @@ EjChart supports the following type of Trendlines.
 
 ### Linear
 
-To render Linear Trendline, you have to set the **Type** as *Linear*. 
+To render linear trendline, set the type to **Linear**. 
 
 {% highlight cshtml %}
 
@@ -87,7 +87,7 @@ To render Linear Trendline, you have to set the **Type** as *Linear*.
 
 ### Exponential
 
-Exponential Trendline can be rendered by setting the *Type* as Exponential. 
+Exponential trendline can be rendered by setting the type to **Exponential**. 
 
 {% highlight cshtml %}
 
@@ -109,7 +109,7 @@ Exponential Trendline can be rendered by setting the *Type* as Exponential.
 
 ### Logarithmic
 
-Logarithmic Trendline can be rendered by setting the *Type* as Logarithmic.  
+Logarithmic trendline can be rendered by setting the type to **Logarithmic**.
 
 {% highlight cshtml %}
 
@@ -132,7 +132,7 @@ Logarithmic Trendline can be rendered by setting the *Type* as Logarithmic.
 
 ### Power
 
-Power Trendline can be rendered by setting the *Type* of the trendline as Power. 
+Power trendline can be rendered by setting the type to **Power**. 
 
 {% highlight cshtml %}
 
@@ -155,7 +155,7 @@ Power Trendline can be rendered by setting the *Type* of the trendline as Power.
 
 ### Polynomial
 
-Polynomial Trendline can be rendered by setting the trendline *Type* as Polynomial.  You can change the polynomial order by using the **PolynomialOrder** of the trendlines. It ranges from 2 to 6.
+Polynomial trendline can be rendered by setting the type to **Polynomial**. You can change the polynomial order by using the **PolynomialOrder** property of the trendlines. It ranges from 2 to 6.
 
 {% highlight cshtml %}
 
@@ -178,7 +178,7 @@ Polynomial Trendline can be rendered by setting the trendline *Type* as Polynomi
 
 ### MovingAverage
 
-MovingAverage Trendline can be rendered by setting the Type of the trendline as **MovingAverage**. 
+Moving average trendline can be rendered by setting the type to **MovingAverage**.
 
 {% highlight cshtml %}
 
@@ -201,12 +201,12 @@ MovingAverage Trendline can be rendered by setting the Type of the trendline as 
 
 ## Forecasting
 
-**Trendline forecasting** is the prediction of future/past situations.  **Forecasting** can be classified into two types as follows.
+**Trendline forecasting** is the prediction of future/past situations. **Forecasting** can be classified as the following two types:
 
   * Forward Forecasting
   * Backward Forecasting
 
-### Forward Forecasting
+### Forward forecasting
 
 The value set for **ForwardForecast** is used to determine the distance moving towards the future trend.
 
@@ -229,7 +229,7 @@ The value set for **ForwardForecast** is used to determine the distance moving t
 ![](Trendlines_images/Trendlines_img9.png)
 
 
-### Backward Forecasting
+### Backward forecasting
 
 The value set for the **BackwardForecast** is used to determine the past trends.
 
@@ -252,9 +252,9 @@ The value set for the **BackwardForecast** is used to determine the past trends.
 ![](Trendlines_images/Trendlines_img10.png)
 
 
-## Trendlines Legend
+## Trendlines legend
 
-To display the legend item for trendline, use the **Name** property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
+To display the legend item for trendline, use the **Name** property. You can interact with the trendline legends similar to the series legends, i.e. show/hide trendlines on legend click.  
 
 {% highlight cshtml %}
 
