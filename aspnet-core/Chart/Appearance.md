@@ -16,7 +16,7 @@ The chart displays different series in different colors, by default. You can cus
 {% highlight cshtml %}
 
     @{
-        List<string> palatte = new List<string> { "grey", "skyblue", "yellow" };
+        List<string> palette = new List<string> { "grey", "skyblue", "yellow" };
     }
     <ej-chart id="container" palette="palatte">
     </ej-chart>
