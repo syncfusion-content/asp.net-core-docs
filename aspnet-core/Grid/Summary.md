@@ -9,7 +9,7 @@ documentation: ug
 
 # Summary 
 
-Summary rows visibility can be controlled by the`show-summary` property and it can be added to grid by using the `e-summary-rows` array property. The following code example describes the above behavior.
+The summary rows visibility can be controlled by the`show-summary` property and it can be added to Grid by using the `e-summary-rows` array property. The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
