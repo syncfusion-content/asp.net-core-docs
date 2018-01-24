@@ -40,7 +40,7 @@ The Grid within grid is used to define the model properties that has to be appli
 {% endhighlight  %}
 {% highlight c# %}
 
-public partial class gridController : Controller
+public partial class GridController : Controller
     {
         private NORTHWNDContext _context;
 
