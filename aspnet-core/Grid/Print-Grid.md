@@ -78,7 +78,7 @@ By default, the grid can be print from toolbar. To print from external button ac
             showRoundedCorner: true,
             size: "mini",
             click: function () {
-            $("#Printgrid").ejGrid("print");
+            $("#PrintGrid").ejGrid("print");
         }
      });
     </script>
