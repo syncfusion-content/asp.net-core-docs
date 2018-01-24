@@ -27,7 +27,7 @@ The following code example describes the previous behavior.
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="grid" datasource="ViewBag.datasource">
+<ej-grid id="Grid" datasource="ViewBag.datasource">
     <e-columns>
         <e-column field="FirstName" header-text="First Name" text-align="Left" ></e-column>
         <e-column field="LastName" header-text="Last Name" text-align="Left"></e-column>
@@ -45,7 +45,7 @@ namespace samplebrowser.Controllers.grid
         public string Email { get; set; }
     }
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
     {
         // GET: /<controller>/
         public ActionResult Databinding()
@@ -77,7 +77,7 @@ The following code example describes the previous behavior.
 {% tabs %} 
 {% highlight razor %}
         
-<ej-grid id="grid" datasource="ViewBag.datasource">
+<ej-grid id="Grid" datasource="ViewBag.datasource">
         <e-columns>
             <e-column field="FirstName" header-text="First Name" text-align="Left"></e-column>
             <e-column field="LastName" header-text="Last Name" text-align="Left"></e-column>
@@ -89,7 +89,7 @@ The following code example describes the previous behavior.
 {% endhighlight  %}
 {% highlight c# %} 
        
-        namespace grid.Controllers
+        namespace Grid.Controllers
         {    
           public class HomeController : Controller
            {        
@@ -123,7 +123,7 @@ The following code example describes the previous behavior.
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="Flatgrid" datasource="ViewBag.dataSource" allow-paging="true">
+<ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -157,7 +157,7 @@ The following code example describes the previous behavior.
 {% tabs %} 
 {% highlight razor %}
     
-     <ej-grid id="Flatgrid" datasource="ViewBag.dataSource" allow-paging="true">
+     <ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
     <e-datamanager url="/api/Orders" adaptor="WebApiAdaptor"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -170,12 +170,12 @@ The following code example describes the previous behavior.
 {% endhighlight  %}
 {% highlight c# %} 
     
-        public partial class gridController : Controller
+        public partial class GridController : Controller
         {
             // GET: /<controller>/
             private NORTHWNDContext _context;
 
-            public gridController(NORTHWNDContext context)
+            public GridController(NORTHWNDContext context)
             {
                 _context = context;
             }
@@ -208,7 +208,7 @@ The following code example describes the previous behavior.
 {% tabs %}  
 {% highlight razor %}
 
-<ej-grid id="grid" allow-paging="true">
+<ej-grid id="Grid" allow-paging="true">
     <e-datamanager table="#gridTable"></e-datamanager>
     <e-columns>
         <e-column field="Laptop" header-text="Laptop" text-align="Left"></e-column>
@@ -297,7 +297,7 @@ The following code example describes the previous behavior.
  {% tabs %}  
  {% highlight razor %} 
 
-<ej-grid id="Flatgrid" allow-paging="true">
+<ej-grid id="FlatGrid" allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -357,7 +357,7 @@ The following code example describes the previous behavior.
 {% tabs %}  
 {% highlight razor %} 
    
-<ej-grid id="grid"  allow-paging="true">
+<ej-grid id="Grid"  allow-paging="true">
     <e-datamanager url="DataSource" enable-caching="true" caching-page-size="4" time-till-expiration="120000" adaptor="UrlAdaptor"></e-datamanager>
     <e-columns>
         <e-column field="OrderID" header-text="Order ID"></e-column>
@@ -417,7 +417,7 @@ The following code example describes the previous behavior.
     str = new List<Syncfusion.JavaScript.Models.KeyValue>();
     str.Add(new Syncfusion.JavaScript.Models.KeyValue() {Key ="Syncfusion", Value = false });
 
-                <ej-grid id="grid" allow-paging="true">
+                <ej-grid id="Grid" allow-paging="true">
                 <e-datamanager url="DataSource" adaptor="UrlAdaptor" headers="@(str)"></e-datamanager>
                 <e-columns>
                     <e-column field="OrderID" header-text="Order ID"></e-column>
@@ -461,7 +461,7 @@ The following code example describes the previous behavior.
 {% tabs %}  
 {% highlight razor %} 
 
-    <ej-grid id="grid" allow-paging="true" action-failure="OnActionFailure">
+    <ej-grid id="Grid" allow-paging="true" action-failure="OnActionFailure">
         <e-datamanager url="DataSource" adaptor="UrlAdaptor"></e-datamanager>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
