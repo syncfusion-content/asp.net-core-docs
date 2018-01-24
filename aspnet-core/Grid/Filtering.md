@@ -259,7 +259,7 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
          {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
@@ -424,7 +424,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-filter-settings filter-type="FilterBar"/>
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
