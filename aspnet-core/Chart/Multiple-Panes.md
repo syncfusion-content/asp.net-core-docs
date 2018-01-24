@@ -9,17 +9,17 @@ documentation: ug
 
 # Multiple panes
 
-Chart area can be divided into multiple panes using the **RowDefinitions** and **ColumnDefinitions** properties.
+Chart area can be divided into multiple panes by using the **RowDefinitions** and **ColumnDefinitions** properties.
 
-### Row Definitions
+### Row definitions
 
-To split the chart area vertically into a number of rows, use RowDefinitions of the chart. 
+To split the chart area vertically into a number of rows, use **RowDefinitions** property of the chart. 
 
-* You can allocate space for each row by using the **Unit** option that determines whether the chart area should be split by *percentage* or *pixels* for the given **RowHeight** value of the RowDefinitions.
+* You can allocate space for each row by using the **Unit** option that determines whether the chart area should be split by **percentage** or **pixels** for the given **RowHeight** value of the row definitions.
  
-* To associate a vertical axis to a row, specify the RowDefinitions **Index** value to the RowIndex property of the chart axis.
+* To associate a vertical axis to a row, specify the RowDefinitions' **Index** value to the **RowIndex** property of the chart axis.
 
-* To customize each row’s horizontal line, use LineColor and LineWidth property.
+* To customize each row’s horizontal line, use **LineColor** and **LineWidth** properties.
 
 {% highlight cshtml %}
 
@@ -41,9 +41,9 @@ To split the chart area vertically into a number of rows, use RowDefinitions of 
 ![](Multiple-Panes_images/Multiple-Panes_img1.png)
 
 
-**Row Span**
+**Row span**
 
-For spanning the vertical axis along multiple panes vertically, you can use **RowSpan** property of axis. 
+For spanning the vertical axis along multiple panes vertically, use **RowSpan** property of axis. 
 
 {% highlight cshtml %}
 
@@ -66,13 +66,13 @@ For spanning the vertical axis along multiple panes vertically, you can use **Ro
 
 ![](Multiple-Panes_images/Multiple-Panes_img2.png)
 
-## Column Definitions
+## Column definitions
 
-To split the chart area horizontally into a number of columns, use ColumnDefinitions of the chart.
+To split the chart area horizontally into a number of columns, use **ColumnDefinitions** property of the chart.
 
-* You can allocate space for each column by using the **Unit** option that determines whether the chart area should be split by *percentage* or *pixels* for the given **ColumnWidth** value of the ColumnDefinitions.
+* You can allocate space for each column by using the **Unit** option that determines whether the chart area should be split by **percentage** or **pixels** for the given **ColumnWidth** value of the column definitions.
  
-* To associate a horizontal axis to a column, specify the ColumnDefinitions **Index** value to the **ColumnIndex** property of the chart axis.
+* To associate a horizontal axis to a column, specify the ColumnDefinitions' **Index** value to the **ColumnIndex** property of the chart axis.
  
 {% highlight cshtml %}
 
@@ -97,9 +97,9 @@ To split the chart area horizontally into a number of columns, use ColumnDefinit
 ![](Multiple-Panes_images/Multiple-Panes_img3.png)
 
 
-**Column Span**
+**Column span**
 
-For spanning the horizontal axis along multiple panes horizontally, you can use **ColumnSpan** property of axis. 
+For spanning the horizontal axis along multiple panes horizontally, use **ColumnSpan** property of axis. 
 
 {% highlight cshtml %}
 

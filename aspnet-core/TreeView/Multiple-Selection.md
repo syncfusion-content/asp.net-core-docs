@@ -9,9 +9,9 @@ documentation: ug
 
 # Multiple Selection
 
-TreeView supports to select the multiple nodes by specifying [allowMultiSelection](http://help.syncfusion.com/js/api/ejtreeview#members:allowmultiselection) as true. It allows you to select more than one nodes in TreeView.
+The tree view supports to select the multiple nodes by specifying the [allowMultiSelection](http://help.syncfusion.com/js/api/ejtreeview#members:allowmultiselection) as true. It allows you to select more than one nodes in the tree view.
 
-In the controller page, create a data list that contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
 
 {% highlight c# %}
 
@@ -46,7 +46,7 @@ In the controller page, create a data list that contains the details about tree 
 
 {% endhighlight %}
 
-In the view page, add the below code and map the properties defined in to the corresponding fields in data source and specify the **AllowMultiSelection** property.
+In the view page, add the following code and map the properties defined to the corresponding fields in data source and specify the **AllowMultiSelection** property.
 
 {% highlight CSHTML %}
 
@@ -54,15 +54,15 @@ In the view page, add the below code and map the properties defined in to the co
 	
 {% endhighlight %}
 
-By running the above code, output will be below.
+By running the previous code, you will get the output like the following:
 ![](Fullrowselection_images/multiselect.png)
 
 
-## Select Nodes
+## Select nodes
 
-To select more than one nodes of TreeView, you can use [selectedNodes](http://help.syncfusion.com/js/api/ejtreeview#members:selectednodes) property. It will select the TreeView nodes from the given indexes.
+To select more than one nodes of tree view, use the [selectedNodes](http://help.syncfusion.com/js/api/ejtreeview#members:selectednodes) property. It will select the tree view nodes from the given indexes.
 
-In the view page, add the below code and map the properties defined in to the corresponding fields in data source and we you can select the specific nodes in TreeView by using **selectedNodes** property.
+In the view page, add the following code and map the properties defined to the corresponding fields in data source and you can select the specific nodes in tree view by using the **selectedNodes** property.
 
 {% highlight CSHTML %}
 
@@ -81,11 +81,11 @@ In the view page, add the below code and map the properties defined in to the co
 	
 {% endhighlight %}
 
-## Get Selected Nodes
+## Get selected nodes
 
-To get the selected Nodes of TreeView, you can use [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of TreeView selected nodes.
+To get the selected nodes of tree view, use the [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of tree view selected nodes.
 
-In the view page, add the below code and map the properties defined in to the corresponding fields in data source and we you can get selected nodes from TreeView by using **getSelectedNodes** method.
+In the view page, add the following code and map the properties defined to the corresponding fields in data source and you can get selected nodes from the tree view by using the **getSelectedNodes** method.
 
 {% highlight CSHTML %}
 

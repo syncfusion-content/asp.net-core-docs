@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Dimensions
 
-You can set the size of the chart directly on the chart or to the container of the chart. When you do not specify the size, it takes 450px as the height and window size as its width, by default. 
+You can set size for the chart directly on the chart or container of the chart. If you do not specify the size, it takes 450 pixels as the height and window size as its width, by default. 
 
 ## Set size for the container
 
@@ -41,10 +41,9 @@ You can also set the chart dimension by using the **Size** property of the chart
 
 ![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
 
-
 ## Setting size relative to the container size
 
-You can specify the chart size in percentage by using the Size property. The chart gets its dimension with respect to its container.
+You can specify the chart size in percentage by using the **Size** property. The chart gets its dimension with respect to its container.
 
 {% highlight cshtml %}
 

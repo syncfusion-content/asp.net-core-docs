@@ -9,15 +9,15 @@ documentation: ug
 
 # Rendering Modes
 
-Chart uses following three rendering technologies
+Chart supports following three rendering technologies:
 
    * VML
    * SVG
-   * HTML5 Canvas
+   * HTML5 canvas
 
 ## VML
 
-VML is used to render chart in IE lower versions such as IE7 and IE8. VML is used by default in these two browsers, as SVG and Canvas are not supported in these browsers.
+VML is used to render chart in lower versions of Internet Explorer such as Internet Explorer 7 and Internet Explorer 8. In these two browsers, SVG and Canvas are not supported, and VML is used by default.
 
 **Limitations:**
 
@@ -28,16 +28,16 @@ VML is used to render chart in IE lower versions such as IE7 and IE8. VML is use
 
 ## SVG
 
-SVG is used to render Chart by default for all browsers other than IE7 and IE8.
+SVG is used to render chart by default for all browsers except Internet Explorer 7 and Internet Explorer 8.
 
 ## Canvas
 
-You can switch between SVG and Canvas rendering by using the **EnableCanvasRendering** option. The canvas mode rendering is used in the following scenarios,
+You can switch between SVG and canvas rendering by using **EnableCanvasRendering** option. The canvas rendering is used in the following scenarios:
 
 * Plotting large number of data points.
 * Performing high frequency live updates.
  
-The following code example shows how to enable HTML5 Canvas rendering in chart.
+The following code example illustrates how to enable HTML5 canvas rendering in chart.
 
 {% highlight cshtml %}
 

@@ -10,9 +10,9 @@ documentation: ug
 
 # Drag and Drop Multiple Nodes
 
-TreeView supports to drag and drop multiple nodes by specifying [allowMultiSelection](http://help.syncfusion.com/js/api/ejtreeview#members:allowmultiselection) as true along with [allowDragAndDrop](https://help.syncfusion.com/js/api/ejtreeview#members:allowdraganddrop) as true. It allows you to drag and drop multiple nodes in TreeView.
+The tree view supports to drag and drop multiple nodes by specifying the [allowMultiSelection](http://help.syncfusion.com/js/api/ejtreeview#members:allowmultiselection) as true along with the [allowDragAndDrop](https://help.syncfusion.com/js/api/ejtreeview#members:allowdraganddrop) as true. It allows you to drag and drop multiple nodes in the tree view.
 
-In the controller page, create a data list that contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
 
 {% highlight c# %}
 
@@ -57,7 +57,7 @@ In the controller page, create a data list that contains the details about tree 
 
 {% endhighlight %}
 
-In the view page, add the below code and map the properties defined in to the corresponding fields in data source and specify the multiple drag and drop settings.
+In the view page, add the following code and map the properties defined to the corresponding fields in data source, and specify the multiple drag and drop settings.
 
 {% highlight CSHTML %}
 
