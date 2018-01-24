@@ -3,13 +3,13 @@ layout: post
 title: Columns with grid widget for Syncfusion Essential ASP.NET Core
 description: columns
 platform: ASP.NET Core
-control: grid
+control: Grid
 documentation: ug
 ---
 
 # Columns
 
-The column definitions are used as the DataSource schema in the grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
+The column definitions are used as the DataSource schema in the Grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
 
 N> 1. The column with `field` which are not in the datasource, then the column values will be displayed as empty.
 N> 2. If the `field` name contains "dot" then it is considered as complex binding.
@@ -532,7 +532,7 @@ The following output is displayed as a result of the previous code example.
 ![](columns_images/columns_img11.png)
 
 
-## Unbound column
+## Unbound Column
 
 You can define the unbound columns in grid by not defining `field` property for that particular. Value for this columns can be populated either manually using `query-cell-info` event or by using `column-template`.
 
