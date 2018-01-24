@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Scrolling
 
-Scrolling can be enabled by setting the `allow-scrolling` as `true`. The height and width can be set to grid by using the properties `height` and `width` property of the `e-scroll-settings`. 
+Scrolling can be enabled by setting the `allow-scrolling` as `true`. The height and width can be set to Grid by using the properties `height` and `width` property of the `e-scroll-settings`. 
 
  N> If `width` and `height` is not defined in the `e-scroll-settings` property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
