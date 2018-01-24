@@ -223,7 +223,7 @@ The following code example describes the previous behavior.
 {% endhighlight  %}
 {% highlight js %}
     
-      <script id="gridTable" type="text/template">
+      <script id="GridTable" type="text/template">
        <table>
           <thead>
                <tr>
@@ -326,7 +326,7 @@ The following code example describes the previous behavior.
 {% tabs %}  
 {% highlight razor %} 
 
-<ej-grid id="Flatgrid"  allow-paging="true">
+<ej-grid id="FlatGrid"  allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders" offline="true"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
