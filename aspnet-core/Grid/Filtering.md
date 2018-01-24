@@ -10,7 +10,7 @@ documentation: ug
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allow-filtering` property as `true`.   
 
-The grid supports three types of filter, they are as follows.
+The Grid supports three types of filter, they are as follows.
 
 1. Filter Bar
 2. Menu 
@@ -33,7 +33,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Customer ID"></e-column>
@@ -48,9 +48,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -79,7 +79,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-filter-settings filter-type="Menu"/>
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
@@ -95,9 +95,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -136,7 +136,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-filter-settings filter-type="Excel"/>
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
@@ -152,9 +152,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -191,7 +191,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-filter-settings filter-type="Excel" max-filter-choices="4" />
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
@@ -207,9 +207,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -243,7 +243,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-filter-settings filter-type="Excel" enable-case-sensitivity="true"/>
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
@@ -261,7 +261,7 @@ The following code example describes the previous behavior.
          {
             public class gridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -440,9 +440,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -475,7 +475,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-filtering="true" datasource="ViewBag.DataSource">
         <e-filter-settings show-filter-bar-status="true" />
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
@@ -491,9 +491,9 @@ The following code example describes the previous behavior.
 
        namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -661,7 +661,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 
 {% highlight razor %}
- <ej-grid  id="Flatgrid" datasource=ViewBag.datasource allow-paging="true" allow-filtering="true">
+ <ej-grid  id="FlatGrid" datasource=ViewBag.datasource allow-paging="true" allow-filtering="true">
      <e-columns>
         <e-column field="OrderID" header-text="Order ID" />
         <e-column field="CustomerID" header-text="Customer ID">
@@ -682,7 +682,7 @@ The following code example describes the previous behavior.
         return "<input>"
     }
     function autoComplete_write(args) {
-        var gridObj = $('#Flatgrid ').data("ejgrid");
+        var gridObj = $('#FlatGrid ').data("ejGrid");
         var data = ej.DataManager(gridObj.model.dataSource).executeLocal(new ej.Query().select("CustomerID"));
         args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });
     }
@@ -709,9 +709,9 @@ The following code example describes the previous behavior.
 
         namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
