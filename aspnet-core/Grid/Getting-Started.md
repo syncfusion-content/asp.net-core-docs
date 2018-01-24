@@ -63,7 +63,7 @@ In `e-columns` definition, the `text-align` property allows you to align text of
 {% tabs %}
 {% highlight cshtml %}
 
-<ej-grid id="Flatgrid" datasource="ViewBag.DataSource">
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource">
      <e-columns>
         <e-column field="OrderID" header-text="Order ID" text-align="Right" width="70"></e-column>
         <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
@@ -79,9 +79,9 @@ In `e-columns` definition, the `text-align` property allows you to align text of
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.Take(12).ToList();
                    ViewBag.DataSource = DataSource;
@@ -104,7 +104,7 @@ The paging feature in grid offers complete navigation support to easily switch
 {% tabs %}
 {% highlight cshtml %}
  
- <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+ <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
      <e-columns>
         <e-column field="OrderID" header-text="OrderID"></e-column>
         <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
@@ -120,9 +120,9 @@ The paging feature in grid offers complete navigation support to easily switch
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -140,14 +140,14 @@ The following output is displayed as a result of the previous code example.
 
 ## Enable filtering
 
-The Filtering feature in grid is used to facilitate the extraction of a subset of records that meet certain criteria. You can apply filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
+The Filtering feature in grid is used to facilitate the extraction of a subset of records that meet certain criteria. You can apply filters to one or more columns. This feature is used to filter particular sales data, in order to review the details.
 
-To enable filtering, use the `allow-filtering` property of grid is as follows.
+To enable filtering, use the `allow-filtering` property of grid is as follows.
 
 {% tabs %}
 {% highlight cshtml %}
 
- <ej-grid id="Flatgrid" datasource="ViewBag.DataSource" allow-paging="true" allow-filtering="true">
+ <ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-filtering="true">
      <e-columns>
         <e-column field="OrderID" header-text="OrderID"></e-column>
         <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
@@ -163,9 +163,9 @@ To enable filtering, use the `allow-filtering` property of grid is as follow
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -189,7 +189,7 @@ To enable grouping, use the `allow-grouping` property of grid is as follows.
 
 {% tabs %}
 {% highlight cshtml %}
- <ej-grid id="Flatgrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true">
+ <ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true">
      <e-group-settings grouped-columns="ShipCountry" />
      <e-columns>
         <e-column field="OrderID" header-text="OrderID" ></e-column>
@@ -205,9 +205,9 @@ To enable grouping, use the `allow-grouping` property of grid is as follows.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -230,7 +230,7 @@ Summaries can be added by setting the `show-summary` to `true` and adding requir
 {% tabs %}
 {% highlight cshtml %}
  
-<ej-grid id="Flatgrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true" show-summary="true">
+<ej-grid id="FlatGrid" datasource="ViewBag.DataSource" allow-paging="true" allow-grouping="true" show-summary="true">
          <e-group-settings grouped-columns="ShipCity" />
          <e-summary-rows>
            <ej-summary-row title="Sum">
@@ -253,9 +253,9 @@ Summaries can be added by setting the `show-summary` to `true` and adding requir
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
