@@ -9,7 +9,7 @@ documentation: ug
 
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in grid. It can be shown by setting the `show-stacked-header` as `true` and by defining the `stacked-header-rows`.
+The stacked headers helps you to group the logical columns in Grid. It can be shown by setting the `show-stacked-header` as `true` and by defining the `stacked-header-rows`.
 
 ## Adding stacked header columns
 
