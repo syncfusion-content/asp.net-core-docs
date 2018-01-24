@@ -44,7 +44,7 @@ public partial class gridController : Controller
     {
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -64,7 +64,7 @@ public partial class gridController : Controller
 
 {% endtabs %} 
 
-![](Hierarchy-grid_images/Hierarchy-grid_img1.png)
+![](Hierarchy-Grid_images/Hierarchy-Grid_img1.png)
 
 
 ## Expand or collapse all child's
