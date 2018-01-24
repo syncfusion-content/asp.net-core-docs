@@ -369,7 +369,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" width=@("10%")></e-column>
             <e-column field="EmployeeID" width=@("15%")></e-column>
@@ -384,7 +384,7 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
@@ -946,7 +946,7 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
        {
-         public class gridController : Controller
+         public class GridController : Controller
           { 
             public ActionResult GridFeatures()
              {
