@@ -58,7 +58,7 @@ The Exporting provides support to export grid data into excel, word and PDF file
             return exp.Export(gridProp, DataSource, excelExp);
         }
 
-        public ActionResult ExportToWord(string gridModel)
+        public ActionResult ExportToWord(string GridModel)
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
