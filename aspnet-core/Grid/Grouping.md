@@ -3,12 +3,12 @@ layout: post
 title: Grouping with grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable grouping and its functionalities
 platform: ASP.NET Core
-control: grid
+control: Grid
 documentation: ug
 ---
 # Grouping
 
-The grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set the `allow-grouping` property as `true`.
+The Grid control has options to group the records based on the required column. When grouping is applied, grouped records are organized into a hierarchical structure to facilitate easier expand and collapse of records. To enable grouping, set the `allow-grouping` property as `true`.
 
 Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
 
@@ -17,7 +17,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -32,9 +32,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -59,7 +59,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "ShipCountry" } })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "ShipCountry" } })" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -74,9 +74,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -102,7 +102,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "ShipCountry","CustomerID"} })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "ShipCountry","CustomerID"} })" datasource="ViewBag.DataSource">
        <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -117,9 +117,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -145,7 +145,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { ShowToggleButton=true })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { ShowToggleButton=true })" datasource="ViewBag.DataSource">
        <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -160,9 +160,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -188,7 +188,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { ShowUngroupButton=false })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { ShowUngroupButton=false })" datasource="ViewBag.DataSource">
        <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -203,9 +203,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -230,7 +230,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { ShowGroupedColumn=false })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { ShowGroupedColumn=false })" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -245,9 +245,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -272,7 +272,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { EnableDropAreaAutoSizing=false })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { EnableDropAreaAutoSizing=false })" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -287,9 +287,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -314,7 +314,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "ShipCountry" }, ShowDropArea=false })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "ShipCountry" }, ShowDropArea=false })" datasource="ViewBag.DataSource">
        <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -329,9 +329,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
@@ -361,7 +361,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" allow-grouping="true" action-complete="complete" group-settings ="@(new GroupSettings { CaptionFormat="#template" })" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" allow-grouping="true" action-complete="complete" group-settings ="@(new GroupSettings { CaptionFormat="#template" })" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
@@ -376,9 +376,9 @@ The following code example describes the previous behavior.
 
       namespace MVCSampleBrowser.Controllers
           {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                    ViewBag.DataSource = DataSource;
