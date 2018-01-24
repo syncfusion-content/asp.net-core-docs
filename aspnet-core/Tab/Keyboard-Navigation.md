@@ -21,27 +21,27 @@ Behavior</th></tr>
 <tr>
 <td>
 Up</td><td>
-Selectes previous item.</td></tr>
+Selects previous item.</td></tr>
 <tr>
 <td>
 Right</td><td>
-Selectes previous item.</td></tr>
+Selects previous item.</td></tr>
 <tr>
 <td>
 Down</td><td>
-Selectes next item.</td></tr>
+Selects next item.</td></tr>
 <tr>
 <td>
 Left</td><td>
-Selectes next item.</td></tr>
+Selects next item.</td></tr>
 <tr>
 <td>
 Home</td><td>
-Selectes first item.</td></tr>
+Selects first item.</td></tr>
 <tr>
 <td>
 End</td><td>
-Selectes last item.</td></tr>
+Selects last item.</td></tr>
 </table>
 The following code example is used to render the tab element with keyboard navigation.
 
