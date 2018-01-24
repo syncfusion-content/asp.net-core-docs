@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns
 
-The dclumn definitions are used as the DataSource schema in the grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
+The column definitions are used as the DataSource schema in the grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
 
 N> 1. The column with `field` which are not in the datasource, then the column values will be displayed as empty.
 N> 2. If the `field` name contains "dot" then it is considered as complex binding.
@@ -22,7 +22,7 @@ The columns are automatically generated when `columns` declaration is empty or u
 {% tabs %}
 {% highlight razor %}
 
-  <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+  <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
   </ej-grid>
                    
 {% endhighlight  %}
@@ -30,9 +30,9 @@ The columns are automatically generated when `columns` declaration is empty or u
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -57,7 +57,7 @@ Using the `data-bound` event, you can set `is-primary-key` value as `true` by tw
 {% tabs %}
 {% highlight razor %}
 
-  <ej-grid id="Flatgrid" allow-paging="true" data-bound="dataBound" datasource="ViewBag.DataSource">
+  <ej-grid id="FlatGrid" allow-paging="true" data-bound="dataBound" datasource="ViewBag.DataSource">
   <e-edit-settings allow-editing="true"></e-edit-settings>
   </ej-grid>
   <script type="text/javascript">
@@ -75,9 +75,9 @@ Using the `data-bound` event, you can set `is-primary-key` value as `true` by tw
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -93,7 +93,7 @@ Using the `data-bound` event, you can set `is-primary-key` value as `true` by tw
 {% tabs %}
 {% highlight razor %}
 
-  <ej-grid id="Flatgrid" allow-paging="true" data-bound="dataBound" datasource="ViewBag.DataSource">
+  <ej-grid id="FlatGrid" allow-paging="true" data-bound="dataBound" datasource="ViewBag.DataSource">
   <e-edit-settings allow-editing="true"></e-edit-settings>
   </ej-grid>
    <script type="text/javascript">
@@ -109,9 +109,9 @@ Using the `data-bound` event, you can set `is-primary-key` value as `true` by tw
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -136,7 +136,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID"></e-column>
             <e-column field="EmployeeID" header-text="Emp ID"></e-column>
@@ -151,9 +151,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -185,7 +185,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID" ></e-column>
             <e-column field="EmployeeID" header-text="Emp ID" header-text-align="Right"></e-column>
@@ -200,9 +200,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -231,7 +231,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"  header-text="Order ID" ></e-column>
             <e-column field="EmployeeID" header-template-id="#empTemplate"></e-column>
@@ -246,9 +246,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -284,7 +284,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" text-align="Right"></e-column>
             <e-column field="EmployeeID" text-align="Right"></e-column>
@@ -299,9 +299,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -327,7 +327,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"></e-column>
             <e-column field="EmployeeID"></e-column>
@@ -344,7 +344,7 @@ The following code example describes the previous behavior.
         {
             public class gridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -386,7 +386,7 @@ The following code example describes the previous behavior.
         {
             public class gridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -414,7 +414,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-resize-to-fit="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-resize-to-fit="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID" width="100"></e-column>
             <e-column field="EmployeeID"></e-column>
@@ -429,9 +429,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -457,7 +457,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-reordering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-reordering="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"></e-column>
             <e-column field="EmployeeID"></e-column>
@@ -472,9 +472,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -498,7 +498,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-reordering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-reordering="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="EmployeeID"></e-column>
             <e-column field="OrderID" visible="false"></e-column>
@@ -514,9 +514,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -543,7 +543,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
        <e-edit-settings allow-deleting="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
@@ -559,9 +559,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -593,7 +593,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" allow-resizing="true" allow-sorting="true" allow-grouping="true" allow-filtering="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" allow-resizing="true" allow-sorting="true" allow-grouping="true" allow-filtering="true" datasource="ViewBag.DataSource">
        <e-edit-settings allow-editing="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
@@ -609,9 +609,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -631,7 +631,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
        <e-edit-settings allow-editing="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
@@ -647,9 +647,9 @@ The following code example describes the previous behavior.
       
       namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -683,7 +683,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
        <e-edit-settings allow-editing="true" allow-deleting="true" allow-adding="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
@@ -714,9 +714,9 @@ The following code example describes the previous behavior.
       
       namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -743,7 +743,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-        @(Html.EJ().grid<Object>("Flatgrid")
+        @(Html.EJ().Grid<Object>("FlatGrid")
                 .Datasource((IEnumerable<object>)ViewBag.DataSource)
                 .AllowPaging()
                 .Columns(col =>
@@ -769,9 +769,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
       {
-        public class gridController : Controller
+        public class GridController : Controller
          { 
-           public ActionResult gridFeatures()
+           public ActionResult GridFeatures()
              {
                var DataSource = new NorthwindDataContext().OrdersView.ToList();
                ViewBag.DataSource = DataSource;
@@ -785,7 +785,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
          <e-columns>
             <e-column field="EmployeeID"></e-column>
             <e-column header-Text="Employee Details">
@@ -803,9 +803,9 @@ The following code example describes the previous behavior.
       
       namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -817,7 +817,7 @@ The following code example describes the previous behavior.
 {% highlight js %}
             <script type="text/javascript">
                function onClick(args) {
-                 var grid = $("#Flatgrid").ejgrid("instance");
+                 var grid = $("#FlatGrid").ejGrid("instance");
                  var index = this.element.closest("tr").index();
                  var record = grid.getCurrentViewData()[index];
                  alert("Record Details: " + JSON.stringify(record));
@@ -840,7 +840,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" show-column-chooser="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" show-column-chooser="true" datasource="ViewBag.DataSource">
        <e-edit-settings allow-editing="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
@@ -856,9 +856,9 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -888,7 +888,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="@ViewBag.DataSource1">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="@ViewBag.DataSource1">
        <e-edit-settings allow-editing="true" allow-adding="true" allow-editing="true"/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
@@ -904,9 +904,9 @@ The following code example describes the previous behavior.
 
        namespace MVCSampleBrowser.Controllers
         {
-         public class gridController : Controller
+         public class GridController : Controller
           { 
-           public ActionResult gridFeatures()
+           public ActionResult GridFeatures()
              {
                 var DataSource1 = new NorthwindDataContext().OrdersViews.ToList();
                 ViewBag.DataSource1 = DataSource1;
@@ -932,7 +932,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"></e-column>
             <e-column field="CustomerID" css-class="customcss"></e-column>
@@ -948,7 +948,7 @@ The following code example describes the previous behavior.
        {
          public class gridController : Controller
           { 
-            public ActionResult gridFeatures()
+            public ActionResult GridFeatures()
              {
                 var DataSource1 = new NorthwindDataContext().OrdersViews.ToList();
                 ViewBag.DataSource = DataSource1;
@@ -990,7 +990,7 @@ The following code example describes the previous behavior.
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"></e-column>
             <e-column field="CustomerID" type="string"></e-column>
@@ -1005,9 +1005,9 @@ The following code example describes the previous behavior.
 
        namespace MVCSampleBrowser.Controllers
         {
-          public class gridController : Controller
+          public class GridController : Controller
            { 
-             public ActionResult gridFeatures()
+             public ActionResult GridFeatures()
               {
                 var DataSource1 = new NorthwindDataContext().OrdersViews.ToList();
                 ViewBag.DataSource = DataSource1;
@@ -1032,7 +1032,7 @@ You can set the grid's columns layout based on either grid width or its columns 
 {% tabs %}
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource" column-layout="Fixed">
+    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource" column-layout="Fixed">
         <e-columns>
             <e-column field="OrderID" width="80"></e-column>
             <e-column field="EmployeeID" width="80"></e-column>
@@ -1048,9 +1048,9 @@ You can set the grid's columns layout based on either grid width or its columns 
 
        namespace MVCSampleBrowser.Controllers
         {
-          public class gridController : Controller
+          public class GridController : Controller
            { 
-             public ActionResult gridFeatures()
+             public ActionResult GridFeatures()
               {
                 var DataSource1 = new NorthwindDataContext().OrdersViews.ToList();
                 ViewBag.DataSource = DataSource1;
