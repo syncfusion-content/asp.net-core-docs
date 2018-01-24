@@ -402,7 +402,7 @@ The following code example describes the previous behavior.
                 });
              }
              function btnClick(args) {
-                 var gridObj = $("#Flatgrid").data("ejgrid");
+                 var gridObj = $("#FlatGrid").data("ejGrid");
                  gridObj.expandCollapse(this.element.parent().prev());
                  $("#btn").ejButton("model.text", args.model.text == "Collapse" ? "Expand" : "Collapse");
              }
