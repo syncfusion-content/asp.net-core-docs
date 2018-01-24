@@ -63,7 +63,7 @@ By default, the grid can be print from toolbar. To print from external button ac
 {% highlight razor %}
    
    <button id="print">Print</button>
-   <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
