@@ -573,7 +573,7 @@ The following code example describes the previous behavior.
 {% highlight js %}
     <script type="text/javascript">
         function clk(e) {
-            var obj = $("#Flatgrid").data("ejgrid");
+            var obj = $("#FlatGrid").data("ejGrid");
             obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
         }
     </script>
