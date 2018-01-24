@@ -119,7 +119,7 @@ By default, the grid will print all records. To print current page, you need to 
 {% highlight razor %}
 
    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
-      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printgrid"}'/>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
        <e-page-settings print-mode="CurrentPage"></e-page-settings>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
