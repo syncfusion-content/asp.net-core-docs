@@ -7,19 +7,19 @@ control: Tab
 documentation: ug
 ---
 
-# Integration with other widgets
+# Integration with other Widgets
 
-You can provide more customization to the Tab with Rating control as content in it for describing the item rating value.
+You can provide more customization to the tab with rating control as a content in it for describing the item rating value.
 
-The Essential ASP.NET Core Rating control provide you an intuitive rating experience that allows you to select the number of stars that represents the rating.
+The Essential ASP.NET Core rating control provides you an intuitive rating experience that allows you to select the number of stars that represents the rating.
 
-The following code example explains you the Rating control creation. The input element is used to create the rating control. Render the input element as rating control using the input element id. 
+The following code example explains you the rating control creation. The input element is used to create the rating control. Render the input element as rating control using the input element id.
 
-1. Add the following code in your view page to render Tab with other widget (rating).
+1. Add the following code in your view page to render the tab with other widget (rating).
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with other widgets.
+// Add the following code example to the corresponding CSHTML page to render the tab with other widgets.
 
 <div style="width: 500px">
 
@@ -58,9 +58,9 @@ The following code example explains you the Rating control creation. The input e
 
 {% endhighlight %}
 
-To render the rating controls in the first Tab element refer the styles mentioned in the following code example. 
+To render the rating controls in the first tab element, refer to the styles mentioned in the following code example.
 
-1. Add the following styles to render Tab.
+1. Add the following styles to render the tab.
 
 {% highlight css %}
 
@@ -79,7 +79,7 @@ To render the rating controls in the first Tab element refer the styles mentione
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab content with rating control. 
+2. The following screenshot illustrates the tab content with rating control.
 
 ![](Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png)
 

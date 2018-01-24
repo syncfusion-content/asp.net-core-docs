@@ -9,15 +9,15 @@ documentation: ug
 
 # AJAX Content Load (Load on Demand)
 
-You can change the contents in sub Tab element periodically and you are provided with a support to change the contents without any problems. To achieve the content load, use the Load on Demand concept.
+You can change the contents in a sub tab element periodically and you are provided with a support to change the contents without any problems. To achieve the content load, use the Load on Demand concept.
 
-In Load On-Demand, the external HTML file with the necessary details is referred in URL section during Tab header declaration section. Also include “DataType”, “ContentType”, and “Async” in the script like the following example when rendering the control. When you click the Tab header, the AJAX automatically calls the content from the external files and displays in a Tab content section. 
+In Load on Demand, the external HTML file with the necessary details are referred in URL section during the tab header declaration. It also includes DataType, ContentType, and Async in the script like the following example on rendering the control. When you click the tab header, the AJAX automatically calls the content from the external files and display it in a tab content section.
 
-## Sub Tab with AJAX Content
+## Sub tab with AJAX content
 
-Each item has a variety of options and these options are also specified in the limited space. So you can choose the Tab control that is used within the root Tab to specify more details.
+Each item has a variety of options and these options are also specified in the limited space. So you can choose the tab control that is used within the root tab to specify more details.
 
-1. Add the following code in your view page to render sub Tab with AJAX content.
+1. Add the following code in your view page to render the sub tab with AJAX content.
 
 
 {% highlight CSHTML %}
@@ -134,7 +134,7 @@ Each item has a variety of options and these options are also specified in the l
 
    
 
-2. The file ‘cornSpinach.html’ content is as follows. 
+2. The file **cornSpinach.html** content is as follows:
    
  
 {% highlight CSHTML %}
@@ -170,7 +170,7 @@ Each item has a variety of options and these options are also specified in the l
 
 
 
-3. The file ‘chickenDelite.html’ content is as follows.
+3. The file **chickenDelite.html** content is as follows.
 
  {% highlight CSHTML %}
 
@@ -201,11 +201,11 @@ Each item has a variety of options and these options are also specified in the l
 {% endhighlight %}
 
    
-N> To render the Tab Control you can use either Razor or Tag helper code as given in the above code snippet.
+N> To render the tab Control, you can use either Razor or Tag helper code as given in the previous code snippet.
 
 
 
-The following screenshot illustrates the First Tab with the sub Tab control using Load on Demand. 
+The following screenshot illustrates the first Tab with the sub tab control using Load on Demand.
 
 ![](Ajax-Content-Load-Load-on-Demand_images/Ajax on load.JPG)
 
@@ -214,4 +214,4 @@ Tab section with sub Tab control using Load on Demand.
 
 
 
-N> You can also load content from another view page by providing the Url as name of required view page.For ex: url="../Home/Index".
+N> You can also load content from another view page by providing the Url as the name of required view page. For example: url="../Home/Index".
