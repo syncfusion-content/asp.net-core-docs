@@ -145,7 +145,7 @@ Please find the following table for default context menu items and its actions.
 {% tabs %}
 {% highlight RAZOR %}
 
-<ej-grid id="Flatgrid" allow-paging="true" allow-sorting="true" allow-grouping="true" datasource="ViewBag.DataSource">
+<ej-grid id="FlatGrid" allow-paging="true" allow-sorting="true" allow-grouping="true" datasource="ViewBag.DataSource">
     <e-edit-settings allow-adding="true" allow-editing="true" allow-deleting="true"></e-edit-settings>
     <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}' />
     <e-context-menu-settings enable-context-menu="true"></e-context-menu-settings>
@@ -162,12 +162,12 @@ Please find the following table for default context menu items and its actions.
 
 {% highlight c# %}
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
     {
 
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
