@@ -7,19 +7,19 @@ control: TreeView
 documentation: ug
 ---
 
-# Getting started	
+# Getting started
 
-This section explains briefly about how to create a TreeView in ASP.NET Core platform.
+This section briefly explains how to create a tree view in the ASP.NET Core platform.
 
-## Create your first TreeView in ASP.NET Core
+## Create your first tree view in ASP.NET Core
 
-Create an ASP.NET Core Project and add Syncfusion assembly packages, CSS and scripts with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation. After creating this project, you can create a TreeView in following ways.
+Create an ASP.NET Core project and add the Syncfusion assembly packages, CSS, and scripts with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation. After the project creation, create a tree view in the following ways.
 
-## TreeView using Helper element
+## Tree view using helper element
 
-You can create a tree using “Items” API of TreeView control. Here there is no necessary to use a data source for rendering TreeView. 
+Create a tree using the Items API of tree view control. Here, it is not necessary to use a data source for rendering tree view.
 
-In the view page, add TreeView helper as shown below. It will render the TreeView with specified items.
+In the view page, add the tree view helper as shown in the following. It will render the tree view with specified items.
     
   {% highlight CSHTML %}
 
@@ -32,33 +32,33 @@ In the view page, add TreeView helper as shown below. It will render the TreeVie
                                 <e-tree-view-child-item text="Item 1.1.1">
                                 </e-tree-view-child-item>
                             </e-tree-view-child-items>
-                        </e-tree-view-child-item>               
+                        </e-tree-view-child-item>
                     </e-tree-view-child-items>
                 </e-tree-view-item>
                 <e-tree-view-item text="Item 2">
                     <e-tree-view-child-items>
                         <e-tree-view-child-item text="Item 2.1"></e-tree-view-child-item>
-                        <e-tree-view-child-item text="Item 2.2"></e-tree-view-child-item>                
+                        <e-tree-view-child-item text="Item 2.2"></e-tree-view-child-item>
                     </e-tree-view-child-items>
                 </e-tree-view-item>
                 <e-tree-view-item text="Item 3">
                     <e-tree-view-child-items>
-                        <e-tree-view-child-item text="Item 3.1"></e-tree-view-child-item>               
+                        <e-tree-view-child-item text="Item 3.1"></e-tree-view-child-item>
                     </e-tree-view-child-items>
-                </e-tree-view-item>       
+                </e-tree-view-item>
             </e-tree-view-items>
         </ej-tree-view>
                 
-  {% endhighlight %}    
+  {% endhighlight %}
 
-By running the above code, output will like below image,
+By running the previous code, you will get output like the following image:
 ![](Getting_started_images/getting_started_img1.png)
 
-## Render TreeView using Razor Syntax   
+## Render tree view using razor syntax
 
-You can create a tree using “Items” API of TreeView control. Here there is no necessary to use a data source for rendering TreeView.
+Create a tree using the Items API of tree view control. Here, it is not necessary to use a data source for rendering tree view.
 
-In the view page, add TreeView as shown below. It will render the TreeView with specified items.
+In the view page, add the tree view as shown in the following. It will render the tree view with specified items.
 
 {% highlight CSHTML %}
 
@@ -133,18 +133,18 @@ In the view page, add TreeView as shown below. It will render the TreeView with 
             });
         }).Render();}
 
-{% endhighlight %}    
+{% endhighlight %}
 
-By running the above code, output will like below image,
+By running the previous code, you will get output like the following image:
 ![](Getting_started_images/getting_started_img2.png)
 
-## TreeView using Data Binding
+## Tree view using data binding
 
-Another way of creating TreeView is binding with the data source, you can bind local data source to create a TreeView. 
+Another way of creating tree view is by binding with the data source. You can bind a local data source to create a tree view.
 
-Render TreeView with local data source.
+Render the tree view with a local data source.
 
-In the model page, specify the TreeView node properties as shown below.
+In the model page, specify the tree view node properties as shown in the following:
     
     
 
@@ -161,7 +161,7 @@ In the model page, specify the TreeView node properties as shown below.
     
     
     
-In the controller page, create a data list which contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
     
     
     
@@ -187,7 +187,7 @@ In the controller page, create a data list which contains the details about tree
     
     
     
-Above data can be directly assigned to DataSource property and mapping data fields with respect to the mapper field in order to form TreeView.
+Previous data can be directly assigned to the DataSource property and you can map data fields with respect to the mapper field in order to form the tree view.
     
     
     
@@ -199,13 +199,13 @@ Above data can be directly assigned to DataSource property and mapping data fiel
     
   {% endhighlight %}
     
-By running the above code, result will like below image,
+By running the previous code, you will get results like the following image:
 ![](Getting_started_images/getting_started_img3.png)
 
 
-## Create Instance for TreeView
+## Create instance for tree view
 
-You can create an instance for existing TreeView in following ways. Once a reference has been established, you can use the [API’s](http://help.syncfusion.com/js/api/ejtreeview) of TreeView to control its behavior.
+Create an instance for an existing tree view in the following ways. Once a reference has been established, you can use the [API’s](http://help.syncfusion.com/js/api/ejtreeview) of tree view to control its behavior.
     
         
    {% highlight javascript %}
@@ -222,11 +222,11 @@ You can create an instance for existing TreeView in following ways. Once a refer
     
     
     
-N>**To configure the API settings after TreeView creation, please refer [API configuration](http://help.syncfusion.com/js/api-configuration), [Invoking Methods](http://help.syncfusion.com/js/invoking-methods)**.
+N>**To configure the API settings after tree view creation, please refer to the [API configuration](http://help.syncfusion.com/js/api-configuration), [Invoking Methods](http://help.syncfusion.com/js/invoking-methods)**.
  
-## TreeView events
+## Tree view events
 
-ASP.NET Core TreeView supports all the [events](http://help.syncfusion.com/js/api/ejtreeview#events) which is available in EJ TreeView. Refer the following code example to specify an event using Tag helper of TreeView.
+ASP.NET Core tree view supports all the [events](http://help.syncfusion.com/js/api/ejtreeview#events) available in EJ tree view. Refer to the following code example to specify an event using the tag helper of tree view.
     
    
    {% highlight CSHTML %}

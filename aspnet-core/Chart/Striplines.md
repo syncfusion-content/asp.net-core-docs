@@ -9,11 +9,11 @@ documentation: ug
 
 # Striplines
 
-EjChart supports horizontal and vertical striplines. 
+Chart supports horizontal and vertical striplines. 
 
 ## Horizontal Stripline
 
-You can create horizontal stripline by adding the **Stripline** in the *vertical axis* and set **Visible** option to *true*. Striplines are rendered in the specified **Start** to **End** range and you can add more than one stripline for an axis.
+You can create horizontal stripline by adding the **Stripline** in the vertical axis and setting **Visible** option to true. Striplines are rendered in the specified **Start** to **End** range, and you can add more than one stripline for an axis.
 
 
 {% highlight cshtml %}
@@ -32,7 +32,7 @@ You can create horizontal stripline by adding the **Stripline** in the *vertical
 
 ## Vertical Stripline
 
-You can create vertical stripline by adding the Stripline in the *horizontal axis* and set Visible option to *true*.  
+You can create vertical stripline by adding the **Stripline** in the horizontal axis and setting **Visible** option to true.  
 
 {% highlight cshtml %}
 
@@ -48,9 +48,9 @@ You can create vertical stripline by adding the Stripline in the *horizontal axi
 
 ![](Striplines_images/Striplines_img2.png)
 
-## Customize the Text
+## Customize the text
 
-To customize the stripLine text, use the **Text** and **Font** options. 
+To customize the text of the stripline, use **Text** and **Font** options. 
 
 {% highlight cshtml %}
 
@@ -71,9 +71,9 @@ To customize the stripLine text, use the **Text** and **Font** options.
 ![](Striplines_images/Striplines_img3.png)
 
 
-**Text Alignment**
+**Text alignment**
 
-Stripline text can be aligned by using the **TextAlignment** property.  
+Stripline's text can be aligned by using the **TextAlignment** property.  
 
 {% highlight cshtml %}
 
@@ -92,9 +92,9 @@ Stripline text can be aligned by using the **TextAlignment** property.
 
 ![](Striplines_images/Striplines_img4.png)
 
-## Customize the Stripline
+## Customize the stripline
 
-To customize the stripLine styles, use the *Color, Opacity, BorderWidth and BorderColor* properties. 
+To customize the styles of the stripline, use the **Color**, **Opacity**, **BorderWidth** and **BorderColor** properties. 
 
 {% highlight cshtml %}
 
@@ -116,7 +116,7 @@ To customize the stripLine styles, use the *Color, Opacity, BorderWidth and Bord
 
 ## Change the Z-order of the stripline
 
-Stripline **ZIndex** property is used to display the stripLine either behind or over the series.  
+Stripline's **ZIndex** property is used to display the stripline either behind or over the series.  
 
 {% highlight cshtml %}
 

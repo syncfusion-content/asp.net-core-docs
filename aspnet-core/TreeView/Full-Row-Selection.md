@@ -9,9 +9,9 @@ documentation: ug
 
 # Full Row Selection
 
-The TreeView control provides the option to highlight a full row of tree view nodes. When **FullRowSelect** is **true**, a selection highlights the entire width of the tree view, display instead of the width of just the tree node text. It makes selection easier.
+The tree view control provides an option to highlight a full row of tree view nodes. When **FullRowSelect** is **true**, the selection highlights the entire width of the tree view node, instead of highlighting only the width of tree view node text. It makes the selection easier.
 
-In the controller page, create a data list that contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
 
 {% highlight c# %}
 
@@ -63,7 +63,7 @@ public class loadondemand
 
 {% endhighlight %}
 
-In the view page, add the below code and map the properties defined in to the corresponding fields in data source and specify the **FullRowSelect** property.
+In the view page, add the following code and map the properties defined to the corresponding fields in data source and specify the **FullRowSelect** property.
 
 {% highlight CSHTML %}
 
@@ -71,14 +71,14 @@ In the view page, add the below code and map the properties defined in to the co
 
 {% endhighlight %}
 
-By running the above code, output will look like below.
+By running the previous code, you will get the output like the following:
 ![](Fullrowselection_images/selection1.png)
 
 ## Customization
 
-You can customize the TreeView full row selection for template support by using **CssClass** property. Based on this custom class, you can customize the height of the highlighting TreeView node.
+You can customize the tree view full row selection for template support by using the **CssClass** property. Based on this custom class, you can customize the height of the highlighted tree view node.
 
-In the controller page, create a data list that contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
 
 {% highlight c# %}
 
@@ -112,7 +112,7 @@ public class loadondemand
 
 {% endhighlight %}
 
-In the view page, add the below code and map the properties defined in to the corresponding fields in data source and specify the **CssClass** property.
+In the view page, add the following code and map the properties defined to the corresponding fields in data source and specify the **CssClass** property.
 
 {% highlight CSHTML %}
 
@@ -182,5 +182,5 @@ In the view page, add the below code and map the properties defined in to the co
 
 {% endhighlight %}
 
-By running the above code, output will be below.
+By running the above code, you will get the output like the following:
 ![](Fullrowselection_images/custom.png)

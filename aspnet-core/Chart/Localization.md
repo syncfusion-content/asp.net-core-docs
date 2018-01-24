@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-EjChart supports localization for its axis labels and tooltip. To render the chart with specific culture you have to refer the corresponding **globalize** culture script and need to specify the culture name in **Locale** property of chart.   
+Chart supports localization for its axis labels and tooltip. To render the chart with specific culture, refer to the corresponding **globalize** culture script, and specify the culture name in **Locale** property of chart.
 
 {% highlight cshtml %}
 

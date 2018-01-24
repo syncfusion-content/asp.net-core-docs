@@ -11,7 +11,7 @@ documentation: ug
 
 ## Line Chart
 
-To render a Line Chart, set the series **Type** as **Line** in the chart series. To change the line segment color, you can use the **Fill** property of the series.
+To render a line chart, set the series type to **Line** in the chart series. To change the line segment color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -30,7 +30,7 @@ To render a Line Chart, set the series **Type** as **Line** in the chart series.
 
 ### Change the line width
 
-To change the width of the line segment, you can use the **Width** property in the series.
+To change the width of the line segment, use the **Width** property of the series.
 
 {% highlight cshtml %}
 
@@ -49,7 +49,7 @@ To change the width of the line segment, you can use the **Width** property in t
 
 ### Dashed lines
 
-To render the line series with dotted lines, you can use the **DashArray** option of the series.
+To render a line chart with dotted lines, use the **DashArray** option of the series.
 
 {% highlight cshtml %}
 
@@ -68,7 +68,7 @@ To render the line series with dotted lines, you can use the **DashArray** optio
 
 ### Changing the line cap
 
-For customizing the start and end caps of the line segment, you can use the **LineCap** property.  
+For customizing the start and end caps of the line segment, use the **LineCap** property.
 
 {% highlight cshtml %}
 
@@ -87,7 +87,7 @@ For customizing the start and end caps of the line segment, you can use the **Li
 
 ### Changing the line join
 
-You can use the **LineJoin** property to specify how two intersecting line segments should be joined.
+To specify how the two intersecting line segments should be joined, use the **LineJoin** property.
 
 {% highlight cshtml %}
 
@@ -105,9 +105,9 @@ You can use the **LineJoin** property to specify how two intersecting line segme
 ![](Chart-Types_images/Chart-Types_img5.png)
 
 
-### MultiColor Line
+### Multi color line
 
-You can change the color of the line segments by using the *Fill* property of the each *Points* in the series.
+You can change the color of the line segments by using the **Fill** property of the each **Points** in the series.
 
 {% highlight cshtml %}
 
@@ -128,7 +128,7 @@ You can change the color of the line segments by using the *Fill* property of th
  
 ## Step Line Chart
 
-To render a Step Line Chart, set the series Type as **StepLine"** in the chart series. To change the StepLine segment color, you can use the Fill property of the series.
+To render a step line chart, set the series type to **StepLine"** in the chart series. To change the StepLine's segment color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -148,7 +148,7 @@ To render a Step Line Chart, set the series Type as **StepLine"** in the chart s
 
 ### Changing the line width
 
-To change the line width, you can use the **Width** property.  
+To change the line width, use the **Width** property.  
 
 {% highlight cshtml %}
 
@@ -167,7 +167,7 @@ To change the line width, you can use the **Width** property.
 
 ### Dashed lines
 
-To render the step line series with dotted lines, you can use the DashArray option of the series.
+To render the step line series with dotted lines, use the **DashArray** option of the series.
 
 {% highlight cshtml %}
 
@@ -186,7 +186,7 @@ To render the step line series with dotted lines, you can use the DashArray opti
 
 ### Changing the line cap
 
-For customizing the start and end caps of the line segment, you can use the LineCap property.  
+For customizing the start and end caps of the line segment, use the **LineCap** property.  
 
 {% highlight cshtml %}
 
@@ -205,7 +205,7 @@ For customizing the start and end caps of the line segment, you can use the Line
 
 ### Changing the line join
 
-You can use the LineJoin property to specify how two intersecting line segments should be joined.
+To specify how the two intersecting line segments should be joined, use the **LineJoin** property.
 
 {% highlight cshtml %}
 
@@ -224,7 +224,7 @@ You can use the LineJoin property to specify how two intersecting line segments 
 
 ## Area Chart
 
-To render an Area chart, you can specify the series Type as **Area** in the chart series. To change the Area color, you can use the Fill property of the series.
+To render an area chart, specify the series type to **Area** in the chart series. To change the area color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -242,13 +242,13 @@ To render an Area chart, you can specify the series Type as **Area** in the char
 
 ## Range Area Chart
 
-To render a Range Area Chart, set the Type as **RangeArea** in the chart series. To change the RangeArea color, you can use the Fill property of the series.
+To render a range area chart, set the type to **RangeArea** in the chart series. To change the range area color, use the **Fill** property of the series.
 
-Since the RangeArea series requires two y values for a point, you have to add the **High** and **Low** value. High and Low value specifies the maximum and minimum range of the points.
+Since the range area series requires two y values for a point, add **High** and **Low** values. High and Low values specify the maximum and minimum ranges of the points.
 
-* When you are using the Points option, specify the high and low values by using the High and Low option of the point.
+* When you are using the **Points** option, specify the high and low values by using the **High** and **Low** option of the point.
 
-* When you are using the DataSource option to assign the data, map the fields from the dataSource that contain High and Low values by using the Series.High and Series.Low options. 
+* When you are using the **DataSource** option to assign the data, map the fields from the data source that contains high and low values by using the **series.High** and **Series.Low** options. 
 
 {% highlight cshtml %}
 
@@ -266,7 +266,7 @@ Since the RangeArea series requires two y values for a point, you have to add th
 
 ## Step Area Chart
 
-To render a Step Area Chart, set the Type as **StepArea** in the chart series. To change the StepArea color, you can use the Fill property of the series.
+To render a step area chart, set the type to **StepArea** in the chart series. To change the step area color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -284,7 +284,7 @@ To render a Step Area Chart, set the Type as **StepArea** in the chart series. T
 
 ## Spline Area Chart
 
-To render a Spline Area Chart, set the Type as **SplineArea** in the chart series. To change the SplineArea color, you can use the Fill property of the series.
+To render a spline area chart, set the type to **SplineArea** in the chart series. To change the spline area color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -303,7 +303,7 @@ To render a Spline Area Chart, set the Type as **SplineArea** in the chart serie
 
 ## Stacked Area Chart
 
-To render a Stacked Area Chart, set the Type as **StackingArea** in the chart series. To change the StackingArea color, you can use the Fill property of the series.
+To render a stacked area chart, set the type to **StackingArea** in the chart series. To change the stacking area color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -322,7 +322,7 @@ To render a Stacked Area Chart, set the Type as **StackingArea** in the chart se
 
 ## 100% Stacked Area Chart  
 
-To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the chart series. To change the StackingArea100 color, you can use the Fill property of the series.   
+To render a 100% stacked area chart, set the type to **StackingArea100** in the chart series. To change the StackingArea100 color, use the **Fill** property of the series.   
 
 {% highlight cshtml %}
 
@@ -341,7 +341,7 @@ To render a 100% Stacked Area Chart, set the Type as **StackingArea100** in the 
 
 ## Stacked Spline Area Chart
 
-To render a Stacked Spline Area Chart, set the Type as **StackingSplineArea** in the chart series. 
+To render a stacked spline area chart, set the type to **StackingSplineArea** in the chart series. 
 
 {% highlight cshtml %}
 
@@ -361,7 +361,7 @@ To render a Stacked Spline Area Chart, set the Type as **StackingSplineArea** in
 
 ## 100% Stacked Spline Area Chart  
 
-To render a 100% Stacked Spline Area Chart, set the Type as **StackingSplineArea100** in the chart series. 
+To render a 100% stacked spline area chart, set the type to **StackingSplineArea100** in the chart series. 
 
 {% highlight cshtml %}
 
@@ -381,7 +381,7 @@ To render a 100% Stacked Spline Area Chart, set the Type as **StackingSplineArea
 
 ## Column Chart
 
-To render a Column Chart, set the Type as **Column** in the chart series. To change the color of the column series, you can use the Fill property.  
+To render a column chart, set the type to **Column** in the chart series. To change the color of the column series, use the **Fill** property.
 
 {% highlight cshtml %}
 
@@ -400,7 +400,7 @@ To render a Column Chart, set the Type as **Column** in the chart series. To cha
 
 ### Change a point color
 
-You can change the color of a column by using the Fill property of the point.
+You can change the color of a column by using the **Fill** property of the point.
 
 {% highlight cshtml %}
 
@@ -420,9 +420,9 @@ You can change the color of a column by using the Fill property of the point.
 
 ### Column width customization
 
-Width of any column type series can be customized by using the **ColumnWidth** property. Default value of *ColumnWidth* is 0.7. Value ranges from 0 to 1. Here 1 corresponds to 100% of available width and 0 corresponds to 0% of available width.
+Width of any column type series can be customized by using the **ColumnWidth** property. Default value of **ColumnWidth** is 0.7. This value ranges from 0 to 1. Here 1 corresponds to 100% of available width and 0 corresponds to 0% of available width.
 
-N> Width of a column also depends upon the *ColumnSpacing* property, because *ColumnSpacing* will reduce the space available for drawing a column. This is also applicable for StackingColumn, StackingColumn100, Bar, StackingBar, StackingBar100, RangeColumn, HiLo, HiLoOpenClose, Candle and Waterfall charts.
+N> Width of a column also depends on the **ColumnSpacing** property, because ColumnSpacing will reduce the space available for drawing a column. This is also applicable for stacking column, stacking column 100, bar, stacking bar, stacking bar 100, range column, HiLo, HiLo open close, candle, and waterfall charts.
 
 {% highlight cshtml %}
 
@@ -456,9 +456,9 @@ Corners of the column chart can be customized by setting value to the **CornerRa
 
 ### Spacing between column series
 
-Spacing between column type series can be customized using the **ColumnSpacing** property. Default value of *ColumnSpacing* is 0. Value ranges from 0 to 1. Here 1 corresponds to 100% available space and 0 corresponds to 0% available space.
+Spacing between column type series can be customized by using the **ColumnSpacing** property. Default value of ColumnSpacing is 0. This value ranges from 0 to 1. Here 1 corresponds to 100% available space and 0 corresponds to 0% available space.
 
-N> Space between columns will also affect the width of the column. For example, setting 20% spacing and 100% width will render columns with 80% of total width. This is also applicable for StackingColumn, StackingColumn100, Bar, StackingBar, StackingBar100, RangeColumn, HiLo, HiLoOpenClose, Candle and Waterfall charts.
+N> Space between the columns will also affect the width of the column. For example, setting 20% spacing and 100% width will render columns with 80% of total width. This is also applicable for stacking column, stacking column 100, bar, stacking bar, stacking bar 100, range column, HiLo, HiLo open close, candle, and waterfall charts.
 
 {% highlight cshtml %}
 
@@ -478,11 +478,11 @@ N> Space between columns will also affect the width of the column. For example, 
 
 ### Cylindrical Chart
 
-To render a cylindrical chart, set the **ColumnFacet** property as "Cylinder" in the chart series along with the series type. 
+To render a cylindrical chart, set the **ColumnFacet** property to "Cylinder" in the chart series along with the series type. 
 
-The following chart types can be rendered as cylinder in both 2D and in 3D view.
+The following chart types can be rendered as cylinder in both 2D and 3D views:
 
-* Column Chart, Bar Chart, Stacked Column Chart, Stacked Bar Chart, 100% Stacked Column Chart, 100% Stacked Bar Chart.
+* Column chart, bar chart, stacked column chart, stacked bar chart, 100% stacked column chart, 100% stacked bar chart.
 
 
 {% highlight cshtml %}
@@ -500,15 +500,15 @@ The following chart types can be rendered as cylinder in both 2D and in 3D view.
 
 ![](Chart-Types_images/Chart-Types_img91.png)
 
-## RangeColumn Chart
+## Range Column Chart
 
-To render a Range Column Chart, set the Type as **RangeColumn** in the chart series. To change the RangeColumn color, use the Fill property of the series.
+To render a range column chart, set the type to **RangeColumn** in the chart series. To change the range column color, use the **Fill** property of the series.
 
-Since, the RangeColumn series requires two y values for a point, add the High and Low value. High and Low value specifies the maximum and minimum range of the points.
+Since the range column series requires two y values for a point, add the **High** and **Low** values. **High** and **Low** values specify the maximum and minimum ranges of the points.
 
-* When you are using the Points option, specify the high and low values by using the High and Low option of the point.
+* When you are using the **Points** option, specify the high and low values by using the **High** and **Low** options of the point.
 
-* When you are using the DataSource option to assign the data, you have to map the fields from the dataSource that contains high and low values by using the Series.High and Series.Low) options.  
+* When you are using the **DataSource** option to assign the data, map the fields from the datasource that contains high and low values by using the **Series.High** and **Series.Low** options.  
 
 {% highlight cshtml %}
 
@@ -529,7 +529,7 @@ Since, the RangeColumn series requires two y values for a point, add the High an
 
 ### Change a point color 
 
-To change the color of a range column, you can use the Fill property of point. 
+To change the color of a range column, use the **Fill** property of point. 
 
 {% highlight cshtml %}
 
@@ -550,7 +550,7 @@ To change the color of a range column, you can use the Fill property of point.
 
 ## Stacked Column Chart
 
-To render a Stacked Column Chart, set the Type as **StackingColumn** in the chart series. To change the StackingColumn color, you can use the Fill property of the series.
+To render a stacked column chart, set the type to **StackingColumn** in the chart series. To change the stacking column color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -568,7 +568,7 @@ To render a Stacked Column Chart, set the Type as **StackingColumn** in the char
 ![](Chart-Types_images/Chart-Types_img21.png)
 
 
-### Cluster / Group stacked columns
+### Cluster/Group stacked columns
 
 You can use the **StackingGroup** property to group the stacked columns. Columns with same group name are stacked on top of each other.
 
@@ -594,7 +594,7 @@ You can use the **StackingGroup** property to group the stacked columns. Columns
 
 ### Change a point color
 
-To change the color of a stacking column, you can use the Fill property of the point. 
+To change the color of a stacking column, use the **Fill** property of the point. 
 
 {% highlight cshtml %}
 
@@ -615,7 +615,7 @@ To change the color of a stacking column, you can use the Fill property of the p
 
 ## 100% Stacked Column Chart    
 
-To render a 100% Stacked Column Chart, set the Type as **StackingColumn100** in the chart series. To change the StackingColumn100 color, you can use the Fill property of the series.
+To render a 100% stacked column chart, set the type to **StackingColumn100** in the chart series. To change the stacking column 100 color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -633,7 +633,7 @@ To render a 100% Stacked Column Chart, set the Type as **StackingColumn100** in 
 ![](Chart-Types_images/Chart-Types_img24.png)
 
 
-### Cluster / Group 100% stacked columns
+### Cluster/Group 100% stacked columns
 
 By using the **StackingGroup** property, you can group the 100% stacking columns. Columns with same group name are stacked on top of each other. 
 
@@ -659,7 +659,7 @@ By using the **StackingGroup** property, you can group the 100% stacking columns
 
 ### Change a point color
 
-To change the color of a 100% stacking column, you can use the Fill property of the point. 
+To change the color of a 100% stacking column, use the **Fill** property of the point.
 
 {% highlight cshtml %}
 
@@ -680,7 +680,7 @@ To change the color of a 100% stacking column, you can use the Fill property of 
 
 ## Bar Chart
 
-To render a bar Chart, set the Type as **Bar** in the chart series. To change the bar color, you can use the Fill property of the series.
+To render a bar Chart, set the type to **Bar** in the chart series. To change the bar color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -700,7 +700,7 @@ To render a bar Chart, set the Type as **Bar** in the chart series. To change th
 
 ### Change the color of a bar
 
-By using the Fill property of the point, you can change the specific point of the series. 
+By using the **Fill** property of the point, you can change the specific point of the series. 
 
 {% highlight cshtml %}
 
@@ -721,7 +721,7 @@ By using the Fill property of the point, you can change the specific point of th
 
 ## Stacked Bar Chart
 
-To render a Stacked Bar Chart, set the Type as **StackingBar** in the chart series. To change the StackingBar color, you can use the Fill property of the series.
+To render a stacked bar chart, set the type to **StackingBar** in the chart series. To change the stacking bar color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -739,7 +739,7 @@ To render a Stacked Bar Chart, set the Type as **StackingBar** in the chart seri
 ![](Chart-Types_images/Chart-Types_img29.png)
 
 
-### Cluster / Group stacked bars
+### Cluster/Group stacked bars
 
 You can use the **StackingGroup** property to group the stacking bars with the same group name. 
 
@@ -765,7 +765,7 @@ You can use the **StackingGroup** property to group the stacking bars with the s
 
 ### Change a point color
 
-You can change the color of a stacking bar by using the Fill property of the point.
+You can change the color of a stacking bar by using the **Fill** property of the point.
 
 {% highlight cshtml %}
 
@@ -786,7 +786,7 @@ You can change the color of a stacking bar by using the Fill property of the poi
 
 ## 100% Stacked Bar Chart
 
-To render a 100% Stacked Bar Chart, set the Type as **StackingBar100** in the chart series. To change the StackingBar100 color, you can use the Fill property of the series.
+To render a 100% stacked bar chart, set the type to **StackingBar100** in the chart series. To change the stacking bar 100 color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -803,7 +803,7 @@ To render a 100% Stacked Bar Chart, set the Type as **StackingBar100** in the ch
 
 ![](Chart-Types_images/Chart-Types_img32.png)
 
-By using the StackingGroup property, you can group the 100% stacking bars with the same group name. 
+By using the **StackingGroup** property, you can group the 100% stacking bars with the same group name. 
 
 {% highlight cshtml %}
 
@@ -827,7 +827,7 @@ By using the StackingGroup property, you can group the 100% stacking bars with t
 
 ### Change a point color
 
-To change the color of a 100% stacking bar, you can use the Fill property of the point. 
+To change the color of a 100% stacking bar, use the Fill property of the point. 
 
 {% highlight cshtml %}
 
@@ -847,7 +847,7 @@ To change the color of a 100% stacking bar, you can use the Fill property of the
 
 ## Spline Chart
 
-To render a Spline Chart, set the Type as **Spline** in the chart series. To change the Spline segment color, you can use the Fill property of the series.
+To render a spline chart, set the type to **Spline** in the chart series. To change the spline segment color, use the **Fill** property of the series.
 
 {% highlight cshtml %}
 
@@ -865,9 +865,9 @@ To render a Spline Chart, set the Type as **Spline** in the chart series. To cha
 ![](Chart-Types_images/Chart-Types_img35.png)
 
 
-### Spline Types
+### Spline types
 
-Spline series supports four types of curves, namely natural, monotonic, cardinal and clamped. To change the spline type, you can use the **SplineType** property in the series. 
+Spline series supports four types of curves, namely natural, monotonic, cardinal, and clamped. To change the spline type, use the **SplineType** property in the series. 
 
 {% highlight cshtml %}
 
@@ -885,7 +885,7 @@ Spline series supports four types of curves, namely natural, monotonic, cardinal
 
 ### Change the cardinal spline tension
 
-To change cardinal spline tension, you can use the [`cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property in the series. The default value of cardinalSplineTension is **0.5**. Its value ranges from 0 to 1.
+To change cardinal spline tension, use the [`cardinalSplineTension`](../api/ejchart#members:series-cardinalsplinetension) property of the series. The default value of **cardinalSplineTension** is 0.5. This value ranges from 0 to 1.
 
 {% highlight cshtml %}
 
@@ -903,7 +903,7 @@ To change cardinal spline tension, you can use the [`cardinalSplineTension`](../
 
 ### Change the spline width
 
-To change the spline segment width, you can use the Width property of the series.
+To change the width of the spline segment, use the **Width** property of the series.
 
 {% highlight cshtml %}
 
@@ -922,7 +922,7 @@ To change the spline segment width, you can use the Width property of the series
 
 ### Dashed lines
 
-To render the spline series with dotted lines, you can use the DashArray option of the series.
+To render the spline chart with dotted lines, use the **DashArray** option of the series.
 
 {% highlight cshtml %}
 
@@ -941,7 +941,7 @@ To render the spline series with dotted lines, you can use the DashArray option 
 
 ## Pie Chart
 
-You can create a pie chart by setting the series Type as **Pie** in the chart series.
+You can create a pie chart by setting the series type to **Pie** in the chart series.
 
 {% highlight cshtml %}
 
@@ -960,7 +960,7 @@ You can create a pie chart by setting the series Type as **Pie** in the chart se
 
 ### Change the pie size
 
-You can use the **PieCoefficient** property to change the diameter of the Pie chart with respect to the plot area. It ranges from 0 to 1 and the default value is **0.8**.
+You can use the **PieCoefficient** property to change the diameter of the pie chart with respect to the plot area. It ranges from 0 to 1, and the default value is 0.8.
 
 {% highlight cshtml %}
 
@@ -979,7 +979,7 @@ You can use the **PieCoefficient** property to change the diameter of the Pie ch
 
 ### Explode a pie segment
 
-You can explode a pie segment on the chart load by using the **ExplodeIndex** of the series.
+You can explode a pie segment on the chart load by using the **ExplodeIndex** property of the series.
 
 {% highlight cshtml %}
 
@@ -999,7 +999,7 @@ You can explode a pie segment on the chart load by using the **ExplodeIndex** of
 
 ### Explode all the segments
 
-To explode all the segments of the Pie chart, you can enable the **ExplodeAll** property.
+To explode all the segments of the pie chart, enable the **ExplodeAll** property.
 
 {% highlight cshtml %}
 
@@ -1017,9 +1017,9 @@ To explode all the segments of the Pie chart, you can enable the **ExplodeAll** 
 ![](Chart-Types_images/Chart-Types_img41.png)
 
 
-### Explode a pie segment on mouse over
+### Explode a pie segment by hovering the mouse
 
-To explode a pie segment on a mouse over, you can enable the **Explode** property of the series.
+To explode a pie segment by hovering the mouse, enable the **Explode** property of the series.
 
 {% highlight cshtml %}
 
@@ -1039,7 +1039,7 @@ To explode a pie segment on a mouse over, you can enable the **Explode** propert
 
 ### Sector of Pie
 
-EjChart allows you to render all the data points/segments in the semi-pie, quarter-pie or in any sector by using the **StartAngle** and **EndAngle** options.
+Chart allows you to render all the data points/segments in the semi-pie, quarter-pie, or in any sector by using the **StartAngle** and **EndAngle** options.
 
 {% highlight cshtml %}
 
@@ -1059,7 +1059,7 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
 
 ## Doughnut Chart
 
-To create a Doughnut chart, you can specify the series Type as **Doughnut** in the chart series.
+To create a doughnut chart, specify the series type to **Doughnut** in the chart series.
 
 {% highlight cshtml %}
 
@@ -1077,9 +1077,9 @@ To create a Doughnut chart, you can specify the series Type as **Doughnut** in t
 ![](Chart-Types_images/Chart-Types_img44.png)
 
 
-### Change Doughnut inner radius
+### Change doughnut inner radius
 
-You can change the doughnut chart inner radius by using the **DoughnutCoefficient** with respect to the plot area. It ranges from 0 to 1 and the default value is **0.4**.
+You can change the doughnut chart inner radius by using the **DoughnutCoefficient** with respect to the plot area. It ranges from 0 to 1 and the default value is 0.4.
 
 {% highlight cshtml %}
 
@@ -1099,7 +1099,7 @@ You can change the doughnut chart inner radius by using the **DoughnutCoefficien
 
 ### Change the doughnut size
 
-You can use the **DoughnutSize** property to change the diameter of the Doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is **0.8**.
+You can use the **DoughnutSize** property to change the diameter of the doughnut chart with respect to the plot area. It ranges from 0 to 1, and the default value is 0.8.
 
 {% highlight cshtml %}
 
@@ -1119,7 +1119,7 @@ You can use the **DoughnutSize** property to change the diameter of the Doughnut
 
 ### Explode a doughnut segment
 
-To explode a specific doughnut segment, set the index to be exploded by using the **ExplodeIndex** option of the series.
+To explode a specific doughnut segment, set the index to be exploded by using the **ExplodeIndex** property of the series.
 
 {% highlight cshtml %}
 
@@ -1139,7 +1139,7 @@ To explode a specific doughnut segment, set the index to be exploded by using th
 
 ### Explode all the segments
 
-To explode all the segments, you can enable the **ExplodeAll** property of the series.
+To explode all the segments, enable the **ExplodeAll** property of the series.
 
 {% highlight cshtml %}
 
@@ -1157,9 +1157,9 @@ To explode all the segments, you can enable the **ExplodeAll** property of the s
 ![](Chart-Types_images/Chart-Types_img48.png)
 
 
-### Explode a doughnut segment on mouse over
+### Explode a doughnut segment by hovering the mouse
 
-To explode a doughnut segment on a mouse over, you can enable the **Explode** property of the series.
+To explode a doughnut segment by hovering the mouse, enable the **Explode** property of the series.
 
 {% highlight cshtml %}
 
@@ -1177,9 +1177,9 @@ To explode a doughnut segment on a mouse over, you can enable the **Explode** pr
 ![](Chart-Types_images/Chart-Types_img49.png)
 
 
-### Sector of Doughnut
+### Sector of doughnut
 
-EjChart allows you to render all the data points/segments in the semi-doughnut, quarter- doughnut or in any sector by using the **StartAngle** and **EndAngle** options.
+Chart allows you to render all the data points/segments in the semi-doughnut, quarter- doughnut, or in any sector by using the **StartAngle** and **EndAngle** options.
 
 {% highlight cshtml %}
 
@@ -1199,7 +1199,7 @@ EjChart allows you to render all the data points/segments in the semi-doughnut, 
 
 ## Multiple Pie Chart
 
-EjChart provides support to render more than one series in pie and in doughnut chart. Radius of each series is calculated based on the radius of the previous series. And in addition legend is displayed according to the list of chart series.
+Chart provides support to render more than one series in pie and doughnut chart. Radius of each series is calculated based on the radius of the previous series. In addition, legend is displayed according to the list of chart series.
 
 {% highlight cshtml %}
 
@@ -1216,33 +1216,33 @@ EjChart provides support to render more than one series in pie and in doughnut c
 
 {% endhighlight %}
 
-**Multiple Pie** 
+**Multiple pie** 
 
 ![](Chart-Types_images/Chart-Types_img82.png)
 
 
-**Multiple Doughnut** 
+**Multiple doughnut** 
 
 ![](Chart-Types_images/Chart-Types_img83.png)
 
 
-### Start and End Angle Support
+### Start and end angles support
 
-In the Multiple Pie chart, the start and end angle property is also supported.
+In the multiple pie chart, the **StartAngle** and **EndAngle** properties are also supported.
 
-**Sector of Multiple Pie**
+**Sector of multiple pie**
 
 ![](Chart-Types_images/Chart-Types_img84.png)
 
 
-**Sector of Multiple Doughnut**
+**Sector of multiple doughnut**
 
 ![](Chart-Types_images/Chart-Types_img85.png)
 
 
 ## Pyramid Chart
 
-To create a Pyramid chart, you can specify the series Type as **Pyramid** in the chart series.  
+To create a pyramid chart, specify the series type to **Pyramid** in the chart series.
 
 {% highlight cshtml %}
 
@@ -1260,9 +1260,9 @@ To create a Pyramid chart, you can specify the series Type as **Pyramid** in the
 ![](Chart-Types_images/Chart-Types_img51.png)
 
 
-### Pyramid Mode
+### Pyramid mode
 
-Pyramid mode has two types, *Linear* and *Surface* respectively. The default **PyramidMode** type is "Linear".
+Pyramid mode has two types, namely Linear and Surface. The default **PyramidMode** type is "Linear".
 
 {% highlight cshtml %}
 
@@ -1281,7 +1281,7 @@ Pyramid mode has two types, *Linear* and *Surface* respectively. The default **P
 
 ### Gap between the segments
 
-You can control the gap between the segments by using the **GapRatio** option of the series. Its ranges from 0 to 1.
+You can control the gap between the segments by using the **GapRatio** property of the series. It ranges from 0 to 1.
 
 {% highlight cshtml %}
 
@@ -1301,7 +1301,7 @@ You can control the gap between the segments by using the **GapRatio** option of
 
 ### Explode a pyramid segment
 
-You can explode a pyramid segment on the chart load by using the **ExplodeIndex** of the series.
+You can explode a pyramid segment on the chart load by using the **ExplodeIndex** property of the series.
 
 {% highlight cshtml %}
 
@@ -1321,7 +1321,7 @@ You can explode a pyramid segment on the chart load by using the **ExplodeIndex*
 
 ## Funnel Chart
 
-You can create a funnel chart by setting the series Type as **Funnel** in the chart series.  
+You can create a funnel chart by setting the series type to **Funnel** in the chart series.  
 
 {% highlight cshtml %}
 
@@ -1340,7 +1340,7 @@ You can create a funnel chart by setting the series Type as **Funnel** in the ch
 
 ### Change the funnel width and height
 
-Funnel segments height and width is calculated from the chart size, by default. You can change this height and width directly without changing the chart size by using the **FunnelHeight** and **FunnelWidth** property of the series.
+Funnel segment's height and width are calculated from the chart size, by default. You can change height and width directly without changing the chart size by using the **FunnelHeight** and **FunnelWidth** properties of the series.
 
 {% highlight cshtml %}
 
@@ -1380,7 +1380,7 @@ You can explode a funnel segment on the chart load by using the **ExplodeIndex**
 
 ## Bubble Chart
 
-To create a Bubble chart, you can set the series Type as **Bubble** in the chart series. Bubble chart requires 3 fields (*X, Y and Size*) to plot a point. Here, **Size** is used to specify the size of each bubble segment. 
+To create a Bubble chart, set the series type to **Bubble** in the chart series. Bubble chart requires 3 fields, namely X, Y, and Size to plot a point. Here, **Size** is used to specify the size of each bubble segment. 
 
 {% highlight csharp %}
 
@@ -1413,7 +1413,7 @@ To create a Bubble chart, you can set the series Type as **Bubble** in the chart
 
 ## Scatter
 
-To create a Scatter chart, you can set the series Type as **Scatter** in the chart series. 
+To create a scatter chart, set the series type to **Scatter** in the chart series. 
 
 {% highlight cshtml %}
 
@@ -1433,7 +1433,7 @@ To create a Scatter chart, you can set the series Type as **Scatter** in the cha
 
 ### Customize the scatter chart
 
-You can change the scatter size by using the **Size** property of the series marker. And you can change the scatter color by using the series Fill property. 
+You can change the scatter size and scatter color by using the **Size** and **Fill** properties of the series marker, respectively.
 
 {% highlight cshtml %}
 
@@ -1453,7 +1453,7 @@ You can change the scatter size by using the **Size** property of the series mar
 
 ## HiLoOpenClose Chart 
 
-To create a HiLoOpenClose chart, you can set the series Type as **HiloOpenClose** in the chart series. HiLoOpenClose chart requires 5 fields *(X, High, Low, Open and Close)* to plot a segment.  
+To create a HiLo open close chart, set the series type to **HiloOpenClose** in the chart series. HiLo open close chart requires 5 fields, namely X, High, Low, Open, and Close to plot a segment.  
 
 
 {% highlight csharp %}
@@ -1486,7 +1486,7 @@ To create a HiLoOpenClose chart, you can set the series Type as **HiloOpenClose*
 
 ### DrawMode
 
-You can change the HiLoOpenClose chart **DrawMode** to *Open, Close* or *Both*. The default value of DrawMode is **Both**. 
+You can change the HiLo open close chart's **DrawMode** option to Open, Close, or Both. The default value of DrawMode is **Both**. 
 
 {% highlight cshtml %}
 
@@ -1504,9 +1504,9 @@ You can change the HiLoOpenClose chart **DrawMode** to *Open, Close* or *Both*. 
 ![](Chart-Types_images/Chart-Types_img62.png)
 
 
-### Bull and Bear Color	
+### Bull and bear Color	
 
-HiLoOpenClose chart **BullFillColor** is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
+**BullFillColor** of HiLo open close chart is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval, and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval. 
 
 {% highlight cshtml %}
 
@@ -1526,7 +1526,7 @@ HiLoOpenClose chart **BullFillColor** is used to specify a fill color for the se
 
 ## Candle
 
-You can create a Candle chart by specifying the series Type as **Candle** in the chart series. Candle chart requires 5 fields *(X, High, Low, Open and Close)* to plot a segment.
+You can create a Candle chart by specifying the series type to **Candle** in the chart series. Candle chart requires 5 fields, namely X, High, Low, Open, and Close to plot a segment.
 
 
 {% highlight csharp %}
@@ -1560,7 +1560,7 @@ You can create a Candle chart by specifying the series Type as **Candle** in the
 
 ### Bull and Bear Color
 
-Candle chart **BullFillColor** is used to specify a fill color for the segments that indicates an increase in the stock price in the measured time interval and **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval.
+**BullFillColor** of candle chart is used to specify a fill color for the segments that indicates an increase in the stock price in the measured time interval and, **BearFillColor** is used to specify a fill color for the segments that indicates a decrease in the stock price in the measured time interval.
 
 {% highlight cshtml %}
 
@@ -1580,7 +1580,7 @@ Candle chart **BullFillColor** is used to specify a fill color for the segments 
 
 ## HiLo
 
-HiLo chart is created by setting the series Type as **Hilo** in the chart series. HiLo chart requires 3 fields *(X, High and Low)* to plot a segment.  
+HiLo chart is created by setting the series type to **Hilo** in the chart series. HiLo chart requires 3 fields, namely X, High, and Low to plot a segment.  
 
 {% highlight csharp %}
 
@@ -1613,7 +1613,7 @@ HiLo chart is created by setting the series Type as **Hilo** in the chart series
 
 ## Polar
 
-Polar chart is created by setting the series Type as **Polar** in the chart series. 
+Polar chart is created by setting the series type to **Polar** in the chart series. 
 
 {% highlight cshtml %}
 
@@ -1633,7 +1633,7 @@ Polar chart is created by setting the series Type as **Polar** in the chart seri
 
 ### DrawType
 
-Polar **DrawType** property is used to change the series plotting type to *Line*, *Column* or *Area*. The default value of DrawType is **Line**.  
+Polar chart's **DrawType** property is used to change the series plotting type to Line, Column, or Area. The default value of DrawType is **Line**.
 
 {% highlight cshtml %}
 
@@ -1651,9 +1651,9 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 ![](Chart-Types_images/Chart-Types_img68.png)
 
 
-### Stack columns in Polar chart
+### Stack columns in polar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is column. Its default value is **false**.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the draw type is column. Its default value is **false**.
 
 {% highlight cshtml %}
 
@@ -1673,7 +1673,7 @@ By using the **IsStacking** property, you can specify whether the column has to 
 
 ## Radar Chart  
 
-To create a Radar chart, you can specify the series Type as **Radar** in the chart series.
+To create a radar chart, specify the series type to **Radar** in the chart series.
 
 {% highlight cshtml %}
 
@@ -1693,7 +1693,7 @@ To create a Radar chart, you can specify the series Type as **Radar** in the cha
 
 ### DrawType
 
-Radar **DrawType** property is used to change the series plotting type to *Line*, *Column* or *Area*. The default value of DrawType is **Line**.
+**DrawType** property of radar chart is used to change the series plotting type to Line, Column or Area. The default value of draw type is **Line**.
 
 {% highlight cshtml %}
 
@@ -1714,7 +1714,7 @@ Radar **DrawType** property is used to change the series plotting type to *Line*
 
 ### Stack columns in Radar chart
 
-By using the **IsStacking** property, you can specify whether the column has to be stacked when the DrawType is set as Column. Its default value is set to *false*.
+By using the **IsStacking** property, you can specify whether the column has to be stacked when the draw type is set to **Column**. Its default value is **false**.
 
 {% highlight cshtml %}
 
@@ -1735,9 +1735,9 @@ By using the **IsStacking** property, you can specify whether the column has to 
 
 ## Waterfall Chart 
 
-For rendering a Waterfall chart, set series *Type* as **Waterfall** in the chart series. To change the waterfall series segment color use *Fill* option of series and use *PositiveFill* property to differentiate the positive segments.
+For rendering a waterfall chart, set series type to **Waterfall** in the chart series. To change the color of the waterfall series segment, use **Fill** option of series, and use **PositiveFill** property to differentiate the positive segments.
 
-N> The inline property of the **Series.PositiveFill** has the first priority and override the **Series.Fill**.
+N> The inline property of the **Series.PositiveFill** has the first priority, and this overrides the **Series.Fill** property.
 
 {% highlight cshtml %}
 
@@ -1758,7 +1758,7 @@ N> The inline property of the **Series.PositiveFill** has the first priority and
 
 **ShowIntermediateSum**
 
-To display the summary of values since the last intermediate point of the waterfall series, set **ShowIntermediateSum** property as true in the specific point.
+To display the summary of values from the last intermediate point of the waterfall series, set **ShowIntermediateSum** property to true in the specific point.
 
 
 {% highlight cshtml %}
@@ -1780,7 +1780,7 @@ To display the summary of values since the last intermediate point of the waterf
 
 **ShowTotalSum**
 
-The sum of all previous point in the waterfall series is displayed on enabling the **ShowTotalSum** property for a specific point.
+The sum of all previous points in the waterfall series is displayed by enabling the **ShowTotalSum** property for a specific point.
 
 {% highlight cshtml %}
 
@@ -1800,7 +1800,7 @@ The sum of all previous point in the waterfall series is displayed on enabling t
 
 ### ConnectorLine
 
-To customize the connector line color, width, opacity and dashArray of the waterfall series, you can use **ConnectorLine** option of series.
+To customize the connector line color, width, opacity, and dashArray of the waterfall series, use **ConnectorLine** option of series.
 
 {% highlight cshtml %}
 
@@ -1819,9 +1819,9 @@ To customize the connector line color, width, opacity and dashArray of the water
 ![](Chart-Types_images/Chart-Types_img74.png)
 
 
-## ErrorBar Chart 
+## Error Bar Chart 
 
-EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Scatter, Area, Candle, HiLo, etc.)*. To render the Error bar for the series, set *Visibility* as *"visible"* to **ErrorBar** in the series.
+Chart can generate error bar for Cartesian type series, such as line, column, bar, scatter, area, candle, HiLo, etc. To render the error bar for the series, set Visibility as visible to **ErrorBar** in the series.
 
 {% highlight cshtml %}
 
@@ -1840,9 +1840,9 @@ EjChart can generate Error bar for Cartesian type series *(Line, Column, Bar, Sc
 ![](Chart-Types_images/Chart-Types_img75.png)
 
 
-### Changing Error Bar Type
+### Changing error bar type
 
-You can change the error bar rendering type using **Type** *(like FixedValue, Percentage, StandardDeviation, StandardError and Custom)* option of errorBar. To change the error bar line length you can use **VerticalErrorValue** property.
+You can change the error bar rendering type by using **Type** (like FixedValue, Percentage, StandardDeviation, StandardError and Custom) option of error bar. To change the error bar line length, use **VerticalErrorValue** property.
 
 {% highlight cshtml %}
 
@@ -1861,9 +1861,9 @@ You can change the error bar rendering type using **Type** *(like FixedValue, Pe
 ![](Chart-Types_images/Chart-Types_img76.png)
 
 
-#### Customizing error bar type              
+#### Customizing error bar type
 
-To customize the error bar type, set error bar Type as **Custom** and then change the horizontal/vertical positive and negative value of error bar.
+To customize the error bar type, set error bar type to **Custom**, and then change the horizontal/vertical positive and negative values of error bar.
 
 {% highlight cshtml %}
 
@@ -1882,9 +1882,9 @@ To customize the error bar type, set error bar Type as **Custom** and then chang
 ![](Chart-Types_images/Chart-Types_img77.png)
 
 
-### Changing Error Bar Mode
+### Changing error bar mode
 
-Error bar mode is used to define whether the error bar line has to be drawn *Horizontally, Vertically* or in *Both* side.  To change the error bar mode use ErrorBar.Mode option.
+Error bar mode is used to define whether the error bar line has to be drawn Horizontally, Vertically, or in Both side. To change the error bar mode, use **ErrorBar.Mode** option.
 
 {% highlight cshtml %}
 
@@ -1902,9 +1902,9 @@ Error bar mode is used to define whether the error bar line has to be drawn *Hor
 
 ![](Chart-Types_images/Chart-Types_img78.png)
 
-### Changing Error Bar Direction
+### Changing error bar direction
 
-You can change the error bar direction to plus, minus or both side using ErrorBar.Directions option.
+You can change the error bar direction to plus, minus, or both side by using **ErrorBar.Directions** option.
 
 {% highlight cshtml %}
 
@@ -1923,9 +1923,9 @@ You can change the error bar direction to plus, minus or both side using ErrorBa
 ![](Chart-Types_images/Chart-Types_img79.png)
 
 
-### Customizing Error bar cap
+### Customizing error bar cap
 
-To customize the errorBar cap visibility, length, width and fill color, you can use **Cap** option in the **Series.ErrorBar**.
+To customize the visibility, length, width, and fill color of error bar cap, use **Cap** option in the **Series.ErrorBar**.
 
 {% highlight cshtml %}
 
@@ -1946,15 +1946,13 @@ To customize the errorBar cap visibility, length, width and fill color, you can 
 
 ## Box and Whisker Chart 
 
-To render a Box and Whisker Chart, set the series *type* as **boxAndWhisker** .Box and Whisker chart requires
-2 fields (x and y) to plot a segment. The field y requires n number of data or it should  contain minimum of five values to plot a segment.
+To render a box and whisker chart, set the series type to **boxAndWhisker**. This chart requires 2 fields, namely x and y to plot a segment. The field y requires n number of data, or it should contains minimum of five values to plot a segment.
 
 ![](Chart-Types_images/Chart-Types_img90.png)
 
 ### BoxPlotMode
  
-You can change the rendering mode of the  Box and Whisker series using the *BoxPlotMode* property .The default value of *BoxPlotMode* is **exclusive**.
-The other boxPlotModes available are `inclusive` and `normal`. 
+You can change the rendering mode of the box and whisker series by using the **BoxPlotMode** property. The default value of **BoxPlotMode** is **exclusive**. The other boxPlotModes available are `inclusive` and `normal`. 
 
 {% highlight cshtml %}
 
@@ -1969,9 +1967,9 @@ The other boxPlotModes available are `inclusive` and `normal`.
 
 {% endhighlight %}
 
-###  Customize the Outlier
+###  Customize the outlier
 
-Outlier symbol, width and height can be customized using outlierSettings through *outlierSettings* property. By default Outlier symbol is displayed as circle with a height and width of 6 pixels.
+Outlier symbol's width and height can be customized by using outlierSettings through **outlierSettings** property. By default outlier symbol is displayed as circle with a height and width of 6 pixels.
 
 {% highlight cshtml %}
 
@@ -1990,8 +1988,8 @@ Outlier symbol, width and height can be customized using outlierSettings through
 
 ![](Chart-Types_images/Chart-Types_img92.png)
 
-## Pie Of Pie Chart
-To render the pie of pie chart, set the series `Type` as **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode**  property.
+## Pie of Pie Chart
+To render the pie of pie chart, set the series type to **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode** property.
 
 {% highlight cshtml %}
 <ej-chart id="chartContainer">
@@ -2008,13 +2006,14 @@ To render the pie of pie chart, set the series `Type` as **pieofpie**. Pie of pi
 ![](Chart-Types_images/Chart-Types_img93.png)
 
 
-### Split Mode and Split Value 
-The points to be displayed in the second pie is decided based on the `splitMode` property.**SplitMode** property takes the following values. 
-* Position – Have to split the data points based on its position
+### Split mode and split value 
+The points to be displayed in the second pie is decided based on the `SplitMode` property. This property takes the following values: 
+* Position – Have to split the data points based on its position.
 * Value – Have to split the data points based on its Y value
-* Percentage – Have to split the points based on the percentage value
-* Indexes – The data points with the specified indexes are split separately 
- By default, the splitMode is set to  **Value**. 
+* Percentage – Have to split the points based on the percentage value.
+* Indexes – The data points with the specified indexes are split separately. 
+
+By default, the splitMode is set to  **Value**. 
 
 {% highlight cshtml %}
 
@@ -2031,8 +2030,8 @@ The points to be displayed in the second pie is decided based on the `splitMode`
 
 ![](Chart-Types_images/Chart-Types_img94.png)
 
-### Changing Pie Of Pie Size
-The size of the second Pie can be customized by using the `PieOfPieCoefficient` property. The default value of pieOfPieCoefficient is **0.6**.Its value ranges from 0 to 1.
+### Changing pie Of pie size
+The size of the second pie can be customized by using the **PieOfPieCoefficient** property. The default value of pieOfPieCoefficient is 0.6. Its value ranges from 0 to 1.
 
 {% highlight cshtml %}
 
@@ -2047,13 +2046,13 @@ The size of the second Pie can be customized by using the `PieOfPieCoefficient` 
 
 {% endhighlight %}
 
-The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1
+The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1.
 
 ![](Chart-Types_images/Chart-Types_img95.png)
 
 #### Customizing the Gap
 
-The distance between the two pies in the pie of pie chart can be controlled by using the `GapWidth` property. The default value is **50**.
+The distance between the two pies in the pie of pie chart can be controlled by using the **GapWidth** property. Its default value is 50.
 
  {% highlight cshtml %}
 
