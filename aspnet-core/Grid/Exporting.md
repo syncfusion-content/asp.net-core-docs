@@ -51,8 +51,8 @@ The Exporting provides support to export grid data into excel, word and PDF file
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertGridObject(GridModel);
-            gridExcelExport excelExp = new GridExcelExport();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, excelExp);
@@ -62,8 +62,8 @@ The Exporting provides support to export grid data into excel, word and PDF file
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertGridObject(GridModel);
-            gridWordExport wrdExp = new GridWordExport();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, wrdExp);
         }
@@ -71,8 +71,8 @@ The Exporting provides support to export grid data into excel, word and PDF file
         {
             PdfExport exp = new PdfExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertGridObject(GridModel);
-            gridPdfExport pdfExp = new GridPdfExport();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, pdfExp);
         }
@@ -166,7 +166,7 @@ N> The excel File will be exported in the collapsed state with the expand/collap
             PdfExport exp = new PdfExport();
             var DataSource = emp;
             GridProperties gridProp = ConvertGridModel(GridModel);
-            gridProp.Childgrid.DataSource = _context.Orders.Take(100).ToList();
+            gridProp.ChildGrid.DataSource = _context.Orders.Take(100).ToList();
             GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             pdfExp.IncludeChildGrid = true;
@@ -758,7 +758,7 @@ The `export-to-pdf-action`, `export-to-word-action` and `export-to-excel-action`
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
-            gridExcelExport excelExp = new gridExcelExport();
+            GridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, excelExp);
@@ -1119,7 +1119,7 @@ The background color of the alternative row of the grid content.</td></tr>
             ViewBag.datasource = _context.Orders.Take(100).ToList();
             return View();
         }
-        public ActionResult ExportToExcel(string gridModel)
+        public ActionResult ExportToExcel(string GridModel)
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
@@ -1352,7 +1352,7 @@ You can customize the particular cell or particular row of exporting files using
     {
             ExcelExport exp = new ExcelExport();
             var DataSource = new NorthwindDataContext().EmployeeViews.Take(100).ToList(); 
-            GridProperties obj =(gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridProperties obj =(GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
             obj.ServerExcelQueryCellInfo = QueryCellInfo;
             exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
     }
