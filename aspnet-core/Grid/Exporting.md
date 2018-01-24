@@ -936,7 +936,7 @@ Also, it has `none` option which will export the grid without any theme.  The de
 
 {% highlight c# %}
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
     {
 
         private NORTHWNDContext _context;
