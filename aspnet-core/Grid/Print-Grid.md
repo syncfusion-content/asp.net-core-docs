@@ -15,7 +15,7 @@ Use the `print()` method from grid instance to print the grid. You can add print
 {% highlight razor %}
 
    <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
-      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printgrid"}'/>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="CustomerID" width="90"></e-column>
