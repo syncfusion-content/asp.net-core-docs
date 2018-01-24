@@ -10,7 +10,7 @@ documentation: ug
 It represents the record details that are fetched from the datasource.
 
 ## Row hover
-You can see the mouse hovering effect on the corresponding grid rows using the `enable-row-hover` property, its value is `true` by default.
+You can see the mouse hovering effect on the corresponding Grid rows using the `enable-row-hover` property, its value is `true` by default.
 The following code example describes the previous behavior.
 
 {% tabs %}
