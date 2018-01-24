@@ -14,7 +14,7 @@ Use the `print()` method from grid instance to print the grid. You can add print
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printgrid"}'/>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
@@ -30,9 +30,9 @@ Use the `print()` method from grid instance to print the grid. You can add print
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -43,7 +43,7 @@ Use the `print()` method from grid instance to print the grid. You can add print
 {% endhighlight  %}    
 {% endtabs %}  
 
-![](Print-grid_images/Print_img1.png)
+![](Print-Grid_images/Print_img1.png)
 
 
 ## Page setup
@@ -64,7 +64,7 @@ By default, the grid can be print from toolbar. To print from external button ac
    
    <button id="print">Print</button>
    <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
-      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printgrid"}'/>
+      <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printGrid"}'/>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" width="75" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="Customer ID" width="90"></e-column>
@@ -78,7 +78,7 @@ By default, the grid can be print from toolbar. To print from external button ac
             showRoundedCorner: true,
             size: "mini",
             click: function () {
-            $("#Printgrid").ejgrid("print");
+            $("#Printgrid").ejGrid("print");
         }
      });
     </script>
@@ -88,9 +88,9 @@ By default, the grid can be print from toolbar. To print from external button ac
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
@@ -118,7 +118,7 @@ By default, the grid will print all records. To print current page, you need to 
 {% tabs %}
 {% highlight razor %}
 
-   <ej-grid id="Flatgrid" allow-paging="true" datasource="ViewBag.DataSource">
+   <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"printgrid"}'/>
        <e-page-settings print-mode="CurrentPage"></e-page-settings>
         <e-columns>
@@ -135,9 +135,9 @@ By default, the grid will print all records. To print current page, you need to 
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
-                public IActionResult gridFeatures()
+                public IActionResult GridFeatures()
                  {
                     var DataSource = new NorthwindDataContext().OrdersViews.ToList();
                     ViewBag.DataSource = DataSource;
