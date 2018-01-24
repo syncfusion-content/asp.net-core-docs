@@ -209,7 +209,7 @@ The following code example describes the previous behavior.
 {% highlight razor %}
 
 <ej-grid id="Grid" allow-paging="true">
-    <e-datamanager table="#gridTable"></e-datamanager>
+    <e-datamanager table="#GridTable"></e-datamanager>
     <e-columns>
         <e-column field="Laptop" header-text="Laptop" text-align="Left"></e-column>
         <e-column field="Model" header-text="Model"></e-column>
