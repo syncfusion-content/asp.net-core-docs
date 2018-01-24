@@ -12,7 +12,7 @@ Selection provides an interactive support to highlight the row, cell or column t
 
 ## Types of selection
 
-The following are the two types of selections available in grid. 
+The following are the two types of selections available in Grid. 
 
 1. Single 
 2. Multiple 
