@@ -342,7 +342,7 @@ The following code example describes the previous behavior.
 
      namespace MVCSampleBrowser.Controllers
         {
-            public class gridController : Controller
+            public class GridController : Controller
               { 
                 public IActionResult GridFeatures()
                  {
