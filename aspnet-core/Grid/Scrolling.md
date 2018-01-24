@@ -402,7 +402,7 @@ We also have an enhanced virtual scrolling feature with an improvised virtual sc
 2.	Improved page rendering performance. 
 3.  It can render nearly 500 thousand records.
 
-It supports two mode of virtualization. They are as follows
+It supports two mode of virtualization. They are as follows.
 
 1. Normal Mode
 2. Continuous Mode
