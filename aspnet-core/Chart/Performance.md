@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance 
 
-* When there are large number of points to load, you can enable canvas rendering mode in chart. Canvas rendering is faster than SVG because it does not involve manipulating DOM elements as much as SVG rendering.   
+* When there are large number of points to load, you can enable canvas rendering mode in chart. Canvas rendering is faster than SVG, because it does not involve in manipulating DOM elements as much as SVG rendering.
 
 {% highlight cshtml %}
 
@@ -20,7 +20,7 @@ documentation: ug
 
 * Instead of enabling data markers and labels when there are large number of data points, you can use **Trackball** and **Tooltip** to view point information.
 
-## Lazy Loading
+## Lazy loading
 
 Lazy loading feature provides an effective way for loading data on demand by scrolling and viewing a smaller range of data from a larger collection.
 

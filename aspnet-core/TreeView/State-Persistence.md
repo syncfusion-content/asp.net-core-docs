@@ -8,19 +8,19 @@ documentation: UG
 
 # State Persistence
 
-TreeView state can be persisted by using ‘**EnablePersistence**’. In which user intractable model values only has been persisted in order to maintain performance. 
+The tree view state can be persisted by using the **EnablePersistence**. In which, only the user intractable model values has been persisted to maintain the performance.
 
-The model values of below are maintained through id basis of tree node.
+The following model values are maintained through id basis of the tree node.
 
 * selected
 * checked
-* expanded/ collapsed state
+* expanded/collapsed state
 
-N>**In "UL" "li" template state has been persisted by index.**
+N>**The "UL" and "li" template state has been persisted by index.**
 
-TreeView stores its model in local storage / cookies of browser before page refreshes and reinitialized with their stored model after refresh.
+The tree view stores its model in local storage/cookies of the browser before the page refreshes, and reinitialized with their stored model after refreshes.
 
-In the controller page, create a data list that contains the details about tree nodes.
+In the controller page, create a data list that contains the details about the tree nodes.
     
     {% highlight c# %}
     
@@ -47,7 +47,7 @@ In the controller page, create a data list that contains the details about tree 
     {% endhighlight %}
     
     
-In the view page, add the below code with following properties.
+In the view page, add the following code with the following properties.
 
     
     {% highlight CSHTML %}

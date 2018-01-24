@@ -11,7 +11,7 @@ documentation: ug
 
 ## Title
 
-By using the **Title** option, you can add the *Text* as well as customize its *Border, Background and Font*.
+By using the **Title** option, you can add text as well as customize its border, Background, and Font.
 
 {% highlight cshtml %}
 
@@ -26,7 +26,7 @@ By using the **Title** option, you can add the *Text* as well as customize its *
 
 ![](Chart-Title_images/Chart-Title_img1.png)
 
-We can trim, wrap and wrapAndTrim to the chart title using textOverflow property. The original text will be displayed as tooltip on mouse hover.
+You can trim, wrap, and wrapAndTrim the chart title by using **textOverflow** property. The original text will be displayed as tooltip on mouse hover.
 
 {% highlight cshtml %}
 
@@ -39,9 +39,9 @@ We can trim, wrap and wrapAndTrim to the chart title using textOverflow property
 
 ![](Chart-Title_images/Chart-Title_img5.png)
 
-### Title Alignment
+### Title alignment
 
-You can change the title alignment to *Center*, *Far* and *Near* by using the **TextAlignment** property of the chart title. 
+You can change the title alignment to center, far, and near by using the **TextAlignment** property of the chart title. 
 
 {% highlight cshtml %}
 
@@ -55,9 +55,9 @@ You can change the title alignment to *Center*, *Far* and *Near* by using the **
 ![](Chart-Title_images/Chart-Title_img2.png)
 
 
-## Add Subtitle to the chart
+## Add subtitle to the chart
 
-By using the **SubTitle** option, you can add the SubTitle to the chart title and customize its *Border, Background and Font*. 
+By using the **SubTitle** option, you can add the sub title to the chart title and customize its Border, Background, and Font.
 
 {% highlight cshtml %}
 
@@ -73,7 +73,7 @@ By using the **SubTitle** option, you can add the SubTitle to the chart title an
 
 ![](Chart-Title_images/Chart-Title_img3.png)
 
-We can trim, wrap and wrapAndTrim to the chart subtitle using textOverflow property. The original text will be displayed as tooltip on mouse hover.
+You can trim, wrap, and wrapAndTrim the subtitle of the chart by using **textOverflow** property. The original text will be displayed as tooltip on mouse hover.
 
 {% highlight cshtml %}
 
@@ -87,9 +87,9 @@ We can trim, wrap and wrapAndTrim to the chart subtitle using textOverflow prope
 
 ![](Chart-Title_images/Chart-Title_img6.png)
 
-### Subtitle Alignment
+### Subtitle alignment
 
-You can change the SubTitle alignment to *Center*, *Far* and *Near* by using the **TextAlignment** property of the SubTitle.
+You can change the alignment of the sub title to center, far, and near by using the **TextAlignment** property of the SubTitle.
 
 {% highlight cshtml %}
 

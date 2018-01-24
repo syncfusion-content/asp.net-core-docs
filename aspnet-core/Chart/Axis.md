@@ -9,9 +9,9 @@ documentation: ug
 
 # Axis
 
-**Charts** typically have two axes that are used to measure and categorize data: a vertical (y) axis, and a horizontal (x) axis.
+Charts typically have two axes, namely vertical (y) axis and horizontal (x) axis that are used to measure and categorize data.
 
-Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis supports the following types of scale:
+Vertical axis always supports numerical or logarithmic scale, and horizontal(x) axis supports the following types of scale:
 
 * Category
 * Numeric
@@ -21,7 +21,7 @@ Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis sup
 
 ## Category Axis
 
-Category axis displays the text labels instead of numbers. To use the categorical axis, you can set the **ValueType** property of the axis to the **Category**. Default value of ValueType is **Double**.
+Category axis displays the text labels instead of numbers. To use the categorical axis, set the **ValueType** property of the axis to **Category**. Default value of ValueType is **Double**.
 
 {% highlight cshtml %}
 
@@ -37,7 +37,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 
 ### Place labels on ticks
 
-Labels in the category axis can be placed on the ticks by setting the **LabelPlacement** property of axis to the onTicks. The default value of the LabelPlacement property is betweenTicks i.e. labels are placed between the ticks, by default.
+Labels in the category axis can be placed on ticks by setting the **LabelPlacement** property of axis to **onTicks**. Since the default value of the **LabelPlacement** property is **betweenTicks**, labels are placed between the ticks.
 
 {% highlight cshtml %}
 
@@ -57,7 +57,7 @@ Labels in the category axis can be placed on the ticks by setting the **LabelPla
 
 ### Display labels after a fixed interval
 
-To display the labels after a fixed interval n, you can set the **Interval** property of the axis range as **n**. The default value of the interval is 1 i.e. all the labels are displayed.
+To display the labels after a fixed interval n, set the **Interval** property of the axis range as **n**. The default value of the interval is 1. So, all the labels are displayed.
 
 {% highlight cshtml %}
 
@@ -109,7 +109,7 @@ Category axis can also plot points based on index value of data points. Index ba
 
 ## Numeric Axis 
 
-Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the **ValueType** property of the axis to **Double**. 
+Numeric axis supports numerical scale, and displays numbers as labels. To use numeric axis, set the **ValueType** property of the axis to **Double**. 
 
 {% highlight cshtml %}
 
@@ -126,7 +126,7 @@ Numeric axis uses numerical scale and displays numbers as labels. To use numeric
 
 ### Customize numeric range
 
-To customize the range of an axis, you can use the **Range** property of the axis to set the **Minimum**, **Maximum** and **Interval** values. Nice range is calculated automatically based on the provided data, by default.
+To customize the range of an axis, use the **Range** property. By using this, you can set **Minimum**, **Maximum**, and **Interval** values. Nice range is calculated automatically based on the provided data, by default.
 
 {% highlight cshtml %}
 
@@ -141,7 +141,7 @@ To customize the range of an axis, you can use the **Range** property of the axi
 
 #### Customizing numeric interval
 
-Axis interval can be customized by using the **Interval** property of the axis range. Nice interval is calculated based on the minimum and maximum value of the provided data, by default.
+Axis interval can be customized by using the **Interval** property of the axis range. Nice interval is calculated based on the minimum and maximum values of the provided data, by default.
 
 {% highlight cshtml %}
 
@@ -156,7 +156,7 @@ Axis interval can be customized by using the **Interval** property of the axis r
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the **RangePadding** property. Numeric axis supports the following types of padding
+Padding can be applied to the minimum and maximum values of the axis range by using the **RangePadding** property. Numeric axis supports the following types of padding:
 
 * None
 * Round
@@ -165,7 +165,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of the RangePadding property is **None**, padding can not be applied to the axis. This is also the default value of the rangePadding. 
+When the value of RangePadding property is **None**, padding can not be applied to the axis. This is also the default value of the RangePadding. 
 
 {% highlight cshtml %}
 
@@ -180,7 +180,7 @@ When the value of the RangePadding property is **None**, padding can not be appl
 
 #### Round
 
-When the value of RangePadding property is **Round**, the axis range is rounded to the nearest possible value divided by the interval.
+When the value of RangePadding property is **Round**, the axis range will be rounded to the nearest possible value and it will be divided by the interval.
 
 {% highlight cshtml %}
 
@@ -202,7 +202,7 @@ When the value of RangePadding property is **Round**, the axis range is rounded 
 
 **Additional**
 
-When the value of the RangePadding property is **Additional**, the axis range is rounded and an interval of the axis is added as padding to the minimum and maximum values of the range.
+When the value of RangePadding property is **Additional**, the axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
 {% highlight cshtml %}
 
@@ -217,7 +217,7 @@ When the value of the RangePadding property is **Additional**, the axis range is
 
 **Normal**
 
-When the value of the RangePadding property is **Normal**, the padding is applied to the axis based on the range calculation.
+When the value of the RangePadding property is **Normal**, the padding will be applied to the axis based on the range calculation.
 
 {% highlight cshtml %}
 
@@ -232,7 +232,7 @@ When the value of the RangePadding property is **Normal**, the padding is applie
 
 ### Customizing the starting range of the axis
 
-By default the Y axis will be always calculated from the value 0 for column, bar, stacking column and stacking bar series types. You can modify this behavior by setting false to the property **StartFromZero** in the axis. On setting this the axis minimum value will be calculated based on the value for the data points.
+By default, the Y axis value will be calculated from 0 for column, bar, stacking column, and stacking bar series types. You can modify this behavior by setting the **StartFromZero** property to false in the axis. When setting this, the axis minimum value will be calculated based on the value for data points.
 
 {% highlight cshtml %}
 
@@ -247,7 +247,7 @@ By default the Y axis will be always calculated from the value 0 for column, bar
 
 ## DateTime Axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To use date time axis, set the ValueType property of the axis to **Datetime**.
+Date time axis supports date time scale, and displays the date time values as axis labels in the specified format. To use date time axis, set the ValueType property of the axis to **Datetime**.
 
 {% highlight cshtml %}
 
@@ -264,7 +264,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 ### Customizing date time range
  
- Axis range can be customized by using the Range property to set the **Minimum**, **Maximum** and **Interval** values. Nice range is calculated automatically based on the provided data, by default.
+Axis range can be customized by using the Range property. By using this, you can customize **Minimum**, **Maximum**, and **Interval** values. Nice range is calculated automatically based on the provided data, by default.
  
  {% highlight cshtml %}
 
@@ -279,9 +279,9 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 ### Date time intervals
 
-Date time intervals can be customized by using the **Interval** and **IntervalType** properties of the axis. For example, when you set Interval as **2** and IntervalType as **Years**, it considers the 2 years as interval.
+Date time intervals can be customized by using the **Interval** and **IntervalType** properties of the axis. For example, when you set Interval as **2** and IntervalType as **Years**, it considers 2 years as interval.
 
-Essential Chart supports the following types of interval for date time axis.
+Essential chart supports the following types of interval for date time axis:
 
 * Days
 * Hours
@@ -305,7 +305,7 @@ Essential Chart supports the following types of interval for date time axis.
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the range by using the **RangePadding** property. Date time axis supports the following types of padding
+Padding can be applied to the minimum and maximum values of the range by using the **RangePadding** property. Date time axis supports the following types of padding:
 
 * None
 * Round
@@ -313,7 +313,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of the RangePadding property is **None**, padding is applied to the axis. This is also the default value of the rangePadding. 
+When the value of the RangePadding property is **None**, padding will be applied to the axis. This is also the default value of the rangePadding. 
 
 {% highlight cshtml %}
 
@@ -328,7 +328,7 @@ When the value of the RangePadding property is **None**, padding is applied to t
 
 **Round**
 
-When the value of the RangePadding property is **Round**, the axis range is rounded to the nearest possible date time value.
+When the value of RangePadding property is **Round**, the axis range will be rounded to the nearest possible date time value.
 
 {% highlight cshtml %}
 
@@ -350,7 +350,7 @@ When the value of the RangePadding property is **Round**, the axis range is roun
 
 **Additional** 
 
-When the value of the RangePadding property is **Additional**, the range is rounded and date time interval of the axis are added as padding to the minimum and maximum extremes of the range.
+When the value of the RangePadding property is **Additional**, the range will be rounded, and date time intervals of the axis are added as padding to the minimum and maximum values of the range.
 
 {% highlight cshtml %}
 
@@ -365,7 +365,7 @@ When the value of the RangePadding property is **Additional**, the range is roun
 
 ## DateTime Category Axis
 
-DateTime category axis takes date time value as input but behaves like category axis. This is used to display the date time values with nonlinear intervals (used to depict the business days by skipping holidays). To use date time axis, set the **ValueType** property of the axis to **DatetimeCategory**.
+DateTime category axis takes date time value as input, but behaves like category axis. This is used to display the date time values with nonlinear intervals (used to depict the business days by skipping holidays). To use date time axis, set the **ValueType** property of the axis to **DatetimeCategory**.
 
 {% highlight cshtml %}
 
@@ -382,7 +382,7 @@ DateTime category axis takes date time value as input but behaves like category 
 
 ### Customizing DateTime Category range
 
-Axis range can be customized by using the *range* property to set the **Minimum**, **Maximum** and **Interval** values. Datetime category axis takes numeric input for minimum and maximum property.
+Axis range can be customized by using the **range** property. By using this, you can customize **Minimum**, **Maximum**, and **Interval** values. Datetime category axis takes numeric input for minimum and maximum properties.
 
 {% highlight cshtml %}
 
@@ -396,11 +396,12 @@ Axis range can be customized by using the *range* property to set the **Minimum*
 
 ![](Axis_images/axis_img64.png)
 
-### DateTime Category intervals
+### DateTime category intervals
 
 Date time category intervals can be customized by using the **Interval** and **IntervalType** properties of the axis. For example, when you set the intervalType as months, it displays only the first label of all the months from the data.
 
-Essential Chart supports the following types of interval for date time category axis.
+Essential Chart supports the following types of interval for date time category axis:
+
 * Days
 * Hours
 * Milliseconds
@@ -424,7 +425,7 @@ Essential Chart supports the following types of interval for date time category 
 
 ## Logarithmic Axis
 
-Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude **(eg: 10<sup>-6</sup>)** and higher order of magnitude **(eg: 10<sup>6</sup>)**. To use logarithmic axis, set the ValueType property of the axis to **Logarithmic**.  
+Logarithmic axis supports logarithmic scale, and it is used in visualizing when the data has values with both lower **(eg: 10<sup>-6</sup>)** and higher **(eg: 10<sup>6</sup>)** order of magnitudes. To use logarithmic axis, set the ValueType property of the axis to **Logarithmic**.  
 
 {% highlight cshtml %}
 
@@ -438,9 +439,9 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 
 ![](Axis_images/axis_img19.png)
 
-### Customize Logarithmic range
+### Customize logarithmic range
 
-Logarithmic range can be customized by using the Range property of the axis to change the Minimum, Maximum and Interval values. Nice range is calculated automatically based on the provided data, by default.
+Logarithmic range can be customized by using the **Range** property. By using this, you can customize Minimum, Maximum, and Interval values. Nice range is calculated automatically based on the provided data, by default.
 
 {% highlight cshtml %}
 
@@ -474,7 +475,7 @@ Logarithmic base can be customized by using the **LogBase** property of the axis
 
 ### Logarithmic interval
 
-Logarithmic axis interval can be customized by using the Interval property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1. 
+Logarithmic axis interval can be customized by using the Interval property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1. 
 
 {% highlight cshtml %}
 
@@ -493,7 +494,7 @@ Logarithmic axis interval can be customized by using the Interval property of th
 
 ### Format numeric labels
 
-Numeric labels can be formatted by using the **LabelFormat** property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+Numeric labels can be formatted by using the **LabelFormat** property. Numeric values can be formatted with n (number with decimal points), c (currency), and p (percentage) commands.
 
 {% highlight cshtml %}
 
@@ -508,12 +509,12 @@ Numeric labels can be formatted by using the **LabelFormat** property. Numeric v
 ![](Axis_images/axis_img23.png)
 
 
-The following table describes the result of applying some commonly used label formats on numeric values. 
+The following table describes the result of some commonly used label formats on numeric values. 
  
 <table>
 <tr>
-<td><b>Label Value</b></td>
-<td><b>Label Format property value</b></td>
+<td><b>Label value</b></td>
+<td><b>Label format property value</b></td>
 <td><b>Result </b></td>
 <td><b>Description </b></td>
 </tr>        
@@ -521,49 +522,49 @@ The following table describes the result of applying some commonly used label fo
 <td>1000</td>
 <td>n1</td>
 <td>1000.0</td>
-<td>The Number is rounded to 1 decimal place</td>
+<td>The number is rounded to 1 decimal place</td>
 </tr> 
 <tr>
 <td>1000</td>
 <td>n2</td>
 <td>1000.00</td>
-<td>The Number is rounded to 2 decimal place</td>
+<td>The number is rounded to 2 decimal places</td>
 </tr> 
 <tr>
 <td>1000</td>
 <td>n3</td>
 <td>1000.000</td>
-<td>The Number is rounded to 3 decimal place</td>
+<td>The number is rounded to 3 decimal places</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p1</td>
 <td>1.0%</td>
-<td>The Number is converted to percentage with 1 decimal place</td>
+<td>The number is converted to percentage with 1 decimal place</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p2</td>
 <td>1.00%</td>
-<td>The Number is converted to percentage with 2 decimal place</td>
+<td>The number is converted to percentage with 2 decimal places</td>
 </tr>
 <tr>
 <td>0.01</td>
 <td>p3</td>
 <td>1.000%</td>
-<td>The Number is converted to percentage with 3 decimal place</td>
+<td>The number is converted to percentage with 3 decimal places</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>c1</td>
 <td>$1,000.0</td>
-<td>The Currency symbol is appended to number and number is rounded to 1 decimal place</td>
+<td>The dollar symbol is appended to number, and the number is rounded to 1 decimal place</td>
 </tr>
 <tr>
 <td>1000</td>
 <td>c2</td>
 <td>$1,000.00</td>
-<td>The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
+<td>The dollar symbol is appended to number, and the number is rounded to 2 decimal places</td>
 </tr>
 </table>
 
@@ -585,12 +586,12 @@ Date time labels can be formatted by using the **LabelFormat** property of the a
 ![](Axis_images/axis_img24.png)
 
 
-The following table describes the result of applying some common date time formats to the labelFormat property
+The following table describes the result some common date time formats to the labelFormat property.
 
 <table>
 <tr>
-<td><b>Label Value</b></td>
-<td><b>Label Format Property Value</b></td>
+<td><b>Label value</b></td>
+<td><b>Label format property Value</b></td>
 <td><b>Result </b></td>
 <td><b>Description </b></td>
 </tr>        
@@ -598,25 +599,25 @@ The following table describes the result of applying some common date time forma
 <td>new Date(2000, 03, 10)</td>
 <td>dddd</td>
 <td>Monday</td>
-<td>The Date is displayed in day format</td>
+<td>The date is displayed in day format</td>
 </tr> 
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>MM/dd/yyyy</td>
 <td>04/10/2000</td>
-<td>The Date is displayed in month/date/year format</td>
+<td>The date is displayed in month/date/year format</td>
 </tr> 
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>n3</td>
 <td>1000.000</td>
-<td>The Number is rounded to 3 decimal place</td>
+<td>The number is rounded to 3 decimal places</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>MMM</td>
 <td>Apr</td>
-<td>The Shorthand month for the date is displayed</td>
+<td>The shorthand month for the date is displayed</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
@@ -628,13 +629,13 @@ The following table describes the result of applying some common date time forma
 <td>new Date(2000, 03, 10)</td>
 <td>hh:mm:ss</td>
 <td>12:00:00</td>
-<td>The Label is displayed in hours:minutes:seconds format</td>
+<td>The label is displayed in hours:minutes:seconds format</td>
 </tr>
 </table>
 
 ### Custom label format
 
-Prefix and suffix can be added to the category labels by using the LabelFormat property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at the runtime.
+Prefix and suffix can be added to the category labels by using the **LabelFormat** property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at the runtime.
 
 {% highlight cshtml %}
 
@@ -651,11 +652,11 @@ Prefix and suffix can be added to the category labels by using the LabelFormat p
 
 ## Common axis features
 
-Customization of features such as axis title, labels, grid lines and tick lines are common to all the axis. Each of these features are explained in this section.
+Customization of features such as axis title, labels, grid lines, and tick lines are common to all the axis. Each of these features have been explained in this section.
 
-### Axis Crossing
+### Axis crossing
 
-Axis can be positioned anywhere in chart area using the **CrossesAt** property of axis. This property specifies where the horizontal axis should intersect or cross the vertical axis and vice versa. Default value of *CrossesAt* property is null.
+Axis can be positioned anywhere in the chart area by using the **CrossesAt** property of axis. This property specifies where the horizontal axis should intersect or cross the vertical axis and vice-versa. Default value of **CrossesAt** property is null.
 
 {% highlight cshtml %}
 
@@ -672,7 +673,7 @@ Axis can be positioned anywhere in chart area using the **CrossesAt** property o
 
 #### Crossing a specific Axis
 
-The **CrossesInAxis** property takes axis name as input and determines the axis used for crossing. By default all the horizontal axes crosses in primary Y axis and all the vertical axes crosses in primary X axis.
+The **CrossesInAxis** property takes axis name as input and determines the axis used for crossing. By default, all the horizontal axes cross in primary Y axis, and all the vertical axes cross in primary X axis.
 
 {% highlight cshtml %}
 
@@ -686,7 +687,7 @@ The **CrossesInAxis** property takes axis name as input and determines the axis 
 
 ![](Axis_images/axis_img53.png)
 
-Axis will be placed in the opposite side if value of *CrossesAt* property is greater than the maximum value of crossing axis (axis name provided through *CrossesInAxis* property or primary Y axis for horizontal axis).
+Axis will be placed in the opposite side if value of **CrossesAt** property is greater than the maximum value of crossing axis (axis name provided through **CrossesInAxis** property or primary Y axis for horizontal axis).
 
 {% highlight cshtml %}
 
@@ -702,7 +703,7 @@ Axis will be placed in the opposite side if value of *CrossesAt* property is gre
 
 #### Positioning the axis elements while crossing
 
-The `ShowNextToAxisLine` property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set as false only the axis line and the tick lines are placed at the crossing Value and the axis elements will be placed outside the chart area. The default value of `ShowNextToAxisLine` is **true**.  
+The `ShowNextToAxisLine` property is used for controlling the axis elements movement along with the axis line while axis crossing is performed. When the showNextToAxisLine is set to false, the axis lines and the tick lines are placed at the crossing value, and the axis elements will be placed outside the chart area. The default value of `ShowNextToAxisLine` is **true**.
 
 {% highlight cshtml %}
 
@@ -720,7 +721,7 @@ The axis is placed at the crossing value without the axis elements
 
 ### Axis Visibility
 
-Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the Visible property is **true**. 
+Axis visibility can be controlled by using the **Visible** property of the axis. The default value of the **Visible** property is **true**.
 
 {% highlight cshtml %}
 
@@ -737,7 +738,7 @@ Axis visibility can be controlled by using the **Visible** property of the axis.
 
 ### Axis title
 
-The **Title** property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text length or specified length.
+The **Title** property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text's length or specified length.
 
 {% highlight cshtml %}
 
@@ -755,7 +756,7 @@ The **Title** property in the axis provides options to customize the text and fo
 
 ![](Axis_images/axis_img27.png)
 
-You can modify the position of the axis title either inside or outside the chart area using the property **Position**. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far and center by **Alignment** property, using **Offset** property you can change the position with respect to pixels.
+You can modify the position of the axis title either inside or outside the chart area by using the **Position** property. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far, or center by using **Alignment** property. By using **Offset** property, you can change the position with respect to pixels.
 
 {% highlight cshtml %}
 
@@ -772,7 +773,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 ### Label customization
 
-The **Font** property of the axis provides options to customize the FontFamily, Color, Opacity, Size and FontWeight of the axis labels.  
+The **Font** property of the axis provides options to customize the FontFamily, color, opacity, size, and FontWeight of the axis labels.  
 
 {% highlight cshtml %}
 
@@ -809,7 +810,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The **EdgeLabelPlacement** property can be used to avoid the partial appearance of the labels at the corners. 
+Labels with long text at the edges of an axis may appear partially outside the chart. By using the **EdgeLabelPlacement** property, you can avoid the partial appearance of the labels at the corners. 
 
 {% highlight cshtml %}
 
@@ -834,7 +835,7 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 ### Grid lines customization
 
-The **MajorGridLines** and **MinorGridLines** properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the Width, Color, Visibility and Opacity of the grid lines. The minor grid lines are not visible, by default.
+The **MajorGridLines** and **MinorGridLines** properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the width, color, visibility, and opacity of the grid lines. The minor grid lines are not visible, by default.
 
 {% highlight cshtml %}
 
@@ -854,7 +855,7 @@ The **MajorGridLines** and **MinorGridLines** properties in the axis are used to
 
 ### Tick lines customization
 
-The **MajorTickLines** and **MinorTickLines** properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the Width, Size, Color and Visibility of the grid lines. The minor tick lines are not visible, by default.
+The **MajorTickLines** and **MinorTickLines** properties in the axis are used to customize the major and minor tick lines of an axis. They provide options to change the width, size, color, and visibility of the grid lines. The minor tick lines are not visible, by default.
 
 {% highlight cshtml %}
 
@@ -874,7 +875,7 @@ The **MajorTickLines** and **MinorTickLines** properties in the axis are used to
   
 ### Inversing axis
 
-Axis can be inversed by using the **IsInversed** property of the axis. The default value of the IsInversed property is **false**.
+Axis can be inversed by using the **IsInversed** property of the axis. The default value of the **IsInversed** property is **false**.
 
 {% highlight cshtml %}
 
@@ -899,7 +900,7 @@ Axis can be inversed by using the **IsInversed** property of the axis. The defau
 
 ### Place axes at the opposite side
 
-The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the OpposedPosition property is **false**. 
+The **OpposedPosition** property of axis can be used to place the axis at the opposite side of its default position. The default value of the **OpposedPosition** property is **false**. 
 
 {% highlight cshtml %}
 
@@ -924,7 +925,7 @@ The **OpposedPosition** property of axis can be used to place the axis at the op
 
 ### Maximum number of labels per 100 pixels
 
-A maximum of 3 labels are displayed for each 100 pixels in the axis, by default. The maximum number of labels that is present within the 100 pixels length can be customized by using the **MaximumLabels** property of the axis. This property is applicable only for an automatic range calculation and it does not work when you set the value for Interval property in the axis range.
+Maximum of 3 labels are displayed for each 100 pixels in the axis, by default. The maximum number of labels, which present within the 100 pixels length can be customized by using the **MaximumLabels** property of the axis. This property is applicable only for an automatic range calculation, and it does not work when you set the value for **Interval** property in axis range.
 
 {% highlight cshtml %}
 
@@ -948,12 +949,12 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 ## Multiple Axis
 
-Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
+Multiple axes can be used in the chart, and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
 ![](Axis_images/axis_img40.png)
 
 
-An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **Axes** collection and then you can associate it to a series by specifying the name of the axis to the **XAxisName** or **YAxisName** property of the series.
+An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **Axes** collection. You can associate it to a series by specifying name of the axis to the **XAxisName** or **YAxisName** property of the series.
 
 {% highlight cshtml %}
 
@@ -973,9 +974,9 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 ![](Axis_images/axis_img41.png)
 
-## Smart Axis Labels
+## Smart axis labels
 
-When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the **LabelIntersectAction** property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **None**. The other available values of the Label Intersect Actions are **Rotate45**, **Rotate90**, **Trim**, **MultipleRows**, **Wrap** and **Hide**.
+When the Axis labels overlap with each other based on the chart dimensions and label size, use the **LabelIntersectAction** property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **None**. The other available values of the label intersect actions are **Rotate45**, **Rotate90**, **Trim**, **MultipleRows**, **Wrap**, and **Hide**.
 
 {% highlight cshtml %}
 
@@ -989,42 +990,42 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 ![](Axis_images/axis_img42.png)
 
-The following screenshot displays the result, when the LabelIntersectAction property is set as **Rotate45**.
+The following screenshot displays the result when the LabelIntersectAction property is set to **Rotate45**.
 
 ![](Axis_images/axis_img43.png)
 
 
-The following screenshot displays the result, when the LabelIntersectAction property is set as **Rotate90**.
+The following screenshot displays the result when the LabelIntersectAction property is set to **Rotate90**.
 
 ![](Axis_images/axis_img44.png)
 
 
-The following screenshot displays the result, when the LabelIntersectAction property is set as **Wrap**.
+The following screenshot displays the result when the LabelIntersectAction property is set to **Wrap**.
 
 ![](Axis_images/axis_img45.png)
 
 
-The following screenshot displays the result, when of setting the **trim** as value to the LabelIntersectAction property.
+The following screenshot displays the result when the LabelIntersectAction property is set to **trim**.
 
 ![](Axis_images/axis_img46.png)
 
 
-The following screenshot displays the result, when the LabelIntersectAction property is set as **Hide**.
+The following screenshot displays the result when the LabelIntersectAction property is set to **Hide**.
 
 ![](Axis_images/axis_img47.png)
 
 
-The following screenshot displays the result, when the LabelIntersectAction property is set as **MultipleRows **.
+The following screenshot displays the result when the LabelIntersectAction property is set to **MultipleRows**.
 
 ![](Axis_images/axis_img48.png)
 
 
-The following screenshot displays the result, when the LabelIntersectAction property is set as **WrapByWord**.
+The following screenshot displays the result when the LabelIntersectAction property is set to **WrapByWord**.
 
 ![](/js/Chart/Axis_images/axis_img49.png)
 
 ## Multi-level Labels
-Axis can be customized with multiple levels of labels using the **MultiLevelLabels** property. These labels are placed based on the start and end range values and we can add any number of labels to an axis.
+Axis can be customized with multiple levels of labels by using the **MultiLevelLabels** property. These labels are placed based on the start and end range values. You can add any number of labels to an axis.
 
 {% highlight cshtml %}     
 
@@ -1044,7 +1045,7 @@ Axis can be customized with multiple levels of labels using the **MultiLevelLabe
 
 ### Customizing the multi-Level labels
 
-The text of the labels can be customized using the **Text** property.
+The text of the labels can be customized by using the **Text** property.
 
 {% highlight cshtml %}
 
@@ -1063,7 +1064,7 @@ The text of the labels can be customized using the **Text** property.
 
 ![](Axis_images/axis_img59.png)
 
-You can change the alignment of the text to far, near and center position using the **TextAlignment** property. By default, the text will be center aligned. 
+You can change the alignment of the text to far, near, or center position by using the **TextAlignment** property. By default, the text will be aligned at center. 
 
 {% highlight cshtml %}
 
@@ -1082,7 +1083,7 @@ You can change the alignment of the text to far, near and center position using 
 
 ![](Axis_images/axis_img60.png)
 
-You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width value using the property **TextOverflow**
+You can trim, wrap, or wrapAndTrim the text if it exceeds the maximum text width value by using the **TextOverflow** property.
 
 {% highlight cshtml %}
 
@@ -1099,8 +1100,8 @@ You can trim, wrap or wrapAndTrim the text if it exceeds the maximum text width 
 
 {% endhighlight %}
 
-The below screenshot shows the trimmed multi-level labels
+The following screenshot illustrates the trimmed multi-level labels.
 
 ![](Axis_images/axis_img61.png)
 
-And these labels can be placed in various rows using the **Level** property.
+And these labels can be placed in various rows by using the **Level** property.

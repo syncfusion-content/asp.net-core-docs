@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Empty Points 
 
-The Data points that uses the **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the Points property, you can set the **IsEmpty** to true to specify that the particular point is an empty point.   
+The data points, which uses the **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in the chart. When the data is provided by using the **Points** property, set the **IsEmpty** to true to specify the particular point is an empty point.
 
 {% highlight cshtml %}
 
@@ -36,7 +36,7 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 ## EmptyPointSettings
 
-You can customize the empty points visibility and change its **DisplayMode** *(Gap, Zero and Average)* using *EmptyPointSettings* option.
+You can customize the visibility of empty points and change its **DisplayMode** to Gap, Zero, and Average by using **EmptyPointSettings** option.
 
 {% highlight cshtml %}
 
@@ -61,14 +61,14 @@ You can customize the empty points visibility and change its **DisplayMode** *(G
 ![](Empty-Points_images/Empty-Points_img2.png)
 
 
-If the *Visible* property of EmptyPointSettings is *false*, then the empty points has been dropped and chart will be rendered without empty points.
+If the **Visible** property of EmptyPointSettings is false, then the empty points will be dropped and chart will be rendered without empty points.
 
 ![](Empty-Points_images/Empty-Points_img3.png)
 
 
-## Customizing Styles
+## Customizing styles
 
-Empty points color and border can be customized using **Style** property of EmptyPointSettings.
+Empty points color and border can be customized by using **Style** property of EmptyPointSettings.
 
 {% highlight cshtml %}
 

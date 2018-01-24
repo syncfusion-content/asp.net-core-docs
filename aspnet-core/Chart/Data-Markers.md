@@ -9,15 +9,15 @@ documentation: ug
 
 # Data Markers
 
-Data markers are used to provide information about the data point to the user. You can add a shape and label to adorn each data point.
+Data markers are used to provide information about the data point to the user. You can add shapes and labels to adorn the data points.
 
 ## Add Shapes
 
-You can add shapes to any chart types but they are often used with line, area and spline series to indicate each data point. It is highlighted when you hover the mouse on the shape.
+You can add shapes to any chart types but they are often used with line, area, and spline series to indicate each data point. It is highlighted when you hover the mouse on the shape.
 
-Shapes can be added to the chart by enabling the Visible option of the **Marker** property. There are different shapes you can add to the chart by using the **Shape** option such as Rectangle, Circle, Diamond etc.
+Shapes can be added to the chart by enabling the **Visible** option of the **Marker** property. There are different shapes can be added to the chart by using the **Shape** option such as rectangle, circle, diamond etc.
 
-The following code example explains on how to enable series marker and add shapes,
+The following code example explains how to add shapes and enable series marker,
 
 {% highlight cshtml %}
 
@@ -42,7 +42,7 @@ The following code example explains on how to enable series marker and add shape
 ![](Data-Markers_images/Data-Markers_img1.png)
 
 
-## Add image as marker
+## Add image to marker
 
 Apart from the shapes, you can also add images to mark the data point by using the **ImageUrl** option.
 
@@ -69,9 +69,9 @@ The following code example illustrates this,
 
 ## Add labels
 
-Data label can be added to a chart series by enabling the *Visible* property in the **DataLabel** option. The labels appear at the top of the data point, by default.
+Data label can be added to a chart series by enabling the **Visible** property in the **DataLabel** option. The labels appear at the top of the data point, by default.
 
-The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
+The following code example illustrates how to enable data label and set its horizontal and vertical texts alignment. 
 
 {% highlight cshtml %}
 
@@ -90,11 +90,11 @@ The following code example shows how to enable data label and set its horizontal
 
 ![](Data-Markers_images/Data-Markers_img3.png)
 
-Label content can be formatted by using the template option. Inside the template, you can add the placeholder text *"point.x"* and *"point.y"* to display corresponding data points x & y value.
+Label content can be formatted by using the **template** option. Inside the template, you can add the placeholder text *"point.x"* and *"point.y"* to display the x & y values of corresponding data points.
 
 You can adorn the labels with background shapes by setting *Shape* option.
 
-The following code example shows how to add background shapes and set template to data label.
+The following code example illustrates how to add background shapes and set template to data label.
 
 {% highlight cshtml %}
 
@@ -132,9 +132,9 @@ The following code example shows how to add background shapes and set template t
 
 ![](Data-Markers_images/Data-Markers_img4.png)
 
-The appearance of the labels can be customized by using the *Font* and *Offset* options. The Offset option is used to move the labels vertically. Also, labels can be rotated by using the *Rotate* option.
+The appearance of the labels can be customized by using the **Font** and **Offset** options. The Offset option is used to move the labels vertically. Also, labels can be rotated by using the **Rotate** option.
 
-The following code example shows how to rotate data label text and customize the font.
+The following code example illustrates how to rotate data label text and customize the font.
 
 {% highlight cshtml %}
 
@@ -154,9 +154,9 @@ The following code example shows how to rotate data label text and customize the
 ![](Data-Markers_images/Data-Markers_img5.png)
 
 
-You can position the label to the top, center or bottom position of the segment by using the **TextPosition** option for the chart types such as Column, Bar, Stacked bar, Stacked column, 100% Stacked bar, 100% Stacked column, Candle and OHLC.
+You can position the label at top, center, or bottom position of the segment by using the **TextPosition** option for the chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, Candle, and OHLC.
 
-The following code example shows how to set textPosition to display data label in the middle of the column rectangle.
+The following code example illustrates how to set TextPosition to display data label in the middle of the column rectangle.
 
 {% highlight cshtml %}
 
@@ -175,9 +175,9 @@ The following code example shows how to set textPosition to display data label i
 
 ![](Data-Markers_images/Data-Markers_img6.png)
 
-The label can be positioned inside or outside the perimeter of the series by using the **LabelPosition** option for the chart types such as Pie and Doughnut, .
+The label can be positioned inside or outside the perimeter of the series by using the **LabelPosition** option for the chart types such as Pie and Doughnut.
 
-The following code example shows how to set the LabelPosition,
+The following code example illustrates how to set the LabelPosition.
 
 {% highlight cshtml %}
 
@@ -205,17 +205,17 @@ The following code example shows how to set the LabelPosition,
 ![](Data-Markers_images/Data-Markers_img7.png)
 
 
-The following screenshot displays the labels when the LabelPosition is set as *Inside* position.
+The following screenshot illustrates the labels when the LabelPosition is set to **Inside**.
 
 ![](/js/Chart/Data-Markers_images/Data-Markers_img8.png)
 
 
-The following screenshot displays the labels when the LabelPosition is set as *OutsideExtended* position.
+The following screenshot illustrates the labels when the LabelPosition is set as **OutsideExtended**.
 
 ![](Data-Markers_images/Data-Markers_img9.png)
 
 
-The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the enableWrap property. 
+The label can be wrapped for pie, doughnut, funnel, and pyramid series by setting the **enableWrap** property. 
 
 {% highlight javascript %} 
 
@@ -234,13 +234,14 @@ The label can be wrapped for pie, doughnut, funnel, and pyramid series by settin
 ![](Data-Markers_images/Data-Markers_img13.png)
 
 
-## Contrast Color for the data label
+## Contrast color for the data label
 
  
-To change the contrast color for the data label, you can set the **EnableContrastColor** as **true** in the dataLabel property of the chart series.
+To change the contrast color for the data label, set the **EnableContrastColor** to **true** in the **dataLabel** property of the chart series.
 
-When we enable this property, the data label text will be rendered in contrast color based on the segment on which it is placed.
-If the data label is placed inside the data points segment, then that particular point's color is taken. Else the chart area or chart background color is considered for deriving the contrast color.
+When you enable this property, the data label text will be rendered in contrast color based on the segment on which it is placed.
+
+If you place the data label inside the data points segment, that particular point's color will be taken. Else the chart area or chart background color will be considered for deriving the contrast color.
  
 {% highlight javascript %} 
 
@@ -259,7 +260,7 @@ If the data label is placed inside the data points segment, then that particular
 
 ## Binding label from the datasource
 
-You can bind the text value to the data label from the datasource and then you need to map the text value field with the [`TextMappingName`](../api/ejchart#members:commonseriesoptions-marker-datalabel-textmappingname) property respectively.
+Bind the text value to the data label from the datasource, and then map the text value field with the [`TextMappingName`](../api/ejchart#members:commonseriesoptions-marker-datalabel-textmappingname) property.
 
 
 {% highlight cshtml %}
@@ -295,7 +296,7 @@ function onChartLoad(sender) {
 
 ## Binding fill color to the points from the datasource
 
-You can bind the color value to the points from the datasource and then you need to map the color value field to the [`PointColorMappingName`](../api/ejchart#members:commonseriesoptions-pointcolormappingname) property respectively.
+Bind the color value to the points from the datasource, and then map the color value field to the [`PointColorMappingName`](../api/ejchart#members:commonseriesoptions-pointcolormappingname) property.
 
 
 {% highlight cshtml %}
@@ -329,9 +330,9 @@ function onChartLoad(sender) {
 
 ## Connect Line
 
-This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. **ConnectorLine** types can be set as *Bezier* or *Line* by using the **Type** option.
+This feature is used to connect label and data point by using a line. It can be enabled only for pie, doughnut, pyramid and funnel chart types. **ConnectorLine** can be set as *Bezier* or *Line* by using the **Type** option.
 
- The following code example illustrates this,
+The following code example illustrates this,
 
 {% highlight cshtml %}
 
@@ -356,9 +357,9 @@ This feature is used to connect label and data point by using a line. It can be 
 
 ## Smart labels
 
-Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is *true* for *Accumulation type series* and *false* for *other series types*.
+Overlapping of the labels can be avoided by enabling the **EnableSmartLabels** property. The default value is true for Accumulation type series and false for other series types.
 
-The following code example shows how to enable smart labels,
+The following code example illustrates how to enable smart labels,
 
 {% highlight cshtml %}
 

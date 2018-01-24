@@ -8,9 +8,9 @@ documentation: UG
 
 # Template Option
 
-Tree nodes can be customized by using **Template** property. Treeview template option requires addition JS library called **JsRender**, which helps to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender - [http://www.jsviews.com/](http://www.jsviews.com/#) .  
+The tree nodes can be customized by using the **Template** property. The tree view template option requires addition JS library called the **JsRender** that helps you to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender, refer to this link [http://www.jsviews.com/](http://www.jsviews.com/#).
 
-In the controller page, create a data list that contains the details about tree nodes.       
+In the controller page, create a data list that contains the details about the tree nodes.
     
     {% highlight c# %}
     
@@ -64,7 +64,7 @@ In the controller page, create a data list that contains the details about tree 
         
     {% endhighlight %}       
     
-In the view page, specify template format and add the below code.    
+In the view page, specify the template format and add the following code:
     
     {% highlight razor %}
     
@@ -163,12 +163,12 @@ In the view page, specify template format and add the below code.
     
     {% endhighlight %}
 
-By running the above code, output will look like below,
+By running the above code, you will get the output like the following:
 ![](Template_images/template.png)
 
 **Custom action in nodes**
 
-You can able to perform custom action in TreeView template node. You can able to perform node delete operation while clicking delete icon by using [removeNode](http://help.syncfusion.com/js/api/ejtreeview#methods:removenode) method TreeView as shown in below code example.
+The custom action can be performed in the tree view template node. In tree view, you can perform the node delete operation while clicking delete icon by using the [removeNode](http://help.syncfusion.com/js/api/ejtreeview#methods:removenode) method as shown in the following code example:
        
     {% highlight javascript %}
         
