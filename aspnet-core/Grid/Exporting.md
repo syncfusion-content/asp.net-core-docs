@@ -15,7 +15,7 @@ The Exporting provides support to export grid data into excel, word and PDF file
  
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true">
+    <ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true">
         <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List&lt;string>() {"excelExport","wordExport","pdfExport" })>
            
         </e-toolbar-settings>
@@ -32,12 +32,12 @@ The Exporting provides support to export grid data into excel, word and PDF file
 {% endhighlight  %}
 {% highlight c# %}
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
     {
 
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -47,12 +47,12 @@ The Exporting provides support to export grid data into excel, word and PDF file
             ViewBag.datasource = _context.Orders.Take(100).ToList();
             return View();
         }
-        public ActionResult ExportToExcel(string gridModel)
+        public ActionResult ExportToExcel(string GridModel)
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertgridObject(gridModel);
-            gridExcelExport excelExp = new gridExcelExport();
+            gridProperties gridProp = ConvertGridObject(GridModel);
+            gridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, excelExp);
@@ -62,24 +62,24 @@ The Exporting provides support to export grid data into excel, word and PDF file
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertgridObject(gridModel);
-            gridWordExport wrdExp = new gridWordExport();
+            gridProperties gridProp = ConvertGridObject(GridModel);
+            gridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, wrdExp);
         }
-        public ActionResult ExportToPdf(string gridModel)
+        public ActionResult ExportToPdf(string GridModel)
         {
             PdfExport exp = new PdfExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertgridObject(gridModel);
-            gridPdfExport pdfExp = new gridPdfExport();
+            gridProperties gridProp = ConvertGridObject(GridModel);
+            gridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, pdfExp);
         }
-        private gridProperties ConvertgridObject(string gridProperty)
+        private GridProperties ConvertGridObject(string gridProperty)
         {
-            gridProperties gridProp = new gridProperties();
-            gridProp = (gridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(gridProperties));
+            GridProperties gridProp = new GridProperties();
+            gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
             return gridProp;
         }
     }
@@ -97,7 +97,7 @@ N> The excel File will be exported in the collapsed state with the expand/collap
  
 {% highlight razor %}
 
-<ej-grid id="grid" datasource=ViewBag.parent allow-paging="true">
+<ej-grid id="Grid" datasource=ViewBag.parent allow-paging="true">
     <ej-grid query-string="EmployeeID" datasource="ViewBag.child">
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" text-align="Right" width="30"></e-column>
@@ -121,7 +121,7 @@ N> The excel File will be exported in the collapsed state with the expand/collap
 {% endhighlight  %}
 {% highlight c# %}
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
     {
 
         private NORTHWNDContext _contextData;
@@ -129,7 +129,7 @@ N> The excel File will be exported in the collapsed state with the expand/collap
         public static List<Employees> emp = new List<Employees>();
 
         // GET: /<controller>/
-        public ActionResult HierarchygridExporting()
+        public ActionResult HierarchyGridExporting()
         {
             if (emp.Count == 0)
                 BindParentData();
@@ -137,45 +137,45 @@ N> The excel File will be exported in the collapsed state with the expand/collap
             ViewBag.child = _context.Orders.Take(100).ToList();
             return View();
         }
-        public ActionResult ExportToExcel(string gridModel)
+        public ActionResult ExportToExcel(string GridModel)
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = emp;
-            gridProperties gridProp = ConvertgridModel(gridModel);
-            gridProp.Childgrid.DataSource = _context.Orders.Take(100).ToList();
-            gridExcelExport excelExp = new gridExcelExport();
+            GridProperties gridProp = ConvertGridModel(GridModel);
+            gridProp.ChildGrid.DataSource = _context.Orders.Take(100).ToList();
+            GridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
-            excelExp.IncludeChildgrid = true;
+            excelExp.IncludeChildGrid = true;
             return exp.Export(gridProp, DataSource, excelExp);
         }
 
-        public ActionResult ExportToWord(string gridModel)
+        public ActionResult ExportToWord(string GridModel)
         {
             WordExport exp = new WordExport();
             var DataSource = emp;
-            gridProperties gridProp = ConvertgridModel(gridModel);
-            gridProp.Childgrid.DataSource = _context.Orders.Take(100).ToList();
-            gridWordExport wrdExp = new gridWordExport();
+            GridProperties gridProp = ConvertGridModel(GridModel);
+            gridProp.ChildGrid.DataSource = _context.Orders.Take(100).ToList();
+            GridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            wrdExp.IncludeChildgrid = true;
+            wrdExp.IncludeChildGrid = true;
             return exp.Export(gridProp, DataSource, wrdExp);
         }
-        public ActionResult ExportToPdf(string gridModel)
+        public ActionResult ExportToPdf(string GridModel)
         {
             PdfExport exp = new PdfExport();
             var DataSource = emp;
-            gridProperties gridProp = ConvertgridModel(gridModel);
+            GridProperties gridProp = ConvertGridModel(GridModel);
             gridProp.Childgrid.DataSource = _context.Orders.Take(100).ToList();
-            gridPdfExport pdfExp = new gridPdfExport();
+            GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
-            pdfExp.IncludeChildgrid = true;
+            pdfExp.IncludeChildGrid = true;
             return exp.Export(gridProp, DataSource, pdfExp);
         }
-        private gridProperties ConvertgridModel(string gridProperty)
+        private GridProperties ConvertGridModel(string gridProperty)
         {
-            gridProperties gridProp = new gridProperties();
-            gridProp = (gridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(gridProperties));
+            GridProperties gridProp = new GridProperties();
+            gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
             return gridProp;
         }
         private void BindParentData()
@@ -318,7 +318,7 @@ You can modify the template column of exporting files using server events. The c
         <a href="https://www.syncfusion.com">{{:FirstName}}</a>
 </script>
 
-<ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true">
+<ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true">
    <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List&lt;string>() {"excelExport","wordExport","pdfExport" })>
    </e-toolbar-settings>
       <e-columns>
@@ -333,31 +333,31 @@ You can modify the template column of exporting files using server events. The c
 
 {% highlight c# %}
 
-public partial class gridController : Controller
+public partial class GridController : Controller
 
 {
-  public void ColumnTemplateExportToExcel(string gridModel)
+  public void ColumnTemplateExportToExcel(string GridModel)
   {
     ExcelExport exp = new ExcelExport();
     var DataSource =  new NorthwindDataContext().EmployeeViews.ToList();
-    gridProperties obj = ConvertgridObject(gridModel);
+    GridProperties obj = ConvertGridObject(GridModel);
     obj.ExcelColumnTemplateInfo = templateInfo;
     exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, true, "flat-saffron");
   }
 
-  public void ColumnTemplateToWord(string gridModel)
+  public void ColumnTemplateToWord(string GridModel)
   {
     WordExport exp = new WordExport();
     var DataSource =  new NorthwindDataContext().EmployeeViews.ToList();
-    gridProperties obj = ConvertgridObject(gridModel);
+    GridProperties obj = ConvertGridObject(GridModel);
     obj.WordColumnTemplateInfo = WordTemplateInfo;
     exp.Export(obj, DataSource, "Export.docx", false, true, "flat-saffron");
   }
-  public void ColumnTemplateExportToPdf(string gridModel)
+  public void ColumnTemplateExportToPdf(string GridModel)
   {
     PdfExport exp = new PdfExport();
     var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
-    gridProperties obj = ConvertgridObject(gridModel);
+    GridProperties obj = ConvertGridObject(GridModel);
     obj.PdfColumnTemplateInfo = PdfTemplateInfo;
     exp.Export(obj, DataSource, "Export.pdf", false, true, "flat-saffron");
   }
@@ -399,7 +399,7 @@ public partial class gridController : Controller
 
   public void PdfTemplateInfo(object currentCell, object row)
   {
-    Syncfusion.Pdf.grid.PdfgridCell range = (Syncfusion.Pdf.grid.PdfgridCell)currentCell;
+    Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
     object templates;
     range.Value = Uri.UnescapeDataString(range.Value.ToString());
     foreach (var data in row.GetType().GetProperties())
@@ -480,11 +480,11 @@ You can modify the detailTemplate of exporting files using server events. The co
  
 {% highlight razor %}
 
-<script id="tabgridContents" type="text/x-jsrender">
+<script id="tabGridContents" type="text/x-jsrender">
     <b> More Details: </b> <br /><br /> <b class='detail'>Last Name</b> - {{:LastName}} <br /> <br /> <b class='detail'>Home Phone</b> - {{:HomePhone}} <br /> <br /> <b class='detail'>Extension No</b> - {{:Extension}}
 </script>
 
-<ej-grid id="Flatgrid" allow-paging="true" details-template="#tabgridContents" datasource="ViewBag.DataSource">
+<ej-grid id="FlatGrid" allow-paging="true" details-template="#tabGridContents" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
             <e-column field="FirstName" header-text="FirstName"></e-column>
@@ -498,39 +498,39 @@ You can modify the detailTemplate of exporting files using server events. The co
 
 {% highlight c# %}
 
-public class gridController : Controller
+public class GridController : Controller
 {
-    public IActionResult gridFeatures()
+    public IActionResult GridFeatures()
     {
        var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
        ViewBag.DataSource = DataSource;
        return View();
     }
-    public void ExportToExcel(string gridModel)
+    public void ExportToExcel(string GridModel)
     {
       ExcelExport exp = new ExcelExport();
       var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
-      gridProperties obj = ConvertgridObject(gridModel);
-      gridExcelExport exp2 = new gridExcelExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.xlsx" };
+      GridProperties obj = ConvertGridObject(GridModel);
+      GridExcelExport exp2 = new GridExcelExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.xlsx" };
       obj.ExcelDetailTemplateInfo = templateInfo;
       exp.Export(obj, DataSource, exp2);
    }
-   public void ExportToWord(string gridModel)
+   public void ExportToWord(string GridModel)
    {
      WordExport exp = new WordExport();
      var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
-     gridProperties obj = ConvertgridObject(gridModel);
+     GridProperties obj = ConvertGridObject(GridModel);
      obj.WordDetailTemplateInfo = WordDetailTemplateInfo;
-     gridWordExport exp1 = new gridWordExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.docx" };
+     GridWordExport exp1 = new GridWordExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.docx" };
      exp.Export(obj, DataSource, exp1);
    }
-   public void ExportToPDF(string gridModel)
+   public void ExportToPDF(string GridModel)
    {
      PdfExport exp = new PdfExport();
      var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
-     gridProperties obj = ConvertgridObject(gridModel);     
+     GridProperties obj = ConvertGridObject(GridModel);     
      obj.PdfDetailTemplateInfo = PdfDetailTemplateInfo;
-     gridPdfExport exp3 = new gridPdfExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.pdf" };
+     GridPdfExport exp3 = new GridPdfExport() { IncludeDetailRow = true, Theme = "flat-saffron", FileName = "Export.pdf" };
      exp.Export(obj, DataSource, exp3);
    }
    public void templateInfo(object currentCell, object row)
@@ -572,7 +572,7 @@ public class gridController : Controller
    }
    public void PdfDetailTemplateInfo(object currentCell, object row)
    {
-     Syncfusion.Pdf.grid.PdfgridCell range = (Syncfusion.Pdf.grid.PdfgridCell)currentCell;
+     Syncfusion.Pdf.Grid.PdfGridCell range = (Syncfusion.Pdf.Grid.PdfGridCell)currentCell;
      object templates;
      foreach (var data in row.GetType().GetProperties())
      {
@@ -588,11 +588,11 @@ public class gridController : Controller
        }
      }
    }
-  private gridProperties ConvertgridObject(string gridProperty)
+  private GridProperties ConvertGridObject(string gridProperty)
   {
     JavaScriptSerializer serializer = new JavaScriptSerializer();
     IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
-    gridProperties gridProp = new gridProperties();
+    GridProperties gridProp = new GridProperties();
     foreach (KeyValuePair<string, object> data in div)
     {
       var property = gridProp.GetType().GetProperty(data.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
@@ -641,7 +641,7 @@ In ASP.NET Corw, exporting is achieved by using action controller method. In con
  
 {% highlight razor %}
 
-<ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true">
+<ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true">
     <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" })>
 
     </e-toolbar-settings>
@@ -659,12 +659,12 @@ In ASP.NET Corw, exporting is achieved by using action controller method. In con
 {% endhighlight  %}
 {% highlight c# %}
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
     {
 
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -674,32 +674,32 @@ In ASP.NET Corw, exporting is achieved by using action controller method. In con
             ViewBag.datasource = _context.Orders.Take(100).ToList();
             return View();
         }
-        public ActionResult ExportToExcel(string gridModel)
+        public ActionResult ExportToExcel(string GridModel)
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridExcelExport excelExp = new gridExcelExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, excelExp);
         }
 
-        public ActionResult ExportToWord(string gridModel)
+        public ActionResult ExportToWord(string GridModel)
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridWordExport wrdExp = new gridWordExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, wrdExp);
         }
-        public ActionResult ExportToPdf(string gridModel)
+        public ActionResult ExportToPdf(string GridModel)
         {
             PdfExport exp = new PdfExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridPdfExport pdfExp = new gridPdfExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, pdfExp);
         }
@@ -722,7 +722,7 @@ The `export-to-pdf-action`, `export-to-word-action` and `export-to-excel-action`
 {% highlight razor %}
 
 
-       <ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true" export-to-pdf-action="PdfAction" export-to-word-action="WordAction" export-to-excel-action="ExcelAction">
+       <ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true" export-to-pdf-action="PdfAction" export-to-word-action="WordAction" export-to-excel-action="ExcelAction">
         <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" }) >
            
         </e-toolbar-settings>
@@ -743,7 +743,7 @@ The `export-to-pdf-action`, `export-to-word-action` and `export-to-excel-action`
 
      private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -753,32 +753,32 @@ The `export-to-pdf-action`, `export-to-word-action` and `export-to-excel-action`
             ViewBag.datasource = _context.Orders.Take(100).ToList();
             return View();
         }
-        public ActionResult ExcelAction(string gridModel)
+        public ActionResult ExcelAction(string GridModel)
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
             gridExcelExport excelExp = new gridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, excelExp);
         }
 
-        public ActionResult WordAction(string gridModel)
+        public ActionResult WordAction(string GridModel)
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridWordExport wrdExp = new gridWordExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, wrdExp);
         }
-        public ActionResult PdfAction(string gridModel)
+        public ActionResult PdfAction(string GridModel)
         {
             PdfExport exp = new PdfExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridPdfExport pdfExp = new gridPdfExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, pdfExp);
         }
@@ -795,7 +795,7 @@ You can export required grids in single file using the `ej.grid.exportAll` metho
 {% highlight js %}
 
     $('#exportAll').click(function(){
-			ej.grid.exportAll('MultipleExportToExcel',['grid1', 'grid2']);
+			ej.Grid.exportAll('MultipleExportToExcel',['Grid1', 'Grid2']);
 		});
 
 {% endhighlight %}
@@ -821,7 +821,7 @@ The snippet for this is.
 
 {% highlight js %}
 
-	var grid = $('#grid').ejgrid('instance');
+	var grid = $('#Grid').ejGrid('instance');
 	grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('pageSettings'), 1);
 
 {% endhighlight %}
@@ -830,12 +830,12 @@ On server before calling the `Export` function, the data source should be proces
 
 {% highlight c# %}
 
-       public partial class gridController : Controller
+       public partial class GridController : Controller
     {
 
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -845,34 +845,34 @@ On server before calling the `Export` function, the data source should be proces
                 ViewBag.datasource = _context.Orders.Take(100).ToList();
                 return View();
             }
-            public ActionResult ExportToExcel(string gridModel)
+            public ActionResult ExportToExcel(string GridModel)
             {
                 ExcelExport exp = new ExcelExport();
                 var DataSource = _context.Orders.Take(100).ToList();
-                gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-                gridExcelExport excelExp = new gridExcelExport();
+                GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+                GridExcelExport excelExp = new GridExcelExport();
                 excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
                 excelExp.Theme = "flat-saffron";
                 var dataSource = new DataOperations().Execute(DataSource, gridProp);
                 return exp.Export(gridProp, dataSource, excelExp);
             }
 
-            public ActionResult ExportToWord(string gridModel)
+            public ActionResult ExportToWord(string GridModel)
             {
                 WordExport exp = new WordExport();
                 var DataSource = _context.Orders.Take(100).ToList();
-                gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-                gridWordExport wrdExp = new gridWordExport();
+                GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+                GridWordExport wrdExp = new GridWordExport();
                 wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
                 var dataSource = new DataOperations().Execute(DataSource, gridProp);
                 return exp.Export(gridProp, dataSource, wrdExp);
             }
-            public ActionResult ExportToPdf(string gridModel)
+            public ActionResult ExportToPdf(string GridModel)
             {
                 PdfExport exp = new PdfExport();
                 var DataSource = _context.Orders.Take(100).ToList();
-                gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-                gridPdfExport pdfExp = new gridPdfExport();
+                GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+                GridPdfExport pdfExp = new GridPdfExport();
                 pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
                 var dataSource = new DataOperations().Execute(DataSource, gridProp);
                 return exp.Export(gridProp, dataSource, pdfExp);
@@ -887,7 +887,7 @@ By default, client data source is not sent to server to prevent unwanted data tr
 
 {% highlight js %}
 
-var grid = $('#gridId').ejgrid('instance');
+var grid = $('#GridId').ejGrid('instance');
 grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
 
 {% endhighlight %}
@@ -941,7 +941,7 @@ Also, it has `none` option which will export the grid without any theme.  The de
 
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -951,36 +951,36 @@ Also, it has `none` option which will export the grid without any theme.  The de
             ViewBag.datasource = _context.Orders.Take(100).ToList();
             return View();
         }
-        public ActionResult ExportToExcel(string gridModel)
+        public ActionResult ExportToExcel(string GridModel)
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridExcelExport excelExp = new gridExcelExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "none";
             return exp.Export(gridProp, DataSource, excelExp);
         }
 
-        public ActionResult ExportToWord(string gridModel)
+        public ActionResult ExportToWord(string GridModel)
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridWordExport wrdExp = new gridWordExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, wrdExp);
         }
-        public ActionResult ExportToPdf(string gridModel)
+        public ActionResult ExportToPdf(string GridModel)
         {
             PdfExport exp = new PdfExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = (gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
-            gridPdfExport pdfExp = new gridPdfExport();
+            GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
+            GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, pdfExp);
         }
-        public ActionResult Exportinggrid()
+        public ActionResult ExportingGrid()
 
         {
 
@@ -997,7 +997,7 @@ Also, it has `none` option which will export the grid without any theme.  The de
 
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true">
+    <ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true">
         <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" }) >
            
         </e-toolbar-settings>
@@ -1087,7 +1087,7 @@ The background color of the alternative row of the grid content.</td></tr>
  
 {% highlight razor %}
 
-       <ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true" >
+       <ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true" >
         <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" }) >
            
         </e-toolbar-settings>
@@ -1104,12 +1104,12 @@ The background color of the alternative row of the grid content.</td></tr>
 {% endhighlight %}
 {% highlight c# %}
 
-       public partial class gridController : Controller
+       public partial class GridController : Controller
     {
 
         private NORTHWNDContext _context;
 
-        public gridController(NORTHWNDContext context)
+        public GridController(NORTHWNDContext context)
         {
             _context = context;
         }
@@ -1123,36 +1123,36 @@ The background color of the alternative row of the grid content.</td></tr>
         {
             ExcelExport exp = new ExcelExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertgridObject(gridModel);
-            gridExcelExport excelExp = new gridExcelExport();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridExcelExport excelExp = new GridExcelExport();
             excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
             excelExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, excelExp);
         }
 
-        public ActionResult ExportToWord(string gridModel)
+        public ActionResult ExportToWord(string GridModel)
         {
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertgridObject(gridModel);
-            gridWordExport wrdExp = new gridWordExport();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridWordExport wrdExp = new GridWordExport();
             wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, wrdExp);
         }
-        public ActionResult ExportToPdf(string gridModel)
+        public ActionResult ExportToPdf(string GridModel)
         {
             PdfExport exp = new PdfExport();
             var DataSource = _context.Orders.Take(100).ToList();
-            gridProperties gridProp = ConvertgridObject(gridModel);
-            gridPdfExport pdfExp = new gridPdfExport();
+            GridProperties gridProp = ConvertGridObject(GridModel);
+            GridPdfExport pdfExp = new GridPdfExport();
             pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
             return exp.Export(gridProp, DataSource, pdfExp);
         }
-        private gridProperties ConvertgridObject(string gridProperty)
+        private GridProperties ConvertGridObject(string gridProperty)
         {
-            gridProperties gridProp = (gridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(gridProperties));
+            GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
 
-            gridExtensions ext = new gridExtensions();
+            GridExtensions ext = new GridExtensions();
 
             AutoFormat auto = new AutoFormat();
 
@@ -1183,7 +1183,7 @@ The background color of the alternative row of the grid content.</td></tr>
             gridProp.AutoFormat = auto;
             return gridProp;
         }
-        public ActionResult Exportinggrid()
+        public ActionResult ExportingGrid()
 
         {
 
@@ -1327,7 +1327,7 @@ You can customize the particular cell or particular row of exporting files using
  
 {% highlight razor %}
 
-    <ej-grid id="Flatgrid" datasource="ViewBag.datasource" allow-paging="true" >
+    <ej-grid id="FlatGrid" datasource="ViewBag.datasource" allow-paging="true" >
         <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" }) >
            
         </e-toolbar-settings>
@@ -1344,15 +1344,15 @@ You can customize the particular cell or particular row of exporting files using
 {% endhighlight %}
 {% highlight c# %}
 
-    public partial class gridController : Controller
+    public partial class GridController : Controller
 
     {
 
-	public void ExportToExcel(string gridModel)
+	public void ExportToExcel(string GridModel)
     {
             ExcelExport exp = new ExcelExport();
             var DataSource = new NorthwindDataContext().EmployeeViews.Take(100).ToList(); 
-            gridProperties obj =(gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(gridProperties), gridModel);
+            GridProperties obj =(gridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
             obj.ServerExcelQueryCellInfo = QueryCellInfo;
             exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
     }
@@ -1362,7 +1362,7 @@ You can customize the particular cell or particular row of exporting files using
             if (range.Column==1 && int.Parse(range.Value) == 5)
                 range.CellStyle.Color = Color.Red;
     } 
-	public ActionResult Exportinggrid()
+	public ActionResult ExportingGrid()
 	{
 
 		var DataSource = new NorthwindDataContext().OrdersViews.ToList();
