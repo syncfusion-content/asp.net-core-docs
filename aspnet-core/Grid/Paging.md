@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Paging
 
- You can display the grid records in paged view, by setting `allow-paging` property as `true`.
+The grid records can be displayed in paged view, by setting the `allow-paging` property as `true`.
 
-The code snippet to enable paging is follows.
+The code snippet to enable paging is as follows.
 
 {% tabs %}
 {% highlight razor %}
@@ -43,7 +43,7 @@ The code snippet to enable paging is follows.
 {% endhighlight  %}    
 {% endtabs %}  
 
- The following output is displayed as a result of the above code example.
+ The following output is displayed as a result of the previous code example.
  
  ![](Paging_images/Paging_img1.png)
 
@@ -53,7 +53,7 @@ The code snippet to enable paging is follows.
 
 You can pass the current page information as a query string while navigating to other page. To enable query string, set the `enable-query-string` property of `e-page-settings` as `true`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -87,19 +87,19 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
  ![](Paging_images/Paging_img2.png)
  
  ## Pager template
 
-Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set `enable-templates` as true and `template` properties of `e-page-settings`.
+Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set the `enable-templates` as true. The HTML templates can be specified in the `template` property of `e-page-settings`.
 
- Prevent to show the default pager while enabling the pager `template` by setting `show-defaults` property of `e-page-settings` as `false`.
+ To prevent the display of default pager, enable the pager `template` by setting the `show-defaults` property of the `e-page-settings` as `false`.
 
  N> It's a standard way to enclose the `template`  within the `script` tag with `type` as "text/x-jsrender".
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -160,15 +160,15 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %} 
  
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Paging_images/Paging_img3.png)
 
 ## Pager with pageSettings
 
-We can customize the default page settings, such as [`pageCount`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagecount "pageCount"), [`pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize "pageSize")  of the Grid's pager by using [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") property of Grid control. 
+The default page settings can be customized, such as the [`pageCount`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagecount "pageCount"), [`pageSize`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings-pagesize "pageSize")  of the grid's pager by using [`pageSettings`](https://help.syncfusion.com/api/js/ejgrid#members:pagesettings "pageSettings") property of grid control. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -185,6 +185,6 @@ $(function () {
 });
 {% endhighlight %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](paging_images/paging_img7.png)

@@ -9,9 +9,9 @@ documentation: ug
 # Row
 It represents the record details that are fetched from the datasource.
 
-## Row Hover
-You can see the mouse hovering effect on the corresponding grid rows using `enable-row-hover` property. By default its value is `true`.
-The following code example describes the above behavior.
+## Row hover
+You can see the mouse hovering effect on the corresponding Grid rows using the `enable-row-hover` property, its value is `true` by default.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -44,19 +44,19 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Row_images/Row_img1.png)
 
-## Details Template
+## Details template
 
-It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the `details-template` property. And also you can change HTML elements in detail template row into JavaScript controls using `details-data-bound` event.
+It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the `details-template` property. Also, you can change HTML elements in detail template row into JavaScript controls using the the `details-data-bound` event.
 
 On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
 
-N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
+N> It is a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -121,15 +121,15 @@ The following code example describes the above behavior.
 {% endhighlight %}
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Row_images/Row_img2.png)
 
 
-## Row Template
+## Row template
 
 Row template enables you to set the customized look and behavior to grid all rows.`row-template` property can be used bind the `id` of HTML template.
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight  js %}
@@ -214,15 +214,15 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Row_images/Row_img3.png)
 
 ## Alternate row styling
 
-Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative row styling in grid by using `enable-alt-row` property. 
+Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative row styling in grid by using the `enable-alt-row` property. 
 
-By default its value is `true`, so the following code example describes the how to turn off alternate row behavior.
+By default, its value is `true`, so the following code example describes the how to turn off alternate row behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -255,6 +255,6 @@ By default its value is `true`, so the following code example describes the how 
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Row_images/Row_img4.png)

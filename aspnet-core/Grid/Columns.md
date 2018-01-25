@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns with Grid widget for Syncfusion Essential ASP.NET Core
+title: Columns with grid widget for Syncfusion Essential ASP.NET Core
 description: columns
 platform: ASP.NET Core
 control: Grid
@@ -9,13 +9,13 @@ documentation: ug
 
 # Columns
 
-Column definitions are used as the DataSource schema in grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
+The column definitions are used as the DataSource schema in the Grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
 
 N> 1. The column with `field` which are not in the datasource, then the column values will be displayed as empty.
 N> 2. If the `field` name contains "dot" then it is considered as complex binding.
 
 
-## Auto Generation
+## Auto generation
 
 The columns are automatically generated when `columns` declaration is empty or undefined while initializing the grid. Also, all the columns which are in `dataSource` are bound as a grid `e-columns`.
 
@@ -44,15 +44,15 @@ The columns are automatically generated when `columns` declaration is empty or u
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img1.png)
 
-### How to set `is-primary-key` for auto generated columns when editing is enabled:
+### How to set the `is-primary-key` for auto generated columns when editing is enabled:
 
-Using `data-bound` event, you can set `is-primary-key` value as `true` by two ways. The following code example demonstrates the above behavior.
+Using the `data-bound` event, you can set `is-primary-key` value as `true` by two ways. The following code example demonstrates the previous behavior.
 
-1. If primary key "column index" is known then refer the following code example
+1. If primary key "column index" is known then refer to the following code example.
 
 {% tabs %}
 {% highlight razor %}
@@ -88,7 +88,7 @@ Using `data-bound` event, you can set `is-primary-key` value as `true` by two wa
 {% endhighlight  %}    
 {% endtabs %}  
 
-2. If primary key "column field name" is known then refer the following code example
+2. If primary key "column field name" is known then refer to the following code example.
 
 {% tabs %}
 {% highlight razor %}
@@ -125,13 +125,13 @@ Using `data-bound` event, you can set `is-primary-key` value as `true` by two wa
 
 ## Headers
 
-### HeaderText
+### Header text
 
-It represents the title for particular column. To enable header text, set `header-text` property of `e-columns`. The following code example describes the above behavior.
+It represents the title for particular column. To enable header text, set `header-text` property of `e-columns`. The following code example describes the previous behavior.
 
 N> If `header-text` is not defined then the `field` name is considered as header text for that particular column. If `field` name and `header-text` also not defined then the column is rendered with "empty" header text.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -165,13 +165,13 @@ The following code example describes the above behavior.
 {% endtabs %}  
   
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img2.png)
 
-### Header Text alignment
+### Header text alignment
 
-Align the header text of column header using `header-text-align` property of the `e-columns`. There are four possible ways to align header text, they are
+Align the header text of column header using the `header-text-align` property of the `e-columns`. There are four possible ways to align header text, they are as follows.
 
 1. Right
 2. Left
@@ -180,7 +180,7 @@ Align the header text of column header using `header-text-align` property of the
 
 N> For `HeaderTextAlign` property you can assign `enum` value (`TextAlign.Right`).
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
  
 {% tabs %}
 {% highlight razor %}
@@ -213,20 +213,20 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img3.png)
 
 
-### Header Template
+### Header template
 
 The template design that applies on for the column header. To render template, `header-template-id` property of `e-columns`.
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
+The JsRender syntax can be used in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
 N> It's a standard way to enclose the `template` within the `script` tag with `type` as `text/x-jsrender`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -269,17 +269,17 @@ The following code example describes the above behavior.
 
 ## Text alignment
 
-You can align both content and header text of particular column using `text-align` property. There are four possible ways to align content and header text of column, they are 
+The content and header text of a particular column can be aligned using the `text-align` property. There are four possible ways to align content and header text of column, they are as follows.
 
 1. Right
 2. Left
 3. Center
 4. Justify
 
-N> 1. For `text-align` property you can assign `enum` value (`TextAlign.Right`).
+N> 1. For the `text-align` property, `enum` value (`TextAlign.Right`) can be assigned.
 N> 2. The `text-align` property will affect both content and header text of the grid.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -312,7 +312,7 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img5.png)
 
@@ -322,7 +322,7 @@ Format is the process of customizing the particular column data with specified j
 
 The `format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings available for the `Date` and `Number` types.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -356,15 +356,15 @@ The following code example describes the above behavior.
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img6.png)
 
 ## Width
 
-You can specify the width for particular column by setting `width` property of `e-columns` as in pixel (ex: 100) or in percentage (ex: 40%).
+The width for a particular column can be specified by setting `width` property of `e-columns` as in pixel (ex: 100) or in percentage (ex: 40%).
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -398,7 +398,7 @@ The following code example describes the above behavior.
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img7.png)
 
@@ -406,9 +406,9 @@ The following output is displayed as a result of the above code example.
 
 The `allow-resize-to-fit` property enable the grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows and this automatic behavior is applicable only for the columns which does not have width specified. 
 
-On columns where "width is defined", double click on the particular column header's resizer symbol to resize the column to show the whole text. For example, refer the "ShipCity" column in the below code snippet and output screen shot. 
+On columns where "width is defined", double-click on the particular column header's resizer symbol to resize the column to show the whole text. For example, refer to the "ShipCity" column in the below code snippet and output screenshot. 
 
-The following code example describes the above behavior. 
+The following code example describes the previous behavior. 
 
 
 {% tabs %}
@@ -443,16 +443,16 @@ The following code example describes the above behavior.
 {% endtabs %}  
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img8.png)
 
 
 ## Reorder
 
-Reordering can be done by drag and drop the particular column header from one index to another index within the grid. Reordering can be enabled by setting `allow-reordering` property as `true`.
+Reordering can be done by drag and drop of the particular column header from one index to another index within the grid. Reordering can be enabled by setting the `allow-reordering` property as `true`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -485,15 +485,15 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img10.png)
 
 ## Visibility
 
-You can hide particular column in grid view by setting `visible` property of it as `false`.
+The particular column in the grid view can be hid by setting the `visible` property of it as `false`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
  
 {% tabs %}
 {% highlight razor %}
@@ -527,7 +527,7 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img11.png)
 
@@ -538,7 +538,7 @@ You can define the unbound columns in grid by not defining `field` property for 
 
 N> Editing, grouping, filtering, sorting, summary and searching support are not available for unbound columns.
 
-The following code example describes the above behavior. 
+The following code example describes the previous behavior. 
 
 {% tabs %}
 {% highlight razor %}
@@ -580,15 +580,15 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img13.png)
 
-## Controlling Grid actions
+## Controlling grid actions
 
 You can control the grid actions of a particular column by setting `allow-sorting`,`allow-grouping`, `allow-filtering` and `allow-editing` properties of it as `false`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -624,9 +624,9 @@ The following code example describes the above behavior.
 
 ## Read only
 
-To make a column as "read-only" then set `allow-editing` property of `e-columns` as `false`.
+To make a column as "read-only" then set the `allow-editing` property of `e-columns` as `false`.
 
-The following code example describes the above behavior. 
+The following code example describes the previous behavior. 
 
 {% tabs %}
 {% highlight razor %}
@@ -660,12 +660,12 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img15.png)
 
 
-## Command Column
+## Command column
 
 ### Default action buttons
 
@@ -676,9 +676,9 @@ Using Command column, you can add `CRUD` action buttons as one of the grid colum
 3. Delete
 4. Cancel
 
-Through `e-button-options` property of `e-column-commands`, you can specify all the button options which are supported by Essential Studio ASP.NET MVC Button control. 
+Through the `e-button-options` property of `e-column-commands`, you can specify all the button options which are supported by Essential Studio ASP.NET MVC button control. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -727,7 +727,7 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img17.png)
 
@@ -735,10 +735,10 @@ The following output is displayed as a result of the above code example.
 
 You can add custom button in the command column by specifying the `type` property of `e-column-commands` as `empty` or any other `string` instead of `enum` values.
 
-N> 1. For `type` property you can assign either `string` value (`edit`).
+N> 1. For `type` property, you can assign `string` value (`edit`).
 N> 2. In command column you can add only buttons.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -826,16 +826,16 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img18.png)
 
 
-## Column Chooser
+## Column chooser
 
 Column chooser contains all the columns which are defined in the `e-columns` property, using this you can control the visibility of columns in grid. You can prevent to show the particular column in column chooser by setting `show-in-column-chooser` property of `e-columns` as `false`. It can be shown in the right corner of grid. To enable column chooser, `show-column-chooser` property as `true`. 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -869,21 +869,21 @@ The following code example describes the above behavior.
 {% endhighlight  %} 
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img19.png)
 
-## Foreign Key Column
+## Foreign key column
 
-Lookup data source can be bound to `data-source` property of `e-columns`. Data `field` and `text` can be set using `foreign-key-field` and `foreign-key-value` property of `e-columns`.
+Lookup data source can be bound to the `data-source` property of `e-columns`. Data `field` and `text` can be set using `foreign-key-field` and `foreign-key-value` property of `e-columns`.
 
 In the `data-source` property, we can bound local and remote data.
 
 I> For foreign key column the sorting and grouping is based on `foreign-key-field` instead of `foreign-key-value`.
 
-N> In remote data, server should be configured to perform select and filter operations since the Grid will try to fetch required columns using select operation and required data using filter operation.
+N> In remote data, server should be configured to perform select and filter operations since the grid will try to fetch required columns using select operation and required data using filter operation.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -919,7 +919,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img20.png)
 
@@ -927,7 +927,7 @@ The following output is displayed as a result of the above code example.
 
 You can customize the header and content of that particular column by `css-class` property of the column.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -975,7 +975,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img23.png)
 
@@ -985,7 +985,7 @@ Used to define the type of the particular column data. If the `type` property of
 
 N> The `type` is needed for filtering feature when first row of the data is `null` or `empty`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -1018,13 +1018,13 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img24.png)
 
-## Column Layout
+## Column layout
 
-You can set the Grid's columns layout based on either Grid width or its columns width using `column-layout` property of Grid. There are two ways to set the column layout, they are 
+You can set the grid's columns layout based on either grid width or its columns width using `column-layout` property of it. There are two ways to set the column layout, they are as follows.
 
 1. Auto
 2. Fixed
@@ -1062,7 +1062,7 @@ You can set the Grid's columns layout based on either Grid width or its columns 
 {% endtabs %} 
 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img25.png)
 

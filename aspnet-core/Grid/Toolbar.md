@@ -9,9 +9,9 @@ documentation: ug
 
 # Toolbar
 
-Toolbar can be shown by defining `show-toolbar` property in `toolbar-settings`. Toolbar has option to add default items in `toolbar-items` and customized items in ` custom-toolbar-items`.
+Toolbar can be shown by defining the `show-toolbar` property in `toolbar-settings`. Toolbar has option to add default items in `toolbar-items` and customized items in ` custom-toolbar-items`.
 
-## Default Toolbar items
+## Default toolbar items
 
 The following table shows default toolbar items and its action. 
 
@@ -95,11 +95,11 @@ namespace SyncfusionMvcApplication1.Controllers
 ![](Toolbar_images/Toolbar_img1.png)
 
 
-I> `allow-adding`, `allow-editing` and `allow-deleting` need to be enabled for add, delete, edit, save & cancel in `toolbar-items`. `allow-searching` to be enabled while adding Search in toolbar to perform search action.
+I> The `allow-adding`, `allow-editing` and `allow-deleting` need to be enabled for add, delete, edit, save & cancel in `toolbar-items`. `allow-searching` to be enabled while adding search in toolbar to perform search action.
 
 ## Custom Toolbar items
 
-Custom toolbar is used to create your own toolbar items in toolbar. Using custom-toolbar-items property of toolbar-settings, we can define our own toolbar items. Actions for this customized toolbar item is defined in toolbar-click event.
+Custom toolbar is used to create your own toolbar items in toolbar. Using the custom-toolbar-items property of toolbar-settings, our own toolbar items can defined. Actions for this customized toolbar item is defined in toolbar-click event.
 
 {% tabs %}
 {% highlight C# %}
