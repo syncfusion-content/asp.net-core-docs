@@ -89,7 +89,7 @@ The Exporting provides support to export grid data into excel, word and PDF file
 
 # Hierarchy grid exporting
 
-The grid will be exported with its child grid. This can be achieved by enabling the `IncludeChildgrid` property of the respective exporting classes like `gridExcelExport`, `gridWordExport` and `gridPdfExport` and include the dataSource needed for Childgrid in the gridProperties object after deserializing them. Remaining procedures will be same as the normal grid exporting.
+The grid will be exported with its child grid. This can be achieved by enabling the `IncludeChildGrid` property of the respective exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for Childgrid in the gridProperties object after deserializing them. Remaining procedures will be same as the normal grid exporting.
 
 N> The excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like Pdf and Word will be exported in expanded state.
 
