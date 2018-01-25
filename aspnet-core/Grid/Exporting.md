@@ -1297,7 +1297,7 @@ Customize the cell and child grid
 </tr>
 <tr>
 <td>
-PdfChildgridInfo
+PdfChildGridInfo
 </td>
 <td>
 current row, row data and gridProperties.
@@ -1308,7 +1308,7 @@ Customize the cell and child grids
 </tr>
 <tr>
 <td>
-WordChildgridInfo
+WordChildGridInfo
 </td>
 <td>
 current row, row data, gridProperties
