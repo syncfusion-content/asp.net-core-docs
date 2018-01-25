@@ -51,7 +51,7 @@ The following code example is used to render the tab element with keyboard navig
 
 <div style="width: 500px">
 
-	<ej-tab id="dishtab" allow-keyboard-navigation="true">
+	<ej-tab id="tab1" allow-keyboard-navigation="true">
 		<e-tab-items>
 			<e-tab-item id="pizzatype" text="Pizza Type">
 				<e-content-template>
@@ -80,7 +80,7 @@ $(function () {
 	$(document).on("keydown", function (e) {
 		if (e.altKey && e.keyCode === 74) {
 			// j- key code.
-			$("#dishtab ul a").focus();
+			$("#tab1 ul a").focus();
 		}
 	});
 });
