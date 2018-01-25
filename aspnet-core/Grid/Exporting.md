@@ -274,7 +274,7 @@ It returns the current cell and row of PDF.
 </tr>
 <tr>
 <td>
-ExcelChildgridInfo
+ExcelChildGridInfo
 </td>
 <td>
 current row, row data and gridProperties.
@@ -790,7 +790,7 @@ The `export-to-pdf-action`, `export-to-word-action` and `export-to-excel-action`
 
 ## Export required grid in single file
 
-You can export required grids in single file using the `ej.grid.exportAll` method. This method can be used with export action and array of jQuery selector of grid which need to be export. The code snippet for it is as follows.
+You can export required grids in single file using the `ej.Grid.exportAll` method. This method can be used with export action and array of jQuery selector of grid which need to be export. The code snippet for it is as follows.
 
 {% highlight js %}
 
@@ -1286,7 +1286,7 @@ It returns the current row of PDF.
 </tr>
 <tr>
 <td>
-ExcelChildgridInfo
+ExcelChildGridInfo
 </td>
 <td>
 current row, row data and gridProperties
