@@ -9,7 +9,7 @@ documentation: ug
 
 # Print
 
-Use the `print()` method from grid instance to print the grid. You can add print option in Toolbar item by adding `printGrid` in `toolbar-items`.
+Use the `print()` method from Grid instance to print the grid. You can add print option in Toolbar item by adding `printGrid` in `toolbar-items`.
 
 {% tabs %}
 {% highlight razor %}
