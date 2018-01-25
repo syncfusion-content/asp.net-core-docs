@@ -104,7 +104,7 @@ By default, the grid can be print from toolbar. To print from external button ac
 ![](Print-Grid_images/Print_img2.png)
 
 {:caption}
-grid with external button for Print
+Grid with external button for Print
 
 ![](Print-Grid_images/Print_img3.png)
 {:caption}
