@@ -101,12 +101,12 @@ By default, the grid can be print from toolbar. To print from external button ac
 {% endhighlight  %}    
 {% endtabs %}  
 
-![](Print-grid_images/Print_img2.png)
+![](Print-Grid_images/Print_img2.png)
 
 {:caption}
 grid with external button for Print
 
-![](Print-grid_images/Print_img3.png)
+![](Print-Grid_images/Print_img3.png)
 {:caption}
 
 Print dialog in Chrome browser
