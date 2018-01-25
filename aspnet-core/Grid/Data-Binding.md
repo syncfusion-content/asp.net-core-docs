@@ -36,7 +36,7 @@ The following code example describes the previous behavior.
 </ej-grid>
 {% endhighlight  %}
 {% highlight c# %}
-namespace samplebrowser.Controllers.grid
+namespace samplebrowser.Controllers.Grid
 {
     public class Person
     {
