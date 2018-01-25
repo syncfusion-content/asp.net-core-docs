@@ -123,7 +123,7 @@ Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined 
 
 ![](Summary_images/summaryGrid_img2.png)
 
-### True and false count 
+### True and False count 
 
 Summaries with `true` and `false` count aggregate can be defined by using `summary-type`,`e-summary-columns` collections. `true` and `false` count aggregates are used for Boolean columns.
 
