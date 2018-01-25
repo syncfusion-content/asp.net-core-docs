@@ -277,7 +277,7 @@ It returns the current cell and row of PDF.
 ExcelChildGridInfo
 </td>
 <td>
-current row, row data and gridProperties.
+current row, row data and GridProperties.
 </td>
 <td>
 Customize the cell and child grid.
@@ -285,10 +285,10 @@ Customize the cell and child grid.
 </tr>
 <tr>
 <td>
-PdfChildgridInfo
+PdfChildGridInfo
 </td>
 <td>
-current row, row data and gridProperties.
+current row, row data and GridProperties.
 </td>
 <td>
 Customize the cell and child grid.
@@ -296,7 +296,7 @@ Customize the cell and child grid.
 </tr>
 <tr>
 <td>
-WordChildgridInfo
+WordChildGridInfo
 </td>
 <td>
 current row, row data and gridProperties.
