@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Hierarchical binding | Grid | ASP.NET Core | Syncfusion
+title: Hierarchical binding | grid | ASP.NET Core | Syncfusion
 description: How to bind the hierarchical data
 platform: aspnet-core
-control: Grid
+control: grid
 documentation: ug
 ---
 
 # Hierarchical Bindings
 
-Hierarchical binding can be used to create the Grid with parent and child relation, this facilitate you to view the child records for a particular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining Grid within Grid and `query-string`.
+Hierarchical binding can be used to create the grid with parent and child relation, this facilitate you to view the child records for a particular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining grid within grid and `query-string`.
 
-The Grid within Grid is used to define the model properties that has to be applied on the child grid. The Grid within Grid is the extended class of the base class Grid such that it holds all the properties of the Grid. The `query-string` is a property that has to be specified within the Grid within the Grid, which defines the relation between the parent and child grid. The `query-string` property is used to denote the primaryKey field of the parent grid which is to be mapped with the foreignKey field of the child grid. Based on the mapping, the child grid records are filtered from the table and is bound as datasource for the child grid.
+The Grid within grid is used to define the model properties that has to be applied on the child grid. The grid within grid is the extended class of the base class grid such that it holds all the properties of the grid. The `query-string` is a property that has to be specified within the grid within the grid, which defines the relation between the parent and child grid. The `query-string` property is used to denote the primaryKey field of the parent grid which is to be mapped with the foreignKey field of the child grid. Based on the mapping, the child grid records are filtered from the table and is bound as datasource for the child grid.
 
 {% tabs %}
 
@@ -67,9 +67,9 @@ public partial class GridController : Controller
 ![](Hierarchy-Grid_images/Hierarchy-Grid_img1.png)
 
 
-## Expand or Collapse All Child's
+## Expand or collapse all child's
 
-The Grid can able to expand and collapse all the `ChildGrid` through programmatically using [`expandAll`](http://help.syncfusion.com/js/api/ejgrid#methods:expandall "expandAll") and [`collapseAll`](http://help.syncfusion.com/js/api/ejgrid#methods:collapseall "collapseAll") method.
+The grid can able to expand and collapse all the `ChildGrid` through programmatically using the [`expandAll`](http://help.syncfusion.com/js/api/ejgrid#methods:expandall "expandAll") and [`collapseAll`](http://help.syncfusion.com/js/api/ejgrid#methods:collapseall "collapseAll") method.
 
 {% tabs %}
 

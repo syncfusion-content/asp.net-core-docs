@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Sorting
 
-The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting `allow-sorting` property as `true`. 
+The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting the `allow-sorting` property as `true`. 
 
 To dynamically sort a particular column, click on its column header. The order switch between ascending and descending each time you click a column header for sorting.
 
@@ -46,11 +46,11 @@ The following output is displayed as a result of the above code example.
 
 ![](Sorting_images/Sorting_img1.png)
 
-## Initial Sorting
+## Initial sorting
 
 Through `sorted-columns` property of `sort-settings`, you can sort the columns while initializing the grid itself. You need to specify the `field` (Columns) name and `direction` in the `sorted-columns`.
 
-N> 1. For `direction` property you can assign either `string` value ("Descending") or `enum` value (`SortOrder.Descending). 
+N> 1. For `direction` property you can assign either the `string` value ("Descending") or `enum` value (`SortOrder.Descending). 
 N> 2. You can add multiple columns in `sorted-columns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
@@ -93,13 +93,13 @@ The following output is displayed as a result of the above code example.
 
 ![](Sorting_images/Sorting_img2.png)
 
-## Multi-Column Sorting
+## Multi-column sorting
 
-Sort multiple columns in grid by setting `allow-multi-sorting` property as true. The sorting order is displayed in the header while doing multi sorting.
+Sort multiple columns in grid by setting the `allow-multi-sorting` property as true. The sorting order is displayed in the header while doing multi sorting.
 
-You can sort more than one column by pressing "Ctrl key + mouse left click" on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
+You can sort more than one column by pressing the "Ctrl key + mouse left click" on the column header. To clear sorting for particular column, press the "Shift + mouse left click". 
 
-N> `allow-sorting` must be true while enabling multi sort.
+N> The `allow-sorting` must be true while enabling multi sort.
 
 The following code example describes the above behavior.
 
@@ -144,11 +144,11 @@ The following output is displayed as a result of the above code example.
 
 For sorting, grid uses default browser's sort function for better performance. On multi column sorting in some browsers like chrome, the records order will be different due to unstable implementation of sorting algorithm in it. 
 
-To resolve this, you need to set `ej.support.stableSort` as `false`.
+To resolve this, you need to set the `ej.support.stableSort` as `false`.
 
 This will tell the "DataManager" to use custom sort function for sorting data. 
 
-Please refer the [link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "link"), to know more information about stable sort.
+Please refer to the [link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "link"), to know more information about stable sort.
 
 The following code example describes the above behavior.
 
@@ -192,11 +192,11 @@ The following output is displayed as a result of the above code example.
 
 ## Touch options
 
-While using Grid in a touch device, you have an option for multi sorting in single tap on the grid header. By tapping on the grid header, it will show the toggle button in small popup with sort icon. Now tap the button to enable multi sorting in single tap.
+On using Grid in a touch device, you have an option for multi sorting in single tap on the grid header. By tapping on the grid header, it will show the toggle button in small popup with sort icon. Now tap the button to enable multi sorting in single tap.
 
 Again if you tap the popup symbol, then the single tap multi sorting will be disabled. 
 
-N> `allow-multi-sorting` and `allow-sorting` should be `true` then only the popup will be shown.
+N> The `allow-multi-sorting` and `allow-sorting` should be `true` then only the popup will be shown.
 
 The following code example describes the above behavior.
 {% tabs %}

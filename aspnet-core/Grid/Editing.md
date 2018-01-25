@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Editing
 
-The grid control has support for dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call `addRecord` method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
+The Grid control has support for dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call `addRecord` method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
-The primary key for the data source should be defined in `e-columns` definition, for editing to work properly. In `e-columns` definition, particular primary column's `is-primary-key` property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
+The primary key for the data source should be defined in `e-columns` definition, for editing to work properly. In `e-columns` definition, particular primary column's `is-primary-key` property should be set to `true`. Refer to the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
 
 N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
 N> 2. The column which is specified as `is-identity` will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that `is-identity` column.
@@ -23,7 +23,7 @@ Using toolbar which is rendered at the top of the grid header, you can show all 
 
 N> For `toolbar-items` property you can assign either `string` value ("Add") or `enum` value (`Syncfusion.JavaScript.ToolBarItems.Add`).
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -58,22 +58,22 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img1.png)
 
 ## Cell edit type and its edit options
 
-The edit type of bound column can be customized using `edit-type` property of `e-columns`. The following Essential JavaScript controls are supported built-in by `edit-type`. You can set the `edit-type` based on specific data type of the column. 
+The edit type of bound column can be customized using `edit-type` property of `e-columns`. The following Essential JavaScript controls are supported by built-in `edit-type`. You can set the `edit-type` based on specific data type of the column. 
 
 * `NumericTextBox` control for integers, double, and decimal data types.
 * `DatePicker` control for date data type.
 * `DateTimePicker` control for date-time data type.
 * `DropDownList` control for list of data type.
 
-And also you can define the model for all the editTypes controls while editing through EditOptions.
+Also, you can define the model for all the editTypes controls while editing through EditOptions.
 
-The following table describes `edit-type` and their corresponding EditOptions of the specific data type of the column.
+The following table describes the `edit-type` and their corresponding EditOptions of specific data type of the column.
 
 <table>
 <tr>
@@ -98,10 +98,10 @@ DateTimePicker</td><td>
 DateTimeEditOptions(new DateTimePickerProperties() {})</td></tr>
 </table>
 
-N> 1. If `edit-type` is not set, then by default it will display the input element ("string") while editing a column.
+N> 1. If the `edit-type` is not set, then by default it will display the input element ("string") while editing a column.
 N> 2. For `edit-type` property you can assign either `string` value ("Numeric") or `enum` value (`Syncfusion.JavaScript.EditingType.Numeric`).
 
-The following code example describes the above behavior 
+The following code example describes the previous behavior. 
 
 {% tabs %}
 {% highlight razor %}
@@ -140,19 +140,19 @@ The following code example describes the above behavior
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img2.png)
 
-## Cell Edit Template
+## Cell edit template
 
-On editing the column values, custom editor can be created by using `edit-template` property of `e-columns`. It has three functions, they are
+On editing the column values, custom editor can be created by using the `edit-template` property of `e-columns`. It has three functions, they are
 
 1. `Create` - It is used to create the control at time of initialize.
 2. `Read` - It is used to read the input value at time of save.
 3. `Write` - It is used to assign the value to control at time of editing.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -212,20 +212,20 @@ The following code example describes the above behavior.
 {% endhighlight %}   
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img3.png)
 
 
-## Edit Modes
+## Edit modes
 
 ### Inline 
 
-Set `edit-mode` as `Normal`, then the row itself is changed as edited row.
+Set the `edit-mode` as `Normal`, then the row itself is changed as edited row.
 
-N> For `edit-mode` property you can assign either `string` value (`Normal`) or `enum` value (`Syncfusion.JavaScript.EditMode.Normal`).
+N> For the `edit-mode` property you can assign either `string` value (`Normal`) or `enum` value (`Syncfusion.JavaScript.EditMode.Normal`).
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -262,15 +262,15 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img4.png)
 
-### Inline Form
+### Inline form
 
-Set `edit-mode` as `InlineForm`, then edit form will be inserted next to the row which is to be edited.
+Set the `edit-mode` as `InlineForm`, then edit form will be inserted next to the row which is to be edited.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -307,27 +307,27 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
  
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img5.png)
 
 
-### Inline Template Form
+### Inline template form
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, set `edit-mode` as `InlineFormTemplate` and specify the template ID to `inline-form-template-id` property of `e-edit-settings`.
+To edit the records using inline template form, set `edit-mode` as `InlineFormTemplate` and specify the template ID to `inline-form-template-id` property of `e-edit-settings`.
 
-While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using `action-complete` event of grid.
+While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using the `action-complete` event of grid.
 
-N> 1. `value` attribute is used to bind the corresponding field value while editing.
-N> 2. `name` attribute is used to get the changed field values while saving the edited record.
-N> 3.  It's a standard way to enclose the `Template` within the `script` tag with `type` as "text/x-jsrender".
-N> 4.  For `edit-mode` property you can assign either `string` value (`InlineFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.InlineTemplateForm`) 
+N> 1. The `value` attribute is used to bind the corresponding field value while editing.
+N> 2. The `name` attribute is used to get the changed field values while saving the edited record.
+N> 3. It's a standard way to enclose the `Template` within the `script` tag with `type` as "text/x-jsrender".
+N> 4. For the `edit-mode` property you can assign either `string` value (`InlineFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.InlineTemplateForm`) 
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -401,7 +401,7 @@ The following code example describes the above behavior.
 {% endhighlight %}    
 {% endtabs %} 
 
- The following output is displayed as a result of the above code example.
+ The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img6.png)
 
@@ -413,9 +413,9 @@ After the template elements are converted to JS controls using action-complete e
 
 ### Dialog
 
-Set `edit-mode` as `Dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
+Set the `edit-mode` as `Dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -452,26 +452,26 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img8.png)
 
 
-### Dialog Template Form
+### Dialog template form
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Dialog template form, set `edit-mode` as 'DialogTemplate' and specify the template id to `dialog-editor-template-id` property of `e-edit-settings`.
+To edit the records using Dialog template form, set  the`edit-mode` as 'DialogTemplate' and specify the template id to `dialog-editor-template-id` property of `e-edit-settings`.
 
-While using template, you can change the elements that are defined in the `template`, to appropriate JS controls based on the column type. This can be achieved by using `action-complete` event of grid.
+While using template, you can change the elements that are defined in the `template`, to appropriate JS controls based on the column type. This can be achieved by using the `action-complete` event of grid.
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited record. 
 N> 3. For `edit-mode` property you can assign either `string` value (`DialogTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.DialogTemplate`).
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -545,21 +545,21 @@ The following code example describes the above behavior.
 {% endhighlight %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img9.png)
 
-Before the template elements are converted to JS controls
+Before the template elements are converted to JS controls.
 
 ![](Editing_images/Editing_img10.png)
 
 After the template elements are converted to JS controls using actionComplete event.
 
-### External Form
+### External form
 
 By setting the `edit-mode` as `ExternalForm`, the edit form is opened outside the grid content.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
  
 {% tabs %}
 {% highlight razor %}
@@ -596,11 +596,11 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img11.png)
 
-Form Position:
+Form position:
 
 You can position an External edit form in the following two ways. 
 
@@ -609,7 +609,7 @@ You can position an External edit form in the following two ways.
 
 This can be achieved by setting the `form-position` property of `e-edit-settings` as 'TopRight' or 'BottomLeft'.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -643,12 +643,12 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img12.png)
 
 
-### External Template Form
+### External template form
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
 
@@ -658,11 +658,11 @@ To edit the records using External template form, set `edit-mode` as `ExternalFo
 
 While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using `action-complete` event of grid.
 
-N> 1. `value` attribute is used to bind the corresponding field value while editing. 
-N> 2. `name` attribute is used to get the changed field values while save the edited record. 
+N> 1. The `value` attribute is used to bind the corresponding field value while editing. 
+N> 2. The `name` attribute is used to get the changed field values while save the edited record. 
 N> 3. For `edit-mode` property you can assign either `string` value (`ExternalFormTemplate`) or `enum` value (`Syncfusion.JavaScript.EditMode.ExternalFormTemplate`).
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -736,11 +736,11 @@ The following code example describes the above behavior.
 {% endhighlight %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img13.png)
 
-Before the template elements are converted to JS controls
+Before the template elements are converted to JS controls.
 
 ![](Editing_images/Editing_img14.png)
 
@@ -749,11 +749,11 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### Batch / Excel-like
 
-Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set `edit-mode` as `Batch` to enable batch editing.
+Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set the `edit-mode` as `Batch` to enable batch editing.
 
-N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
+N> Refer to the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -790,18 +790,18 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img15.png)
 
 
 ## Confirmation messages
 
-To show the confirm dialog while saving or discarding the Batch changes (discarding during the grid action like filtering, sorting and paging), set `show-confirm-dialog` as `true`.
+To show the confirm dialog while saving or discarding the Batch changes (discarding during the grid action like filtering, sorting and paging), set the `show-confirm-dialog` as `true`.
 
-N> `show-confirm-dialog` property is only for Batch editing mode.
+N> The `show-confirm-dialog` property is only for Batch editing mode.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -838,15 +838,15 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %}  
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img16.png)
 
-To show delete confirm dialog while deleting a record, set `show-delete-confirm-dialog` as true.
+To show delete confirm dialog while deleting a record, set the `show-delete-confirm-dialog` as true.
 
-N> `show-delete-confirm-dialog` property is for all type of `edit-mode`.
+N> The `show-delete-confirm-dialog` property is for all type of `edit-mode`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -883,14 +883,14 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img17.png)
 
 
-## Column Validation
+## Column validation
 
-We can validate the value of the added or edited record cell before saving.
+The value of the added or edited record cell can be validated before saving.
 
 The below validation script files are needed when editing is enabled with validation.
 
@@ -898,7 +898,7 @@ The below validation script files are needed when editing is enabled with valida
 2. jquery.validate.unobtrusive.min.js
  
  
-### jQuery Validation
+### jQuery validation
 
 
 You can set validation rules using `validation-rules` property of `e-columns`. The following are jQuery validation methods.
@@ -945,7 +945,7 @@ The element requires a valid email.</td></tr>
 <tr>
 <td>
 url</td><td>
-The element requires a valid URL</td></tr>
+The element requires a valid URL.</td></tr>
 <tr>
 <td>
 date</td><td>
@@ -974,7 +974,7 @@ Requires the element to be the same as another.</td></tr>
 
 Grid supports all the standard validation methods of jQuery, please refer the jQuery validation documentation [link](http://jqueryvalidation.org/documentation/# "link") for more information.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -1009,18 +1009,18 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img18.png)
 
 
-### Custom Validation
+### Custom validation
 
-In addition to jQuery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within `validation-rules` property of `e-columns`. 
+In addition to jQuery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within the `validation-rules` property of `e-columns`. 
 
-Using `messages` property of `validation-rules` you can specify the error message for that column.
+Using the `messages` property of `validation-rules` you can specify the error message for that column.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -1072,27 +1072,27 @@ The following code example describes the above behavior.
 {% endhighlight  %}   
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img19.png)
 
 
-## Persisting data in Server
+## Persisting data in server
 
 Edited data can be persisted in database using RESTful web services. 
 
-All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the ['link'](https://help.syncfusion.com/aspnet-core/datamanager/overview) to know about the DataManager.
+All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server-side. Please refer to the ['link'](https://help.syncfusion.com/aspnet-core/datamanager/overview) to know about the DataManager.
 
-For you information ODataAdaptor persist data in server as per OData protocol.
+For your information, the ODataAdaptor persists data in server as per OData protocol.
 
-In the below section, we have explained how to get the edited data details at the server side using URLAdaptor. 
+In the below section, we have explained how to get the edited data details at the server-side using URLAdaptor. 
 
 
-### URL Adaptor
+### URL adaptor
 
-You can use the `UrlAdaptor` of `datamanager` when binding datasource from remote data. At initial load of Grid, using url property of datamanager, data are fetched from remote data and bound to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
+You can use the `UrlAdaptor` of `datamanager` when binding datasource from remote data. At initial load of grid, using url property of datamanager, data are fetched from remote data and bound to grid. You can map CRUD operation in grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 
@@ -1148,12 +1148,12 @@ The following code example describes the above behavior.
     
 {% endtabs %} 
 
-Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
+Also when using the `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
 
-The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the 'DataManager' class. While initializing the grid, paging only enabled hence in the below screen shot paging details are bound to the DataManager class.
+The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the 'DataManager' class. While initializing the grid, paging only enabled hence in the below screenshot paging details are bound to the DataManager class.
 
 
-Also, using 'DataOperations' helper class you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
+using the 'DataOperations' helper class you can perform grid action at server-side. The in-built methods that we have provided in the DataOperations class are listed below.
 
 1. PerformSorting
 2. PerformFiltering
@@ -1164,7 +1164,7 @@ Also, using 'DataOperations' helper class you can perform grid action at server 
 7. PerformSelect
 8. Execute
 
-### Accessing CRUD action request details in server side:
+### Accessing CRUD action request details in server-side:
 
 The 'Server-Side' function must be declared with the following parameter name for each editing functionality.
 
@@ -1275,11 +1275,11 @@ __Parameters__ __Table__
 
 
 	
-### Insert Record:
+### Insert record:
 
-Using `insert-url ` property, you can specify the controller action mapping URL to perform insert operation at server side.
+Using the `insert-url ` property, you can specify the controller action mapping URL to perform insert operation at server--side.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight c# %}
      
@@ -1291,14 +1291,14 @@ The following code example describes the above behavior.
         }
 {% endhighlight %}
 
-The newly added record details are bound to the 'value' parameter. Please refer the below image.
+The newly added record details are bound to the 'value' parameter. Please refer to the following image.
 
 
-### Update Record:
+### Update record:
 
-Using `update-url` property, you can specify the controller action mapping URL to perform save/update operation at server side.
+Using the `update-url` property, you can specify the controller action mapping URL to perform save/update operation at server-side.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight c# %}
           
@@ -1315,9 +1315,9 @@ The updated record details are bound to the 'value' parameter. Please refer the 
 
 ### Delete Record:
 
-Using ` remove-url` property, you can specify the controller action mapping URL to perform delete operation at server side.
+Using the ` remove-url` property, you can specify the controller action mapping URL to perform delete operation at server side.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% highlight c# %}
        
@@ -1327,16 +1327,16 @@ The following code example describes the above behavior.
         }
 {% endhighlight %}
 
-The deleted record primary key value is bound to the 'key' parameter. Please refer the below image.
+The deleted record primary key value is bound to the 'key' parameter. Please refer to the following image.
 
 
 ### CRUD URL:
 
-Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crud-url` property you can specify the controller action mapping URL to perform all the CRUD operation at server side using single method.
+Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crud-url` property you can specify the controller action mapping URL to perform all the CRUD operation at server-side using single method.
 
 The action parameter of `crud-url` is used to get the corresponding CRUD action.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 
@@ -1375,9 +1375,9 @@ N> If you specify `insert-url` along with `crud-url` then while adding `insert-u
 
 ### Batch URL:
 
-The `batch-url` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation at server side.
+The `batch-url` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation at server-side.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 
@@ -1412,11 +1412,11 @@ The following code example describes the above behavior.
 
 {% endtabs %}
 
-## Adding New Row Position
+## Adding new row position
 
-To add new row in the top or bottom position of grid content, set `row-position` property of `e-edit-settings` depending on the requirement.
+To add new row in the top or bottom position of grid content, set the `row-position` property of `e-edit-settings` depending on the requirement.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -1451,18 +1451,18 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img26.png)
 
 
 ## Render with blank row for easy add new
 
-The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set `show-add-new-row` property of `e-edit-settings` as `true`.
+The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set the `show-add-new-row` property of `e-edit-settings` as `true`.
 
 The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the `row-position` property of `e-edit-settings`.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -1497,7 +1497,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img27.png)
 
@@ -1507,9 +1507,9 @@ N> 2. If it is local, then the newly added record is added at the top of the pag
 
 ## Default column values on add new
 
-While adding new record in grid, there is an option to set the default value for the columns. Using `default-value` property of `e-columns` you can set the default values for that particular column while editing or adding a new row.
+While adding new record in grid, there is an option to set the default value for the columns. Using the `default-value` property of `e-columns` you can set the default values for that particular column while editing or adding a new row.
 
-The following code example describes the above behavior.
+The following code example describes the previous behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -1544,6 +1544,6 @@ The following code example describes the above behavior.
 {% endhighlight  %}    
 {% endtabs %} 
 
-The following output is displayed as a result of the above code example.
+The following output is displayed as a result of the previous code example.
 
 ![](Editing_images/Editing_img28.png)

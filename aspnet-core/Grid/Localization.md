@@ -11,7 +11,7 @@ documentation: ug
 
 ## Localization
 
-All text in Grid can be localized using `ej.Grid.Locale` object. Please find the table with list of properties and its value in locale object.
+All text in grid can be localized using `ej.Grid.Locale` object. Find the following table with list of properties and its value in the locale object.
 
 <table>
 <tr>
@@ -21,19 +21,19 @@ Text</th></tr>
 <tr>
 <td>
 EmptyRecord</td><td>
-No records to display</td></tr>
+No records to display.</td></tr>
 <tr>
 <td>
 GroupDropArea</td><td>
-Drag a column header here to group its column</td></tr>
+Drag a column header here to group its column.</td></tr>
 <tr>
 <td>
 DeleteOperationAlert</td><td>
-No records selected for delete operation</td></tr>
+No records selected for delete operation.</td></tr>
 <tr>
 <td>
 EditOperationAlert</td><td>
-No records selected for edit operation</td></tr>
+No records selected for edit operation.</td></tr>
 <tr>
 <td>
 SaveButton</td><td>
@@ -77,15 +77,15 @@ PagerInfo</td><td>
 <tr>
 <td>
 FrozenColumnsViewAlert</td><td>
-Frozen columns should be in grid view area</td></tr>
+Frozen columns should be in grid view area.</td></tr>
 <tr>
 <td>
 FrozenColumnsScrollAlert</td><td>
-Enable allowScrolling while using frozen Columns</td></tr>
+Enable allowScrolling while using frozen Columns.</td></tr>
 <tr>
 <td>
 FrozenNotSupportedException</td><td>
-Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing</td></tr>
+Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing.</td></tr>
 <tr>
 <td>
 Add</td><td>
@@ -185,7 +185,7 @@ Select date</td></tr>
 <tr>
 <td>
 EmptyDataSource</td><td>
-DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</td></tr>
+DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column grid.</td></tr>
 <tr>
 <td>
 True</td><td>
@@ -310,9 +310,9 @@ Last Page</td></tr>
 
 I> You need to change pager locale in `ej.Pager.Locale` object.
 
-## Excel-Filter Localization
+## Excel-filter localization
 
-All text in Excel-Filter can be localized using `ej.ExcelFilter.Locale` object. Please find the table with list of properties and its value in locale object.
+All text in Excel-filter can be localized using the `ej.ExcelFilter.Locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
@@ -514,7 +514,7 @@ Please find the code
 
 ## Globalization
 
-`ej.globalize` library is used to globalize numeric values in Grid control using `format` property in `e-columns`. Globalize values will be automatically used when `locale` property is set with locale string value for example `en-US`.
+The `ej.globalize` library is used to globalize numeric values in grid control using `format` property in `e-columns`. Globalize values will be automatically used when `locale` property is set with locale string value for example `en-US`.
 
 {% tabs %}
 {% highlight razor %}
@@ -551,13 +551,13 @@ Please find the code
 
 ![](Localization_images/Globalizationandlocalization._img3.png)
 
-I> In the above example, you need to use `globalize.culture.de-DE` script file to globalize values. 
+I> In the above example, you need to use the `globalize.culture.de-DE` script file to globalize values. 
 
 {% seealso %} [localization](http://helpjs.syncfusion.com/js/localization) {% endseealso %}
 
-## Right to Left - RTL
+## Right to left - RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using `enable-rtl` as true.
+By default, grid renders its text and layout from left to right. To customize grid's direction, you can change direction from LTR to RTL by setting the `enable-rtl` as true.
 
 {% tabs %}
 {% highlight razor %}
