@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu with Grid widget for Syncfusion Essential ASP.NET Core
+title: Context Menu with grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable contextMenu and its functionalities
 platform: ASP.NET Core
 control: Grid
@@ -9,11 +9,11 @@ documentation: ug
 
 # Context Menu
 
-Context menu is used to improve user action with Grid using popup menu. It can be shown by defining `enable-context-menu` property of `context-menu-settings` as true. Context menu has option to add default items in `context-menu-items` property of `context-menu-settings` and customized items in `context-menu-items` property of `context-menu-settings`.
+The context menu is used to improve user action with the grid using popup menu. It can be shown by defining the `enable-context-menu` property of `context-menu-settings` as true. Context menu has option to add default items in the `context-menu-items` property of `context-menu-settings` and customized items in the `context-menu-items` property of `context-menu-settings`.
 
-## Default Context Menu items
+## Default context menu items
 
-Please find the below table for default context menu items and its actions.
+Please find the following table for default context menu items and its actions.
 
  <table>
         <tr>
@@ -21,7 +21,7 @@ Please find the below table for default context menu items and its actions.
                 Section
             </th>
             <th>
-                Context menu items
+                Context menu items.
             </th>
             <th>
                 Action
@@ -32,18 +32,18 @@ Please find the below table for default context menu items and its actions.
                 Header
             </td>
             <td>
-                Sort in Ascending Order
+                Sort in Ascending Order.
             </td>
             <td>
-                Sort column in Ascending order
+                Sort column in Ascending order.
             </td>
         </tr>
         <tr>
             <td>
-                Sort in Descending Order
+                Sort in Descending Order.
             </td>
             <td>
-                Sort column in Descending order
+                Sort column in Descending order.
             </td>
         </tr>
         <tr>
@@ -51,7 +51,7 @@ Please find the below table for default context menu items and its actions.
                 Group
             </td>
             <td>
-                Group the current column
+                Group the current column.
             </td>
         </tr>
         <tr>
@@ -59,7 +59,7 @@ Please find the below table for default context menu items and its actions.
                 Ungroup
             </td>
             <td>
-                Ungroup the current column if already grouped
+                Ungroup the current column if already grouped.
             </td>
         </tr>
         <tr>
@@ -70,7 +70,7 @@ Please find the below table for default context menu items and its actions.
                 Add Record
             </td>
             <td>
-                Start Add new record
+                Start Add new record.
             </td>
         </tr>
         <tr>
@@ -78,7 +78,7 @@ Please find the below table for default context menu items and its actions.
                 Edit Record
             </td>
             <td>
-                Start Edit in current record
+                Start Edit in current record.
             </td>
         </tr>
         <tr>
@@ -86,7 +86,7 @@ Please find the below table for default context menu items and its actions.
                 Delete Record
             </td>
             <td>
-                Delete the current record
+                Delete the current record.
             </td>
         </tr>
         <tr>
@@ -94,7 +94,7 @@ Please find the below table for default context menu items and its actions.
                 Save
             </td>
             <td>
-                Save the record if Add/Edit record is started
+                Save the record if Add/Edit record is started.
             </td>
         </tr>
         <tr>
@@ -102,7 +102,7 @@ Please find the below table for default context menu items and its actions.
                 Cancel
             </td>
             <td>
-                Cancel Added/Edited state
+                Cancel Added/Edited state.
             </td>
         </tr>
         <tr>
@@ -113,7 +113,7 @@ Please find the below table for default context menu items and its actions.
                 Next Page
             </td>
             <td>
-                Go to Next Page
+                Go to Next Page.
             </td>
         </tr>
         <tr>            
@@ -121,7 +121,7 @@ Please find the below table for default context menu items and its actions.
                 Last Page
             </td>
             <td>
-                Go to Last page
+                Go to Last page.
             </td>
         </tr>
         <tr>
@@ -129,7 +129,7 @@ Please find the below table for default context menu items and its actions.
                 Previous page
             </td>
             <td>
-                Go to previous page
+                Go to previous page.
             </td>
         </tr>
         <tr>
@@ -137,7 +137,7 @@ Please find the below table for default context menu items and its actions.
                 First page
             </td>
             <td>
-                Go to first page
+                Go to first page.
             </td>
         </tr>
  </table>
@@ -198,7 +198,7 @@ Context menu at body
 
 Context menu at pager
 
-N> `allow-grouping`, `allow-sorting` should be enabled to perform default context menu actions in Grid header. `allow-editing`, `allow-deleting` and `allow-adding` should be enabled to perform default actions in body.
+N> The `allow-grouping`, `allow-sorting` should be enabled to perform default context menu actions in the grid header. The `allow-editing`, `allow-deleting` and `allow-adding` should be enabled to perform default actions in body.
 
 
 

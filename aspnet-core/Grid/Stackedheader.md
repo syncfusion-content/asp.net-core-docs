@@ -9,11 +9,11 @@ documentation: ug
 
 # Stacked Headers
 
-The stacked headers helps you to group the logical columns in grid. It can be shown by setting `show-stacked-header` as `true` and by defining `stacked-header-rows`.
+The stacked headers helps you to group the logical columns in Grid. It can be shown by setting the `show-stacked-header` as `true` and by defining the `stacked-header-rows`.
 
-## Adding Stacked header columns
+## Adding stacked header columns
 
-To stack columns in stacked header, you need to define `column` property in `stacked-header-columns` with field names of visible columns.
+To stack the columns in stacked header, you need to define the `column` property in `stacked-header-columns` with field names of visible columns.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Summary 
 
-Summary rows visibility can be controlled by `show-summary` property and it can be added to grid by using `e-summary-rows` array property. The following code example describes the above behavior.
+The summary rows visibility can be controlled by the`show-summary` property and it can be added to Grid by using the `e-summary-rows` array property. The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight razor %}
@@ -52,9 +52,9 @@ Summary rows visibility can be controlled by `show-summary` property and it can 
 
 ![](Summary_images/summaryGrid_img1.png)
 
-## Supported Aggregates 
+## Supported aggregates 
 
-Following are the supported list of aggregates 
+Following are the supported list of aggregates. 
 
 * Sum
 * Average
@@ -63,10 +63,10 @@ Following are the supported list of aggregates
 * False Count
 * True Count
 
-### Sum, Average, Maximum and minimum
+### Sum, average, maximum and minimum
 
 
-Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined by using  `summary-type` in `e-summary-columns` collections. These aggregate are used in `Number` column.
+Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined by using  `summary-type` in `e-summary-columns` collections. These aggregate are used in the `Number` column.
 
 {% tabs %}
 {% highlight razor %}
@@ -123,7 +123,7 @@ Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined 
 
 ![](Summary_images/summaryGrid_img2.png)
 
-### True and False Count 
+### True and False count 
 
 Summaries with `true` and `false` count aggregate can be defined by using `summary-type`,`e-summary-columns` collections. `true` and `false` count aggregates are used for Boolean columns.
 
@@ -173,9 +173,9 @@ Summaries with `true` and `false` count aggregate can be defined by using `summa
 ![](Summary_images/summaryGrid_img3.png)
 
 
-## Custom Summary
+## Custom summary
 
-Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, `summary-type` should be `Custom` and `custom-summary-value` property need to define as function. In this property `custom-summary-value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+Custom summary can be used to create summary values based on your required custom logic and calculations. To enable custom summary, `summary-type` should be `Custom` and the `custom-summary-value` property need to define as function. In this property the `custom-summary-value` function, you need to use grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding summary cell.
 
 {% tabs %}
 {% highlight razor %}
@@ -230,9 +230,9 @@ Custom Summary can be used to create summary values based on your required custo
 
 ![](Summary_images/summaryGrid_img4.png)
 
-## Group Summary
+## Group summary
 
-Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define `show-total-summary` as false.
+Group summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define the `show-total-summary` as false.
 
 {% tabs %}
 {% highlight razor %}
@@ -274,11 +274,11 @@ Group Summary is used to summarize values of a particular column based on group 
 
 ![](Summary_images/summaryGrid_img5.png)
 
-W> Minimum one column should be grouped to show summary details.
+W> Minimum one column should be grouped to show the summary details.
 
-## Group Caption Summary
+## Group caption summary
 
-To show summaries in each Group's Caption row, particular summary row should have `show-total-summary` as `false` and `show-caption-summary` as `true`.
+To show summaries in each Group's caption row, particular summary row should have the `show-total-summary` as `false` and `show-caption-summary` as `true`.
 
 {% tabs %}
 {% highlight razor %}
@@ -325,7 +325,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Format
 
-To format Summary values, `format` property needs to be assigned in `e-summary-columns` collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format Summary values, the `format` property needs to be assigned in `e-summary-columns` collection object.  To know more about formatting options. Please refer to [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% tabs %}
 {% highlight razor %}

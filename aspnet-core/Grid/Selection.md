@@ -8,26 +8,26 @@ documentation: ug
 ---
 # Selection
 
-Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set `allow-selection` as `true`. 
+Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set the `allow-selection` as `true`. 
 
-## Types of Selection
+## Types of selection
 
-There are two types of selections available in grid. They are
+The following are the two types of selections available in Grid. 
 
 1. Single 
 2. Multiple 
 
-### Single Selection
+### Single selection
 
-Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting `selection-type` property as `single` and also set `allow-selection` property as `true`.
+Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting the `selection-type` property as `single` and also set the `allow-selection` property as `true`.
 
-### Multiple Selections
+### Multiple selections
 
-Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set `selection-type`  property as `Multiple` and also set `allow-selection` property as `true`.
+Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections set the `selection-type`  property as `Multiple` and also set the `allow-selection` property as `true`.
 
-## Row Selection
+## Row selection
 
-Row selection is enabled by set `selection-mode` property of `e-selection-settings` as `row`. For random row selection, press **"Ctrl + mouse left"** click and for continuous row selection press **"Shift + mouse left"** click on the grid rows. To unselect selected rows, by press **"Ctrl + mouse left"** click on selected row.
+Row selection is enabled by setting the `selection-mode` property of `e-selection-settings` as `row`. For random row selection, press the **"Ctrl + mouse left"** click and for continuous row selection press the **"Shift + mouse left"** click on the grid rows. To unselect selected rows, by press the **"Ctrl + mouse left"** click on selected row.
 
 The following code example describes the above behavior.
 
@@ -67,9 +67,9 @@ The following output is displayed as a result of the above code example
 
 ![](Selection_images/Selection_img1.png)
 
-## Multiple Row Selection using Checkbox Column
+## Multiple row selection using checkbox column
 
-Select multiple rows in grid by using Checkbox column and it can be enabled by set column `type` as `checkbox`. It also provides the option to select/deselect all the rows in Grid using a checkbox in the corresponding column header.
+Select multiple rows in grid by using checkbox column and it can be enabled by setting the column `type` as `checkbox`. It also provides the option to select/deselect all the rows in grid using a checkbox in the corresponding column header.
 
 If the `field` property of Checkbox column is not defined, then it acts as a template column. So `field` property is necessary to perform grid actions like sorting, editing, etc., for the corresponding Checkbox column.
 
@@ -109,7 +109,7 @@ The following output is displayed as a result of the above code example
 
 ![](Selection_images/Selection_img12.png)
 
-## Cell Selection
+## Cell selection
 
 Cell selection is enabled by set `selection-mode` property of `selection-settings` as `cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on selected cell click.
 
@@ -152,9 +152,9 @@ The following output is displayed as a result of the above code example
 
 ![](Selection_images/Selection_img2.png)
 
-### Cell Selection Mode
+### Cell selection mode
 
-There are two types of cell selection available in grid. They are
+There are two types of cell selection available in grid. They are the following.
 
 1. Continuous Selection
 2. Box Selection
@@ -199,7 +199,7 @@ The following code example describes the above behavior.
 ![](Selection_images/Selection_img3.png)
 
 
-## Column Selection
+## Column selection
 
 Column selection can be enabled by setting `selection-mode` property of `e-selection-settings` as `column`. For random column selection, press **"Ctrl + mouse left click"** and for continuous column selection, press **"Shift + mouse left click"** on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
 
@@ -244,7 +244,7 @@ The following output is displayed as a result of the above code example
 
 ## Touch options
 
-While using grid in a touch device environment, there is an option for multi selection through single tap on the row and it will shows a popup with multi-selection symbol. Tap the icon to enable multi selection in a single tap.
+On using the grid in a touch device environment, there is an option for multi selection through single tap on the row and it will shows a popup with multi-selection symbol. Tap the icon to enable multi selection in a single tap.
 
 The following code example describes the above behavior. 
 
@@ -283,9 +283,9 @@ The following output is displayed as a result of the above code example.
 ![](Selection_images/Selection_img5.png)
 
 
-## Toggle Selection
+## Toggle selection
 
-The Toggle selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set `enable-toggle` property of `selection-settings` as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
+The Toggle selection allows to perform selection and unselection of the particular row, cell or column. To enable toggle selection, set the `enable-toggle` property of `selection-settings` as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
 
 N> If multi selection is enabled, then in first click on any selected row (without pressing Ctrl key), it will clear multi selection and in second click on the same row, it will be unselected. 
 
