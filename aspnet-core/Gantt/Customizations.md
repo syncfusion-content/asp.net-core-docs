@@ -142,8 +142,8 @@ It is possible to customize the task labels with templates, by using `right-task
 
 <ej-gantt id="GanttContainer" datasource="ViewBag.datasource" 
         //...
-        right-task-label-template="#rightlabelTemplate"
-        left-task-label-template="#leftlabelTemplate">
+        right-task-label-template="#rightLabelTemplate"
+        left-task-label-template="#leftLabelTemplate">
 </ejGantt>
 
 {% endhighlight %}
