@@ -365,6 +365,7 @@ You can show the trackball tooltip in two modes by using **trackballTooltipSetti
 #### Trackball tooltip template:
 Trackball tooltip template is used to display the tooltip in customized template format. You can define the desired template in css style. You can enable the **toolTipTemplate**  by using the following code snippet.
 
+{% highlight cshtml %}
 
 <ej-chart id="chartContainer">
     // ...
