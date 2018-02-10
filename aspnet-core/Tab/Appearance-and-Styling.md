@@ -9,13 +9,13 @@ documentation: ug
 
 # Appearance and Styling
 
-## Header Image Customization
+## Header image customization
 
-To set the Tab header image for each Tab item you need to specify image in “ImageCssClass” property during the TabItem declaration.
+To set the tab header image for each tab item, you need to specify the image in **ImageCssClass** property during the TabItem declaration.
 
-The following code example is used to add the header image for the root Tab header element. 
+The following code example is used to add the header image for the root tab header element.
 
-1. Add the following code in your view page to render Tab with header image.
+1. Add the following code in your view page to render the tab with header image.
 
 {% highlight CSHTML %}
 
@@ -47,7 +47,7 @@ The following code example is used to add the header image for the root Tab head
 
 {% endhighlight %}
 
-2. Add following CSS for header image customization.
+2. Add the following CSS for header image customization.
 
 {% highlight CSHTML %}
 
@@ -94,7 +94,7 @@ The following code example is used to add the header image for the root Tab head
 
 {% endhighlight %}
    
-3. The following screenshot illustrates the Tab with the customized header image. 
+3. The following screenshot illustrates the tab with the customized header image.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
@@ -103,15 +103,15 @@ Header Image Customization
 
 ## Rounded corner
 
-By enabling ‘ShowRoundedCorner’ property, you can customize the shape of the Tab widget from regular rectangular shape to rounded rectangle shape that is set to ‘false’ by default. 
+By enabling the **ShowRoundedCorner** property, you can customize the shape of the tab widget from regular rectangular shape to rounded rectangle shape. By default, the property is set to false.
 
-The following code example is used to render the Tab widget with rounded corner.
+The following code example is used to render the tab widget with rounded corner.
 
-1. Add the following code in your view page to render Tab with rounder corner.
+1. Add the following code in your view page to render the tab with rounder corner.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with rounded corner.
+// Add the following code example to the corresponding CSHTML page to render the tab with rounded corner.
 <div style="width: 550px">
 
 	<ej-tab id="tabSample" show-rounded-corner="true">
@@ -137,24 +137,24 @@ The following code example is used to render the Tab widget with rounded corner.
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with Rounded corner.
+2. The following screenshot illustrates the tab with rounded corner.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 Tab with rounded corner
 {:.caption}
 
-## Enable/Disable
+## Enable or disable
 
-You can enable or disable the Tab widget by ‘Enabled’ property. By default, the property set to ‘true’.
+You can enable or disable the tab widget by using the **Enabled** property. By default, the property is set to true.
 
-The following code example is used to render the Tab widget with enable/disable.
+The following code example is used to render the tab widget with enable/disable.
 
-1. Add the following code in your view page to render Tab with enable/disable.
+1. Add the following code in your view page to render tab with enable/disable.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with Enable/Disable format.
+// Add the following code example to the corresponding CSHTML page to render the tab with enable/disable format.
 
 <div style="width: 550px">
 
@@ -181,7 +181,7 @@ The following code example is used to render the Tab widget with enable/disable.
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with disabled format.
+2. The following screenshot illustrates the tab with disabled format.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
@@ -189,17 +189,17 @@ Tab with disabled format
 {:.caption}
 
 
-## Enabling Reload Icon
+## Enabling reload icon
 
-Without refresh/reload the whole page, you can reload a particular Tab using Reload icon. The Reload icon is appeared at right corner of the Tab by enabling the property ‘ShowReloadIcon’ to ‘true’. When you move cursor over the Tab headers, the Reload icon is displayed. By default the property value is set to ‘false’.   
+Without refreshing or reloading the whole page, you can reload a particular tab using the Reload icon. The reload icon is appeared at the right corner of the tab by enabling the property **ShowReloadIcon** to true. When you move cursor over the tab headers, the reload icon is displayed. By default the property value is set to false.
 
-The following code example is used to render the Tab widget with Reload icon.
+The following code example is used to render the tab widget with reload icon.
 
-1. Add the following code in your view page to render Tab with Reload icon.
+1. Add the following code in your view page to render the tab with reload icon.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with reload icon.
+// Add the following code example to the corresponding CSHTML page to render the tab with reload icon.
 <div style="width: 550px">
 
 <ej-tab id="tabSample" show-reload-icon="true">
@@ -225,7 +225,7 @@ The following code example is used to render the Tab widget with Reload icon.
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with Reload icon.
+2. The following screenshot illustrates the tab with reload icon.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
@@ -233,17 +233,17 @@ Tab with reload icon
 
 {:.caption}
 
-## Collapsible Tabs
+## Collapsible tabs
 
-You can collapse the Tab content by enabling the ‘Collapsible’ property to ‘true’. When the property is set to ‘true’ then click the active Tab header, the Tab contents are hided. By default, the property value is set to ‘false’.
+Collapse the tab content by enabling the **Collapsible** property to true. When you set the property to true and click the active tab header, the tab contents will be hidden. By default, the property value is set to false.
 
-The following code example is used to render the Tab widget with customized collapsible mode.
+The following code example is used to render the tab widget with customized collapsible mode.
 
-1. Add the following code in your view page to render Tab with customized collapsible mode.
+1. Add the following code in your view page to render the tab with customized collapsible mode.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with collapsible mode.
+// Add the following code example to the corresponding CSHTML page to render the tab with collapsible mode.
 
 <div style="width: 550px">
 
@@ -270,7 +270,7 @@ The following code example is used to render the Tab widget with customized coll
 	
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with customized collapsible mode.
+2. The following screenshot illustrates the tab with customized collapsible mode.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
@@ -278,15 +278,15 @@ Tab with customized collapsible mode
 {:.caption}
 
 
-## Adjusting Tab Size
+## Adjusting tab size
 
-### Height Adjust Mode and Height
+### Height adjust mode
 
-The height of the Tab widget is customized by ‘height’ property. The Tab widget height depends on ‘HeightAdjustMode’ property. Using the HeightAdjustMode property, you can adjust height by “Content”, “Auto”, “Fill”. By default the HeightAdjustMode is set as content.
+The height of the tab widget is customized by the **height** property. The tab widget height depends on the **HeightAdjustMode** property. Using this HeightAdjustMode property, you can adjust the height by Content, Auto, and Fill. By default, the HeightAdjustMode is set as content.
 
-The following code example is used to render the Tab widget with customized height and height adjust mode.
+The following code example is used to render the tab widget with customized height and height adjust mode.
 
-1. Add the following code in your view page to render Tab with customized height and height adjust mode.
+1. Add the following code in your view page to render the tab with customized height and height adjust mode.
 
 {% highlight CSHTML %}
 
@@ -316,7 +316,7 @@ The following code example is used to render the Tab widget with customized heig
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with customized height and height adjust mode.
+2. The following screenshot illustrates the tab with customized height and height adjust mode.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
@@ -326,15 +326,15 @@ Tab with customized height and height adjust mode
 
 ### Width
 
-The width of the Tab widget is customized by using ‘Width’ property that accepts only the pixel values.
+The width of the tab widget is customized by using the **Width** property that accepts only the pixel values.
 
-The following code example is used to render the Tab widget with customized width.
+The following code example is used to render the tab widget with customized width.
 
-1. Add the following code in your view page to render Tab with customized width.
+1. Add the following code in your view page to render the tab with customized width.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with customized width.
+// Add the following code example to the corresponding CSHTML page to render the tab with customized width.
 <div>
 
 <ej-tab id="tabSample" width="450">
@@ -360,7 +360,7 @@ The following code example is used to render the Tab widget with customized widt
 
 {% endhighlight %}
    
-2. The following screenshot illustrates the Tab with customized width.
+2. The following screenshot illustrates the tab with customized width.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)' 
 
@@ -369,12 +369,12 @@ Tab with customized width
 
 ## Theme
 
-Tab control’s style and appearance are controlled based on CSS classes. In order to apply styles to the Tab control, you can refer 2 files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, then it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two. 
+The tab control’s style and appearance are controlled based on the CSS classes. Apply styles to the tab control by referring the two files namely, ej.widgets.core.min.css and ej.theme.min.css. When the file ej.widgets.all.min.css is referred, it is not necessary to include the files ej.widgets.core.min.css and ej.theme.min.css in your project, as ej.widgets.all.min.css is the combination of these two.
 
-By default, there are 13 themes support available for Tab control namely
+By default, there are 13 themes support available for the tab control namely:
 
 * default-theme
-* bootstrap-theme
+* bootstrap-themex
 * flat-azure-dark
 * fat-lime
 * flat-lime-dark
@@ -389,15 +389,15 @@ By default, there are 13 themes support available for Tab control namely
 
 ## Custom styles
 
-The style of the Tab widget is customized by ‘CssClass’ property. 
+The style of the tab widget is customized by the **CssClass** property.
 
-The following code example is used to render the Tab widget with customized style.
+The following code example is used to render the tab widget with customized style.
 
-1. Add the following code in your view page to render Tab with customized style.
+1. Add the following code in your view page to render the tab with customized style.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with customized style.
+// Add the following code example to the corresponding CSHTML page to render the tab with customized style.
 
 <div style="width: 550px">
 
@@ -439,7 +439,7 @@ The following code example is used to render the Tab widget with customized styl
 
 	{% endhighlight %}
 
-3. The following screenshot illustrates the Tab with customized style.
+3. The following screenshot illustrates the tab with customized style.
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 

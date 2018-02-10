@@ -9,9 +9,9 @@ documentation: ug
 
 # Template Support
 
-The Content template option provided in ASP.NET Core is used to specify the HTML elements inside the Tab control. We can use this option to load any HTML elements and showcase it in the Tab panels as per our requirement.
+The content template option provided in ASP.NET Core is used to specify the HTML elements inside the tab control. This option can be used to load any HTML elements and showcase it in the tab panels as per our requirement.
 
-The following code block showcases how to use content template option in the Tab control.
+The following code block showcases how to use the content template option in the tab control.
 
 {% highlight CSHTML %}
 
@@ -62,7 +62,7 @@ The following code block showcases how to use content template option in the Tab
 
 {% endhighlight %}
 
-Output:
+The following output will be displayed:
 
 ![](Template-Support_images/Template-Support_img1.png)
 

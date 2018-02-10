@@ -9,9 +9,9 @@ documentation: ug
 
 # Keyboard Navigation
 
-Tab control provides supports keyboard interaction. Using this functionality you can interact with control using keyboard. This is achieved by enabling ‘AllowKeyboardNavigation’to ‘true’. By default this property value is set to ‘true’.
+The tab control provides support for keyboard interaction. Using this keyboard functionality you can interact with the control. It is achieved by enabling the **AllowKeyboardNavigation** to true. By default, this property value is set to true.
 
-Following table illustrates the accessible key and their usage
+The following table illustrates the accessible keys and their usage:
 
 <table>
 <tr>
@@ -21,37 +21,37 @@ Behavior</th></tr>
 <tr>
 <td>
 Up</td><td>
-Selected previous item.</td></tr>
+Selects previous item.</td></tr>
 <tr>
 <td>
 Right</td><td>
-Selected previous item.</td></tr>
+Selects previous item.</td></tr>
 <tr>
 <td>
 Down</td><td>
-Selected next item.</td></tr>
+Selects next item.</td></tr>
 <tr>
 <td>
 Left</td><td>
-Selected next item.</td></tr>
+Selects next item.</td></tr>
 <tr>
 <td>
 Home</td><td>
-Selected first item.</td></tr>
+Selects first item.</td></tr>
 <tr>
 <td>
 End</td><td>
-Selected last item.</td></tr>
+Selects last item.</td></tr>
 </table>
-The following code example is used to render the Tab element in RTL format. 
+The following code example is used to render the tab element with keyboard navigation.
 
-1. Add the following code in your view page to render Tab with keyboard navigation.
+1. Add the following code in your view page to render the tab with keyboard navigation.
 
 {% highlight CSHTML %}
 
 <div style="width: 500px">
 
-	<ej-tab id="dishtab" allow-keyboard-navigation="true">
+	<ej-tab id="tab1" allow-keyboard-navigation="true">
 		<e-tab-items>
 			<e-tab-item id="pizzatype" text="Pizza Type">
 				<e-content-template>
@@ -72,7 +72,7 @@ The following code example is used to render the Tab element in RTL format.
 
 </div>
 
-// Add the following script to render Tab with keyboard navigation.
+// Add the following script to render the tab with keyboard navigation.
 	
 <script type="text/javascript">
 $(function () {
@@ -80,7 +80,7 @@ $(function () {
 	$(document).on("keydown", function (e) {
 		if (e.altKey && e.keyCode === 74) {
 			// j- key code.
-			$("#dishtab ul a").focus();
+			$("#tab1 ul a").focus();
 		}
 	});
 });
@@ -88,6 +88,6 @@ $(function () {
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with keyboard navigation.
+2. The following screenshot illustrates the tab with keyboard navigation.
 
 ![](Keyboard-Navigation_images/Keyboard-Navigation_img1.png)

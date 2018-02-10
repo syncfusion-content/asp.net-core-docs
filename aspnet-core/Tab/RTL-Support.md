@@ -9,15 +9,15 @@ documentation: ug
 
 # RTL Support
 
-Tab control provides support for load contents in right to left format. This is achieved by setting ‘EnableRTL’ property to “true”.
+The tab control provides support for the load contents to display in right-to-left (RTL) format. This is achieved by setting the **EnableRTL** property as true.
 
-The following code example is used to render the Tab element in RTL format. 
+The following code example is used to render the tab element in RTL format.
 
-1. Add the following code in your view page to render Tab with RTL format.
+1. Add the following code in your view page to render the tab with RTL format.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab in Rtl format.
+// Add the following code example to the corresponding CSHTML page to render the tab in RTL format.
 <div style="width: 500px">
 
     <ej-tab id="tabSample" enable-rtl="true">
@@ -43,6 +43,6 @@ The following code example is used to render the Tab element in RTL format.
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with RTL format.
+2. The following screenshot illustrates the tab with RTL format:
 
 ![](RTL-Support_images/RTL-Support_img1.png)

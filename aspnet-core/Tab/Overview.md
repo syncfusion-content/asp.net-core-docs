@@ -9,18 +9,18 @@ documentation: ug
 
 # Tab
 
-The Tab control is an interface where list of items are expanded from a single item. Each Tab panel defines its header text or header template, as well as a content template. Tab items are dynamically added and removed. Tabs can be loaded with AJAX content that is useful for building dashboards where space is limited.
+The tab control is an interface where the list of items are expanded from a single item. Each tab panel defines its header text or header template, as well as a content template. The tab items can be dynamically added and removed. It is loaded with AJAX content useful for building dashboards where space is limited.
 
-## Key Features
+## Key features
 
-* Collapsible header: All headers are collapsible.
-* AJAX load: Load AJAX content in the Tab content panel.
-* Close button: Provides a close button for each Tab item.
-* Custom event for expanding header: Activate a Tab item on a single click, or bind custom events such as mouse over or mouse up to activate a Tab.
-* Header orientation: Change the header position to the top or bottom of the control.
-* Persist: Save the current model value to browser cookies to maintain the state.
-* Height style: Adjust the content panel height.
-* RTL: Tab headers and content can display right-to-left languages.
-* Add Tab dynamically: New Tab items can be added and removed at run time.
-* Theme: Essential ASP.NET Core controls feature 17 built-in themes, six flat themes, six with gradient effects, bootstrap theme, two high-contrast, material theme and office-365 themes and also support custom skin options to set user-defined themes.
-* Keyboard navigation: You can interact with the control using the keyboard. 
+* Collapsible header: All the headers are collapsible.
+* AJAX load: Loads AJAX content in the tab content panel.
+* Close button: Provides a close button for each tab item.
+* Custom event for expanding header: Activates a tab item on a single click, or bind custom events such as mouse over or mouse up to activate a tab.
+* Header orientation: Changes the header position to the top or bottom of the control.
+* Persist: Saves the current model value to browser cookies to maintain the state.
+* Height style: Adjusts the content panel height.
+* RTL: Tab headers and contents are displayed from right-to-left (RTL) format.
+* Add tab dynamically: New tab items can be added and removed at the run time.
+* Theme: Essential ASP.NET Core controls contains 17 built-in themes such as six flat themes, six with gradient effects, bootstrap theme, two high-contrast, material theme, and office-365 themes. It also supports custom skin options to set user-defined themes.
+* Keyboard navigation: Interacts with the control using the keyboard.
