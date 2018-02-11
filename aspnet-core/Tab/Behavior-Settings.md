@@ -9,17 +9,17 @@ documentation: ug
 
 # Behavior Settings
 
-## Close Button
+## Close button
 
-By default, Tab contents are rendered without CloseButton. You can add the CloseButton by setting the ‘ShowCloseButton’ property to ‘true’. When you move cursor over the Tab headers, the CloseButton is displayed.   
+By default, the tab contents are rendered without the CloseButton. You can add the CloseButton by setting the **ShowCloseButton** property to true. The CloseButton is displayed when the cursor moves over the tab headers.
 
-The following code example is used to render the Tab widget with CloseButton.
+The following code example is used to render the tab widget with CloseButton.
 
-1. Add the following code in your view page for simple Tab creation with CloseButton.
+1. Add the following code in your view page for simple tab creation with CloseButton.
 
 {% highlight CSHTML %}
    
-// Add the following code example to the corresponding CSHTML page to render Tab with close button.
+// Add the following code example to the corresponding CSHTML page to render the tab with close button.
 
 <div style="width: 500px">
 
@@ -46,22 +46,22 @@ The following code example is used to render the Tab widget with CloseButton.
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the Tab with CloseButton. 
+2. The following screenshot illustrates the tab with CloseButton.
 
 ![](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
 ## Orientation
 
-By default, Tab control renders in horizontal orientation. You can change the Orientation to vertical using the ‘HeaderPosition’ property. Using  this property, you can customize the header by ” Top”,” Bottom”, “Left”, and  “Right”.
+By default, the tab control is rendered in horizontal orientation. You can change the orientation to vertical by using the **HeaderPosition** property. Use this property to customize the header in Top, Bottom, Left, and Right position.
 
-The following code example is used to render the sub Tab widget in the vertical orientation. 
+The following code example is used to render the sub tab widget in the vertical orientation.
 
-1. Add the following code in your view page for Tab orientation.
+1. Add the following code in your view page for tab orientation.
 
 {% highlight CSHTML %}
    
-// Add the following code example to the corresponding CSHTML page to render Tab with customized orientation.
+// Add the following code example to the corresponding CSHTML page to render the tab with customized orientation.
 
 <div style="width: 500px">
 
@@ -88,21 +88,21 @@ The following code example is used to render the sub Tab widget in the vertical 
 
 {% endhighlight %}
 
-2. The following screenshot illustrates the sub Tab with vertical orientation. 
+2. The following screenshot illustrates the sub tab with vertical orientation.
 
 ![](Behavior-Settings_images/Behavior-Settings_img2.png)
 
-## State Maintenance
+## State maintenance
 
-When the page gets refreshed or reloaded, the Tab state is changed (i.e.) the focus is moved to start Tab. You can maintain the state of the Tab by using ‘EnablePersistence’ property. When this property is set to ‘true’, it retains the state. 
+When the page gets refreshed or reloaded, the tab state is changed (i.e.) the focus is moved to the start tab. You can maintain the state of the tab by using the **EnablePersistence** property. When this property is set to true, it retains the state.
 
-The following code example is used to render the Tab widget with state maintenance. 
+The following code example is used to render the tab widget with state maintenance.
 
-1. Add the following code in your view page for Tab state maintenance.
+1. Add the following code in your view page for tab state maintenance.
 
 {% highlight CSHTML %}
 
-// Add the following code example to the corresponding CSHTML page to render Tab with state maintenance.
+// Add the following code example to the corresponding CSHTML page to render the tab with state maintenance.
 
 <div style="width: 500px">
 
@@ -129,7 +129,7 @@ The following code example is used to render the Tab widget with state maintenan
 
 {% endhighlight %}
    
-2. The following screenshot illustrates the Tab with State maintenance.
+2. The following screenshot illustrates the tab with state maintenance.
 
 ![](Behavior-Settings_images/Behavior-Settings_img3.png)
 

@@ -9,13 +9,13 @@ documentation: ug
 
 # Scroll Support
 
-Tab control provides you scrolling support on Tab items to display a larger number of tabs with scroll buttons to get rid of the extending page size. The enabled Scroll buttons can be used to traverse through the elements.
+The tab control provides the scrolling support on tab items to display a larger number of tabs. It is provided with scroll buttons to get rid of the extending page size. The enabled scroll buttons is used to traverse through the elements.
 
-By default, Tab header is rendered without scroll button. You can add the scroll button by setting the "EnableTabScroll" property to "true". When you move the cursor over the Tab header the scroll button is displayed.   
+By default, the tab header is rendered without the scroll button. Add the scroll button by setting the **EnableTabScroll** property to true. The scroll button is displayed when you move the cursor over the tab header.
 
-You can use the following code example to render the Tab widget with scroll button.
+You can use the following code example to render the tab widget with scroll button.
 
-1. Add the following code in your view page to create a simple Tab with scroll button.
+1. Add the following code in your view page to create a simple tab with scroll button.
 
 {% highlight CSHTML %}
 
@@ -74,7 +74,7 @@ You can use the following code example to render the Tab widget with scroll butt
 
 {% endhighlight %}
 
-The following screenshot illustrates you the Tab control with scroll button. 
+The following screenshot illustrates the tab control with scroll button.
 
 ![](Scroll-Support_images/Scroll-Support_img1.png)
 
