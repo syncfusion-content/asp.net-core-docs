@@ -146,8 +146,8 @@ public partial class TreeGridController : Controller
 
             RowData parent = new RowData()
             {
-                Name = "David william",
-                FullName = "David william",
+                Name = "David William",
+                FullName = "David William",
                 Designation = "Vice President",
                 EmployeeID = "EMP004",
                 Address = "722 Moss Bay Blvd., Kirkland",
@@ -173,11 +173,11 @@ public partial class TreeGridController : Controller
            };
             RowData Child2 = new RowData()
            {
-               Name = "Romey Wilson",
-               FullName = "Romey Wilson",
+               Name = "Romney Wilson",
+               FullName = "Romney Wilson",
                Designation = "Sales Executive",
                EmployeeID = "EMP039",
-               Address = "7 Houndstooth Rd., London",
+               Address = "7 Hounds tooth Rd., London",
                Country = "UK",
                Contact = "(71) 555-3690",
                DOB = "02/02/1980",
@@ -230,7 +230,7 @@ public partial class TreeGridController : Controller
                FullName = "Janet Leverling",
                Designation = "Sales Coordinator",
                EmployeeID = "EMP131",
-               Address = "Edgeham Hollow Winchester Way, London",
+               Address = "Edge ham Hollow Winchester Way, London",
                Country = "UK",
                Contact = "(71) 555-3636",
                DOB = "11/06/1990",
