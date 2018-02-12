@@ -411,6 +411,29 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ![](Rows_images/Rows_img3.png)
 
+## Multiple Row drag and drop
+
+Using Multiple row drag and drop we can re-order multiple rows at a time.Using this we can drop the rows as above, below and child position as like single row drag and drop.
+In TreeGrid we can enable the multiple drag and drop by setting `selection-type` as `Multiple` or  `Checkbox` and also we should enable the `allow-drag-and-drop`.
+
+Please find the code example below to enable multiple drag and drop in TreeGrid.
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridContainer" datasource="ViewBag.datasource" child-mapping="Children" allow-drag-and-drop="true">
+               //..
+    <e-tree-grid-selection-settings selection-mode="Row" selection-type="Multiple"></e-tree-grid-selection-settings>   
+</ej-tree-grid>    
+
+{% endhighlight %}
+
+We can also customize row drag and drop actions by using below properties
+
+* canDrag – It is used to enable/disable the row drag action for draggedRecords collection in `row-drag-start` client side event.
+
+* canDrop – It is used to enable/disable the row drop action for draggedRecords collection in `row-drop-action-begin` client side event. 
+
+![](Rows_images/Rows_img4.png)
 
 
 
