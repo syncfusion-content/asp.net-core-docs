@@ -327,7 +327,7 @@ The following code example describes the above behavior.
 
 The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set `allow-drag-selection` property of the `e-selection-settings` as `true`. Now you can select the cells or rows in the Grid by dragging the mouse. 
 
-N> The `selection-type` property as should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
+N> The `selection-type` property should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
 
 The following code example describes the above behavior. 
 
