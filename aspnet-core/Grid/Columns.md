@@ -402,6 +402,80 @@ The following output is displayed as a result of the previous code example.
 
 ![](columns_images/columns_img7.png)
 
+
+## Resizing
+
+
+The [`allow-resizing`](https://help.syncfusion.com/api/js/ejgrid#members:allowresizing "allow-resizing") property enables the grid to set the width to columns based on resizing the grid column manually.
+
+
+### Resizing modes
+
+
+[`e-resize-settings.resizeMode`](https://help.syncfusion.com/api/js/ejgrid#members:resizesettings-resizemode "e-resize-settings.resizeMode") mode is used to change the resizing modes. It indicates whether to define mode of resizing.
+
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">Control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
+
+
+The following code example describes the above behavior.
+
+
+{% tabs %}
+{% highlight razor %}
+
+
+<ej-grid id="Grid" datasource=ViewBag.parent allow-resizing="true">
+    <e-resize-settings resize-mode="NextColumn"></e-resize-settings>
+    <e-columns>
+        <e-column field="ShipCity" header-text="Ship City" text-align="Right" width="80"></e-column>
+        <e-column field="ShipPostalCode" header-text="Ship Postal Code" width="40"></e-column>
+        <e-column field="ShipName" header-text="Ship Name" width="40"></e-column>
+        <e-column field="ShipAddress" header-text="Ship Address" width="100"></e-column>
+    </e-columns>
+</ej-grid>
+
+
+{% endhighlight  %}
+{% highlight c# %}
+
+
+namespace MVCSampleBrowser.Controllers
+{
+    public partial class GridController : Controller
+    {
+      List<Orders> order = new List<Orders>();
+        public ActionResult GridFeatures()
+        {
+            ViewBag.datasource = Orders;
+            return View();
+        }
+
+    }
+}
+
+
+{% endhighlight  %} 
+{% endtabs %} 
+
+
 ## Resize to fit 
 
 The `allow-resize-to-fit` property enable the grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows and this automatic behavior is applicable only for the columns which does not have width specified. 
