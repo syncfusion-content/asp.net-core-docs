@@ -244,3 +244,51 @@ Output for grouping combobox control is as follows.
 
 ![](Combobox_howto_images/autofill.png)
 
+## Validation of ComboBox using jQuery Validator
+
+Validation of ComboBox can be done on form submission using jQuery Validations by adding name attribute for ComboBox through `htmlAttributes` property. Also, you can remove this error message during item selection through select or change event of ComboBox
+
+N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
+
+{% highlight html%}
+
+    @{
+    IDictionary<string, object> controlname = new Dictionary<string, object>();
+    controlname.Add("name", "select");
+    }
+    <form id="form1">
+      <div class="frame">
+        <div class="row">
+            <div class="col-xs-8 col-sm-4">
+                <span class="txt">Select Country</span>
+                <ej-combo-box id="countryList" datasource="(IEnumerable<Countries>)ViewBag.datasource1" html-attributes="controlname" auto-fill="true" select="select">
+                    <e-combo-box-fields text="text" />
+                </ej-combo-box>
+                <label class="message"></label>
+            </div>
+        </div>
+        <button type="submit" id="valid" onclick="validate()"> Validate</button>
+     </div>
+     <script type="text/javascript">
+        function validate() {
+            var rules = {};
+            $("form[id$=form1] input[name$=select]").each(function () {
+                rules[this.name] = "required";
+            });
+            $('form[id$="form1"]').validate({
+                rules: rules,
+                errorPlacement: function (error, element) {
+                    $(error).insertAfter($(".message"));
+                }
+            });
+        }
+        function select(args) {
+            if (args.value != "") {
+                $("label.error").css("display", "none")  //hide error message when value is selected.
+            }
+        }
+
+      </script>
+    </form>
+
+{% endhighlight%}
