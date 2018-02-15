@@ -98,3 +98,63 @@ public partial class GridController : Controller
 {% endhighlight  %}
 
 {% endtabs %} 
+
+## Hierarchy Grid with different foreignKeyField in parent and child table
+
+The `query-string` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `query-string` does not exists in Child Grid, then `foreign-key-field` property is used to filter the childGrid data. If the foreign key column name differes for parent and child grid then use `foreign-key-field` property of Grid.
+
+The following code example explains the above behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-grid id="HierarchyGrid" datasource="ViewBag.datasource" allow-paging="true">
+    <e-columns>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="85"></e-column>
+        <e-column field="FirstName" header-text="First Name" width="100"></e-column>
+        <e-column field="City" width="100"></e-column>
+        <e-column field="Country" width="100"></e-column>
+    </e-columns>
+    <ej-grid query-string="FirstName" foreign-key-field="CustomerName" allow-paging="true">
+        <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
+        <e-page-settings page-size="5"></e-page-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID" text-align="Right" width="75"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity" width="100"></e-column>
+            <e-column field="CustomerName" header-text="First Name" width="120"></e-column>
+            <e-column field="Freight" width="120"></e-column>
+            <e-column field="ShipName" width="100"></e-column>
+        </e-columns>
+    </ej-grid>
+</ej-grid>
+
+{% endhighlight  %}
+{% highlight c# %}
+
+public partial class GridController : Controller
+    {
+        private NORTHWNDContext _context;
+
+        public GridController(NORTHWNDContext context)
+        {
+            _context = context;
+        }
+        public ActionResult HierarchyGrid()
+        {
+            
+            var DataSource = _context.Employees.ToList();
+
+            ViewBag.datasource = DataSource;
+
+            return View();
+        }
+
+    }
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
