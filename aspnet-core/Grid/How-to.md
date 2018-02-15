@@ -123,7 +123,7 @@ The following code example explains the above behavior.
             <e-column field="OrderID" header-text="OrderID" text-align="Right" width="75"></e-column>
             <e-column field="ShipCity" header-text="ShipCity" width="100"></e-column>
             <e-column field="CustomerName" header-text="First Name" width="120"></e-column>
-            <e-column field="Freight" width="120"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="120"></e-column>
             <e-column field="ShipName" width="100"></e-column>
         </e-columns>
     </ej-grid>
