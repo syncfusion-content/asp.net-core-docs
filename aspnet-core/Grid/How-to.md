@@ -120,11 +120,11 @@ The following code example explains the above behavior.
         <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
         <e-page-settings page-size="5"></e-page-settings>
         <e-columns>
-            <e-column field="OrderID" header-text="OrderID" text-align="Right" width="75"></e-column>
-            <e-column field="ShipCity" header-text="ShipCity" width="100"></e-column>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="100"></e-column>
             <e-column field="CustomerName" header-text="First Name" width="120"></e-column>
             <e-column field="CustomerID" header-text="Customer ID" width="120"></e-column>
-            <e-column field="ShipName" width="100"></e-column>
+            <e-column field="ShipName" header-text="Ship Name" width="100"></e-column>
         </e-columns>
     </ej-grid>
 </ej-grid>
