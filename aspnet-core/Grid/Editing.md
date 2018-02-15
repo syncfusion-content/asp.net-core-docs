@@ -1164,6 +1164,31 @@ using the 'DataOperations' helper class you can perform grid action at server-si
 7. PerformSelect
 8. Execute
 
+### Remotesave Adaptor:
+
+RemoteSaveAdaptor is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
+
+Refer to the following code example
+
+{% highlight razor %}
+
+ <ej-grid id="FlatGrid" allow-paging="true" >
+        <e-datamanager json="(IEnumerable<object>)ViewBag.datasource" update-url="Home/Update" insert-url="Home/Insert" remove-url="Home/Delete" adaptor="remoteSaveAdaptor"></e-datamanager>
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" }) >
+        </e-toolbar-settings>
+        <e-edit-settings allow-adding="true" allow-deleting="true" allow-editing="true"></e-edit-settings>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="ShipCity" header-text="Ship City"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country"></e-column>
+        </e-columns>
+    </ej-grid>
+
+{% endhighlight %}
+
 ### Accessing CRUD action request details in server-side:
 
 The 'Server-Side' function must be declared with the following parameter name for each editing functionality.
