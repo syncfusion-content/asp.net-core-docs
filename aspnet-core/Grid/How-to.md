@@ -101,7 +101,7 @@ public partial class GridController : Controller
 
 ## Hierarchy Grid with different foreignKeyField in parent and child table
 
-The `query-string` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `query-string` does not exists in Child Grid, then `foreign-key-field` property is used to filter the childGrid data. If the foreign key column name differes for parent and child grid then use `foreign-key-field` property of Grid.
+The `query-string` property is used to filter the childGrid data based on value in parent Grid data. But when the field name provided in `query-string` does not exists in Child Grid, then `foreign-key-field` property is used to filter the childGrid data. If the foreign key column name differs for parent and child grid then use `foreign-key-field` property of Grid.
 
 The following code example explains the above behavior.
 
