@@ -883,6 +883,8 @@ I> For foreign key column the sorting and grouping is based on `foreign-key-fiel
 
 N> In remote data, server should be configured to perform select and filter operations since the grid will try to fetch required columns using select operation and required data using filter operation.
 
+N> To render a Hierarchy Grid with different `foreign-key-field` in parent and child table, click [`here`](https://help.syncfusion.com/aspnet-core/grid/how-to#hierarchy-grid-with-different-foreignkeyfield-in-parent-and-child-table "here").
+
 The following code example describes the previous behavior.
 
 {% tabs %}
