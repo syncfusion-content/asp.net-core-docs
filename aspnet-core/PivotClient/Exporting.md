@@ -24,10 +24,6 @@ The property `client-export-mode` takes any one of the following value:
 In order to make use of exporting with client side JSON data. The control can be exported by invoking `before-export` event, with an appropriate export option as parameter.
 
 
-N> By default, we are using our online hosted URL link for exporting PivotClient control. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. “ejServices” folder is available in the below installed location.  
-Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices 
-Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\ejservices
-
 {% highlight CSHTML %}
 
 <ej-pivot-client id="PivotClient1" before-export="Export">
