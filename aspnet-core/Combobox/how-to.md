@@ -111,7 +111,7 @@ In the following sample, icon classes are mapped with the `iconCss` field.
     <style>
     .mail{
     display: block;
-    background-image: url('../../Images/dropdownlist/iconsapps.png');
+    background-image: url('../../Images/dropdownlist/icons.png');
     height: 25px;
     width: 25px;
     background-position: center center;
@@ -198,7 +198,7 @@ Output for combobox control is as follows.
 
 ## Autofill supported with ComboBox
 
-The ComboBox supports the `autofill` behaviour with the help of **autofill** property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. If no matches found, the comboBox will not suggest any item.
+The ComboBox supports the `autofill` behavior with the help of **autofill** property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. If no matches found, the comboBox will not suggest any item.
 
 In the following sample, showcase that how to work autofill with ComboBox.
 
