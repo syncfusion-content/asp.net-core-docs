@@ -90,7 +90,7 @@ The below screenshot shows the control exported to Excel document showing its ow
 
 ## Exporting Customization
 
-You can add title and description to the exporting document by using title and description property obtained in the `before-export` event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `before-export` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight cshtml %}
 
@@ -100,15 +100,28 @@ You can add title and description to the exporting document by using title and d
 
 <script type="text/javascript">
     function Exporting(args) {
-        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";  
+        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
         args.url = "ExportPivotClient";
         
         //you can provide title and description here
         args.title = "PivotClient";
         args.description = "Visualizes both OLAP and Relational datasource in tabular and graphical formats";
+		args.exportWithStyle = true;   // by default it sets as true. It improves performance on exporting huge data when it sets as false.
     }
 </script>
     
+{% endhighlight %}
+
+### Exporting complete data on Paging
+
+When paging is enabled, you can export the complete data by enabling the `enable-complete-data-export` property. It is supported for all kinds of exporting formats available in PivotClient.
+
+{% highlight CSHTML %}
+   
+<ej-pivot-client id="PivotClient1" enable-complete-data-export="true">
+//..
+</ej-pivot-client>
+                                           
 {% endhighlight %}
 
 The below screenshot shows the PivotGrid and PivotChart controls exported to Excel document.
