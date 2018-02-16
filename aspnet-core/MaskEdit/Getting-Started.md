@@ -303,7 +303,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 			</table>
 
-			<div class="product key">
+			<div class="productKey">
 
 				<ej-button id="btn" size="@ButtonSize.Small" text="Submit" />
 
@@ -340,7 +340,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 
 
-		.control .product key 
+		.control .productKey 
 		{
 
 			margin-left: 208px;
