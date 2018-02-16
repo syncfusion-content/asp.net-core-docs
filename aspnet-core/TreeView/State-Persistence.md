@@ -52,6 +52,9 @@ In the view page, add the following code with the following properties.
     
     {% highlight CSHTML %}
     
-        <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" enable-persistence="true"></e-tree-view-fields></ej-tree-view>
+        <ej-tree-view id="treeview">
+		  <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" enable-persistence="true">
+		  </e-tree-view-fields>
+		</ej-tree-view>
     
     {% endhighlight %} 

@@ -13,7 +13,10 @@ To perform the drag and drop operation in tree view, specify the **AllowDragAndD
     
     {% highlight CSHTML %}
     
-      <ej-tree-view id="treeView" allow-drag-and-drop="true"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeView" allow-drag-and-drop="true">
+	   <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	   </e-tree-view-fields>
+	  </ej-tree-view>
    
     {% endhighlight %}
 
@@ -124,9 +127,15 @@ In the view page, add the following code and map the properties defined to the c
         
     {% highlight CSHTML %}
     
-      <ej-tree-view id="treeview1" show-checkbox="true" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true"><e-tree-view-fields datasource="ViewBag.datasource1" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeview1" show-checkbox="true" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true">
+	    <e-tree-view-fields datasource="ViewBag.datasource1" id="Id" parent-id="Parent" text="Text">
+		</e-tree-view-fields>
+	  </ej-tree-view>
     
-      <ej-tree-view id="treeview2" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true"><e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeview2" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true">
+	    <e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text">
+		</e-tree-view-fields>
+	  </ej-tree-view>
 
     {% endhighlight %}
 
@@ -138,9 +147,15 @@ You may not need to have two tree view to be in same structured node while drag 
     
     {% highlight CSHTML %}
          
-      <ej-tree-view id="treeview1" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true"><e-tree-view-fields datasource="ViewBag.datasource1" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeview1" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true">
+	    <e-tree-view-fields datasource="ViewBag.datasource1" id="Id" parent-id="Parent" text="Text">
+		</e-tree-view-fields>
+	  </ej-tree-view>
     
-      <ej-tree-view id="treeview2" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true"><e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeview2" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="true" allow-drag-and-drop-across-control="true">
+	    <e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text">
+		</e-tree-view-fields>
+	  </ej-tree-view>
     
     {% endhighlight %}    
     

@@ -61,7 +61,14 @@ In the view page, add the following code and map the properties defined to the c
 
 {% highlight CSHTML %}
 
-	 <ej-tree-view id="treeview1" allow-multi-selection="true" allow-drag-and-drop="true"><e-tree-view-fields datasource="ViewBag.datasource1" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
-    <ej-tree-view id="treeview2" allow-multi-selection="true" allow-drag-and-drop="true"><e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+	 <ej-tree-view id="treeview1" allow-multi-selection="true" allow-drag-and-drop="true">
+	   <e-tree-view-fields datasource="ViewBag.datasource1" id="Id" parent-id="Parent" text="Text">
+	   </e-tree-view-fields>
+	 </ej-tree-view>
+
+    <ej-tree-view id="treeview2" allow-multi-selection="true" allow-drag-and-drop="true">
+	  <e-tree-view-fields datasource="ViewBag.datasource2" id="Id" parent-id="Parent" text="Text">
+	  </e-tree-view-fields>
+	</ej-tree-view>
 
 {% endhighlight %}

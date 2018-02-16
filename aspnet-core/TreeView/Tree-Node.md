@@ -151,7 +151,10 @@ In the view page, add the following code and map the properties defined to the c
      
     {% highlight CSHTML %}
     
-      <ej-tree-view id="treeView"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeView">
+	   <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	   </e-tree-view-fields>
+	  </ej-tree-view>
 
     {% endhighlight %}  
     
@@ -353,7 +356,10 @@ For example, if you want to allow only one node to be expanded in tree view at a
     
     {% highlight CSHTML %}
         
-        <ej-tree-view id="treeView"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" enable-multiple-expand="true"></e-tree-view-fields></ej-tree-view>
+        <ej-tree-view id="treeView">
+		 <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" enable-multiple-expand="true">
+		 </e-tree-view-fields>
+		</ej-tree-view>
     
     {% endhighlight %}    
     
@@ -384,7 +390,10 @@ You can directly edit the tree node’s text in-place by double-click the tree n
         
     {% highlight CSHTML %}
     
-      <ej-tree-view id="treeView"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" allow-editing="true"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeView">
+	   <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" allow-editing="true">
+	   </e-tree-view-fields>
+	  </ej-tree-view>
 
     
     {% endhighlight %}
