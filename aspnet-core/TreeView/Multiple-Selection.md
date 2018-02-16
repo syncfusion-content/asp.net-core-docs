@@ -50,7 +50,10 @@ In the view page, add the following code and map the properties defined to the c
 
 {% highlight CSHTML %}
 
-    <ej-tree-view id="treeView" allow-multi-selection="true"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeView" allow-multi-selection="true">
+	  <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	  </e-tree-view-fields>
+	</ej-tree-view>
 	
 {% endhighlight %}
 
@@ -66,7 +69,10 @@ In the view page, add the following code and map the properties defined to the c
 
 {% highlight CSHTML %}
 
-    <ej-tree-view id="treeView" allow-multi-selection="true"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeView" allow-multi-selection="true">
+	  <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	  </e-tree-view-fields>
+	</ej-tree-view>
 	
 {% endhighlight %}
 
@@ -89,7 +95,10 @@ In the view page, add the following code and map the properties defined to the c
 
 {% highlight CSHTML %}
 
-    <ej-tree-view id="treeView" allow-multi-selection="true"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeView" allow-multi-selection="true">
+	  <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	  </e-tree-view-fields>
+	</ej-tree-view>
 
 {% endhighlight %}
 

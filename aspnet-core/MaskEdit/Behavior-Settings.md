@@ -171,7 +171,7 @@ Textbox without error
 
 ### Custom Character
 
-The MaskEdit allows you to use the custom character option. The specified character is allowed to enter in the Mask Edit Textbox by using the CustomCharacter property.
+The MaskEdit allows you to use the custom character option. You can define any of the non-mask element as the mask element  through the customCharacters property.The specified character is allowed to enter in the Mask Edit Textbox by using the CustomCharacter property.Non-mask element  accepts the values as mentioned in the custom characters collection.
 
 ### Hide Prompt On Leave
 

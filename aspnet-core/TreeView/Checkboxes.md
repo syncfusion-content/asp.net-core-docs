@@ -16,7 +16,10 @@ The tree view supports tri-state checkboxes in addition to the standard two-stat
     
     {% highlight CSHTML %}
     
-       <ej-tree-view id="treeView" show-checkbox="true" auto-check-parent-node="false"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+       <ej-tree-view id="treeView" show-checkbox="true" auto-check-parent-node="false">
+	     <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	     </e-tree-view-fields> 
+	   </ej-tree-view>
 
     {% endhighlight %}
     
@@ -29,7 +32,10 @@ By default, checkbox state of child nodes depends on the parent node checkbox st
     
     {% highlight CSHTML %}
     
-        <ej-tree-view id="treeView" show-checkbox="true" auto-check="false"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+        <ej-tree-view id="treeView" show-checkbox="true" auto-check="false">
+		 <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+		 </e-tree-view-fields>
+	   </ej-tree-view>
    
     {% endhighlight %}
     
@@ -64,7 +70,7 @@ To get the checked nodes of tree view, use the [getCheckedNodes](http://help.syn
             // only after control creation you can get treeObj otherwise it throws exception.
             treeObj = $("#treeView").ejTreeView('instance');
     
-            //to get checkednodes
+            //to get checked nodes
             treeObj.getCheckedNodes();
         }        
     </script>

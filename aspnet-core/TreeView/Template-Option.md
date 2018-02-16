@@ -22,14 +22,14 @@ In the controller page, create a data list that contains the details about the t
                 treeData.Add(new LoadData { 
                     Id = 1,
                     Name = "UK",
-                    Cls = "uk-style",
+                    Class = "UK-style",
                     HasChild = true,
                     Expanded = true
                 });
                 treeData.Add(new LoadData { 
                     Id = 2,
                     PId = 1,
-                    ImgId = "1",
+                    ImageId = "1",
                     Name = "Steven John",
                     City = "London",
                     Phone = "555-5665-2323"
@@ -37,14 +37,14 @@ In the controller page, create a data list that contains the details about the t
                 treeData.Add(new LoadData { 
                     Id = 3,
                     Name = "USA",
-                    Cls = "usa-style",
+                    Class = "USA-style",
                     HasChild = true,
                     Expanded = true
                 });
                 treeData.Add(new LoadData { 
                     Id = 5,
                     PId = 3,
-                    ImgId = "3",
+                    ImageId = "3",
                     Name = "Andrew",
                     City = "Capital way", 
                     Phone = "934-8374-2455"
@@ -52,7 +52,7 @@ In the controller page, create a data list that contains the details about the t
                 treeData.Add(new LoadData {
                     Id = 4,
                     PId = 3,
-                    ImgId = "2",
+                    ImageId = "2",
                     Name = "Angelica",
                     City = "Dayton",
                     Phone = "988-4243-0806"
@@ -70,11 +70,11 @@ In the view page, specify the template format and add the following code:
     
     <script id="treeTemplate" type="text/x-jsrender">
        {{"{{"}}if HasChild{{}}}}
-        <div class={{"{{"}}>Cls{{}}}}>{{"{{"}}>Name{{}}}}</div>
+        <div class={{"{{"}}>Class{{}}}}>{{"{{"}}>Name{{}}}}</div>
         {{"{{"}}else{{}}}}
         <div class="cont-list">
-            <img class="con-img" src="http://mvc.syncfusion.com/demos/web/images/treeview/template-image-{{"{{"}}>ImgId{{}}}}.png" />
-            <div class="cont-del"></div>
+            <img class="con-Image" src="http://mvc.syncfusion.com/demos/web/images/treeview/template-image-{{"{{"}}>ImageId{{}}}}.png" />
+            <div class="cont-delete"></div>
             <b>{{"{{"}}>Name{{}}}}</b><br />
             <span>{{"{{"}}>City{{}}}}</span>
             <br />
@@ -87,7 +87,10 @@ In the view page, specify the template format and add the following code:
     
     <div style="width: 250px">
 
-         <ej-tree-view id="treeview" template="#treeTemplate" create="oncreate"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="PId" text="Name" has-child="HasChild" expanded="Expanded"></e-tree-view-fields></ej-tree-view>
+         <ej-tree-view id="treeview" template="#treeTemplate" create="onCreate">
+		   <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="PId" text="Name" has-child="HasChild" expanded="Expanded">
+		   </e-tree-view-fields>
+		 </ej-tree-view>
 
     </div>
 
@@ -102,7 +105,7 @@ In the view page, specify the template format and add the following code:
             opacity: 0.8;
         }
     
-        .con-img {
+        .con-Image {
             float: left;
         }
     
@@ -120,17 +123,15 @@ In the view page, specify the template format and add the following code:
             font-size: 13px;
         }
     
-        .uk-style {
             background-color: #74A247 !important;
             color: #FFFFFF !important;
         }
     
-        .usa-style {
             background-color: #12A99A !important;
             color: #FFFFFF !important;
         }
     
-        .cont-del {
+        .cont-delete {
             background-image: url("http://mvc.syncfusion.com/demos/web/images/treeview/remove-icon.png");
             background-position: -6px -10px;
             background-repeat: no-repeat;
@@ -151,9 +152,9 @@ In the view page, specify the template format and add the following code:
 
     <script>
 
-        function oncreate(args) {
+        function onCreate(args) {
             var treeObj = $("#treeview").data("ejTreeView");
-            $("#treeview").find(".cont-del").bind("click", function (e) {
+            $("#treeview").find(".cont-delete").bind("click", function (e) {
                 e.preventDefault();
                 treeObj.removeNode($(e.target).parents("li").first());
             });
@@ -172,9 +173,9 @@ The custom action can be performed in the tree view template node. In tree view,
        
     {% highlight javascript %}
         
-        function oncreate(args) {
+        function onCreate(args) {
             var treeObj = $("#treeview").data("ejTreeView");
-            $("#treeview").find(".cont-del").bind("click", function (e) {
+            $("#treeview").find(".cont-delete").bind("click", function (e) {
                 e.preventDefault();
                 treeObj.removeNode($(e.target).parents("li").first());
             });
