@@ -37,6 +37,8 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
 
    ~~~ cshtml
 
+   /*ej-Tag Helper code to render MaskEdit*/
+
     <div class="frame">
 
         <div class="control">
@@ -51,64 +53,8 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
 
                             <label>
 
-                                Kilometers
-                            </label>
-
-                        </td>
-
-                        <td>
-
-                            <ej-numeric-text-box id="numeric" value="1000" />
-
-                        </td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>
-
-                            <label>
-
-                                Service Tax
-                            </label>
-
-                        </td>
-
-                        <td>
-
-                            <ej-percentage-text-box id="percent" value="100" />
-
-                        </td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>
-
-                            <label>
-
-                                Fare
-                            </label>
-
-                        </td>
-
-                        <td>
-
-                            <ej-currency-text-box id="currency" value="50" />
-
-                        </td>
-
-                    </tr>
-
-                    <tr>
-
-                        <td>
-
-                            <label>
-
                                 Mobile No
+
                             </label>
 
                         </td>
@@ -127,7 +73,7 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
 
             </table>
 
-            <div class="paybill">
+            <div class="payBill">
 
                 <ej-button id="btn" size="@ButtonSize.Small" text="PayBill" />            
 
@@ -139,13 +85,17 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
 	
    ~~~
 
-Razor code to render MaskEdit
+## Razor code to render MaskEdit
 
- ~~~ cshtml
+~~~ cshtml
 
 @{Html.EJ().MaskEdit("mask").MaskFormat("99-999-99999").Render();}
 
 ~~~
+
+N>To render the MaskEdit Control you can use either Razor or Tag helper code as given in the above code snippet. For more information about ej-tag helper you can refer (https://help.syncfusion.com/aspnet-core/ejtaghelpers)
+
+
 
 3. Add the following styles to show MaskEdit and place it in a particular position.
 
@@ -171,7 +121,7 @@ Razor code to render MaskEdit
 
 
 
-		.control .paybill 
+		.control .payBill 
 		{
 
 			margin-left: 208px;
@@ -202,7 +152,7 @@ Razor code to render MaskEdit
 
 
 
-		.ctrllabel 
+		.ctrlLabel 
 		{
 
 			padding-bottom: 3px;
@@ -216,20 +166,95 @@ Razor code to render MaskEdit
 
 Execute the above code example to render the following output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 MaskEdit
 {:.caption}
 
-## Set Mask value to Mobile Number textbox
+## Set Mask value for MobileNumber textbox
 
 In this section, you can learn how to set mask value for MobileNumber textbox. To achieve this, set the mask value in the MaskEdit control to the desired values.
 
-  	~~~ cshtml
+  	{% highlight html %}
+
   
 		<ej-mask-edit id="maskedit" mask-format="99-999-99999" input-mode="@InputMode.Text" />
 	
-	~~~
+	{% endhighlight  %}
+
+
+## Mask Configuration
+
+The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
+
+### Standard Mask Elements
+
+The following table shows the list of mask elements and its behavior based on MSDN standard.
+
+The mask can be formed by combining any one or more of these mask elements.
+
+<table>
+<tr>
+<th>
+Mask Element</th><th>
+Description</th></tr>
+<tr>
+<td>
+0</td><td>
+Digit required. This element will accept any single digit from **0** to **9**.</td></tr>
+<tr>
+<td>
+9</td><td>
+Digit or space, optional.</td></tr>
+<tr>
+<td>
+#</td><td>
+Digit or space, optional, Plus(+) and minus(-) signs are allowed.</td></tr>
+<tr>
+<td>
+L</td><td>
+Letter required. It will accept letters **a-z** and **A-Z**.</td></tr>
+<tr>
+<td>
+?</td><td>
+Letter or space, optional.</td></tr>
+<tr>
+<td>
+&</td><td>
+Requires a character.</td></tr>
+<tr>
+<td>
+C</td><td>
+Character or space, optional.</td></tr>
+<tr>
+<td>
+A</td><td>
+Alphanumeric **(A-Z a-z 0-9)** required.</td></tr>
+<tr>
+<td>
+a</td><td>
+Alphanumeric **(A-Z a-z 0-9)** or space, optional.</td></tr>
+<tr>
+<td>
+<</td><td>
+Shift down. Converts all characters to lower case.</td></tr>
+<tr>
+<td>
+></td><td>
+Shift up. Converts all characters to upper case.</td></tr>
+<tr>
+<td>
+|</td><td>
+Disable a previous shift up or shift down.</td></tr>
+<tr>
+<td>
+\\</td><td>
+Escapes a mask character, turning it into a literal.</td></tr>
+<tr>
+<td>
+All other characters</td><td>
+Literals. All non-mask elements (literals) will appear as themselves within MaskedTextBox.</td></tr>
+</table>
 
 ## Create a MaskEdit control for Product Key Validation
 
@@ -266,7 +291,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 						<td>
 
-						  @*creating MaskEdit control for productkey validation*@   
+						  @*creating MaskEdit control for product key validation*@   
 						  
 						  <ej-mask-edit id="maskedit" mask-format="aaaa-aaaa-aaaa-aaaa" input-mode="@InputMode.Text" />                     
 						  
@@ -278,7 +303,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 			</table>
 
-			<div class="productkey">
+			<div class="productKey">
 
 				<ej-button id="btn" size="@ButtonSize.Small" text="Submit" />
 
@@ -315,7 +340,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 
 
-		.control .productkey 
+		.control .productKey 
 		{
 
 			margin-left: 208px;
@@ -346,7 +371,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 
 
-		.ctrllabel 
+		.ctrlLabel 
 		{
 
 			padding-bottom: 3px;

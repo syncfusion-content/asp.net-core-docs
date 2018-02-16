@@ -96,17 +96,17 @@ In the view page, add the tree view as shown in the following. It will render th
             });
             items.Add().Text("Format").Expanded(true).Children(child =>
             {
-                child.Add().Text("Font").Children(childs =>
+                child.Add().Text("Font").Children(child1 =>
                 {
-                    childs.Add().Text("Arial");
-                    childs.Add().Text("Arial Black");
-                    childs.Add().Text("Arial Narrow");
-                    childs.Add().Text("Courier");
-                    childs.Add().Text("Gaurand");
-                    childs.Add().Text("Times New Roman");
-                    childs.Add().Text("Vrendra");
-                    childs.Add().Text("Helvatica");
-                    childs.Add().Text("Impact");
+                    child1.Add().Text("Arial");
+                    child1.Add().Text("Arial Black");
+                    child1.Add().Text("Arial Narrow");
+                    child1.Add().Text("Courier");
+                    child1.Add().Text("Gaurand");
+                    child1.Add().Text("Times New Roman");
+                    child1.Add().Text("Vrendra");
+                    child1.Add().Text("Helvetica");
+                    child1.Add().Text("Impact");
                 });
                 child.Add().Text("Paragraph");
                 child.Add().Text("Bullets and Numbering");
@@ -187,14 +187,15 @@ In the controller page, create a data list that contains the details about the t
     
     
     
-Previous data can be directly assigned to the DataSource property and you can map data fields with respect to the mapper field in order to form the tree view.
+ Data from controller part can be directly assigned to the DataSource property and you can map data fields with respect to the mapper field in order to form the tree view.
     
     
     
   {% highlight CSHTML %}
     
     <ej-tree-view id="tree1">
-        <e-tree-view-fields datasource="@ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields>
+        <e-tree-view-fields datasource="@ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+		</e-tree-view-fields>
     </ej-tree-view>
     
   {% endhighlight %}
@@ -232,7 +233,8 @@ ASP.NET Core tree view supports all the [events](http://help.syncfusion.com/js/a
    {% highlight CSHTML %}
     
     <ej-tree-view id="tree1" node-expand="onNodeExpanded" node-collapse="onNodeCollapsed" node-select="onNodeSelected">
-        <e-tree-view-fields datasource="@ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields>
+        <e-tree-view-fields datasource="@ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+		</e-tree-view-fields>
     </ej-tree-view>
     
     <script type="text/javascript">
