@@ -111,7 +111,7 @@ In the following sample, icon classes are mapped with the `iconCss` field.
     <style>
     .mail{
     display: block;
-    background-image: url('../../Images/dropdownlist/icons.png');
+    background-image: url('../../Images/dropdown/icons.png');
     height: 25px;
     width: 25px;
     background-position: center center;
