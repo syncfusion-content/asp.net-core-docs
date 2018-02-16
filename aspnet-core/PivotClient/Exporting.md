@@ -90,7 +90,7 @@ The below screenshot shows the control exported to Excel document showing its ow
 
 ## Exporting Customization
 
-You can add title, description and enable/disable styling to the exporting document by using title, description and exportWithStyle properties respectively obtained in the `before-export` event.
+You can add title and description to the exporting document by using the title and description properties respectively obtained in the `before-export` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight cshtml %}
 
@@ -100,7 +100,7 @@ You can add title, description and enable/disable styling to the exporting docum
 
 <script type="text/javascript">
     function Exporting(args) {
-        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";  
+        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
         args.url = "ExportPivotClient";
         
         //you can provide title and description here
@@ -114,7 +114,7 @@ You can add title, description and enable/disable styling to the exporting docum
 
 ### Exporting complete data on Paging
 
-You can export the complete data when Paging option is enabled by setting the `enable-complete-data-export` property as true. It supports in all kind of available exporting formats in PivotClient.
+When paging is enabled, you can export the complete data by enabling the `enable-complete-data-export` property. It is supported for all kinds of exporting formats available in PivotClient.
 
 {% highlight CSHTML %}
    
