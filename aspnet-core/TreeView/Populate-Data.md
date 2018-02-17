@@ -281,7 +281,10 @@ In the view page, add the following code and map the properties defined to the c
 
     <div style="width: 250px">
    
-    <ej-tree-view id="treeview" show-checkbox="true"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" expanded="Expanded" is-checked="NodeChecked" selected="Selected" sprite-css-class="SpriteImage" image-url="ImageURL" link-attribute="LinkProperty" html-attribute="NodeProperty" image-attribute="ImageProperty"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeview" show-checkbox="true">
+	  <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text" expanded="Expanded" is-checked="NodeChecked" selected="Selected" sprite-css-class="SpriteImage" image-url="ImageURL" link-attribute="LinkProperty" html-attribute="NodeProperty" image-attribute="ImageProperty">
+	  </e-tree-view-fields>
+	</ej-tree-view>
 
     </div>
     
@@ -325,7 +328,10 @@ Previous data can be directly assigned to the `DataSource` property and you can 
            
     {% highlight CSHTML %}
     
-    <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeview">
+	  <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+	  </e-tree-view-fields>
+	</ej-tree-view>
     
     {% endhighlight %}   
 
@@ -371,7 +377,10 @@ Previous data can be directly assigned to the `DataSource` property and you can 
            
     {% highlight CSHTML %}
     
-    <ej-tree-view id="treeview"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text.nodeName"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeview">
+		<e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text.nodeName">
+		</e-tree-view-fields>
+	</ej-tree-view>
     
     {% endhighlight %}   
     
@@ -412,7 +421,14 @@ The following steps explain you to bind remote data to the tree view control.
    Here, directly you can specify the OData service URL.
     {% highlight CSHTML %}
     
-       <ej-tree-view id="treeview"><e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager><e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager></e-child></e-tree-view-fields></ej-tree-view>
+       <ej-tree-view id="treeview">
+	     <e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName">
+	       <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager>
+		  <e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName">
+		   <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager>
+		  </e-child>
+	     </e-tree-view-fields>
+	   </ej-tree-view>
    
     {% endhighlight %}
     
@@ -423,7 +439,14 @@ Provide the adaptor value either as string value (“ODataAdaptor”) or Enum ty
     
     {% highlight CSHTML %}
     
-         <ej-tree-view id="treeview"><e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataAdaptor"></e-datamanager><e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataAdaptor"></e-datamanager></e-child></e-tree-view-fields></ej-tree-view>
+         <ej-tree-view id="treeview">
+		   <e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName">
+		    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataAdaptor"></e-datamanager>
+		   <e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName">
+		    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataAdaptor"></e-datamanager>
+		   </e-child>
+		  </e-tree-view-fields>
+		 </ej-tree-view>
     
     {% endhighlight %}   
     
@@ -432,7 +455,14 @@ N>**You can use the previous code until OData service version 3. For OData Servi
     
     {% highlight CSHTML %}
     
-       <ej-tree-view id="treeview"><e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataV4Adaptor"></e-datamanager><e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataV4Adaptor"></e-datamanager></e-child></e-tree-view-fields></ej-tree-view>
+       <ej-tree-view id="treeview">
+	     <e-tree-view-fields query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName">
+	       <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataV4Adaptor"></e-datamanager>
+	     <e-child table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName">
+	       <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" adaptor="@AdaptorType.ODataV4Adaptor"></e-datamanager>
+		 </e-child>
+		</e-tree-view-fields>
+	   </ej-tree-view>
 
     {% endhighlight %}
     
@@ -445,7 +475,11 @@ Using the [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-ad
     
     {% highlight CSHTML %}
 
-          <ej-tree-view id="treeview"><e-tree-view-fields id="id" text="name" parent-id="pid"><e-datamanager url= "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData" adaptor="@AdaptorType.WebApiAdaptor" cross-domain="true"></e-datamanager></e-tree-view-fields></ej-tree-view>
+          <ej-tree-view id="treeview">
+		   <e-tree-view-fields id="id" text="name" parent-id="pid">
+		   <e-datamanager url= "http://js.syncfusion.com/demos/ejServices/api/TreeViewData/GetAllData" adaptor="@AdaptorType.WebApiAdaptor" cross-domain="true"></e-datamanager>
+		   </e-tree-view-fields>
+		  </ej-tree-view>
   
     {% endhighlight %}   
     
@@ -490,7 +524,10 @@ In the view page, add the following code and specify the custom adaptor as shown
     
     {% highlight CSHTML %}
     
-    <ej-tree-view id="treeview" create="onCreate"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" text="Text" parent-id="Parent"></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeview" create="onCreate">
+	 <e-tree-view-fields datasource="ViewBag.datasource" id="Id" text="Text" parent-id="Parent">
+	 </e-tree-view-fields>
+	</ej-tree-view>
     
     <script type="text/javascript">
         function onCreate() {
@@ -570,7 +607,10 @@ In the view page, add the following code and map the properties defined to the c
    
 {% highlight CSHTML %}
     
-   <ej-tree-view id="treeview" load-on-demand="true"><e-tree-view-fields datasource="ViewBag.datasource" id="id" text="name" parent-id="parentId" has-child="hasChild"></e-tree-view-fields></ej-tree-view>
+   <ej-tree-view id="treeview" load-on-demand="true">
+    <e-tree-view-fields datasource="ViewBag.datasource" id="id" text="name" parent-id="parentId" has-child="hasChild">
+	</e-tree-view-fields>
+   </ej-tree-view>
     
 {% endhighlight %}
 
@@ -592,6 +632,11 @@ Refer the following code example to load data on demand from remote data source.
     
 {% highlight CSHTML %}
     
-    <ej-tree-view id="treeview" load-on-demand="true"><e-tree-view-fields id="CategoryID" text="CategoryName" query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" has-child="CategoryName"><e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager><e-child url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" table-name="Products" parent-id="CategoryID" text="ProductName"></e-child></e-tree-view-fields></ej-tree-view>
+    <ej-tree-view id="treeview" load-on-demand="true">
+	  <e-tree-view-fields id="CategoryID" text="CategoryName" query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" has-child="CategoryName">
+	    <e-datamanager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/"></e-datamanager>
+		<e-child url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" table-name="Products" parent-id="CategoryID" text="ProductName"></e-child>
+	  </e-tree-view-fields>
+	</ej-tree-view>
     
 {% endhighlight %}
