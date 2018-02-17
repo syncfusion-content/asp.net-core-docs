@@ -76,7 +76,10 @@ You can restrict the dragged nodes to be dropped at siblings or children’s lev
   
     {% highlight CSHTML %}
     
-      <ej-tree-view id="treeView" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="false"><e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text"></e-tree-view-fields></ej-tree-view>
+      <ej-tree-view id="treeView" allow-drag-and-drop="true" allow-drop-sibling="true" allow-drop-child="false">
+        <e-tree-view-fields datasource="ViewBag.datasource" id="Id" parent-id="Parent" text="Text">
+        </e-tree-view-fields>
+      </ej-tree-view>
 
     {% endhighlight %}
     
