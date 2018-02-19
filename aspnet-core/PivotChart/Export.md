@@ -9,14 +9,16 @@ documentation: ug
 
 # Exporting
 
-The PivotChart control can be exported to the following file formats.
+The PivotChart control can be exported to following file formats:
 
 * Excel
 * Word
 * PDF
 * Image
 
-The PivotChart control can be exported by invoking **“exportPivotChart”** method, with an appropriate export option as parameter.
+To perform the exporting operation, the **"Syncfusion.EJ.Export"** dependency library should be referred in the application.
+
+The PivotChart control can be exported with the help of **“exportPivotChart”** method by passing method name and file name as parameters. Please refer the below code snippet.
 
 {% highlight CSHTML %}
 
@@ -48,7 +50,7 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
 
     <ej-button id="ExportBtn" width="100px" height="30px" type="Button" text="Export" click="exportBtnClick" />
 
-  <script type="text/javascript">
+    <script type="text/javascript">
 
         function exportBtnClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
@@ -88,45 +90,44 @@ The PivotChart control can be exported by invoking **“exportPivotChart”** me
             loadTheme(args);
         }
    </script>
-    
+
 {% endhighlight %}
 
-To achieve exporting, we need to add **"Syncfusion.EJ.Export"** dependency library into the application.
-
-When PivotChart is rendered, a method needs to be added in MVC controller file of the application and we need to import **"Syncfusion.EJ.Export"** namespace in the controller file. 
+The **"Syncfusion.EJ.Export"** namespace should be imported and the following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
-        private IHttpContextAccessor _contextAccessor;
-        
-        public PivotChartController(IHttpContextAccessor contextAccessor, IHostingEnvironment envrnmt)
-        {
-            _contextAccessor = contextAccessor;
-        }
+//...
+using Syncfusion.EJ.Export;
 
-        public ActionResult ExportToExcel()
-        {
-            PivotChartExcelExport pivotChart = new PivotChartExcelExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
-            clientParams["fileName"] = "sample";
-            return pivotChart.ExportToExcel(clientParams);
-        }
-        
+private IHttpContextAccessor _contextAccessor;
+
+public PivotChartController(IHttpContextAccessor contextAccessor, IHostingEnvironment envrnmt)
+{
+    _contextAccessor = contextAccessor;
+}
+
+public ActionResult ExportToExcel()
+{
+    PivotChartExcelExport pivotChart = new PivotChartExcelExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
+    clientParams["fileName"] = "sample";
+    return pivotChart.ExportToExcel(clientParams);
+}
+
 {% endhighlight %}
 
 ## Excel Export
 
-User can export contents of the PivotChart to Excel document for future archival, references and analysis purposes.
-
-To achieve Excel export, method name **"ExportToExcel"** and file name is sent as the parameter.
+PivotChart allows you to export its content to Excel document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToExcel"** method by passing the file name as parameter.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
-       function exportBtnClick(args) {
+        function exportBtnClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
             var ChartObj = $("#" + PivotChartObj._id + "Container").data("ejChart");
             ChartObj.model.border.opacity = 1;
@@ -134,34 +135,33 @@ To achieve Excel export, method name **"ExportToExcel"** and file name is sent a
             PivotChartObj.exportPivotChart("ExportToExcel", "Sample", ej.PivotChart.ExportOptions.Excel);
         }
 
-   </script>
-    
-{% endhighlight %}  
+    </script>
 
-Following method need to be added in controller file of the application.
+{% endhighlight %}
+
+The following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
-        public ActionResult ExportToExcel()
-        {
-            PivotChartExcelExport pivotChart = new PivotChartExcelExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
-            clientParams["fileName"] = "sample";
-            return pivotChart.ExportToExcel(clientParams);
-        }
+public ActionResult ExportToExcel()
+{
+    PivotChartExcelExport pivotChart = new PivotChartExcelExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
+    clientParams["fileName"] = "sample";
+    return pivotChart.ExportToExcel(clientParams);
+}
 
 {% endhighlight %}
 
 ## Word Export
-User can export contents of the PivotChart to Word document for future archival, references and analysis purposes.
 
-To achieve Word export, method name **"ExportToWord"** and file name is sent as the parameter.
+PivotChart allows you to export its content to Word document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToWord"** method by passing the file name as parameter.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
        function exportBtnClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
@@ -174,34 +174,32 @@ To achieve Word export, method name **"ExportToWord"** and file name is sent as 
         }
 
    </script>
-    
-{% endhighlight %}  
 
-Following method need to be added in controller file of the application.
+{% endhighlight %}
+
+The following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
-        public ActionResult ExportToWord()
-        {
-            PivotChartWordExport pivotChart = new PivotChartWordExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
-            clientParams["fileName"] = "sample";
-            return pivotChart.ExportToWord(clientParams);
-        }
+public ActionResult ExportToWord()
+{
+    PivotChartWordExport pivotChart = new PivotChartWordExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
+    clientParams["fileName"] = "sample";
+    return pivotChart.ExportToWord(clientParams);
+}
 
 {% endhighlight %}
 
 ## PDF Export
 
-User can export contents of the PivotChart to PDF document for future archival, references and analysis purposes.
-
-To achieve PDF export, method name **"ExportToPDF"** and file name is sent as the parameter.
+PivotChart allows you to export its content to PDF document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToPDF"** method by passing the file name as parameter.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
        function exportBtnClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
@@ -214,27 +212,28 @@ To achieve PDF export, method name **"ExportToPDF"** and file name is sent as th
         }
 
    </script>
-    
-{% endhighlight %}  
 
-Following method need to be added in controller file of the application.
+{% endhighlight %}
+
+The following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
-        public ActionResult ExportToPDF()
-        {
-            PivotChartPDFExport pivotChart = new PivotChartPDFExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
-            clientParams["fileName"] = "sample";
-            return pivotChart.ExportToPDF(clientParams);
-        }      
+public ActionResult ExportToPDF()
+{
+    PivotChartPDFExport pivotChart = new PivotChartPDFExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
+    clientParams["fileName"] = "sample";
+    return pivotChart.ExportToPDF(clientParams);
+}
 
 {% endhighlight %}
 
 ## Image Export
-User can export contents of the PivotChart to image format for future archival, references and analysis purposes. We can export PivotChart to the following image formats.
+
+PivotChart allows you to export its content to image format for future archival, references and analysis purposes. The following image formats are supported by PivotChart:
 
 * PNG
 * EMF
@@ -242,11 +241,11 @@ User can export contents of the PivotChart to image format for future archival, 
 * GIF
 * BMP
 
-To achieve image export, method name **"ExportToImage"** ,**“ej.PivotChart.ExportOptions.PNG”** and file name is sent as the parameter.This is similar to other image formats.
+This can be achieved with the help of **"ExportToImage"** method by passing the file name and image format (_ExportOptions.PNG_) as parameters.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
        function exportBtnClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
@@ -268,40 +267,40 @@ To achieve image export, method name **"ExportToImage"** ,**“ej.PivotChart.Exp
         }
 
    </script>
-    
-{% endhighlight %}  
 
-Following method need to be added in controller file of the application.
+{% endhighlight %}
+
+The following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
-        static string path = "E:\\";
+static string path = "E:\\";
 
-        public void ExportToImage()
-        {
-            PivotChartImageExport pivotChart = new PivotChartImageExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
-            clientParams.Add("Path", path);
-            clientParams["fileName"] = "sample";
-            pivotChart.ExportToImage(clientParams);
-        }
+public void ExportToImage()
+{
+    PivotChartImageExport pivotChart = new PivotChartImageExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    Dictionary<string, string> clientParams = JsonConvert.DeserializeObject<Dictionary<string, string>>(args);
+    clientParams.Add("Path", path);
+    clientParams["fileName"] = "sample";
+    pivotChart.ExportToImage(clientParams);
+}
 
 {% endhighlight %}
 
 The below screenshot shows the PivotChart control exported to Excel document.
 
-![](Export_images/Export_ExcelClient.png)
+![Export-Excel](Export_images/Export_ExcelClient.png)
 
 The below screenshot shows the PivotChart control exported to PDF document.
 
-![](Export_images/Export_PDFClient.png)
+![Export-PDF](Export_images/Export_PDFClient.png)
 
 The below screenshot shows the PivotChart control exported to Word document.
 
-![](Export_images/Export_WordClient.png)
+![Export-Word](Export_images/Export_WordClient.png)
 
 The below screenshot shows the PivotChart control exported to PNG format.
 
-![](Export_images/Export_PNGClient.png)
+![Export-Image](Export_images/Export_PNGClient.png)

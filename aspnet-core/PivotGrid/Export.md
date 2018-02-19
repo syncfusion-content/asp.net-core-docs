@@ -15,9 +15,9 @@ The PivotGrid control can be exported to the following file formats.
 * Word
 * PDF
 
-The PivotGrid control can be exported by invoking **“exportPivotGrid”** method, with an appropriate export option as parameter.
+To perform the exporting operation, the **"Syncfusion.EJ.Export"** dependency library should be referred in the application.
 
-## JSON Export
+The PivotGrid control can be exported with the help of **“exportPivotGrid”** method by passing method name and file name as parameters. Please refer the below code snippet.
 
 {% highlight CSHTML %}
 
@@ -37,7 +37,7 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
 
     <ej-button id="ExportBtn" width="100px" height="30px" type="Button" text="Export" click="exportBtnClick" />
 
-  <script type="text/javascript">
+    <script type="text/javascript">
 
         function exportBtnClick(args) {
             var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
@@ -73,45 +73,41 @@ The PivotGrid control can be exported by invoking **“exportPivotGrid”** meth
             ];
         }
    </script>
-    
+
 {% endhighlight %}
 
-To achieve exporting, we need to add **"Syncfusion.EJ.Export"** dependency library into the application.
-
-When PivotGrid is rendered, a method needs to be added in MVC controller file of the application and we need to import **"Syncfusion.EJ.Export"** namespace in the controller file. 
+The **"Syncfusion.EJ.Export"** namespace should be imported and the following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
-        //...
-        using Syncfusion.EJ.Export;
+//...
+using Syncfusion.EJ.Export;
 
-        private IHttpContextAccessor _contextAccessor;
+private IHttpContextAccessor _contextAccessor;
 
-        public PivotGridController(IHttpContextAccessor contextAccessor, IHostingEnvironment envrnmt)
-        {
-            _contextAccessor = contextAccessor;
-        }
+public PivotGridController(IHttpContextAccessor contextAccessor, IHostingEnvironment envrnmt)
+{
+    _contextAccessor = contextAccessor;
+}
 
-        public ActionResult ExcelExport()
-        {
-            PivotGridExcelExport pGrid = new PivotGridExcelExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            string fileName = "Sample";
-            return pGrid.ExportToExcel(fileName, args, context.Response);
-        }
-        
+public ActionResult ExcelExport()
+{
+    PivotGridExcelExport pGrid = new PivotGridExcelExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    string fileName = "Sample";
+    return pGrid.ExportToExcel(fileName, args, context.Response);
+}
+
 {% endhighlight %}
 
-### Excel Export
+## Excel Export
 
-User can export the contents of PivotGrid to an Excel document for future archival, references and analysis purposes.
-
-To achieve Excel export, the controller method name **"ExcelExport"** and file name is sent as the parameter.
+PivotGrid allows you to export its content to Excel document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToExcel"** method by passing the file name as parameter.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
        function exportBtnClick(args)
        {
@@ -120,32 +116,31 @@ To achieve Excel export, the controller method name **"ExcelExport"** and file n
        }
 
    </script>
-    
-{% endhighlight %}  
-
-Following method needs to be added in controller file of the application.
-
-{% highlight c# %}
-
-        public ActionResult ExcelExport()
-        {
-            PivotGridExcelExport pGrid = new PivotGridExcelExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            string fileName = "Sample";
-            return pGrid.ExportToExcel(fileName, args, context.Response);
-        }
 
 {% endhighlight %}
 
-### Word Export
-User can export the contents of PivotGrid to a Word document for future archival, references and analysis purposes.
+The following method should be added in the MVC controller file of the application.
 
-To achieve Word export, controller method name **"WordExport"** and file name is sent as the parameter.
+{% highlight c# %}
+
+public ActionResult ExcelExport()
+{
+    PivotGridExcelExport pGrid = new PivotGridExcelExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    string fileName = "Sample";
+    return pGrid.ExportToExcel(fileName, args, context.Response);
+}
+
+{% endhighlight %}
+
+## Word Export
+
+PivotGrid allows you to export its content to Word document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToWord"** method by passing the file name as parameter.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
        function exportBtnClick(args)
        {
@@ -154,10 +149,10 @@ To achieve Word export, controller method name **"WordExport"** and file name is
        }
 
    </script>
-    
-{% endhighlight %}  
 
-Following method needs to be added in controller file of the application.
+{% endhighlight %}
+
+The following method should be added in the MVC controller file of the application.
 
 {% highlight c# %}
 
@@ -172,15 +167,13 @@ Following method needs to be added in controller file of the application.
 
 {% endhighlight %}
 
-### PDF Export
+## PDF Export
 
-User can export contents of the PivotGrid to PDF document for future archival, references and analysis purposes.
-
-To achieve Word export, controller method name **"PDFExport"** and file name is sent as the parameter.
+PivotGrid allows you to export its content to PDF document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToPDF"** method by passing the file name as parameter.
 
 {% highlight js %}
 
-   <script type="text/javascript">
+    <script type="text/javascript">
 
        function exportBtnClick(args)
        {
@@ -189,49 +182,32 @@ To achieve Word export, controller method name **"PDFExport"** and file name is 
        }
 
    </script>
-    
-{% endhighlight %}  
-
-Following method needs to be added in MVC controller file of the application.
-
-{% highlight c# %}
-
-        public ActionResult PDFExport()
-        {
-            PivotGridPDFExport pGrid = new PivotGridPDFExport();
-            var context = _contextAccessor.HttpContext;
-            var args = context.Request.Form.ElementAt(0).Value;
-            string fileName = "Sample";
-            return pGrid.ExportToPDF(fileName, args, context.Response);
-        }      
 
 {% endhighlight %}
 
+The following method should be added in the MVC controller file of the application.
 
-### Customize the export document name
+{% highlight c# %}
 
-For customizing file name, we need to send file name as parameter to the **“exportPivotGrid”**  method along with method name.
-
-{% highlight js %}
-
-function exportBtnClick(args)
+public ActionResult PDFExport()
 {
-    var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
-    pGridObj.exportPivotGrid("ExcelExport","fileName");
+    PivotGridPDFExport pGrid = new PivotGridPDFExport();
+    var context = _contextAccessor.HttpContext;
+    var args = context.Request.Form.ElementAt(0).Value;
+    string fileName = "Sample";
+    return pGrid.ExportToPDF(fileName, args, context.Response);
 }
 
 {% endhighlight %}
 
 The below screenshot shows the PivotGrid control exported to Excel document.
 
-![](Exporting_images/ExportOLAPExcel.png)
+![Export-Excel](Exporting_images/ExportOLAPExcel.png)
 
 The below screenshot shows the PivotGrid control exported to Word document.
 
-![](Exporting_images/ExportOLAPWord.png)
+![Export-Word](Exporting_images/ExportOLAPWord.png)
 
 The below screenshot shows the PivotGrid control exported to PDF document.
 
-![](Exporting_images/ExportOLAPPDF.png)
-
-
+![Export-PDF](Exporting_images/ExportOLAPPDF.png)
