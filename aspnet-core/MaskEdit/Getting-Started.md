@@ -93,7 +93,7 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
 
 ~~~
 
-N>To render the MaskEdit Control you can use either Razor or Tag helper code as given in the above code snippet. For more information about ej-tag helper you can refer (https://help.syncfusion.com/aspnet-core/ejtaghelpers)
+N>To render the MaskEdit Control you can use either Razor or Tag helper code as given in the above code snippet. For more information about ej-tag helper you can refer [ASP.NET Core-ejtaghelpers](https://help.syncfusion.com/aspnet-core/ejtaghelpers)
 
 
 
@@ -201,7 +201,7 @@ Description</th></tr>
 <tr>
 <td>
 0</td><td>
-Digit required. This element will accept any single digit from **0** to **9**.</td></tr>
+Digit required. This element will accept any single digit from <b>0</b> to <b>9</b>.</td></tr>
 <tr>
 <td>
 9</td><td>
@@ -213,7 +213,7 @@ Digit or space, optional, Plus(+) and minus(-) signs are allowed.</td></tr>
 <tr>
 <td>
 L</td><td>
-Letter required. It will accept letters **a-z** and **A-Z**.</td></tr>
+Letter required. It will accept letters <b>a-z</b> and <b>A-Z</b>.</td></tr>
 <tr>
 <td>
 ?</td><td>
@@ -229,11 +229,11 @@ Character or space, optional.</td></tr>
 <tr>
 <td>
 A</td><td>
-Alphanumeric **(A-Z a-z 0-9)** required.</td></tr>
+Alphanumeric <b>(A-Z a-z 0-9)</b> required.</td></tr>
 <tr>
 <td>
 a</td><td>
-Alphanumeric **(A-Z a-z 0-9)** or space, optional.</td></tr>
+Alphanumeric <b>(A-Z a-z 0-9)</b> or space, optional.</td></tr>
 <tr>
 <td>
 <</td><td>
