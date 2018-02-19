@@ -11,7 +11,7 @@ documentation: ug
 
 The ASP.NET Core tree view component provides all the functionalities available in [EJ TreeView](http://help.syncfusion.com/js/api/ejtreeview). It represents hierarchical data in a tree-like structure and allows you to edit, drag and drop, select with checkboxes, and more. The tree view can be generated from a specified item list, list of objects, or by using OData services.
 
-## Key features
+## Key Features
 
 * Data population
 * Node manipulations
