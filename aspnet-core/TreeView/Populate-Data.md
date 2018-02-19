@@ -412,7 +412,11 @@ The following steps explain you to bind remote data to the tree view control.
         DataSource treeData = new DataSource();
         treeData.URL = "http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/";
     }
-     <ej-tree-view id="treeview"><e-tree-view-fields datasource="treeData" query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName"><e-child datasource="treeData" table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"></e-child></e-tree-view-fields></ej-tree-view>
+     <ej-tree-view id="treeview">
+       <e-tree-view-fields datasource="treeData" query="ej.Query().from('Categories').select('CategoryID,CategoryName').take(3)" id="CategoryID" text="CategoryName">
+         <e-child datasource="treeData" table-name="Products" id="ProductID" parent-id="CategoryID" text="ProductName"></e-child>
+       </e-tree-view-fields>
+     </ej-tree-view>
    
     {% endhighlight %}
     

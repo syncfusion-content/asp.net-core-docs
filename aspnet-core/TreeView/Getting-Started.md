@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Getting started
+# Getting Started
 
 This section briefly explains how to create a tree view in the ASP.NET Core platform.
 
