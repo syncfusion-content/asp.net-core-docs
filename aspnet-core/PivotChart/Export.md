@@ -22,7 +22,7 @@ The PivotChart control can be exported with the help of **“exportPivotChart”
 
 {% highlight CSHTML %}
 
-    <ej-pivot-chart id="PivotChart1" is-responsive="true" load="onload" pre-render="preRender">
+    <ej-pivot-chart id="PivotChart1" is-responsive="true" load="Load" pre-render="preRender">
         <e-data-source>
             <e-pivot-rows>
                 <e-row-field field-name="Product" field-caption="Product"></e-row-field>
@@ -52,7 +52,7 @@ The PivotChart control can be exported with the help of **“exportPivotChart”
 
     <script type="text/javascript">
 
-        function exportBtnClick(args) {
+        function exportButtonClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
             var ChartObj = $("#" + PivotChartObj._id + "Container").data("ejChart");
             ChartObj.model.border.opacity = 1;
@@ -60,7 +60,7 @@ The PivotChart control can be exported with the help of **“exportPivotChart”
             PivotChartObj.exportPivotChart("ExportToExcel", "Sample", ej.PivotChart.ExportOptions.Excel);
         }
 
-            function onload(args) {
+            function Load(args) {
             args.model.dataSource.data = [
                                         { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
                                         { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
@@ -102,7 +102,7 @@ using Syncfusion.EJ.Export;
 
 private IHttpContextAccessor _contextAccessor;
 
-public PivotChartController(IHttpContextAccessor contextAccessor, IHostingEnvironment envrnmt)
+public PivotChartController(IHttpContextAccessor contextAccessor)
 {
     _contextAccessor = contextAccessor;
 }
@@ -127,7 +127,7 @@ PivotChart allows you to export its content to Excel document for future archiva
 
     <script type="text/javascript">
 
-        function exportBtnClick(args) {
+        function exportButtonClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
             var ChartObj = $("#" + PivotChartObj._id + "Container").data("ejChart");
             ChartObj.model.border.opacity = 1;
@@ -163,7 +163,7 @@ PivotChart allows you to export its content to Word document for future archival
 
     <script type="text/javascript">
 
-       function exportBtnClick(args) {
+       function exportButtonClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
             var ChartObj = $("#" + PivotChartObj._id + "Container").data("ejChart");
             ChartObj.model.size.width = "700px";
@@ -201,7 +201,7 @@ PivotChart allows you to export its content to PDF document for future archival,
 
     <script type="text/javascript">
 
-       function exportBtnClick(args) {
+       function exportButtonClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
             var ChartObj = $("#" + PivotChartObj._id + "Container").data("ejChart");
             ChartObj.model.size.width = "500px";
@@ -247,7 +247,7 @@ This can be achieved with the help of **"ExportToImage"** method by passing the 
 
     <script type="text/javascript">
 
-       function exportBtnClick(args) {
+       function exportButtonClick(args) {
             var PivotChartObj = $('#PivotChart1').data("ejPivotChart");
             var ChartObj = $("#" + PivotChartObj._id + "Container").data("ejChart");
             ChartObj.model.border.opacity = 1;

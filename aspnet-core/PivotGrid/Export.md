@@ -21,7 +21,7 @@ The PivotGrid control can be exported with the help of **“exportPivotGrid”**
 
 {% highlight CSHTML %}
 
-    <ej-pivot-grid id="PivotGrid1" is-responsive="true" load="onload">
+    <ej-pivot-grid id="PivotGrid1" is-responsive="true" load="Load">
         <e-data-source>
             <e-pivot-rows>
                 <e-row-field field-name="Country" field-caption="Country"></e-row-field>
@@ -35,16 +35,16 @@ The PivotGrid control can be exported with the help of **“exportPivotGrid”**
         </e-data-source>
     </ej-pivot-grid>
 
-    <ej-button id="ExportBtn" width="100px" height="30px" type="Button" text="Export" click="exportBtnClick" />
+    <ej-button id="ExportBtn" width="100px" height="30px" type="Button" text="Export" click="exportButtonClick" />
 
     <script type="text/javascript">
 
-        function exportBtnClick(args) {
+        function exportButtonClick(args) {
             var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
             pGridObj.exportPivotGrid("ExcelExport","fileName");
         }
 
-        function onload(args) {
+        function Load(args) {
             args.model.dataSource.data = [
                                         { Amount: 100, Country: "Canada", Date: "FY 2005", Product: "Bike", Quantity: 2, State: "Alberta" },
                                         { Amount: 200, Country: "Canada", Date: "FY 2006", Product: "Van", Quantity: 3, State: "British Columbia" },
@@ -85,7 +85,7 @@ using Syncfusion.EJ.Export;
 
 private IHttpContextAccessor _contextAccessor;
 
-public PivotGridController(IHttpContextAccessor contextAccessor, IHostingEnvironment envrnmt)
+public PivotGridController(IHttpContextAccessor contextAccessor)
 {
     _contextAccessor = contextAccessor;
 }
@@ -109,7 +109,7 @@ PivotGrid allows you to export its content to Excel document for future archival
 
     <script type="text/javascript">
 
-       function exportBtnClick(args)
+       function exportButtonClick(args)
        {
           var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
           pGridObj.exportPivotGrid("ExcelExport","fileName");
@@ -142,7 +142,7 @@ PivotGrid allows you to export its content to Word document for future archival,
 
     <script type="text/javascript">
 
-       function exportBtnClick(args)
+       function exportButtonClick(args)
        {
           var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
           pGridObj.exportPivotGrid("WordExport","fileName");
@@ -175,7 +175,7 @@ PivotGrid allows you to export its content to PDF document for future archival, 
 
     <script type="text/javascript">
 
-       function exportBtnClick(args)
+       function exportButtonClick(args)
        {
           var pGridObj = $('#PivotGrid1').data("ejPivotGrid");
           pGridObj.exportPivotGrid("PDFExport","fileName");
