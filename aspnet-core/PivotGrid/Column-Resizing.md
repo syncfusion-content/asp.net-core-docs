@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Column Resizing
+# Column resizing
 
 Allows you to resize the column by changing its width while holding and dragging the column border using the mouse.
 
-You can enable column resizing option in PivotGrid by setting the `enable-column-resizing` property to true.
+You can enable column resizing option in the pivot grid by setting the `enable-column-resizing` property to true.
 
 {% highlight CSHTML %}
 

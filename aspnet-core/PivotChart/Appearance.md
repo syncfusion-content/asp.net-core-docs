@@ -9,9 +9,9 @@ documentation: ug
 
 # Appearance
 
-## Built-in Themes
+## Built-in themes
 
-Following are the built-in themes available in the PivotChart.
+Following are the built-in themes available in the pivot chart:
 
 * flatlight
 * gradientlight
@@ -30,7 +30,7 @@ Following are the built-in themes available in the PivotChart.
 * office365
 * bootstrap
 
-By using the `Theme` property, you can set the desired theme in PivotChart. By default, **"Flat Light"** theme is applied to PivotChart.
+By using the `theme` property, you can set the desired theme in the pivot chart. By default, the **"FlatLight"** theme is applied to the pivot chart.
 
 {% highlight cshtml %}
 
@@ -41,11 +41,11 @@ By using the `Theme` property, you can set the desired theme in PivotChart. By d
 
 ![](Appearance_images/themes.png)
 
-## PivotChart - Area Customization
+## Pivot chart - area customization
 
-### Border Customization
+### Border customization
 
-To customize the PivotChart border, use `Border` property in PivotChart.
+To customize the pivot chart border, use `border` property in the pivot chart.
 
 {% highlight cshtml %}
 
@@ -58,7 +58,7 @@ To customize the PivotChart border, use `Border` property in PivotChart.
 
 ### Animation
 
-You can enable animation by using the `enable-animation` property under `e-common-series-options` of the PivotChart control. This animates the Chart series on two occasions - when the Chart is loaded for the first time and when you change the series type by using the `Type` property.
+You can enable the animation by using the `enable-animation` property under `e-common-series-options` of the pivot chart control. This animates the chart series on two occasions - when the chart is loaded for the first time and when the series type is changed by using the `type` property.
 
 {% highlight cshtml %}
 

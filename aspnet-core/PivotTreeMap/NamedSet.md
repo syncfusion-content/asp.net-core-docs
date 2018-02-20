@@ -7,11 +7,11 @@ control: PivotTreeMap
 documentation: ug
 ---
 
-# Named Sets
+# Named sets
 
-Named Sets is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining cube data, arithmetic operators, numbers and functions.
+Named sets is a multidimensional expression (MDX) that returns a set of dimension members, which can be created by combining the cube data, arithmetic operators, numbers, and functions.
 
-You can bind the Named Sets in PivotTreeMap by setting it's unique name in the `field-name` property either in row or column axis and `is-named-sets` boolean property to "true".
+You can bind the named sets in the pivot tree map by setting it's unique name in the `field-name` property in the row or column axis and `is-named-sets` Boolean property to true.
 
 {% highlight js %}
 

@@ -7,20 +7,20 @@ control: PivotClient
 documentation: ug
 ---
 
-# Save and Load Report
+# Save and load report
 
-Save and load report allows you to save the current report collection of PivotClient and render the control later on loading the same.
+The save and load report allows you to save the current report collection of the pivot client and render the control later on loading the same.
 
-We can save and load the report in two ways.
+You can save and load the report in two ways:
 
 * Database
-* Local Storage
+* Local storage
 
-## Save Report to Database
+## Save report to database
 
-We can store the report collection of PivotClient to database, by using the `save-report` event in PivotClient.
+You can store the report collection of pivot client to database by using the `save-report` event in the pivot client.
 
-N> By default, we are using our online hosted URL link for saving the report to Database. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. “ejServices” folder is available in the below installed location.  
+N> By default, the online hosted URL link is used for saving the report to database. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. The “ejServices” folder is available in the below installed location.
 Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices 
 Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\ejservices
 
@@ -39,9 +39,9 @@ Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseve
 
 {% endhighlight %}
 
-## Save Report to Local Storage
+## Save report to local storage
 
-We can store the report collection of PivotClient to local storage, by setting the `enable-local-storage` property to true and by defining the `save-report` event of PivotClient.
+You can store the report collection of the pivot client to local storage by setting the `enable-local-storage` property to true and by defining the `save-report` event of the pivot client.
 
 {% highlight CSHTML %}
 
@@ -64,11 +64,11 @@ We can store the report collection of PivotClient to local storage, by setting t
 
 {% endhighlight %}
 
-## Load Report from Database
+## Load report from database
 
-We can load the stored report collection of PivotClient from database, by using the `fetch-report`  and `load-report` events in PivotClient.
+You can load the stored report collection of the pivot client from database by using the `fetch-report`  and `load-report` events in the pivot client.
 
-N> By default, we are using our online hosted URL link to fetch and load the report from Database. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. “ejServices” folder is available in the below installed location.  
+N> By default, the online hosted URL link is used to fetch and load the report from the database. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. The “ejServices” folder is available in the below installed location.
 Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices 
 Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\ejservices
 
@@ -90,9 +90,9 @@ Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseve
 </script>
 {% endhighlight %}
 
-## Load Report from Local Storage
+## Load report from local storage
 
-We can load the stored report collection of PivotClient from local storage, by setting the `enable-local-storage` property to true and using the `load-report` and `fetch-report` events in PivotClient.
+You can load the stored report collection of the pivot client from local storage by setting the `enable-local-storage` property to true and using the `load-report` and `fetch-report` events in the pivot client.
 
 {% highlight CSHTML %}
 

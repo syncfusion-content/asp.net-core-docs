@@ -7,10 +7,10 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Localization and Globalization
+# Localization and globalization
 
-## Localization in PivotGrid 
-You can localize the PivotGrid controls text with a collection of localized strings using **"ej.PivotGrid.Locale"** for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
+## Localization in pivot grid 
+You can localize the pivot grid controls text with a collection of localized strings by using the **"ej.PivotGrid.Locale"** for different cultures. By default, the pivot grid control is localized in **"en-US"** culture.
 
 {% highlight CSHTML %}
 
@@ -49,7 +49,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
 
 {% endhighlight %}
 
-The following table lists the default keywords in French culture for PivotGrid.
+The following table lists the default keywords in French culture for the pivot grid:
 <table>
 <tr>
 <th>
@@ -918,7 +918,7 @@ Champ calculé peut être inséré que dans le champ de la zone de valeur
 </tr>
 </table>
 
-The following table lists the default keywords in French culture for PivotTable Field List.
+The following table lists the default keywords in French culture for the pivot table field list:
 
 <table>
 <tr>
@@ -1026,7 +1026,7 @@ PivotTableFieldList</td>
 </table>
 
 
-The following table lists the default keywords in French culture for Pivot Pager.
+The following table lists the default keywords in French culture for the pivot pager:
 
 <table>
 <tr>
@@ -1043,12 +1043,12 @@ The following table lists the default keywords in French culture for Pivot Pager
 </tr>
 </table>
 
-## Localization and Globalization of Cube Info (OLAP)
+## Localization and globalization of cube info (OLAP)
 
-Content displayed within the PivotGrid control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot grid control is obtained from the OLAP cube.
 
-* To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present inside **"DataSource"**. 
-* To bind the globalized content in PivotGrid control, we need to set **"Locale"** property to a specific culture and want to refer specific culture file in the sample. 
+* To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"DataSource"**.
+* To bind globalized content in the pivot grid control, set the **"Locale"** property to a specific culture, and refer the specific culture file in the sample. 
  
 N> Culture files are present under **"[installed drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\MVC\Samples\web\Scripts\cultures".**
  
@@ -1077,11 +1077,11 @@ N> Culture files are present under **"[installed drive]:\Users\[user name]\AppDa
 
 ![](Localization_images/localization.png)
 
-## Localization and Globalization of Relational Info (Relational)
-Content displayed within the PivotGrid control are obtained from the Relational datasource. So following are the steps that needs to done to get localized as well as globalized content.
+## Localization and globalization of relational info (relational)
+The content displayed within the pivot grid control is obtained from the relational data source.
  
-* To get the localized content, the Relational datasource must have localized headers in them which will be directly applied to PivotGrid.  
-* To globalize the values appear in PivotGrid , we need to set **"Format"** and **"Locale"** property to a specific culture and want to refer specific culture file in the sample. 
+* To get localized content, the relational data source must have localized headers, which will be directly applied to the pivot grid.
+* To globalize values that appear in the pivot grid, set the **"Format"** and **"Locale"** properties to a specific culture, and refer to the specific culture file in the sample.
 
 N> Culture files are present under **"[installed drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\MVC\Samples\web\Scripts\cultures".**
  
@@ -1107,7 +1107,7 @@ N> Culture files are present under **"[installed drive]:\Users\[user name]\AppDa
 
 ## RTL
 
-You can render our PivotGrid control from Right to Left by setting `enable-rtl` property to true.
+You can render the pivot grid control from right to left by setting the `enable-rtl` property to true.
 
 {% highlight CSHTML %}
 
