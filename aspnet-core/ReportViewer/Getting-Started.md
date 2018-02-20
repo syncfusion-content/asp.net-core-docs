@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The ReportViewer is a visualization control to view the Microsoft RDL/RDLC format based report on a web page and it is powered by HTML5/JavaScript. This section explains how to add the ReportViewer component in ASP.NET Core MVC application along with simple example of disaplying the invice report from ASP.Core applcation. 
+The ReportViewer is a visualization control to view the Microsoft RDL/RDLC format based report on a web page and it is powered by HTML5/JavaScript. This section explains how to add the ReportViewer component in ASP.NET Core MVC application along with simple example of display the invoice report from ASP.Core applcation. 
 
 N> Report Viewer control depdents the server side processing for report rendering. So, we should build the WebAPI service that compatible for report viewer. You can learn in this topic how can create the report viewer compatible WebApi Service with your application.
 
@@ -122,126 +122,17 @@ We have added the following packages for ReportViewer,
 
     * **Syncfusion.EJ** - It is required for to build the ReportViewer controls with Tag helper.
     * **Syncfusion.EJ.ASPNET.Core** - It is required for to build the ReportViewer controls with Tag helper.
-    * **Syncfusion.EJ.ReportViewer.ASPNET.Core** - It is required to build the server side implmentations.
-    * **Syncfusion.Report.NETSTandadard** - It is base liberary for **Syncfusion.EJ.ReportViewer.ASPNET.Core**  package.
+    * **Syncfusion.EJ.ReportViewer.ASPNET.Core** - It is required to build the server side implementations.
+    * **Syncfusion.Report.NETStandard** - It is base library for **Syncfusion.EJ.ReportViewer.ASPNET.Core**  package.
     * **Syncfusion.Compression.NETStandard** - It is required to support the export the report with PDF, Word and Excel.
     * **Syncfusion.Pdf.NETStandard** - It is required to support the export the report with PDF.
     * **Syncfusion.DocIO.NETStandard** - It is required to support the export the report with Word.
     * **Syncfusion.XlsIO.NETStandard** - It is required to support the export the report with Excel.
-    * **Syncfusion.OfficeChart.NETStandard** - It is base liberary of **Syncfusion.XlsIO.NETStandard** package.
+    * **Syncfusion.OfficeChart.NETStandard** - It is base library of **Syncfusion.XlsIO.NETStandard** package.
     * **System.Data.SqlClient** - It is required render the report if has the Report need to get the data from SQL Server and  the package version should  be higher of 4.1.0. This is an optional package for ReportViewer.
-    * **Newtonsoft.Json** - It is used to send to serizie the and deserialize the data for Report Viewer client. It is mmnotory package for Report and pacakge version should higher of 10.0.1 for NET Core 2.0 for other that shoudl be higer of 9.0.1.
+    * **Newtonsoft.Json** - It is used to send to serialize and deserializethe data for report viewer client. It is maniotry  package for Report and package version should higher of 10.0.1 for NET Core 2.0 for other that should be higher of 9.0.1.
 
-Find the package details in below table what need to be choosen based on application Target Framework,
-
-### Tag helper
-It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to intialize the ReportViewer component with the tag helper support.
-
-{% highlight cshtml %}
-
-    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-    @using Syncfusion.JavaScript
-    @addTagHelper "*, Syncfusion.EJ"
-
-{% endhighlight %}
-
-## Add Control with page
-
-We have to use <ej-report-viewer> tag to add the report viewer control. For an exmaple, Index.cshtml page replaced with following code by removing existing codes to add the report viewer. 
-
-{% highlight CSHTML %}
-@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div style="height: 525px;width: 100%;">
-    <ej-report-viewer id="reportviewer1" report-service-url="../Home" />
-</div>
-
-N> As stated in the beggining itself, we need WebApi service to process the report from server. The service should be mapped with report viewer report-service-url as like the example code aviable above this note.
-
-{% endhighlight %}
-
-## Build WebApi Service
-We have to implmenet the IReportController interface to build the report viewer compatible WebAPI and ReportHelper should used with implemneted interface. ReportHelper will do the server side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code provided with MVC applciation to build the Api along with existing controller. We are not providing the WebApi along with report liberay to handle the authetication related process easier with application.
-
-{% highlight C# %}
-
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-
-namespace ReportViewerDemo.Controllers
-{
-    public class HomeController : ApiController, Syncfusion.EJ.ReportViewer.IReportController
-    {
-        // Reportviewer requires a memory cache to store the information of consuctive client request and
-        // have the rendered report viewer information in server.
-        private Microsoft.Extensions.Caching.Memory.IMemoryCache _cache;
-
-        // IHostingEnvironment used to get the applciation data f
-        private Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
-
-        // Post action to process the report from server based json parameters and send the resuld back for client.
-        public HomeController(Microsoft.Extensions.Caching.Memory.IMemoryCache memoryCache, 
-            Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
-        {
-            _cache = memoryCache;
-            _hostingEnvironment = hostingEnvironment;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        ...
-        ...
-        ...
-
-        // Post action to process the report from server based json parameters and send the resuld back for client.
-        public object PostReportAction([FromBody] Dictionary<string, object> jsonArray)
-        {
-            return Syncfusion.EJ.ReportViewer.ReportHelper.ProcessReport(jsonArray, this, this._cache);
-        }
-
-        // Method will be called to initialize the report information to load the report with ReportHelper for processing.
-        public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
-        {
-            string basePath = _hostingEnvironment.WebRootPath;
-            // Here, we have loaded the sample report report from application the folder wwwroot. Sample.rdl should be there in wwwroot application folder.
-            FileStream reportStream = new FileStream(basePath + @"\invoice.rdl", FileMode.Open, FileAccess.Read);
-            reportOption.ReportModel.Stream = reportStream;
-        }
-
-        // Method will be called when reported is loaded with internaly to start to layout process with ReportHelper.
-        public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
-        {
-        }
-        
-        //Get action for getting resources from the report
-        [System.Web.Http.ActionName("GetResource")]
-        [AcceptVerbs("GET")]
-        // Method will be called from Report Viewer client to get the image src for Image report item.
-        public object GetResource(Syncfusion.EJ.ReportViewer.ReportResource resource)
-        {
-            return Syncfusion.EJ.ReportViewer.ReportHelper.GetResource(resource, this, _cache);
-        }
-    }
-}
-
-{% endhighlight %}
-
-N> We dont have option to load the application Report with path information in ASP.NET Core. So, we should load the report with report stream as like an exmple provided above in  OnInitReportOptions. If you like to get the sample report referered with code then you can obtain the sample from Sycnfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl)
-
-## Run the Application
-
-Run the sample application and you can see the ReportViewer on the page as displayed with Invoice as in the following screenshot.
-
-![](images/reportviewergettingstarted.png)
-
-## Chossing Dependent Nuget Package
-
-We have to choose the .NET Standard package based on targeted framework compiled version. We can find the details from following table choosing the Sycnfusion packages based on Targeted Framework version.
+Find the package details in below table what need to be chosen based on application Target Framework,
 
 <table>
 <tr>
@@ -292,8 +183,8 @@ Syncfusion.OfficeChart.NETStandard14
 <tr>
 <td>
 .NET Framework (>= 4.5.1) </td>
-<td>Syncfusion.EJ<br/><br/>S
-yncfusion.EJ.ASPNET.Core<br/><br/>
+<td>Syncfusion.EJ<br/><br/>
+Syncfusion.EJ.ASPNET.Core<br/><br/>
 Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
 Syncfusion.EJ.Report.NETStandard12<br/><br/>
 Syncfusion.Compression.NETStandard12<br/><br/>
@@ -304,3 +195,108 @@ Syncfusion.OfficeChart.NETStandard12
 </td>
 </tr>
 </table>
+
+### Tag helper
+It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to initialize the ReportViewer component with the tag helper support.
+
+{% highlight cshtml %}
+
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+    @using Syncfusion.JavaScript
+    @addTagHelper "*, Syncfusion.EJ"
+
+{% endhighlight %}
+
+## Add Control with page
+
+We have to use <ej-report-viewer> tag to add the report viewer control. For an example, Index.cshtml page replaced with following code by removing existing codes to add the report viewer. 
+
+{% highlight CSHTML %}
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="height: 525px;width: 100%;">
+    <ej-report-viewer id="reportviewer1" report-service-url="../Home" />
+</div>
+
+N> As stated in the beginning itself, we need WebApi service to process the report from server. The service should be mapped with report viewer report-service-url as like the example code available above of this note.
+
+{% endhighlight %}
+
+## Build WebApi Service
+We should to inhertied the IReportController interface to build the report viewer compatible Web API and ReportHelper should used with IReportController interface implemented methods. ReportHelper will do the server side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code provided with MVC application to build the Web API service along with existing controller.
+
+{% highlight C# %}
+
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ReportViewerDemo.Controllers
+{
+    public class HomeController : ApiController, Syncfusion.EJ.ReportViewer.IReportController
+    {
+        // Reportviewer requires a memory cache to store the information of consecutive client request and
+        // have the rendered report viewer information in server.
+        private Microsoft.Extensions.Caching.Memory.IMemoryCache _cache;
+
+        // IHostingEnvironment used with sample to get the application data from wwwroot.
+        private Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
+
+        // Post action to process the report from server based json parameters and send the result back to the client.
+        public HomeController(Microsoft.Extensions.Caching.Memory.IMemoryCache memoryCache, 
+            Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
+        {
+            _cache = memoryCache;
+            _hostingEnvironment = hostingEnvironment;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        ...
+        ...
+        ...
+
+        // Post action to process the report from server based json parameters and send the result back to the client.
+        public object PostReportAction([FromBody] Dictionary<string, object> jsonArray)
+        {
+            return Syncfusion.EJ.ReportViewer.ReportHelper.ProcessReport(jsonArray, this, this._cache);
+        }
+
+        // Method will be called to initialize the report information to load the report with ReportHelper for processing.
+        public void OnInitReportOptions(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+        {
+            string basePath = _hostingEnvironment.WebRootPath;
+            // Here, we have loaded the sample report report from application the folder wwwroot. Sample.rdl should be there in wwwroot application folder.
+            FileStream reportStream = new FileStream(basePath + @"\invoice.rdl", FileMode.Open, FileAccess.Read);
+            reportOption.ReportModel.Stream = reportStream;
+        }
+
+        // Method will be called when reported is loaded with internally to start to layout process with ReportHelper.
+        public void OnReportLoaded(Syncfusion.EJ.ReportViewer.ReportViewerOptions reportOption)
+        {
+        }
+        
+        //Get action for getting resources from the report
+        [System.Web.Http.ActionName("GetResource")]
+        [AcceptVerbs("GET")]
+        // Method will be called from Report Viewer client to get the image src for Image report item.
+        public object GetResource(Syncfusion.EJ.ReportViewer.ReportResource resource)
+        {
+            return Syncfusion.EJ.ReportViewer.ReportHelper.GetResource(resource, this, _cache);
+        }
+    }
+}
+
+{% endhighlight %}
+
+N> We dont have option to load the application Report with path information in ASP.NET Core. So, we should load the report with report stream as like an example provided above in  OnInitReportOptions. If you like to get the invoice sample report then you can obtained from Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl)
+
+## Run the Application
+
+Run the sample application and you can see the ReportViewer on the page as displayed with Invoice as in the following screenshot.
+
+![](images/reportviewergettingstarted.png)
