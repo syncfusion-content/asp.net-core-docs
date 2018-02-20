@@ -9,9 +9,9 @@ documentation: ug
 
 # Overview
 
-The ReportViewer is a visualization control to view the Microsoft RDL/RDLC format based report on a web page and it is powered by HTML5/JavaScript. This section explains how to add the ReportViewer component in ASP.NET Core MVC application along with simple example of display the invoice report from ASP.Core applcation. 
+The ReportViewer is a visualization control to view the Microsoft RDL/RDLC format based report on a web page and it is powered by HTML5/JavaScript. This section explains how to add the ReportViewer component in ASP.NET Core MVC application along with simple example of display the invoice report from ASP.Core application. 
 
-N> Report Viewer control depdents the server side processing for report rendering. So, we should build the WebAPI service that compatible for report viewer. You can learn in this topic how can create the report viewer compatible WebApi Service with your application.
+N> Report Viewer control depends the server side processing for report rendering. So, we should build the WebAPI service that compatible for report viewer. You can learn in this topic how can create the report viewer compatible WebApi Service with your application.
 
 ## Environment Setup
 
@@ -130,7 +130,7 @@ We have added the following packages for ReportViewer,
     * **Syncfusion.XlsIO.NETStandard** - It is required to support the export the report with Excel.
     * **Syncfusion.OfficeChart.NETStandard** - It is base library of **Syncfusion.XlsIO.NETStandard** package.
     * **System.Data.SqlClient** - It is required render the report if has the Report need to get the data from SQL Server and  the package version should  be higher of 4.1.0. This is an optional package for ReportViewer.
-    * **Newtonsoft.Json** - It is used to send to serialize and deserializethe data for report viewer client. It is maniotry  package for Report and package version should higher of 10.0.1 for NET Core 2.0 for other that should be higher of 9.0.1.
+    * **Newtonsoft.Json** - It is used to send to serialize and deserialize the data for report viewer client. It is manditory   package for Report and package version should higher of 10.0.1 for NET Core 2.0 for other that should be higher of 9.0.1.
 
 Find the package details in below table what need to be chosen based on application Target Framework,
 
@@ -225,7 +225,7 @@ N> As stated in the beginning itself, we need WebApi service to process the repo
 {% endhighlight %}
 
 ## Build WebApi Service
-We should to inhertied the IReportController interface to build the report viewer compatible Web API and ReportHelper should used with IReportController interface implemented methods. ReportHelper will do the server side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code provided with MVC application to build the Web API service along with existing controller.
+We should to inherited the IReportController interface to build the report viewer compatible Web API and ReportHelper should used with IReportController interface implemented methods. ReportHelper will do the server side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code provided with MVC application to build the Web API service along with existing controller.
 
 {% highlight C# %}
 
@@ -236,7 +236,7 @@ namespace ReportViewerDemo.Controllers
 {
     public class HomeController : ApiController, Syncfusion.EJ.ReportViewer.IReportController
     {
-        // Reportviewer requires a memory cache to store the information of consecutive client request and
+        // Report viewer requires a memory cache to store the information of consecutive client request and
         // have the rendered report viewer information in server.
         private Microsoft.Extensions.Caching.Memory.IMemoryCache _cache;
 
