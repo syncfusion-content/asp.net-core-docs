@@ -16,14 +16,14 @@ Digital Gauge has an exporting feature where Gauge control is converted into ima
 
 
 
-<ej-digital-gauge id="Digitalgauge"  value="syncfusion">
+<ej-digital-gauge id="DigitalGauge"  value="syncfusion">
 </ej-digital-gauge>
 
-<input type="submit" value="Export Image" id="btnExportImage" />
+<input type="submit" value="Export Image" id="ExportImage" />
 <div>FileName </div>
 <input type="text" id="txtFileName">
 <div >FileFormat </div>
-<select id="ddlFileType">
+<select id="FileType">
 <option value="JPEG">JPEG</option>
 <option value="PNG">PNG</option>
 </select>
@@ -31,17 +31,17 @@ Digital Gauge has an exporting feature where Gauge control is converted into ima
 <script>
  $(function () {
 
-            $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
+            $("#ExportImage").ejButton({ width: "100px", click: "buttonClickEvent", });
 
         });
 
-        function buttonclickevent() {
+        function buttonClickEvent() {
 
             var FileName = $("#txtFileName").val();
 
-            var FileFormat = $("#ddlFileType").val();
+            var FileFormat = $("#FileType").val();
 
-            $("#Digitalgauge").ejDigitalGauge("exportImage", FileName, FileFormat);
+            $("#DigitalGauge").ejDigitalGauge("exportImage", FileName, FileFormat);
 
         }
 	

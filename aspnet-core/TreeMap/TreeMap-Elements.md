@@ -94,7 +94,7 @@ The text in the header can be customized by triggering the event `HeaderTemplate
 
 <div style="height:400px;width:700px;">
     <ej-tree-map id="treemap" highlight-border-brush="fdaa" datasource="ViewBag.datasource" color-value-path="Growth"
-                 weight-value-path="Population" show-legend="true" header-template-rendering="loadtemplate">
+                 weight-value-path="Population" show-legend="true" header-template-rendering="loadTemplate">
         <e-legend-settings icon-width="17" icon-height="17">
         </e-legend-settings>
         <e-levels>
@@ -105,7 +105,7 @@ The text in the header can be customized by triggering the event `HeaderTemplate
 
 <script type="application/jsrender">
    
-    function loadtemplate(){
+    function loadTemplate(){
         //...
     }
 
@@ -164,7 +164,7 @@ You can handle the label overflow, by specifying any one of the following values
 **None**       - By specifying textOverflow as “none”, it displays the default label text.
 **Hide**       - By specifying textOverflow as “hide”, You can hide the label, when it exceeds the header width.
 **Wrap**       - By specifying textOverflow as “wrap”, you can wrap the label text.
-**Wrapbyword** - By specifying textOverflow as “wrapbyword”, you can wrap the label text by word.
+**WrapByWord** - By specifying textOverflow as “WrapByWord”, you can wrap the label text by word.
 
 
 {% highlight CSHTML %}

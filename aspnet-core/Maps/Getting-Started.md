@@ -41,7 +41,7 @@ You can store the `United States of America.json` file in data folder as `usa.js
 	public IActionResult Map()
 
 	{
-		ViewData["mapdata"] = GetUSMap();
+		ViewData["mapData"] = GetUSMap();
 
 		ViewData["datasource"] = GetUSPopulationData();
 
@@ -53,9 +53,9 @@ You can store the `United States of America.json` file in data folder as `usa.js
 
 	{
 
-		string usajson = System.IO.File.ReadAllText(@"..\data\USA.json");
+		string data = System.IO.File.ReadAllText(@"..\data\USA.json");
         
-		return new Syncfusion.JavaScript.DataVisualization.Maps.MapData(usajson);
+		return new Syncfusion.JavaScript.DataVisualization.Maps.MapData(data);
 
 	}
 
@@ -75,7 +75,7 @@ The dataSource is populated with USA population data inside the controller relat
 	public IActionResult Map()
 
 	{
-		ViewBag.mapdata = GetUSMap();
+		ViewBag.mapData = GetUSMap();
 
 		ViewBag.datasource = GetUSPopulationData();
 
@@ -87,9 +87,9 @@ The dataSource is populated with USA population data inside the controller relat
 
 	{
 
-		string usajson = System.IO.File.ReadAllText(@"..\data\USA.json");
+		string data = System.IO.File.ReadAllText(@"..\data\USA.json");
         
-		return new Syncfusion.JavaScript.DataVisualization.Maps.MapData(usajson);
+		return new Syncfusion.JavaScript.DataVisualization.Maps.MapData(data);
 
 	}
 
@@ -265,7 +265,7 @@ The dataSource is populated with USA population data inside the controller relat
 <div style="height:600px;width:900px;">
 <ej-map id="maps">
 <e-layers>
-<e-layer shape-data="ViewBag.mapdata">       
+<e-layer shape-data="ViewBag.mapData">       
 </e-layer>
 </e-layers>
 </ej-map>             
@@ -459,7 +459,7 @@ datasource="ViewBag.datasource" show-map-items="false" enable-selection="false" 
 stroke-thickness="0.5" highlight-stroke="white" highlight-color="#BC5353" highlight-border-width="1">
 </e-shape-settings>
 <e-legend-settings show-legend="true" height="15" width="150" position="@DockPosition.TopLeft" 
-type="@LegendType.Layers" mode="@LegendMode.Interactive" title="populaiton" left-label="0.5M" right-label="40M"></e-legend-settings>             
+type="@LegendType.Layers" mode="@LegendMode.Interactive" title="population" left-label="0.5M" right-label="40M"></e-legend-settings>             
 </e-layer>
 </e-layers>
 </ej-map>           

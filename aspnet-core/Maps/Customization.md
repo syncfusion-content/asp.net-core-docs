@@ -15,7 +15,7 @@ Maps control supports color customization to determine the exact combination of 
 
 The Map control highly supports the customization of the shape’s color. The shape’s color can be customized using the following ways:
 
-* Using the `fill`, `stroke` and `strokethickness` properties.
+* Using the `fill`, `stroke` and `strokeThickness` properties.
 * Color Mapping support.
 * Color Palette support.
 
@@ -27,10 +27,10 @@ The important property that makes an impact on shape colors is `Autofill`. This 
 
 * `fill` - It is used to set the fill color of the shapes in the map.
 * `stroke` - It is used to set the border color of the shape in the map.
-* `strokethickness` - It is used to set the border thickness of the shape in the map.
-* `Highlightcolor` - It is used to set the mouse hover color for shapes in the map.
+* `strokeThickness` - It is used to set the border thickness of the shape in the map.
+* `HighlightColor` - It is used to set the mouse hover color for shapes in the map.
 * `HighlightBorderWidth` - It is used to set the mouse hover border width for shapes in the map.
-* `Selectioncolor` - It is used to set the selection color for shapes in the map.
+* `SelectionColor` - It is used to set the selection color for shapes in the map.
 
 The above properties of `ShapeSettings` are applied only when `Autofill` property value is false. By map, `Autofill` property value is false.
 
@@ -96,7 +96,7 @@ String</td><td>
 Gets or sets the label for legend when Mode property value is ‘default’.</td></tr>
 <tr>
 <td>
-Gradientcolors</td><td>
+GradientColors</td><td>
 Array</td><td>
 Gets or sets the start point and end point gradient colors to be applied for specific range value containing shapes when EnableGradient property value is set to true.</td></tr>
 </table>
@@ -159,7 +159,7 @@ When the underlying value is below any of the given sorted range or above the so
 ![](Customization_images/Customization_img2.png)
 
 
-* `EqualcolorMapping` - The Equal color mapping is used to differentiate the shape’s fill based on its underlying Value and color. The properties of Equal color mapping is listed in the following table.
+* `EqualColorMapping` - The Equal color mapping is used to differentiate the shape’s fill based on its underlying Value and color. The properties of Equal color mapping is listed in the following table.
 
 <table>
 <tr>
@@ -204,7 +204,7 @@ Here “MapController.cs” is populated with data of USA Election in “MapCont
 		new ElectionData { State = "Arizona", Candidate = "Romney", Electors = 11 }, 
 		new ElectionData { State = "Arkansas", Candidate = "Romney", Electors = 6 }, 
 		new ElectionData { State = "California", Candidate = "Obama", Electors = 55}, 
-		new ElectionData { State = "colorado", Candidate = "Obama", Electors = 9 },           
+		new ElectionData { State = "Colorado", Candidate = "Obama", Electors = 9 },           
 		new ElectionData { State = "Connecticut", Candidate = "Obama", Electors = 7 }, 
 		new ElectionData { State = "Delaware", Candidate = "Obama", Electors = 3 },           
 		new ElectionData { State = "District of Columbia", Candidate = "Obama", Electors = 3 },           
