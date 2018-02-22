@@ -65,59 +65,59 @@ Assign the data in BulletLocalDataBind variable to the DataSource property of Bu
 
 public IActionResult LocalDataBinding()
 {
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2013", value = "90", comparitiveMeasureValue = "100" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2013", value = "90", comparativeMeasureValue = "100" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2012", value = "93", comparitiveMeasureValue = "99" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2012", value = "93", comparativeMeasureValue = "99" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2011", value = "98", comparitiveMeasureValue = "96" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2011", value = "98", comparativeMeasureValue = "96" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2010", value = "102", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2010", value = "102", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2009", value = "77", comparitiveMeasureValue = "96" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2009", value = "77", comparativeMeasureValue = "96" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2008", value = "99", comparitiveMeasureValue = "99" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2008", value = "99", comparativeMeasureValue = "99" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2007", value = "106", comparitiveMeasureValue = "94" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2007", value = "106", comparativeMeasureValue = "94" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2006", value = "105", comparitiveMeasureValue = "95" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2006", value = "105", comparativeMeasureValue = "95" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2005", value = "98", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2005", value = "98", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2004", value = "87", comparitiveMeasureValue = "100" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2004", value = "87", comparativeMeasureValue = "100" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2003", value = "105", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2003", value = "105", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2002", value = "84", comparitiveMeasureValue = "100" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2002", value = "84", comparativeMeasureValue = "100" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2001", value = "93", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2001", value = "93", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "2000", value = "96", comparitiveMeasureValue = "101" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "2000", value = "96", comparativeMeasureValue = "101" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1999", value = "107", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1999", value = "107", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1998", value = "98", comparitiveMeasureValue = "101" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1998", value = "98", comparativeMeasureValue = "101" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1997", value = "92", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1997", value = "92", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1996", value = "98", comparitiveMeasureValue = "96" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1996", value = "98", comparativeMeasureValue = "96" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1995", value = "96", comparitiveMeasureValue = "107" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1995", value = "96", comparativeMeasureValue = "107" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1994", value = "92", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1994", value = "92", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1993", value = "103", comparitiveMeasureValue = "92" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1993", value = "103", comparativeMeasureValue = "92" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1993", value = "93", comparitiveMeasureValue = "98" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1993", value = "93", comparativeMeasureValue = "98" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1991", value = "95", comparitiveMeasureValue = "96" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1991", value = "95", comparativeMeasureValue = "96" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1990", value = "103", comparitiveMeasureValue = "92" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1990", value = "103", comparativeMeasureValue = "92" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1989", value = "102", comparitiveMeasureValue = "103" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1989", value = "102", comparativeMeasureValue = "103" });
 
-            lclbnd.Add(new BulletLocalDataBind { catagory = "1988", value = "112", comparitiveMeasureValue = "93" });
+            bulletLocalData.Add(new BulletLocalDataBind { category = "1988", value = "112", comparativeMeasureValue = "93" });
 
-            ViewBag.datasource = lclbnd;
+            ViewBag.datasource = bulletLocalData;
 
             return View();
 }
@@ -136,7 +136,7 @@ Once the DataSource property is assigned with the required values, you can bind 
         <e-fields datasource="ViewBag.datasource" 
                   category-field="category" 
                   feature-measure-field="value" 
-                  comparative-measure-field="comparitiveMeasureValue">
+                  comparative-measure-field="comparativeMeasureValue">
         </e-fields>
 
 </ej-bullet-graph>

@@ -16,7 +16,7 @@ The following code snippet illustrates
 
 <ej-sunburstchart id="SunburstChart" >
   <e-sunburstchart-levels>
-               // to add heirarchical levels of data
+               // to add hierarchical levels of data
             </e-sunburstchart-levels>
 <ej-sunburstchart>
 

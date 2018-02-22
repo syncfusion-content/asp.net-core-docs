@@ -15,14 +15,14 @@ documentation: ug
 {% highlight cshtml %}
 
 
-<ej-circular-gauge id="circulargauge">
+<ej-circular-gauge id="circularGauge">
 </ej-circular-gauge>
 
-<input type="submit" value="Export Image" id="btnExportImage" />
+<input type="submit" value="Export Image" id="ExportImage" />
 <div>FileName </div>
 <input type="text" id="txtFileName">
 <div >FileFormat </div>
-<select id="ddlFileType">
+<select id="FileType">
 <option value="JPEG">JPEG</option>
 <option value="PNG">PNG</option>
 </select>
@@ -32,17 +32,17 @@ documentation: ug
 
         $(function () {
 
-            $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
+            $("#ExportImage").ejButton({ width: "100px", click: "buttonClickEvent", });
 
         });
 
-        function buttonclickevent() {
+        function buttonClickEvent() {
 
             var FileName = $("#txtFileName").val();
 
-            var FileFormat = $("#ddlFileType").val();
+            var FileFormat = $("#FileType").val();
 
-            $("#circulargauge").ejCircularGauge("exportImage", FileName, FileFormat);
+            $("#circularGauge").ejCircularGauge("exportImage", FileName, FileFormat);
 
         }
 
