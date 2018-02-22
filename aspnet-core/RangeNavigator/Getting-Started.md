@@ -20,7 +20,7 @@ In this tutorial, you will learn how to create a simple RangeNavigator. The foll
 Simple RangeNavigator
 {:.caption}
 
-1. First, create a new ASP.Net core project; please refer [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
+1. First, create a new ASP.NET core project; please refer [ASP.NET core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
 
 2. Create a data source in Controllers/HomeController.cs file, JSON data can be added to RangeNavigator using Datasource property in RangeNavigator.
 
@@ -129,37 +129,37 @@ class NavigatorData
 
 {
 
-	private DateTime xdate;
+	private DateTime XDate;
 
 	public DateTime xDate
 
 	{
 
-		get { return xdate; }
+		get { return XDate; }
 
-		set { xdate = value; }
+		set { XDate = value; }
 
 	}
 
-	private double yvalue;
+	private double YValue;
 
 	public double yValue
 
 	{
 
-		get { return yvalue; }
+		get { return YValue; }
 
-		set { yvalue = value; }
+		set { YValue = value; }
 
 	}
 
-	public NavigatorData(DateTime xdate, double yvalue)
+	public NavigatorData(DateTime XDate, double YValue)
 
 	{
 
-		this.xdate = xdate;
+		this.XDate = XDate;
 
-		this.yvalue = yvalue;
+		this.YValue = YValue;
 
 	}
 
@@ -227,7 +227,7 @@ Now, add the DataSource to the series and provide the field name to get the valu
 {% highlight CSHTML %}
  
 
-<ej-chart id="chartcontainer">
+<ej-chart id="chartContainer">
         <e-title text="Sales Analysis"></e-title>
         <e-legend visible="true" position="Top"></e-legend>
         <e-primary-y-axis>
@@ -241,7 +241,7 @@ Now, add the DataSource to the series and provide the field name to get the valu
             </e-series>
         </e-chart-series>
 </ej-chart>
-<ej-range-navigator id="scrollcontent" range-changed="onrangechanged"
+<ej-range-navigator id="scrollcontent" range-changed="onRangeChanged"
                         datasource="(System.Collections.IEnumerable)ViewBag.datasource" 
                         x-name="xDate" 
                         y-name="yValue">
@@ -257,17 +257,17 @@ The following code example illustrates how to use the RangeChanged event of Rang
 
 <script type="text/javascript" language="javascript">
 
-	function onrangechanged(sender) 
+	function onRangeChanged(sender) 
 	{
 
-		var chartobj = $("#chartcontainer").data("ejChart");
+		var chartObj = $("#chartContainer").data("ejChart");
 
-		if (chartobj != null) 
+		if (chartObj != null) 
 		{
 
-			chartobj.model.series[0].dataSource = sender.selectedData;
+			chartObj.model.series[0].dataSource = sender.selectedData;
 
-			$("#chartcontainer").ejChart("redraw");
+			$("#chartContainer").ejChart("redraw");
 
 		}
 
@@ -330,14 +330,14 @@ In Controllers/HomeController.cs specify the data for data source.
             public double xValue;
 
             public double yValue;
-            public NavigatorData(double xvalue, double yvalue)
+            public NavigatorData(double XValue, double YValue)
 
             {
-                this.xValue = xvalue;
+                this.xValue = XValue;
 
 
 
-                this.yValue = yvalue;
+                this.yValue = YValue;
 
             }
 
