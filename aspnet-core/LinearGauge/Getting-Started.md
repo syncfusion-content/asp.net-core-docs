@@ -24,7 +24,7 @@ This section briefly explains on how to create a Linear Gauge control for your a
 
 ASP.NET Core Linear Gauge widget basically renders with flexible APIs. You can easily create the Linear Gauge widget by the following steps.
 
-1. First create an Core Project and add necessary Dll's and scripts with the help of the given [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) Documentation.
+1. First create an Core Project and add necessary Dll's and scripts with the help of the given [ASP.NET core 1.0-Getting Started](/aspnet-core/getting-started) Documentation.
 2. Add the following code example to the corresponding view page to render Linear Gauge.
 
    ~~~ cshtml
@@ -347,59 +347,59 @@ Add the function that displays the current temperature value in the custom label
 
             var temp = args.scaleElement.barPointers[0].value;
 
-            var fahValue = (temp * (9 / 5)) + 32;
+            var faValue = (temp * (9 / 5)) + 32;
 
             if (temp == -10) {
 
-                args.style.textValue = "Very Cold Weather" + "(" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Very Cold Weather" + "(" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if ((temp > -10 && temp < 0) || (temp > 0 && temp < 15)) {
 
-                args.style.textValue = "Cool Weather" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Cool Weather" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp == 0) {
 
-                args.style.textValue = "Freezing point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Freezing point of Water" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp >= 15 && temp < 30) {
 
-                args.style.textValue = "Room Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Room Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp == 30) {
 
-                args.style.textValue = "Beach Weather" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Beach Weather" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp == 37) {
 
-                args.style.textValue = "Body Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Body Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp == 40) {
 
-                args.style.textValue = "Hot Bath Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Hot Bath Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp > 40 && temp < 100) {
 
-                args.style.textValue = "Very Hot Temperature" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Very Hot Temperature" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 
             else if (temp == 100) {
 
-                args.style.textValue = "Boiling point of Water" + " (" + fahValue.toFixed(1) + "° F)";
+                args.style.textValue = "Boiling point of Water" + " (" + faValue.toFixed(1) + "° F)";
 
             }
 

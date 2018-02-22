@@ -316,7 +316,7 @@ N> Here, Range Color Mapping code snippet for shapeSettings with color mappings 
 <e-layers >
 <e-layer >
 <e-legend-settings show-legend="true" height="15" width="150" position="@DockPosition.TopLeft" 
-type="@LegendType.Layers" mode="@LegendMode.Interactive" title="populaiton" left-label="0.5M" right-label="40M"></e-legend-settings> </e-layer>
+type="@LegendType.Layers" mode="@LegendMode.Interactive" title="population" left-label="0.5M" right-label="40M"></e-legend-settings> </e-layer>
 </e-layers>
 </ej-map>
 

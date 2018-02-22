@@ -48,11 +48,11 @@ Linear Gauge has an exporting feature that converts Gauge control into image for
         </e-linear-scale-collections>
 </ej-linear-gauge> 
 
-<input type="submit" value="Export Image" id="btnExportImage" />
+<input type="submit" value="Export Image" id="ExportImage" />
 <div>FileName </div>
 <input type="text" id="txtFileName">
 <div >FileFormat </div>
-<select id="ddlFileType">
+<select id="FileType">
 <option value="JPEG">JPEG</option>
 <option value="PNG">PNG</option>
 </select>
@@ -62,15 +62,15 @@ Linear Gauge has an exporting feature that converts Gauge control into image for
 
     $(function () {
 
-        $("#btnExportImage").ejButton({ width: "100px", click: "buttonclickevent", });
+        $("#ExportImage").ejButton({ width: "100px", click: "buttonClickEvent", });
 
     });
 
-    function buttonclickevent() {
+    function buttonClickEvent() {
 
         var FileName = $("#txtFileName").val();
 
-        var FileFormat = $("#ddlFileType").val();
+        var FileFormat = $("#FileType").val();
 
         $("#LinearGauge").ejLinearGauge("exportImage", FileName, FileFormat);
 

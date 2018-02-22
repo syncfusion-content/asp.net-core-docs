@@ -49,13 +49,13 @@ Here “MapController.cs” is populated with data of World Map in “MapControl
 
 	{
 
-		string worldmapjson = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/WorldMap.json"));
+		string data = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/WorldMap.json"));
 
-		JavaScriptSerializer ser = new JavaScriptSerializer();
+		JavaScriptSerializer serialObj = new JavaScriptSerializer();
 
-		ser.MaxJsonLength = int.MaxValue;
+		serialObj.MaxJsonLength = int.MaxValue;
 
-		return new MapData(worldmapjson);
+		return new MapData(data);
 	}
 
 {% endhighlight %}
@@ -79,7 +79,7 @@ stroke-thickness="0.5" >
 <script>
   $("document").ready(function () {
            var mapObj = $("#maps").data("ejMap");
-           mapObj.model.layers[0].sublayers= [{
+           mapObj.model.layers[0].subLayers= [{
                     shapeData: usMap,
                     shapeSettings: {
                         fill: "orange",

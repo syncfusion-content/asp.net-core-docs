@@ -13,7 +13,7 @@ This section explains briefly about how to create a TreeMap in your application 
 
 ## Configure a TreeMap
 
-You can configure an Asp .net Core TreeMap in simple steps. This manual provides instructions on how to configure TreeMap with grouping of populated datum based on population growth in population in each continent.  It also provides a walk-through on some of the customization feature available in TreeMap control.
+You can configure an ASP.NET Core TreeMap in simple steps. This manual provides instructions on how to configure TreeMap with grouping of populated datum based on population growth in population in each continent.  It also provides a walk-through on some of the customization feature available in TreeMap control.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -27,7 +27,7 @@ In this tutorial, you will learn how to create a simple TreeMap. The following s
 Simple TreeMap
 {:.caption}
 
-1. First, create a new ASP.Net core project; please refer [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
+1. First, create a new ASP.NET core project; please refer [ASP.NET core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
 
 ## Add Data 
 
@@ -68,7 +68,7 @@ You can populate the TreeMap data inside the controller. For example, you can po
 				});
 
 			population.Add(new TreeMapPopulationData() { 
-				Continent = "Asia", Region = "Western Asi", Growth = 1.98, Population = 245707000
+				Continent = "Asia", Region = "Western Asia", Growth = 1.98, Population = 245707000
 				});
 
 			population.Add(new TreeMapPopulationData() { 
@@ -262,11 +262,11 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 		.WeightValuePath("Population")
 
-		.Levels(lv =>
+		.Levels(level =>
 
 		{
 
-			lv.GroupPath("Continent")
+			level.GroupPath("Continent")
 
 			  .GroupGap(5).Add();                            
 
@@ -301,11 +301,11 @@ The following code sample explains how to customize TreeMap Appearance by Range.
 
 		.WeightValuePath("Population")                             
 
-		.Levels(lv =>
+		.Levels(level =>
 
 		{
 
-			lv.GroupPath("Continent")
+			level.GroupPath("Continent")
 
 			  .GroupGap(5).Add();                            
 
@@ -355,11 +355,11 @@ The following code sample displays how the tooltip is enabled.
 
 		.WeightValuePath("Population")                             
 
-		.Levels(lv =>
+		.Levels(level =>
 
 		{
 
-			lv.GroupPath("Continent")
+			level.GroupPath("Continent")
 
 			.GroupGap(5).Add();                            
 
@@ -383,11 +383,11 @@ The following code sample displays how the tooltip is enabled.
 
 		.ShowTooltip(true)
 
-		.LeafItemsSetting(lls =>
+		.LeafItemsSetting(leaf =>
 
 		{
    			
-			lls.LabelPath("Region");
+			leaf.LabelPath("Region");
 
 		})
 
@@ -421,11 +421,11 @@ The following code sample displays how to add labels for legend in a TreeMap.
 
 		.WeightValuePath("Population") 
 
-		.Levels(lv =>
+		.Levels(level =>
 
 		{
 
-			lv.GroupPath("Continent")
+			level.GroupPath("Continent")
 
 			  .GroupGap(5).Add();                            
 
@@ -437,23 +437,23 @@ The following code sample displays how to add labels for legend in a TreeMap.
 
 		{
   		
-			cm.To(1).From(0).Color("#DC562D").Legendlabel("0 - 1 % Growth").Add();
+			cm.To(1).From(0).Color("#DC562D").LegendLabel("0 - 1 % Growth").Add();
   	
-	  		cm.To(1.5).From(1).Color("#FED124").Legendlabel("1 - 1.5 % Growth").Add();  
+	  		cm.To(1.5).From(1).Color("#FED124").LegendLabel("1 - 1.5 % Growth").Add();  
   	
-	  		cm.To(2).From(1.5).Color("#487FC1").Legendlabel("1.5 - 2 % Growth").Add();
+	  		cm.To(2).From(1.5).Color("#487FC1").LegendLabel("1.5 - 2 % Growth").Add();
   	
-	  		cm.To(3).From(2).Color("#0E9F49").Legendlabel("2 - 3 % Growth").Add();                   
+	  		cm.To(3).From(2).Color("#0E9F49").LegendLabel("2 - 3 % Growth").Add();                   
 
 		})
 
 		.ShowTooltip(true)
 
-		.LeafItemsSetting(lls =>
+		.LeafItemsSetting(leaf =>
 
 		{
    			
-			lls.LabelPath("Region");
+			leaf.LabelPath("Region");
 
 		})
 
