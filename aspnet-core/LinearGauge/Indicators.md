@@ -177,11 +177,11 @@ background-color="transparent" show-bar-pointers="false" length="310" show-range
 <e-font size="15px" font-family="Arial" font-style="Bold"></e-font>
 <e-state-range-collections>
 <e-state-ranges  state-range-start-value="0" state-range-text="Safe"
-state-range-end-value="200" state-rangetext-color="#94C361"></e-state-ranges>
+state-range-end-value="200" state-range-text-color="#94C361"></e-state-ranges>
 <e-state-ranges  state-range-start-value="200" state-range-text="Caution"
-state-range-end-value="250" state-rangetext-color="#F9CF67"></e-state-ranges>
+state-range-end-value="250" state-range-text-color="#F9CF67"></e-state-ranges>
 <e-state-ranges  state-range-start-value="250" state-range-text="Danger"
-state-range-end-value="300" state-rangetext-color="#F89B83"></e-state-ranges>
+state-range-end-value="300" state-range-text-color="#F89B83"></e-state-ranges>
 </e-state-range-collections>
 </e-linear-indicators>
 </e-linear-indicator-collections>
