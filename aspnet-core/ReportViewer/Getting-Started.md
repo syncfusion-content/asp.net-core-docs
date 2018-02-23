@@ -16,7 +16,7 @@ N> The report viewer control depends on server-side processing for report render
 ## Environment setup
 Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet pacakage reference will be more over referred from Sycnfusion NuGet source for ASP.NET Core development to prepare the evnironment without instllation, if you missed to explored then referred the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings).
+N> NuGet package reference will be more over referred from Syncfusion NuGet source for ASP.NET Core development to prepare the environment without installation, if you missed to explored then referred the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings).
 
 ### Styles and scripts
 
@@ -130,7 +130,7 @@ You should add the following packages for the report viewer:
 **Syncfusion.DocIO.NETStandard**: Supports for exporting the report to a Word.**Syncfusion.XlsIO.NETStandard**: Supports for exporting the report to an Excel.
 **Syncfusion.OfficeChart.NETStandard**: It is a base library of the **Syncfusion.XlsIO.NETStandard** package.
 **System.Data.SqlClient**: Renders the report to get the data from SQL Server if required. The package version should be higher of 4.1.0 and this is an optional package for the report viewer.
-**Newtonsoft.Json**: Serializes and deserializes the data for report viewer client. It is a manditory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.
+**Newtonsoft.Json**: Serializes and deserializes the data for report viewer client. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.
 
 Find the package details in the following table, which is to be chosen based on the application target framework:
 
