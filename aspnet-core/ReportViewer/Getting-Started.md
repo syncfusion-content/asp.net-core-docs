@@ -11,13 +11,12 @@ documentation: ug
 
 The report viewer is a visualization control to view the Microsoft RDL/RDLC format based report on a web page, and it is powered by HTML5/JavaScript. This section explains how to add the report viewer component in the ASP.NET Core MVC application along with simple example of the invoice report.
 
-N> The report viewer control depends on server-side processing for report rendering. So, you should build the WebAPI service that is compatible for report viewer. 
-
-This section illustrates how to create the report viewer compatible WebApi service with your application.
+N> The report viewer control depends on server-side processing for report rendering. So, you should build the WebAPI service that is compatible for report viewer. This getting started will illustrates details of how to create the report viewer compatible Web API service also for your application.
 
 ## Environment setup
+Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
-Refer to the [Getting Started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+N> NuGet package reference will be more over referred from Syncfusion NuGet source for ASP.NET Core development to prepare the environment without installation, if you missed to explored then referred the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings).
 
 ### Styles and scripts
 
@@ -117,22 +116,21 @@ Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page 
 </html>
 {% endhighlight %}
 
-N> Script manager (<ej-script-manager/>) must be defined at the bottom of the *_Layout.cshtml* page.
+N> *ej-script-manager* must be defined at the bottom of the *_Layout.cshtml* page.
 
 ### References
 You should add the following packages for the report viewer:
 
-    * **Syncfusion.EJ**: Builds the report viewer controls with the tag helper.
-    * **Syncfusion.EJ.ASPNET.Core**: Builds the report viewer controls with the tag helper.
-    * **Syncfusion.EJ.ReportViewer.ASPNET.Core**: Builds the server-side implementations.
-    * **Syncfusion.Report.NETStandard**: It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core**  package.
-    * **Syncfusion.Compression.NETStandard**: Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format.
-    * **Syncfusion.Pdf.NETStandard**: Supports for exporting the report to a PDF.
-    * **Syncfusion.DocIO.NETStandard**: Supports for exporting the report to a Word.
-    * **Syncfusion.XlsIO.NETStandard**: Supports for exporting the report to an Excel.
-    * **Syncfusion.OfficeChart.NETStandard**: It is a base library of the **Syncfusion.XlsIO.NETStandard** package.
-    * **System.Data.SqlClient**: Renders the report to get the data from SQL Server if required. The package version should be higher of 4.1.0 and this is an optional package for the report viewer.
-    * **Newtonsoft.Json**: Serializes and deserializes the data for report viewer client. It is a manditory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.
+**Syncfusion.EJ**: Builds the report viewer controls with the tag helper.
+**Syncfusion.EJ.ASPNET.Core**: Builds the report viewer controls with the tag helper.
+**Syncfusion.EJ.ReportViewer.ASPNET.Core**: Builds the server-side implementations.
+**Syncfusion.Report.NETStandard**: It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core**  package.
+**Syncfusion.Compression.NETStandard**: Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format.
+**Syncfusion.Pdf.NETStandard**: Supports for exporting the report to a PDF.
+**Syncfusion.DocIO.NETStandard**: Supports for exporting the report to a Word.**Syncfusion.XlsIO.NETStandard**: Supports for exporting the report to an Excel.
+**Syncfusion.OfficeChart.NETStandard**: It is a base library of the **Syncfusion.XlsIO.NETStandard** package.
+**System.Data.SqlClient**: Renders the report to get the data from SQL Server if required. The package version should be higher of 4.1.0 and this is an optional package for the report viewer.
+**Newtonsoft.Json**: Serializes and deserializes the data for report viewer client. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.
 
 Find the package details in the following table, which is to be chosen based on the application target framework:
 
@@ -221,10 +219,10 @@ You can use the <ej-report-viewer> tag to add the report viewer control. For an 
 <div style="height: 525px;width: 100%;">
     <ej-report-viewer id="reportviewer1" report-service-url="../Home" />
 </div>
-
-N> The WebApi service should be mapped with the report viewer report-service-url as shown in the above example code.
-
 {% endhighlight %}
+
+N> The Web API service should be mapped with the report viewer report-service-url as shown in the above example code.
+
 
 ## Build WebApi service
 You should inherit the IReportController interface to build the report viewer compatible Web API, and the ReportHelper should be used with IReportController interface implemented methods. The ReportHelper will perform the server-side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
@@ -301,4 +299,4 @@ N> You cannot load the application report with path information in ASP.NET Core.
 
 Run the sample application, and you can see the report viewer with invoice as shown in the following screenshot:
 
-![](images/reportviewergettingstarted.png)
+![](images/reportviewercoregettingstarted.png)
