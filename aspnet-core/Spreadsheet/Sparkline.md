@@ -9,7 +9,7 @@ documentation: ug
 
 # Sparkline
 
-Sparkline are easy to interpret and it conveys much more information to the user by visualizing the data in a small amount of space. Here sparkline were placed inside the cell. It creates the Sparkline based on the selected cell range’s data. You can use `allowSparkline` property to enable/disable Sparkline.
+Sparkline are easy to interpret and it conveys much more information to the user by visualizing the data in a small amount of space. Here sparkline were placed inside the cell. It creates the Sparkline based on the selected cell range’s data. You can use `allow-sparkline` property to enable/disable Sparkline.
 
 
 ## Types of Sparkline 
