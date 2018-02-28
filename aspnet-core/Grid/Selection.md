@@ -294,7 +294,7 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight razor %}
    <ej-grid id="FlatGrid" allow-paging="true" enable-row-hover="false" datasource="ViewBag.DataSource">
-     <SelectionSettings enable-toggle="true"/>
+     <e-selection-settings enable-toggle="true"/>
         <e-columns>
             <e-column field="OrderID" header-text="OrderID"></e-column>
             <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
@@ -321,3 +321,47 @@ The following code example describes the above behavior.
         } 
 {% endhighlight  %}    
 {% endtabs %}  
+
+
+## Drag Selection
+
+The Drag selection allows to perform selection of the particular rows or cells by performing mouse dragging.  To enable drag selection, set `allow-drag-selection` property of the `e-selection-settings` as `true`. Now you can select the cells or rows in the Grid by dragging the mouse. 
+
+N> The `selection-type` property should be set as `multiple`, to select multiple cells in Grid by mouse dragging. 
+
+The following code example describes the above behavior. 
+
+{% tabs %} 
+{% highlight razor %}
+    <ej-grid id="FlatGrid" allow-paging="true" enable-row-hover="false" selection-type="Multiple" datasource="ViewBag.DataSource">
+     <e-selection-settings selection-mode="@(new List<string>(){"cell"})" allow-drag-selection="true"/> 
+        <e-columns>
+            <e-column field="OrderID" header-text="OrderID"></e-column>
+            <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
+            <e-column field="ShipCity" header-text="ShipCity"></e-column>
+            <e-column field="ShipCountry" header-text="ShipCountry"></e-column>
+            <e-column field="Freight" header-text="Freight"></e-column>
+        </e-columns>
+    </ej-grid>
+
+{% endhighlight  %}
+{% highlight c# %}
+		
+	    namespace MVCSampleBrowser.Controllers
+          {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                   var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                   ViewBag.DataSource = DataSource;
+                   return View();
+                 }
+             }
+        } 
+{% endhighlight  %}
+{% endtabs %}  
+
+The following output is displayed as a result of the above code example.
+
+![](selection_images/Selection_img13.png)

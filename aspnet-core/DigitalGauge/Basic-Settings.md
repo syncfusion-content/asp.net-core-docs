@@ -58,8 +58,8 @@ Digital Gauge control with Responsible layout
 
 Themes give the good appearance to the control. There are two types of Themes available for DigitalGauge as follows
 
-* flatlight
-* flatdark
+* FlatLight
+* FlatDark
 
 {% highlight CSHTML %}
 
@@ -74,7 +74,7 @@ Execute the above code examples to render the DigitalGauge as follows.
 
 ![](Basic-Settings_images/Basic-Settings_img3.png)
 
-Digital Gauge control with flatdark theme
+Digital Gauge control with FlatDark theme
 {:.caption}
 
 

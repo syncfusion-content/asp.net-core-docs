@@ -46,7 +46,7 @@ Custom labels collection is directly added to the scale object. Refer the follow
 <ej-circular-gauge id="circulargauge" >
 <e-circular-scale-collections>
 <e-circular-scales show-labels="true" radius="150" size="2" shadow-offset="10" show-ranges="true" 
-show-scalebar="true">
+show-scale-bar="true">
 <e-custom-label-collections>
 <e-circular-custom-labels value="CustomLabel1" color="red" text-angle="10">
 <e-custom-position x="180" y="100">
@@ -82,7 +82,7 @@ You can set multiple custom labels in a single Circular Gauge by adding an array
 <ej-circular-gauge id="circulargauge" >
 <e-circular-scale-collections>
 <e-circular-scales show-labels="true" radius="150" size="2" shadow-offset="10" show-ranges="true" 
-show-scalebar="true">
+show-scale-bar="true">
 <e-custom-label-collections>
 <e-circular-custom-labels value="CustomLabel1" color="red" text-angle="10">
 <e-custom-position x="180" y="100">

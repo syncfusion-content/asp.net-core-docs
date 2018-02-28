@@ -20,7 +20,7 @@ In this tutorial, you will learn how to create a simple Sparkline.The following 
 Simple Sparkline
 {:.caption}
 
-1. First, create a new ASP.Net core project. please refer [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
+1. First, create a new ASP.NET core project. please refer [ASP.NET core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
 
 2. Add the following code in the index.cshtml file to create the Sparkline control in View page.
 

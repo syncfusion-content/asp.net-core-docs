@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-## Localization in pivot gauge Control
+## Localization in pivot gauge control
 You can localize the pivot gauge control texts with a collection of localized strings by using the **"ej.PivotGauge.Locale"** for different cultures.
  
 N> By default, the pivot gauge control is localized in **"en-US"**.

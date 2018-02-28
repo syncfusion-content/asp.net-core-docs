@@ -25,7 +25,7 @@ Analog Speedometer
 
 ASP.NET Core 1.0 Circular Gauge widget basically renders with animation and flexible APIs. You can easily create the Circular Gauge widget by using the following steps.
 
-1. First, create a new ASP.Net core project. please refer [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
+1. First, create a new ASP.NET core project. please refer [ASP.NET core 1.0-Getting Started](/aspnet-core/getting-started) documentation to create new project and add necessary DLL’s and script files.
 2. Add the following code example to the corresponding view page to render CircularGauge.
 
    ~~~ cshtml

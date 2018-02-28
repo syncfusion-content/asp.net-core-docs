@@ -13,24 +13,24 @@ documentation: ug
 
 Following are the built-in themes available in the pivot chart:
 
-* flatlight
-* gradientlight
-* gradientdark
-* azure
-* azuredark
+* Flat light
+* Gradient light
+* Gradient dark
+* Azure
+* Azure dark
 * lime
-* limedark
-* saffron
-* saffrondark
-* gradientlight
-* gradientdark
-* highcontrast01
-* highcontrast02
-* material
-* office365
-* bootstrap
+* Lime dark
+* Saffron
+* Saffron dark
+* Gradient light
+* Gradient dark
+* High contrast 01
+* High contrast 02
+* Material
+* Office365
+* Boot strap
 
-By using the `theme` property, you can set the desired theme in the pivot chart. By default, the **"FlatLight"** theme is applied to the pivot chart.
+By using the `theme` property, you can set the desired theme in the pivot chart. By default, the **"Flat Light"** theme is applied to the pivot chart.
 
 {% highlight cshtml %}
 

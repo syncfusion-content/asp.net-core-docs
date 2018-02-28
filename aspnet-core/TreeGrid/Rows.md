@@ -146,8 +146,8 @@ public partial class TreeGridController : Controller
 
             RowData parent = new RowData()
             {
-                Name = "David william",
-                FullName = "David william",
+                Name = "David William",
+                FullName = "David William",
                 Designation = "Vice President",
                 EmployeeID = "EMP004",
                 Address = "722 Moss Bay Blvd., Kirkland",
@@ -160,8 +160,8 @@ public partial class TreeGridController : Controller
 
             RowData Child1 = new RowData()
            {
-               Name = "Nancy Davolio",
-               FullName = "Nancy Davolio",
+               Name = "Nancy Jennifer",
+               FullName = "Nancy Jennifer",
                Designation = "Marketing Executive",
                EmployeeID = "EMP035",
                Address = "4110 Old Redmond Rd., Redmond",
@@ -173,11 +173,11 @@ public partial class TreeGridController : Controller
            };
             RowData Child2 = new RowData()
            {
-               Name = "Romey Wilson",
-               FullName = "Romey Wilson",
+               Name = "Romney Wilson",
+               FullName = "Romney Wilson",
                Designation = "Sales Executive",
                EmployeeID = "EMP039",
-               Address = "7 Houndstooth Rd., London",
+               Address = "7 Hounds tooth Rd., London",
                Country = "UK",
                Contact = "(71) 555-3690",
                DOB = "02/02/1980",
@@ -230,7 +230,7 @@ public partial class TreeGridController : Controller
                FullName = "Janet Leverling",
                Designation = "Sales Coordinator",
                EmployeeID = "EMP131",
-               Address = "Edgeham Hollow Winchester Way, London",
+               Address = "Edge ham Hollow Winchester Way, London",
                Country = "UK",
                Contact = "(71) 555-3636",
                DOB = "11/06/1990",
@@ -411,6 +411,29 @@ The following code shows how to render row drag tooltip with tooltip template.
 
 ![](Rows_images/Rows_img3.png)
 
+## Multiple Row drag and drop
+
+Using Multiple row drag and drop we can re-order multiple rows at a time.Using this we can drop the rows as above, below and child position as like single row drag and drop.
+In TreeGrid we can enable the multiple drag and drop by setting `selection-type` as `Multiple` or  `Checkbox` and also we should enable the `allow-drag-and-drop`.
+
+Please find the code example below to enable multiple drag and drop in TreeGrid.
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridContainer" datasource="ViewBag.datasource" child-mapping="Children" allow-drag-and-drop="true">
+               //..
+    <e-tree-grid-selection-settings selection-mode="Row" selection-type="Multiple"></e-tree-grid-selection-settings>   
+</ej-tree-grid>    
+
+{% endhighlight %}
+
+We can also customize row drag and drop actions by using below properties
+
+* canDrag – It is used to enable/disable the row drag action for draggedRecords collection in `row-drag-start` client side event.
+
+* canDrop – It is used to enable/disable the row drop action for draggedRecords collection in `row-drop-action-begin` client side event. 
+
+![](Rows_images/Rows_img4.png)
 
 
 

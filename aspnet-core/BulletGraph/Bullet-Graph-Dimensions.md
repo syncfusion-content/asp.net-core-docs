@@ -72,15 +72,15 @@ Bullet Graph with comparative symbol
 
 ## Theme
 
-Bullet Graph Theme is customized using `theme` property. Default value is flatlight. Bullet Graph supports flatlight and flatdark themes. Flatdark theme improves Bullet Graph appearance when background of Bullet Graph container uses dark color like black. 
+Bullet Graph Theme is customized using `theme` property. Default value is FlatLight. Bullet Graph supports FlatLight and FlatDark themes. FlatDark theme improves Bullet Graph appearance when background of Bullet Graph container uses dark color like black. 
 {% highlight cshtml %}
 
-<ej-bullet-graph id="Bullets" theme=flatdark">
+<ej-bullet-graph id="Bullets" theme="FlatDark">
 </ej-bullet-graph>
 
 {% endhighlight %}
 
-The following screenshot displays Bullet Graph with flatdark theme
+The following screenshot displays Bullet Graph with FlatDark theme
 
 
 
