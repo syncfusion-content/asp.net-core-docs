@@ -149,7 +149,7 @@ Triggered on selecting the map markers.
 
 
 
-### mouseleave
+### mouseLeave
 
 
 Triggers while leaving the hovered map shape

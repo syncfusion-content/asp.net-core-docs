@@ -50,7 +50,7 @@ Background color for qualitative range is applied to major ticks and minor ticks
 {% highlight cshtml %}
 
 <ej-bullet-graph id="Bulletgraph" apply-range-stroke-to-labels="true" 
-apply-range-stroke-to-ticks="true" value="8"comparitive-measure-value="5" >
+apply-range-stroke-to-ticks="true" value="8"comparative-measure-value="5" >
 <e-qualitative-ranges>
 <e-qualitative-range range-end="3.5" range-stroke="DarkRed" range-opacity="0.5">
 </e-qualitative-range>

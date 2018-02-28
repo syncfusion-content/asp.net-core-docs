@@ -23,7 +23,7 @@ Digital Thermometer
 
 ASP.NET Core Digital Gauge widget basically renders with flexible APIs. You can easily create the Digital Gauge widget by using the following steps.
 
-1. First create an Core Project and add necessary Dll's and scripts with the help of the given [ASP.Net core 1.0-Getting Started](/aspnet-core/getting-started) Documentation.
+1. First create an Core Project and add necessary Dll's and scripts with the help of the given [ASP.NET core 1.0-Getting Started](/aspnet-core/getting-started) Documentation.
 2. Add the following code example to the corresponding view page to render Digital Gauge.
 
    ~~~ cshtml
