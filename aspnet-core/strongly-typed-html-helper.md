@@ -32,20 +32,20 @@ The following steps explain how to use the strongly typed helpers to create a Da
 
 The DatePicker control supports strongly typed Tag helpers that uses model expression as value for **ej-for** to refer to the models or view models passed to a view template. These helpers allows you to define the value of the DatePickerFor from the model.
 
-Add a class name “datemodel” in the DatePickercontroller and replace the code with the following code:
+Add a class name “CurrentDate” in the DatePickerController and replace the code with the following code:
 
 {% highlight html %}
 
-      public class datemodel
+      public class CurrentDate
         {
             public DateTime Value
             {
                 get; set;
             }
-            public datemodel(DateTime value) {
+            public CurrentDate(DateTime value) {
                 Value = value;
             }
-            public datemodel() { }
+            public CurrentDate() { }
         }
     
 {% endhighlight %}
@@ -57,7 +57,7 @@ Create an action method that renders the DatePicker on the view page, and passes
     public IActionResult DatePickerFor()
     {
         //DatePicker For
-        datemodel date = new datemodel();
+        CurrentDate date = new CurrentDate();
         date.Value = DateTime.Now;
         return View(date.Value);
     }
@@ -68,7 +68,7 @@ In View, invoke the strongly typed DatePickerFor tag helper with the  **ModelExp
 
 {% highlight cshtml %}
 
-        @model WebApplication.Controllers.DatePickerController.datemodel
+        @model WebApplication.Controllers.DatePickerController.CurrentDate
 
         <form method="post">
             <div class="frame">
@@ -91,9 +91,9 @@ In the action method, you can pass the model as the parameter and that model has
 {% highlight C# %}
 
      [HttpPost]
-        public IActionResult Index(datemodel model)
+        public IActionResult Index(CurrentDate model)
         {
-            datemodel date = new datemodel(DateTime.Now);
+            CurrentDate date = new CurrentDate(DateTime.Now);
             return View(date);
         }
 
@@ -130,7 +130,7 @@ Refer to the jQuery validation script file in the _Layout page as shown in the f
 
 The jQuery validation plug-in takes the advantage of the Data Annotation attributes defined in the model.
 
-Step 1: Add the following namespace to the “datemodel” model.
+Step 1: Add the following namespace to the “CurrentDate” model.
 
 {% highlight html %}
 
@@ -143,23 +143,23 @@ The Data Annotations allows to decorate model classes with the metadata. This me
 The following Data Annotation attributes are used for the DatePicker.
 Required: Indicates that the property is a required field.
 
-Step 2: Next, Update the Value property of the “datemodel” class as “Required Field” by adding the following line.
+Step 2: Next, Update the Value property of the “CurrentDate” class as “Required Field” by adding the following line.
 
 {% highlight C# %}
 
     using System.ComponentModel.DataAnnotations;
-    public class datemodel
+    public class CurrentDate
         {
             [Required(ErrorMessage = "Date Value is Required")]
             public DateTime Value
             {
                 get; set;
             }
-            public datemodel(DateTime value)
+            public CurrentDate(DateTime value)
             {
                 Value = value;
             }
-            public datemodel() { }
+            public CurrentDate() { }
         }
 
 {% endhighlight %}
@@ -172,7 +172,7 @@ In the server-side validation, the page must be submitted via a postback to vali
 
 The best way to validate a model is by using the Data Annotations that has a set of attributes and classes defined in the System.ComponentModel.DataAnnotations assembly.
 
-Step 1: Add the following namespace to the “datemodel” model.
+Step 1: Add the following namespace to the “CurrentDate” model.
 
 {% highlight html %}
 
@@ -185,12 +185,12 @@ The Data Annotations allows to decorate model classes with the metadata. This me
 The following Data Annotation attributes are used for the DatePicker.
 Required: Indicates that the property is a required field.
 
-Step 2: Next, Update the Value property of the “datemodel” class as “Required Field” by adding the following line
+Step 2: Next, Update the Value property of the “CurrentDate” class as “Required Field” by adding the following line
 
 {% highlight C# %}
 
     using System.ComponentModel.DataAnnotations;
-    public class datemodel
+    public class CurrentDate
         {
             [Required(ErrorMessage = "Valid Date is Required")]
             public object dateValue { get; set; }
@@ -203,7 +203,7 @@ Step 3: Modify the view page as follows:
 
 {% highlight Razor %}
 
-    @model WebApplication4.Controllers.DatePickerController.datemodel
+    @model WebApplication4.Controllers.DatePickerController.CurrentDate
     <form method="post">
         <ej-date-picker id="datepick" ej-for="@Model.dateValue"></ej-date-picker>
         @*for control rendering with model binding.*@
@@ -214,7 +214,7 @@ Step 3: Modify the view page as follows:
     
 {% endhighlight %}
 
-When you press the “Submit” button on this page then it will post the data to the server and the code written with in datemodel action will validate the DatePicker value by checking the ModelState.IsValid property. If the DatePicker value is not selected, the ModelState.IsValid will return false and display error message.
+When you press the “Submit” button on this page then it will post the data to the server and the code written with in CurrentDate action will validate the DatePicker value by checking the ModelState.IsValid property. If the DatePicker value is not selected, the ModelState.IsValid will return false and display error message.
 
 ![](stronlyTyped_images/strongly_typed_image4.png)
 
