@@ -9,9 +9,9 @@ documentation: ug
 
 # Series
 
-## Series Point customization
+## Series point customization
 
-By using the `fill` and `border` properties of Chart series, you can customize the PivotChart series color, border color and border width.
+By using the `fill` and `border` properties of the chart series, you can customize the series color, border color, and border width of the pivot chart.
  
 {% highlight cshtml %}
 

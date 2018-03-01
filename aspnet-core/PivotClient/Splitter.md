@@ -9,7 +9,7 @@ documentation: ug
 
 # Splitter
 
-You can resize Cube Dimension Browser and Axis Element Builder by setting `enable-splitter` property to true.This property is disabled by default.
+You can resize the cube dimension browser and axis element builder by setting the `enable-splitter` property to true. This property is disabled by default.
 
 {% highlight CSHTML %}
 

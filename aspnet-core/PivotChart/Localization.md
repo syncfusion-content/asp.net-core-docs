@@ -9,11 +9,11 @@ documentation: ug
 
 # Localization
 
-## Localization in PivotChart
+## Localization in pivot chart
 
-We can localize the PivotChart controls text with a collection of localized strings using **"ej.PivotChart.Locale"** for different cultures. By default, the PivotChart control is localized in **“en-US”.**
+You can localize the pivot chart controls text with a collection of localized strings by using the **"ej.PivotChart.Locale"** for different cultures. By default, the pivot chart control is localized in **“en-US”.**
 
-Following code example illustrates on how to localize PivotChart based on **“French”** culture.
+Following code example illustrates how to localize the pivot chart based on **“French”** culture:
 
 {% highlight cshtml %}
 
@@ -34,7 +34,7 @@ Following code example illustrates on how to localize PivotChart based on **“F
 
 {% endhighlight %}
 
-Following table localizes the in-built keywords to **“French”** culture for PivotChart.
+Following table localizes the in-built keywords to **“French”** culture for the pivot chart:
 
 <table>
 <tr>
@@ -71,12 +71,12 @@ Exit</td><td>
 “Quitter "</td></tr>
 </table>
 
-## Localization and Globalization of Cube Info (OLAP)
+## Localization and globalization of cube info (OLAP)
 
-Content displayed within the PivotChart control are obtained from the OLAP Cube. So following are the steps that needs to be done to get the localized and globalized Cube content.
+The content displayed within the pivot chart control is obtained from the OLAP cube.
 
-* To get localized data from OLAP Cube, we need to set **"Locale Identifier"** in the connection string to a specific culture in the **"Data"** property present inside **"DataSource"**. 
-* To bind the globalized content in PivotChart control, we need to set **"Locale"** property to a specific culture and want to refer specific culture file in the sample.
+* To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"e-data-source"**.
+* To bind the globalized content in pivot chart control, set the **"locale"** property to a specific culture and refer to specific culture file in the sample.
  
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
  

@@ -7,15 +7,15 @@ control: PivotChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-Refer the [Getting Started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+Refer the [getting started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
-Ensure once whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the PivotChart control gets installed and loads into the mentioned location (**wwwroot -> lib**) within your project.
+Ensure whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the pivot chart control will be installed and loaded into the mentioned location (**wwwroot -> lib**) within your project.
 
-Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot** added within the *project.json* file.
+Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot** is added within the *project.json* file.
 
-Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
+Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
 
 {% highlight cshtml %}
 
@@ -43,7 +43,7 @@ Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page f
 
 {% endhighlight %}
 
-It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to make use of the PivotChart control with the tag helper support.
+It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot chart control with the tag helper support.
  
 {% highlight cshtml %}
  
@@ -57,11 +57,11 @@ N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
 ## Relational
 
-This section covers the information that you need to know to populate a simple PivotChart with Relational data source.
+This section covers the information required to populate a simple pivot chart with the relational data source.
 
-### Initialize PivotChart
+### Initialize pivot chart
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot chart, empty the contents of Index.cshtml file under Views > Home folder and add the following codes:
 
 {% highlight cshtml %}
 
@@ -76,9 +76,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotChart With Data
+### Populate pivot chart with data
 
-Let us now see how to populate the PivotChart control using a sample JSON data as shown below. 
+This section illustrates how to populate the pivot chart control using a sample JSON data as shown below: 
 
 {% highlight cshtml %}
 
@@ -125,7 +125,7 @@ function onload(args) {
     
 {% endhighlight %}
 
-The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotChart control.
+The JSON data is set to the **"data"** property present in the **"e-data-source"** object. The **"e-data-source"** object allows you to set both the data source and fields that should be displayed in the row, column, value, and filter section of the pivot chart control.
   
 {% highlight cshtml %}
   
@@ -150,17 +150,17 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
 
 {% endhighlight %}
 
-The above code will generate a simple PivotChart with sales amount over products in different regions.
+The above code will generate a simple pivot chart with sales amount over products in different regions.
 
 ![](Getting-Started_images/purejs.png)
 
 ## OLAP
 
-This section covers the information that you need to know to populate a simple PivotChart with OLAP data source.
+This section covers the information required to populate a simple pivot chart with OLAP data source.
 
-### Initialize PivotChart
+### Initialize pivot chart
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot chart, empty the contents of Index.cshtml file under Views > Home folder and add the following codes:
 
 {% highlight cshtml %}
 
@@ -175,9 +175,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotChart With DataSource
+### Populate pivot chart with data source
 
-Initializes the OLAP datasource for PivotChart control as shown below.
+Initializes the OLAP data source for the pivot chart control as shown below:
 
 {% highlight cshtml %}
 
@@ -206,6 +206,6 @@ Initializes the OLAP datasource for PivotChart control as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotChart with internet sales amount over a period of fiscal years across different customer geographic locations.
+The above code will generate a simple pivot chart with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/Olap.png)

@@ -7,15 +7,15 @@ control: PivotTreeMap
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
-Refer the [Getting Started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+Refer the [getting started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
-Ensure once whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the PivotTreeMap control gets installed and loads into the mentioned location (**wwwroot -> lib**) within your project.
+Ensure whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the pivot tree map control will be installed and loaded into the mentioned location (**wwwroot -> lib**) within your project.
 
-Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot** added within the *project.json* file.
+Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot** is added within the *project.json* file.
 
-Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
+Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
 
 {% highlight cshtml %}
 
@@ -43,7 +43,7 @@ Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page f
 
 {% endhighlight %}
 
-It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to make use of the PivotTreeMap control with the tag helper support.
+It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot tree map control with the tag helper support.
  
 {% highlight cshtml %}
  
@@ -55,9 +55,9 @@ It is necessary to define the following namespace within the *_viewImports.cshtm
 
 N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
-### Initialize PivotTreeMap
+### Initialize pivot tree map
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot tree map, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
 
 {% highlight cshtml %}
 
@@ -65,9 +65,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotTreeMap With DataSource
+### Populate pivot tree map with data source
 
-Initializes the OLAP datasource for PivotTreeMap control as shown below.
+Initializes the OLAP data source for the pivot tree map control as shown below:
 
 {% highlight cshtml %}
 
@@ -98,6 +98,6 @@ Initializes the OLAP datasource for PivotTreeMap control as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotTreeMap with internet sales amount over a period of fiscal years across different customer geographic locations.
+The above code will generate a simple pivot tree map with internet sales amount over a period of fiscal years across different customer geographic locations.
 
 ![](Getting-Started_images/Olap.png)

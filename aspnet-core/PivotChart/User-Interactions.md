@@ -7,13 +7,13 @@ control: PivotChart
 documentation: ug
 ---
 
-# User Interactions
+# User interactions
 
 ## Tooltip
 
-### Enable Tooltip for Data Points
+### Enable tooltips for data points
 
-Tooltip for the data points can be enabled using the **"Visible"** option of the `e-chart-tooltip` property under **"e-common-series-options"** of the PivotChart.
+Tooltips for the data points can be enabled by using the **"visible"** option of the `e-chart-tooltip` property under **"e-common-series-options"** in the pivot chart.
 
 {% highlight cshtml %}
 
@@ -29,9 +29,9 @@ Tooltip for the data points can be enabled using the **"Visible"** option of the
 
 ![](User-Interactions_images/tooltip.png) 
 
-### Tooltip Template
+### Tooltip template
 
-HTML elements can be displayed inside the tooltip by using the `Template` option. The template option takes the value of the "id" attribute from the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the X and Y values of the corresponding data points.
+HTML elements can be displayed in the tooltip by using the `tooltip-template` option. The template option takes the value of the "id" attribute from the HTML element. You can use the **#point.x#** and **#point.y#** as place holders in the HTML element to display the X and Y values of the corresponding data points.
 
 {% highlight cshtml %}
 
@@ -57,9 +57,9 @@ HTML elements can be displayed inside the tooltip by using the `Template` option
 
 ![](User-Interactions_images/tooltiptemplate.png) 
 
-### Tooltip Customization
+### Tooltip customization
 
-By using `Fill` and `Border` properties of tooltip, you can customize its background color, border color and border width.
+By using the `fill` and `border` properties of the tooltip, you can customize its background color, border color, and border width.
 
 {% highlight cshtml %}
 
@@ -74,9 +74,9 @@ By using `Fill` and `Border` properties of tooltip, you can customize its backgr
 
 ![](User-Interactions_images/tooltipcustomization.png) 
 
-### Tooltip with Rounded Corners
+### Tooltip with rounded corners
 
-The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
+The tooltip properties `rx` and `ry` are used to customize its corner radius.
 
 {% highlight cshtml %}
 
@@ -92,11 +92,11 @@ The tooltip properties, `Rx` and `Ry` are used to customize its corner radius.
 
 ![](User-Interactions_images/tooltiprouded.png) 
 
-## Marker and Crosshair
+## Marker and crosshair
 
-### Marker Shape Customization
+### Marker shape customization
 
-In PivotChart, you can customize the marker `Shape` with following symbols.
+In the pivot chart, you can customize the marker `shape` with the following symbols:
 
 * Rectangle
 * Circle
@@ -127,7 +127,7 @@ In PivotChart, you can customize the marker `Shape` with following symbols.
 
 ## Highlight
 
-PivotChart provides highlighting support for the series and data points on mouse hover. To enable highlighting, set the **“enable”** property to true in the `highlightSettings` option of the series.
+The pivot chart provides highlighting support for the series and data points by hovering the mouse. To enable highlighting, set the **“enable”** property to true in the `highlightSettings` of the series.
 
 {% highlight cshtml %}
 
@@ -144,7 +144,7 @@ PivotChart provides highlighting support for the series and data points on mouse
                                          
 {% endhighlight %} 
 
-### Highlight Mode
+### Highlight mode
 
 You can set three different modes for highlighting data points and series by using the `mode` property of the `highlightSettings`.
  
@@ -171,10 +171,9 @@ You can set three different modes for highlighting data points and series by usi
 
 ![](User-Interactions_images/highlightmode.png) 
 
-### Customize the Highlight Styles
+### Customize the highlight styles
 
-To customize the highlighted series, use `border.color`, `border.width` and `opacity`
- options in the `highlightSettings` property.
+To customize the highlighted series, use the `border.color`, `border.width`, and `opacity` options in the `highlightSettings` property.
 
 {% highlight cshtml %}
 
@@ -197,9 +196,9 @@ To customize the highlighted series, use `border.color`, `border.width` and `opa
 
 ![](User-Interactions_images/customizehighlight.png) 
 
-### Patterns to Highlight
+### Patterns to highlight
 
-PivotChart provides pattern support for highlighting the data by setting an appropriate value to the `pattern` property of the `highlightSettings`. The different types of highlight patterns are as follows.
+The pivot chart provides pattern support for highlighting the data by setting an appropriate value to the `pattern` property of the `highlightSettings`. The different types of highlight patterns are as follows:
 
 * chessboard
 * crosshatch
@@ -243,7 +242,7 @@ PivotChart provides pattern support for highlighting the data by setting an appr
 
 ## Selection
 
-PivotChart provides selection support for the series and data points on mouse click. To enable selection, set the **“enable”** property to true in the `selectionSettings` option of the series.
+The pivot chart provides selection support for series and data points by clicking the mouse. To enable selection, set the **“enable”** property to true in the `selectionSettings` of the series.
 
 {% highlight cshtml %}
 
@@ -261,9 +260,9 @@ PivotChart provides selection support for the series and data points on mouse cl
 
 {% endhighlight %}
 
-### Selection Mode
+### Selection mode
 
-You can set three different selection mode for highlighting the data points and series by using the `mode` property of the `selectionSettings`.
+You can set three different selection modes for highlighting the data points and series by using the `mode` property of the `selectionSettings`.
 
 * series
 * points
@@ -288,9 +287,9 @@ You can set three different selection mode for highlighting the data points and 
 
 ![](User-Interactions_images/selectionmode.png) 
 
-### Customize the Selection Styles
+### Customize the selection styles
 
-To customize the selection styles, use the `border.color`, `border.width` and `opacity` options in the `selectionSettings`.
+To customize the selection styles, use the `border.color`, `border.width`, and `opacity` options in the `selectionSettings`.
 
 {% highlight cshtml %}
 
@@ -312,9 +311,9 @@ To customize the selection styles, use the `border.color`, `border.width` and `o
 
 ![](User-Interactions_images/customizeselection.png) 
 
-### Patterns for Selection
+### Patterns for selection
 
-PivotChart provides pattern support for the selecting the data by setting an appropriate value to the `pattern` property of the `selectionSettings` option. The different types of selection patterns are as follows.
+The pivot chart provides pattern support for selecting data by setting an appropriate value to the `pattern` property of the `selectionSettings`. The different types of selection patterns are as follows:
 
 * chessboard
 * crosshatch

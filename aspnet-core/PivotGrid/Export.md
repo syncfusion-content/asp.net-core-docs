@@ -9,15 +9,15 @@ documentation: ug
 
 # Exporting
 
-The PivotGrid control can be exported to the following file formats.
+The pivot grid control can be exported to the following file formats:
 
-* Excel
-* Word
+* Microsoft Excel
+* Microsoft Word
 * PDF
 
 To perform the exporting operation, the **"Syncfusion.EJ.Export"** dependency library should be referred in the application.
 
-The PivotGrid control can be exported with the help of **“exportPivotGrid”** method by passing method name and file name as parameters. Please refer the below code snippet.
+The  control can be exported with the help of **“exportPivotGrid”** method by passing the method name and file name as parameters. Refer to the following code snippet:
 
 {% highlight CSHTML %}
 
@@ -76,7 +76,7 @@ The PivotGrid control can be exported with the help of **“exportPivotGrid”**
 
 {% endhighlight %}
 
-The **"Syncfusion.EJ.Export"** namespace should be imported and the following method should be added in the MVC controller file of the application.
+The **"Syncfusion.EJ.Export"** namespace should be imported and the following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -101,9 +101,9 @@ public ActionResult ExcelExport()
 
 {% endhighlight %}
 
-## Excel Export
+## Excel export
 
-PivotGrid allows you to export its content to Excel document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToExcel"** method by passing the file name as parameter.
+The pivot grid allows you to export its content to Excel document for future archival, references, and analysis purposes. This can be achieved with the help of **"ExportToExcel"** method by passing the file name as parameter.
 
 {% highlight js %}
 
@@ -119,7 +119,7 @@ PivotGrid allows you to export its content to Excel document for future archival
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -134,9 +134,9 @@ public ActionResult ExcelExport()
 
 {% endhighlight %}
 
-## Word Export
+## Word export
 
-PivotGrid allows you to export its content to Word document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToWord"** method by passing the file name as parameter.
+The pivot grid allows you to export its content to Word document for future archival, references, and analysis purposes. This can be achieved with the help of **"ExportToWord"** method by passing the file name as parameter.
 
 {% highlight js %}
 
@@ -152,7 +152,7 @@ PivotGrid allows you to export its content to Word document for future archival,
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -167,9 +167,9 @@ The following method should be added in the MVC controller file of the applicati
 
 {% endhighlight %}
 
-## PDF Export
+## PDF export
 
-PivotGrid allows you to export its content to PDF document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToPDF"** method by passing the file name as parameter.
+The pivot grid allows you to export its content to PDF document for future archival, references, and analysis purposes. This can be achieved with the help of **"ExportToPDF"** method by passing the file name as parameter.
 
 {% highlight js %}
 
@@ -185,7 +185,7 @@ PivotGrid allows you to export its content to PDF document for future archival, 
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -200,14 +200,14 @@ public ActionResult PDFExport()
 
 {% endhighlight %}
 
-The below screenshot shows the PivotGrid control exported to Excel document.
+The following screenshot shows the pivot grid control exported to an Excel document:
 
 ![Export-Excel](Exporting_images/ExportOLAPExcel.png)
 
-The below screenshot shows the PivotGrid control exported to Word document.
+The following screenshot shows the pivot grid control exported to a Word document:
 
 ![Export-Word](Exporting_images/ExportOLAPWord.png)
 
-The below screenshot shows the PivotGrid control exported to PDF document.
+The following screenshot shows the pivot grid control exported to a PDF document:
 
 ![Export-PDF](Exporting_images/ExportOLAPPDF.png)

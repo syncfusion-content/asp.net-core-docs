@@ -9,20 +9,20 @@ documentation: ug
 
 # Paging
 
-Paging helps to improve the rendering performance of the PivotClient control by dividing large amount of data into sections and displaying one section at a time. You can enable paging in PivotClient by setting the `enable-paging` property to true.
+Th paging helps to improve the rendering performance of the pivot client control by dividing the large amount of data into sections and displaying one section at a time. You can enable the paging in pivot client by setting the `enable-paging` property to true.
 
-## Using Pager
+## Using pager
 
-The page size and current page details for each axis can be provided through `e-pager-options` property within the `e-data-source` property of PivotGrid. The following properties are available to customize the pager options:
+The page size and current page details for each axis can be provided through the `e-pager-options` property within the `e-data-source` property of the pivot grid. The following properties are available to customize the pager options:
 
-* `categorical-page-size` - Specifies the number of categorical columns to be displayed in each page on applying the paging.
-* `series-page-size` - Specifies the number of series rows to be displayed in each page on applying the paging.
-* `categorical-current-page` -Specifies the page number to be loaded in the categorical axis by default.
-* `series-current-page` - Specifies the page number to be loaded in the series axis by default.
+* `categorical-page-size`: Specifies the number of categorical columns to be displayed in each page when applying the paging.
+* `series-page-size`: Specifies the number of series rows to be displayed in each page when applying the paging.
+* `categorical-current-page`: Specifies the page number to be loaded in the categorical axis by default.
+* `series-current-page`: Specifies the page number to be loaded in the series axis by default.
 
-The `mode` property of **ej-pivot-pager** is used to specify whether the categorical pager or series pager or both pager should be displayed.
+The `mode` property of **ej-pivot-pager** is used to specify whether the categorical pager or series pager or both pagers should be displayed.
 
-The following code snippet shows that how to display both categorical and series pager:
+The following code snippet illustrates how to display both categorical and series pagers:
 
 {% highlight html %}
 
@@ -46,21 +46,21 @@ The following code snippet shows that how to display both categorical and series
 
 {% endhighlight %}
 
-### Pager Options
+### Pager options
 
-The following are the options available in Pager for navigating pages at run-time.
+The following are the options available in the pager for navigating pages at run-time:
 
-* Move First - Navigates to the first page.
-* Move Last - Navigates to the last page.
-* Move Previous - Navigates to the previous page from the current page.
-* Move Next - Navigates to the next page from the current page.
-* Numeric Box - Navigates to the desired page by entering an appropriate page number in the numeric box.
+* Move first: Navigates to the first page.
+* Move last: Navigates to the last page.
+* Move previous: Navigates to the previous page from the current page.
+* Move next: Navigates to the next page from the current page.
+* Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric box.
 
 ![](Paging_images/paging.png)
 
 ## Using virtual scrolling
 
-Virtual scrolling is a technique that allows user to view the PivotGrid information page by page with the use of vertical and horizontal scrollbar. You can enable virtual scrolling in PivotGrid by setting the `enable-virtual-scrolling` property to true. You can also provide the page size and current page details for each axis through `e-pager-options` property.
+Virtual scrolling is a technique that allows you to view the pivot grid information page by page with the use of vertical and horizontal scrollbar. You can enable virtual scrolling in the pivot grid by setting the `enable-virtual-scrolling` property to true. You can also provide the page size and current page details for each axis through the `e-pager-options` property.
 
 {% highlight html %}
 

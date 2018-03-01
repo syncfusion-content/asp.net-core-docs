@@ -36,7 +36,7 @@ Add a class name “CurrentDate” in the DatePickerController and replace the c
 
 {% highlight html %}
 
-      public class CurrentDate
+        public class CurrentDate
         {
             public DateTime Value
             {
@@ -59,7 +59,7 @@ Create an action method that renders the DatePicker on the view page, and passes
         //DatePicker For
         CurrentDate date = new CurrentDate();
         date.Value = DateTime.Now;
-        return View(date.Value);
+        return View(date);
     }
     
 {% endhighlight %}
@@ -91,7 +91,7 @@ In the action method, you can pass the model as the parameter and that model has
 {% highlight C# %}
 
      [HttpPost]
-        public IActionResult Index(CurrentDate model)
+        public IActionResult DatePickerFor(CurrentDate model)
         {
             CurrentDate date = new CurrentDate(DateTime.Now);
             return View(date);
@@ -111,10 +111,17 @@ By default, client-side validation is enabled. But it can be easily enabled or d
 
 {% highlight html %}
 
-    <ej-date-picker id="datepick" ej-for="@Model.Value"
-                            validation-rules='new Dictionary<string, object>() { { "required",true} }'
-                            validation-messages='new Dictionary<string, object>() { { "required","Date value is required"} }' />
-            <ej-button id="button" text="Post" type="Submit"/>
+    <form method="post"> 
+        <div class="frame">
+            <div class="control">
+                <ej-date-picker id="datepick" ej-for="@Model.Value"
+                                validation-rules='new Dictionary<string, object>() { { "required",true} }'
+                                validation-messages='new Dictionary<string, object>() { { "required","Date value is required"} }' />
+                <span asp-validation-for="Value"></span>
+                <ej-button id="button" text="Post" type="Submit" />
+            </div>
+        </div>
+    </form>
 
 {% endhighlight %}
 
@@ -122,9 +129,8 @@ Refer to the jQuery validation script file in the _Layout page as shown in the f
 
 {% highlight html %}
 
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-    <script src="~/Scripts/ej/ej.unobtrusive.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 
 {% endhighlight %}
 
@@ -149,18 +155,18 @@ Step 2: Next, Update the Value property of the “CurrentDate” class as “Req
 
     using System.ComponentModel.DataAnnotations;
     public class CurrentDate
+    {
+        [Required(ErrorMessage = "Date Value is Required")]
+        public DateTime Value
         {
-            [Required(ErrorMessage = "Date Value is Required")]
-            public DateTime Value
-            {
-                get; set;
-            }
-            public CurrentDate(DateTime value)
-            {
-                Value = value;
-            }
-            public CurrentDate() { }
+            get; set;
         }
+        public CurrentDate(DateTime value)
+        {
+            Value = value;
+        }
+        public CurrentDate() { }
+    }
 
 {% endhighlight %}
 
@@ -191,11 +197,11 @@ Step 2: Next, Update the Value property of the “CurrentDate” class as “Req
 
     using System.ComponentModel.DataAnnotations;
     public class CurrentDate
-        {
-            [Required(ErrorMessage = "Valid Date is Required")]
-            public object dateValue { get; set; }
+    {
+        [Required(ErrorMessage = "Valid Date is Required")]
+        public object dateValue { get; set; }
 
-        }
+    }
 
 {% endhighlight %}
 
@@ -207,8 +213,7 @@ Step 3: Modify the view page as follows:
     <form method="post">
         <ej-date-picker id="datepick" ej-for="@Model.dateValue"></ej-date-picker>
         @*for control rendering with model binding.*@
-        @Html.ValidationMessageFor(m => Model.dateValue)
-        @*error message label*@
+         <span asp-validation-for="dateValue"></span>
         <button id="sub" type="submit">Submit</button>
     </form>
     
@@ -250,7 +255,7 @@ Create an action method that renders DatePicker on the view page, and passes the
 
 {% highlight C# %}
 
-    public IActionResult DatePickerFor()
+        public IActionResult DatePickerFor()
         {
             return View(new Days(new DateInfo(DateTime.Now)));
         }
@@ -261,13 +266,14 @@ In View, invoke the strongly typed DatePickerFor helper with the lambda expressi
 
 {% highlight Razor %}
 
-    @model WebApplication4.Controllers.HomeController.Days
+    @model WebApplication4.Controllers.DatePickerController.Days
     <form method="post">
         <div class="frame">
             <div class="control">
                 <ej-date-picker id="datepick" ej-for="@Model.DateInfo.DateValue"
                                 validation-rules='new Dictionary<string, object>() { { "required",true} }'
                                 validation-messages='new Dictionary<string, object>() { { "required","Date value is required"} }' />
+                <span asp-validation-for="DateInfo.DateValue"></span>
                 <ej-button id="button" text="Post" type="Submit" width="100px" />
             </div>
         </div>
@@ -283,7 +289,7 @@ When the form is submitted, it will perform an HTTP Post request to the controll
 {% highlight C# %}
 
      [HttpPost]
-        public IActionResult Index(Days model)
+        public IActionResult DatePickerFor(Days model)
         {
             //DatePicker For
             return View(model);
