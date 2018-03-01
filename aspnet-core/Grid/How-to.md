@@ -158,3 +158,73 @@ public partial class GridController : Controller
 
 The following output is displayed as a result of the above code example.
 ![](Hierarchy-Grid_images/Hierarchy-Grid_images2.png)
+
+
+## Display other Syncfusion controls in Grid columns
+
+We can display the other Syncfusion controls using `template` property of Grid columns and `templateRefresh` event of Grid control.
+
+{% tabs %}
+
+{% highlight razor %}
+
+ <ej-grid id="FlatGrid" allow-paging="true" template-refresh="template" datasource="ViewBag.datasource" >
+    <e-columns>
+        <e-column header-text="Employee details" template="#columnTemplate" width="150"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" width="90"></e-column>
+        <e-column field="FirstName" header-text="First Name" width="90"></e-column>
+        <e-column field="LastName" header-text="Last Name" width="90"></e-column>
+        <e-column field="Country" header-text="Country" width="80"></e-column>
+    </e-columns>
+</ej-grid>
+  
+{% endhighlight  %}
+
+{% highlight c# %}
+
+   namespace Grid.Controllers
+   {
+     public class GridController : Controller
+     {
+        public IActionResult GridFeatures()
+        {
+            var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
+            ViewBag.datasource = DataSource;
+            return View();
+        }
+     }
+   }
+   
+{% endhighlight  %}
+
+{% highlight js %}
+
+<script type="text/x-jsrender" id="columnTemplate">
+    {{if EmployeeID<3}}
+
+    <input type="text" class="rating" value="3" />
+
+    {{else EmployeeID>2 && EmployeeID<5}}
+
+    <input type="text" class="rating" value="3" />
+
+    {{else EmployeeID>4}}
+
+    <input type="text" class="rating" value="5" />
+
+    {{/if}}
+</script>
+
+<script type="text/javascript">
+    function template(args) {
+        $(args.cell).find(".rating").ejRating({ allowReset: false });
+    }
+</script>
+   
+{% endhighlight  %}
+
+{% endtabs %} 
+
+The following output is displayed as a result of the above code example.
+
+![](Display-Other-controls/Display_Other_controls_img1.png)

@@ -7,9 +7,9 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Drill Through
+# Drill through
 
-Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set [`enable-drill-through`] property to true. Raw items are obtained through the [`drill-through`] event, using which user can bind them to an external widget for precise view. 
+Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set the [`enable-drill-through`] property to true. Raw items are obtained through the [`drill-through`] event, using which you can bind them to an external widget for a precise view. 
 
 ## Relational
 
@@ -37,19 +37,19 @@ Drill-through retrieves the raw items that are used to create a specific cell. T
 
 ## OLAP
 
-N> Drill-through is supported in PivotGrid only when we configure and enable drill-through action at the Cube. 
+N> Drill-through is supported in the pivot grid only when you configure and enable the drill-through action at the cube.
 
 ![](DrillThrough_images/pivotgrid.png)
 
-On clicking any value cell, the "Drill Through Information" dialog will be opened.  It consists of a Grid with data which are associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions which are associated with this measure are alone displayed in the Grid. 
+By clicking any value cell, the "Drill Through Information" dialog will be opened. It consists of a grid with data that are associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions that are associated with this measure are alone displayed in the grid.
 
 ![](DrillThrough_images/DrillThroughData.png)
 
-On clicking the "Hierarchy Selector" button which is displayed below the Grid, the "Hierarchy Selector" dialog will be opened. It consists of the dimensions which are associated with the measure of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the dimensions associated with this measure are alone displayed in the dialog.  
+By clicking the "Hierarchy Selector" button which is displayed below the grid, the "Hierarchy Selector" dialog will be opened. It consists of dimensions that are associated with the measure of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and dimensions associated with this measure are alone displayed in the dialog.
 
 ![](DrillThrough_images/hierarchy_selector.png)
 
-By dragging and dropping the respective hierarchies and finally clicking “OK” button, drill through MDX query will be framed and executed internally and provides back the raw items through "drillThrough" event. In this example, we have bound the raw items obtained to our ejGrid widget. Please refer the code sample and screen-shot below.
+By dragging and dropping the respective hierarchies and finally clicking OK, the drill through MDX query will be framed and executed internally, and then it will provide the raw items through the [`drill-Through`] event. In this example, the obtained raw items are bounded to the ejGrid widget. Refer to the following code sample and screenshot:
 
 {% highlight cshtml %}
 

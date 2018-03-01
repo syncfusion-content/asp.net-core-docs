@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Grid Layout
+# Grid layout
 
-## Normal Layout
+## Normal layout
 
-A layout in which summary cells are positioned at the bottom of each parent member and their child members appear next to them. Normal layout is the default layout in PivotGrid control. The enumeration property `layout` needs to be set to **"Normal"** in-order to view PivotGrid in normal layout. 
+A layout in summary cells, are positioned at the bottom of each parent member and their child members appear next to them. Normal layout is the default layout in the pivot grid control. The `layout` enumeration property should be set to **"Normal"** to view the pivot grid in normal layout.
 
 {% highlight CSHTML %}
 
@@ -21,9 +21,9 @@ A layout in which summary cells are positioned at the bottom of each parent memb
 
 ![](Grid-Layout_images/layout-normal.png)
 
-## Excel-like Layout
+## Excel-like layout
 
-A layout in which summary cells are positioned besides each parent member and their child members appear next to them. The enumeration property `layout` needs to be set to **"ExcelLikeLayout"** in-order to view PivotGrid in excel-like layout.
+A layout in summary cells, which are positioned besides each parent member and their child members appear next to them. The `layout` enumeration property should be set to **"ExcelLikeLayout"** to view the pivot grid in excel-like layout.
 
 {% highlight CSHTML %}
 

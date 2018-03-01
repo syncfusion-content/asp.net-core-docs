@@ -9,19 +9,19 @@ documentation: ug
 
 # Exporting
 
-PivotChart and PivotGrid in the PivotClient widget can be exported to Excel, Word and PDF documents by clicking the respective toolbar icons.
+The pivot chart and pivot grid in the pivot client widget can be exported to Microsoft Excel, Microsoft Word, and PDF documents by clicking the respective toolbar icons.
 
 ![](Exporting_images/exporticon.png)
 
-Exporting feature provides an option that allows you to export either PivotChart or PivotGrid or both with the use of the property `client-export-mode`. 
+Exporting feature provides an option that allows you to export either the pivot chart or pivot grid or both by using the `client-export-mode` property.
 
-The property `client-export-mode` takes any one of the following value:
+The `client-export-mode` property takes any one of the following values:
 
-* **ChartAndGrid** – Exports both PivotChart and PivotGrid controls. This is the default mode.
-* **ChartOnly** – Exports PivotChart control alone.
-* **GridOnly** – Exports PivotGrid control alone.
+* **ChartAndGrid**: Exports both pivot chart and pivot grid controls. This is the default mode.
+* **ChartOnly**: Exports pivot chart control alone.
+* **GridOnly**: Exports pivot grid control alone.
 
-In order to make use of exporting with client side JSON data. The control can be exported by invoking `before-export` event, with an appropriate export option as parameter.
+Make use of export with the client side JSON data. The control can be exported by invoking the `before-export` event with an appropriate export option as a parameter.
 
 
 {% highlight CSHTML %}
@@ -40,7 +40,7 @@ In order to make use of exporting with client side JSON data. The control can be
 
 ### Customize the export document name
 
-The document name to be exported could be customized. Following code sample illustrates the same.
+The document name to be exported can be customized. Following code sample illustrates this process:
 
 {% highlight CSHTML %}
 
@@ -57,13 +57,13 @@ The document name to be exported could be customized. Following code sample illu
     
 {% endhighlight %}
 
-## PivotChart - Exporting Format
+## Pivot chart - exporting format
 
-I> This option is applicable only for PivotChart specifically when exported to Excel document.
+I> This option is applicable only for the pivot chart specifically when exported to an Excel document.
 
-You can set an option to export PivotChart to an Excel document, either as image or PivotChart format itself by setting the boolean property 'exportChartAsImage', inside the `before-export` event.
+You can set an option to export the pivot chart to an Excel document, and you can export it as either an image or pivot chart format itself by setting the Boolean property 'exportChartAsImage' in the `before-export` event.
 
-N> By default PivotChart will be exported as image format to Excel document.
+N> By default the pivot chart will be exported in image format to an Excel document.
 
 {% highlight CSHTML %}
 
@@ -80,13 +80,13 @@ N> By default PivotChart will be exported as image format to Excel document.
     
 {% endhighlight %}
 
-The below screenshot shows the control exported to Excel document showing its own format (Pivoting Chart).
+The following screenshot shows the control, which is exported to an Excel document showing its own format (pivoting chart).
 
 ![](Exporting_images/Export_ExcelChartClient.png)
 
-## Exporting Customization
+## Exporting customization
 
-You can add title and description to the exporting document by using the title and description properties respectively obtained in the `before-export` event. Similarly, you can enable or disable styling on the exported document by using the `exportWithStyle` property.
+You can add the title and description to the exporting document by using the title and description properties respectively obtained in the `before-export` event. Similarly, you can enable or disable the styling on the exported document by using the `exportWithStyle` property.
 
 {% highlight cshtml %}
 
@@ -108,9 +108,9 @@ You can add title and description to the exporting document by using the title a
     
 {% endhighlight %}
 
-### Exporting complete data on Paging
+### Exporting complete data on paging
 
-When paging is enabled, you can export the complete data by enabling the `enable-complete-data-export` property. It is supported for all kinds of exporting formats available in PivotClient.
+When paging is enabled, you can export the complete data by enabling the `enable-complete-data-export` property. It is supported for all kinds of exporting formats available in the pivot client.
 
 {% highlight CSHTML %}
    
@@ -120,14 +120,14 @@ When paging is enabled, you can export the complete data by enabling the `enable
                                            
 {% endhighlight %}
 
-The below screenshot shows the PivotGrid and PivotChart controls exported to Excel document.
+The following screenshot shows the pivot grid and pivot chart controls exported to an Excel document:
 
 ![](Exporting_images/relational-excel-export.png)
 
-The below screenshot shows the PivotGrid and PivotChart controls exported to Word document.
+The following screenshot shows the pivot grid and pivot chart controls exported to a Word document:
 
 ![](Exporting_images/relational-word-export.png)
 
-The below screenshot shows the PivotGrid and PivotChart controls exported to PDF document.
+The following screenshot shows the pivot grid and pivot chart controls exported to a PDF document:
 
 ![](Exporting_images/relational-pdf-export.png)
