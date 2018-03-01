@@ -162,7 +162,7 @@ The following output is displayed as a result of the above code example.
 
 ## Display other Syncfusion controls in Grid columns
 
-We can display the other Syncfusion controls using `template` property of Grid columns and `templateRefresh` event of ejGrid control.
+We can display the other Syncfusion controls using `template` property of Grid columns and `templateRefresh` event of Grid control.
 
 {% tabs %}
 
