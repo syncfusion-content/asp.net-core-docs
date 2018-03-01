@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 
-# Advanced Filtering & Sorting
+# Advanced filtering and sorting
 
-It allows to filter and sort the field members in PivotClient.
+It allows you to filter and sort the field members in the pivot client.
 
-You can enable "Advanced Filtering and Sorting" option in PivotClient by setting the [`enable-advanced-filter`] property under [`e-data-source`] to true.
+You can enable the "Advanced Filtering and Sorting" option in the pivot client by setting the [`enable-advanced-filter`] property under [`e-data-source`] to true.
 
 {% highlight CSHTML %}
 
@@ -26,19 +26,19 @@ You can enable "Advanced Filtering and Sorting" option in PivotClient by setting
 
 ## Sorting
 
-Sorting provides an option to sort the members of a field either in ascending or descending order. 
+Sorting provides an option to sort the members of a field in the ascending or descending order.
 
 ![](AdvanceFiltering_images/sorting.png)
 
-## Label Filtering
+## Label filtering
 
-Label filtering provides an option to filter the members of a field purely based on their caption. 
+Label filtering provides an option to filter the members of a field purely based on their caption.
 
 ![](AdvanceFiltering_images/filtering.png)
 
 ![](AdvanceFiltering_images/filtering_dialog.png)
 
-## Value Filtering
+## Value filtering
 
 Value filtering provides an option to filter members based on the total values of the appropriate measure between the members of the level. 
 

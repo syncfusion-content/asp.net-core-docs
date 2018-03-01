@@ -7,15 +7,15 @@ control: PivotGauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 Refer the [Getting Started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
-Ensure once whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the PivotGauge control gets installed and loads into the mentioned location (**wwwroot -> lib**) within your project.
+Ensure whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the pivot gauge control will be installed and loaded into the mentioned location (**wwwroot -> lib**) within your project.
 
-Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot** added within the *project.json* file.
+Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot** is added within the *project.json* file.
 
-Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
+Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
 
 {% highlight cshtml %}
 
@@ -43,7 +43,7 @@ Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page f
 
 {% endhighlight %}
 
-It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to make use of the PivotGauge control with the tag helper support.
+It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot gauge control with the tag helper support.
  
 {% highlight cshtml %}
  
@@ -53,15 +53,15 @@ It is necessary to define the following namespace within the *_viewImports.cshtm
     
 {% endhighlight %}
 
-N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
+N> Script manager should be defined at the bottom of the *_Layout.cshtml* page.
 
 ## Relational
 
-This section covers the information that you need to know to populate a simple PivotGauge with Relational data source.
+This section covers the information required to populate a simple pivot gauge with the relational data source.
 
-### Initialize PivotGauge
+### Initialize pivot gauge
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot gauge, empty the contents of Index.cshtml file under Views > Home folder and add the following codes:
 
 {% highlight cshtml %}
 
@@ -69,9 +69,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotGauge With Data
+### Populate pivot gauge with data
 
-Let us now see how to populate the PivotGauge control using a sample JSON data as shown below. 
+This section illustrates how to populate the pivot gauge control by using a sample JSON data as shown below:
 
 {% highlight cshtml %}
 
@@ -110,7 +110,7 @@ function onload(args) {
     
 {% endhighlight %}
 
-The JSON data is set to the **"data"** property present inside the **"dataSource"** object. **"dataSource"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGauge control.
+The JSON data is set to the **"data"** property present in the **"e-data-source"** object. The **"e-data-source"** object allows you to set both datasource and fields that should be displayed in the row, column, value, and filter section of the pivot gauge control.
   
 {% highlight cshtml %}
   
@@ -164,17 +164,17 @@ The JSON data is set to the **"data"** property present inside the **"dataSource
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGauge as shown in below figure.
+The above code will generate a simple pivot gauge as shown in the following screenshot:
 
 ![](Getting-Started_images/purejs.png)
 
 ## OLAP
 
-This section covers the information that you need to know to populate a simple PivotGauge with OLAP data source.
+This section covers the information required to populate a simple pivot gauge with OLAP data source.
 
-### Initialize PivotGauge
+### Initialize pivot gauge
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot gauge, empty the contents of Index.cshtml file under Views > Home folder and add the following codes:
 
 {% highlight cshtml %}
 
@@ -182,9 +182,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotGauge With DataSource
+### Populate pivot gauge with data source
 
-Initializes the OLAP datasource for PivotGauge control as shown below.
+Initializes the OLAP data source for the pivot gauge control as shown below:
 
 {% highlight cshtml %}
 
@@ -248,6 +248,6 @@ Initializes the OLAP datasource for PivotGauge control as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGauge as shown in below figure.
+The above code will generate a simple pivot gauge as shown in the following screenshot:
 
 ![](Getting-Started_images/Olap.png)

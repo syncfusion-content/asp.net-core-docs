@@ -9,9 +9,9 @@ documentation: ug
 
 # Number format 
 
-I> This feature is applicable only for Relational datasource only at Client Mode.
+I> This feature is applicable only for the relational data source at client mode.
 
-Allow us to specify the required number format that PivotGrid should use in its values by setting the `format` option. Following number formats that are supported:
+Allows you to specify the required number format to be used in values of the pivot grid by setting the `format` option. Following are the supported number formats:
 
 * number
 * decimal

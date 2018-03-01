@@ -9,16 +9,16 @@ documentation: ug
 
 # Exporting
 
-The PivotChart control can be exported to following file formats:
+The pivot chart control can be exported to following file formats:
 
-* Excel
-* Word
+* Microsoft Excel
+* Microsoft Word
 * PDF
 * Image
 
 To perform the exporting operation, the **"Syncfusion.EJ.Export"** dependency library should be referred in the application.
 
-The PivotChart control can be exported with the help of **“exportPivotChart”** method by passing method name and file name as parameters. Please refer the below code snippet.
+The pivot chart control can be exported with the help of **“exportPivotChart”** method by passing the method name and the file name as parameters. Refer to the following code snippet:
 
 {% highlight CSHTML %}
 
@@ -93,7 +93,7 @@ The PivotChart control can be exported with the help of **“exportPivotChart”
 
 {% endhighlight %}
 
-The **"Syncfusion.EJ.Export"** namespace should be imported and the following method should be added in the MVC controller file of the application.
+The **"Syncfusion.EJ.Export"** namespace should be imported and the following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -119,9 +119,9 @@ public ActionResult ExportToExcel()
 
 {% endhighlight %}
 
-## Excel Export
+## Excel export
 
-PivotChart allows you to export its content to Excel document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToExcel"** method by passing the file name as parameter.
+The pivot chart allows you to export its content to an Excel document for future archival, references, and analysis purposes. This can be achieved with the help of **"ExportToExcel"** method by passing the file name as parameter.
 
 {% highlight js %}
 
@@ -139,7 +139,7 @@ PivotChart allows you to export its content to Excel document for future archiva
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -155,9 +155,9 @@ public ActionResult ExportToExcel()
 
 {% endhighlight %}
 
-## Word Export
+## Word export
 
-PivotChart allows you to export its content to Word document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToWord"** method by passing the file name as parameter.
+The pivot chart allows you to export its content to a Word document for future archival, references, and analysis purposes. This can be achieved with the help of **"ExportToWord"** method by passing the file name as parameter.
 
 {% highlight js %}
 
@@ -177,7 +177,7 @@ PivotChart allows you to export its content to Word document for future archival
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -193,9 +193,9 @@ public ActionResult ExportToWord()
 
 {% endhighlight %}
 
-## PDF Export
+## PDF export
 
-PivotChart allows you to export its content to PDF document for future archival, references and analysis purposes. This can be achieved with the help of **"ExportToPDF"** method by passing the file name as parameter.
+The pivot chart allows you to export its content to a PDF document for future archival, references, and analysis purposes. This can be achieved with the help of **"ExportToPDF"** method by passing the file name as parameter.
 
 {% highlight js %}
 
@@ -215,7 +215,7 @@ PivotChart allows you to export its content to PDF document for future archival,
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -231,9 +231,9 @@ public ActionResult ExportToPDF()
 
 {% endhighlight %}
 
-## Image Export
+## Image export
 
-PivotChart allows you to export its content to image format for future archival, references and analysis purposes. The following image formats are supported by PivotChart:
+The pivot chart allows you to export its content to an image format for future archival, references, and analysis purposes. The following image formats are supported by the pivot chart:
 
 * PNG
 * EMF
@@ -270,7 +270,7 @@ This can be achieved with the help of **"ExportToImage"** method by passing the 
 
 {% endhighlight %}
 
-The following method should be added in the MVC controller file of the application.
+The following method should be added in the MVC controller file of the application:
 
 {% highlight c# %}
 
@@ -289,18 +289,18 @@ public void ExportToImage()
 
 {% endhighlight %}
 
-The below screenshot shows the PivotChart control exported to Excel document.
+The following screenshot shows the pivot chart control exported to an Excel document:
 
 ![Export-Excel](Export_images/Export_ExcelClient.png)
 
-The below screenshot shows the PivotChart control exported to PDF document.
+The following screenshot shows the pivot chart control exported to a PDF document:
 
 ![Export-PDF](Export_images/Export_PDFClient.png)
 
-The below screenshot shows the PivotChart control exported to Word document.
+The following screenshot shows the pivot chart control exported to a Word document:
 
 ![Export-Word](Export_images/Export_WordClient.png)
 
-The below screenshot shows the PivotChart control exported to PNG format.
+The following screenshot shows the pivot chart control exported to a PNG format:
 
 ![Export-Image](Export_images/Export_PNGClient.png)

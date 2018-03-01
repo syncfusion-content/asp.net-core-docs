@@ -7,15 +7,15 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
 
 Refer the [Getting Started](/aspnet-core/getting-started) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
-Ensure once whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the PivotGrid control gets installed and loads into the mentioned location (**wwwroot -> lib**) within your project.
+Ensure whether all the necessary dependency packages are included within the *bower.json* file as mentioned [here](/aspnet-core/getting-started#configure-syncfusion-components-in-aspnet-core-application), so that the required scripts and CSS to render the pivot grid control will be installed and loaded into the mentioned location (**wwwroot -> lib**) within your project.
 
-Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot**  added within the *project.json* file.
+Also, check whether the assembly dependency package **Syncfusion.EJ.Pivot**  is added within the *project.json* file.
 
-Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
+Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page from the **wwwroot -> lib -> syncfusion-javascript** folder.
 
 {% highlight cshtml %}
 
@@ -43,7 +43,7 @@ Now, refer the necessary scripts and CSS files into your *_Layout.cshtml* page f
 
 {% endhighlight %}
 
-It is necessary to define the following namespace within the *_viewImports.cshtml* page in order to make use of the PivotGrid control with the tag helper support.
+It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot grid control with the tag helper support.
  
 {% highlight cshtml %}
  
@@ -53,15 +53,15 @@ It is necessary to define the following namespace within the *_viewImports.cshtm
     
 {% endhighlight %}
 
-N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
+N> Script manager should be defined at the bottom of the *_Layout.cshtml* page.
 
 ## Relational
 
-This section covers the information that you need to know to populate a simple PivotGrid with Relational data source.
+This section covers the information required to populate a simple pivot grid with the relational data source.
 
-### Initialize PivotGrid
+### Initialize pivot grid
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot grid, empty the contents of the Index.cshtml file under Views > Home folder and add the following codes:
 
 {% highlight cshtml %}
 
@@ -69,9 +69,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotGrid With Data
+### Populate pivot grid with data
 
-Let us now see how to populate the PivotGrid control using a sample JSON data as shown below. 
+This section illustrates how to populate the pivot grid control by using a sample JSON data as shown below: 
 
 {% highlight cshtml %}
 
@@ -110,7 +110,7 @@ function onload(args) {
 
 {% endhighlight %}
 
-The JSON data is set to the **"data"** property present inside the **"e-data-source"** object. **"e-data-source"** object allows us to set both datasource as well as the fields that needs to be displayed in the row, column, value and filter section of the PivotGrid control.
+The JSON data is set to the **"data"** property present in the **"e-data-source"** object. The **"e-data-source"** object allows you to set both data source and fields that should be displayed in the row, column, value, and filter section of the pivot grid control.
   
 {% highlight cshtml %}
   
@@ -130,13 +130,13 @@ The JSON data is set to the **"data"** property present inside the **"e-data-sou
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with "Country" field in Row, "Product" field in Column and "Amount" field in Value section.
+The above code will generate a simple pivot grid with "Country" field in the row, "Product" field in column, and "Amount" field in the value section.
 
 ![](Getting-Started_images/purejs.png)
 
-### Apply Sorting
+### Apply sorting
 
-You can sort a field either to ascending or descending order using the "sort-order" property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+You can sort a field to an ascending or descending order by using the `sort-order` property. Sorting is applicable only for row and column fields. By default, fields are arranged in the ascending order.
  
 {% highlight cshtml %}
 
@@ -158,11 +158,11 @@ You can sort a field either to ascending or descending order using the "sort-ord
 
 ![](Getting-Started_images/purejssorting.png)
 
-### Sort Row/Column by Date
+### Sort row/column by date
 
-You can sort a field either in ascending or descending order according for date type by using the **sortOrder** property. Sorting is applicable only for Row and Column fields. By default, fields are arranged in ascending order.
+You can sort a field in ascending or descending order according to date type by using the **sort-order** property. Sorting is applicable only for the row and column fields. By default, fields are arranged in the ascending order.
 
-N> To apply sorting by date, you need to specify the `format` and `formatString` in the field.
+N> To apply sorting by date, you need to specify the `format` and `format-string` in the field.
 
 {% highlight cshtml %}
 
@@ -200,9 +200,9 @@ function onload(args) {
 
 ![](Getting-Started_images/sortbydate.png)
 
-### Apply Summary Types
+### Apply summary types
 
-Allow us to specify the required summary type that PivotGrid should use in its summary cells. **"Sum"** is the default summary type. Following are the summary types that are supported:
+Allow you to specify the required summary type to be used in summary cells of the pivot grid. **"Sum"** is the default summary type. Following are the summary types that are supported:
 
 * Sum
 * Average
@@ -233,11 +233,11 @@ Allow us to specify the required summary type that PivotGrid should use in its s
 
 ## OLAP
 
-This section covers the information that you need to know to populate a simple PivotGrid with OLAP data source.
+This section covers the information required to populate a simple pivot grid with the OLAP data source.
 
-### Initialize PivotGrid
+### Initialize pivot grid
 
-Before initializing, empty the contents of Index.cshtml file under Views > Home folder and add the following codes.
+Before initializing the pivot grid, empty the contents of Index.cshtml file under Views > Home folder and add the following codes:
 
 {% highlight cshtml %}
 
@@ -245,9 +245,9 @@ Before initializing, empty the contents of Index.cshtml file under Views > Home 
 
 {% endhighlight %}
 
-### Populate PivotGrid With DataSource
+### Populate pivot grid with data source
 
-Initializes the OLAP datasource for PivotGrid control as shown below.
+Initializes the OLAP data source for pivot grid control as shown below:
 
 {% highlight cshtml %}
 
@@ -271,6 +271,6 @@ Initializes the OLAP datasource for PivotGrid control as shown below.
 
 {% endhighlight %}
 
-The above code will generate a simple PivotGrid with "Fiscal" field in Row, "Customer Geography" field in Column and "Internet Sales Amount" field in Value section.
+The above code will generate a simple pivot grid with "Fiscal" field in the row, "Customer Geography" field in the column, and "Internet Sales Amount" field in the value section.
 
 ![](Getting-Started_images/Olap.png)

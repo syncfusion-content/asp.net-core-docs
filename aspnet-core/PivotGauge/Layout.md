@@ -9,9 +9,9 @@ documentation: ug
 
 # Layout 
 
-## Row-wise Layout
+## Row-wise layout
 
-Gauges can be arranged in specified number of rows by using the `RowsCount` property.
+Gauges can be arranged in specified number of rows by using the `rows-count` property.
 
 {% highlight cshtml %}
 
@@ -21,9 +21,9 @@ Gauges can be arranged in specified number of rows by using the `RowsCount` prop
 
 ![](Layout_images/RowBased.png) 
 
-## Column-wise Layout
+## Column-wise layout
 
-Gauges can be arranged in specified number of columns by using the `ColumnsCount` property.
+Gauges can be arranged in specified number of columns by using the `columns-count` property.
 
 {% highlight cshtml %}
 

@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Sub Total Hiding
+# Sub total hiding
 
-N> This feature is applicable only for Relational data source.
+N> This feature is applicable only for the relational data source.
 
-You can hide the **Sub Total** for respective fields in rows and columns by setting the property `show-sub-total` to `false`.
+You can hide the **Sub Total** for respective fields in rows and columns by setting the `show-sub-total` property to `false`.
 
 ## Client Mode
 

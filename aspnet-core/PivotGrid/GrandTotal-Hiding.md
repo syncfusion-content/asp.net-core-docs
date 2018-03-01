@@ -7,17 +7,17 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Grand Total Hiding
+# Grand total hiding
 
-Grand Total Hiding can be classified into three categories.
+Grand total hiding can be classified into three categories as follows:
 
-* Row Grand Total Hiding
-* Column Grand Total Hiding
+* Row grand total hiding
+* Column grand total hiding
 * Both
 
-## Row Grand Total Hiding
+## Row grand total hiding
 
-You can hide the **Grand Total** in row alone by setting the property `enable-row-grand-total` to `false`.
+You can hide the **Grand Total** in row alone by setting the `enable-row-grand-total` property to `false`.
 
 {% highlight CSHTML %}
 
@@ -27,9 +27,9 @@ You can hide the **Grand Total** in row alone by setting the property `enable-ro
 
 ![](GrandTotal-Hiding_images/enableRowGrandTotal.png)
 
-## Column Grand Total Hiding
+## Column grand total hiding
 
-You can hide the **Grand Total** in column alone by setting the property `enable-column-grand-total` to `false`.
+You can hide the **Grand Total** in column alone by setting the `enable-column-grand-total` property to `false`.
 
 {% highlight CSHTML %}
 
@@ -41,7 +41,7 @@ You can hide the **Grand Total** in column alone by setting the property `enable
 
 ## Both
 
-You can hide the **Grand Total** in both row and column by setting the property `enable-grand-total` to `false`.
+You can hide the **Grand Total** in both row and column by setting the `enable-grand-total` property to `false`.
 
 {% highlight CSHTML %}
 
