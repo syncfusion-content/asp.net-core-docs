@@ -26,7 +26,6 @@ You should add the following packages for the report viewer:
 **Syncfusion.DocIO.NETStandard**: Supports for exporting the report to a Word.**Syncfusion.XlsIO.NETStandard**: Supports for exporting the report to an Excel.
 **Syncfusion.OfficeChart.NETStandard**: It is a base library of the **Syncfusion.XlsIO.NETStandard** package.
 **System.Data.SqlClient**: Renders the report to get the data from SQL Server if required. The package version should be higher of 4.1.0 and this is an optional package for the report viewer.
-**Newtonsoft.Json**: Serializes and deserializes the data for report viewer client. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.
 
 Find the package details in the following table, which is to be chosen based on the application target framework:
 
