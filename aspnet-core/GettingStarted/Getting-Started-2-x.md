@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
   
-## ASP.NET Core 2.0 Application Using Visual Studio 2017 version 15.3+
+## ASP.NET Core 2.x Application Using Visual Studio 2017 version 15.3+
 
 ### System Requirements:
 
@@ -448,7 +448,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
 
   ![](getting-started_images/getting-started_image7.png)
 
-  N> **bower.json** file has been deprecated from the latest version of DotNetCore 2.0. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into wwwroot folder.   
+  N> **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into wwwroot folder.   
 
 * Make sure latest version of npm and Node.js has installed in your machine. To check the npm and node version installed in your machine type the following commands in the terminal window.
 
@@ -459,6 +459,18 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
     npm -v
 
 {% endhighlight %} 
+
+* Open the global.json file. Remove the content in that file and include the installed dotnet *2.x* version as depicted in the following code.
+
+{% highlight text %}
+
+    {
+        "sdk": {
+            "version": "2.1.4"
+        }
+    }
+
+{% endhighlight %}
 
 * Type the following command in the terminal window to create **package.json** file in your application. **package.json** will contain the project dependency packages and its version information.
 
