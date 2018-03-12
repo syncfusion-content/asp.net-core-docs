@@ -221,7 +221,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
   ![](getting-started-images-linux/getting_started_2_5.png)
 
-> **bower.json** file has been deprecated from the latest version of DotNetCore 2.0. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into wwwroot folder.   
+> **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into wwwroot folder.   
 
 * Make sure latest version of npm and Node.js has installed in your machine. To check the npm and node version installed in your machine type the following commands in the terminal window.
 
@@ -233,7 +233,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %} 
 
-* Open the global.json file. Remove the content in that file and include the following dependencies.
+* Open the global.json file. Remove the content in that file and include the installed dotnet version as depicted in the following code.
 
 {% highlight text %}
 
