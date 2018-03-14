@@ -16,7 +16,7 @@ N> The report viewer control depends on server-side processing for report render
 ## Environment setup
 Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings)to confgure the Syncfusion NuGet source.
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
 
 ### Styles and scripts
 
@@ -168,7 +168,7 @@ Purpose
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
-<td>Serializes and deserializes the data for report viewer client. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
+<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
