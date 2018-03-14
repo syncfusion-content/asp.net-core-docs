@@ -15,7 +15,7 @@ Report writer is a class library to export the RDL/RDLC report with popular file
 ## Environment setup
 Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings)to confgure the Syncfusion NuGet source.
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
 
 ### References
 You should add the following packages for the report viewer:
@@ -117,7 +117,7 @@ Syncfusion.OfficeChart.NETStandard12
 
 ## Generate the PDF file
 
-We have to use `Save` method in `ReportWriter` to generate the PDF document along with information of report stream, it will return the generated file as `Stream`. Report writer supports to generate the files with formates of PDF, Word and Excel. Here, the sample codes explained to genertare the PDF. So, `WriterFormat` is used as PDF.
+We have to use `Save` method in `ReportWriter` to generate the PDF document along with information of report stream, it will return the generated file as `Stream`. Report writer supports to generate the files with formates of PDF, Word and Excel. Here, the sample codes explained to generate the PDF. So, `WriterFormat` is used as PDF.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -170,9 +170,9 @@ This is an example Home page to invoke the WebAPI from client for the above samp
     }
 {% endhighlight %}
 
-## Paramaters for Report
+## Parameters for Report 
 
-`SetParameters` methods can be used with Report writer to generate the file format report based on parameters. The below sample code explains passing the paramater based on the information received from client.
+`SetParameters` methods can be used with Report writer to generate the file format report based on parameters. The below sample code explains passing the parameter based on the information received from client.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -234,4 +234,4 @@ This is an example page to invoke the WebAPI from client for the above sample co
     }
 {% endhighlight %}    
 
-N> If you like to get the invoice sample report to go though the documentaion with explained code snippets then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> If you like to get the invoice sample report to go though the documentation with explained code snippets then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
