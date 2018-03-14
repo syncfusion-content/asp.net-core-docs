@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Report Writer is a class library to export the RDL/RDLC report with popular file formats, PDF, Word and Excel without previewing the Report in web page. This section describes how to export the RDL report as PDF in ASP.NET Core application using ReportWriter.
+Report writer is a class library to export the RDL/RDLC report with popular file formats like PDF, Word and Excel without previewing the report in web page. This section describes how to export the RDL report as PDF in ASP.NET Core application using `ReportWriter`.
 
 
 ## Environment setup
@@ -117,7 +117,7 @@ Syncfusion.OfficeChart.NETStandard12
 
 ## Generate the PDF file
 
-We have to use Save method in ReportWriter to generate the PDF document along with information of report stream, it will return the generated file as Stream. ReportWriter supports to generate the files with formates of PDF, Word and Excel. Here, the sample codes explained to genertare the PDF. So, WriterFormat used as PDF.
+We have to use `Save` method in `ReportWriter` to generate the PDF document along with information of report stream, it will return the generated file as `Stream`. Report writer supports to generate the files with formates of PDF, Word and Excel. Here, the sample codes explained to genertare the PDF. So, `WriterFormat` is used as PDF.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -131,7 +131,7 @@ public class HomeController : Controller
             _hostingEnvironment = hostingEnvironment;
         }
 
-[HttpPost]
+        [HttpPost]
         public IActionResult Pdf()
         {
 
@@ -160,19 +160,19 @@ N> You cannot load the application report with path information in ASP.NET Core.
 This is an example Home page to invoke the WebAPI from client for the above sample codes,
 
 {% highlight CSHTML %}
-@{Html.BeginForm("Pdf", "Home", FormMethod.Post);
+    @{Html.BeginForm("Pdf", "Home", FormMethod.Post);
     {
-<div>
-    <input type="submit" value="Generate PDF" style="width: 150px;" />
-</div>
-        }
+        <div>
+            <input type="submit" value="Generate PDF" style="width: 150px;" />
+        </div>
+    }
         Html.EndForm();
     }
-
+{% endhighlight %}
 
 ## Paramaters for Report
 
-SetParameters methods can be used with ReportWriter to generate the file format report based on parameters. The below sample code explains passing the paramater based on the information received from client.
+`SetParameters` methods can be used with Report writer to generate the file format report based on parameters. The below sample code explains passing the paramater based on the information received from client.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -186,7 +186,7 @@ public class HomeController : Controller
             _hostingEnvironment = hostingEnvironment;
         }
 
-[HttpPost]
+        [HttpPost]
         public IActionResult Pdf()
         {
 
@@ -223,15 +223,15 @@ public class HomeController : Controller
 This is an example page to invoke the WebAPI from client for the above sample codes,
 
 {% highlight CSHTML %}
-@{Html.BeginForm("Pdf", "Home", FormMethod.Post);
+    @{Html.BeginForm("Pdf", "Home", FormMethod.Post);
     {
-<div>
-    <input name="invoiceId" value="10255" style="width: 150px;" />
-    <input type="submit" value="Generate PDF" style="width: 150px;" />
-
-</div>
-        }
+        <div>
+            <input name="invoiceId" value="10255" style="width: 150px;" />
+            <input type="submit" value="Generate PDF" style="width: 150px;" />
+        </div>
+    }
         Html.EndForm();
     }
+{% endhighlight %}    
 
 N> If you like to get the invoice sample report to go though the documentaion with explained code snippets then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
