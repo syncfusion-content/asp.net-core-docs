@@ -30,11 +30,11 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Report.NETStandard</td>
-<td>It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core** package.</td>
+<td>It contains the `ReportWriter` class library to generate file format reports using RDL and RDLC report.</td>
 </tr>
 <tr>
 <td>Syncfusion.Compression.NETStandard</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages **Syncfusion.Pdf.NETStandard** , **Syncfusion.DocIO.NETStandard** and **Syncfusion.XlsIO.NETStandard**. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages `Syncfusion.Pdf.NETStandard` , `Syncfusion.DocIO.NETStandard` and `Syncfusion.XlsIO.NETStandard`. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.NETStandard</td>
@@ -50,7 +50,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.NETStandard</td>
-<td>It is a base library of the **Syncfusion.XlsIO.NETStandard** package.</td>
+<td>It is a base library of the `Syncfusion.XlsIO.NETStandard` package.</td>
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
@@ -155,9 +155,9 @@ public class HomeController : Controller
 
 {% endhighlight %}
 
-N> You cannot load the application report with path information in ASP.NET Core. So, we should load the report with report stream as like an above example.
+N> You cannot load the application report with path information in ASP.NET Core. So, we should load the report as `stream` like an example provided above in `Pdf` method.
 
-This is an example Home page to invoke the WebAPI from client for the above sample codes,
+This is an example Home page to invoke the Web API from client for the above sample codes,
 
 {% highlight CSHTML %}
     @{Html.BeginForm("Pdf", "Home", FormMethod.Post);
@@ -172,7 +172,7 @@ This is an example Home page to invoke the WebAPI from client for the above samp
 
 ## Parameters for Report 
 
-`SetParameters` methods can be used with Report writer to generate the file format report based on parameters. The below sample code explains passing the parameter based on the information received from client.
+`SetParameters` methods can be used with report writer to generate the file format report based on parameters. The below sample code explains passing the parameter based on the information received from client.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -220,7 +220,7 @@ public class HomeController : Controller
 
 {% endhighlight %}
 
-This is an example page to invoke the WebAPI from client for the above sample codes,
+This is an example page to invoke the Web API from client for the above sample codes,
 
 {% highlight CSHTML %}
     @{Html.BeginForm("Pdf", "Home", FormMethod.Post);
@@ -234,4 +234,4 @@ This is an example page to invoke the WebAPI from client for the above sample co
     }
 {% endhighlight %}    
 
-N> If you like to get the invoice sample report to go though the documentation with explained code snippets then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).

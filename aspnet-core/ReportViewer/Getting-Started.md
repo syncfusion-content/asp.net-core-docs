@@ -116,7 +116,7 @@ Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page 
 </html>
 {% endhighlight %}
 
-N> *ej-script-manager* must be defined at the bottom of the *_Layout.cshtml* page.
+N> `ej-script-manager` must be defined at the bottom of the *_Layout.cshtml* page.
 
 ### References
 You should add the following packages for the report viewer:
@@ -144,11 +144,11 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Report.NETStandard</td>
-<td>It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core** package.</td>
+<td>It is a base library for the `Syncfusion.EJ.ReportViewer.ASPNET.Core` package.</td>
 </tr>
 <tr>
 <td>Syncfusion.Compression.NETStandard</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages **Syncfusion.Pdf.NETStandard** , **Syncfusion.DocIO.NETStandard** and **Syncfusion.XlsIO.NETStandard**. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages `Syncfusion.Pdf.NETStandard` , `Syncfusion.DocIO.NETStandard` and `Syncfusion.XlsIO.NETStandard`. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.NETStandard</td>
@@ -164,7 +164,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.NETStandard</td>
-<td>It is a base library of the **Syncfusion.XlsIO.NETStandard** package.</td>
+<td>It is a base library of the `Syncfusion.XlsIO.NETStandard` package.</td>
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
@@ -269,7 +269,7 @@ N> The Web API service should be mapped with the report viewer report-service-ur
 
 
 ## Build WebApi service
-You should inherit the IReportController interface to build the report viewer compatible Web API, and the ReportHelper should be used with IReportController interface implemented methods. The ReportHelper will perform the server-side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
+You should inherit the `IReportController` interface to build the report viewer compatible Web API, and the `ReportHelper` should be used with `IReportController` interface implemented methods. The `ReportHelper` will perform the server-side related process and will return the required data for the report viewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
 
 {% highlight C# %}
 
@@ -337,7 +337,7 @@ namespace ReportViewerDemo.Controllers
 
 {% endhighlight %}
 
-N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report with report stream as like an example provided above in OnInitReportOptions. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
 
 ## Run the application
 
