@@ -170,7 +170,7 @@ This is an example Home page to invoke the WebAPI from client for the above samp
     }
 {% endhighlight %}
 
-## Paramaters for Report
+## Paramaters for Report 
 
 `SetParameters` methods can be used with Report writer to generate the file format report based on parameters. The below sample code explains passing the paramater based on the information received from client.
 
