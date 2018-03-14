@@ -14,18 +14,18 @@ documentation: ug
 
 The following procedure illustrates how to install Essential Studio ASP.NET Core platform.
 
-1. Double-click the Syncfusion Essential Studio Platform Setup file. The Setup Wizard opens and extracts the package automatically.
+1. Double-click the Syncfusion ASP.NET Core platform Setup file. The Setup Wizard opens and extracts the package automatically.
 
    ![](Platform_images/Step-by-Step-Installation_img1.png)
 
-   N> The Setup wizard extracts the syncfusionessentialstudio_(version).exe dialog, displaying the unzip operation of the package.
+   N> The Setup wizard extracts the syncfusionessentialaspnetcore_(version).exe dialog, displaying the unzip operation of the package.
 
 2. You are provided with two options to unlock the Syncfusion setup.
 
    
-   **Login To Install**   
+   a) *Login To Install*
    
-   **Use Unlock Key**
+   b) *Use Unlock Key*
    
    N> While installing the Syncfusion setup, by default **Login To Install** screen will be displayed. You can provide the email ID and password registered with Syncfusion for unlocking the Essential Studio setup and your license will be configured. For unlocking the setup with License Key, you can select the **Use Unlock Key** option in the Installer and you will be prompt to enter the license key.
    
@@ -56,9 +56,6 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
    N> To install in the displayed default location, click Install. You can also browse and choose a location by clicking Browse. When you have already installed any other same version‘s setup, you cannot change the install and samples path.
 
    * Select the **Install Syncfusion Samples** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
-   * Select the **Register Syncfusion Assemblies in GAC** check box to install the latest Syncfusion assemblies in GAC, or clear this check box when you do not want to install the latest assemblies in GAC.
-   * Select the **Uninstall the previously installed Syncfusion assemblies from GAC** check box to uninstall the previously installed Syncfusion assemblies from GAC, or clear this check box to maintain the previously installed assemblies.
-   * Select the **Configure Syncfusion controls in Visual Studio Toolbox** check box to configure the Syncfusion controls in the Visual Studio toolbox, or clear this check box when you do not want to configure the Syncfusion controls in the Visual Studio toolbox during setup installation. Note that you must also select the Register Syncfusion assemblies in GAC check box when you select this check box.
    * Select the **Install Syncfusion Extensions** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
 
 
@@ -75,7 +72,7 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 6. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
 
 
-7. Click Finish. Essential Studio is installed in your system.
+7. Click Finish. Syncfusion ASP.NET Core is installed in your system and the Syncfusion Essential Studio [Syncfusion Control Panel](http://help.syncfusion.com/common/essential-studio/utilities#dashboard ) is launched automatically.
 
 ## Installing in silent mode
 
@@ -86,43 +83,43 @@ The Syncfusion Essential Studio Platform Installer supports installing/uninstall
 Follow the steps below to install through Command Line in Silent mode.
 
 1. Double-click the Syncfusion Essential Studio platform Setup file. The Setup Wizard opens and extracts the package automatically.
-2. The SyncfusionEssentialStudio(platform)_(version).exe file is extracted into the Temp folder.
-3. Run %temp%. The Temp folder will open. The SyncfusionEssentialStudio(platform)_(version).exe file is available in one of the folders.
-4. Copy the SyncfusionEssentialStudio_(version).exe file in local drive. Example: D:\temp
+2. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
+3. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
+4. Copy the extracted syncfusionessentialaspnetcore_(version).exe file in local drive.
 5. Cancel the Wizard.
 6. Open the Command Prompt in administrator mode and pass the following arguments.
 
    
-   **Arguments:** “Setup file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
+   **Arguments:** “Copied setup file path\syncfusionessentialaspnetcore_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}]
 
 
    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\SyncfusionEssentialStudio(platform)_13.2.0.30.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+   **Example:** “D:\Temp\syncfusionessentialaspnetcore_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true
 
 	
 7. Setup is installed.
 
-   N> x.x.x.x needs to be replaced with the Essential Studio version installed in your machine and the Product Unlock Key needs to be replaced with the Unlock Key for that version. The platform should be replaced with ASP.NET, ASP.NET MVC, ASP.NET MVC Classic, Silverlight, Windows Forms, Windows Phone, WinRT, WPF, JavaScript, or LightSwitch.
+   N> x.x.x.x needs to be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
 
 Syncfusion Essential Studio supports uninstalling the setup through Command Line in Silent mode. The following steps illustrate this. 
 
-1. When you do not have the extracted setup (SyncfusionEssentialStudio(platform)_(version).exe) then follow the steps from 2 to 7.
+1. When you do not have the extracted setup (syncfusionessentialaspnetcore_(version).exe) then follow the steps from 2 to 7.
 2. Double-click the Syncfusion Essential Studio platform Setup file. The Setup Wizard opens and extracts the package automatically.
-3. The SyncfusionEssentialStudio(platform)_(version).exe file is extracted into the Temp folder.
-4. Run %temp%. The Temp folder will open. The SyncfusionEssentialStudio(platform)_(version).exe file is available in one of the folders.
-5. Copy the SyncfusionEssentialStudio(platform)_(version).exe file in local drive. Example: D:\temp
+3. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
+4. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
+5. Copy the syncfusionessentialaspnetcore_(version).exe file in local drive. 
 6. Cancel the Wizard.
 7. Open the Command Prompt in administrator mode and pass the following arguments.
    
-   **Arguments:** “Setup file path\SyncfusionEssentialStudio(platform)_(version).exe” /uninstall silent 
+   **Arguments:** “Copied setup file path\syncfusionessentialaspnetcore_(version).exe” /uninstall silent 
 
-   **Example:** “D:\Temp\SyncfusionEssentialStudio(platform)_13.2.0.30.exe" /uninstall silent
+   **Example:** “D:\Temp\syncfusionessentialaspnetcore_x.x.x.x.exe" /uninstall silent
 
 
 8. Setup is uninstalled.
 
-   N> x.x.x.x needs to be replaced with the Essential Studio version installed in your machine and the Product Unlock Key needs to be replaced with the unlock key for that version. Platform should be replaced with corresponding platform that needs to be uninstalled.
+   N> x.x.x.x needs to be replaced with the Essential Studio version installed in your machine.

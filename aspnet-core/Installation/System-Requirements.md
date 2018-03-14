@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements
 
-The following topic describes the system requirements required by Syncfusion ASP.NET Core platform
+The following topic describes the system requirements required by Syncfusion ASP.NET Core platform.
 
 ### Supported Operating Systems
 
@@ -28,3 +28,5 @@ Syncfusion ASP.NET Core platform can be installed on any of the following operat
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
+
+### Development Environment
