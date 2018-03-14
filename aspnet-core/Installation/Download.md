@@ -18,7 +18,7 @@ To download the Syncfusion ASP.NET Core platform, follow the below steps.
 
    ![](Platform_images/Download_img1.png)
    
-3. The next page allows you to download the exe, zip and pkg files.
+3. The next page allows you to download the exe, zip and pkg files. Click on the required file type and download it.  
 
    ![](Platform_images/Download_img2.png)
 
