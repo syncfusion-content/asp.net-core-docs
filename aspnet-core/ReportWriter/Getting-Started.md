@@ -9,13 +9,13 @@ documentation: ug
 
 # Overview
 
-Report writer is a class library to export the RDL/RDLC report with popular file formats like PDF, Word and Excel without previewing the report in web page. This section describes how to export the RDL report as PDF in ASP.NET Core application using `ReportWriter`.
+The report writer is a class library that is used to export the RDL/RDLC report with popular file formats like PDF, Microsoft Word, and Microsoft Excel without previewing the report in web page. This section describes how to export the RDL report to PDF in ASP.NET Core application using the `ReportWriter`.
 
 
 ## Environment setup
-Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
+Refer to the [installation](/aspnet-core/installation) page to know more about the basic steps required to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation. If you missed to explore, refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
 
 ### References
 You should add the following packages for the report viewer:
@@ -117,7 +117,7 @@ Syncfusion.OfficeChart.NETStandard12
 
 ## Generate the PDF file
 
-We have to use `Save` method in `ReportWriter` to generate the PDF document along with information of report stream, it will return the generated file as `Stream`. Report writer supports to generate the files with formates of PDF, Word and Excel. Here, the sample codes explained to generate the PDF. So, `WriterFormat` is used as PDF.
+You should use the `Save` method in `ReportWriter` to generate the PDF document along with information of the report stream, it will return the generated file as `Stream`. The report writer supports generating the files with formats of PDF, Word, and Excel. Here, the sample codes are explained to generate the PDF and the `WriterFormat` is used as PDF.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -155,9 +155,9 @@ public class HomeController : Controller
 
 {% endhighlight %}
 
-N> You cannot load the application report with path information in ASP.NET Core. So, we should load the report as `stream` like an example provided above in `Pdf` method.
+N> You cannot load the application report with path information in the ASP.NET Core. So, you should load the report as `stream` like an example provided above in the `Pdf` method.
 
-This is an example Home page to invoke the Web API from client for the above sample codes,
+This is an example home page to invoke the Web API from client for the above sample codes:
 
 {% highlight CSHTML %}
     @{Html.BeginForm("Pdf", "Home", FormMethod.Post);
@@ -170,9 +170,9 @@ This is an example Home page to invoke the Web API from client for the above sam
     }
 {% endhighlight %}
 
-## Parameters for Report 
+## Parameters for report 
 
-`SetParameters` methods can be used with report writer to generate the file format report based on parameters. The below sample code explains passing the parameter based on the information received from client.
+`SetParameters` methods can be used with report writer to generate the file format report based on parameters. The following sample code explains passing the parameter based on the information received from the client.
 
 {% highlight C# %}
 public class HomeController : Controller
@@ -220,7 +220,7 @@ public class HomeController : Controller
 
 {% endhighlight %}
 
-This is an example page to invoke the Web API from client for the above sample codes,
+This is an example page to invoke the Web API from client for the above sample codes.
 
 {% highlight CSHTML %}
     @{Html.BeginForm("Pdf", "Home", FormMethod.Post);
@@ -234,4 +234,4 @@ This is an example page to invoke the Web API from client for the above sample c
     }
 {% endhighlight %}    
 
-N> If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> The invoice sample report can be obtained from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
