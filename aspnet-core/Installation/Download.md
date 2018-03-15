@@ -18,7 +18,7 @@ To download the Syncfusion ASP.NET Core platform, follow the below steps.
    
 2. For evaluation users, download [here](https://www.syncfusion.com/downloads) .
 
-   ![](Platform_images/Download_img1.png)
+   ![](Platform_images/Download_img2.png)
    
 3. For Mac machines, Syncfusion provides separate installer (.pkg) which can be downloaded from the same downloads section.
 

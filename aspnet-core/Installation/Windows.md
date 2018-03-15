@@ -40,9 +40,7 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 
    **Use Unlock Key**
 
-   ![](Platform_images/Step-by-Step-Installation_img3.png)
-
-   N> To install using key, provide the unlock key.
+   ![](Platform_images/Step-by-Step-Installation_img3.png)   
 
 
 4. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
@@ -65,15 +63,15 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 
     ![](Platform_images/Step-by-Step-Installation_img5.png)
 
-     N> The Completed screen is displayed once the package is installed.
+7. The Completed screen is displayed once the ASP.NET Core platform is installed.
 
     ![](Platform_images/Step-by-Step-Installation_img6.png)
 
 
-7. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
+8. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
 
 
-8. Click Finish. Syncfusion ASP.NET Core is installed in your system and the Syncfusion Essential Studio [Syncfusion Control Panel](http://help.syncfusion.com/common/essential-studio/utilities#dashboard ) is launched automatically.
+9. Click Finish. Syncfusion ASP.NET Core platform is installed in your system and the Syncfusion Essential Studio [Syncfusion Control Panel](http://help.syncfusion.com/common/essential-studio/utilities#dashboard ) is launched automatically.
 
 ## Installing in silent mode
 
@@ -83,7 +81,7 @@ The Syncfusion Essential Studio Platform Installer supports installing/uninstall
 
 Follow the steps below to install through Command Line in Silent mode.
 
-1. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically.
+1. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically. 
 2. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
 3. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
 4. Copy the extracted syncfusionessentialaspnetcore_(version).exe file in local drive.
