@@ -1,4 +1,4 @@
----
+﻿---
 title: Customization | FileExplorer | ASP.NET Core | Syncfusion
 description: Customization support in FileExplorer
 platform: Asp.Net Core
@@ -118,7 +118,7 @@ In the view page, add file explorer helper and hides the footer as shown in the 
     
 ## Customize the Root Folder name in FileExplorer
 
-You can set the alias name for root folder name in FileExplorer by using rootFolderName API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code block for set the alias name for root folder name in FileExplorer.  
+You can set the alias name to the root folder of FileExplorer by using `rootFolderName` API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code to set the alias name for the root folder of FileExplorer.
 
 {% highlight CSHTML %}
 <ej-file-explorer id="root" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")" root-folder-name="This PC">
