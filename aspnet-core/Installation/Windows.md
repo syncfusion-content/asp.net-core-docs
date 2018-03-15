@@ -2,7 +2,7 @@
 layout: post
 title: Installation and Deployment process for Syncfusion Essential Studio ASP.NET Core products
 description: Learn how to install and deploy the Syncfusion ASP.NET Core component
-platform: ASP.NET
+platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
 
@@ -14,40 +14,41 @@ documentation: ug
 
 The following procedure illustrates how to install Essential Studio ASP.NET Core platform.
 
-1. Double-click the Syncfusion ASP.NET Core platform Setup file. The Setup Wizard opens and extracts the package automatically.
+1. Close all the running Visual Studio instances.
+
+2. Double-click the Syncfusion ASP.NET Core platform Setup file. The Setup Wizard opens and extracts the package automatically.
 
    ![](Platform_images/Step-by-Step-Installation_img1.png)
 
    N> The Setup wizard extracts the syncfusionessentialaspnetcore_(version).exe dialog, displaying the unzip operation of the package.
 
-2. You are provided with two options to unlock the Syncfusion setup.
+3. You have two options to unlock the Syncfusion setup:
 
    
    a) *Login To Install*
    
    b) *Use Unlock Key*
    
-   N> While installing the Syncfusion setup, by default **Login To Install** screen will be displayed. You can provide the email ID and password registered with Syncfusion for unlocking the Essential Studio setup and your license will be configured. For unlocking the setup with License Key, you can select the **Use Unlock Key** option in the Installer and you will be prompt to enter the license key.
    
    
    **Login To Install**
 
    ![](Platform_images/Step-by-Step-Installation_img2.png)
 
-   N> You should enter your Syncfusion Direct-Trac login credentials. If you don't have Syncfusion Direct-Trac login credentials, then you can click on Sign Up to a create new account. Else if you forgot your password, click on Reset Password to create new password. Here Email address and Password is validated and the Platform Selection window opens.
+   N> You can provide the email ID and password registered with Syncfusion for unlocking the Syncfusion setup and your license will be configured.
 
 
    **Use Unlock Key**
 
    ![](Platform_images/Step-by-Step-Installation_img3.png)
 
-   N> The Unlock key is validated and the Path Selection window opens.
+   N> To install using key, provide the unlock key.
 
 
-3. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
+4. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
 
 
-4. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. 
+5. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. 
 
 
     ![](Platform_images/Step-by-Step-Installation_img4.png)
@@ -59,7 +60,7 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
    * Select the **Install Syncfusion Extensions** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
 
 
-5.  Click Install.
+6.  Click Install.
 
 
     ![](Platform_images/Step-by-Step-Installation_img5.png)
@@ -69,10 +70,10 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
     ![](Platform_images/Step-by-Step-Installation_img6.png)
 
 
-6. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
+7. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
 
 
-7. Click Finish. Syncfusion ASP.NET Core is installed in your system and the Syncfusion Essential Studio [Syncfusion Control Panel](http://help.syncfusion.com/common/essential-studio/utilities#dashboard ) is launched automatically.
+8. Click Finish. Syncfusion ASP.NET Core is installed in your system and the Syncfusion Essential Studio [Syncfusion Control Panel](http://help.syncfusion.com/common/essential-studio/utilities#dashboard ) is launched automatically.
 
 ## Installing in silent mode
 
@@ -82,7 +83,7 @@ The Syncfusion Essential Studio Platform Installer supports installing/uninstall
 
 Follow the steps below to install through Command Line in Silent mode.
 
-1. Double-click the Syncfusion Essential Studio platform Setup file. The Setup Wizard opens and extracts the package automatically.
+1. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically.
 2. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
 3. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
 4. Copy the extracted syncfusionessentialaspnetcore_(version).exe file in local drive.
@@ -108,7 +109,7 @@ Follow the steps below to install through Command Line in Silent mode.
 Syncfusion Essential Studio supports uninstalling the setup through Command Line in Silent mode. The following steps illustrate this. 
 
 1. When you do not have the extracted setup (syncfusionessentialaspnetcore_(version).exe) then follow the steps from 2 to 7.
-2. Double-click the Syncfusion Essential Studio platform Setup file. The Setup Wizard opens and extracts the package automatically.
+2. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically.
 3. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
 4. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
 5. Copy the syncfusionessentialaspnetcore_(version).exe file in local drive. 
