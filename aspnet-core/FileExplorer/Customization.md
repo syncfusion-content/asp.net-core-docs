@@ -116,3 +116,16 @@ In the view page, add file explorer helper and hides the footer as shown in the 
 </ej-file-explorer>
 {% endhighlight %}
     
+## Customize the Root Folder name in FileExplorer
+
+You can set the alias name for root folder name in FileExplorer by using rootFolderName API. It is used to replace the actual root folder name in the FileExplorer UI. Refer to the below code block for set the alias name for root folder name in FileExplorer.  
+
+{% highlight CSHTML %}
+<ej-file-explorer id="root" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")" root-folder-name="This PC">
+    <e-file-ajax-settings>
+        <e-download url="/FileExplorer/Download{0}"></e-download>
+        <e-get-image url="/FileExplorer/GetImage{0}"></e-get-image>
+        <e-upload url="/FileExplorer/Upload{0}"></e-upload>
+    </e-file-ajax-settings>
+</ej-file-explorer>
+{% endhighlight %}
