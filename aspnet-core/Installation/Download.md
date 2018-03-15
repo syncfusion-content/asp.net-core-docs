@@ -2,7 +2,7 @@
 layout: post
 title: Installation and Deployment process for Syncfusion Essential Studio ASP.NET Core products
 description: Learn how to install and deploy the Syncfusion ASP.NET Core component
-platform: ASP.NET Core
+platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
 
@@ -12,15 +12,17 @@ documentation: ug
 
 To download the Syncfusion ASP.NET Core platform, follow the below steps.
 
-1. Log into your [Syncfusion account](https://www.syncfusion.com/support/directtrac/downloads)
-
-2. Click on the Essential Studio version you need to download.
+1. If you are a licensed user, click [here](https://www.syncfusion.com/downloads/latest-version) . 
 
    ![](Platform_images/Download_img1.png)
    
-3. The next page allows you to download the exe, zip and pkg files. Click on the required file type and download it.  
+2. For evaluation users, download [here](https://www.syncfusion.com/downloads) .
 
-   ![](Platform_images/Download_img2.png)
+   ![](Platform_images/Download_img1.png)
+   
+3. For Mac machines, Syncfusion provides separate installer (.pkg) which can be downloaded from the same downloads section.
 
-4. To generate the unlock for the version you are downloading, refer [this](https://www.syncfusion.com/kb/2326) .   
+   ![](Platform_images/Download_img3.png)
+
+  
 
