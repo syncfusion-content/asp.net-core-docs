@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customization | FileExplorer | ASP.NET Core | Syncfusion
 description: Customization support in FileExplorer
 platform: Asp.Net Core
