@@ -183,7 +183,7 @@ Find the steps to globalize the MVC application from below
 			
    ~~~
 
-3. Access the current culture using System.Gloabalization.CultureInfo and set the culture to ej.globalize widget.
+3. Access the current culture using System.Globalization.CultureInfo and set the culture to ej.globalize widget.
 
    ~~~ cshtml
    
@@ -229,7 +229,7 @@ Find the steps to configure the Syncfusion Components to particular language fro
    
    ![](core-concepts_images/core-concepts_img1.png)
    
-4. Load the Localized text file from localtexts folder as like previous step   
+4. Load the Localized text file from local texts folder as like previous step   
 
    ~~~ cshtml
    
