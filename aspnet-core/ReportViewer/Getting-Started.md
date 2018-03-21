@@ -144,11 +144,11 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Report.NETStandard</td>
-<td>It is a base library for the `Syncfusion.EJ.ReportViewer.ASPNET.Core` package.</td>
+<td>It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core** package.</td>
 </tr>
 <tr>
 <td>Syncfusion.Compression.NETStandard</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages `Syncfusion.Pdf.NETStandard` , `Syncfusion.DocIO.NETStandard` and `Syncfusion.XlsIO.NETStandard`. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages **Syncfusion.Pdf.NETStandard** , **Syncfusion.DocIO.NETStandard** and **Syncfusion.XlsIO.NETStandard**. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.NETStandard</td>
@@ -164,7 +164,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.NETStandard</td>
-<td>It is a base library of the `Syncfusion.XlsIO.NETStandard` package.</td>
+<td>It is a base library of the **Syncfusion.XlsIO.NETStandard** package.</td>
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
@@ -173,70 +173,6 @@ Purpose
 <tr>
 <td>System.Data.SqlClient</td>
 <td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
-</tr>
-</table>
-
-Find the package details in the following table, which is to be chosen based on the application target framework:
-
-<table>
-<tr>
-<th>
-Targeted Framework</th>
-<th>
-Packages
-</th>
-</tr>
-<tr>
-<td>.NET Core 2.0 </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard20<br/><br/>
-Syncfusion.Compression.NETStandard20<br/><br/>
-Syncfusion.Pdf.NETStandard20<br/><br/>
-Syncfusion.DocIO.NETStandard20<br/><br/>
-Syncfusion.XlsIO.NETStandard20<br/><br/>
-Syncfusion.OfficeChart.NETStandard20
-</td></tr>
-<tr>
-<td>
-.NET Core 1.1 & .NET Core 1.0 </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard14<br/><br/>
-Syncfusion.Compression.NETStandard14<br/><br/>
-Syncfusion.Pdf.NETStandard14<br/><br/>
-Syncfusion.DocIO.NETStandard14<br/><br/>
-Syncfusion.XlsIO.NETStandard14<br/><br/>
-Syncfusion.OfficeChart.NETStandard14
-</td></tr>
-<tr>
-<td>
-.NET Framework (>= 4.6.1) </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard14<br/><br/>
-Syncfusion.Compression.NETStandard14<br/><br/>
-Syncfusion.Pdf.NETStandard14<br/><br/>
-Syncfusion.DocIO.NETStandard14<br/><br/>
-Syncfusion.XlsIO.NETStandard14<br/><br/>
-Syncfusion.OfficeChart.NETStandard14
-</td></tr>
-<tr>
-<td>
-.NET Framework (>= 4.5.1) </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard12<br/><br/>
-Syncfusion.Compression.NETStandard12<br/><br/>
-Syncfusion.Pdf.NETStandard12<br/><br/>
-Syncfusion.DocIO.NETStandard12<br/><br/>
-Syncfusion.XlsIO.NETStandard12<br/><br/>
-Syncfusion.OfficeChart.NETStandard12
-</td>
 </tr>
 </table>
 
