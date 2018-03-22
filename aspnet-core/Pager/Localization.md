@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization | Pager | ASP.NET Core | Syncfusion
-description: globalization
+title: Localization | Pager | ASP.NET Core | Syncfusion
+description: localization
 platform: aspnet-core
 control: Pager
 documentation: ug
 
 ---
 
-# Globalization
+# Localization
 
 Pager has been provided with built in localization support with different culture.
 
