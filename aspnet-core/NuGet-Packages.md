@@ -11,15 +11,15 @@ documentation: ug
 
 NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
 
-> Note: You can use the Syncfusion ASP.NET Core NuGet packages without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
+N> You can use the Syncfusion ASP.NET Core NuGet packages without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
 
 ## Get the Syncfusion NuGet feed URL
 
 You should get the private Syncfusion ASP.NET Core NuGet feed URL to install or upgrade the Syncfusion ASP.NET Core NuGet packages. To get the URL from Syncfusion website use the following steps:
 
-1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select **DESKTOP** tab.     
+1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select **WEB** tab.     
 
-2. Click the Copy URL label under ASP.NET Core platform to copy the Syncfusion ASP.NET Core platform NuGet feed to clipboard or directly use the following URL: 
+2. Navigate to **WEB(Essential JS1)**, click the Copy URL label under ASP.NET Core platform to copy the Syncfusion ASP.NET Core platform NuGet feed to clipboard or directly use the following URL: 
 
     [http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore](http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore) 
 
@@ -76,7 +76,7 @@ You should get the private Syncfusion ASP.NET Core NuGet feed URL to install or 
 
 The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
 
-1.	On the **Tools**, menu, NuGet **Package Manager | Manage NuGet Packages for Solution...**
+1.	On the **Tools**, menu, NuGet `Package Manager | Manage NuGet Packages for Solution...`
 
     ![](NuGet_Packages_Images/img6.png)
 
@@ -141,7 +141,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 ### Configure NuGet feed URL 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command:
+    N> To update the existing nuget.exe to latest version use the following command:
 
     ~~~
     nuget update -self
@@ -158,6 +158,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     ~~~
 
     **For example:**
+
     ~~~
     #For Windows platform
     nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore”
@@ -178,9 +179,10 @@ nuget.exe install <Package name | ConfigFilePath > <Options>
 mono nuget.exe install <Package name | ConfigFilePath > <Options>
 ~~~
 
-> Note: <configFilePath> is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
+N> configPath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
 
 **For example:**
+
 ~~~
 #install specific package for Windows 
 nuget.exe install “Syncfusion.EJ.AspNet.Core”
@@ -191,13 +193,13 @@ nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 #install specific Syncfusion NuGet package with Syncfusion ASP.NET Core NuGet feed for Windows 
 nuget.exe install “Syncfusion.EJ.AspNet.Core”  –Source http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore”
 
-# install specific package for Mac and Linux 
+#install specific package for Mac and Linux 
 mono nuget.exe install “ Syncfusion.EJ.AspNet.Core”
 
 #install all package which mention in package.config path for Mac and Linux 
 mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
-# install specific Syncfusion NuGet package with Syncfusion ASP.NET Core NuGet feed for Mac and Linux 
+#install specific Syncfusion NuGet package with Syncfusion ASP.NET Core NuGet feed for Mac and Linux 
 mono nuget.exe install “Syncfusion.EJ.AspNet.Core”  –Source “http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore”
 ~~~
 
@@ -206,20 +208,24 @@ mono nuget.exe install “Syncfusion.EJ.AspNet.Core”  –Source “http://nuge
 The NuGet Command Line Interface (CLI), Dotnet.exe, provides the full extent of NuGet functionality to add, restore, pack, publish, and manage packages without making any change to the project files.
 
 1.	Open command prompt window with administrator privileges and navigate to your project folder.
+
 2.	The specified ASP.NET Core NuGet package command as below,
 
     **Add**
+
     ~~~
     #Add specified package in specified project from Package Source
     dotnet add package <Package name> [-s|--source] <Source location>
     ~~~
 
     **For example :**
+
     ~~~        
     dotnet add package Syncfusion.EJ.AspNet.Core  -s “http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore”
     ~~~
 
     **Restore**
+
     ~~~
     #Restore all package which specified in project
     dotnet restore
@@ -233,7 +239,7 @@ The NuGet Command Line Interface (CLI), Dotnet.exe, provides the full extent of 
 
 NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
 
-1. On the **Tools** menu, **NuGet Package Manager | Manage NuGet Packages for Solution...**
+1. On the **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
     Alternatively, right-click on project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
 
 2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
@@ -248,7 +254,7 @@ Using **Update** context menu from Visual Studio for Mac application, NuGet pack
 
 2.	This will update the NuGet package to the latest version. You can double-click Add packages and choose the specific version.
 
-> Note: To update all the projects from solution, use update option in the solution level. 
+N> To update all the projects from solution, use update option in the solution level. 
 
 ### Using Package Manger Console
 
@@ -289,7 +295,8 @@ To update the installed Syncfusion ASP.NET Core NuGet packages using the Package
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version: 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-    > Note: To update the existing nuget.exe to latest version use the following command: 
+    N> To update the existing nuget.exe to latest version use the following command: 
+
     ~~~
     nuget update -self
     ~~~
@@ -304,9 +311,10 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source <Source Location> [optional]
     ~~~      
 
-    > Note: <configFilePath> is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
+    N> configPath is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
 	
     **For example:**
+
     ~~~          
     #Update all NuGet packages from config file
     nuget update “C:\Users\SyncfusionApplication\package.config”
@@ -315,7 +323,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -Source “http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore”
     ~~~
 
-    > Note: Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
+    N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
    
 
 
