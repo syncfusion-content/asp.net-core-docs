@@ -1,16 +1,15 @@
 node('content')
 { 
- timestamps
+timestamps
   {
+  
+  def Content="";
+		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
+
      timeout(time: 7200000, unit: 'MILLISECONDS') {
-String platform='aspnet-core';
+    String platform='aspnet-core';
    try
 	{   
-	
-	    def Content="";
-		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
-		
-
 		//Clone scm repository in Workspace source directory
 		stage ('Checkout')   
 	    { 
@@ -35,14 +34,16 @@ String platform='aspnet-core';
               else  {
                 writeFile file: env.WORKSPACE+"/cireports/content.txt", text: "There are no filepaths found for this commit."
               }
-
+		    }
 		    }
 			 
 		   //Checkout the ug_spellchecker from development Source
 	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.gitlabCredentialId, url: 'https://gitlab.syncfusion.com/content/ug_spellchecker.git']]])
 		 
 	  }
-	}
+	  
+	 
+	
 	
     catch(Exception e)
     {
