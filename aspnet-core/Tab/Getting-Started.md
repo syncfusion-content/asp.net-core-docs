@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started 
 
-This section briefly explains how to create a tab control in your application with ASP.NET Core.
+This section explains how to create a tab control in your application with ASP.NET Core.
 
 ## Create your first tab control in ASP.NET Core
 
-The ASP.NET Core tab control is an interface that displays the content in multiple sections. A tab panel consists of HeaderText as well as a ContentTemplate. It is useful for a dashboard that is having limited space. The following section guides you to customize the tab for displaying Hotel menu items, its rate details, and the ingredients on demand.
+The ASP.NET Core tab control is an interface that displays the content in multiple sections. A tab panel consists of HeaderText as well as a ContentTemplate. This is very useful when dashboards have limited space. The following screenshot shows how to customize the tab to display Hotel menu items,  rate details, and the ingredients on demand.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -22,12 +22,12 @@ Tab control with Hotel Menu items
 
 ### Create tab control
 
-The ASP.NET Core tab widget basically builds a dynamic, interactive, and menu-driven interface from your content. The content can be a text, graphics, or HTML. You can create the tab headers using the Text and Content template property.
+The ASP.NET Core tab widget basically builds a dynamic, interactive, and menu-driven interface from your content. The content can be a text, graphics, or HTML. You can create the tab headers using the Text and Content template properties.
 
-The following steps are used to create a tab control.
+To create a tab control:
 
-1. Create a core project, and add necessary assembly and script with the help of the given [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
-2. Add the mentioned code to the corresponding view page for tab rendering.
+1. Create a core project, and add the required assemblies and script with the help of [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+2.Then, add the following code sample to the corresponding view page for tab rendering..
   
 {% highlight CSHTML %}
 
@@ -67,7 +67,7 @@ The following steps are used to create a tab control.
 
 {% endhighlight %}
 
-N> To render the tab control use either Razor or Tag helper code as given in the previous code snippet.
+N> To render the tab control, use either Razor or Tag helper code as given in the code sample.
  
 The following output will be displayed.
 
@@ -80,7 +80,7 @@ Tab control with Header
 
 ### Configure content
 
-In this application, a detailed description is provided to each item. You can specify the contents in the tab section within the content template.
+In this application, a detailed description of each item is provided . You can specify the contents in the tab section within the content template.
  
 {% highlight CSHTML %}
 
@@ -134,15 +134,17 @@ data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div>
 
 {% endhighlight %}
 
-You can provide more customization to the tab by using rating control to describe an item’s price.
+You can also customize the tab by using rating control to describe the item’s price.
 
 ### Create the rating
 
-The ASP.NET Core rating control provides an intuitive rating experience. It allows you to select the number of stars that represents the rating. The following code example explains you the creation of rating control. Create the rating control using HTML helper, and render the rating control and its description inside the content template in first tab control.
+The ASP.NET Core rating control provides an intuitive rating experience. This allows you to select the number of stars that represents rating.Create the rating control using HTML helper, and render the rating control and its description inside the content template in first tab control. 
 
 For more information about rating, refer to the following link:
 
 <https://help.syncfusion.com/aspnet-core>
+
+The following code example explains the creation of rating control:
 
 {% highlight CSHTML %}
 
@@ -205,9 +207,9 @@ The following screenshot is the output for the given code example.
 
 ### Sub tab with content
 
-Each item has a variety of options and these options are also specified in the limited space. So you can choose the tab control that is used within the root tab to specify more details.
+Each item has a variety of options and those options have to be specified in the limited space. So you can choose the tab control that is used within the root tab to specify more details.
 
-The following code example represents the sub tab control rendering using helper function.
+The following code sample represents the rendering of sub tab control using the helper function:
 
 {% highlight CSHTML %}
 
@@ -311,7 +313,7 @@ The following code example represents the sub tab control rendering using helper
 
 {% endhighlight %}
 
-The following code example is used for positioning the image and content.
+The following code example is used to position images and content.
 
 {% highlight css %}
 
@@ -330,13 +332,13 @@ The following code example is used for positioning the image and content.
 
 {% endhighlight %}
 
-The following screenshot illustrates the first tab with the sub tab control.
+The following screenshot shows the first tab of the sub tab control.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 ### Orientation change
 
-Here you can learn how to set the sub tab orientation to vertical. By default, the tab control is rendered in horizontal orientation. Change this orientation to vertical by using the **HeaderPosition** property. In the following code section, set the tab header orientation to Left.
+To set the sub tab orientation to vertical use the **HeaderPosition** property. By default, the tab control is rendered in horizontal orientation.In the following code section,the tab header orientation is set to Left.
 
 The following code section renders the sub tab element in the vertical orientation.
 
@@ -447,7 +449,7 @@ The following screenshot is the output of previous steps.
 
 ### Configure contents to remaining tab items
 
-The second and third tab contents are declared in the same method as of the first tab content declaration. These tabs also consist of rating and sub tab controls.
+The second and third tab contents are declared in the same method as the first tab content. These tabs also consist of rating and sub tab controls.
 
 {% highlight CSHTML %}
 
@@ -760,7 +762,7 @@ Apply the following styles to the tab.
 
 {% endhighlight %}
 
-The following screenshot illustrates the second tab contents in tab and the final hotel menu with rating, description, and ingredients of the item in the tab interface.
+The following screenshot shows the second tab content in tab and the final hotel menu with rating, description, and ingredients of the item in the tab interface.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 

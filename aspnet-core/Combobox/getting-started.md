@@ -29,11 +29,11 @@ This section explains how to create a simple **ComboBox** component and configur
 
   {% endhighlight  %}
 
-N> To render the ComboBox Control, you can use either Razor or Tag helper code as given in the above code snippet.
+N> To render the ComboBox Control, you can use either Razor or Tag helper code as given in the code sample above.
 
 ## Initialize the ComboBox
 
-The ComboBox can be initialized as:
+To initialize the ComboBox
 
 {% highlight html %}
 
@@ -97,7 +97,7 @@ After initializing, populate the ComboBox with data using the **dataSource** pro
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by the **allowCustom** property. In this case, both text field and value field are considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows the user to give custom values when it is not available in the predefined set of values. By default, this is enabled by the **allowCustom** property. In this case, both text and value fields are considered the same. When a form is submitted, the custom value will be sent to the post back handler.
 
 {% highlight CSHTML %}
 
@@ -132,7 +132,7 @@ The ComboBox allows the user to give input as custom value which is not required
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list is '300px'.
 
 The height and width of the popup list can also be customized using the **popupHeight** &nbsp;and **popupWidth** properties respectively.
 
