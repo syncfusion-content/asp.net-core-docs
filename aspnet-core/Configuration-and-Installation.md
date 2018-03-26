@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation | ASP.NET Core | Syncfusion
-description: Installation
-platform: asp.net core
+title: Configuration and Installation | ASP.NET Core | Syncfusion
+description: Configuration and Installation
+platform: aspnet-core
 control: Common 
 documentation: ug
 ---
