@@ -43,7 +43,7 @@ To create a tab control:
             <e-tab-item id="Pasta" text="Pasta Menu">
                 <e-content-template></e-content-template>
             </e-tab-item>
-            <e-tab-item id="sandwizza" text="Sandwizza Menu">
+            <e-tab-item id="Sandwich" text="Sandwizza Menu">
                 <e-content-template></e-content-template>
             </e-tab-item>
         </e-tab-items>
@@ -59,9 +59,9 @@ To create a tab control:
 
 @{ Html.EJ().Tab("DishType").Items(data =>
 	{
-		data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div></div>);
-		data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-		data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+		data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div></div>);
+		data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+		data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 	}).Render();
     }
 
@@ -88,7 +88,7 @@ In this application, a detailed description of each item is provided . You can s
 
 <ej-tab id="DishType">
     <e-tab-items>
-        <e-tab-item id="pizzamenu" text="Pizza Menu">
+        <e-tab-item id="pizza" text="Pizza Menu">
             <e-content-template>
                 <div>
                     <ej-rating id="RatingPizza" value="4" precision="@Precision.Exact" />
@@ -99,10 +99,10 @@ In this application, a detailed description of each item is provided . You can s
                 </div>
             </e-content-template>
         </e-tab-item>
-        <e-tab-item id="pizzatype" text="Pizza Type">
+        <e-tab-item id="type" text="Pizza Type">
             <e-content-template></e-content-template>
         </e-tab-item>
-        <e-tab-item id="sandwichtype" text="Sandwizza Type">
+        <e-tab-item id="sandwich" text="Sandwizza Type">
             <e-content-template></e-content-template>
         </e-tab-item>
     </e-tab-items>
@@ -118,7 +118,7 @@ In this application, a detailed description of each item is provided . You can s
 
 {
 
-data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div>
+data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div>
     Rating:
 
     @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
@@ -188,15 +188,15 @@ The following code example explains the creation of rating control:
   
 @Html.EJ().Tab("DishType").Items(data =>
 {
-data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div> Rating:
+data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div> Rating:
 @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
 
 <!--Food item description-->
 
 <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
 </div>);
-data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 }) 
 
 {% endhighlight %}
@@ -229,7 +229,7 @@ The following code sample represents the rendering of sub tab control using the 
                             <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
                         </div>
                     </div>
-                    <ej-tab id="PizzaMenu">
+                    <ej-tab id="pizza">
                         <e-tab-items>
                             <e-tab-item id="Corn-Spinach" text="Corn Spinach">
                                 <e-content-template>
@@ -273,7 +273,7 @@ The following code sample represents the rendering of sub tab control using the 
 
 @Html.EJ().Tab("DishType").Items(data =>
 {
-    data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div> Rating:
+    data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div> Rating:
     @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
 
 <!--Food item description-->
@@ -281,12 +281,12 @@ The following code sample represents the rendering of sub tab control using the 
     <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
        @firstTab()
 </div>);
-    data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-    data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+    data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+    data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 })
 @helper firstTab()
 {
-    @Html.EJ().Tab("PizzaMenu").Items(data =>
+    @Html.EJ().Tab("pizza").Items(data =>
     {
         data.Add().ID("Corn-Spinach").Text("Corn Spinach").ContentTemplate(@<div class="e-content">
             <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
@@ -360,7 +360,7 @@ The following code section renders the sub tab element in the vertical orientati
                             <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
                         </div>
                     </div>
-                    <ej-tab id="PizzaMenu" header-position="@HeaderPosition.Left">
+                    <ej-tab id="pizza" header-position="@HeaderPosition.Left">
                         <e-tab-items>
                             <e-tab-item id="Corn-Spinach" text="Corn Spinach">
                                 <e-content-template>
@@ -404,19 +404,19 @@ The following code section renders the sub tab element in the vertical orientati
 
     @Html.EJ().Tab("DishType").Items(data =>
 {
-    data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div>
+    data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div>
         Rating:
         @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
         <!--Food item description-->
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         @firstTab()
     </div>);
-    data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
+    data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
     data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
 })
     @helper firstTab(
 {
-    @Html.EJ().Tab("PizzaMenu").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
+    @Html.EJ().Tab("pizza").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
     {
         data.Add().ID("Corn-Spinach").Text("Corn Spinach").ContentTemplate(@<div class="e-content">
             <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
@@ -543,20 +543,20 @@ The second and third tab contents are declared in the same method as the first t
 
 @{Html.EJ().Tab("DishType").Items(data => 
         {
-			data.Add().ID("Pizzatype").Text("Pizza Menu").ContentTemplate(@<div> 
+			data.Add().ID("type").Text("Pizza Menu").ContentTemplate(@<div> 
 			Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 			@firstTab()
             </div>);
-			data.Add().ID("sandwitchtype").Text("Sandwizza Menu").ContentTemplate(@<div>
+			data.Add().ID("sandwitch").Text("Sandwizza Menu").ContentTemplate(@<div>
 			Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 			@secondTab() 
 			</div>);  
-			data.Add().ID("Pastatype").Text("Pasta Menu").ContentTemplate(@<div>
+			data.Add().ID("Pasta").Text("Pasta Menu").ContentTemplate(@<div>
 			</div>);  
 		}).Render();
 
 		@helper secondTab(){ 
-		   @Html.EJ().Tab("SandwichMenu").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
+		   @Html.EJ().Tab("Menu").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
 		   {       
 				data.Add().ID("GardenVeggie").Text("Garden Veggie").ContentTemplate(@<div class="e-content">
 				<img src="http://js.syncfusion.com/demos/web/images/accordion/garden-veggie.png" alt="garden-veggie "> 
@@ -687,15 +687,15 @@ Add third tab contents in element during initialization using the content templa
 
 @{Html.EJ().Tab("DishType").Items(data =>  
    {   
-		data.Add().ID("Pizzatype").Text("Pizza Menu").ContentTemplate(@<div>
+		data.Add().ID("type").Text("Pizza Menu").ContentTemplate(@<div>
 		Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 		@firstTab()  
 		</div>); 
-		data.Add().ID("sandwitchtype").Text("Sandwizza Menu").ContentTemplate(@<div>
+		data.Add().ID("sandwitch").Text("Sandwizza Menu").ContentTemplate(@<div>
 		Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 		@secondTab() 
 		</div>); 
-		data.Add().ID("Pastatype").Text("Pasta Menu").ContentTemplate(@<div>
+		data.Add().ID("Pasta").Text("Pasta Menu").ContentTemplate(@<div>
 		Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.  
 		@thirdTab() 
 		</div>); 

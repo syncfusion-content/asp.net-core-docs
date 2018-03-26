@@ -109,15 +109,15 @@ Add the following elements to the view page.
         </tr>
         <tr>
             <td>
-                <input type="text" id="fileallow" class="ejinputtext" placeholder="Format" />
-                @(Html.EJ().Button("upbutton1").Text("Allow").ClientSideEvents(c => c.Click("allowfiletype")))
+                <input type="text" id="allow" class="ejinputtext" placeholder="Format" />
+                @(Html.EJ().Button("upbutton1").Text("Allow").ClientSideEvents(c => c.Click("allow")))
             </td>
             <td></td>
         </tr>
         <tr>
             <td>
-                <input type="text" id="filedeny" class="ejinputtext" placeholder="Format" />
-                @(Html.EJ().Button("upbutton2").Text("Deny").ClientSideEvents(c => c.Click("denyfiletype")))
+                <input type="text" id="deny" class="ejinputtext" placeholder="Format" />
+                @(Html.EJ().Button("upbutton2").Text("Deny").ClientSideEvents(c => c.Click("deny")))
             </td>
             <td>
                @Html.EJ().Uploadbox("UploadDefault").SaveUrl(@Url.Action("SaveDefault")).RemoveUrl(@Url.Action("RemoveDefault")))
@@ -131,23 +131,23 @@ Add the following code example in script section.
 
 {% highlight js %}
 
- var uploadobject;
+ var upload;
     $(function () {
-        uploadobject = $("#UploadDefault").data("ejUploadbox");
+        upload = $("#UploadDefault").data("ejUploadbox");
         $("#upbutton1").ejButton({
-            click: "allowfiletype",
+            click: "allow",
         });
         $("#upbutton2").ejButton({
-            click: "denyfiletype",
+            click: "deny",
         });
     });
-    function allowfiletype() {
-        uploadobject.option('extensionsAllow', $("#fileallow").val());
-        uploadobject.option('extensionsDeny', "");
+    function allow() {
+        upload.option('extensionsAllow', $("#allow").val());
+        upload.option('extensionsDeny', "");
     }
-    function denyfiletype() {
-        uploadobject.option('extensionsAllow', "");
-        uploadobject.option('extensionsDeny', $("#filedeny").val());
+    function deny() {
+        upload.option('extensionsAllow', "");
+        upload.option('extensionsDeny', $("#deny").val());
     }
 
 {% endhighlight %}
