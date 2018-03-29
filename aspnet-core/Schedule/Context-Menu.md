@@ -38,6 +38,8 @@ Print Appointment</td></tr>
 Categorize</td></tr>
 </table>
 
+![](Getting-Started_images/App_ContextMenu.png)
+
 ### Cells
 
 The default options available within the cell collection includes - 
@@ -59,6 +61,8 @@ Go to date</td></tr>
 <td>
 Settings (View, TimeMode, Work Hours) </td></tr>
 </table>
+
+![](Getting-Started_images/Cell_ContextMenu.png)
 
 The following code snippet shows how to enable the context menu settings in Scheduler and to make use of it with default available options. 
 

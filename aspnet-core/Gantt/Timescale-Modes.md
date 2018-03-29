@@ -151,3 +151,30 @@ The value `Auto`, automatically calculates the schedule header depending on the 
 {% endhighlight %}
 
 ![](Timescale-Modes_images/Timescale-Modes_img6.png)
+
+## Customize automatic timescale update action
+
+In Gantt, schedule timeline will be automatically updated when the tasks are edited beyond the schedule start date and end date range. This can be enabled/disabled by using [`update-timescale-view`](/api/js/ejgantt#members:scheduleheadersettings-updatetimescaleview) property.
+The following code snippets shows how to prevent the automatic timescale update in Gantt.
+ 
+{% highlight cshtml %}
+	<ej-gantt id="ganttSample" datasource="ViewBag.datasource"
+        //...>        
+		<e-schedule-header-settings schedule-header-type="Week" update-timescale-view="false" />    
+	</ej-gantt> 
+{% endhighlight %}
+
+The following screenshot shows the output of above code example.
+
+![](Timescale-Modes_images/Timescale-Modes_img7.png)
+At Initial load
+{:.caption}
+
+![](Timescale-Modes_images/Timescale-Modes_img8.png)
+`update-timescale-view` property as `false`
+{:.caption}
+
+![](Timescale-Modes_images/Timescale-Modes_img9.png)
+`update-timescale-view` property as `true`
+{:.caption}
+
