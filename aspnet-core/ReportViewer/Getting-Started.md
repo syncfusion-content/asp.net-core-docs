@@ -16,7 +16,7 @@ N> The report viewer control depends on server-side processing for report render
 ## Environment setup
 Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be more over referred from Syncfusion NuGet source for ASP.NET Core development to prepare the environment without installation, if you missed to explored then referred the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings).
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
 
 ### Styles and scripts
 
@@ -116,83 +116,63 @@ Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page 
 </html>
 {% endhighlight %}
 
-N> *ej-script-manager* must be defined at the bottom of the *_Layout.cshtml* page.
+N> `ej-script-manager` must be defined at the bottom of the *_Layout.cshtml* page.
 
 ### References
 You should add the following packages for the report viewer:
 
-**Syncfusion.EJ**: Builds the report viewer controls with the tag helper.
-**Syncfusion.EJ.ASPNET.Core**: Builds the report viewer controls with the tag helper.
-**Syncfusion.EJ.ReportViewer.ASPNET.Core**: Builds the server-side implementations.
-**Syncfusion.Report.NETStandard**: It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core**  package.
-**Syncfusion.Compression.NETStandard**: Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format.
-**Syncfusion.Pdf.NETStandard**: Supports for exporting the report to a PDF.
-**Syncfusion.DocIO.NETStandard**: Supports for exporting the report to a Word.**Syncfusion.XlsIO.NETStandard**: Supports for exporting the report to an Excel.
-**Syncfusion.OfficeChart.NETStandard**: It is a base library of the **Syncfusion.XlsIO.NETStandard** package.
-**System.Data.SqlClient**: Renders the report to get the data from SQL Server if required. The package version should be higher of 4.1.0 and this is an optional package for the report viewer.
-**Newtonsoft.Json**: Serializes and deserializes the data for report viewer client. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.
-
-Find the package details in the following table, which is to be chosen based on the application target framework:
 
 <table>
 <tr>
 <th>
-Targeted Framework</th>
+Package</th>
 <th>
-Packages
+Purpose
 </th>
 </tr>
 <tr>
-<td>.NET Core 2.0 </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard20<br/><br/>
-Syncfusion.Compression.NETStandard20<br/><br/>
-Syncfusion.Pdf.NETStandard20<br/><br/>
-Syncfusion.DocIO.NETStandard20<br/><br/>
-Syncfusion.XlsIO.NETStandard20<br/><br/>
-Syncfusion.OfficeChart.NETStandard20
-</td></tr>
+<td>Syncfusion.EJ</td>
+<td>Builds the report viewer controls with the tag helper.</td>
+</tr>
 <tr>
-<td>
-.NET Core 1.1 & .NET Core 1.0 </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard14<br/><br/>
-Syncfusion.Compression.NETStandard14<br/><br/>
-Syncfusion.Pdf.NETStandard14<br/><br/>
-Syncfusion.DocIO.NETStandard14<br/><br/>
-Syncfusion.XlsIO.NETStandard14<br/><br/>
-Syncfusion.OfficeChart.NETStandard14
-</td></tr>
+<td>Syncfusion.EJ.ASPNET.Core</td>
+<td>Builds the report viewer controls with the tag helper.</td>
+</tr>
 <tr>
-<td>
-.NET Framework (>= 4.6.1) </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard14<br/><br/>
-Syncfusion.Compression.NETStandard14<br/><br/>
-Syncfusion.Pdf.NETStandard14<br/><br/>
-Syncfusion.DocIO.NETStandard14<br/><br/>
-Syncfusion.XlsIO.NETStandard14<br/><br/>
-Syncfusion.OfficeChart.NETStandard14
-</td></tr>
+<td>Syncfusion.EJ.ReportViewer.ASPNET.Core</td>
+<td>Builds the server-side implementations.</td>
+</tr>
 <tr>
-<td>
-.NET Framework (>= 4.5.1) </td>
-<td>Syncfusion.EJ<br/><br/>
-Syncfusion.EJ.ASPNET.Core<br/><br/>
-Syncfusion.EJ.ReportViewer.ASPNET.Core<br/><br/>
-Syncfusion.EJ.Report.NETStandard12<br/><br/>
-Syncfusion.Compression.NETStandard12<br/><br/>
-Syncfusion.Pdf.NETStandard12<br/><br/>
-Syncfusion.DocIO.NETStandard12<br/><br/>
-Syncfusion.XlsIO.NETStandard12<br/><br/>
-Syncfusion.OfficeChart.NETStandard12
-</td>
+<td>Syncfusion.Report.NETStandard</td>
+<td>It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core** package.</td>
+</tr>
+<tr>
+<td>Syncfusion.Compression.NETStandard</td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages **Syncfusion.Pdf.NETStandard** , **Syncfusion.DocIO.NETStandard** and **Syncfusion.XlsIO.NETStandard**. </td>
+</tr>
+<tr>
+<td>Syncfusion.Pdf.NETStandard</td>
+<td>Supports for exporting the report to a PDF.</td>
+</tr>
+<tr>
+<td>Syncfusion.DocIO.NETStandard</td>
+<td>Supports for exporting the report to a Word.</td>
+</tr>
+<tr>
+<td>Syncfusion.XlsIO.NETStandard</td>
+<td>Supports for exporting the report to an Excel.</td>
+</tr>
+<tr>
+<td>Syncfusion.OfficeChart.NETStandard</td>
+<td>It is a base library of the **Syncfusion.XlsIO.NETStandard** package.</td>
+</tr>
+<tr>
+<td>Newtonsoft.Json</td>
+<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
+</tr>
+<tr>
+<td>System.Data.SqlClient</td>
+<td>This is an optional package for the report viewer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
 </tr>
 </table>
 
@@ -225,7 +205,7 @@ N> The Web API service should be mapped with the report viewer report-service-ur
 
 
 ## Build WebApi service
-You should inherit the IReportController interface to build the report viewer compatible Web API, and the ReportHelper should be used with IReportController interface implemented methods. The ReportHelper will perform the server-side related process and will return the required data for the ReportViewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
+You should inherit the `IReportController` interface to build the report viewer compatible Web API, and the `ReportHelper` should be used with `IReportController` interface implemented methods. The `ReportHelper` will perform the server-side related process and will return the required data for the report viewer to process the rendering. Here, the sample code is provided with an MVC application to build the Web API service along with the existing controller.
 
 {% highlight C# %}
 
@@ -293,7 +273,7 @@ namespace ReportViewerDemo.Controllers
 
 {% endhighlight %}
 
-N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report with report stream as like an example provided above in OnInitReportOptions. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
+N> You cannot load the application report with path information in ASP.NET Core. So, you should load the report as `Stream` like an example provided above in `OnInitReportOptions`. If you need to get the invoice sample report then you can obtain it from the Syncfusion ASP.NET Core sample browser installed location (wwwroot\reports\invoice.rdl).
 
 ## Run the application
 

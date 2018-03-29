@@ -108,7 +108,7 @@ Syncfusion JavaScript widget client side methods can be accessed via their clien
 
 As per MSDN, “Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in the multiple cultures”.
 
-The **ejGlobalize** plugin provides options parse numeric, currency and date values using culture file. The **assets/scripts/i18n** contains more than 350 cultures currently. You can load the particular culture into application using **preferredCulture** method.
+The **ejGlobalize** plugin provides options parse numeric, currency and date values using culture file. The **assets/scripts/i18n** contains more than 350 cultures currently. You can load the particular culture into application using **setCulture** method.
 
 The Internationalize any of our Syncfusion components/page into particular culture, please follow the below steps
 
@@ -125,13 +125,13 @@ The Internationalize any of our Syncfusion components/page into particular cultu
 		
    ~~~
 
-3. Set the culture by using  **preferredCulture()** method. Here we used French (fr-FR) culture as current culture   
+3. Set the culture by using  **setCulture()** method. Here we used French (fr-FR) culture as current culture   
 
    ~~~ cshtml
    
 	<script>
 		if (typeof (ej.globalize) != 'undefined') {
-		ej.globalize.preferredCulture("fr-FR");//set Culture fr-FR 
+		ej.setCulture("fr-FR");//set Culture fr-FR 
 		}
 	</script>
 
@@ -144,13 +144,13 @@ The Internationalize any of our Syncfusion components/page into particular cultu
 	<script>
 		if (typeof (ej.globalize) != 'undefined') {
 		console.log("en-US Culture : ");
-		ej.globalize.preferredCulture("en-US");  //set Culture. Default culture is en-US         
+		ej.setCulture("en-US");  //set Culture. Default culture is en-US         
 		console.log(ej.globalize.format(53422, 'C')); // Formatting Price
 		console.log(ej.globalize.format(new Date(2016,07,15), 'D')); //Formatting date
 		console.log(ej.globalize.format(123123.576, 'n2')); // Formatting number
 
 		console.log("fr-FR Culture : ");
-		ej.globalize.preferredCulture("fr-FR");//set Culture fr-FR 
+		ej.setCulture("fr-FR");//set Culture fr-FR 
 				
 		console.log(ej.globalize.format(53422, 'C'));// Formatting Price
 		console.log(ej.globalize.format(new Date(2016, 07, 15), 'D')); //Formatting date
@@ -183,13 +183,13 @@ Find the steps to globalize the MVC application from below
 			
    ~~~
 
-3. Access the current culture using System.Gloabalization.CultureInfo and set the culture to ej.globalize widget.
+3. Access the current culture using System.Globalization.CultureInfo and set the culture to ej.globalize widget.
 
    ~~~ cshtml
    
 	<script>
 		if (typeof (ej.globalize) != 'undefined') {
-		ej.globalize.preferredCulture('@System.Threading.Thread.CurrentThread.CurrentCulture.Name');//access the current culture from web.config and set it
+		ej.setCulture('@System.Threading.Thread.CurrentThread.CurrentCulture.Name');//access the current culture from web.config and set it
 		console.log(ej.globalize.format(53422, 'C'));// Formatting Price
 		console.log(ej.globalize.format(new Date(2016, 07, 15), 'D')); //Formatting date
 		console.log(ej.globalize.format(123123.576, 'n2')); // Formatting number
@@ -229,7 +229,7 @@ Find the steps to configure the Syncfusion Components to particular language fro
    
    ![](core-concepts_images/core-concepts_img1.png)
    
-4. Load the Localized text file from localtexts folder as like previous step   
+4. Load the Localized text file from local texts folder as like previous step   
 
    ~~~ cshtml
    
