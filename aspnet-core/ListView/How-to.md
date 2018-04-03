@@ -72,6 +72,8 @@ Enable the property [PersistSelection](https://help.syncfusion.com/api/js/ejlist
 
 **Multiple selection**
 
+{% highlight html %}
+
 <ej-list-view id="listview" enable-check-mark="true" width="400">
     <e-list-view-items>
         <e-list-view-item text="Artwork"></e-list-view-item>
