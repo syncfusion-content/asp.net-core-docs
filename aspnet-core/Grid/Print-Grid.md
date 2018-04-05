@@ -2,7 +2,7 @@
 layout: post
 title: Print grid for Syncfusion Essential ASP.NET Core
 description: How to enable print option in grid
-platform: ASP.NET Core
+platform: aspnet-core
 control: grid
 documentation: ug
 ---
