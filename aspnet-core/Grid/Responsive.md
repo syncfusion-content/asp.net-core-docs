@@ -2,7 +2,7 @@
 layout: post
 title: Responsive with Grid widget for Syncfusion ASP.NET Core
 description: How to set the grid, responsive to screen resolutions
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---
