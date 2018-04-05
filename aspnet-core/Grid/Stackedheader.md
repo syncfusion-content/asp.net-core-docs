@@ -2,7 +2,7 @@
 layout: post
 title: Stacked Headers with Grid widget for ASP.NET Core
 description: How to stack column Header and customize it
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---
