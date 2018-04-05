@@ -2,7 +2,7 @@
 layout: post
 title: How to
 description: How to
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---
