@@ -2,7 +2,7 @@
 layout: post
 title:  grid widget for Syncfusion Essential ASP.NET Core
 description: Overview for grid
-platform: ASP.NET Core
+platform: aspnet-core
 control: grid
 documentation: ug
 ---

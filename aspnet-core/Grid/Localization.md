@@ -2,7 +2,7 @@
 layout: post
 title: Globalization and Localization with Grid widget for ASP.NET Core
 description: How to use globalization and localization 
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

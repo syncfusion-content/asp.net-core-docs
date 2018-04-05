@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar with Grid widget for ASP.NET Core
 description: toolbar 
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

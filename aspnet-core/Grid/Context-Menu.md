@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu with grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable contextMenu and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

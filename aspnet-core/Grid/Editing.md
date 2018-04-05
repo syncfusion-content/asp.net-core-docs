@@ -2,7 +2,7 @@
 layout: post
 title: Editing with Grid widget for Syncfusion Essential ASP.NET Core
 description:  How to perform editing and configure edit time functionalities like edit type, edit time controls etc
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

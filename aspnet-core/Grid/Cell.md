@@ -2,7 +2,7 @@
 layout: post
 title: Cell with Grid widget for Syncfusion Essential ASP.NET Core
 description: How to use and customize the grid cells
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

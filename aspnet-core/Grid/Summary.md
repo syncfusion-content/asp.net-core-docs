@@ -2,7 +2,7 @@
 layout: post
 title: Summary with Grid widget for ASP.NET Core
 description: How to enable summary and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Columns with grid widget for Syncfusion Essential ASP.NET Core
 description: columns
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---
