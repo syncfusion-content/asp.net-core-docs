@@ -2,7 +2,7 @@
 layout: post
 title: Grouping with grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable grouping and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

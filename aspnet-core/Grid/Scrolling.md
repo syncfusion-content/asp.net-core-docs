@@ -2,7 +2,7 @@
 layout: post
 title: scrolling with Grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable scrolling and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

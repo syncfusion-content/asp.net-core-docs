@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Row with Grid widget for Syncfusion Essential MVC
+title: Row with Grid widget for Syncfusion Essential ASP.NET Core
 description: How to use and customize the grid row
-platform: ejmvc
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: State Persistence with Grid widget for ASP.NET Core
 description: How to persist grid state across page refresh
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

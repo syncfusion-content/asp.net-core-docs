@@ -2,7 +2,7 @@
 layout: post
 title:  Getting started with grid widget for Syncfusion Essential ASP.NET Core
 description: How to create the grid, data bind, enable paging, grouping, filtering and add summaries
-platform: ASP.NET Core
+platform: aspnet-core
 control: grid
 documentation: ug
 ---

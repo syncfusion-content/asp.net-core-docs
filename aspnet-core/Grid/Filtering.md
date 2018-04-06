@@ -2,7 +2,7 @@
 layout: post
 title: Filtering with grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable filtering and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: grid
 documentation: ug
 ---
