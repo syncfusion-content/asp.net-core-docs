@@ -9,7 +9,7 @@ documentation: ug
 
 # Responsive
 
-The Grid control has support for responsive behavior based on client browser's width and height. To enable responsive, the `is-responsive` property should be true. Following are three modes of responsive layout available in grid based on client width. 
+The Grid control has support for responsive behavior based on client browser's width and height. To enable responsive, the `is-responsive` property should be true. In Desktop and Tablet mode, to render scroller set `min-width` property. Following are three modes of responsive layout available in grid based on client width. 
 
 * Mobile(<321px)
 * Tablet (321px to 800px)
