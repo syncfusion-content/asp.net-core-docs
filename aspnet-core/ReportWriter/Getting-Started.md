@@ -13,9 +13,9 @@ The report writer is a class library that is used to export the RDL/RDLC report 
 
 
 ## Environment setup
-Refer to the [installation](/aspnet-core/installation) page to know more about the basic steps required to configure the Syncfusion components to use with ASP.NET Core application. 
+Refer to the [installation](/aspnet-core/configuration-and-installation) page to know more about the basic steps required to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation. If you missed to explore, refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation. If you missed to explore, refer to the [nuget-package-manager-settings](/aspnet-core/nuget-packages) to configure the Syncfusion NuGet source.
 
 ### References
 You should add the following packages for the report viewer:
@@ -34,7 +34,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Compression.NETStandard</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages **Syncfusion.Pdf.NETStandard** , **Syncfusion.DocIO.NETStandard** and **Syncfusion.XlsIO.NETStandard**. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages <b>Syncfusion.Pdf.NETStandard</b> , <b>Syncfusion.DocIO.NETStandard</b> and <b>Syncfusion.XlsIO.NETStandard</b>. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.NETStandard</td>
@@ -50,7 +50,7 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.NETStandard</td>
-<td>It is a base library of the **Syncfusion.XlsIO.NETStandard** package.</td>
+<td>It is a base library of the <b>Syncfusion.XlsIO.NETStandard</b> package.</td>
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
