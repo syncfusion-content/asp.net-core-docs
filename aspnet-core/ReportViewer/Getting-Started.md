@@ -14,9 +14,9 @@ The report viewer is a visualization control to view the Microsoft RDL/RDLC form
 N> The report viewer control depends on server-side processing for report rendering. So, you should build the WebAPI service that is compatible for report viewer. This getting started will illustrates details of how to create the report viewer compatible Web API service also for your application.
 
 ## Environment setup
-Refer the [installation](/aspnet-core/installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
+Refer the [installation](/aspnet-core/configuration-and-installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/installation#nuget-package-manager-settings) to configure the Syncfusion NuGet source.
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/nuget-packages) to configure the Syncfusion NuGet source.
 
 ### Styles and scripts
 
@@ -144,11 +144,11 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.Report.NETStandard</td>
-<td>It is a base library for the **Syncfusion.EJ.ReportViewer.ASPNET.Core** package.</td>
+<td>It is a base library for the <b>Syncfusion.EJ.ReportViewer.ASPNET.Core</b> package.</td>
 </tr>
 <tr>
 <td>Syncfusion.Compression.NETStandard</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages **Syncfusion.Pdf.NETStandard** , **Syncfusion.DocIO.NETStandard** and **Syncfusion.XlsIO.NETStandard**. </td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages <b>Syncfusion.Pdf.NETStandard</b> , <b>Syncfusion.DocIO.NETStandard</b> and <b>Syncfusion.XlsIO.NETStandard</b>. </td>
 </tr>
 <tr>
 <td>Syncfusion.Pdf.NETStandard</td>
@@ -164,11 +164,11 @@ Purpose
 </tr>
 <tr>
 <td>Syncfusion.OfficeChart.NETStandard</td>
-<td>It is a base library of the **Syncfusion.XlsIO.NETStandard** package.</td>
+<td>It is a base library of the <b>Syncfusion.XlsIO.NETStandard package</b>.</td>
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
-<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
+<td>Serialize and deserialize the data for report viewer. It is a mandatory package for the report viewer, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
 </tr>
 <tr>
 <td>System.Data.SqlClient</td>
@@ -261,7 +261,7 @@ namespace ReportViewerDemo.Controllers
         }
         
         //Get action for getting resources from the report
-        [System.Web.Http.ActionName("GetResource")]
+        [ActionName("GetResource")]
         [AcceptVerbs("GET")]
         // Method will be called from Report Viewer client to get the image src for Image report item.
         public object GetResource(Syncfusion.EJ.ReportViewer.ReportResource resource)
