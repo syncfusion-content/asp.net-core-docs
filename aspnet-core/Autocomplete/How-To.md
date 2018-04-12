@@ -45,11 +45,11 @@ You can add the newly typed value to the AutoComplete where us the newly typed v
 
         if (args.text.indexOf('Add New') >= 0) {
            //separate the value
-            var newval = args.text.replace('(Add new)', ''); 
+            var value = args.text.replace('(Add new)', '');
             //push the value to datasource
-            this.model.dataSource.push({ text: newval.trim()});
+            this.model.dataSource.push({ text: value.trim()});
             this._doneRemaining();
-            this.option("value", newval.trim())
+            this.option("value", value.trim())
         }
     }
 
@@ -109,7 +109,7 @@ The below code snippet will perform the sorting/filtering in server side before 
 
 {% endhighlight %}
 
-## Cascade between two Autocompletes
+## Cascade between two Autocomplete
 
 By default, we did not have in-built cascading support in Autocomplete. But, we can able to achieve this by using client-side events **change** and **select**. Refer to the below steps.
 
@@ -125,7 +125,7 @@ function onChange(args) {
 
             $.ajax({
                 url: "/Autocomplete/Suggestions",
-                data: { searchstring: args.value },
+                data: { search: args.value },
                 type: 'POST',
                 dataType: "json",
                 success: function (response) {
@@ -163,10 +163,10 @@ function onChange(args) {
 
 {% highlight C# %}
 
- public JsonResult Suggestions(string searchstring)
+ public JsonResult Suggestions(string search)
         {
 
-            if (searchstring == "")
+            if (search == "")
             {
                 return null;
             }
@@ -174,14 +174,13 @@ function onChange(args) {
             {
                 var Data = setListSource();
                 //filter data based on the search string value
-                var search = from n in Data where n.text.ToLower().StartsWith(searchstring.ToLower()) select n;
+                var search = from n in Data where n.text.ToLower().StartsWith(search.ToLower()) select n;
                 return Json(search, JsonRequestBehavior.AllowGet);
             }
         }
 
   public JsonResult NewSuggestions(string id)
         {
-
             var Data = setpartySource();
             //filter data based on the selected key value
             var search1 = from n in Data where n.No.Contains(id) select n;
@@ -207,10 +206,10 @@ Add a class named &quot;AutocompleteModel&quot; in the Models folder and replace
 public class AutocompleteModel
     {
         [Display(Name = "Auto Data")]
-        public List<AutocompelteValue> AutoData { get; set; }
+        public List<AutocompleteValue> AutoData { get; set; }
     }
 
-    public class AutocompelteValue
+    public class AutocompleteValue
     {
         public string Text { get; set; }
         public string Value { get; set; }

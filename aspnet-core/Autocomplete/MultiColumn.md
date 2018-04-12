@@ -57,7 +57,7 @@ This defines the text alignment of a particular column header cell value</td></t
 <tr>
 <td>
  [columns-textAlign](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-textalign)</td><td>
-Gets or sets a value that indicates to align the text within the columnr</td></tr>
+Gets or sets a value that indicates to align the text within the columns</td></tr>
 </table>
 
 ## Configuring Multiple Columns
