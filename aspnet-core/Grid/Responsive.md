@@ -292,7 +292,7 @@ public partial class GridController : Controller
 
 MinWidth set to grid
 
-N> The Grid can be rendred with height responsive by setting the scroll `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
+N> The Grid can be rendered with height responsive by setting the scroll `height`as `100%`. If the grid height is greater than its parent container's height then the vertical scrollbar will be displayed to view the content.
 
 ## Priority for columns
 
