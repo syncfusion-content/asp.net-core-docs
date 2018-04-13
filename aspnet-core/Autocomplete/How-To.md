@@ -181,7 +181,7 @@ function onChange(args) {
 
   public JsonResult NewSuggestions(string id)
         {
-            var Data = setpartySource();
+            var Data = set_partySource();
             //filter data based on the selected key value
             var search1 = from n in Data where n.No.Contains(id) select n;
             return Json(search1, JsonRequestBehavior.AllowGet);
