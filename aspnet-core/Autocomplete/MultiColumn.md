@@ -27,6 +27,38 @@ N> **StringFormat** as “{0} ({1}) ({2})” means search based on 0, 1 and 2 co
 <tr><td>Field</td><td>Get or set a value that indicates to display the columns in the autocomplete mapping with column name of the dataSource. </td></tr>
 <tr><td>HeaderText</td><td>Get or set a value that indicates to display the title of that particular column.</td></tr></table>
 
+Also find the properties of the Columns field in the Multicolumn.
+
+<table>
+<tr>
+<th>
+ [columns-field](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-field) </th><th>
+Get or set a value that indicates to display the columns in the autocomplete mapping with column name of the dataSource.</th></tr>
+<tr>
+<td>
+ [columns-headerText](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-headertext)</td><td>
+Get or set a value that indicates to display the title of that particular column.</td></tr>
+<tr>
+<td>
+ [columns-cssClass](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-cssclass)</td><td>
+Gets or sets a value that indicates to render the multicolumn with custom theme.</td></tr>
+<tr>
+<td>
+ [columns-type](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-type)</td><td>
+Specifies the search data type for the specific column</td></tr>
+<tr>
+<td>
+ [columns-filterType](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-filtertype)</td><td>
+Specifies the search filter type for a particular column</td></tr>
+<tr>
+<td>
+[columns-headerTextAlign](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-headertextalign)</td><td>
+This defines the text alignment of a particular column header cell value</td></tr>
+<tr>
+<td>
+ [columns-textAlign](https://help.syncfusion.com/api/js/ejautocomplete#members:multicolumnsettings-columns-textalign)</td><td>
+Gets or sets a value that indicates to align the text within the columns</td></tr>
+</table>
 
 ## Configuring Multiple Columns
 
