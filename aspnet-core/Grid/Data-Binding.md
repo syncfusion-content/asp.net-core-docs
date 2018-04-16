@@ -14,7 +14,8 @@ The Grid `datasource` property or `e-datamanager` child tag allows to bind datas
 *	REST Service URL as string.
 *	Table – Allows to bind HTML Table and it accepts table template script "ID".
 *	ORM components such as Entity Framework/Linq to SQL.
-     
+
+N> To update the dataSource after Grid rendered, use `dataSource` method of grid.
 
 ## IEnumerable
  
