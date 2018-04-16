@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started on Linux
 
-The below guidelines demonstrate how to create an ASP.NET Core application and configure with our Essential Studio MVC Components.
+The below guidelines demonstrate how to create an ASP.NET Core application and configure with our components.
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ sudo apt-get install dotnet-dev-1.0.0-preview2-003121
 
 ## Configuration
 
-To configure an ASP.NET Core application and utilize our Essential Studio MVC components, follow the below guidelines.
+To configure an ASP.NET Core application and utilize our components, follow the below guidelines.
 
 * Create an ASP.NET Core Project.
 * Configuring Syncfusion Components.
