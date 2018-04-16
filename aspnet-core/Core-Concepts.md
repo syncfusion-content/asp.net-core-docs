@@ -162,7 +162,7 @@ The Internationalize any of our Syncfusion components/page into particular cultu
 
 ### Dynamic globalization
 
-Find the steps to globalize the MVC application from below
+Find the steps to globalize the ASP.NET Core application from below
 
 1. Specify the target culture in **web.config** file under **<system.web>** root
 
