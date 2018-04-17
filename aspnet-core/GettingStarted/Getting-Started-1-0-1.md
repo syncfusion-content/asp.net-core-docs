@@ -36,6 +36,8 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release. 
 
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
+
 *  In the Solution Explorer window, click the **"Show All Files"** button.
 
    ![](getting-started_images/getting-started_img6.jpeg)
@@ -194,6 +196,8 @@ dotnet new -t web
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
+
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
 {% highlight cshtml %}
@@ -350,6 +354,8 @@ yo aspnet
   ![](getting-started_images/getting-started_img15.JPG)
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
+
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
 * Open **“_viewimports.cshtml**” file from the views folder and add the following namespace for components references and Tag Helper support.
 
