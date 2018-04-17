@@ -185,6 +185,8 @@ dotnet new mvc
 
   ![](getting-started_images/getting-started_image25.png)
 
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
+
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
@@ -284,9 +286,9 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 * DotNetCore 2.0 [x86 Installer](https://download.microsoft.com/download/0/F/D/0FD852A4-7EA1-4E2A-983A-0484AC19B92C/dotnet-sdk-2.0.0-win-x86.exe).
 
 
-To create an ASP.NET Core 2.0 application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
+To create an ASP.NET Core 2.0 application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
 
-Since **Visual Studio Code** uses folder structure for storing files of application, we will create a folder of the name **ASP.NET**
+Since **Visual Studio Code** uses folder structure for storing files of application, we will create a folder of the name **ASP.NET**
 
 * Install Node from [https://nodejs.org/](https://nodejs.org/#)
 * Open the Command prompt window in Administrator mode and execute the below mentioned command to install the **Yeoman** tool in your local machine by using **npm**.
@@ -351,6 +353,8 @@ yo aspnet
 
 
  ![](getting-started_images/getting-started_image9.png)
+
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
