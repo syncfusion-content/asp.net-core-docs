@@ -354,7 +354,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 * Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
-* Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.AspNet.Core** package reference.
+* Once the NuGet packages installation gets completed, the **Syncfusion.EJ.AspNet.Core** package reference was automatically added in **.csproj** file.
 
 {% highlight cshtml %}
 
@@ -376,7 +376,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %}
 
-* Open Terminal window and navigate to your project folder then execute the following command to restore the packages which are all specified in your **project.json** file.
+* Open Terminal window and navigate to your project folder then execute the following command to restore the packages which are all specified in your **.csproj** file.
 
 {% highlight text %}
 
