@@ -206,8 +206,7 @@ yo aspnet
 
   ![](getting-started-images-linux/img7.jpg)
 
-* Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here]
-(https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
+* Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
 * Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.AspNet.Core** package reference.
 
