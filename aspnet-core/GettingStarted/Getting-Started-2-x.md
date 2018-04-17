@@ -54,13 +54,13 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 > **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp to download the necessary syncfusion script and themes files into **wwwroot** folder.
 
-* To add necessary NPM packages to the application, **Project.json** file should be included.
+* To add necessary NPM packages to the application, **Package.json** file should be included.
 
-* Add **Project.json** file to the project by right click on the project file,select **Add -> New item** and search for **npm Configuration File** and click **Add** button.
+* Add **Package.json** file to the project by right click on the project file,select **Add -> New item** and search for **npm Configuration File** and click **Add** button.
 
 ![](getting-started_images/getting-started_img29.png)
 
-* Add the below code in the **Project.json** file.
+* Add the below code in the **Package.json** file.
 
 {% highlight cshtml %}
 
