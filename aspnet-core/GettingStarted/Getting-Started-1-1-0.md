@@ -126,7 +126,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![](getting-started_images/getting-started_fileformat_img2.png)
 
-N> 1. You can refer [Installation](https://help.syncfusion.com/aspnet-core/installation) procedure to configure Syncfusion NuGet packages.
+N> 1. You can refer [Installation](https://help.syncfusion.com/aspnet-core/configuration-and-installation) procedure to configure Syncfusion NuGet packages.
 N> 2. The File format component packages has been modified from Volume 3, 2017 (15.3.0.26) release. You can refer [migration document](https://help.syncfusion.com/aspnet-core/release-notes/migratingtov15.3.0.26) for more details.
 
 ## ASP.NET Core 1.1.0 Application Using Command Prompt with Visual Studio Code
