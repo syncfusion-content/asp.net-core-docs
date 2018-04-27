@@ -301,7 +301,7 @@ npm install -g yo
 
 {% highlight text %}
 
-npm install -g yo generator-aspnet gulp bower
+`npm install -g yo generator-aspnet gulp bower`
 
 {% endhighlight %}
 
@@ -309,7 +309,7 @@ npm install -g yo generator-aspnet gulp bower
 
 {% highlight text %}
 
-yo aspnet
+`yo aspnet`
 
 {% endhighlight %}
 
