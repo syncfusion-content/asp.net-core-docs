@@ -324,7 +324,7 @@ Up to 13.4.0.58 version, above specified jQuery validation settings were configu
    ~~~ cshtml
 
         @{
-            // defining valudation rule required
+            // defining validation rule required
             Dictionary<string, object> rule = new Dictionary<string, object>();
             rule.Add("required",true);
             // defining validation message for required
