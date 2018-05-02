@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started on Mac
 
-The below guidelines demonstrate how to create an ASP.NET Core application and configure with our Essential Studio MVC Components.
+The below guidelines demonstrate how to create an ASP.NET Core application and configure with our components.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 ## Configuration
 
-To configure an ASP.NET Core application and utilize our Essential Studio MVC components, follow the below guidelines.
+To configure an ASP.NET Core application and utilize our components, follow the below guidelines.
 
 * Create an ASP.NET Core Project
 * Configuring Syncfusion Components
@@ -162,6 +162,8 @@ ext install bower
 
   ![](getting-started-images-mac/img8.png)
 
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
+
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
 * Open **_viewimports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
@@ -193,35 +195,22 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
 
 <head>
 
-<environment names="Development">
-
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-
-<link rel="stylesheet" href="~/css/site.css" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
 <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
 
-</environment>
-
-</head>
-
-<body>
-
-<environment names="Development">
-
 <script src="~/lib/jquery/dist/jquery.js"></script>
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-
-<script src="~/js/site.js" asp-append-version="true"></script>
 
 <script src="~/lib/jsrender/jsrender.min.js"></script>
 
 <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
 
-</environment>
+</head>
+
+<body>
+
 
 </body>
 

@@ -2,7 +2,7 @@
 layout: post
 title: Searching with Grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable search option and its functionalities
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 --- 

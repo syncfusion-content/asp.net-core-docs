@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started on Linux
 
-The below guidelines demonstrate how to create an ASP.NET Core application and configure with our Essential Studio MVC Components.
+The below guidelines demonstrate how to create an ASP.NET Core application and configure with our components.
 
 ## Prerequisites
 
@@ -122,7 +122,7 @@ dotnet --version
 
 ## Configuration
 
-To configure an ASP.NET Core application and utilize our Essential Studio MVC components, follow the below guidelines.
+To configure an ASP.NET Core application and utilize our components, follow the below guidelines.
 
 * Create an ASP.NET Core Project.
 * Configuring Syncfusion Components.
@@ -354,7 +354,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 * Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
-* Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.AspNet.Core** package reference.
+* Once the NuGet packages installation gets completed, the **Syncfusion.EJ.AspNet.Core** package reference was automatically added in **.csproj** file.
 
 {% highlight cshtml %}
 
@@ -363,6 +363,8 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 {% endhighlight %}
 
   ![](getting-started-images-linux/getting_started_2_12.png)
+
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
@@ -376,7 +378,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %}
 
-* Open Terminal window and navigate to your project folder then execute the following command to restore the packages which are all specified in your **project.json** file.
+* Open Terminal window and navigate to your project folder then execute the following command to restore the packages which are all specified in your **.csproj** file.
 
 {% highlight text %}
 

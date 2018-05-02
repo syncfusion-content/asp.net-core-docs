@@ -79,6 +79,8 @@ Based on the controls, the Feature is enabled to choose the features of the corr
 
      ![](getting-started-SampleCreator-images/SampleCreator_img9.png)
 
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
+
 3. Once the project is created you can open the project by clicking the Yes button. If you click No button the corresponding location of the project will be opened. Refer the following screenshot for more information.
 
    ![](getting-started-SampleCreator-images/SampleCreator_img11.jpeg)

@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started on Mac
 
-The below guidelines demonstrate how to create an ASP.NET Core application and configure with our Essential Studio MVC Components.
+The below guidelines demonstrate how to create an ASP.NET Core application and configure with our components.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 
 ## Configuration
 
-To configure an ASP.NET Core application and utilize our Essential Studio MVC components, follow the below guidelines.
+To configure an ASP.NET Core application and utilize our components, follow the below guidelines.
 
 * Create an ASP.NET Core Project
 * Configuring Syncfusion Components
@@ -168,6 +168,8 @@ ext install bower
 * Now open your **project.json** file to specify our assembly packages.
 
   ![](getting-started-images-mac/img8.png)
+
+> The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 

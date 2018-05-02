@@ -2,7 +2,7 @@
 layout: post
 title: Paging with Grid widget for Syncfusion Essential ASP.NET Core
 description: How to enable paging and its functionalites.
-platform: ASP.NET Core
+platform: aspnet-core
 control: Grid
 documentation: ug
 ---

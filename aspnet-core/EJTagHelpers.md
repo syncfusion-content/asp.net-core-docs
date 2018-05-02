@@ -61,8 +61,8 @@ Client side events can be wired in the same way as properties. But here all the 
 
 * [Getting Started with Syncfusion controls in ASP.NET Core](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-2-0)   
 
-* [Installation](https://help.syncfusion.com/aspnet-core/core-concepts) 
+* [Installation](https://help.syncfusion.com/aspnet-core/configuration-and-installation) 
 
-* [Core Concepts](https://help.syncfusion.com/aspnet-core/installation)
+* [Core Concepts](https://help.syncfusion.com/aspnet-core/core-concepts)
 
 * [Demo Samples](http://aspnetcore.syncfusion.com/)
