@@ -412,7 +412,7 @@ The following code section renders the sub tab element in the vertical orientati
         @firstTab()
     </div>);
     data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
-    data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+    data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 })
     @helper firstTab(
 {
@@ -547,7 +547,7 @@ The second and third tab contents are declared in the same method as the first t
 			Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 			@firstTab()
             </div>);
-			data.Add().ID("sandwitch").Text("Sandwizza Menu").ContentTemplate(@<div>
+			data.Add().ID("sandwich").Text("Sandwizza Menu").ContentTemplate(@<div>
 			Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 			@secondTab() 
 			</div>);  
@@ -610,7 +610,7 @@ Add third tab contents in element during initialization using the content templa
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwizza" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwizza Menu ">
                     <e-content-template>
                         <p>Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health</p>
                     </e-content-template>
@@ -691,7 +691,7 @@ Add third tab contents in element during initialization using the content templa
 		Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 		@firstTab()  
 		</div>); 
-		data.Add().ID("sandwitch").Text("Sandwizza Menu").ContentTemplate(@<div>
+		data.Add().ID("sandwich").Text("Sandwizza Menu").ContentTemplate(@<div>
 		Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 		@secondTab() 
 		</div>); 
