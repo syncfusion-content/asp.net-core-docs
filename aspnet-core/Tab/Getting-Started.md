@@ -719,7 +719,7 @@ Add third tab contents in element during initialization using the content templa
 	<div class="ingredients">  
 	<p>     
 	Rate : $55<br /> 
-	Ingredients : tomato ,olive, onino &amp;garlic.<br />  
+	Ingredients : tomato ,olive, onions &amp;garlic.<br />  
 	Description: Canned tuna is used to make this yummy tomato sauce.
 	</p>       
 	</div> 
