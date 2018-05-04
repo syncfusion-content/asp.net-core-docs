@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started 
 
-This section briefly explains how to create a tab control in your application with ASP.NET Core.
+This section explains how to create a tab control in your application with ASP.NET Core.
 
 ## Create your first tab control in ASP.NET Core
 
-The ASP.NET Core tab control is an interface that displays the content in multiple sections. A tab panel consists of HeaderText as well as a ContentTemplate. It is useful for a dashboard that is having limited space. The following section guides you to customize the tab for displaying Hotel menu items, its rate details, and the ingredients on demand.
+The ASP.NET Core tab control is an interface that displays the content in multiple sections. A tab panel consists of HeaderText as well as a ContentTemplate. This is very useful when dashboards have limited space. The following screenshot shows how to customize the tab to display Hotel menu items,  rate details, and the ingredients on demand.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -22,12 +22,12 @@ Tab control with Hotel Menu items
 
 ### Create tab control
 
-The ASP.NET Core tab widget basically builds a dynamic, interactive, and menu-driven interface from your content. The content can be a text, graphics, or HTML. You can create the tab headers using the Text and Content template property.
+The ASP.NET Core tab widget basically builds a dynamic, interactive, and menu-driven interface from your content. The content can be a text, graphics, or HTML. You can create the tab headers using the Text and Content template properties.
 
-The following steps are used to create a tab control.
+To create a tab control:
 
-1. Create a core project, and add necessary assembly and script with the help of the given [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
-2. Add the mentioned code to the corresponding view page for tab rendering.
+1. Create a core project, and add the required assemblies and script with the help of [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+2.Then, add the following code sample to the corresponding view page for tab rendering..
   
 {% highlight CSHTML %}
 
@@ -43,7 +43,7 @@ The following steps are used to create a tab control.
             <e-tab-item id="Pasta" text="Pasta Menu">
                 <e-content-template></e-content-template>
             </e-tab-item>
-            <e-tab-item id="sandwizza" text="Sandwizza Menu">
+            <e-tab-item id="Sandwich" text="Sandwich Menu">
                 <e-content-template></e-content-template>
             </e-tab-item>
         </e-tab-items>
@@ -59,15 +59,15 @@ The following steps are used to create a tab control.
 
 @{ Html.EJ().Tab("DishType").Items(data =>
 	{
-		data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div></div>);
-		data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-		data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+		data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div></div>);
+		data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+		data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 	}).Render();
     }
 
 {% endhighlight %}
 
-N> To render the tab control use either Razor or Tag helper code as given in the previous code snippet.
+N> To render the tab control, use either Razor or Tag helper code as given in the code sample.
  
 The following output will be displayed.
 
@@ -80,7 +80,7 @@ Tab control with Header
 
 ### Configure content
 
-In this application, a detailed description is provided to each item. You can specify the contents in the tab section within the content template.
+In this application, a detailed description of each item is provided . You can specify the contents in the tab section within the content template.
  
 {% highlight CSHTML %}
 
@@ -88,7 +88,7 @@ In this application, a detailed description is provided to each item. You can sp
 
 <ej-tab id="DishType">
     <e-tab-items>
-        <e-tab-item id="pizzamenu" text="Pizza Menu">
+        <e-tab-item id="pizza" text="Pizza Menu">
             <e-content-template>
                 <div>
                     <ej-rating id="RatingPizza" value="4" precision="@Precision.Exact" />
@@ -99,10 +99,10 @@ In this application, a detailed description is provided to each item. You can sp
                 </div>
             </e-content-template>
         </e-tab-item>
-        <e-tab-item id="pizzatype" text="Pizza Type">
+        <e-tab-item id="type" text="Pizza Type">
             <e-content-template></e-content-template>
         </e-tab-item>
-        <e-tab-item id="sandwichtype" text="Sandwizza Type">
+        <e-tab-item id="sandwich" text="Sandwich Type">
             <e-content-template></e-content-template>
         </e-tab-item>
     </e-tab-items>
@@ -118,7 +118,7 @@ In this application, a detailed description is provided to each item. You can sp
 
 {
 
-data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div>
+data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div>
     Rating:
 
     @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
@@ -134,15 +134,17 @@ data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div>
 
 {% endhighlight %}
 
-You can provide more customization to the tab by using rating control to describe an item’s price.
+You can also customize the tab by using rating control to describe the item’s price.
 
 ### Create the rating
 
-The ASP.NET Core rating control provides an intuitive rating experience. It allows you to select the number of stars that represents the rating. The following code example explains you the creation of rating control. Create the rating control using HTML helper, and render the rating control and its description inside the content template in first tab control.
+The ASP.NET Core rating control provides an intuitive rating experience. This allows you to select the number of stars that represents rating.Create the rating control using HTML helper, and render the rating control and its description inside the content template in first tab control. 
 
 For more information about rating, refer to the following link:
 
 <https://help.syncfusion.com/aspnet-core>
+
+The following code example explains the creation of rating control:
 
 {% highlight CSHTML %}
 
@@ -165,7 +167,7 @@ For more information about rating, refer to the following link:
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwizza" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwich Menu ">
                     <e-content-template>
                     </e-content-template>
                 </e-tab-item>
@@ -186,15 +188,15 @@ For more information about rating, refer to the following link:
   
 @Html.EJ().Tab("DishType").Items(data =>
 {
-data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div> Rating:
+data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div> Rating:
 @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
 
 <!--Food item description-->
 
 <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
 </div>);
-data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 }) 
 
 {% endhighlight %}
@@ -205,9 +207,9 @@ The following screenshot is the output for the given code example.
 
 ### Sub tab with content
 
-Each item has a variety of options and these options are also specified in the limited space. So you can choose the tab control that is used within the root tab to specify more details.
+Each item has a variety of options and those options have to be specified in the limited space. So you can choose the tab control that is used within the root tab to specify more details.
 
-The following code example represents the sub tab control rendering using helper function.
+The following code sample represents the rendering of sub tab control using the helper function:
 
 {% highlight CSHTML %}
 
@@ -227,7 +229,7 @@ The following code example represents the sub tab control rendering using helper
                             <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
                         </div>
                     </div>
-                    <ej-tab id="PizzaMenu">
+                    <ej-tab id="pizza">
                         <e-tab-items>
                             <e-tab-item id="Corn-Spinach" text="Corn Spinach">
                                 <e-content-template>
@@ -260,7 +262,7 @@ The following code example represents the sub tab control rendering using helper
                 </e-content-template>
             </e-tab-item>
         </e-tab-items>
-        <ej-tab>
+        </ej-tab>
 </div>
 
 {% endhighlight %}
@@ -271,7 +273,7 @@ The following code example represents the sub tab control rendering using helper
 
 @Html.EJ().Tab("DishType").Items(data =>
 {
-    data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div> Rating:
+    data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div> Rating:
     @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
 
 <!--Food item description-->
@@ -279,12 +281,12 @@ The following code example represents the sub tab control rendering using helper
     <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
        @firstTab()
 </div>);
-    data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-    data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+    data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+    data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 })
 @helper firstTab()
 {
-    @Html.EJ().Tab("PizzaMenu").Items(data =>
+    @Html.EJ().Tab("pizza").Items(data =>
     {
         data.Add().ID("Corn-Spinach").Text("Corn Spinach").ContentTemplate(@<div class="e-content">
             <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
@@ -311,7 +313,7 @@ The following code example represents the sub tab control rendering using helper
 
 {% endhighlight %}
 
-The following code example is used for positioning the image and content.
+The following code example is used to position images and content.
 
 {% highlight css %}
 
@@ -330,13 +332,13 @@ The following code example is used for positioning the image and content.
 
 {% endhighlight %}
 
-The following screenshot illustrates the first tab with the sub tab control.
+The following screenshot shows the first tab of the sub tab control.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 ### Orientation change
 
-Here you can learn how to set the sub tab orientation to vertical. By default, the tab control is rendered in horizontal orientation. Change this orientation to vertical by using the **HeaderPosition** property. In the following code section, set the tab header orientation to Left.
+To set the sub tab orientation to vertical use the **HeaderPosition** property. By default, the tab control is rendered in horizontal orientation.In the following code section,the tab header orientation is set to Left.
 
 The following code section renders the sub tab element in the vertical orientation.
 
@@ -358,7 +360,7 @@ The following code section renders the sub tab element in the vertical orientati
                             <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
                         </div>
                     </div>
-                    <ej-tab id="PizzaMenu" header-position="@HeaderPosition.Left">
+                    <ej-tab id="pizza" header-position="@HeaderPosition.Left">
                         <e-tab-items>
                             <e-tab-item id="Corn-Spinach" text="Corn Spinach">
                                 <e-content-template>
@@ -391,7 +393,7 @@ The following code section renders the sub tab element in the vertical orientati
                 </e-content-template>
             </e-tab-item>
         </e-tab-items>
-        <ej-tab>
+        </ej-tab>
 </div>
 
 {% endhighlight %}
@@ -402,19 +404,19 @@ The following code section renders the sub tab element in the vertical orientati
 
     @Html.EJ().Tab("DishType").Items(data =>
 {
-    data.Add().ID("pizzamenu").Text("Pizza Menu").ContentTemplate(@<div>
+    data.Add().ID("pizza").Text("Pizza Menu").ContentTemplate(@<div>
         Rating:
         @Html.EJ().Rating("RatingPizza").Value(4).Precision(Precision.Exact)
         <!--Food item description-->
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         @firstTab()
     </div>);
-    data.Add().ID("pizzatype").Text("Pizza Type").ContentTemplate(@<div></div>);
-    data.Add().ID("sandwichtype").Text("Sandwich Type").ContentTemplate(@<div></div>);
+    data.Add().ID("type").Text("Pizza Type").ContentTemplate(@<div></div>);
+    data.Add().ID("sandwich").Text("Sandwich Type").ContentTemplate(@<div></div>);
 })
     @helper firstTab(
 {
-    @Html.EJ().Tab("PizzaMenu").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
+    @Html.EJ().Tab("pizza").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
     {
         data.Add().ID("Corn-Spinach").Text("Corn Spinach").ContentTemplate(@<div class="e-content">
             <img src=" http://js.syncfusion.com/demos/web/images/accordion/corn-and-spinach-05.png" alt="corn-spinach">
@@ -447,7 +449,7 @@ The following screenshot is the output of previous steps.
 
 ### Configure contents to remaining tab items
 
-The second and third tab contents are declared in the same method as of the first tab content declaration. These tabs also consist of rating and sub tab controls.
+The second and third tab contents are declared in the same method as the first tab content. These tabs also consist of rating and sub tab controls.
 
 {% highlight CSHTML %}
 
@@ -464,7 +466,7 @@ The second and third tab contents are declared in the same method as of the firs
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwizza" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwich Menu ">
                     <e-content-template>
                         <div>
                             <div>
@@ -472,7 +474,7 @@ The second and third tab contents are declared in the same method as of the firs
                                 <div>
                                     <ej-rating id="gradenPizza" allow-reset="false" read-only="true" value="4" />
                                 </div>
-                                <p>Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                                <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
                             </div>
                         </div>
                         <ej-tab id="SandwichMenu" header-position="@HeaderPosition.Left" height="221">
@@ -499,7 +501,7 @@ The second and third tab contents are declared in the same method as of the firs
                                                 Rate    : $100<br />
                                                 Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.
                                                 <br />
-                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
+                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
                                             </div>
                                         </div>
                                     </e-content-template>
@@ -541,20 +543,20 @@ The second and third tab contents are declared in the same method as of the firs
 
 @{Html.EJ().Tab("DishType").Items(data => 
         {
-			data.Add().ID("Pizzatype").Text("Pizza Menu").ContentTemplate(@<div> 
+			data.Add().ID("type").Text("Pizza Menu").ContentTemplate(@<div> 
 			Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 			@firstTab()
             </div>);
-			data.Add().ID("sandwitchtype").Text("Sandwizza Menu").ContentTemplate(@<div>
-			Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
+			data.Add().ID("sandwich").Text("Sandwich Menu").ContentTemplate(@<div>
+			Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 			@secondTab() 
 			</div>);  
-			data.Add().ID("Pastatype").Text("Pasta Menu").ContentTemplate(@<div>
+			data.Add().ID("Pasta").Text("Pasta Menu").ContentTemplate(@<div>
 			</div>);  
 		}).Render();
 
 		@helper secondTab(){ 
-		   @Html.EJ().Tab("SandwichMenu").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
+		   @Html.EJ().Tab("Menu").HeaderPosition(HeaderPosition.Left).Height("221").Items(data =>
 		   {       
 				data.Add().ID("GardenVeggie").Text("Garden Veggie").ContentTemplate(@<div class="e-content">
 				<img src="http://js.syncfusion.com/demos/web/images/accordion/garden-veggie.png" alt="garden-veggie "> 
@@ -572,7 +574,7 @@ The second and third tab contents are declared in the same method as of the firs
 				Rate    : $100<br /> 
 				Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.   
 				<br />      
-				Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
+				Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
 				</div>   
 				</div>); 
 				data.Add().ID("PaneerTikka").Text("Paneer Tikka  ").ContentTemplate(@<div class="e-content"> 
@@ -608,9 +610,9 @@ Add third tab contents in element during initialization using the content templa
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwizza" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwich Menu ">
                     <e-content-template>
-                        <p>Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health</p>
+                        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health</p>
                     </e-content-template>
                 </e-tab-item>
                 <e-tab-item id="Pasta" text="Pasta Menu">
@@ -648,7 +650,7 @@ Add third tab contents in element during initialization using the content templa
                                                 Rate    : $100<br />
                                                 Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.
                                                 <br />
-                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
+                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
                                             </div>
                                         </div>
                                     </e-content-template>
@@ -685,15 +687,15 @@ Add third tab contents in element during initialization using the content templa
 
 @{Html.EJ().Tab("DishType").Items(data =>  
    {   
-		data.Add().ID("Pizzatype").Text("Pizza Menu").ContentTemplate(@<div>
+		data.Add().ID("type").Text("Pizza Menu").ContentTemplate(@<div>
 		Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 		@firstTab()  
 		</div>); 
-		data.Add().ID("sandwitchtype").Text("Sandwizza Menu").ContentTemplate(@<div>
-		Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
+		data.Add().ID("sandwich").Text("Sandwich Menu").ContentTemplate(@<div>
+		Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 		@secondTab() 
 		</div>); 
-		data.Add().ID("Pastatype").Text("Pasta Menu").ContentTemplate(@<div>
+		data.Add().ID("Pasta").Text("Pasta Menu").ContentTemplate(@<div>
 		Pasta cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.  
 		@thirdTab() 
 		</div>); 
@@ -717,7 +719,7 @@ Add third tab contents in element during initialization using the content templa
 	<div class="ingredients">  
 	<p>     
 	Rate : $55<br /> 
-	Ingredients : tomato ,olive, oninor &amp;garlic.<br />  
+	Ingredients : tomato ,olive, onions &amp;garlic.<br />  
 	Description: Canned tuna is used to make this yummy tomato sauce.
 	</p>       
 	</div> 
@@ -727,8 +729,8 @@ Add third tab contents in element during initialization using the content templa
 	<div class="ingredients">   
 	<p>              
 	Rate : $30<br />     
-	Ingredients : sautered spinach mix, sweet corn, parsley &amp;mozarella cheese.<br /> 
-	Description: This is a pasta dish make with leftover channa masala (chole). This can be made from scratch too by making the channa masala first and then tossing in the cooked pasta.
+	Ingredients : sauntered spinach mix, sweet corn, parsley &amp;mozzarella cheese.<br /> 
+	Description: This is a pasta dish make with leftover Channa masala. This can be made from scratch too by making the Channa masala first and then tossing in the cooked pasta.
 	</p>     
 	</div>      
 	</div>); 
@@ -760,7 +762,7 @@ Apply the following styles to the tab.
 
 {% endhighlight %}
 
-The following screenshot illustrates the second tab contents in tab and the final hotel menu with rating, description, and ingredients of the item in the tab interface.
+The following screenshot shows the second tab content in tab and the final hotel menu with rating, description, and ingredients of the item in the tab interface.
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
