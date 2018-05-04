@@ -9,26 +9,24 @@ documentation: ug
 
 # Getting Started
 
-This section explains briefly about how to create a Toolbar in your ASP.NET Core application. 
+This section explains how to create a Toolbar in your ASP.NET Core application. 
 
 ## Create your first Toolbar in ASP.NET Core
 
 ### Create Toolbar for PDF Reader
 
-Toolbar control displays a list of tools in a web page. It is used to customize Toolbar items of any functionality, by using enriched client-side methods. This control consists of a collection of unordered lists, containing text and images into a <div>. From the following section, you can learn how to customize Toolbar control for a PDF Reader scenario. The following screen shot shows the appearance of Toolbar in PDF Reader simulator application.
-
-Here, the Toolbar consists of a Toolbar with title and text area as PDF Reader.
+Toolbar control displays a list of tools in a web page. It is used to customize Toolbar items of any functionality by using enriched client-side methods. This control consists of a collection of unordered lists, containing text and images in <div>.This section explains how to customize Toolbar control for a PDF Reader scenario.Here, the Toolbar consists of a title and text area like PDF Reader.
 
 
 ![](Getting-Started-images/Getting-Started0.JPG)
 
 ### Create a Toolbar
 
-Using the following steps, you can create a Toolbar control. The basic rendering of ASP.NET Core Toolbar is achieved with default functionality.
+The basic rendering of ASP.NET Core Toolbar is achieved with default functionality.
 
 1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation
 
-2.Add the mentioned code to the corresponding view page for Toolbar rendering.
+2.Then, add the mentioned code to the corresponding view page for Toolbar rendering.
 
 {% highlight CSHTML %}
 
@@ -57,13 +55,11 @@ The following output is displayed.
 Toolbar without Toolbar items
 {:.caption}
 
-N> To render the Toolbar Control you can use either Razor or Tag helper code as given in the above code snippet.
+N> To render the Toolbar Control, use either Razor or Tag helper code as given in the above code snippet.
 
 ### Initialize Toolbar Items
 
-Toolbar consists of a list of items. From the following guidelines, you can learn how to initialize the Toolbar items 
-
-Initialize the Toolbar items as follows. 			
+The toolbar consists of a list of items. To initialize the Toolbar items, use the following code: 
 
 {% highlight CSHTML %}
 
@@ -100,7 +96,7 @@ Initialize the Toolbar items as follows.
 
 {% endhighlight  %}
 
- Apply the given styles in the code table to show the Toolbar items as follows. You can refer images from any location.For the following code example, the images have been referred from the given location.
+ Apply the given styles in the code table to show the Toolbar items. You can refer images from any location.The images in the following code example were referred from:
 
 [http://js.syncfusion.com/UG/Web/Content/](http://js.syncfusion.com/UG/Web/Content/)pdf-icon.png
 
@@ -154,9 +150,9 @@ Toolbar with list of toolbar items
 
 ### Render Toolbar Items with separator 
 
-You can separate or group the Toolbar items. The separation or grouping of Toolbar items can be achieved by grouping the toolbar items and by  using <b>enableSeparator</b> property of Toolbar . From the following sections, you can learn  how to group the toolbar items. 
+You can separate or group Toolbar items. The separation or grouping can be achieved by using the <b>enableSeparator</b> property.
 
-Initialize the Toolbar items as follows.
+Initialize the Toolbar items using the following code to group Toolbar items.
 
 {% highlight CSHTML %}
 
@@ -165,7 +161,7 @@ Initialize the Toolbar items as follows.
 	  <div class="cols-sample-area">
           
        <ej-toolbar id="toolbarJson" enable-separator="true" orientation="@Orientation.Horizontal" width="250px" dataSource="ViewBag.datasource">
-        <e-toolbar-fields id="empid" sprite-css-class="spriteCss" group="group" />
+        <e-toolbar-fields id="id" sprite-css-class="spriteCss" group="group" />
        </ej-toolbar>
       
       </div>
@@ -178,7 +174,7 @@ Initialize the Toolbar items as follows.
 	 
        <div class="cols-sample-area">
 	   
-        @{Html.EJ().Toolbar("toolbarJson").EnableSeparator(true).Datasource((IEnumerable<Toolbar>)ViewBag.datasource1).ToolbarFields(f => f.ID("empid").SpriteCssClass("spriteCss").Group("group")).Orientation(Orientation.Horizontal).Width("250px").Render(); }
+        @{Html.EJ().Toolbar("toolbarJson").EnableSeparator(true).Datasource((IEnumerable<Toolbar>)ViewBag.datasource1).ToolbarFields(f => f.ID("id").SpriteCssClass("spriteCss").Group("group")).Orientation(Orientation.Horizontal).Width("250px").Render(); }
       
 	  </div>
 {% endhighlight  %}
@@ -189,11 +185,11 @@ Initialize the Toolbar items as follows.
         {
             List<ToolbarLocalBinding> t = new List<ToolbarLocalBinding>();
 
-            t.Add(new ToolbarLocalBinding { empid = "1", spriteCss = "ieb", group = "g1" });
-            t.Add(new ToolbarLocalBinding { empid = "2", spriteCss = "chromeb", group = "g2" });
-            t.Add(new ToolbarLocalBinding { empid = "3", spriteCss = "firefoxb", group = "g2" });
-            t.Add(new ToolbarLocalBinding { empid = "4", spriteCss = "bittyb", group = "g2" });
-            t.Add(new ToolbarLocalBinding { empid = "5", spriteCss = "operab", group = "g1" });
+            t.Add(new ToolbarLocalBinding { id = "1", spriteCss = "IE", group = "g1" });
+            t.Add(new ToolbarLocalBinding { id = "2", spriteCss = "chrome", group = "g2" });
+            t.Add(new ToolbarLocalBinding { id = "3", spriteCss = "firefox", group = "g2" });
+            t.Add(new ToolbarLocalBinding { id = "4", spriteCss = "bitty", group = "g2" });
+            t.Add(new ToolbarLocalBinding { id = "5", spriteCss = "opera", group = "g1" });
             ViewBag.datasource = t;
 
             return View();
@@ -202,7 +198,7 @@ Initialize the Toolbar items as follows.
 		
 		public class ToolbarLocalBinding
     {
-        public string empid { get; set; }
+        public string id { get; set; }
         public string spriteCss { get; set; }
         public string text { get; set; }
         public string group { get; set; }
@@ -221,7 +217,7 @@ Add the following styles in the code table to display the Toolbar items as follo
 
       .cols-sample-area .e-tooltxt .e-spriteimg {
         display: block;
-        background-image: url('../../images/browserl.png');
+        background-image: url('../../images/browser.png');
         height: 32px;
         width: 32px;
         background-repeat: no-repeat;
@@ -229,27 +225,27 @@ Add the following styles in the code table to display the Toolbar items as follo
 
 
 
-      .ieb
+      .IE
       {
         background-position: -84px 0px;
       }
 
-      .chromeb 
+      .chrome 
 	  {
          background-position: -42px 0px;
       }
 
-      .firefoxb 
+      .firefox
 	  {
          background-position: 0px 0px;
       }
 
-       .bittyb 
+       .bitty
 	   {
        background-position: -126px 0px;
         }
 
-       .operab 
+       .opera 
 	   {
        background-position: -168px 0px;
 
@@ -261,13 +257,13 @@ Add the following styles in the code table to display the Toolbar items as follo
 
 {% endhighlight  %}
 
-Execute the code to render Toolbar items with separator.
+Execute the code to render Toolbar items with a separator.
 
 ![](Getting-Started-images/Getting-Started3.png)
 
 ### Add Actions to Toolbar Items
 
-Now the Toolbar is rendered, you need to render the header and content area to create a PDF Reader. In the following section, you can learn how to render the header (Toolbar), content section (PDF viewer area) and how to set the action to Toolbar items.
+After the Toolbar is rendered, you need to render the header and content area to create a PDF Reader.The below code sample shows how to render the header (toolbar), content section (PDF viewer area), and set the action to toolbar items.
 
 N> PDF reading or rendering is not shown here. Simulation of the PDF Reader app to demonstrate the usage of Toolbar control is provided. PDF rendering area is ignored._
 
@@ -356,7 +352,7 @@ Initialize the content area and header as specified in the code table.
             s2.Add().SpriteCssClass("PdfDocument e-icon sticky").TooltipText("Sticky");
             s2.Add().SpriteCssClass("PdfDocument e-icon readMode").TooltipText("Read Mode");
 
-        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("onItemclick")).Render();
+        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("click")).Render();
     }
 
     <br />
@@ -379,7 +375,7 @@ Initialize the content area and header as specified in the code table.
 
 {% endhighlight  %}
 
-You can apply the following styles with the above styles to design the PDF header and content area. 
+You can apply the following styles with the previous styles to design the PDF header and content area. 
 
 {% highlight css %}
 
@@ -406,9 +402,9 @@ You can apply the following styles with the above styles to design the PDF heade
 PDF Reader Appearance
 {:.caption}
 
-So far, you have added the required toolbar items and configured its appearance. When you click on 
+So far, you have added the required toolbar items and configured its appearance. When you click Toolbar items, the operation is performed through client-slide click event. 
 
-Toolbar items, the operation is performed through client-slide click event. The following code example explains how to perform operations, when you click on the Toolbar items.
+The following code example explains how to perform operations when you click the Toolbar items.
 
 {% highlight CSHTML %}
 
@@ -416,7 +412,7 @@ Toolbar items, the operation is performed through client-slide click event. The 
 
         <div id="ctrllabel">PDF Reader</div>
 		
-            <ej-toolbar id="Toolbar4" width="450px"  click="onItemclick">
+            <ej-toolbar id="Toolbar4" width="450px"  click="click">
                 
                 <e-toolbar-items>
 				
@@ -475,12 +471,12 @@ Toolbar items, the operation is performed through client-slide click event. The 
             s2.Add().SpriteCssClass("PdfDocument e-icon sticky").TooltipText("Sticky");
             s2.Add().SpriteCssClass("PdfDocument e-icon readMode").TooltipText("Read Mode");
 
-        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("onItemclick")).Render();
+        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("click")).Render();
     }
 
     <script>
 	
-    function onItemclick(args) {
+    function click(args) {
 	
         var option = args.currentTarget.title;
         switch (option) {
