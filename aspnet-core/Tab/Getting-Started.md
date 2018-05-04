@@ -43,7 +43,7 @@ To create a tab control:
             <e-tab-item id="Pasta" text="Pasta Menu">
                 <e-content-template></e-content-template>
             </e-tab-item>
-            <e-tab-item id="Sandwich" text="Sandwizza Menu">
+            <e-tab-item id="Sandwich" text="Sandwich Menu">
                 <e-content-template></e-content-template>
             </e-tab-item>
         </e-tab-items>
@@ -102,7 +102,7 @@ In this application, a detailed description of each item is provided . You can s
         <e-tab-item id="type" text="Pizza Type">
             <e-content-template></e-content-template>
         </e-tab-item>
-        <e-tab-item id="sandwich" text="Sandwizza Type">
+        <e-tab-item id="sandwich" text="Sandwich Type">
             <e-content-template></e-content-template>
         </e-tab-item>
     </e-tab-items>
@@ -167,7 +167,7 @@ The following code example explains the creation of rating control:
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwizza" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwich Menu ">
                     <e-content-template>
                     </e-content-template>
                 </e-tab-item>
@@ -262,7 +262,7 @@ The following code sample represents the rendering of sub tab control using the 
                 </e-content-template>
             </e-tab-item>
         </e-tab-items>
-        <ej-tab>
+        </ej-tab>
 </div>
 
 {% endhighlight %}
@@ -393,7 +393,7 @@ The following code section renders the sub tab element in the vertical orientati
                 </e-content-template>
             </e-tab-item>
         </e-tab-items>
-        <ej-tab>
+        </ej-tab>
 </div>
 
 {% endhighlight %}
@@ -466,7 +466,7 @@ The second and third tab contents are declared in the same method as the first t
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwizza" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwich Menu ">
                     <e-content-template>
                         <div>
                             <div>
@@ -474,7 +474,7 @@ The second and third tab contents are declared in the same method as the first t
                                 <div>
                                     <ej-rating id="gradenPizza" allow-reset="false" read-only="true" value="4" />
                                 </div>
-                                <p>Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
+                                <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
                             </div>
                         </div>
                         <ej-tab id="SandwichMenu" header-position="@HeaderPosition.Left" height="221">
@@ -501,7 +501,7 @@ The second and third tab contents are declared in the same method as the first t
                                                 Rate    : $100<br />
                                                 Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.
                                                 <br />
-                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
+                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
                                             </div>
                                         </div>
                                     </e-content-template>
@@ -547,8 +547,8 @@ The second and third tab contents are declared in the same method as the first t
 			Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 			@firstTab()
             </div>);
-			data.Add().ID("sandwich").Text("Sandwizza Menu").ContentTemplate(@<div>
-			Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
+			data.Add().ID("sandwich").Text("Sandwich Menu").ContentTemplate(@<div>
+			Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 			@secondTab() 
 			</div>);  
 			data.Add().ID("Pasta").Text("Pasta Menu").ContentTemplate(@<div>
@@ -574,7 +574,7 @@ The second and third tab contents are declared in the same method as the first t
 				Rate    : $100<br /> 
 				Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.   
 				<br />      
-				Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
+				Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead. 
 				</div>   
 				</div>); 
 				data.Add().ID("PaneerTikka").Text("Paneer Tikka  ").ContentTemplate(@<div class="e-content"> 
@@ -610,9 +610,9 @@ Add third tab contents in element during initialization using the content templa
                         </div>
                     </e-content-template>
                 </e-tab-item>
-                <e-tab-item id="Sandwich" text="Sandwizza Menu ">
+                <e-tab-item id="Sandwich" text="Sandwich Menu ">
                     <e-content-template>
-                        <p>Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health</p>
+                        <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health</p>
                     </e-content-template>
                 </e-tab-item>
                 <e-tab-item id="Pasta" text="Pasta Menu">
@@ -650,7 +650,7 @@ Add third tab contents in element during initialization using the content templa
                                                 Rate    : $100<br />
                                                 Ingredients : onions, grilled chicken, chicken salami &amp; tomatoes.
                                                 <br />
-                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favourite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
+                                                Description: Juicy chunks of boneless chicken roasted on open fire.This takeaway favorite is freezer-friendly and quick to reheat, giving you the chance to get ahead.
                                             </div>
                                         </div>
                                     </e-content-template>
@@ -691,8 +691,8 @@ Add third tab contents in element during initialization using the content templa
 		Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.
 		@firstTab()  
 		</div>); 
-		data.Add().ID("sandwich").Text("Sandwizza Menu").ContentTemplate(@<div>
-		Sandwizza cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
+		data.Add().ID("sandwich").Text("Sandwich Menu").ContentTemplate(@<div>
+		Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health. 
 		@secondTab() 
 		</div>); 
 		data.Add().ID("Pasta").Text("Pasta Menu").ContentTemplate(@<div>
@@ -719,7 +719,7 @@ Add third tab contents in element during initialization using the content templa
 	<div class="ingredients">  
 	<p>     
 	Rate : $55<br /> 
-	Ingredients : tomato ,olive, oninor &amp;garlic.<br />  
+	Ingredients : tomato ,olive, onino &amp;garlic.<br />  
 	Description: Canned tuna is used to make this yummy tomato sauce.
 	</p>       
 	</div> 
@@ -729,8 +729,8 @@ Add third tab contents in element during initialization using the content templa
 	<div class="ingredients">   
 	<p>              
 	Rate : $30<br />     
-	Ingredients : sautered spinach mix, sweet corn, parsley &amp;mozarella cheese.<br /> 
-	Description: This is a pasta dish make with leftover channa masala (chole). This can be made from scratch too by making the channa masala first and then tossing in the cooked pasta.
+	Ingredients : sauntered spinach mix, sweet corn, parsley &amp;mozzarella cheese.<br /> 
+	Description: This is a pasta dish make with leftover Channa masala. This can be made from scratch too by making the Channa masala first and then tossing in the cooked pasta.
 	</p>     
 	</div>      
 	</div>); 

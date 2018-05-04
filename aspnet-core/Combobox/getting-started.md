@@ -39,9 +39,9 @@ To initialize the ComboBox
 
 <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="select" datasource="(IEnumerable<Flowers>)ViewBag.datasource" placeholder="Select">
-            <e-combo-box-fields text="text"/>
-        </ej-combo-box>
+        <ej-combo-box id="select" datasource="(IEnumerable<CarsList>)ViewBag.datasource" placeholder="Select">
+        <e-combo-box-fields text="text" />
+    </ej-combo-box>
         </div>
     </div>
 
@@ -49,25 +49,23 @@ To initialize the ComboBox
 
 {% highlight c# %}
 
-  public class Flowers
-    { 
-        public string text { get; set; }
-        public static List<Flowers> GetFlowers()
+        public ActionResult Index()
         {
-            List<Flowers> flower = new List<Flowers>();
-            flower.Add(new Flowers { text = "Anemone Galilee" });
-            flower.Add(new Flowers { text = "Allium drumstick" });
-            flower.Add(new Flowers { text = "Artichoke thistle" });
-            flower.Add(new Flowers { text = "Boronia" });
-            flower.Add(new Flowers { text = "Bouvardia" });
-            flower.Add(new Flowers { text = "Blue lace flower" });
-            flower.Add(new Flowers { text = "Bird of paradise" });
-            flower.Add(new Flowers { text = "Cone flower" });
-            flower.Add(new Flowers { text = "Cosmos" });
-            ...
-            return flower;
+            List<CarsList> car = new List<CarsList>();
+            car.Add(new CarsList { text = "Audi S6" });
+            car.Add(new CarsList { text = "Austin-Healey" });
+            car.Add(new CarsList { text = "Alfa Romeo" });
+            car.Add(new CarsList { text = "Aston Martin" });
+            car.Add(new CarsList { text = "BMW 7" });
+            car.Add(new CarsList { text = "Bentley Mulsanne" });
+            ViewBag.datasource = car;
+            return View();
         }
-    }
+     public class CarsList
+      {
+        public string text { get; set; }
+
+      }
        
   {% endhighlight  %}
 
@@ -103,7 +101,7 @@ The ComboBox allows the user to give custom values when it is not available in t
 
 <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="select" datasource="(IEnumerable<Flowers>)ViewBag.datasource" allow-custom="true" placeholder="Select">
+        <ej-combo-box id="select" datasource="(IEnumerable<CarsList>)ViewBag.datasource" allow-custom="true" placeholder="Select">
             <e-combo-box-fields text="text" value="id"/>
         </ej-combo-box>
         </div>
@@ -113,19 +111,23 @@ The ComboBox allows the user to give custom values when it is not available in t
 
 {% highlight c# %}
 
-  public class Flowers
-    { 
-        public string text { get; set; }
-        public static List<Flowers> GetFlowers()
+   public ActionResult Index()
         {
-            List<Flowers> flower = new List<Flowers>();
-            flower.Add(new Flowers { text = "Anemone Galilee" });
-            flower.Add(new Flowers { text = "Allium drumstick" });
-            flower.Add(new Flowers { text = "Artichoke thistle" });
-            flower.Add(new Flowers { text = "Boronia" });
-            return flower;
+            List<CarsList> car = new List<CarsList>();
+            car.Add(new CarsList { text = "Audi S6" });
+            car.Add(new CarsList { text = "Austin-Healey" });
+            car.Add(new CarsList { text = "Alfa Romeo" });
+            car.Add(new CarsList { text = "Aston Martin" });
+            car.Add(new CarsList { text = "BMW 7" });
+            car.Add(new CarsList { text = "Bentley Mulsanne" });
+            ViewBag.datasource = car;
+            return View();
         }
-    }
+     public class CarsList
+      {
+        public string text { get; set; }
+
+      }
   {% endhighlight  %}
 
 ![](Combobox_getting_started_images/Combobox_data_binding_img1.png)
@@ -142,7 +144,7 @@ In the following sample, popup list's width and height are configured.
 
 <div class="frame">
         <div class="control"> 
-        <ej-combo-box id="select" datasource="(IEnumerable<Flowers>)ViewBag.datasource" popup-height="100px" popup-width="200px" placeholder="Select">
+        <ej-combo-box id="select" datasource="(IEnumerable<CarsList>)ViewBag.datasource" popup-height="100px" popup-width="200px" placeholder="Select">
             <e-combo-box-fields text="text" value="id"/>
         </ej-combo-box>
         </div>
@@ -153,25 +155,23 @@ In the following sample, popup list's width and height are configured.
 {% highlight c# %}
 
   
-       public class Flowers
-    { 
-        public string text { get; set; }
-        public static List<Flowers> GetFlowers()
+         public ActionResult Index()
         {
-            List<Flowers> flower = new List<Flowers>();
-            flower.Add(new Flowers { text = "Anemone Galilee" });
-            flower.Add(new Flowers { text = "Allium drumstick" });
-            flower.Add(new Flowers { text = "Artichoke thistle" });
-            flower.Add(new Flowers { text = "Boronia" });
-            flower.Add(new Flowers { text = "Bouvardia" });
-            flower.Add(new Flowers { text = "Blue lace flower" });
-            flower.Add(new Flowers { text = "Bird of paradise" });
-            flower.Add(new Flowers { text = "Cone flower" });
-            flower.Add(new Flowers { text = "Cosmos" });
-            ...
-            return flower;
+            List<CarsList> car = new List<CarsList>();
+            car.Add(new CarsList { text = "Audi S6" });
+            car.Add(new CarsList { text = "Austin-Healey" });
+            car.Add(new CarsList { text = "Alfa Romeo" });
+            car.Add(new CarsList { text = "Aston Martin" });
+            car.Add(new CarsList { text = "BMW 7" });
+            car.Add(new CarsList { text = "Bentley Mulsanne" });
+            ViewBag.datasource = car;
+            return View();
         }
-    }
+      public class CarsList
+      {
+        public string text { get; set; }
+
+      }
   {% endhighlight  %}
 
 ![](Combobox_getting_started_images/popup.png)

@@ -167,7 +167,7 @@ Add the given styles to display the **Uploadbox** with margin alignments.
     #uploadTable {
         width: 100%;
     }
-    #fileallow, #filedeny {
+    #allow, #deny {
         width: 150px;
         height: 20px;
         padding: 5px;

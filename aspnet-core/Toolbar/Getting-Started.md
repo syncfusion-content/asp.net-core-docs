@@ -161,7 +161,7 @@ Initialize the Toolbar items using the following code to group Toolbar items.
 	  <div class="cols-sample-area">
           
        <ej-toolbar id="toolbarJson" enable-separator="true" orientation="@Orientation.Horizontal" width="250px" dataSource="ViewBag.datasource">
-        <e-toolbar-fields id="empid" sprite-css-class="spriteCss" group="group" />
+        <e-toolbar-fields id="id" sprite-css-class="spriteCss" group="group" />
        </ej-toolbar>
       
       </div>
@@ -174,7 +174,7 @@ Initialize the Toolbar items using the following code to group Toolbar items.
 	 
        <div class="cols-sample-area">
 	   
-        @{Html.EJ().Toolbar("toolbarJson").EnableSeparator(true).Datasource((IEnumerable<Toolbar>)ViewBag.datasource1).ToolbarFields(f => f.ID("empid").SpriteCssClass("spriteCss").Group("group")).Orientation(Orientation.Horizontal).Width("250px").Render(); }
+        @{Html.EJ().Toolbar("toolbarJson").EnableSeparator(true).Datasource((IEnumerable<Toolbar>)ViewBag.datasource1).ToolbarFields(f => f.ID("id").SpriteCssClass("spriteCss").Group("group")).Orientation(Orientation.Horizontal).Width("250px").Render(); }
       
 	  </div>
 {% endhighlight  %}
@@ -185,11 +185,11 @@ Initialize the Toolbar items using the following code to group Toolbar items.
         {
             List<ToolbarLocalBinding> t = new List<ToolbarLocalBinding>();
 
-            t.Add(new ToolbarLocalBinding { empid = "1", spriteCss = "ieb", group = "g1" });
-            t.Add(new ToolbarLocalBinding { empid = "2", spriteCss = "chromeb", group = "g2" });
-            t.Add(new ToolbarLocalBinding { empid = "3", spriteCss = "firefoxb", group = "g2" });
-            t.Add(new ToolbarLocalBinding { empid = "4", spriteCss = "bittyb", group = "g2" });
-            t.Add(new ToolbarLocalBinding { empid = "5", spriteCss = "operab", group = "g1" });
+            t.Add(new ToolbarLocalBinding { id = "1", spriteCss = "IE", group = "g1" });
+            t.Add(new ToolbarLocalBinding { id = "2", spriteCss = "chrome", group = "g2" });
+            t.Add(new ToolbarLocalBinding { id = "3", spriteCss = "firefox", group = "g2" });
+            t.Add(new ToolbarLocalBinding { id = "4", spriteCss = "bitty", group = "g2" });
+            t.Add(new ToolbarLocalBinding { id = "5", spriteCss = "opera", group = "g1" });
             ViewBag.datasource = t;
 
             return View();
@@ -198,7 +198,7 @@ Initialize the Toolbar items using the following code to group Toolbar items.
 		
 		public class ToolbarLocalBinding
     {
-        public string empid { get; set; }
+        public string id { get; set; }
         public string spriteCss { get; set; }
         public string text { get; set; }
         public string group { get; set; }
@@ -217,7 +217,7 @@ Add the following styles in the code table to display the Toolbar items as follo
 
       .cols-sample-area .e-tooltxt .e-spriteimg {
         display: block;
-        background-image: url('../../images/browserl.png');
+        background-image: url('../../images/browser.png');
         height: 32px;
         width: 32px;
         background-repeat: no-repeat;
@@ -225,27 +225,27 @@ Add the following styles in the code table to display the Toolbar items as follo
 
 
 
-      .ieb
+      .IE
       {
         background-position: -84px 0px;
       }
 
-      .chromeb 
+      .chrome 
 	  {
          background-position: -42px 0px;
       }
 
-      .firefoxb 
+      .firefox
 	  {
          background-position: 0px 0px;
       }
 
-       .bittyb 
+       .bitty
 	   {
        background-position: -126px 0px;
         }
 
-       .operab 
+       .opera 
 	   {
        background-position: -168px 0px;
 
@@ -352,7 +352,7 @@ Initialize the content area and header as specified in the code table.
             s2.Add().SpriteCssClass("PdfDocument e-icon sticky").TooltipText("Sticky");
             s2.Add().SpriteCssClass("PdfDocument e-icon readMode").TooltipText("Read Mode");
 
-        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("onItemclick")).Render();
+        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("click")).Render();
     }
 
     <br />
@@ -412,7 +412,7 @@ The following code example explains how to perform operations when you click the
 
         <div id="ctrllabel">PDF Reader</div>
 		
-            <ej-toolbar id="Toolbar4" width="450px"  click="onItemclick">
+            <ej-toolbar id="Toolbar4" width="450px"  click="click">
                 
                 <e-toolbar-items>
 				
@@ -471,12 +471,12 @@ The following code example explains how to perform operations when you click the
             s2.Add().SpriteCssClass("PdfDocument e-icon sticky").TooltipText("Sticky");
             s2.Add().SpriteCssClass("PdfDocument e-icon readMode").TooltipText("Read Mode");
 
-        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("onItemclick")).Render();
+        }).Width("450px").EnableSeparator(true).ClientSideEvents(e => e.Click("click")).Render();
     }
 
     <script>
 	
-    function onItemclick(args) {
+    function click(args) {
 	
         var option = args.currentTarget.title;
         switch (option) {
