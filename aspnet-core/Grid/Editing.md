@@ -71,7 +71,7 @@ The edit type of bound column can be customized using `edit-type` property of `e
 * `DateTimePicker` control for date-time data type.
 * `DropDownList` control for list of data type.
 
-Also, you can define the model for all the editTypes controls while editing through EditOptions.
+Also, you can define the model for all the editTypes controls while editing through EJ TagHelper.
 
 The following table describes the `edit-type` and their corresponding EditOptions of specific data type of the column.
 
@@ -84,18 +84,18 @@ Example</th></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-{{ '[TextBoxes]' | markdownify }} </td><td>
-NumericEditOptions(new EditorProperties() { DecimalPlaces = 2,  })</td></tr>
+{{ '[TextBoxes](https://help.syncfusion.com/cr/aspnet-core/ej)' | markdownify }} </td><td>
+<ej-numeric-text-box decimal-places="2" /></td></tr>
 <tr>
 <td>
 DatePicker </td><td>
-{{ '[DatePicker]' | markdownify }} </td><td>
-DateEditOptions(new DatePickerProperties() { ButtonText="Now"})</td></tr>
+{{ '[DatePicker](https://help.syncfusion.com/cr/aspnet-core/ej)' | markdownify }} </td><td>
+<ej-date-picker button-text="Now"></ej-date-picker></td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-{{ '[DateTimePicker]' | markdownify }} </td><td>
-DateTimeEditOptions(new DateTimePickerProperties() {})</td></tr>
+{{ '[DateTimePicker](https://help.syncfusion.com/cr/aspnet-core/ej)' | markdownify }} </td><td>
+<ej-date-time-picker allow-edit="false"></ej-date-time-picker></td></tr>
 </table>
 
 N> 1. If the `edit-type` is not set, then by default it will display the input element ("string") while editing a column.
