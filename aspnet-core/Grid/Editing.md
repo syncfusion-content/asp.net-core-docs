@@ -113,7 +113,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="CustomerID" edit-type="String"></e-column>
             <e-column field="Freight" edit-type="Numeric">
-               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+               <ej-numeric-text-box decimal-places="2" />  
             </e-column>
             <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
