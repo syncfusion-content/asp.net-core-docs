@@ -71,7 +71,7 @@ The edit type of bound column can be customized using `edit-type` property of `e
 * `DateTimePicker` control for date-time data type.
 * `DropDownList` control for list of data type.
 
-Also, you can define the model for all the editTypes controls while editing through EditOptions.
+Also, you can define the model for all the editTypes controls while editing through EJ TagHelper.
 
 The following table describes the `edit-type` and their corresponding EditOptions of specific data type of the column.
 
@@ -84,18 +84,18 @@ Example</th></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-{{ '[TextBoxes]' | markdownify }} </td><td>
-NumericEditOptions(new EditorProperties() { DecimalPlaces = 2,  })</td></tr>
+{{ '[TextBoxes](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.Models.EditorProperties_members.html)' | markdownify }} </td><td>
+<ej-numeric-text-box decimal-places="2" /></td></tr>
 <tr>
 <td>
 DatePicker </td><td>
-{{ '[DatePicker]' | markdownify }} </td><td>
-DateEditOptions(new DatePickerProperties() { ButtonText="Now"})</td></tr>
+{{ '[DatePicker](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.DatePickerPropertiesBuilder_members.html)' | markdownify }} </td><td>
+<ej-date-picker button-text="Now"></ej-date-picker></td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-{{ '[DateTimePicker]' | markdownify }} </td><td>
-DateTimeEditOptions(new DateTimePickerProperties() {})</td></tr>
+{{ '[DateTimePicker](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.DateTimePickerPropertiesBuilder_members.html)' | markdownify }} </td><td>
+<ej-date-time-picker allow-edit="false"></ej-date-time-picker></td></tr>
 </table>
 
 N> 1. If the `edit-type` is not set, then by default it will display the input element ("string") while editing a column.
@@ -113,7 +113,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
             <e-column field="CustomerID" header-text="CustomerID" edit-type="String"></e-column>
             <e-column field="Freight" edit-type="Numeric">
-               <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
+               <ej-numeric-text-box decimal-places="2" />  
             </e-column>
             <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
@@ -1091,7 +1091,7 @@ In the below section, we have explained how to get the edited data details at th
 
 ### URL adaptor
 
-You can use the `UrlAdaptor` of `datamanager` when binding datasource from remote data. At initial load of grid, using url property of datamanager, data are fetched from remote data and bound to grid. You can map CRUD operation in grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
+You can use the `UrlAdaptor` of DataManager when binding datasource from remote data. At initial load of grid, using url property of DataManager, data are fetched from remote data and bound to grid. You can map CRUD operation in grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
 
 The following code example describes the previous behavior.
 
@@ -1165,7 +1165,7 @@ using the 'DataOperations' helper class you can perform grid action at server-si
 7. PerformSelect
 8. Execute
 
-### Remotesave Adaptor:
+### RemoteSave Adaptor:
 
 RemoteSaveAdaptor is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
 
