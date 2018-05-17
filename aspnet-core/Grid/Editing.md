@@ -84,17 +84,17 @@ Example</th></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-{{ '[TextBoxes](https://help.syncfusion.com/cr/aspnet-core/ej)' | markdownify }} </td><td>
+{{ '[TextBoxes](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.Models.EditorProperties_members.html)' | markdownify }} </td><td>
 <ej-numeric-text-box decimal-places="2" /></td></tr>
 <tr>
 <td>
 DatePicker </td><td>
-{{ '[DatePicker](https://help.syncfusion.com/cr/aspnet-core/ej)' | markdownify }} </td><td>
+{{ '[DatePicker](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.DatePickerPropertiesBuilder_members.html)' | markdownify }} </td><td>
 <ej-date-picker button-text="Now"></ej-date-picker></td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-{{ '[DateTimePicker](https://help.syncfusion.com/cr/aspnet-core/ej)' | markdownify }} </td><td>
+{{ '[DateTimePicker](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.DateTimePickerPropertiesBuilder_members.html)' | markdownify }} </td><td>
 <ej-date-time-picker allow-edit="false"></ej-date-time-picker></td></tr>
 </table>
 
