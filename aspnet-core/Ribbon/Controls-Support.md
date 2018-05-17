@@ -201,7 +201,7 @@ You can set `Type` as `custom` to render custom controls and Custom element id h
                             <e-contents>
                                 <e-defaults height="30" type=Custom></e-defaults>
                                 <e-content-groups>
-                                    <e-content-group id="fontcolor" tool-tip="Font Color" content-id="fontcolor">
+                                    <e-content-group id="fontColor" tool-tip="Font Color" content-id="fontColor">
                                     </e-content-group>
                                 </e-content-groups>
                             </e-contents>
@@ -231,7 +231,7 @@ You can set `Type` as `custom` to render custom controls and Custom element id h
             </ul>
         </li>
    </ul>
-   <input id="fontcolor" />
+   <input id="fontColor" />
    <table id="design" class="e-designtablestyle">
         <tr>
             <td><input type="checkbox" id="check1" /><label for="check1">Header Row</label></td>
@@ -243,7 +243,7 @@ You can set `Type` as `custom` to render custom controls and Custom element id h
    </table>
    <script>
         function createControl(args) {
-            $("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
+            $("#fontColor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", toolIcon: "e-fontcoloricon" });
         }
     </script>
 

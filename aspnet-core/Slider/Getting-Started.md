@@ -37,7 +37,7 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
         <div class="inner">
 
-            <div class="ctrllabel">
+            <div class="control-label">
 
                 Select a Mobile
 
@@ -49,41 +49,41 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
                 <ul>
 
-                    <li>Nokia Lumia</li>
+                    <li>Moto X</li>
 
-                    <li>Nokia Asha</li>
+                     <li>Moto g</li>
 
-                    <li>Xolo</li>
+                     <li>Nexus</li>
 
-                    <li>Samsung Galaxy</li>
+                     <li>Xperia</li>
 
-                    <li>Moto G</li>
+                     <li>Samsung</li>
 
                 </ul>
 
             </div>
 
-            <span class="columnleft">
+            <span class="column-left">
 
                 <span>Mobile Rate</span>
 
             </span>
 
-            <span class="columnright">
+            <span class="column-right">
 
                 <span>Rs </span><span class="value"></span>
 
             </span>
 
-            <ej-slider id="rateSlider" height="20px" value="100" min-value="5000" max-value="30000" increment-step="20" change="onchange" slide="onchange" />       
+            <ej-slider id="rateSlider" height="20px" value="100" min-value="5000" max-value="30000" increment-step="20" change="onChange" slide="onChange" />       
 
-            <span class="Columnleft">
+            <span class="column-left">
 
                 <span>Mobile Count</span>
 
             </span> 
 
-            <ej-slider id="countSlider" height="20px" value="1" min-value="1" max-value="10" increment-step="1" change="onchange" slide="onchange" />              
+            <ej-slider id="countSlider" height="20px" value="1" min-value="1" max-value="10" increment-step="1" change="onChange" slide="onChange" />              
 
             You are choosing:
 
@@ -117,7 +117,7 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
 		}
 
-		.ctrllabel, .loan
+		.control-label, .loan
 
 		{
 
@@ -125,7 +125,7 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
 		}
 
-		.columnright
+		.column-right
 
 		{
 
@@ -168,7 +168,7 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
 			var mobileObj, rateObj, countObj;
 
-			function onchange(args) {
+			function onChange(args) {
 
 				$('#' + args.id).parent().prev().find('.value').html(args.value)
 
@@ -220,53 +220,53 @@ This section explains how to use the Slider control for EMI Calculation. The fin
 
         <div class="inner">
 
-            <div id="loanheading">
+            <div id="loan-heading">
 
                 Details of Loan
 
             </div>
 
-            <span class="columnleft">
+            <span class="column-left">
 
                 <span>Loan Amount</span>
 
             </span>
 
-            <span class="columnright">
+            <span class="column-right">
 
                 <span>Rs </span><span class="value">25000</span>
 
             </span>    
         
-            <ej-slider id="loanSlider" height="16px" value="25000" min-value="10000" max-value="1000000" increment-step="10" change="onchange" slide="onchange" />
+            <ej-slider id="loanSlider" height="16px" value="25000" min-value="10000" max-value="1000000" increment-step="10" change="onChange" slide="onChange" />
 
-            <span class="columnleft">
+            <span class="column-left">
 
                 <span>Interest Rate</span>
 
             </span>
 
-            <span class="columnright">
+            <span class="column-right">
 
                 <span class="value"></span><span>% pa</span>
 
             </span>        
         
-            <ej-slider id="interestSlider" height="16px" value="4" min-value="1" max-value="20" increment-step="1" change="onchange" slide="onchange" />
+            <ej-slider id="interestSlider" height="16px" value="4" min-value="1" max-value="20" increment-step="1" change="onChange" slide="onChange" />
 
-            <span class="columnleft">
+            <span class="column-left">
 
                 <span>Tenure</span>
 
             </span>
 
-            <span class="columnright">
+            <span class="column-right">
 
                 <span class="value"></span><span>Years</span>
 
             </span>        
         
-            <ej-slider id="tenureSlider" height="16px" value="3" min-value="1" max-value="20" increment-step="1" change="onchange" slide="onchange" />
+            <ej-slider id="tenureSlider" height="16px" value="3" min-value="1" max-value="20" increment-step="1" change="onChange" slide="onChange" />
 
             Your Monthly EMI Amount is
 
@@ -310,7 +310,7 @@ This section explains how to use the Slider control for EMI Calculation. The fin
 
 		}
 
-		#loanheading
+		#loan-heading
 
 		{
 
@@ -318,7 +318,7 @@ This section explains how to use the Slider control for EMI Calculation. The fin
 
 		}
 
-		.columnleft
+		.column-left
 
 		{
 
@@ -326,7 +326,7 @@ This section explains how to use the Slider control for EMI Calculation. The fin
 
 		}
 
-		.columnright
+		.column-right
 
 		{
 
@@ -353,7 +353,7 @@ This section explains how to use the Slider control for EMI Calculation. The fin
 
 		var loanObj, interestObj, tenureObj;
 
-		function onchange(args) 
+		function onChange(args) 
 		{
 
 			$('#' + args.id).parent().prev().find('.value').html(args.value)
@@ -377,13 +377,13 @@ This section explains how to use the Slider control for EMI Calculation. The fin
 
 			var y = interest / 1200;
 
-			var tenureamt = tenure * 12;
+			var tenureAmount = tenure * 12;
 
 			//actual processing
 
-			var top = y * (Math.pow((1 + y), tenureamt));
+			var top = y * (Math.pow((1 + y), tenureAmount));
 
-			var bottom = (Math.pow((1 + y), tenureamt)) - 1;
+			var bottom = (Math.pow((1 + y), tenureAmount)) - 1;
 
 			var ans = top / bottom;
 
