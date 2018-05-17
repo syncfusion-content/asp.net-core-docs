@@ -1091,7 +1091,7 @@ In the below section, we have explained how to get the edited data details at th
 
 ### URL adaptor
 
-You can use the `UrlAdaptor` of `datamanager` when binding datasource from remote data. At initial load of grid, using url property of datamanager, data are fetched from remote data and bound to grid. You can map CRUD operation in grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
+You can use the `UrlAdaptor` of `datamanager` when binding datasource from remote data. At initial load of grid, using url property of `datamanager`, data are fetched from remote data and bound to grid. You can map CRUD operation in grid to Server-Side Controller action using the properties `insert-url`, `remove-url`, `update-url`, `crud-url` and `batch-url`.
 
 The following code example describes the previous behavior.
 
@@ -1167,7 +1167,7 @@ using the 'DataOperations' helper class you can perform grid action at server-si
 
 ### Remotesave Adaptor:
 
-RemoteSaveAdaptor is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
+`RemoteSaveAdaptor` is used for binding local data and performs all data operations in client-side. It interacts with server-side only for CRUD operations to pass the modified records.
 
 Refer to the following code example
 
