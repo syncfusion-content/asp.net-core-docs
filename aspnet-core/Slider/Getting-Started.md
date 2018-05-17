@@ -55,7 +55,7 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
                      <li>Nexus</li>
 
-                     <li>Xperia</li>
+                     <li>Lenovo</li>
 
                      <li>Samsung</li>
 
