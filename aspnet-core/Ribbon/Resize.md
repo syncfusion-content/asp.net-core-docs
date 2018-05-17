@@ -176,7 +176,7 @@ Set `IsResponsive` as true to enable responsive mode in Ribbon.
                 <div class="e-accuser e-newpageicon"></div>
                 <div class="e-userCon">
                     <div>user</div>
-                    <div>xyz@syncfusion.com</div>
+                    <div>xy@syncfusion.com</div>
                 </div>
             </div>
         </div>
@@ -308,7 +308,7 @@ N> To make the Ribbon control to react as responsive in mobile devices, it is ne
                 <div class="e-accuser e-newpageicon"></div>
                 <div class="e-userCon">
                     <div>user</div>
-                    <div>xyz@syncfusion.com</div>
+                    <div>xy@syncfusion.com</div>
                 </div>
             </div>
         </div>
