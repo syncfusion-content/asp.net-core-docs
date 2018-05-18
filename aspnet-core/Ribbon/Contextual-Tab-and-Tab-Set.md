@@ -85,15 +85,15 @@ Contextual Tabs are collection of Tabs that extended styling and can be shown ba
     <div id="Contents">Custom Control</div>
     <div id="headings" class="e-headings">
         <div>
-            <p>AaBbCcDd</p>
+            <p>Ribbon-Heading</p>
             <p>No Spacing</p>
         </div>
         <div>
-            <p class="e-strong">AaBbCcDd</p>
+            <p class="e-strong">Ribbon-Heading</p>
             <p>Strong</p>
         </div>
         <div>
-            <p class="e-emphasis">AaBbCcDd</p>
+            <p class="e-emphasis">Ribbon-Heading</p>
             <p>Emphasis</p>
         </div>
     </div>

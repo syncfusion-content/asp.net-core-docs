@@ -30,7 +30,7 @@ Set `enable-on-demand` as true to enable load tab and backstage contents dynamic
                 <div class="e-accuser e-newpageicon"></div>
                 <div class="e-userCon">
                     <div>user</div>
-                    <div>xyz@syncfusion.com</div>
+                    <div>xy@syncfusion.com</div>
                 </div>
             </div>
         </div>
@@ -178,7 +178,7 @@ While using initially collapsible ribbon with `enable-on-demand` feature improve
                 <div class="e-accuser e-newpageicon"></div>
                 <div class="e-userCon">
                     <div>user</div>
-                    <div>xyz@syncfusion.com</div>
+                    <div>xy@syncfusion.com</div>
                 </div>
             </div>
         </div>

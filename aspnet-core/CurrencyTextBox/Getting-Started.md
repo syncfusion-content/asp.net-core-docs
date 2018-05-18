@@ -31,9 +31,9 @@ ASP.NET Core Editors renders built-in features like keyboard navigation, min and
 
     <div class="editors">
 
-        <div class="ele-icon"></div>
+        <div class="element-icon"></div>
 
-        <div class="ele-txt" style="">Electricity Bill Calculator</div>
+        <div class="element-text" style="">Electricity Bill Calculator</div>
 
         <br />
 
@@ -112,7 +112,7 @@ ASP.NET Core Editors renders built-in features like keyboard navigation, min and
             </tbody>
         </table>
 
-        <div class="paybill">
+        <div class="pay-bill">
 
             <ej-button id="btn" size="@ButtonSize.Small" text="Calculate" content-type="@ContentType.TextAndImage" prefix-icon="e-calender" />
 
@@ -137,7 +137,7 @@ Razor code to render CurrencyTextBox
 
 		<style type="text/css" class="cssStyles">
 
-			.ele-icon
+			.element-icon
 
 			{
 
@@ -159,7 +159,7 @@ Razor code to render CurrencyTextBox
 
 			}
 
-			.ele-txt
+			.element-text
 
 			{
 
@@ -199,7 +199,7 @@ Razor code to render CurrencyTextBox
 
 				}
 
-			.paybill
+			.pay-bill
 
 			{
 
@@ -239,9 +239,9 @@ You can set the “MinValue”,“MaxValue” and “Value” in Currency, Perce
 
     <div class="editors">
 
-        <div class="ele-icon"></div>
+        <div class="element-icon"></div>
 
-        <div class="ele-txt" style="">Electricity Bill Calculator</div>
+        <div class="element-text" style="">Electricity Bill Calculator</div>
 
         <br />
 
@@ -316,7 +316,7 @@ You can set the “MinValue”,“MaxValue” and “Value” in Currency, Perce
             </tbody>
         </table>
 
-        <div class="paybill">
+        <div class="pay-bill">
 
             <ej-button id="btn" size="@ButtonSize.Small" text="Calculate" content-type="@ContentType.TextAndImage" prefix-icon="e-calender" />
 
@@ -341,9 +341,9 @@ You can set the “StrictMode” option to restrict entering values defined outs
 
     <div class="editors">
 
-        <div class="ele-icon"></div>
+        <div class="element-icon"></div>
 
-        <div class="ele-txt" style="">Electricity Bill Calculator</div>
+        <div class="element-text" style="">Electricity Bill Calculator</div>
 
         <br />
 
@@ -418,7 +418,7 @@ You can set the “StrictMode” option to restrict entering values defined outs
             </tbody>
         </table>
 
-        <div class="paybill">
+        <div class="pay-bill">
 
             <ej-button id="btn" size="@ButtonSize.Small" text="Calculate" content-type="@ContentType.TextAndImage" prefix-icon="e-calender" />
 
@@ -444,7 +444,7 @@ To customize the button, set the ContentType as TextAndImage to include the icon
 
     @* Please refer the table format for textboxes customization *@
 
-    <div class="paybill">
+    <div class="pay-bill">
 
         <ej-button id="btn" size="@ButtonSize.Small" text="Calculate" content-type="@ContentType.TextAndImage" prefix-icon="e-calender"  click="calculateBill"/>
       
@@ -458,27 +458,27 @@ function calculateBill() {
 
         // Declares Necessary variable creation 
 
-        var kmcalc, servtax, amuntperkm;
+        var unitMeter, serviceTax, amountPerKm;
 
-        umcalc = $("#numeric").data("ejNumericTextbox");// Object of Numeric 
+        unitMeter = $("#numeric").data("ejNumericTextbox");// Object of Numeric 
 
-        servtax = $("#percent").data("ejPercentageTextbox");// Object of Percentage
+        serviceTax = $("#percent").data("ejPercentageTextbox");// Object of Percentage
 
-        amuntperkm = $("#currency").data("ejCurrencyTextbox"); // Object of Currency
+        amountPerKm = $("#currency").data("ejCurrencyTextbox"); // Object of Currency
 
-        cusmob = $("#maskedit").data("ejMaskEdit"); // Object of MaskEdit        
+        mobileNumber = $("#maskedit").data("ejMaskEdit"); // Object of MaskEdit        
 
         // This is used to calculate the Net amount
 
-        var netamunt = umcalc.model.value * amuntperkm.model.value;
+        var netAmount = unitMeter.model.value * amountPerKm.model.value;
 
         // This is used to calculate the service tax amount
 
-        var sTax = (netamunt * servtax.model.value) / 100;
+        var sTax = (netAmount * serviceTax.model.value) / 100;
 
         // This shows the calculated amount for the units
 
-        alert("The amount $" + (netamunt + sTax) + " has been sent as message to " + cusmob.model.value + ".");
+        alert("The amount $" + (netAmount + sTax) + " has been sent as message to " + mobileNumber.model.value + ".");
 
     }
 
