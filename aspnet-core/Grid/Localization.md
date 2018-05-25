@@ -551,7 +551,7 @@ The `ej.globalize` library is used to globalize numeric values in grid control u
 
 ![](Localization_images/Globalizationandlocalization._img3.png)
 
-I> In the above example, you need to use the `globalize.culture.de-DE` script file to globalize values. 
+I> To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **ej.culture.de-DE.min.js** file in your application, after the reference of ej.web.all.min.js file. For all culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 
 {% seealso %} [localization](http://helpjs.syncfusion.com/js/localization) {% endseealso %}
 
