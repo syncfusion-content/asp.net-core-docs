@@ -102,9 +102,9 @@ In the view page, add the tree view as shown in the following. It will render th
                     child1.Add().Text("Arial Black");
                     child1.Add().Text("Arial Narrow");
                     child1.Add().Text("Courier");
-                    child1.Add().Text("Gaurand");
+                    child1.Add().Text("Georgia");
                     child1.Add().Text("Times New Roman");
-                    child1.Add().Text("Vrendra");
+                    child1.Add().Text("Verdana");
                     child1.Add().Text("Helvetica");
                     child1.Add().Text("Impact");
                 });
