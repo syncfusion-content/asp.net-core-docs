@@ -22,29 +22,29 @@ public partial class TreeViewController : Controller
     public ActionResult FullRowSelection()
     {
         fullRowData.Add(new loadOnDemand { id = 1, name = "Discover Music", hasChild = true, expanded = true });
-        fullRowData.Add(new loadOnDemand { id = 2, pid = 1, name = "Hot Singles", selected = true });
-        fullRowData.Add(new loadOnDemand { id = 3, pid = 1, name = "Rising Artists" });
-        fullRowData.Add(new loadOnDemand { id = 4, pid = 1, name = "Live Music" });
-        fullRowData.Add(new loadOnDemand { id = 6, pid = 1, name = "Best of 2013 So Far" });
+        fullRowData.Add(new loadOnDemand { id = 2, parentId = 1, name = "Hot Singles", selected = true });
+        fullRowData.Add(new loadOnDemand { id = 3, parentId = 1, name = "Rising Artists" });
+        fullRowData.Add(new loadOnDemand { id = 4, parentId = 1, name = "Live Music" });
+        fullRowData.Add(new loadOnDemand { id = 6, parentId = 1, name = "Best of 2013 So Far" });
         fullRowData.Add(new loadOnDemand { id = 7, name = "Sales and Events", hasChild = true, expanded = true });
-        fullRowData.Add(new loadOnDemand { id = 8, pid = 7, name = "100 Albums - $5 Each" });
-        fullRowData.Add(new loadOnDemand { id = 9, pid = 7, name = "Hip-Hop and R&B Sale" });
-        fullRowData.Add(new loadOnDemand { id = 10, pid = 7, name = "CD Deals" });
+        fullRowData.Add(new loadOnDemand { id = 8, parentId = 7, name = "100 Albums - $5 Each" });
+        fullRowData.Add(new loadOnDemand { id = 9, parentId = 7, name = "Hip-Hop and R&B Sale" });
+        fullRowData.Add(new loadOnDemand { id = 10, parentId = 7, name = "CD Deals" });
         fullRowData.Add(new loadOnDemand { id = 11, name = "Categories", hasChild = true });
-        fullRowData.Add(new loadOnDemand { id = 12, pid = 11, name = "Songs" });
-        fullRowData.Add(new loadOnDemand { id = 13, pid = 11, name = "Bestselling Albums" });
-        fullRowData.Add(new loadOnDemand { id = 14, pid = 11, name = "New Releases" });
-        fullRowData.Add(new loadOnDemand { id = 15, pid = 11, name = "Bestselling Songs" });
+        fullRowData.Add(new loadOnDemand { id = 12, parentId = 11, name = "Songs" });
+        fullRowData.Add(new loadOnDemand { id = 13, parentId = 11, name = "Bestselling Albums" });
+        fullRowData.Add(new loadOnDemand { id = 14, parentId = 11, name = "New Releases" });
+        fullRowData.Add(new loadOnDemand { id = 15, parentId = 11, name = "Bestselling Songs" });
         fullRowData.Add(new loadOnDemand { id = 16, name = "MP3 Albums", hasChild = true });
-        fullRowData.Add(new loadOnDemand { id = 17, pid = 16, name = "Rock" });
-        fullRowData.Add(new loadOnDemand { id = 18, pid = 16, name = "Gospel" });
-        fullRowData.Add(new loadOnDemand { id = 19, pid = 16, name = "Latin Music" });
-        fullRowData.Add(new loadOnDemand { id = 20, pid = 16, name = "Jazz" });
+        fullRowData.Add(new loadOnDemand { id = 17, parentId = 16, name = "Rock" });
+        fullRowData.Add(new loadOnDemand { id = 18, parentId = 16, name = "Gospel" });
+        fullRowData.Add(new loadOnDemand { id = 19, parentId = 16, name = "Latin Music" });
+        fullRowData.Add(new loadOnDemand { id = 20, parentId = 16, name = "Jazz" });
         fullRowData.Add(new loadOnDemand { id = 21, name = "More in Music", hasChild = true });
-        fullRowData.Add(new loadOnDemand { id = 22, pid = 21, name = "Music Trade-In" });
-        fullRowData.Add(new loadOnDemand { id = 23, pid = 21, name = "Redeem a Gift Card" });
-        fullRowData.Add(new loadOnDemand { id = 24, pid = 21, name = "Band T-Shirts" });
-        fullRowData.Add(new loadOnDemand { id = 25, pid = 21, name = "Mobile MVC" });
+        fullRowData.Add(new loadOnDemand { id = 22, parentId = 21, name = "Music Trade-In" });
+        fullRowData.Add(new loadOnDemand { id = 23, parentId = 21, name = "Redeem a Gift Card" });
+        fullRowData.Add(new loadOnDemand { id = 24, parentId = 21, name = "Band T-Shirts" });
+        fullRowData.Add(new loadOnDemand { id = 25, parentId = 21, name = "Mobile MVC" });
 
         ViewBag.datasource = fullRowData;
         return View();
@@ -54,7 +54,7 @@ public partial class TreeViewController : Controller
 public class loadOnDemand
 {
     public int id { get; set; }
-    public int? pid { get; set; }
+    public int? parentId { get; set; }
     public string name { get; set; }
     public bool? hasChild { get; set; }
     public bool? expanded { get; set; }
@@ -68,7 +68,7 @@ In the view page, add the following code and map the properties defined to the c
 {% highlight CSHTML %}
 
     <ej-tree-view id="treeView" full-row-select="true">
-	 <e-tree-view-fields datasource="ViewBag.datasource" id="id" parent-id="pid" text="name" has-child="hasChild" expanded="expanded">
+	 <e-tree-view-fields datasource="ViewBag.datasource" id="id" parent-id="parentId" text="name" has-child="hasChild" expanded="expanded">
 	 </e-tree-view-fields>
 	</ej-tree-view>
 
@@ -92,11 +92,11 @@ public partial class TreeViewController : Controller
     public ActionResult FullRowSelection()
     {
         fullRowData.Add(new loadOnDemand { id = 1, name = "Browsers", Class = "browser", hasChild = true, expanded = true });
-        fullRowData.Add(new loadOnDemand { id = 2, pid = 1, name = "Internet Explorer", Class = "ieb", selected = true });
-        fullRowData.Add(new loadOnDemand { id = 3, pid = 1, name = "Chrome", Class = "chromeBrowser" });
-        fullRowData.Add(new loadOnDemand { id = 4, pid = 1, name = "Firefox", Class = "firefoxBrowser" });
-        fullRowData.Add(new loadOnDemand { id = 6, pid = 1, name = "Bitty", Class = "bittyBrowser" });
-        fullRowData.Add(new loadOnDemand { id = 7, pid = 1, name = "Opera", Class = "operaBrowser" });
+        fullRowData.Add(new loadOnDemand { id = 2, parentId = 1, name = "Internet Explorer", Class = "ieb", selected = true });
+        fullRowData.Add(new loadOnDemand { id = 3, parentId = 1, name = "Chrome", Class = "chromeBrowser" });
+        fullRowData.Add(new loadOnDemand { id = 4, parentId = 1, name = "Firefox", Class = "firefoxBrowser" });
+        fullRowData.Add(new loadOnDemand { id = 6, parentId = 1, name = "Bitty", Class = "bittyBrowser" });
+        fullRowData.Add(new loadOnDemand { id = 7, parentId = 1, name = "Opera", Class = "operaBrowser" });
         ViewBag.datasource = fullRowData;
         return View();
     }
@@ -105,7 +105,7 @@ public partial class TreeViewController : Controller
 public class loadOnDemand
 {
         public int id { get; set; }
-        public int? pid { get; set; }
+        public int? parentId { get; set; }
         public string name { get; set; }
         public bool? hasChild { get; set; }
         public bool? expanded { get; set; }
@@ -120,7 +120,7 @@ In the view page, add the following code and map the properties defined to the c
 {% highlight CSHTML %}
 
     <ej-tree-view id="treeView" full-row-select="true" css-class="custom" template="#treeTemplate">
-	  <e-tree-view-fields datasource="ViewBag.datasource" id="id" parent-id="pid" text="name" has-child="hasChild" expanded="expanded"> 
+	  <e-tree-view-fields datasource="ViewBag.datasource" id="id" parent-id="parentId" text="name" has-child="hasChild" expanded="expanded"> 
 	  </e-tree-view-fields>
 	</ej-tree-view>
 
