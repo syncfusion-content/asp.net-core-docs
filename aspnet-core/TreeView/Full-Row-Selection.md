@@ -92,7 +92,7 @@ public partial class TreeViewController : Controller
     public ActionResult FullRowSelection()
     {
         fullRowData.Add(new loadOnDemand { id = 1, name = "Browsers", Class = "browser", hasChild = true, expanded = true });
-        fullRowData.Add(new loadOnDemand { id = 2, parentId = 1, name = "Internet Explorer", Class = "ieb", selected = true });
+        fullRowData.Add(new loadOnDemand { id = 2, parentId = 1, name = "Internet Explorer", Class = "internetExplorerBrowser", selected = true });
         fullRowData.Add(new loadOnDemand { id = 3, parentId = 1, name = "Chrome", Class = "chromeBrowser" });
         fullRowData.Add(new loadOnDemand { id = 4, parentId = 1, name = "Firefox", Class = "firefoxBrowser" });
         fullRowData.Add(new loadOnDemand { id = 6, parentId = 1, name = "Bitty", Class = "bittyBrowser" });
@@ -158,7 +158,7 @@ In the view page, add the following code and map the properties defined to the c
         background-image: url("http://mvc.syncfusion.com/demos/web/images/toolbar/browserl.png");
     }
     
-    .custom .ieb {
+    .custom .internetExplorerBrowser {
         background-position: -84px 0px;
     }
     
