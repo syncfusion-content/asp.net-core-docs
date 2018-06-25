@@ -22,6 +22,8 @@ To work with ASP.NET Core 2.0, you need to make sure, whether you have installed
 
 * DotNetCore 2.0 [x86 Installer](https://download.microsoft.com/download/0/F/D/0FD852A4-7EA1-4E2A-983A-0484AC19B92C/dotnet-sdk-2.0.0-win-x86.exe).
 
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+
 ### Configure Syncfusion UI Components in ASP.NET Core Application:
 
 The following steps helps to create a ASP.NET Core web application to configure our components.

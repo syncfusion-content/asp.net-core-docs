@@ -20,6 +20,7 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 * Install .NET Core [SDK](https://www.microsoft.com/net/download/linux) based on your OS version. 
 
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 Set up the apt-get feeds, then install .NET Core on Ubuntu or Linux Mint. Execute the below commands in terminal window to set up the apt-get feeds for Ubuntu 17.10 and 17.04.
 

@@ -30,6 +30,8 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 ~$ brew link -force openssl
 {% endhighlight %}
 
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+
 ## Configuration
 
 To configure an ASP.NET Core application and utilize our components, follow the below guidelines.
