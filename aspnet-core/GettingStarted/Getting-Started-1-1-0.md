@@ -9,6 +9,8 @@ documentation: ug
 
 
 # Getting Started
+
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
  
 ## ASP.NET Core 1.1.0 Application Using Visual Studio 2015
 
@@ -19,8 +21,6 @@ To work with ASP.NET Core 1.1.0, you need to make sure is whether you have insta
 * Visual Studio 2015 [Update 3](https://go.microsoft.com/fwlink/?LinkId=691129).
 
 * DotNetCore [1.1.0 (Preview 2)](https://go.microsoft.com/fwlink/?LinkID=835014).
-
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 ### Configure Syncfusion UI Components in ASP.NET Core Application:
 
