@@ -85,7 +85,7 @@ Example</th></tr>
 <td>
 NumericTextBox </td><td>
 {{ '[TextBoxes](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.Models.EditorProperties_members.html)' | markdownify }} </td><td>
-<ej-numeric-text-box decimal-places="2" /></td></tr>
+&lt;ej-numeric-text-box decimal-places="2" /&gt;</td></tr>
 <tr>
 <td>
 DatePicker </td><td>
