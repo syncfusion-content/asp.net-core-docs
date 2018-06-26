@@ -93,7 +93,7 @@ ASP.NET Core MaskEdit control renders built-in features like text masking, numbe
 
 ~~~
 
-N>To render the MaskEdit Control you can use either Razor or Tag helper code as given in the above code snippet. For more information about ej-tag helper you can refer [ASP.NET Core-ejtaghelpers](https://help.syncfusion.com/aspnet-core/ejtaghelpers)
+N>To render the MaskEdit Control you can use either Razor or Tag helper code as given in the above code snippet. For more information about ej-tag helper you can refer [ASP.NET Core-ejTagHelpers](https://help.syncfusion.com/aspnet-core/ejtaghelpers)
 
 
 
