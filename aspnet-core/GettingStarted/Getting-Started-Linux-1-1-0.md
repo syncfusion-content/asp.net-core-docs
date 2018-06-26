@@ -107,7 +107,7 @@ sudo apt-get install mono-complete
 
 Before you start, please ensure any previous .NET Core version installed on your machine. If its exists remove the previous version by using this [script](https://github.com/dotnet/cli/blob/rel/1.0.0/scripts/obtain/uninstall/dotnet-uninstall-debian-packages.sh).
 
-* Executing the following command automatically install the .Net Core SDK.
+* Executing the following command automatically install the .NET Core SDK.
 
 {% highlight text %}
 
