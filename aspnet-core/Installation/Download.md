@@ -59,7 +59,7 @@ N> You can generate the license key for your active trial products from [Trials 
 N> Online Installer have been introduced from the release version 16.2.
 
 8. You can navigate to More Downloads Options (element 3 in below screenshot) to download other setups.
-9. Exe and Zip format available to download for Windows OS. Both are Offline Installer. 
+9. EXE and Zip format available to download for Windows OS. Both are Offline Installer. 
 10. No need of unlock key to unlock the online installer.
 11. You can unlock the installer using the unlock key for versions earlier to 16.2, also you can unlock the installer using the Syncfusion registered login credential.
 
