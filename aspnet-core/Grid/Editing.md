@@ -84,18 +84,23 @@ Example</th></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-{{ '[TextBoxes](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.Models.EditorProperties_members.html)' | markdownify }} </td><td>
+{{ '[TextBoxes](https://help.syncfusion.com/cr/aspnet-core/Syncfusion.EJ~Syncfusion.JavaScript.Models.EditorProperties_properties.html)' | markdownify }} </td><td>
 &lt;ej-numeric-text-box decimal-places="2" /&gt;</td></tr>
 <tr>
 <td>
 DatePicker </td><td>
-{{ '[DatePicker](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.DatePickerPropertiesBuilder_members.html)' | markdownify }} </td><td>
-<ej-date-picker button-text="Now"></ej-date-picker></td></tr>
+{{ '[DatePicker](https://help.syncfusion.com/cr/aspnet-core/Syncfusion.EJ~Syncfusion.JavaScript.Models.DatePickerProperties_properties.html)' | markdownify }} </td><td>
+&lt;ej-date-picker button-text="Now"/&gt;</td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-{{ '[DateTimePicker](https://help.syncfusion.com/cr/cref_files/aspnet-core/ej/Syncfusion.EJ~Syncfusion.JavaScript.DateTimePickerPropertiesBuilder_members.html)' | markdownify }} </td><td>
-<ej-date-time-picker allow-edit="false"></ej-date-time-picker></td></tr>
+{{ '[DateTimePicker](https://help.syncfusion.com/cr/aspnet-core/Syncfusion.EJ~Syncfusion.JavaScript.Models.DateTimePickerProperties_properties.html)' | markdownify }} </td><td>
+&lt;ej-date-time-picker allow-edit="false"/&gt;</td></tr>
+<tr>
+<td>
+DropDownList</td><td>
+{{ '[DropDownList](https://help.syncfusion.com/cr/aspnet-core/Syncfusion.EJ~Syncfusion.JavaScript.Models.DropDownListProperties_properties.html)' | markdownify }} </td><td>
+&lt;ej-drop-down-list show-checkbox="true"/&gt;</td></tr>
 </table>
 
 N> 1. If the `edit-type` is not set, then by default it will display the input element ("string") while editing a column.
