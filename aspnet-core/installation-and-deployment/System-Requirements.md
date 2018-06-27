@@ -12,21 +12,30 @@ documentation: ug
 
 The following topic describes the system requirements required by Syncfusion ASP.NET Core platform.
 
-### Supported Operating Systems
+### Operating Systems
 
-Syncfusion ASP.NET Core platform can be installed on any of the following operating systems:
+* Windows 7 SP1 and later
+* Windows 8.1
+* Windows 10 Version 1607 and later
+* Windows Server 2008 R2 SP1 (Full Server or Server Core)
+* Windows Server 2012 SP1 (Full Server or Server Core)
+* Windows Server 2012 R2 (Full Server or Server Core)
+* Windows Server 2016 (Full Server, Server Core, or Nano Server)
+* Mac OS X 10.11, 10.12*
+* Red Hat Enterprise Linux 7
+* Ubuntu 14.04, 16.04, 17
 
-#### Operating System
 
-* Windows 10
-* Windows 8, 8.1
-* Windows 7
-* Windows Vista
-* Windows Server 2008 and later
-
-### Hardware Environment 
+### Hardware Environment
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
+* Hard disk: up to 3 GB of available space may be required
 
 ### Development Environment
+
+* Microsoft Visual Studio 2015 Update 3 (minimum) , 2017 version latest (15.6.4). 
+* .NET Framework :  Minimum .NET 4.5.1 upto .NET 4.7 .
+* Command Line (Optional. Necessary for command line deployment)
+* Visual Studio Code (optional text-editor)
+* SQL Server 2008 Express (optional)

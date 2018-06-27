@@ -20,19 +20,19 @@ Project Migration link</th></tr>
 <tr>
 <td>
 ASP.NET</td><td>
-[https://help.syncfusion.com/extension/aspnet-extension/project-migration](https://help.syncfusion.com/extension/aspnet-extension/project-migration)</td></tr>
+{{'[https://help.syncfusion.com/extension/aspnet-extension/project-migration](https://help.syncfusion.com/extension/aspnet-extension/project-migration)' | markdownify }} </td></tr>
 <tr>
 <td>
 ASP.NET MVC</td><td>
-[https://help.syncfusion.com/extension/aspnet-mvc-extension/project-migration](https://help.syncfusion.com/extension/aspnet-mvc-extension/project-migration)</td></tr>
+{{'[https://help.syncfusion.com/extension/aspnet-mvc-extension/project-migration](https://help.syncfusion.com/extension/aspnet-mvc-extension/project-migration)' | markdownify }} </td></tr>
 <tr>
 <td>
 ASP.NET Core</td><td>
-[https://help.syncfusion.com/extension/aspnetcore-extension/project-migration](https://help.syncfusion.com/extension/aspnetcore-extension/project-migration)</td></tr>
+{{'[https://help.syncfusion.com/extension/aspnetcore-extension/project-migration](https://help.syncfusion.com/extension/aspnetcore-extension/project-migration)' | markdownify }} </td></tr>
 <tr>
 <td>
 WPF, Windows Forms and UWP</td><td>
-[https://help.syncfusion.com/common/essential-studio/utilities#project-migration](https://help.syncfusion.com/common/essential-studio/utilities#project-migration)</td></tr>
+{{'[https://help.syncfusion.com/common/essential-studio/utilities#project-migration](https://help.syncfusion.com/common/essential-studio/utilities#project-migration)' | markdownify }} </td></tr>
 </table>
 
 
