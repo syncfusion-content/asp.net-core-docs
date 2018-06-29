@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Installation using Online Installer
+# Installation using Web Installer
 
 The following procedure illustrates how to install Essential Studio Platform Online Installer setup. 
 

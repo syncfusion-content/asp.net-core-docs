@@ -7,13 +7,6 @@ control: Common
 documentation: ug
 ---
 
-# Installation 
-
-## Installation
-
-* Download the setup file (.exe) of Essential Studio for ASP.NET Core product from this [link](http://www.syncfusion.com/downloads/aspnetcore) with your Syncfusion account.
-* You can now follow the steps mentioned in the [setup guide](http://help.syncfusion.com/common/essential-studio/essential-studio-installer-for-individual-platform) install the specific/entire platform in your machine.
-
 ## Configuring Syncfusion Bower Packages
 
 ### Overview
