@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Installation and Deployment
+# Installation using Offline Installer
 
 ## Installing with UI   
 
@@ -25,20 +25,22 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 3. You have two options to unlock the Syncfusion setup:
 
    
-   a) *Login To Install*
+* *Login To Install*
    
-   b) *Use Unlock Key*
+* *Use Unlock Key*
    
    
    
    **Login To Install**
+   
+   You should enter your Syncfusion Direct-Trac login credentials. If you don't have Syncfusion Direct-Trac login credentials, then you can click on Sign Up to a create new account. Else if you forgot your password, click on Reset Password to create new password. Here Email address and Password is validated and the Platform Selection window opens.
 
-   ![](Platform_images/Step-by-Step-Installation_img2.png)
-
-   N> You can provide the email ID and password registered with Syncfusion for unlocking the Syncfusion setup and your license will be configured.
+   ![](Platform_images/Step-by-Step-Installation_img2.png)   
 
 
    **Use Unlock Key**
+   
+   You should use the Syncfusion License/Trial key. Trial key is valid for 30 days and the installer won't accept the expired trial key. Licensed customer can generate key from [here](https://www.syncfusion.com/kb/2326).
 
    ![](Platform_images/Step-by-Step-Installation_img3.png)   
 
@@ -46,13 +48,16 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 4. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
 
 
-5. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. 
+5. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. To install in the displayed default location, click Install
 
 
     ![](Platform_images/Step-by-Step-Installation_img4.png)
 
 
-   N> To install in the displayed default location, click Install. You can also browse and choose a location by clicking Browse. When you have already installed any other same version‘s setup, you cannot change the install and samples path.
+    N> From the 2018 Volume 2 release, Syncfusion has changed the install and samples location 
+	   **Default Install location:** {ProgramFilesFolder}\Syncfusion\{Platform}\{version}
+	   **Default Samples location:** C:\Users\Public\Documents\Syncfusion\{platform}\{version}
+	   However, you can change the locations by clicking browse button.
 
    * Select the **Install Syncfusion Samples** check box to install Syncfusion samples, or leave the check box clear, when you do not want to install Syncfusion samples.
    * Select the **Install Syncfusion Extensions** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
@@ -89,12 +94,12 @@ Follow the steps below to install through Command Line in Silent mode.
 6. Open the Command Prompt in administrator mode and pass the following arguments.
 
    
-   **Arguments:** “Copied setup file path\syncfusionessentialaspnetcore_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}]
+   **Arguments:** “Setup file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
 
 
    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\syncfusionessentialaspnetcore_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true
+   **Example:** “D:\Temp\syncfusionessentialaspnetcore_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
 7. Setup is installed.

@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Installation using Online Installer
+# Installation using Web Installer
 
 The following procedure illustrates how to install Essential Studio Platform Online Installer setup. 
 
@@ -67,8 +67,6 @@ The following procedure illustrates how to install Essential Studio Platform Onl
 8. Once the Installation is complete, **Installation Summary** wizard will be displayed. Here you can check the list of platforms which are installed successfully and failed. Click Finish to exit the Installation Summary wizard. 
 
     ![](WebInstaller/Step-by-Step-Installation_img9.png)
-	
-	* Click **Getting Started** link to goto the UG documentation of the corresponding platform.
 	
 	* Click **Launch Control Panel** to open the Syncfusion Control Panel.
 
