@@ -68,7 +68,5 @@ The following procedure illustrates how to install Essential Studio Platform Onl
 
     ![](WebInstaller/Step-by-Step-Installation_img9.png)
 	
-	* Click **Getting Started** link to goto the UG documentation of the corresponding platform.
-	
 	* Click **Launch Control Panel** to open the Syncfusion Control Panel.
 
