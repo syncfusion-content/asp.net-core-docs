@@ -227,3 +227,79 @@ We can display the other Syncfusion controls using `template` property of Grid c
 The following output is displayed as a result of the above code example.
 
 ![](Display-Other-controls/Display_Other_controls_img1.png)
+
+
+## Getting Datasource of Grid in Sorted Order
+
+Grid column can be sorted and after sorting, the datasource can be obtained in the same order using `sortBy` query and `executeLocal` method of DataManager.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-button id="sort"  size="Large" show-rounded-corner="true" text="GetSortedData" click="GetSortedData" />
+
+
+
+<ej-grid id="FlatGrid" datasource="ViewBag.datasource1" allow-sorting="true" allow-multi-sorting="true" allow-paging="true">
+    <e-columns>
+        <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+        <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+        <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+        <e-column field="Freight" header-text="Freight" format="{0:C2}" text-align=Right width="75"></e-column>
+        <e-column field="OrderDate" header-text="Order Date" format="{0:MM/dd/yyyy}" text-align=Right width="80"></e-column>
+        <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+    </e-columns>
+</ej-grid>
+  
+{% endhighlight  %}
+
+{% highlight c# %}
+
+  namespace WebApplication1.Controllers
+{
+    public class HomeController : Controller
+    {
+        private NORTHWNDContext _context;
+
+
+        public HomeController(NORTHWNDContext context)
+        {
+            _context = context;
+        }
+
+
+        public IActionResult Index()
+        {
+            ViewBag.datasource1 = _context.Orders.ToList();
+            return View();
+        }
+    }
+
+}
+   
+{% endhighlight  %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+   function GetSortedData(args) {
+            var obj = $(".e-grid").ejGrid("instance");   
+            var Sort = obj.model.sortSettings.sortedColumns;  
+            var query = ej.Query();               
+            if(obj.model.sortSettings.sortedColumns.length){
+                for(var i=Sort.length-1;i>=0;i--){        
+                  query.sortBy(Sort[i].field, Sort[i].direction); 
+                }
+            var SortedDatasource = ej.DataManager(obj.model.dataSource).executeLocal(query); 
+    }
+}
+</script>
+   
+{% endhighlight  %}
+
+{% endtabs %}
+
+N> This solution will work only for local data.
