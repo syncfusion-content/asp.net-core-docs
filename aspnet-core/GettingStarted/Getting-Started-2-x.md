@@ -52,68 +52,6 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 * Then the packages will get installed and it will be automatically referred to your application.
 
-> **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp to download the necessary syncfusion script and themes files into **wwwroot** folder.
-
-* To add necessary NPM packages to the application, **Package.json** file should be included.
-
-* Add **Package.json** file to the project by right click on the project file,select **Add -> New item** and search for **npm Configuration File** and click **Add** button.
-
-![](getting-started_images/getting-started_img29.png)
-
-* Add the below code in the **Package.json** file.
-
-{% highlight cshtml %}
-
-    {
-      "version": "1.0.0",
-      "name": "asp.net",
-      "private": true,
-      "devDependencies": {
-        "bootstrap": "^3.3.6",
-        "jquery": "^3.1.1",
-        "jsrender": "^0.9.75",
-        "gulp": "^3.9.1",
-        "syncfusion-javascript": "^16.1.24"
-      }
-    } 
-
-{% endhighlight %}
-
-![](getting-started_images/getting-started_img30.png)
-
-* Add **gulpfile.js** file to the project by right click on the project file,select **Add -> New item** and search for **Gulp Configuration File** and click **Add** button.
-
-![](getting-started_images/getting-started_img31.png)
-
-* Add the below code in the **gulpfile.js** file.
-
-{% highlight cshtml %}
-
-    var gulp = require('gulp'); 
-    gulp.task('copy', function () { 
-        gulp.src('./node_modules/syncfusion-javascript/**') 
-            .pipe(gulp.dest('./wwwroot/lib/syncfusion-javascript')); 
-    });
-
-{% endhighlight %}
-
-![](getting-started_images/getting-started_img32.png)
-
-* Now navigate to the sample folder and run the command “npm install” in the command prompt to download all the scripts and CSS files in the node_modules folder. 
-
-* Open the **Task Runner Explorer** by clicking on **Tools -> Task Runner Explorer**.
-
-![](getting-started_images/getting-started_img33.png)
-
-* Run the **copy** task as depicted in the following screenshot.
-
-![](getting-started_images/getting-started_img34.png)
-
-* Once the gulp task is completed, **syncfusion-javascript** package will be available in the **wwwroot** folder.
-
-![](getting-started_images/getting-started_img35.png)
-
-
 * Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
 {% highlight cshtml %}
@@ -125,7 +63,21 @@ The following steps helps to create a ASP.NET Core web application to configure 
 {% endhighlight %}
 
 
-*  Refer the necessary scripts and CSS files in your **layout.cshtml** page from **lib -> syncfusion-javascript** folder.
+> **bower.json** file has been deprecated from the latest version of DotNetCore 2.1.
+
+> **Gulp configuration file** has been deprecated from the Visual Studio version 15.7.x.
+
+* The following two-ways are available to render EJ components in the application.
+
+* Copy the necessary Syncfusion script and themes files from the Syncfusion Essential Studio build installed location into the **wwwroot folder** in the application. 
+
+> Syncfusion Essential Studio build will be available in the following installed location, 
+ `C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets`
+ 
+![](getting-started_images/necessary_files_refer_img.png)
+
+
+* Refer the required Syncfusion [CDN](https://help.syncfusion.com/js/cdn) links in the **_layout.cshtml** page to render Syncfusion components.
 
 N> Include the below mentioned scripts and CSS references under the appropriate environment. (For eg: If your environment is "Development", then refer the scripts and CSS files under the tag *environment names="Development"*). Refer all the required external and internal scripts only once in the page with proper order. Refer this [link](https://help.syncfusion.com/js/control-initialization#adding-the-required-javascript-files) to know about order of script reference.
 
