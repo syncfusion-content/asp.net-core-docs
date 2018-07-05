@@ -374,7 +374,7 @@ The tab control’s style and appearance are controlled based on the CSS classes
 By default, there are 13 themes support available for the tab control namely:
 
 * default-theme
-* bootstrap-themex
+* bootstrap-theme
 * flat-azure-dark
 * fat-lime
 * flat-lime-dark
