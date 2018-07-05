@@ -20,7 +20,7 @@ Enabled property is Boolean type, which allow us to enable or disable the Toolba
 // Add this code in your CSHTML page and refer local data section for data source
 
 <ej-toolbar id="toolbar" width="250px" enabled="false" dataSource="ViewBag.datasource">
-    <e-toolbar-fields id="iconid" sprite-css-class="spriteCss">
+    <e-toolbar-fields id="id" sprite-css-class="spriteCss">
 </ej-toolbar>
 
 {% endhighlight %}
@@ -29,18 +29,18 @@ Enabled property is Boolean type, which allow us to enable or disable the Toolba
 
         public class ToolbarLocalBinding
         {
-            public string iconid { get; set; }
+            public string id { get; set; }
             public string spriteCss { get; set; }
         }
         public IActionResult Index()
         {
             List<ToolbarLocalBinding> t = new List<ToolbarLocalBinding>();
 
-            t.Add(new ToolbarLocalBinding { iconid = "1", spriteCss = "mailtools movetofolder" });
-            t.Add(new ToolbarLocalBinding { iconid = "2", spriteCss = "mailtools categorize" });
-            t.Add(new ToolbarLocalBinding { iconid = "3", spriteCss = "mailtools flag" });
-            t.Add(new ToolbarLocalBinding { iconid = "4", spriteCss = "mailtools forward" });
-            t.Add(new ToolbarLocalBinding { iconid = "5", spriteCss = "mailtools newmail" });
+            t.Add(new ToolbarLocalBinding { id = "1", spriteCss = "tools movetofolder" });
+            t.Add(new ToolbarLocalBinding { id = "2", spriteCss = "tools categorize" });
+            t.Add(new ToolbarLocalBinding { id = "3", spriteCss = "tools flag" });
+            t.Add(new ToolbarLocalBinding { id = "4", spriteCss = "tools forward" });
+            t.Add(new ToolbarLocalBinding { id = "5", spriteCss = "tools newmail" });
             ViewBag.datasource = t;
             return View();
         }
@@ -50,32 +50,32 @@ Enabled property is Boolean type, which allow us to enable or disable the Toolba
 {% highlight css %}
 
 <style type="text/css" class="cssStyles">
-.e-tooltxt .mailtools {
+.e-tooltxt .tools {
         background-image: url('../Content/images/maild.png');
     }
-    .e-tooltxt .mailtools {
+    .e-tooltxt .tools {
         display: block;
         background-image: url('../Content/images/maill.png');
         height: 24px;
         width: 24px;
         background-repeat: no-repeat;
     }
-    .e-tooltxt:hover .mailtools, .darktheme .cols-sample-area .e-tooltxt:hover .mailtools {
+    .e-tooltxt:hover .tools, .darktheme .cols-sample-area .e-tooltxt:hover .tools {
         background-image: url('../Content/images/mailh.png');
     }
-    .mailtools.movetofolder {
+    .tools.movetofolder {
         background-position: -12px -40px;
     }
-    .mailtools.categorize {
+    .tools.categorize {
         background-position: -14px -248px;
     }
-    .mailtools.flag {
+    .tools.flag {
         background-position: -13px -282px;
     }
-    .mailtools.forward {
+    .tools.forward {
         background-position: -14px -314px;
     }
-    .mailtools.newmail {
+    .tools.newmail {
         background-position: -14px -348px;
     }
     .frame {
@@ -109,7 +109,7 @@ The Hide property is Boolean type, which allow us to show or hide the Toolbar. D
 // Add this code in your CSHTML page and refer local data section for data source
 
 <ej-toolbar id="toolbar" width="250px" hide="true" dataSource="ViewBag.datasource">
-    <e-toolbar-fields id="iconid" sprite-css-class="spriteCss">
+    <e-toolbar-fields id="id" sprite-css-class="spriteCss">
 </ej-toolbar>
 
 {% endhighlight %}
