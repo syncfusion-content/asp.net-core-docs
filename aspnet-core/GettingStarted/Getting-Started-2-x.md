@@ -65,9 +65,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 > **bower.json** file has been deprecated from the latest version of DotNetCore 2.1.
 
-> **Gulp configuration file** has been deprecated from the Visual Studio version 15.7.x.
-
-* The following two-ways are available to render EJ components in the application.
+* The following two-ways are available to use the **Syncfusion client-side libraries** to render EJ components in the application.
 
 * Copy the necessary Syncfusion script and themes files from the Syncfusion Essential Studio build installed location into the **wwwroot folder** in the application. 
 
