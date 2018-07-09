@@ -73,12 +73,12 @@ public partial class GridController : Controller
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(GridModel, typeof(GridProperties));
             string targetFolder = _hostingEnvironment.WebRootPath;
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx";
-            wrdExp.Theme = "flat-saffron";
-            wrdExp.LocalSave = true;
-            wrdExp.FilePath = targetFolder;
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExp = new GridWordExport();
+            wordExp.FileName = "Export.docx";
+            wordExp.Theme = "flat-saffron";
+            wordExp.LocalSave = true;
+            wordExp.FilePath = targetFolder;
+            return exp.Export(gridProp, DataSource, wordExp);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
