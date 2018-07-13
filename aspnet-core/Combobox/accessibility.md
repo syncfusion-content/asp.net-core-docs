@@ -101,7 +101,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 
 
 
-Output for the accessbility combobox control is as follows.
+Output for the accessibility combobox control is as follows.
 
 
 ![](Combobox_accessibility_images/accessibility.png)
