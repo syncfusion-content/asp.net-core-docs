@@ -115,7 +115,7 @@ The following output is displayed as a result of the previous code example.
 
 ##  WCF DataService / OData service
 
-To consume WCF DataService in grid control, provide the service link directly to the  `url` property of grid  `datamanager` .
+To consume WCF DataService in grid control, provide the service link directly to the  `url` property of grid `e-datamanager`.
 
 There is an online OData Service `http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders` created specifically for Syncfusion Controls
 
@@ -124,7 +124,7 @@ The following code example describes the previous behavior.
 {% tabs %} 
 {% highlight razor %}
 
-<ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
+<ej-grid id="FlatGrid" allow-paging="true">
     <e-datamanager url="http://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -147,9 +147,9 @@ The following output is displayed as a result of the previous code example.
 
 The web API Adaptor is used for processing request and response messages from Web API Service.
 
-To consume Web API service, set the service link to the `url` property of grid `datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of grid `datamanager`
+To consume Web API service, set the service link to the `url` property of grid `e-datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of grid `datamanager`
 
- I> The datasource from Web API service must be returned as object that has property `result` with its value as datamanager and another property `count` with its value as datamanager total records count.
+ I> The datasource from Web API service must be returned as object that has property `result` with its value as data and another property `count` with its value as total records count.
 
 DataOperation queries such as sorting, filtering, etc., would be sent to Web API Service corresponding to grid actions performed and they need to be handled manually as Web API Service does not process it by default.
 
@@ -158,7 +158,7 @@ The following code example describes the previous behavior.
 {% tabs %} 
 {% highlight razor %}
     
-     <ej-grid id="FlatGrid" datasource="ViewBag.dataSource" allow-paging="true">
+     <ej-grid id="FlatGrid" allow-paging="true">
     <e-datamanager url="/api/Orders" adaptor="WebApiAdaptor"></e-datamanager>
     <e-columns>
         <e-column field="OrderID"></e-column>
@@ -347,7 +347,7 @@ The following output is displayed as a result of the previous code example.
 
 ###  Data caching
 
-The `datamanager` can cache loaded data. The caching functionality can be enabled by setting the `enable-caching` property in `datamanager`.
+The `datamanager` can cache loaded data. The caching functionality can be enabled by setting the `enable-caching` property in `e-datamanager`.
     
 The `time-till-expiration` and `caching-page-size` properties are used to control the expiration time of data and the cache page size settings respectively.
 
