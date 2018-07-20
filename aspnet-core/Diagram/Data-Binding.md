@@ -23,7 +23,7 @@ To explore those properties, see [Data source settings](http://help.syncfusion.c
 
 Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
 
-To map the user defined JSON data with Diagram, you have to configure the fields of `DataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
+To map the user defined JSON data with Diagram, you have to configure the fields of `DataSourceSettings`. The following code example defines the JSON data in (data.json) file and reads the data from that file to bind it to the DataSourceSetting's DataSource property. You can also create BusinessObjects as an array and bind it to the DataSource property.  
 
 {% tabs %}
 {% highlight razor %}
@@ -68,6 +68,7 @@ To map the user defined JSON data with Diagram, you have to configure the fields
 
     public Array GetDataSource()
     {
+        //To read reads the data from the file and to bind into the Diagram...
         String allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/data.json"));
         Dictionary<string, object> requestArgs = (Dictionary<string, object>)new JavaScriptSerializer().DeserializeObject(allText);
         requestArgs = (Dictionary<string, object>)requestArgs["root"];
@@ -197,13 +198,13 @@ The following code illustrates how to convert HTML table to the Diagram.
     @*Configures data source for Diagram*@
     .DataSourceSettings(e => 
     { 
-        e.DataSource(ds => ds.Table("#htmlbinding"))
+        e.DataSource(ds => ds.Table("#hierarchicalData"))
         .Id("Id")
         .Parent("ReportingPerson");
     }))
 
     <!-- HTML Table -->
-    <script id="htmlbinding" type="text/template" >
+    <script id="hierarchicalData" type="text/template" >
         <table style="display: none">
             <thead>
                 <tr>
