@@ -23,7 +23,7 @@ To explore those properties, see [Data source settings](http://help.syncfusion.c
 
 Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
 
-To map the user defined JSON data with Diagram, you have to configure the fields of `DataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
+To map the user defined JSON data with Diagram, you have to configure the fields of `DataSourceSettings`. The following code example, we load the data.json file and to bind local data with the Diagram. Here, we can also create and bind the business data based on the project. 
 
 {% tabs %}
 {% highlight razor %}
@@ -68,6 +68,7 @@ To map the user defined JSON data with Diagram, you have to configure the fields
 
     public Array GetDataSource()
     {
+        //To load the JSON data file and to bind the data with Diagram...
         String allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/data.json"));
         Dictionary<string, object> requestArgs = (Dictionary<string, object>)new JavaScriptSerializer().DeserializeObject(allText);
         requestArgs = (Dictionary<string, object>)requestArgs["root"];
