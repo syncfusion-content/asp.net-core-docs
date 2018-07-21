@@ -8,7 +8,7 @@ documentation: ug
 ---
 #  Data Adaptors
 
-The Data Adaptor is a mechanism through which the `DataManager` interact with the remote service or local dataSource. The `DataManager` has several preconfigured Data Adaptors, refer to the [link](http://help.syncfusion.com/aspnetmvc/datamanager/data-Adaptors).
+The Data Adaptor is a mechanism through which the `DataManager` interact with the remote service or local dataSource. The `DataManager` has several preconfigured Data Adaptors, refer to the [link](https://help.syncfusion.com/aspnet-core/datamanager/dataadaptors).
    
 In Grid, the Adaptor can be specified using the `adaptor` property of the `e-datamanager`.
  
