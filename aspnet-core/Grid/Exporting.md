@@ -969,7 +969,7 @@ Also, it has `none` option which will export the grid without any theme.  The de
             GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
             GridWordExport wordExport = new GridWordExport();
             wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
-            return exp.Export(gridProp, DataSource, wrdExp);
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
