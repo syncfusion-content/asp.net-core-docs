@@ -63,9 +63,9 @@ The Exporting provides support to export grid data into excel, word and PDF file
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = ConvertGridObject(GridModel);
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExport = new GridWordExport();
+            wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
@@ -89,9 +89,9 @@ The Exporting provides support to export grid data into excel, word and PDF file
 
 # Hierarchy grid exporting
 
-The grid will be exported with its child grid. This can be achieved by enabling the `IncludeChildGrid` property of the respective exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for Childgrid in the gridProperties object after deserializing them. Remaining procedures will be same as the normal grid exporting.
+The grid will be exported with its child grid. This can be achieved by enabling the `IncludeChildGrid` property of the respective exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for `ChildGrid` in the `GridProperties` object after deserializing them. Remaining procedures will be same as the normal grid exporting.
 
-N> The excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like Pdf and Word will be exported in expanded state.
+N> The excel File will be exported in the collapsed state with the expand/collapse icon whereas other file-formats like PDF and Word will be exported in expanded state.
 
 {% tabs %}
  
@@ -156,10 +156,10 @@ N> The excel File will be exported in the collapsed state with the expand/collap
             var DataSource = emp;
             GridProperties gridProp = ConvertGridModel(GridModel);
             gridProp.ChildGrid.DataSource = _context.Orders.Take(100).ToList();
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            wrdExp.IncludeChildGrid = true;
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExport = new GridWordExport();
+            wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
+            wordExport.IncludeChildGrid = true;
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
@@ -635,7 +635,7 @@ Currently server helper function allows following three types of exporting.
 
 ##  Server side handlers
 
-In ASP.NET Corw, exporting is achieved by using action controller method. In controller method, the grid property is passed as string parameter you need to deserialize it into the grid Property. By using the `Export` server method, you can export the grid into excel, PDF and word documents.
+In ASP.NET Core, exporting is achieved by using action controller method. In controller method, the grid property is passed as string parameter you need to deserialize it into the grid Property. By using the `Export` server method, you can export the grid into excel, PDF and word documents.
 
 {% tabs %}
  
@@ -690,9 +690,9 @@ In ASP.NET Corw, exporting is achieved by using action controller method. In con
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExport = new GridWordExport();
+            wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
@@ -769,9 +769,9 @@ The `export-to-pdf-action`, `export-to-word-action` and `export-to-excel-action`
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExport = new GridWordExport();
+            wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult PdfAction(string GridModel)
         {
@@ -862,10 +862,10 @@ On server before calling the `Export` function, the data source should be proces
                 WordExport exp = new WordExport();
                 var DataSource = _context.Orders.Take(100).ToList();
                 GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
-                GridWordExport wrdExp = new GridWordExport();
-                wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
+                GridWordExport wordExport = new GridWordExport();
+                wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
                 var dataSource = new DataOperations().Execute(DataSource, gridProp);
-                return exp.Export(gridProp, dataSource, wrdExp);
+                return exp.Export(gridProp, dataSource, wordExport);
             }
             public ActionResult ExportToPdf(string GridModel)
             {
@@ -883,7 +883,7 @@ On server before calling the `Export` function, the data source should be proces
 
 ## Local data 
 
-By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exportingit in server, the grid's client [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) can be sent to server on export PostBack by removing the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this as follows
+By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting it in server, the grid's client [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) can be sent to server on export PostBack by removing the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource) property in grid's ignore list. The code snippet for this as follows
 
 {% highlight js %}
 
@@ -967,9 +967,9 @@ Also, it has `none` option which will export the grid without any theme.  The de
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = (GridProperties)Syncfusion.JavaScript.Utils.DeserializeToModel(typeof(GridProperties), GridModel);
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExport = new GridWordExport();
+            wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
@@ -1135,9 +1135,9 @@ The background color of the alternative row of the grid content.</td></tr>
             WordExport exp = new WordExport();
             var DataSource = _context.Orders.Take(100).ToList();
             GridProperties gridProp = ConvertGridObject(GridModel);
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
-            return exp.Export(gridProp, DataSource, wrdExp);
+            GridWordExport wordExport = new GridWordExport();
+            wordExport.FileName = "Export.docx"; wordExport.Theme = "flat-saffron";
+            return exp.Export(gridProp, DataSource, wordExport);
         }
         public ActionResult ExportToPdf(string GridModel)
         {
