@@ -49,7 +49,7 @@ namespace samplebrowser.Controllers.Grid
     public partial class GridController : Controller
     {
         // GET: /<controller>/
-        public ActionResult Databinding()
+        public ActionResult DataBinding()
         {
             List<Person> Persons = new List<Person>();
             Persons.Add(new Person() { FirstName = "John", LastName = "Beckett", Email = "john@syncfusion.com" });
@@ -147,7 +147,7 @@ The following output is displayed as a result of the previous code example.
 
 The web API Adaptor is used for processing request and response messages from Web API Service.
 
-To consume Web API service, set the service link to the `url` property of grid `e-datamanager` and you can set adaptor type as `WebApiAdaptor` to the `Adaptor` Property of grid `datamanager`
+To consume Web API service, set the service link to the `url` property of grid `e-datamanager` and you can set adaptor type as `WebApiAdaptor` to the `adaptor` Property of grid `e-datamanager`
 
  I> The datasource from Web API service must be returned as object that has property `result` with its value as data and another property `count` with its value as total records count.
 
@@ -347,7 +347,7 @@ The following output is displayed as a result of the previous code example.
 
 ###  Data caching
 
-The `datamanager` can cache loaded data. The caching functionality can be enabled by setting the `enable-caching` property in `e-datamanager`.
+The `DataManager` can cache loaded data. The caching functionality can be enabled by setting the `enable-caching` property in `e-datamanager`.
     
 The `time-till-expiration` and `caching-page-size` properties are used to control the expiration time of data and the cache page size settings respectively.
 
