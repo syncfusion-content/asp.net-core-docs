@@ -612,6 +612,140 @@ public class GridController : Controller
 
 {% endtabs %}
 
+##  Multiple exporting
+
+The `allow-multiple-exporting` property allows you to export multiple grids into the same file. Once you enable the `allow-multiple-exporting`, grid properties of all the grid which are available in current page are passed as string array parameter to controller action method.
+In controller action method you are able to export all the grids available in the current page. The code sample for this is as follows.
+
+{% tabs %}
+ 
+{% highlight razor %}
+
+<div class="label1">
+        Employee Grid
+    </div>
+    <ej-grid id="Grid" datasource="@ViewBag.datasource1" allow-multiple-exporting="true" export-to-excel-action="MultipleExportToExcel" export-to-pdf-action="MultipleExportToPdf" export-to-word-action="MultipleExportToWord" selected-row-index="0">
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" })>
+        </e-toolbar-settings>
+        <e-columns>
+            <e-column field="EmployeeID" header-text="EmployeeID" text-align="Right" width="80"></e-column>
+            <e-column field="FirstName" header-text="First Name" width="80"></e-column>
+        </e-columns>
+    </ej-grid>
+    <div class="label1">
+        Orders Grid
+    </div>
+    <ej-grid id="FlatGrid" datasource="ViewBag.datasource2">
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID" text-align="Left" width="75"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align=Right width="75"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="110"></e-column>
+        </e-columns>
+    </ej-grid>
+
+{% endhighlight  %}
+
+ {% highlight c# %}
+
+// Excel export
+
+    public ActionResult MultipleExportToExcel(string[] GridModel)
+        {
+            ExcelExport exp = new ExcelExport();
+            var EmployeeData = _context.Employees.Take(5).ToList();
+            var OrderData = _context.Orders.Take(5).ToList();
+            bool initial = true;
+            IWorkbook book = null;
+            GridExcelExport excelExp = new GridExcelExport();
+            excelExp.FileName = "Export.xlsx"; excelExp.Excelversion = ExcelVersion.Excel2010;
+            excelExp.Theme = "flat-saffron";
+            foreach (string gridProperty in GridModel)
+            {
+                GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
+                if (initial)
+                {
+                    gridProp.Locale = "";
+                    book = exp.Export(gridProp, EmployeeData, true, excelExp);
+                    initial = false;
+                }
+                else
+                {
+                    excelExp.WorkBook = book;
+                    excelExp.ExportType = MultipleExportType.AppendToSheet;
+                    excelExp.HeaderText = "Second Grid";
+                    return exp.Export(gridProp, OrderData,excelExp);
+                }
+            }
+            return null;
+        }
+
+// Word export
+
+    public ActionResult MultipleExportToWord(string[] GridModel)
+        {
+            WordExport exp = new WordExport();
+            var EmployeeData = _context.Employees.Take(5).ToList();
+            var OrderData = _context.Orders.Take(5).ToList();
+            IWordDocument document = null;
+            bool initial = true;
+            GridWordExport wrdExp = new GridWordExport();
+            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
+            foreach (string gridProperty in GridModel)
+            {
+                GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
+                if (initial)
+                {
+                    gridProp.Locale = "";
+                    document = exp.Export(gridProp, EmployeeData, wrdExp, true);
+                    initial = false;
+                }
+                else
+                {
+                    wrdExp.Document = document;
+                    wrdExp.HeaderText = "Second Grid";
+                    return exp.Export(gridProp, OrderData, wrdExp);
+                }
+            }
+            return null;
+        }
+
+// PDF export
+
+    public ActionResult MultipleExportToPdf(string[] GridModel)
+        {
+            PdfExport exp = new PdfExport();
+            var EmployeeData = _context.Employees.Take(5).ToList();
+            var OrderData = _context.Orders.Take(5).ToList();
+            PdfDocument document = null;
+            bool initial = true;
+            GridPdfExport pdfExp = new GridPdfExport();
+            pdfExp.FileName = "Export.pdf"; pdfExp.Theme = "flat-saffron";
+            foreach (string gridProperty in GridModel)
+            {
+                GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
+                if (initial)
+                {
+                    gridProp.Locale = "";
+                    document = exp.Export(gridProp, EmployeeData, true, pdfExp);
+                    initial = false;
+                }
+                else
+                {
+                    pdfExp.Document = document;
+                    pdfExp.HeaderText = "Second Grid";
+                    return exp.Export(gridProp, OrderData, pdfExp);
+                }
+            }
+            return null;
+        }
+
+
+{% endhighlight %}
+
+{% endtabs %} 
+
 ## Server Dependencies
 
 The export helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio builds. Full list of assemblies needed for grid Export is as follows.
