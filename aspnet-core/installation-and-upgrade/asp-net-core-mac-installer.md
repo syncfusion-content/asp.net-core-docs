@@ -10,9 +10,9 @@ documentation: ug
 
 # Mac Installation
 
-The following procedure illustrates how to install Essential Studio Mac installer. 
+The following procedure illustrates how to install ASP.NET Core Mac installer. 
 
-1. Double-click the Syncfusion Essential Studio Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
+1. Double-click the Syncfusion ASP.NET Core Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
 
    ![](Mac-Installer_images/Mac_Installer1.png)
    
