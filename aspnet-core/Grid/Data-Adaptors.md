@@ -363,7 +363,7 @@ The following code example describes the above behavior.
 {% endhighlight  %}
 {% endtabs %}           
 
- I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource and the foreingKeyField value.
+ I> 1. The `field` name of the virtual column should be the name of the field to display from foreign datasource and the foreignKeyField value.
  I> 2. By default, the `ForeignKeyAdaptor` uses `JsonAdaptor`, to use other Adaptors specify the Adaptor name as the second argument during initialization.
 
 The following output is displayed as a result of the above code example.
