@@ -35,11 +35,218 @@ The following code example shows you how to enable CellEditing in TreeGrid c
 
 The output of TreeGrid with CellEditing is as follows.
 
-
-
 ![](Editing_images/Editing_img1.png)
 
+### Row Editing
 
+It is possible to make the entire row to editable state and to update a record by setting `EditSettings.EditMode` as `RowEditing`.
+
+The following code example shows you how to enable RowEditing in TreeGrid control.
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridControlEditing">
+
+    //...
+
+    <e-tree-grid-edit-settings allow-editing="true" edit-mode="@TreeGridEditMode.RowEditing"></e-tree-grid-edit-settings>
+
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/rowEditing.png)
+
+### Batch Editing
+
+In TreeGrid control to save the all the Add, Edit and Delete changes to database with single action, set the `EditMode` as batchEditing.
+
+The following code example shows you how to enable the `BatchEditing` in TreeGrid control.
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridControlEditing">
+
+    //...
+
+    <e-tree-grid-edit-settings allow-editing="true" edit-mode="@TreeGridEditMode.BatchEditing" begin-edit-action="Click"></e-tree-grid-edit-settings>
+
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The output of the TreeGrid with `BatchEditing` is as follows.
+
+![](Editing_images/batchedit.png)
+
+In Batch editing, the Edit mode can be changed to "Cell" or "Row" with "BatchEditSettings" property as per the following code example.
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridControlEditing">
+
+    //...
+
+    <e-tree-grid-edit-settings allow-editing="true" edit-mode="@TreeGridEditMode.BatchEditing" begin-edit-action="Click">
+	    <e-tree-grid-batch-edit-settings edit-mode="Row"/>
+    </e-tree-grid-edit-settings>    
+
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The output of the TreeGrid with `BatchEditSettings` and `EditMode` is as follows.
+
+![](Editing_images/batcheditrow.png)
+
+N> After modifying all the changes in TreeGrid, on clicking "Save" button the [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated records in `batchChanges` argument and `requestType` as `batchSave`. Using this event we can update the all the modified records to database.
+
+
+### Dialog Editing
+
+Set `EditSettings.EditMode` as `DialogEditing` to edit/add a record using dialog.
+
+The following code example shows you how to enable dialog editing in TreeGrid control.
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridControlEditing">
+    //...
+    <e-tree-grid-edit-settings allow-editing="true" edit-mode="@TreeGridEditMode.DialogEditing"></e-tree-grid-edit-settings>
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The output of the TreeGrid with dialog editing is as follows.
+
+![](Editing_images/dialogEditing.png)
+
+
+#### Dialog Template
+
+You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
+Using this template support, you can edit/add the fields that are not bound to TreeGrid columns.
+To edit/add the records using dialog template form, set `EditSettings.EditMode` as `DialogEditing` and specify the template id to `EditSettings.DialogEditorTemplateID` property.
+
+N> 1. `value` attribute is used to bind the corresponding field value while editing.
+N> 2. `name` attribute is used to get the changed field values while saving the edited record.
+N> 3.  `id` attribute must to be set in the format of ( treegrid control id + fieldname).
+
+The following code example describes the above behavior.
+
+{% highlight js %}
+
+<script type="text/x-jsrender" id="template">
+    <div>
+        <b>Task Details</b>
+        <table cellspacing="10" class="beta">
+            <tr>
+                <td style="text-align:right;padding: 10px;">
+                    TaskID
+                </td>
+                <td style="text-align: left;padding: 10px;">
+                    <input id="TreeGridContainertaskID" type="number" name="taskID" value="{{'{{'}}:taskID{{}}}}" disabled="disabled" class="e-field e-ejinputtext valid e-disable"/>
+                </td>
+                <td style="text-align: right;padding: 10px;">
+                    TaskName
+                </td>
+                <td style="text-align: left;padding: 10px;">
+                    <input id="TreeGridContainertaskName" name="taskName" value="{{'{{'}}:taskName{{}}}}" class="e-field e-ejinputtext valid"/>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;padding: 10px;">
+                    StartDate
+                </td>
+                <td style="text-align: left;padding: 10px;">
+                    <input type="text" id="TreeGridContainerstartDate" name="startDate" value="{{'{{'}}:startDate{{}}}}" class="e-field e-ejinputtext valid" />
+                </td>
+                <td style="text-align: right;padding: 10px;">
+                    EndDate
+                </td>
+                <td style="text-align: left;padding: 10px;">
+                    <input id="TreeGridContainerendDate" type="text" name="endDate" value="{{'{{'}}:endDate{{}}}}" class="e-field e-ejinputtext valid"  />
+                </td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+{% endhighlight %}
+
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridControlEditing">
+    //...
+    <e-tree-grid-edit-settings allow-editing="true" edit-mode="@TreeGridEditMode.DialogEditing" dialog-editor-template-id="template"></e-tree-grid-edit-settings>
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/dialogTemplate.png)
+
+
+## Cell Edit Template
+
+Edit template is used to create custom editor for editing the column values. It can be created by using `EditTemplate` property of `Columns`.
+
+The following are the functions available for edit template,
+
+* `create` - It is used to create the control at time of initialize.
+* `read` - It is used to read the input value at time of save.
+* `write` - It is used to assign the value to control at time of editing.
+
+The following code example describes edit template behavior
+
+{% highlight CSHTML %}
+
+<ej-tree-grid id="TreeGridControlEditing">
+      <e-tree-grid-columns>
+           <e-tree-grid-column header-text="Task Name" field="TaskName">
+                <e-tree-grid-edit-template create="create" read="read" write="write" />
+           </e-tree-grid-column>
+      </e-tree-grid-columns>
+</ej-tree-grid>
+
+{% endhighlight %}
+
+{% highlight js %}
+
+<script>
+var autocompleteData = ["Planning", "Plan Timeline", "Plan Budget", "Allocate Resources", "Planning Complete"];
+
+function create()
+{
+      return "<input>";
+}
+
+function write(args)
+{
+      args.element.ejAutocomplete({ 
+           width: "100%", 
+           dataSource: autocompleteData,
+           enableDistinct: true,
+           value: args.rowdata !== undefined ? args.rowdata["taskName"] : "" 
+      });
+}
+
+function read(args)
+{
+      args.ejAutocomplete('suggestionList').css('display', 'none');
+      return args.ejAutocomplete("getValue");
+}
+</script>
+
+{% endhighlight %}
+
+The output of the TreeGrid width EditTemplate as follows
+
+![](Editing_images/editTemplate.png)
 
 
 

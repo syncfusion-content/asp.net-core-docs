@@ -486,6 +486,94 @@ The following screenshot shows the output of the above steps,
 
 ![](Data-Binding_images/Data-Binding_img2.png)
 
+## Remote data binding
+
+### Load on demand
+
+TreeGrid provides `Load on Demand` support for rendering remote data. Load on demand is considered in TreeGrid for the following actions, 
+
+* Expanding root nodes.
+* Navigating pages, with paging enabled in TreeGrid.
+
+When load on demand is enabled, all the root nodes are rendered in collapsed state at initial load.
+
+When load on demand support is enabled in TreeGrid with paging, the current or active page’s root node alone will be rendered in collapsed state. On expanding the root node, the child nodes will be loaded from the remote server. 
+
+When a root node is expanded, its child nodes are rendered and are cached locally, such that on consecutive expand/collapse actions on root node, the child nodes are loaded from the cache instead from the remote server.
+
+Similarly, if the user navigates to a new page, the root nodes of that specific page, will be rendered with request to the remote server.
+
+N> 1. Load on demand support in TreeGrid can be enabled only for remote data.
+N> 2. For better initial load time performance, we need to define the “HasChildMapping” property.
+
+Load on demand support in TreeGrid can be enabled by the following ways,
+
+1. By enabling [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property of TreeGrid control
+2. By enabling **CrossDomain** property while binding data source using ejDataManager control.
+
+The following code explains how to use Load on Demand in TreeGrid Control,
+
+{% highlight CSHTML %}
+
+ <ej-tree-grid id="TreeGridLoadonDemand" id-mapping="TaskID" parent-id-mapping="ParentID" has-child-mapping="isParent" enable-virtualization="true">
+    <e-tree-grid-data-manager URL="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" cross-domain="true"></e-tree-grid-data-manager>
+    <e-tree-grid-columns>
+        <e-tree-grid-column headerText="Task Id" field="TaskID" width="45" />
+        <e-tree-grid-column headerText="Task Name" field="TaskName" />
+        <e-tree-grid-column headerText="Start Date" field="StartDate" editType="datetimepicker" />
+        <e-tree-grid-column headerText="End Date" field="EndDate" editType="datetimepicker" />
+        <e-tree-grid-column headerText="Progress" field="Progress" />
+    </e-tree-grid-columns>
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The output for load on demand support in TreeGrid:
+
+![](Data-Binding_images/Data-Binding_img3.png)
+![](Data-Binding_images/Data-Binding_img4.png)
+
+The following code snippet shows on how to enable load on demand support using  [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property.
+
+{% highlight CSHTML %}
+
+ <ej-tree-grid id="TreeGridLoadonDemand"
+     //...
+    enable-load-on-demand="true">
+    <e-tree-grid-data-manager url="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" cross-domain="true"></e-tree-grid-data-manager>  
+</ej-tree-grid>
+
+{% endhighlight %}
+
+The following output shows how load on demand works for expanding action
+
+![](Data-Binding_images/Data-Binding_img5.png)
+
+### Load at once:
+
+On remote data binding, for every action such as paging, sorting, filtering, the data will be fetched from remote server each time. To avoid requesting the data from the remote server for each action, we can set TreeGrid to load all the data on initialization and make all the data operations in client side. To enable this, we can use Offline property of `ej.DataManager`. the following code example explains this.
+
+{% highlight CSHTML %}
+
+ <ej-tree-grid id="TreeGridLoadonDemand" id-mapping="TaskID" parent-id-mapping="ParentID" has-child-mapping="isParent" enable-virtualization="true">
+    <e-tree-grid-data-manager url="http://js.syncfusion.com/demos/ejServices/Wcf/TreeGridGantt/TreeGantt.svc/SelfReferenceDatas" Offline="true"></e-tree-grid-data-manager>
+    <e-tree-grid-columns>
+        <e-tree-grid-column headerText="Task Id" field="TaskID" width="45" />
+        <e-tree-grid-column headerText="Task Name" field="TaskName" />
+        <e-tree-grid-column headerText="Start Date" field="StartDate" edit-type="datetimepicker" />
+        <e-tree-grid-column headerText="End Date" field="EndDate" edit-type="datetimepicker" />
+        <e-tree-grid-column headerText="Progress" field="Progress" />
+    </e-tree-grid-columns>
+</ej-tree-grid>
+
+{% endhighlight %}
+
+Please refer the [link](https://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on offline property
+
+**Limitations**:
+
+1. Mapping the expand state of a record using `ExpandStateMapping` property is not supported in load on demand feature.
+2. If a root or parent node is in collapsed state (child nodes not yet loaded), then that parent node will not be expanded while inserting new child to that parent node using toolbar icon or drag and drop actions.
 
 
 
