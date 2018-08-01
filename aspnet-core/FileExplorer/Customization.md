@@ -86,7 +86,7 @@ In the view page, add file explorer with custom grid settings.
 <ej-file-explorer id="custom" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")">
     <e-file-grid-settings>
         <e-file-columns>
-          <e-column-field header-text="Name" field="Name" width="150"></e-column-field>    
+          <e-column-field header-text="Name" field="name" width="150"></e-column-field>    
           <e-column-field header-text="DateModified" field="dateModified" width="150"></e-column-field>
           <e-column-field header-text="size" field="size" width="90" text-align="Right"></e-column-field>
         </e-file-columns>
