@@ -422,7 +422,7 @@ The following output is displayed as a result of the previous code example.
 
 When binding remote data to grid with on-demand data loading, only current page data knowledge is available to grid and so grouped records count would be shown based on current Page only. 
 
-This can be rectified when bindng data to grid using [UrlAdaptor](https://help.syncfusion.com/aspnet-core/grid/data-adaptors#url-adaptor) of DataManager. The grouped column values should be passed into the `groupDs` property of return object from server-side along with datsource and count.
+This can be rectified when binding data to grid using [UrlAdaptor](https://help.syncfusion.com/aspnet-core/grid/data-adaptors#url-adaptor) of DataManager. The grouped column values should be passed into the `groupDs` property of return object from server-side along with datasource and count.
 
 The following code example describes the above behavior.
 
@@ -458,17 +458,17 @@ The following code example describes the above behavior.
                 public ActionResult UrlDataSource(DataManager dm)
                  {
                     IEnumerable DataSource = new NorthwindDataContext().OrdersViews.ToList();
-                    int cnt = DataSource.AsQueryable().Count();
+                    int count = DataSource.AsQueryable().Count();
                     IEnumerable GroupDs = new List<object>(); ;
                     DataOperations ds = new DataOperations();
                     List<string> str = new List<string>();
                     if (dm.Group != null)
-                        GroupDs = ds.PerformSelect(DataSource, dm.Group); //Pass grouped column recordsgrouping
+                        GroupDs = ds.PerformSelect(DataSource, dm.Group); //Pass grouped column records grouping
                     if (dm.Sorted != null)
                         DataSource = ds.PerformSorting(DataSource, dm.Sorted);
                     DataSource = ds.PerformSkip(DataSource, dm.Skip);
                     DataSource = DataSource.AsQueryable().Take(dm.Take);
-                    return Json(new {result = DataSource, count =cnt, groupDs = GroupDs });
+                    return Json(new {result = DataSource, count = count, groupDs = GroupDs });
                  }  
              }     
         } 
