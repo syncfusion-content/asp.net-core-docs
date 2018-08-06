@@ -430,8 +430,8 @@ The following code example describes the above behavior.
  
 {% highlight razor %}
 
-<ej-grid id="FlatGrid" allow-paging="true" allow-sorting="true" allow-grouping="true">
-        <e-datamanager url="/Grid/DataSource" adaptor="UrlAdaptor"></e-datamanager>
+<ej-grid id="FlatGrid" allow-paging="true" allow-sorting="true" allow-grouping="true" group-settings ="@(new GroupSettings { GroupedColumns= new List<string>() { "EmployeeID" } })">
+        <e-datamanager url="/Grid/UrlDataSource" adaptor="UrlAdaptor"></e-datamanager>
         <e-columns>
             <e-column field="OrderID" header-text="Order ID" text-align="Right" width="75"></e-column>
             <e-column field="CustomerID" header-text="Customer ID" width="80"></e-column>
