@@ -303,3 +303,51 @@ The following code example describes the above behavior.
 {% endtabs %}
 
 N> This solution is applicable only for local data.
+
+## Rendering the grid using grid properties in server-side
+
+The GridProperties helps to render the grid control in server-side.
+
+The following code example which will explain to render the grid control in server-side.
+
+{% tabs %}
+
+{% highlight razor %}
+
+@model Syncfusion.JavaScript.Models.GridProperties
+
+@{Html.EJ().Grid<object>("FlatGrid", Model).Render();}
+  
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+   namespace Grid.Controllers
+   {
+     public class GridController : Controller
+     {
+        public ActionResult GridFeatures()
+        {
+            GridProperties grid = new GridProperties();
+            List<Column> colList = new List<Column>();
+            colList.Add(new Column() { Field = "OrderID", HeaderText="Order ID", TextAlign = Syncfusion.JavaScript.TextAlign.Right, Width = 75 });
+            colList.Add(new Column() { Field = "CustomerID", HeaderText = "Customer ID", Width = 80 });
+            colList.Add(new Column() { Field = "ShipName", HeaderText = "Ship Name", Width = 100 });
+            colList.Add(new Column() { Field = "ShipCity", HeaderText = "Ship City", Width = 100 });
+            colList.Add(new Column() { Field = "Freight", HeaderText = "Freight", Width = 80, Format="{0:C2}", TextAlign = Syncfusion.JavaScript.TextAlign.Right });
+            grid.Columns = colList;
+            grid.AllowPaging = true;
+            grid.DataSource = OrderRepository.GetAllRecords().ToList();
+            return View(grid);
+        }
+     }
+   }
+   
+{% endhighlight  %}
+
+{% endtabs %} 
+
+The following output is displayed as a result of the previous code example.
+
+![](How-To_images/Getting-Started_img4.png)
