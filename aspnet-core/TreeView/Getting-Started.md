@@ -142,6 +142,8 @@ By running the previous code, you will get output like the following image:
 
 Another way of creating tree view is by binding with the data source. You can bind a local data source to create a tree view.
 
+The [beforeLoad](https://help.syncfusion.com/api/js/ejtreeview#events:beforeload) event will be triggered before loading nodes into TreeView.
+
 Render the tree view with a local data source.
 
 In the model page, specify the tree view node properties as shown in the following:

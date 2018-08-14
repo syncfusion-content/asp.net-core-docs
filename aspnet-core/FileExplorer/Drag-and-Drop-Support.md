@@ -13,6 +13,7 @@ The file explorer allows the files to move from one folder to another by using d
 
 You can enable or disable this support by using the “**AllowDragAndDrop**” API of FileExplorer.
 
+The [dragStart](https://help.syncfusion.com/api/js/ejfileexplorer#events:dragstart), [drag](https://help.syncfusion.com/api/js/ejfileexplorer#events:drag), [dragStop](https://help.syncfusion.com/api/js/ejfileexplorer#events:dragstop) and [drop](https://help.syncfusion.com/api/js/ejfileexplorer#events:drop) events occur in the mentioned order when a drag and drop operation is performed.
 
 In the view page, add “FileExplorer” helper and specify the drag and drop option as specified in the following:
 

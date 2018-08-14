@@ -68,6 +68,7 @@ Output when EnableStrictMode is “true” is as follows.
 ## Enabled or Disabled
 
 PercentageTextBox has an option to enable or disable its element. You can set the Enabled property as “false” to enable the Textbox controls.
+Also you can enable/disable the **PercentageTextBox** by using [enable](https://help.syncfusion.com/api/js/ejtextboxes#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejtextboxes#methods:disable) methods.
 
 ### Configure Enabled or Disabled 
 
@@ -140,6 +141,7 @@ In the View page add the below code and configure the Name property.
 ## Define Value
 
 The value of PercentageTextBox can be assigned by using the Value property. The default value for Value property is null.
+You can get the value of **PercentageTextBox** by using [getValue](https://help.syncfusion.com/api/js/ejtextboxes#methods:getvalue) method.
 
 ### Configure Value
 
