@@ -89,7 +89,9 @@ MaskEditTextBox with height and width
 
 ## Define Value
 
-The value of MaskEditTextBox can be assigned by using the Value property. The default value for Value property is null.
+The value of MaskEditTextBox can be assigned by using the Value property. The default value for Value property is null. Specify the [name](https://help.syncfusion.com/api/js/ejmaskedit#members:name) attribute value for the mask edit textbox.
+You can get the raw value of **MaskEdit** without literals and prompt characters by using the [get_StrippedValue](https://help.syncfusion.com/api/js/ejmaskedit#methods:get_strippedvalue) method.
+Also you get the value of **MaskEdit** with the masked format by using the [get_UnstrippedValue](https://help.syncfusion.com/api/js/ejmaskedit#methods:get_unstrippedvalue) method.
 
 ### Configure Value
 
