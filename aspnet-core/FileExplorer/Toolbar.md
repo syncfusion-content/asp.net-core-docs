@@ -149,7 +149,6 @@ In the view page, add FileExplorer and specify “ShowToolbar” as false.
 
 <ej-file-explorer id="default" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")" width="100%" is-responsive="true" show-toolbar="false" >
 <e-file-ajax-settings>
-    <e-read url="/FileExplorer/Read{0}" datatype="jsonp"></e-read>
     <e-download url="/FileExplorer/Download{0}"></e-download>
     <e-get-image url="/FileExplorer/GetImage{0}"></e-get-image>
     <e-upload url="/FileExplorer/Upload{0}"></e-upload>
