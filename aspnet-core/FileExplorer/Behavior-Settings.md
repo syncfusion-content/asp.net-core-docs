@@ -19,7 +19,7 @@ In the view page, add FileExplorer helper and specify the file type restriction 
 
 {% highlight CSHTML %}
 
-<ej-file-explorer id="default" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")" width="100%" is-responsive="true" file-types="*Png,*docx" >
+<ej-file-explorer id="default" path="wwwroot/images/FileExplorer" ajax-action="@Url.Content("FileActionDefault")" width="100%" is-responsive="true" file-types="*png,*docx" >
 <e-file-ajax-settings>
     <e-download url="/FileExplorer/Download{0}"></e-download>
     <e-get-image url="/FileExplorer/GetImage{0}"></e-get-image>
