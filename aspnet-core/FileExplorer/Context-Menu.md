@@ -238,7 +238,7 @@ You will be notified with events when you try to open the context menu items (**
 
 {% highlight CSHTML %}
 
-<ej-file-explorer id="custom" path="wwwroot/images/FileExplorer" show-context-menu="false" ajax-action="@Url.Content("FileActionDefault")" menu-click="menuClick" menu-before-open="menuBeforeOpen" menu-open="menuOpen">
+<ej-file-explorer id="custom" path="wwwroot/images/FileExplorer" show-context-menu="true" ajax-action="@Url.Content("FileActionDefault")" menu-click="menuClick" menu-before-open="menuBeforeOpen" menu-open="menuOpen">
     <e-file-ajax-settings>
         <e-download url="/FileExplorer/Download{0}"></e-download>
         <e-get-image url="/FileExplorer/GetImage{0}"></e-get-image>
