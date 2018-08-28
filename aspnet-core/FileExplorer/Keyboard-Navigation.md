@@ -8,7 +8,7 @@ keywords: FileExplorer,  Syncfusion, Asp.Net Core FileExplorer, UG document, Key
 ---
 # Keyboard Navigation
 
-The file explorer control can be fully accessible with the help of keyboard shortcuts. The following table shows the list of keyboard shortcuts to access the FileExplorer control.
+The file explorer control can be fully accessible with the help of keyboard shortcuts and it can be allowed by specifying [allowKeyboardNavigation](https://help.syncfusion.com/api/js/ejfileexplorer#members:allowkeyboardnavigation) as true. The following table shows the list of keyboard shortcuts to access the FileExplorer control.
 
 
 N> Set focus on FileExplorer component to access the keyboard shortcuts.

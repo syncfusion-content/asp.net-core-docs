@@ -89,7 +89,7 @@ In the view page, add the following code and map the properties defined to the c
 
 ## Get selected nodes
 
-To get the selected nodes of tree view, use the [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of tree view selected nodes.
+To get the selected nodes of tree view, use the [getSelectedNodes](http://help.syncfusion.com/js/api/ejtreeview#methods:getselectednodes) method. It returns the collections of tree view selected nodes. You can use [getSelectedNodesIndex](https://help.syncfusion.com/api/js/ejtreeview#methods:getselectednodesindex) method to get the index positions of currently selected nodes.
 
 In the view page, add the following code and map the properties defined to the corresponding fields in data source and you can get selected nodes from the tree view by using the **getSelectedNodes** method.
 

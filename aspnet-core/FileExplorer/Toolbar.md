@@ -39,7 +39,8 @@ In file explorer, files have been displayed in 3 types of views “Grid”, “T
 <td>
 NewFolder <br/><br/></td>
 <td>
-It creates a new folder on the current directory.<br/><br/>When you click the “NewFolder” item, the dialog box will be displayed to get the folder name. Based on the user input, the file explorer creates new folder on the current directory.<br/><br/><br/><br/></td>
+It creates a new folder on the current directory.<br/><br/>While click on the NewFolder item, the dialog displays to get the folder name. Based on the user input, FileExplorer creates new folder on the current directory.
+Also {{'[createFolder](https://help.syncfusion.com/api/js/ejfileexplorer#events:createfolder)'| markdownify}} event will be triggered when new folder is created successfully in the file system.<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
@@ -75,7 +76,8 @@ It refreshes the current directory.<br/><br/><br/><br/></td>
 <td>
 Upload <br/><br/></td>
 <td>
-It uploads a file or list of files into the current directory.<br/><br/>And you can customize the uploaded configurations, for details check <br/>{{'[here](#_Customizing_the_Upload)'| markdownify }}.<br/><br/><br/><br/></td>
+It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check {{'[here](https://help.syncfusion.com/js/fileexplorer/toolbar#customizing-the-upload-functionality)'| markdownify }}.
+<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
@@ -93,25 +95,30 @@ This is used to rename the currently selected file or folder. The rename icon wi
 <td>
 Download <br/><br/></td>
 <td>
-It downloads the selected files. The download icon will be in enable state, when you select any file or folder.<br/><br/>If you select multiple files, it downloads all the files in a zip format.<br/><br/><br/><br/></td>
+It downloads the selected files. The download icon is enable state if you select any file or folder.<br/><br/>
+The {{'[beforeDownload](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforedownload)'| markdownify}} event will be triggered before the files are downloaded.
+<br/><br/>If you select multiple files, it downloads all the files in a zip format.<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
 Cut <br/><br/></td>
 <td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files in any location, the files are removed from the source location.<br/><br/><br/><br/></td>
+It makes the copy of the selected files or folders into the clipboard. When the user paste the files in any location, the files are removed from the source location.
+The {{'[cut](https://help.syncfusion.com/api/js/ejfileexplorer#events:cut)'| markdownify}} event will be triggered when files or folders are removed from the source.<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
 Copy <br/><br/></td>
 <td>
-It makes the copy of the selected files or folders into the clipboard. When the user paste the files, only the copied files will be pasted in the target location.<br/><br/><br/><br/></td>
+It makes the copy of the selected files or folders into the clipboard. When the user paste the files, the copy of the files are pasted in the target location.
+The {{'[copy](https://help.syncfusion.com/api/js/ejfileexplorer#events:copy)'| markdownify}} event will be triggered when file or folder is copied.<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
 Paste <br/><br/></td>
 <td>
-It paste the files from the clipboard into the currently selected folder. <br/><br/>Note: It is enabled only when the files are copied from the clipboard.<br/><br/><br/><br/></td>
+It pastes the files from the clipboard into the currently selected folder. <br/><br/>Note: Only when the files are copied into the clipboard it is enabled.
+The {{'[paste](https://help.syncfusion.com/api/js/ejfileexplorer#events:paste)'| markdownify}} event will be triggered when file or folder is pasted.<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
@@ -134,7 +141,7 @@ It is used to sort the files from the current directory. The sorting can be done
 
 ## Toolbar visibility
 
-The visibility of the toolbar can be customized through the “[ShowToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar)” property. By disabling this property you can remove the toolbar from the file explorer.
+The visibility of the toolbar can be customized through the “[ShowToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar)” property. By disabling this property you can remove the toolbar from the file explorer. Also you can remove the particular toolbar item by using [removeToolbarItem](https://help.syncfusion.com/api/js/ejfileexplorer#methods:removetoolbaritem) method.
 
 In the view page, add FileExplorer and specify “ShowToolbar” as false.
 
@@ -295,6 +302,8 @@ This property has the following sub properties with the default values:
 **MaxFileSize**: The property limits the maximum file size to upload. It accepts the value in bytes.
 
 **AutoUpload**: When you enable this property, the upload action is performed automatically after selecting the files. When you disable this property, it shows a confirmation dialog with the selected file details and perform the upload action by pressing the “upload” button.
+
+During upload process following events will be triggered, {{'[beforeUploadSend](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeuploadsend)'| markdownify}}, {{'[beforeUploadDialogOpen](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeuploaddialogopen)'| markdownify}}, {{'[beforeUpload](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeupload)'| markdownify}}, {{'[uploadError](https://help.syncfusion.com/api/js/ejfileexplorer#events:uploaderror)'| markdownify}}, {{'[uploadSuccess](https://help.syncfusion.com/api/js/ejfileexplorer#events:uploadsuccess)'| markdownify}} and {{'[uploadComplete](https://help.syncfusion.com/api/js/ejfileexplorer#events:uploadcomplete)'| markdownify}}. You can customize the upload settings with these events.
 
 In the view page, add file explorer and specify the upload settings as shown in the following:
     

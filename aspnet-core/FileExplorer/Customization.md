@@ -70,8 +70,7 @@ You can change the layout using the toolbar option. While clicking this tool, po
 
 ![](Customization_images/Customization_img2.jpeg)
 
-Also the layout views can be changed through the “[Layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout)” property.
-
+Also the layout views can be changed through the “[Layout](http://help.syncfusion.com/js/api/ejfileexplorer#members:layout)” property. The [layoutChange](https://help.syncfusion.com/api/js/ejfileexplorer#events:layoutchange) event will be triggered whenever the layout view type is changed.
     
 ### Customizing the Grid view
 

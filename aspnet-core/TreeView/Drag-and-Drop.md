@@ -10,7 +10,9 @@ documentation: ug
 # Drag and Drop
 
 To perform the drag and drop operation in tree view, specify the **AllowDragAndDrop** as true. It allows you to drag and drop a node in all the levels of the same tree view.
-    
+The [nodeDrag](https://help.syncfusion.com/api/js/ejtreeview#events:nodedrag), [nodeDragStart](https://help.syncfusion.com/api/js/ejtreeview#events:nodedragstart), [nodeDragStop](https://help.syncfusion.com/api/js/ejtreeview#events:nodedragstop) and 
+[nodeDropped](https://help.syncfusion.com/api/js/ejtreeview#events:nodedropped) event occurs based on Treeview node drag and drop state.
+
     {% highlight CSHTML %}
     
       <ej-tree-view id="treeView" allow-drag-and-drop="true">

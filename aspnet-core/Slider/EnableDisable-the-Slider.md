@@ -13,7 +13,7 @@ Slider widget includes an option to enable/disable it. When you disable the Slid
 
 ### Enabled
 
-Using this Enabled property you can enable/disable the Slider. Data type of this property is “Boolean”.
+Using this Enabled property you can enable/disable the Slider. Data type of this property is “Boolean”. Also you can enable/disable the **Slider** by using [enable](https://help.syncfusion.com/api/js/ejslider#methods:enable) and [disable](https://help.syncfusion.com/api/js/ejslider#methods:disable) methods.
 
 The following steps explains you on how to disable the Slider.
 
