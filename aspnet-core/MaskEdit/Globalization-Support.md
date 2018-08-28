@@ -47,7 +47,7 @@ Refer the below German culture file in head section of HTML page after the refer
 
  {% highlight javascript %}
    
-           <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/i18n/ej.culture.de-DE.min.js"></script>
+           <script src="https://cdn.syncfusion.com/js/assets/i18n/ej.culture.de-DE.min.js"></script>
                 
  {% endhighlight %}
 
