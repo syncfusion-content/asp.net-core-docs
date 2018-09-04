@@ -15,9 +15,9 @@ In Grid, the Adaptor can be specified using the `adaptor` property of the `e-dat
  
 N> For the `adaptor` property, you can assign Adaptor name either as `string` value (”JsonAdaptor”) or Enum value as `AdaptorType.JsonAdaptor`.
   
-##  Json Adaptor
+##  JSON Adaptor
 
-The Json Adaptor is used when the grid is bound with local datasource. It can be enabled in Grid using `adaptor` property as `JsonAdaptor`. The `JsonAdaptor` is the default Adaptor used by `DataManager` when bind with local dataSource such as IEnumerable, DataTable etc.  
+The JSON Adaptor is used when the grid is bound with local datasource. It can be enabled in Grid using `adaptor` property as `JsonAdaptor`. The `JsonAdaptor` is the default Adaptor used by `DataManager` when bind with local dataSource such as IEnumerable, DataTable etc.  
 
  The following code example describes the above behavior.
  
