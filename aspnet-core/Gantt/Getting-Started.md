@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains briefly about how to create a Gantt chart in your application with ASP.NET Core 1.0.
 
-## Create your first Gantt in Asp.Net core 1.0
+## Create your first Gantt in ASP.NET core 1.0
 
 This section explains briefly about the control structure and how to create a Gantt chart.
 
@@ -59,7 +59,7 @@ In this tutorial, you will learn how to create a simple Gantt chart, add tasks a
 Simple Gantt chart
 {:.caption}
 
-1. First, create a new ASP.Net core project; please refer [ASP.Net core 1.0-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-0-1) documentation to create new project and add necessary DLL’s and script files.
+1. First, create a new ASP.NET core project; please refer [ASP.NET core 1.0-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-0-1) documentation to create new project and add necessary DLL’s and script files.
 
 2. Create a data source in Controllers/HomeController.cs file, data source can be added to Gantt using `datasource` property in Gantt.
 
