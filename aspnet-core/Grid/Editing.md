@@ -1489,7 +1489,7 @@ The following code example describes the previous behavior.
                 }
             }
 
-            var data = order;
+            var data = myObject;
             return Json(data);
         }
 
