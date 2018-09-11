@@ -1465,7 +1465,7 @@ The following code example describes the previous behavior.
                 foreach (var temp in myObject.Changed)
                 {
                     var ord = temp;
-                    Order val = orddata.Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
+                    Order val = order.Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
                     val.OrderID = ord.OrderID;
                     val.EmployeeID = ord.EmployeeID;
                     val.CustomerID = ord.CustomerID;
@@ -1478,18 +1478,18 @@ The following code example describes the previous behavior.
             {
                 foreach (var temp in myObject.Added)
                 {
-                    orddata.Insert(0, temp);
+                    order.Insert(0, temp);
                 }
             }
             if (myObject.Deleted != null && myObject.Deleted.Count > 0)
             {
                 foreach (var temp in myObject.Deleted)
                 {
-                    orddata.Remove(orddata.Where(or => or.OrderID == temp.OrderID).FirstOrDefault());
+                    order.Remove(order.Where(or => or.OrderID == temp.OrderID).FirstOrDefault());
                 }
             }
 
-            var data = orddata;
+            var data = order;
             return Json(data);
         }
 
