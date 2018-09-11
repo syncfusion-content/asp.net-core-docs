@@ -1316,9 +1316,8 @@ The following code example describes the previous behavior.
      
         public ActionResult Insert(CRUDModel<Orders> value)
         {
-          //Insert record in database
-            return null;
-            
+          order.Insert(order.Count, value.Value);
+          return Json(order);
         }
 {% endhighlight %}
 
@@ -1335,8 +1334,14 @@ The following code example describes the previous behavior.
           
      public ActionResult Update(CRUDModel<Orders> value)
         {
-              //Update record in database
-            return null;
+            var ord = value;
+            OrderDetails val = order.Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
+            val.OrderID = ord.OrderID;
+            val.EmployeeID = ord.EmployeeID;
+            val.CustomerID = ord.CustomerID;
+            val.Freight = ord.Freight;
+            val.ShipCity = ord.ShipCity;
+            return Json(myObject.Value);
             
         }
 {% endhighlight %}
@@ -1354,7 +1359,8 @@ The following code example describes the previous behavior.
        
        public ActionResult Remove(int key)
         {
-	         //Delete record in database
+	       order.Remove(order.Where(or => or.OrderID == int.Parse(Key.ToString())).FirstOrDefault());
+           return Json(value);
         }
 {% endhighlight %}
 
@@ -1393,8 +1399,27 @@ The following code example describes the previous behavior.
 {% highlight c# %}
         public ActionResult CrudUpdate(CRUDModel<Orders> value, string action)
         {
-            //Delete record in database
-            return null;
+            if (myObject.Action == "update")
+            {
+                var ord = myObject.Value;
+                OrderDetails val = order.Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
+                val.OrderID = ord.OrderID;
+                val.EmployeeID = ord.EmployeeID;
+                val.CustomerID = ord.CustomerID;
+                val.Freight = ord.Freight;
+                val.ShipCity = ord.ShipCity;               
+            }
+            if (myObject.Action == "insert")
+            {
+                order.Insert(order.Count, myObject.Value);
+               
+            }
+            if (myObject.Action == "remove")
+            {
+                order.Remove(order.Where(or => or.OrderID == int.Parse(myObject.Key.ToString())).FirstOrDefault());
+               
+            }
+            return Json(myObject.Value);
         }
 {% endhighlight %}
 
@@ -1435,8 +1460,37 @@ The following code example describes the previous behavior.
 
         public ActionResult BatchUpdate([FromBody]CRUDModel<OrderDetails> myObject)
         {
-            //Save the batch changes in database
-            return null;
+            if (myObject.Changed != null && myObject.Changed.Count > 0)
+            {
+                foreach (var temp in myObject.Changed)
+                {
+                    var ord = temp;
+                    Order val = order.Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
+                    val.OrderID = ord.OrderID;
+                    val.EmployeeID = ord.EmployeeID;
+                    val.CustomerID = ord.CustomerID;
+                    val.Freight = ord.Freight;
+                    val.OrderDate = ord.OrderDate;
+                    val.ShipCity = ord.ShipCity;
+                }
+            }
+            if (myObject.Added != null && myObject.Added.Count > 0)
+            {
+                foreach (var temp in myObject.Added)
+                {
+                    order.Insert(0, temp);
+                }
+            }
+            if (myObject.Deleted != null && myObject.Deleted.Count > 0)
+            {
+                foreach (var temp in myObject.Deleted)
+                {
+                    order.Remove(order.Where(or => or.OrderID == temp.OrderID).FirstOrDefault());
+                }
+            }
+
+            var data = myObject;
+            return Json(data);
         }
 
 {% endhighlight %}
