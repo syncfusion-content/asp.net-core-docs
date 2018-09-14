@@ -762,7 +762,7 @@ The following code example describes the previous behavior.
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
             <e-column field="EmployeeID"></e-column>
-            <e-column field="Freight" edit-type="Numeric"></e-column>
+            <e-column field="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCountry"></e-column>
             <e-column header-Text="Manage Records">
               <e-column-commands>
