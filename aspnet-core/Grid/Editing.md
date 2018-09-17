@@ -116,14 +116,14 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="CustomerID" edit-type="String"></e-column>
-            <e-column field="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="CustomerID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" edit-type="NumericEdit">
                <ej-numeric-text-box decimal-places="2" />  
             </e-column>
-            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="DropdownEdit"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker"format="{0:MM/dd/yyyy}" ></e-column>
-            <e-column field="Verified" header-text="Verified" edit-type="Boolean"></e-column>
+            <e-column field="Verified" header-text="Verified" edit-type="BooleanEdit"></e-column>
         </e-columns>
    </ej-grid>
                    
@@ -240,11 +240,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -285,11 +285,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -342,8 +342,8 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="DropdownEdit"></e-column>
         </e-columns>
    </ej-grid>
                    
@@ -430,11 +430,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -486,8 +486,8 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="DropdownEdit"></e-column>
         </e-columns>
    </ej-grid>
                    
@@ -574,11 +574,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -624,8 +624,8 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
    </ej-grid>
@@ -677,8 +677,8 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="ShipCity" header-text="Ship City" edit-type="Dropdown"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" edit-type="DropdownEdit"></e-column>
         </e-columns>
    </ej-grid>
                    
@@ -769,11 +769,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -817,11 +817,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -862,11 +862,11 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric">
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit">
                <e-numeric-edit-options decimal-places="2"></e-numeric-edit-options>  
             </e-column>
-            <e-column field="ShipCountry" header-text="Ship Country" edit-type="Dropdown"></e-column>
+            <e-column field="ShipCountry" header-text="Ship Country" edit-type="DropdownEdit"></e-column>
             <e-column field="OrderDate" header-text="Order Date" edit-type="Datepicker" format="{0:MM/dd/yyyy}"></e-column>
         </e-columns>
    </ej-grid>
@@ -990,9 +990,9 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"number",true} })' text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"minlength",3} })'></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"minlength",3} })'></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"range","[0,1000]"} })' ></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit" validation-rules='@(new Dictionary<string,object> { {"required",true}, {"range","[0,1000]"} })' ></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
        </e-columns>
    </ej-grid>
@@ -1036,9 +1036,9 @@ The following code example describes the previous behavior.
       <e-toolbar-settings show-toolbar="true" toolbar-items='@new List<string> {"add","edit","delete","update","cancel"}'/>
         <e-columns>
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID"  text-align="Right"></e-column>
-            <e-column field="CustomerID" header-text="Customer ID" edit-type="String" validation-rules='@(new Dictionary<string,object> {{"customRegex",5}})'></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" edit-type="StringEdit" validation-rules='@(new Dictionary<string,object> {{"customRegex",5}})'></e-column>
             <e-column field="ShipCountry" header-text="Ship City"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric" validation-rules='@(new Dictionary<string,object> {{"customCompare",new List <Object>() {0,1000}} })' ></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit" validation-rules='@(new Dictionary<string,object> {{"customCompare",new List <Object>() {0,1000}} })' ></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
        </e-columns>
    </ej-grid>
@@ -1113,7 +1113,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
@@ -1187,7 +1187,7 @@ Refer to the following code example
             <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
@@ -1388,7 +1388,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="@EditingType.Numeric"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="@EditingType.NumericEdit"></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
@@ -1448,7 +1448,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" header-text="Order ID" is-primary-key="true"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="EmployeeID" header-text="Employee ID"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="@EditingType.Numeric"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="@EditingType.NumericEdit"></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
         </e-columns>
@@ -1513,7 +1513,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
        </e-columns>
    </ej-grid>
@@ -1559,7 +1559,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="ShipCity" header-text="Ship City"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country"></e-column>
        </e-columns>
    </ej-grid>
@@ -1606,7 +1606,7 @@ The following code example describes the previous behavior.
             <e-column field="OrderID" is-primary-key="true" header-text="Order ID"></e-column>
             <e-column field="CustomerID" header-text="Customer ID"></e-column>
             <e-column field="ShipCity" header-text="Ship City" default-value="Bern"></e-column>
-            <e-column field="Freight" header-text="Freight" edit-type="Numeric" default-value="45"></e-column>
+            <e-column field="Freight" header-text="Freight" edit-type="NumericEdit" default-value="45"></e-column>
             <e-column field="ShipCountry" header-text="Ship Country" default-value="Brazil"></e-column>
        </e-columns>
    </ej-grid>

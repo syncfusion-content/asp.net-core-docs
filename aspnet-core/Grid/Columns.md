@@ -624,7 +624,7 @@ The following code example describes the previous behavior.
             <e-column field="EmployeeID"></e-column>
             <e-column field="CustomerID"></e-column>
             <e-column field="Freight"></e-column>
-            <e-column header-text="" format="<a onclick = clk(this) href=#>Delete</a>"></e-column>
+            <e-column header-text="" format="<a onclick = click(this) href=#>Delete</a>"></e-column>
         </e-columns>
     </ej-grid>
                    
@@ -646,7 +646,7 @@ The following code example describes the previous behavior.
 {% endhighlight  %} 
 {% highlight js %}
     <script type="text/javascript">
-        function clk(e) {
+        function click(e) {
             var obj = $("#FlatGrid").data("ejGrid");
             obj.deleteRecord("OrderID", obj.getSelectedRecords()[0]);
         }
@@ -762,7 +762,7 @@ The following code example describes the previous behavior.
         <e-columns>
             <e-column field="OrderID" is-primary-key="true"></e-column>
             <e-column field="EmployeeID"></e-column>
-            <e-column field="Freight" edit-type="Numeric"></e-column>
+            <e-column field="Freight" edit-type="NumericEdit"></e-column>
             <e-column field="ShipCountry"></e-column>
             <e-column header-Text="Manage Records">
               <e-column-commands>
@@ -1011,7 +1011,7 @@ The following code example describes the previous behavior.
     <ej-grid id="FlatGrid" allow-paging="true" datasource="ViewBag.DataSource">
         <e-columns>
             <e-column field="OrderID"></e-column>
-            <e-column field="CustomerID" css-class="customcss"></e-column>
+            <e-column field="CustomerID" css-class="customCss"></e-column>
             <e-column field="EmployeeID"></e-column>
             <e-column field="Freight"></e-column>
         </e-columns>
@@ -1035,14 +1035,14 @@ The following code example describes the previous behavior.
 {% endhighlight  %}
 {% highlight css %}
 
-    .customcss.e-headercell {
+    .customCss.e-headercell {
         background-color: #2382c3;
         color: white;
         font-family: 'Bell MT';
         font-size: 20px;
     }
     
-    .customcss.e-rowcell {
+    .customCss.e-rowcell {
         background-color: #ecedee;
         font-family: 'Bell MT';
         color: red;
