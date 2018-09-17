@@ -15,7 +15,8 @@ The Grid `datasource` property or `e-datamanager` child tag allows to bind datas
 *	Table – Allows to bind HTML Table and it accepts table template script "ID".
 *	ORM components such as Entity Framework/Linq to SQL.
 
-N> To update the dataSource after Grid rendered, use `dataSource` method of grid.
+N> 1. To update the dataSource after Grid rendered, use `dataSource` method of grid.
+N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://www.syncfusion.com/kb/8613/how-to-convert-dates-to-utc-format).
 
 ## IEnumerable
  
