@@ -367,3 +367,135 @@ To format Summary values, the `format` property needs to be assigned in `e-summa
 {% endtabs %} 
 
 ![](Summary_images/summaryGrid_img7.png)
+
+## Summary template
+
+Using the `template` property of `e-summary-columns` you can render any type of JsRender templates or customizing the summary value.
+
+The following code example describes the previous behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+<ej-grid id="Summary" show-summary="true" datasource="ViewBag.datasource">
+        <e-summary-rows>
+           <e-summary-row title="Average">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Average" format="{0:C2}" template="#templateData" display-column="Freight" datamember="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID"></e-column>
+            <e-column field="EmployeeID"></e-column>
+            <e-column field="Freight" format="{0:C2}"></e-column>
+        </e-columns>
+</ej-grid>
+{% endhighlight %}
+{% highlight C# %}
+
+
+     namespace MVCSampleBrowser.Controllers
+        {
+            public class GridController : Controller
+              { 
+                public IActionResult GridFeatures()
+                 {
+                    var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+                    ViewBag.datasource = DataSource;
+                    return View();
+                 }
+             }
+        } 
+
+{% endhighlight %}
+{% highlight js %}
+
+<script id="templateData" type="text/x-jsrender">
+     Freight has Average of {{"{{"}}:summaryValue{{"}}"}} in  dollars
+</script>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following output is displayed as a result of the previous code example.
+
+![](Summary_images/summaryGrid_img9.png)
+
+## Handling aggregation in server-side
+
+The Aggregation at server-side is handled by using the `aggregate` key. While using remote data, summary row must be handled by returning summary column datasource into the `aggregate` property of `result` object.
+
+The following code example describes the previous behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+<ej-grid id="Summary" allow-paging="true" show-summary="true">
+        <e-datamanager url="/Grid/DataSource" adaptor="UrlAdaptor"></e-datamanager>
+        <e-summary-rows>
+           <e-summary-row title="Sum">
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Sum" format="{0:C2}" display-column="Freight" datamember="Freight" />
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID"></e-column>
+            <e-column field="EmployeeID" header-text="Employee ID"></e-column>
+            <e-column field="Freight" header-text="Freight" format="{0:C2}"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" format="{0:C2}"></e-column>
+        </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace MvcApplication4.Controllers
+{
+    public class GridController: Controller
+       {
+        public ActionResult GridFeatures()
+           {
+			 return View();
+           }
+
+     public ActionResult DataSource(DataManager dataManager)
+       {
+            IEnumerable DataSource = OrderRepository.GetAllRecords();
+            DataResult result = new DataResult();
+		    DataOperations dataOperations = new DataOperations();
+            List<string> aggregateFields = new List<string>();
+            if (dataManager.Aggregates != null)
+             {
+               for (var i = 0; i < dataManager.Aggregates.Count; i++)
+               string.Add(dataManager.Aggregates[i].Field);
+               result.aggregate = dataOperations.PerformSelect(DataSource, aggregateFields);
+             }
+
+       DataSource = dataOperations.PerformSkip(DataSource, dataManager.Skip);
+       result.result = dataOperations.PerformTake(DataSource, dataManager.Take);
+       result.count = DataSource.AsQueryable().Count();
+       return Json(result);
+
+       }
+
+    public class DataResult
+       {
+         public IEnumerable result { get; set; }
+         public int count { get; set; }
+         public IEnumerable aggregate { get; set; }
+         public IEnumerable groupDs { get; set; }
+       }
+
+   }
+
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+The following output is displayed as a result of the previous code example.
+
+![](Summary_images/summaryGrid_img8.png)
