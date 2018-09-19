@@ -381,7 +381,7 @@ The following code example describes the previous behavior.
         <e-summary-rows>
            <e-summary-row title="Average">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Average" format="{0:C2}" template="templateData" display-column="Freight" datamember="Freight" />
+                     <e-summary-column summary-type="Average" format="{0:C2}" template="#templateData" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
         </e-summary-rows>
@@ -437,7 +437,7 @@ The following code example describes the previous behavior.
         <e-summary-rows>
            <e-summary-row title="Sum">
                    <e-summary-columns>
-                     <e-summary-column summary-type="Sum" format="{0:C2}" template="templateData" display-column="Freight" datamember="Freight" />
+                     <e-summary-column summary-type="Sum" format="{0:C2}" display-column="Freight" datamember="Freight" />
                    </e-summary-columns>
            </e-summary-row>
         </e-summary-rows>
