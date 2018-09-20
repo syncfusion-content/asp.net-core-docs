@@ -741,8 +741,8 @@ The following code example describes the above behavior.
 <script type="text/javascript">
     function currency() {
             var rs = 100000;
-            var dol = 0.017;
-            return (rs * dol);
+            var value = 0.017;
+            return (rs * value);
     }
 </script>
    
@@ -828,22 +828,22 @@ In controller action method you are able to export all the grids available in th
             var OrderData = _context.Orders.Take(5).ToList();
             IWordDocument document = null;
             bool initial = true;
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
+            GridWordExport wordExp = new GridWordExport();
+            wordExp.FileName = "Export.docx"; wordExp.Theme = "flat-saffron";
             foreach (string gridProperty in GridModel)
             {
                 GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
                 if (initial)
                 {
                     gridProp.Locale = "";
-                    document = exp.Export(gridProp, EmployeeData, wrdExp, true);
+                    document = exp.Export(gridProp, EmployeeData, wordExp, true);
                     initial = false;
                 }
                 else
                 {
-                    wrdExp.Document = document;
-                    wrdExp.HeaderText = "Second Grid";
-                    return exp.Export(gridProp, OrderData, wrdExp);
+                    wordExp.Document = document;
+                    wordExp.HeaderText = "Second Grid";
+                    return exp.Export(gridProp, OrderData, wordExp);
                 }
             }
             return null;
