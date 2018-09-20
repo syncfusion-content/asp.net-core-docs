@@ -638,7 +638,7 @@ The following code example describes the above behavior.
 
 {% highlight razor %}
 
-<ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.DataSource">
+<ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.datasource">
         <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" })></e-toolbar-settings>
         <e-summary-rows>
            <e-summary-row>
