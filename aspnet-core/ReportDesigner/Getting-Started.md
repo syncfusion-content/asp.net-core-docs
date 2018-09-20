@@ -7,9 +7,9 @@ control: ReportDesigner
 documentation: ug
 ---
 
-# Getting Started
+# Overview
 
-This section explains briefly about how to create a ReportDesigner in your ASP.NET core application.
+Report Designer helps to create and modify the RDL 2008/2008R2 specification standard reports. By using Report Designer, the data can be transformed into meaningful information and quickly build the reports using both table and visualization formats with the help of following features.
 
 ## Environment setup
 Refer the [installation](/aspnet-core/configuration-and-installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
