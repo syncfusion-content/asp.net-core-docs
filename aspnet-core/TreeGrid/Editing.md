@@ -79,7 +79,7 @@ The following code example shows you how to enable the `BatchEditing` in Tree
 
 The output of the TreeGrid with `BatchEditing` is as follows.
 
-![](Editing_images/batchedit.png)
+![](Editing_images/BatchEdit_img1.png)
 
 In Batch editing, the Edit mode can be changed to "Cell" or "Row" with "BatchEditSettings" property as per the following code example.
 
@@ -99,7 +99,7 @@ In Batch editing, the Edit mode can be changed to "Cell" or "Row" with "BatchEdi
 
 The output of the TreeGrid with `BatchEditSettings` and `EditMode` is as follows.
 
-![](Editing_images/batcheditrow.png)
+![](Editing_images/BatchEdit_img2.png)
 
 N> After modifying all the changes in TreeGrid, on clicking "Save" button the [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated records in `batchChanges` argument and `requestType` as `batchSave`. Using this event we can update the all the modified records to database.
 
