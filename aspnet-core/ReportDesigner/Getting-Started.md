@@ -46,28 +46,28 @@ Purpose
 <td>Builds the server-side implementations.</td>
 </tr>
 <tr>
-<td>Syncfusion.Report.NETStandard</td>
-<td>It is a base library for the <b>Syncfusion.EJ.ReportDesigner.AspNet.Core</b> package.</td>
+<td>Syncfusion.Report.Net.Core</td>
+<td>It is a base library for the <b>Syncfusion.EJ.ReportDesigner.AspNet.Core</b> and <b>Syncfusion.EJ.ReportViewer.AspNet.Core</b>package.</td>
 </tr>
 <tr>
-<td>Syncfusion.Compression.NETStandard</td>
-<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages <b>Syncfusion.Pdf.NETStandard</b> , <b>Syncfusion.DocIO.NETStandard</b> and <b>Syncfusion.XlsIO.NETStandard</b>. </td>
+<td>Syncfusion.Compression.Net.Core</td>
+<td>Supports for exporting the report to PDF, Microsoft Word, and Microsoft Excel format. It is a base library for the packages <b>Syncfusion.Pdf.Net.Core</b> , <b>Syncfusion.DocIO.Net.Core</b> and <b>Syncfusion.XlsIO.Net.Core</b>. </td>
 </tr>
 <tr>
-<td>Syncfusion.Pdf.NETStandard</td>
+<td>Syncfusion.Pdf.Net.Core</td>
 <td>Supports for exporting the report to a PDF.</td>
 </tr>
 <tr>
-<td>Syncfusion.DocIO.NETStandard</td>
+<td>Syncfusion.DocIO.Net.Core</td>
 <td>Supports for exporting the report to a Word.</td>
 </tr>
 <tr>
-<td>Syncfusion.XlsIO.NETStandard</td>
+<td>Syncfusion.XlsIO.Net.Core</td>
 <td>Supports for exporting the report to an Excel.</td>
 </tr>
 <tr>
-<td>Syncfusion.OfficeChart.NETStandard</td>
-<td>It is a base library of the <b>Syncfusion.XlsIO.NETStandard package</b>.</td>
+<td>Syncfusion.OfficeChart.Net.Core</td>
+<td>It is a base library of the <b>Syncfusion.XlsIO.Net.Core package</b>.</td>
 </tr>
 <tr>
 <td>Newtonsoft.Json</td>
@@ -201,6 +201,8 @@ You can use the <ej-report-designer> tag to add the report designer control. For
     <ej-report-designer id="reportdesigner1" service-url="https://js.syncfusion.com/demos/ejservices/api/ReportDesigner" />
 </div>
 {% endhighlight %}
+
+N> In the report designer service url, need to mention the controller name of the reporting service. To create reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/aspnetmvc/reportdesigner/getting-started#add-webapi-controller-for-reportdesigner).
 
 ## Run the application
 
