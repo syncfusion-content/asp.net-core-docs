@@ -572,7 +572,7 @@ The following code example lets you dragging and dropping external items to and 
                 <tr>
                     <td>Description:</td>
                     <td colspan="2">
-                        <textarea id="customdescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
+                        <textarea id="customDescription" name="Description" rows="3" cols="50" style="width: 100%; resize: vertical"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -603,8 +603,8 @@ The following code example lets you dragging and dropping external items to and 
         </table>
     </form>
     <div>
-        <button type="submit" onclick="cancel()" id="btncancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
-        <button type="submit" onclick="save()" id="btnsubmit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
+        <button type="submit" onclick="cancel()" id="cancel" style="float:right;margin-right:20px;margin-bottom:10px;">Cancel</button>
+        <button type="submit" onclick="save()" id="submit" style="float:right;margin-right:20px;margin-bottom:10px;">Save</button>
     </div>
 </div>
 
@@ -625,8 +625,8 @@ The following code example lets you dragging and dropping external items to and 
                 allowKeyboardNavigation: false,
                 close: "clearFields"
             });
-            $("#btncancel").ejButton({ width: '85px' });
-            $("#btnsubmit").ejButton({ width: '85px' });
+            $("#cancel").ejButton({ width: '85px' });
+            $("#submit").ejButton({ width: '85px' });
         });
 
         function onNodeDrag(e) {
@@ -637,9 +637,9 @@ The following code example lets you dragging and dropping external items to and 
             if ($(e.target).parents(".e-schedule").length != 0) {
                 var scheduleObj = $("#Schedule1").data("ejSchedule");
                 var result = scheduleObj.getSlotByElement($(e.target));
-                // set value to custom appointmnt window fields
+                // set value to custom appointment window fields
                 $("#subject").val(e.droppedElementData.text);
-                $("#customdescription").val(e.droppedElementData.text);
+                $("#customDescription").val(e.droppedElementData.text);
                 $("#StartTime").ejDateTimePicker({ value: new Date(result.startTime) });
                 $("#EndTime").ejDateTimePicker({ value: new Date(result.endTime) });
                 $("#resource").val(result.resources.Text);
@@ -650,20 +650,20 @@ The following code example lets you dragging and dropping external items to and 
 
         function save() {
             var obj = {};
-            var formelement = $("#customWindow").find("#custom").get(0);
-            for (var index = 0; index < formelement.length; index++) {
-                var columnName = formelement[index].name, $element = $(formelement[index]);
+            var formElement = $("#customWindow").find("#custom").get(0);
+            for (var index = 0; index < formElement.length; index++) {
+                var columnName = formElement[index].name, $element = $(formElement[index]);
                 if (columnName != undefined) {
                     if (columnName == "Subject")
-                        var value = formelement[index].value;
-                    if (columnName == "Desctiption")
-                        value = formelement[index].value;
+                        var value = formElement[index].value;
+                    if (columnName == "Description")
+                        value = formElement[index].value;
                     if (columnName == "StartTime")
-                        value = new Date(formelement[index].value);
+                        value = new Date(formElement[index].value);
                     if (columnName == "EndTime")
-                        value = new Date(formelement[index].value);
+                        value = new Date(formElement[index].value);
                     if (columnName == "OwnerId")
-                        value = formelement[index].value;
+                        value = formElement[index].value;
                     if (columnName != "Resource")
                         obj[columnName] = value;
                 }
@@ -1165,7 +1165,7 @@ When an option "Only this Appointment" is selected, a single occurrence of the r
 
 #### Following appointments
 
-When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the reccurrence appointment before this current instances will be retained as it is on the Scheduler.
+When an option "Following Appointments" is selected, all the following events of the recurrence appointment from the current instance will be edited or deleted. The previous instances of the recurrence appointment before this current instances will be retained as it is on the Scheduler.
 
 #### Entire series
 
