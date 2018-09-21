@@ -87,7 +87,7 @@ The Exporting provides support to export grid data into excel, word and PDF file
 {% endhighlight  %}
 {% endtabs %} 
 
-# Hierarchy grid exporting
+## Hierarchy grid exporting
 
 The grid will be exported with its child grid. This can be achieved by enabling the `IncludeChildGrid` property of the respective exporting classes like `GridExcelExport`, `GridWordExport` and `GridPdfExport` and include the dataSource needed for `ChildGrid` in the `GridProperties` object after deserializing them. Remaining procedures will be same as the normal grid exporting.
 
@@ -339,27 +339,42 @@ public partial class GridController : Controller
   public void ColumnTemplateExportToExcel(string GridModel)
   {
     ExcelExport exp = new ExcelExport();
+    GridExcelExport GridExp = new GridExcelExport();
+    GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+    GridExp.Theme = "flat-saffron";
+    GridExp.FileName = "Export.xlsx";
+    GridExp.IsTemplateColumnIncluded = true;
     var DataSource =  new NorthwindDataContext().EmployeeViews.ToList();
     GridProperties obj = ConvertGridObject(GridModel);
     obj.ExcelColumnTemplateInfo = templateInfo;
-    exp.Export(obj, DataSource, "Export.xlsx", ExcelVersion.Excel2010, false, true, "flat-saffron");
+    exp.Export(obj, DataSource, GridExp);
   }
 
   public void ColumnTemplateToWord(string GridModel)
   {
     WordExport exp = new WordExport();
+    GridWordExport GridExp = new GridWordExport();
+    GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+    GridExp.Theme = "flat-saffron";
+    GridExp.FileName = "Export.docx";
+    GridExp.IsTemplateColumnIncluded = true;
     var DataSource =  new NorthwindDataContext().EmployeeViews.ToList();
     GridProperties obj = ConvertGridObject(GridModel);
     obj.WordColumnTemplateInfo = WordTemplateInfo;
-    exp.Export(obj, DataSource, "Export.docx", false, true, "flat-saffron");
+    exp.Export(obj, DataSource, GridExp);
   }
   public void ColumnTemplateExportToPdf(string GridModel)
   {
     PdfExport exp = new PdfExport();
+    GridPdfExport GridExp = new GridPdfExport();
+    GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+    GridExp.Theme = "flat-saffron";
+    GridExp.FileName = "Export.pdf";
+    GridExp.IsTemplateColumnIncluded = true;
     var DataSource = new NorthwindDataContext().EmployeeViews.ToList();
     GridProperties obj = ConvertGridObject(GridModel);
     obj.PdfColumnTemplateInfo = PdfTemplateInfo;
-    exp.Export(obj, DataSource, "Export.pdf", false, true, "flat-saffron");
+    exp.Export(obj, DataSource, GridExp);
   }
   public void templateInfo(object currentCell, object row)
   {
@@ -485,6 +500,7 @@ You can modify the detailTemplate of exporting files using server events. The co
 </script>
 
 <ej-grid id="FlatGrid" allow-paging="true" details-template="#tabGridContents" datasource="ViewBag.DataSource">
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" })></e-toolbar-settings>
         <e-columns>
             <e-column field="EmployeeID" header-text="EmployeeID"></e-column>
             <e-column field="FirstName" header-text="FirstName"></e-column>
@@ -612,6 +628,128 @@ public class GridController : Controller
 
 {% endtabs %}
 
+## Exporting with Custom Summary
+
+In Exporting, custom summary needs to be handled using `QueryCustomSummaryInfo` server-side event.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-grid id="FlatGrid" allow-paging="true" show-summary="true" datasource="ViewBag.datasource">
+        <e-toolbar-settings show-toolbar="true" toolbar-items=@(new List<string>() {"excelExport","wordExport","pdfExport" })></e-toolbar-settings>
+        <e-summary-rows>
+           <e-summary-row>
+                   <e-summary-columns>
+                     <e-summary-column summary-type="Custom" custom-summary-value="currency" format="{0:C2}" display-column="Freight"/>
+                   </e-summary-columns>
+           </e-summary-row>
+        </e-summary-rows>
+        <e-columns>
+            <e-column field="OrderID" header-text="Order ID" width="70" text-align="Right"></e-column>
+            <e-column field="CustomerID" header-text="Customer ID" text-align="Right" width="70"></e-column>
+            <e-column field="ShipCity" header-text="Ship City" width="70"></e-column>
+			<e-column field="EmployeeID" header-text="Employee ID" text-align="Right" width="70"></e-column>
+            <e-column field="Freight" header-text="Freight" text-align="Right" width="70" format="{0:C}"></e-column>
+        </e-columns>
+</ej-grid>
+{% endhighlight  %}
+
+{% highlight c# %}
+
+   namespace Grid.Controllers
+   {
+     public class GridController : Controller
+     {
+        public ActionResult GridFeatures()
+        {
+            var DataSource = new NorthwindDataContext().OrdersViews.ToList();
+            ViewBag.datasource = DataSource;
+            return View();
+        }
+        public void ExportToExcel(string GridModel)
+        {
+            ExcelExport exp = new ExcelExport();
+            GridExcelExport GridExp = new GridExcelExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.xlsx";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        public void ExportToWord(string GridModel)
+        {
+            WordExport exp = new WordExport();
+            GridWordExport GridExp = new GridWordExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.docx";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        public void ExportToPdf(string GridModel)
+        {
+            PdfExport exp = new PdfExport();
+            GridPdfExport GridExp = new GridPdfExport();
+            GridExp.QueryCustomSummaryInfo = SummaryCellInfo;
+            GridExp.Theme = "flat-saffron";
+            GridExp.FileName = "Export.pdf";
+            var DataSource = new NorthwindDataContext().OrdersViews.Take(100).ToList();
+            GridProperties obj = ConvertGridObject(GridModel);
+            exp.Export(obj, DataSource, GridExp);
+        }
+        private object SummaryCellInfo(IQueryable arg1, SummaryColumn arg2)
+        {
+            var rs = 0; double value = 0;
+            if (arg2.DisplayColumn == "Freight")
+            {
+                rs = 100000;
+                value = 0.017;
+            }
+
+            return (rs * value);
+        }
+        private GridProperties ConvertGridObject(string gridProperty)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            IEnumerable div = (IEnumerable)serializer.Deserialize(gridProperty, typeof(IEnumerable));
+            GridProperties gridProp = new GridProperties();
+            foreach (KeyValuePair<string, object> ds in div)
+            {
+                var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+                if (property != null)
+                {
+                    Type type = property.PropertyType;
+                    string serialize = serializer.Serialize(ds.Value);
+                    object value = serializer.Deserialize(serialize, type);
+                    property.SetValue(gridProp, value, null);
+                }
+            }
+            return gridProp;
+        }
+     }
+   }
+   
+{% endhighlight  %}
+
+{% highlight js %}
+
+<script type="text/javascript">
+    function currency() {
+            var rs = 100000;
+            var value = 0.017;
+            return (rs * value);
+    }
+</script>
+   
+{% endhighlight  %}
+
+{% endtabs %}
+
 ##  Multiple exporting
 
 The `allow-multiple-exporting` property allows you to export multiple grids into the same file. Once you enable the `allow-multiple-exporting`, grid properties of all the grid which are available in current page are passed as string array parameter to controller action method.
@@ -690,22 +828,22 @@ In controller action method you are able to export all the grids available in th
             var OrderData = _context.Orders.Take(5).ToList();
             IWordDocument document = null;
             bool initial = true;
-            GridWordExport wrdExp = new GridWordExport();
-            wrdExp.FileName = "Export.docx"; wrdExp.Theme = "flat-saffron";
+            GridWordExport wordExp = new GridWordExport();
+            wordExp.FileName = "Export.docx"; wordExp.Theme = "flat-saffron";
             foreach (string gridProperty in GridModel)
             {
                 GridProperties gridProp = (GridProperties)JsonConvert.DeserializeObject(gridProperty, typeof(GridProperties));
                 if (initial)
                 {
                     gridProp.Locale = "";
-                    document = exp.Export(gridProp, EmployeeData, wrdExp, true);
+                    document = exp.Export(gridProp, EmployeeData, wordExp, true);
                     initial = false;
                 }
                 else
                 {
-                    wrdExp.Document = document;
-                    wrdExp.HeaderText = "Second Grid";
-                    return exp.Export(gridProp, OrderData, wrdExp);
+                    wordExp.Document = document;
+                    wordExp.HeaderText = "Second Grid";
+                    return exp.Export(gridProp, OrderData, wordExp);
                 }
             }
             return null;
