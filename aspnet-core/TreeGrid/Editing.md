@@ -61,9 +61,8 @@ The following output is displayed as a result of the above code example.
 
 ### Batch Editing
 
-In TreeGrid control to save the all the Add, Edit and Delete changes to database with single action, set the `EditMode` as batchEditing.
+The batch editing support in the tree grid is used to save all added, edited, and deleted changes to the database with single action. This can be enable by setting the `EditMode` property to `BatchEditing`. The following code example shows how to enable the batchEditing in the tree grid control.
 
-The following code example shows you how to enable the `BatchEditing` in TreeGrid control.
 
 {% highlight CSHTML %}
 
@@ -77,11 +76,11 @@ The following code example shows you how to enable the `BatchEditing` in Tree
 
 {% endhighlight %}
 
-The output of the TreeGrid with `BatchEditing` is as follows.
+The output of the tree grid with `BatchEditing` is obtained as follows.
 
-![](Editing_images/batchedit.png)
+![](Editing_images/BatchEdit_img1.png)
 
-In Batch editing, the Edit mode can be changed to "Cell" or "Row" with "BatchEditSettings" property as per the following code example.
+In batch editing, the edit mode can be changed to **Cell** or **Row** or **Dialog** with the `BatchEditSettings.EditMode` property. The following code snippet shows how to set the editMode to row in the `BatchEditSettings` property.
 
 {% highlight CSHTML %}
 
@@ -97,12 +96,12 @@ In Batch editing, the Edit mode can be changed to "Cell" or "Row" with "BatchEdi
 
 {% endhighlight %}
 
-The output of the TreeGrid with `BatchEditSettings` and `EditMode` is as follows.
+The output of the tree grid with `BatchEditSettings` and `EditMode` as `Row` is as obtained follows.
 
-![](Editing_images/batcheditrow.png)
+![](Editing_images/BatchEdit_img2.png)
 
-N> After modifying all the changes in TreeGrid, on clicking "Save" button the [`actionComplete`](https://help.syncfusion.com/api/js/ejtreegrid#events:actioncomplete) event will be triggered with updated records in `batchChanges` argument and `requestType` as `batchSave`. Using this event we can update the all the modified records to database.
 
+N> After modifying all changes in the tree grid, click the save button in the toolbar. The `ActionComplete` event will be triggered with updated records in the `batchChanges` argument with `requestType` argument as `batchSave`. Using this event, you can update all the modified records to the database.
 
 ### Dialog Editing
 
