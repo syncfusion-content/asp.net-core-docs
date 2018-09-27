@@ -129,7 +129,7 @@ Razor code to render PercentageTextBox
 
 ~~~
 
-3. The following styles are added to arrange the Editors.  You can add the following location in the URL path for the background image and to apply styling [http://js.syncfusion.com/UG/Web/Content/electricity.png](http://js.syncfusion.com/UG/Web/Content/electricity.png)
+3. The following styles are added to arrange the Editors.
 
    ~~~ css
 
