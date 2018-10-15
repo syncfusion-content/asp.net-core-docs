@@ -59,11 +59,11 @@ You can add the newly typed value to the AutoComplete where us the newly typed v
 
 The following screenshot exhibits the output before the solution. Click the **Add New** text shown to add this value to auto complete.
 
-![](Howto_images/addnew1_img.png)
+![Add new](Howto_images/addnew1_img.png)
 
 The following screenshot exhibits the output of the above code.
 
-![](Howto_images/addnew2_img.png)
+![Add Value](Howto_images/addnew2_img.png)
 
 ## URL,Web API adaptor server side filtering
 
@@ -192,7 +192,7 @@ function onChange(args) {
 The following screenshots exhibits the output of the above code.
 
 
-![](Howto_images/cascading_img.png)
+![Cascading](Howto_images/cascading_img.png)
 **Expected output after cascading**
 
 ## Strongly Typed HTML Helper
