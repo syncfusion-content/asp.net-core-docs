@@ -349,7 +349,7 @@ N> Specify the created controller name (Home) in **service-url** to initializati
 
 Run the sample application and you can see the ReportDesigner on the page as displayed in the following screenshot:
 
-![](images/Getting-Started_img1.png)
+![Getting-Started](images/Getting-Started_img1.png)
 
 ## Sample Application
 
