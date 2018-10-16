@@ -1,0 +1,37 @@
+---
+layout: post
+title: Toolbar Customization
+description: toolbar customization
+platform: aspnet-core
+control: ReportViewer
+documentation: ug
+---
+
+# Toolbar Customization
+
+The ReportViewer has an option to show or hide items in the toolbar. To customize the toolbar items, use the ReportViewer’s `toolbarSettings` property.
+
+
+The following code example illustrates how to hide the parameter block in ReportViewer for ASP.NET Core platform.
+
+{% highlight javascript %}
+
+    <ej-report-viewer id="reportviewer1" report-service-url="../Home" processing-mode="Remote" toolbar-settings="ViewBag.toolbarsettings">    
+    </ej-report-viewer>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+       public ActionResult Index()
+        {
+            ViewBag.toolbarsettings = new Syncfusion.JavaScript.Models.ReportViewer.ToolbarSettings();
+            ViewBag.toolbarsettings.Items = Syncfusion.JavaScript.ReportViewerEnums.ToolbarItems.All
+                                               & ~Syncfusion.JavaScript.ReportViewerEnums.ToolbarItems.Parameters;
+            return View();
+        }
+
+{% endhighlight %}
+
+
+
