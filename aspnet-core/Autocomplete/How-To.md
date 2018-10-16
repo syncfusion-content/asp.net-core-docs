@@ -59,11 +59,11 @@ You can add the newly typed value to the AutoComplete where us the newly typed v
 
 The following screenshot exhibits the output before the solution. Click the **Add New** text shown to add this value to auto complete.
 
-![](Howto_images/addnew1_img.png)
+![Add new](Howto_images/addnew1_img.png)
 
 The following screenshot exhibits the output of the above code.
 
-![](Howto_images/addnew2_img.png)
+![Add Value](Howto_images/addnew2_img.png)
 
 ## URL,Web API adaptor server side filtering
 
@@ -192,7 +192,7 @@ function onChange(args) {
 The following screenshots exhibits the output of the above code.
 
 
-![](Howto_images/cascading_img.png)
+![Cascading](Howto_images/cascading_img.png)
 **Expected output after cascading**
 
 ## Strongly Typed HTML Helper
@@ -251,3 +251,243 @@ Then in the View invoke the strongly typed AutocompleteFor helper with the ej-fo
 </ej-autocomplete>
 
 {% endhighlight %}
+
+## How to set autocomplete default value
+
+You can set a value into autocomplete at initial rendering using `value` property.  It is used to select a single value from the autocomplete widget at initial rendering state. 
+
+Refer to the following code.
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-autocomplete id="selectState" datasource="ViewBag.datasource" value="Arizona">
+    <e-autocomplete-fields text="countryName" key="index" />
+</ej-autocomplete> 
+  
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    public partial class AutocompleteController : Controller{
+         List<states> state = new List<states>();
+         public ActionResult AutocompleteFeatures()
+         {
+            state.Add(new states { index = "s1", countryName = "Alabama" });
+            state.Add(new states { index = "s2", countryName = "Alaska" });
+            state.Add(new states { index = "s3", countryName = "Arizona" });
+            ViewBag.datasource = state;
+            return View();
+         }
+    }
+    public class states
+    {
+        public string index { get; set; }
+        public string countryName { get; set; }
+    }
+
+{% endhighlight  %}
+
+{% endtabs %}  
+
+The following output is displayed as a result of the previous code example.
+
+![howto](Howto_images/howto1.png)
+
+If you set autocomplete `value` property as a string that is present in the data source, the hidden input value holds the corresponding `key` value.  This is used for validation purpose in the autocomplete.  For example, `Arizona` text holds the key value of `s3`.  The autocomplete default value `Arizona` is present in the `countryName` of data source and also this field is mapped for autocomplete `text` property. So, hidden input value holds the `s3` value.
+
+The following screenshot illustrates the previous hidden input state of code.
+
+![howto](Howto_images/howto2.png)
+
+If you set autocomplete `value` property as a string that is not present in the data source, the hidden input value holds the autocomplete value.  For example, if autocomplete default value is `New York` and not present in the `countryName` of data source, the hidden input value holds the `New York` string. 
+
+Refer to the following code sample.
+
+{% highlight razor %}
+
+<ej-autocomplete id="selectState" datasource="ViewBag.datasource" value="New York">
+    <e-autocomplete-fields text="countryName" key="index" />
+</ej-autocomplete>
+
+{% endhighlight  %}
+
+The following screenshot illustrates the previous hidden input state of code.
+
+![howto](Howto_images/howto3.png)
+
+### remote data
+
+The remote data also allows you to set the default value into autocomplete using `value` property. 
+
+Refer to the following code sample.
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-autocomplete id="selectState" value="Two">
+    <e-datamanager url="/Home/GetOutletsForAutocomplete" adaptor="UrlAdaptor"></e-datamanager>
+    <e-autocomplete-fields text="Name" key="Id" />
+</ej-autocomplete>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+        public JsonResult GetOutletsForAutocomplete([FromBody]DataManager value)
+        {
+            var models = GetTestData();
+            IEnumerable Data = GetTestData();
+            Syncfusion.JavaScript.DataSources.DataOperations operation = new Syncfusion.JavaScript.DataSources.DataOperations();
+            if (value.Where != null && value.Where.Count > 0) //Filtering 
+            {
+               Data = operation.PerformWhereFilter(models, value.Where, value.Where[0].Operator);
+            }
+            return Json(Data);
+        }
+
+       public class AutocompleteModel
+       {
+           [Display(Name = "Id")]
+           public string Id { get; set; }
+           [Display(Name = "Name")]
+           public string Name { get; set; }
+       }
+
+       private List<AutocompleteModel> GetTestData()
+        {
+            var list = new List<AutocompleteModel>();
+            list.Add(new AutocompleteModel(){ Id = "1", Name = "One"});
+            list.Add(new AutocompleteModel(){ Id = "2", Name = "Two"});
+            list.Add(new AutocompleteModel(){ Id = "3", Name = "Three"});
+            return list;
+        }
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+The autocomplete `value` property triggers a server-side post when using remote data in the autocomplete.  The server side data manger holds `where` query which contains field `name` as autocomplete `text` property.
+
+Find the following screenshot for the data manager where query.
+
+![howto](Howto_images/howto6.png)
+
+Find the following output for the previous code.
+
+![howto](Howto_images/howto7.png)
+
+## How to show text on autocomplete using key value
+
+You can set the value of autocomplete text box based on a given key value.  The `select-value-by-key` property is used to select autocomplete value based on the specified key value. 
+
+Refer to the following code sample. 
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-autocomplete id="selectState" datasource="ViewBag.datasource" select-value-by-key="s2">
+    <e-autocomplete-fields text="countryName" key="index" />
+</ej-autocomplete>
+  
+{% endhighlight  %}
+
+{% highlight c# %}
+
+    public partial class AutocompleteController : Controller{
+         List<states> state = new List<states>();
+         public ActionResult AutocompleteFeatures()
+         {
+            state.Add(new states { index = "s1", countryName = "Alabama" });
+            state.Add(new states { index = "s2", countryName = "Alaska" });
+            state.Add(new states { index = "s3", countryName = "Arizona" });
+            ViewBag.datasource = state;
+            return View();
+         }
+    }
+    public class states
+    {
+        public string index { get; set; }
+        public string countryName { get; set; }
+    }
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+For example, If `select-value-by-key` property specified the value as ‘s2’, the corresponding `text` value `Alaska` is shown in the autocomplete text.
+
+The following output is displayed as a result of the previous code example.
+
+![howto](Howto_images/howto4.png)
+
+If you are specifying the `select-value-by-key` property into autocomplete control, the hidden input value holds a specified key value. 
+
+Refer to the following screenshot. 
+
+![howto](Howto_images/howto5.png)
+
+### Remote data
+
+The remote data also allows you to set the default value into autocomplete based on a given key value using the `select-value-by-key` property.
+
+Refer to the following code snippet.
+
+{% tabs %}
+
+{% highlight razor %}
+
+<ej-autocomplete id="selectState" select-value-by-key="2">
+    <e-datamanager url="/Home/GetOutletsForAutocomplete" adaptor="UrlAdaptor"></e-datamanager>
+    <e-autocomplete-fields text="Name" key="Id" />
+</ej-autocomplete>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+       public JsonResult GetOutletsForAutocomplete([FromBody]DataManager value)
+        {
+            var models = GetTestData();
+            IEnumerable Data = GetTestData();
+            Syncfusion.JavaScript.DataSources.DataOperations operation = new Syncfusion.JavaScript.DataSources.DataOperations();
+            if (value.Where != null && value.Where.Count > 0) //Filtering 
+            {
+               Data = operation.PerformWhereFilter(models, value.Where, value.Where[0].Operator);
+            }
+            return Json(Data);
+        }
+
+       public class AutocompleteModel
+       {
+           [Display(Name = "Id")]
+           public string Id { get; set; }
+           [Display(Name = "Name")]
+           public string Name { get; set; }
+       }
+
+       private List<AutocompleteModel> GetTestData()
+        {
+            var list = new List<AutocompleteModel>();
+            list.Add(new AutocompleteModel(){ Id = "1", Name = "One"});
+            list.Add(new AutocompleteModel(){ Id = "2", Name = "Two"});
+            list.Add(new AutocompleteModel(){ Id = "3", Name = "Three"});
+            return list;
+        }
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+The autocomplete `select-value-by-key` property triggers a server-side post when using remote data on autocomplete.  The server side data manger holds `where` query which contains field `name` as autocomplete `key` property.
+
+Find the following screenshot for the data manager where query.
+
+![howto](Howto_images/howto8.png)
+
+Find the output for the previously given code as follows.
+
+![howto](Howto_images/howto9.png)
