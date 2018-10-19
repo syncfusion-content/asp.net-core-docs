@@ -28,6 +28,7 @@ Package</th>
 <th>
 Purpose
 </th>
+</tr>
 <tr>
 <td>Syncfusion.EJ.AspNet.Core</td>
 <td>Builds the report designer controls with the tag helper.</td>
@@ -132,18 +133,11 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
     </environment>   
 
     @RenderSection("Scripts", required: false)
+    <ej-script-manager/>
 
 </body>
 </html>
 {% endhighlight %}
-
-*  Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
-
-   {% highlight cshtml %}
-   
-    <ej-script-manager></ej-script-manager>
-	
-   {% endhighlight %}
 
 N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
