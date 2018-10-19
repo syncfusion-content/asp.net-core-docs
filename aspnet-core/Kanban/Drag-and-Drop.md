@@ -103,5 +103,8 @@ namespace samplebrowser.Controllers
 
 The following output is displayed as a result of the above code example.
 
-![](Drag_and_Drop_images/drag_and_drop_img1.png) 
+![](Drag_and_Drop_images/drag_and_drop_img1.png)
 
+N> For Drag and Drop event handling, please refer this [API](https://help.syncfusion.com/api/js/ejkanban#events:carddrag).
+
+N> If the [`Priority`](https://help.syncfusion.com/api/js/ejkanban#members:fields-priority) property is not set in the Kanban fields, the cards are dropped based on the specifying JSON data orders in a particular column.  If not set, drop the card in a particular position based on the previous card `Priority` value and the next card’s `Priority` values will change dynamically.
