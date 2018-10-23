@@ -295,7 +295,7 @@ N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.val
 
 ## Model Binding using ej-for
 
-The ComboBox supports the strongly typed Tag helpers represented by model expressions as attribute value for ej-for that have the model or template passed into the view.These helpers allows users to define the value of the ComboBox from the model.The change in these values can also be retrived back during form post. Please refer to the below given code
+The ComboBox supports the strongly typed Tag helpers represented by model expressions as attribute value for ej-for that have the model or template passed into the view.These helpers allows users to define the value of the ComboBox from the model.The change in these values can also be retrieved back during form post. Please refer to the below given code
 
 {% highlight html%}
 
