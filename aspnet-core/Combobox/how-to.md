@@ -292,3 +292,72 @@ N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.val
     </form>
 
 {% endhighlight%}
+
+## Model Binding using ej-for
+
+The ComboBox supports the strongly typed Tag helpers represented by model expressions as attribute value for ej-for that have the model or template passed into the view.These helpers allows users to define the value of the ComboBox from the model.The change in these values can also be retrived back during form post. Please refer to the below given code
+
+{% highlight html%}
+
+    @using ComboBoxCoreApplication1.Controllers;
+    @model ComboBoxCoreApplication1.Controllers.Countries
+      <form asp-controller="ComboBox" asp-action="Post" id="form1">
+       <ej-combo-box id="select" ej-for="Value" datasource="(IEnumerable<Countries>)   ViewBag.data" placeholder="Select a Country" width="300px">
+         <e-combo-box-fields text="text" />
+      </ej-combo-box>
+      <div id="submitbutton">
+         <button type="submit" id="submit">Submit</button>
+      </div>
+    </form> 
+
+{% endhighlight%}
+
+{% highlight c# %}
+
+      public partial class ComboBoxController: Controller
+    {
+        Countries model = new Countries();
+        public IActionResult ComboBoxFeatures()
+        {
+            List<Countries> country = new List<Countries>();
+            country.Add(new Countries {Id = "a", text = "India" });
+            country.Add(new Countries { Id = "a", text = "Japan" });
+            country.Add(new Countries {  Id = "a", text = "China" });
+            country.Add(new Countries {  Id = "a", text = "Russia" });
+            country.Add(new Countries { Id = "b", text = "Italy" });
+            ViewBag.data = country;
+            model.Value = "India";
+            return View(model);
+         } 
+
+       [HttpPost]
+        public IActionResult Post(Countries model)
+        {
+            List<Countries> country = new List<Countries>();
+            country.Add(new Countries { Id = "a", text = "India" });
+            country.Add(new Countries { Id = "a", text = "Japan" });
+            country.Add(new Countries { Id = "a", text = "China" });
+            country.Add(new Countries { Id = "a", text = "Russia" });
+            country.Add(new Countries { Id = "b", text = "Italy" });
+            ViewBag.data = country;
+            return View("ComboBoxFeatures");
+        }
+    }
+    
+    public class Countries
+     {
+        public string Id { get; set; }
+        public string text { get; set; }
+        public string Value { get; set; }
+     }
+
+
+{% endhighlight %}
+
+Now, the ComboBox will be displayed with the value passed from model as shown below
+
+![](Combobox_howto_images/modelbinding.png)
+
+This value can be received during Http post during form submit as shown below
+
+![](Combobox_howto_images/Post.png)
