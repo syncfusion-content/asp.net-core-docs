@@ -317,7 +317,7 @@ The following screenshot illustrates the previous hidden input state of code.
 
 ![howto](Howto_images/howto3.png)
 
-### remote data
+### Remote data
 
 The remote data also allows you to set the default value into autocomplete using `value` property. 
 

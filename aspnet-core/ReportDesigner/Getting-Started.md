@@ -7,16 +7,16 @@ control: ReportDesigner
 documentation: ug
 ---
 
-# Overview
+# Getting Started with ASP.NET Core Application
 
-Report Designer helps to create and modify the RDL 2008/2008R2 specification standard reports. By using Report Designer, the data can be transformed into meaningful information and quickly build the reports using both table and visualization formats with the help of following features.
+This section explains briefly about how to create a **ReportDesigner** in your web application with **ASP.NET Core**.
 
 ## Environment setup
-Refer the [installation](/aspnet-core/configuration-and-installation) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
+Refer the [Getting Started](/aspnet-core/gettingstarted/getting-started-1-1-0) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
 N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](/aspnet-core/nuget-packages) to configure the Syncfusion NuGet source.
 
-## Create your first ReportDesigner application in ASP.NET Core 1.0.1 
+## Create your first ReportDesigner application in ASP.NET Core 
 
 ### References
 You should add the following packages for the report designer:
@@ -30,16 +30,32 @@ Purpose
 </th>
 </tr>
 <tr>
-<td>Syncfusion.EJ</td>
-<td>Builds the report designer controls with the tag helper.</td>
-</tr>
-<tr>
 <td>Syncfusion.EJ.AspNet.Core</td>
 <td>Builds the report designer controls with the tag helper.</td>
 </tr>
 <tr>
 <td>Syncfusion.EJ.ReportDesigner.AspNet.Core</td>
 <td>Builds the server-side implementations.</td>
+</tr>
+<tr>
+<td>System.Data.SqlClient</td>
+<td>This is an optional package for the report designer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
+</tr>
+</table>
+
+If we install the above NuGet packages, it automatically add the below ReportDesigner dependent NuGet file in your application,
+
+<table>
+<tr>
+<th>
+Package</th>
+<th>
+Purpose
+</th>
+</tr>
+<tr>
+<td>Syncfusion.EJ</td>
+<td>Builds the report designer controls with the tag helper.</td>
 </tr>
 <tr>
 <td>Syncfusion.EJ.ReportViewer.AspNet.Core</td>
@@ -73,11 +89,9 @@ Purpose
 <td>Newtonsoft.Json</td>
 <td>Serialize and deserialize the data for report designer. It is a mandatory package for the report designer, and the package version should be higher of 10.0.1 for NET Core 2.0 and others should be higher of 9.0.1.</td>
 </tr>
-<tr>
-<td>System.Data.SqlClient</td>
-<td>This is an optional package for the report designer. It should be referred in project when renders the RDL report and which contains the SQL Server and SQL Azure datasource. Also, the package version should be higher of 4.1.0 . </td>
-</tr>
 </table>
+
+N> Please ensure all the above dependent packages are added properly after the NuGet package installation completed.
 
 ### Styles and scripts
 
@@ -95,38 +109,19 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ReportDesignerDemo</title>
-
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-
         <link href="~/lib/syncfusion-javascript/Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
         <link href="~/lib/syncfusion-javascript/Content/ej/web/default-theme/ej.reportdesigner.min.css" rel="stylesheet" />
         <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
-
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-
-        <link href="~/lib/syncfusion-javascript/Content/ej/web/default-theme/ej.web.all.min.css" rel="stylesheet" />
-        <link href="~/lib/syncfusion-javascript/Content/ej/web/default-theme/ej.reportdesigner.min.css" rel="stylesheet" />
-        <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
-
-    </environment>
+    </environment>  
 </head>
 <body>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
+        <script src="~/scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/scripts/jquery.easing.1.3.min.js"></script>
         <script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
         <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
         <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.reportdesigner.min.js"></script>
@@ -135,45 +130,16 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
 
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-
-        <script src="~/lib/syncfusion-javascript/Scripts/jsrender.min.js"></script>
-        <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
-        <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.reportdesigner.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
-
-    </environment>
+    </environment>   
 
     @RenderSection("Scripts", required: false)
+    <ej-script-manager/>
 
 </body>
 </html>
 {% endhighlight %}
 
-*  Add **ScriptManager** to the bottom of the **layout.cshtml** page. The **ScriptManager** used to place our control initialization script in the page.
-
-   {% highlight cshtml %}
-   
-    <ej-script-manager></ej-script-manager>
-	
-   {% endhighlight %}
+N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
 
 ### Tag helper
 
@@ -194,18 +160,194 @@ You can use the <ej-report-designer> tag to add the report designer control. For
 {% highlight CSHTML %}
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Reports";
 }
+<ej-report-designer id="reportdesigner1" service-url="../Home" />
 
-<div style="height: 525px;width: 100%;">
-    <ej-report-designer id="reportdesigner1" service-url="https://js.syncfusion.com/demos/ejservices/api/ReportDesigner" />
-</div>
+<script type="text/javascript">
+        var isSubmit = true;
+        $(function () {
+            $(document.body).bind('submit', $.proxy(formSubmit, this));
+            $(window).bind('beforeunload', $.proxy(windowUnload, this));           
+        });
+
+        function controlInitialized(args) {
+            var designer = $('#reportdesigner1').data('ejReportDesigner');
+            designer.isCoreService = true;
+        }
+
+        function formSubmit(args) {
+            isSubmit = false;
+        }
+
+        function windowUnload(args) {
+            var designer = $('#reportdesigner1').data('ejReportDesigner');
+            if (designer.hasReportChanges() && isSubmit) {
+                return 'Changes you made may not be saved';
+            }
+            isSubmit = true;
+        }
+</script>
+
+<ej-script-manager></ej-script-manager>
 {% endhighlight %}
 
-N> In the report designer service url, need to mention the controller name of the reporting service. To create reporting service for report designer follow the steps explained in the following link [Reporting Service ](https://help.syncfusion.com/aspnetmvc/reportdesigner/getting-started#add-webapi-controller-for-reportdesigner).
+N> **service-url** must be provided in ReportDesigner initialization in order to process the report in controller.
+
+## Add controller for Report Designer
+ 
+The ASP.NET Core Report Designer uses WebApi services to process the report file and get the request from control.
+
+#### Inherit IReportDesignerController
+ 
+The ApiController should inherit the `IReportDesignerController` and to process the report file. The interface `IReportDesignerController` contains the required actions and helper methods declaration to process the report. The `ReportDesignerHelper` and `ReportHelper` class contains helper methods that helps to process Post/Get request from control and return the response to control.
+
+Please add the following code example in `ReportDesignerController.cs`.
+
+{% highlight c# %}
+    public partial class HomeController : Controller, IReportDesignerController
+    {
+        private IMemoryCache _cache;
+        private IHostingEnvironment _hostingEnvironment;
+
+
+        public HomeController(IMemoryCache memoryCache, IHostingEnvironment hostingEnvironment)
+        {
+            _cache = memoryCache;
+            _hostingEnvironment = hostingEnvironment;
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View();
+        }
+
+        public string GetFilePath(string fileName)
+        {
+            string targetFolder = this._hostingEnvironment.WebRootPath + "\\";
+            targetFolder += "Cache";
+
+            if (!Directory.Exists(targetFolder))
+            {
+                Directory.CreateDirectory(targetFolder);
+            }
+
+            if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+            {
+                Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            }
+
+            var folderPath = targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\";
+            return folderPath + fileName;
+        }
+
+        public object GetImage(string key, string image)
+        {
+            return ReportDesignerHelper.GetImage(key, image, this);
+        }
+
+        public object GetResource(ReportResource resource)
+        {
+            return ReportHelper.GetResource(resource, this, _cache);
+        }
+
+        public void OnInitReportOptions(ReportViewerOptions reportOption)
+        {
+
+        }
+
+        public void OnReportLoaded(ReportViewerOptions reportOption)
+        {
+
+        }
+
+        [HttpPost]
+        public object PostDesignerAction([FromBody] Dictionary<string, object> jsonResult)
+        {
+            return ReportDesignerHelper.ProcessDesigner(jsonResult, this, null, this._cache);
+        }
+
+        public object PostFormDesignerAction()
+        {
+            return ReportDesignerHelper.ProcessDesigner(null, this, null, this._cache);
+        }
+
+        public object PostFormReportAction()
+        {
+            return ReportHelper.ProcessReport(null, this, this._cache);
+        }
+
+        [HttpPost]
+        public object PostReportAction([FromBody] Dictionary<string, object> jsonResult)
+        {
+            return ReportHelper.ProcessReport(jsonResult, this, this._cache);
+        }
+
+        public bool UploadFile(IFormFile httpPostedFile)
+        {
+            string targetFolder = this._hostingEnvironment.WebRootPath + "\\";
+            string fileName = !string.IsNullOrEmpty(ReportDesignerHelper.SaveFileName) ? ReportDesignerHelper.SaveFileName : Path.GetFileName(httpPostedFile.FileName);
+            targetFolder += "Cache";
+
+            if (!Directory.Exists(targetFolder))
+            {
+                Directory.CreateDirectory(targetFolder);
+            }
+
+            if (!Directory.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken))
+            {
+                Directory.CreateDirectory(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken);
+            }
+            using (var reader = new StreamReader(httpPostedFile.OpenReadStream()))
+            {
+                string contentAsString = reader.ReadToEnd();
+                byte[] bytes = System.Text.Encoding.ASCII.GetBytes(contentAsString);
+                if (System.IO.File.Exists(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\" + fileName))
+                {
+                    System.IO.File.Delete(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\" + fileName);
+                }
+                System.IO.File.WriteAllBytes(targetFolder + "\\" + ReportDesignerHelper.EJReportDesignerToken + "\\" + fileName, bytes);
+                reader.Close();
+                reader.Dispose();
+            }
+            return true;
+        }
+
+        [HttpPost]
+        public void UploadReportAction()
+        {
+            ReportDesignerHelper.ProcessDesigner(null, this, this.Request.Form.Files[0], this._cache);
+        }
+
+        public FileModel GetFile(string filename, bool isOverride)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<FileModel> GetFiles(FileType fileType)
+        {
+            throw new NotImplementedException();
+        }
+
+    }
+{% endhighlight %}
+
+N> Specify the created controller name (Home) in **service-url** to initialization ReportDesigner in ASP.NET Core.
 
 ## Run the application
 
 Run the sample application and you can see the ReportDesigner on the page as displayed in the following screenshot:
 
-![](images/Getting-Started_img1.png)
+![Getting-Started](images/Getting-Started_img1.png)
+
+## Sample Application
+
+We have prepared a ReportDesigner ASP.NET Core sample application. Refer to the below link for sample application download,
+http://www.syncfusion.com/downloads/support/directtrac/general/ze/ReportDesigner_ASP.NETCore-692277106.zip 
+
+N> Sample application is prepared using **16.3.0.21** version NuGet and Script files. Update the NuGet packages and script file to your required version.
