@@ -136,7 +136,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 ### System Requirements:
 
-* Visual Studio 2017 [version 15.x](https://www.visualstudio.com/downloads/).
+* Visual Studio [Code](https://code.visualstudio.com/#).
 
 * DotNetCore [2.x](https://www.microsoft.com/net/download/dotnet-core).
 
