@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section expalins the essential steps required to render a DatePicker control in an ASP.net Core application.
+This section explains the essential steps required to render a DatePicker control in an ASP.net Core application.
 
 ## DatePicker Initialization
 
 1. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
 
-    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
+    After successfully adding the necessary dependencies in your solution, make sure to build the solution, so that the necessary assembly files are compiled properly before using it in your project.
 
 2. The Essential DatePicker can be created using EJTag helper as given below.
 

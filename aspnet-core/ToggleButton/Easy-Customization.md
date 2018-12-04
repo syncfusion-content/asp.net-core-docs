@@ -113,7 +113,7 @@ _Property Table_
 <table>
 <tr>
 <th>
- active-tex</th><th>
+active-text</th><th>
 Specifies the text of toggle button in active state</th></tr>
 <tr>
 <td>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section expalins the essential steps required to render a DateTimePicker control in an ASP.net Core application.
+This section explains the essential steps required to render a DateTimePicker control in an ASP.net Core application.
 
 ## Create your first DateTimePicker
 
@@ -30,7 +30,7 @@ The DateTimePicker widget basically renders built-in features like Month and Tim
 
 1. Create a ASP.net core Project and add necessary assemblies and scripts.
 2. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
-3. After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
+3. After successfully adding the necessary dependencies in your solution, make sure to build the solution, so that the necessary assembly files are compiled properly before using it in your project.
 4. Add the following code to the corresponding view page to render DateTimePicker.
 
 
