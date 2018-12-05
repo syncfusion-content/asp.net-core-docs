@@ -67,17 +67,12 @@ N> To render the ToggleButton Control you can use either Razor or Tag helper cod
 
 {% endhighlight %}
 
-
 Execute the above code to render the following output.
 
-
-
-![](Easy-Customization_images/Easy-Customization_img1.png)
-
+![Toggle State](Easy-Customization_images/Easy-Customization_img1.png)
 
 Toggle button with two different toggle states
 {:.caption}
-
 
 ## ToggleState with icons
 
@@ -113,7 +108,7 @@ _Property Table_
 <table>
 <tr>
 <th>
- active-tex</th><th>
+active-text</th><th>
 Specifies the text of toggle button in active state</th></tr>
 <tr>
 <td>
@@ -148,7 +143,7 @@ The following script explains you the details about rendering the Toggle Button 
 
 //Add the code in CSHTML page to configure the widget and initialize the control
 
-    @*set the prefix, suffix build in icons in default and active state*@
+    @*set the prefix, suffix built-in icons in default and active state*@
     <div class="control">
         <ej-toggle-button id="toggleButton_iconsAndStates" content-type="@ContentType.ImageTextImage" show-rounded-corner="true" default-text="forward" active-text="backward" default-prefix-icon="e-icon e-mediaforward" active-prefix-icon="e-icon e-mediaback" default-suffix-icon="e-icon e-redo" />
 
@@ -171,14 +166,14 @@ The following script explains you the details about rendering the Toggle Button 
 
 Execute the above code to render the following output.
 
-![](Easy-Customization_images/Easy-Customization_img2.png)
+![Prefix and Suffix Icons](Easy-Customization_images/Easy-Customization_img2.png)
 
 
 
 Before clicking the toggle button
 {:.caption}
 
-![](Easy-Customization_images/Easy-Customization_img3.png)
+![Prefix and Suffix Icons](Easy-Customization_images/Easy-Customization_img3.png)
 
 
 
@@ -350,7 +345,7 @@ Execute the above code to render the following output.
 
 
 
-![](Easy-Customization_images/Easy-Customization_img4.png)
+![Toggle button size](Easy-Customization_images/Easy-Customization_img4.png)
 
 Toggle button in different sizes
 {:.caption}
@@ -570,7 +565,7 @@ The following steps explains you the details about rendering the Toggle Button w
 
 Execute the above code to render the following output.
 
-![](Easy-Customization_images/Easy-Customization_img5.png)
+![Content type](Easy-Customization_images/Easy-Customization_img5.png)
 
 Toggle button with different content type
 {:.caption}
@@ -681,7 +676,7 @@ The following steps explains you the details about rendering the Toggle Button w
 Execute the above code to render the following output.
 
 
-![](Easy-Customization_images/Easy-Customization_img6.png)
+![ImagePosition](Easy-Customization_images/Easy-Customization_img6.png)
 
 Toggle button with different type of image position
 {:.caption}
@@ -906,7 +901,7 @@ Execute the above code to render the following output.
 
 
 
-![](Easy-Customization_images/Easy-Customization_img7.png)
+![Custom CSS](Easy-Customization_images/Easy-Customization_img7.png)
 
 Toggle button with Custom CSS
 {:.caption}

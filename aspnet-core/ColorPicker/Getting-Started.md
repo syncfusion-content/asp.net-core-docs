@@ -12,11 +12,12 @@ documentation: ug
 This section briefly explains the essential steps required to render a ColorPicker in an ASP.NET Core application.
 
 ## Create your first ColorPicker
+
 The Essential ColorPicker control provides support for selecting the colors from different sources such as palettes, picker or custom palettes. Colorpicker supports three formats such as RGB, HSV and HEXCODE.
 
 In this example, you will learn how to customize ColorPicker control in a category Application, in which a new category can be added along with a color chosen from ColorPicker. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Create your first ColorPicker](Getting-Started_images/Getting-Started_img1.png)
 
 ColorPicker 
 {:.caption}
@@ -31,7 +32,7 @@ Creating category application involves the following steps:
 
 1. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
 
-    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
+    After successfully adding the necessary dependencies in your solution, make sure to build the solution, so that the necessary assembly files are compiled properly before using it in your project.
 
 2. Add the following code to the corresponding view page for rendering the ColorPicker widget.
 
@@ -55,7 +56,7 @@ N> To render the ColorPicker Control you can use either Razor or Tag helper code
 
 The above code will render a simple Colorpicker control as shown below.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Create ColorPicker Control](Getting-Started_images/Getting-Started_img2.png)
     
 
 ### Initialize the other widgets
@@ -138,7 +139,7 @@ You can refer to the following link for more information on rendering ListBox co
                             <td class="column">
 
                                 @*Add button for to add new category*@
-                                <ej-button id="AddCategory" text="Add" width="82px" height="28px" type="Button" click="addCategoryvalue" />
+                                <ej-button id="AddCategory" text="Add" width="82px" height="28px" type="Button" click="addCategory" />
                             </td>
 
                         </tr>
@@ -223,7 +224,7 @@ You can refer to the following link for more information on rendering ListBox co
                     <td class="column">
 
                         @*Add button for to add new category*@
-    @{Html.EJ().Button("AddCategory").Text("Add").Width("82px").Height("28px").Type(ButtonType.Button).ClientSideEvents(events => events.Click("addCategoryValue")).Render(); }
+    @{Html.EJ().Button("AddCategory").Text("Add").Width("82px").Height("28px").Type(ButtonType.Button).ClientSideEvents(events => events.Click("addCategory")).Render(); }
                     </td>
 
                 </tr>
@@ -329,14 +330,14 @@ You can refer to the following link for more information on rendering ListBox co
 
             function initColorObj() {
 
-                //initliaze the colorpicker with object creation
+                //initialize the colorpicker with object creation
 
                 colorObj = $("#CategoryColor").data('ejColorPicker');
             }
 
             function initListboxObj() {
 
-                //initliaze the listbox with object creation
+                //initialize the listbox with object creation
 
                 listBoxObj = $("#selectPriority").data('ejListBox');
 
@@ -347,7 +348,7 @@ You can refer to the following link for more information on rendering ListBox co
 
 4. Run the above code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Initialize the other widgets](Getting-Started_images/Getting-Started_img3.png)
 
 Color Picker control
 {:.caption}
@@ -365,7 +366,7 @@ Color Picker control
 			//reuse the previous section script block            
 
 			//The following function used to add the new value to the listbox control
-            function addCategoryvalue() {
+            function addCategory() {
 
 			    if ($("#categoryName").val() !== "") {
 
@@ -384,7 +385,7 @@ Color Picker control
 
 2. The following screenshot illustrates the resultant output after you click Add button.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Add value to ListBox Control](Getting-Started_images/Getting-Started_img4.png)
 
 Value from Color Picker control
 {:.caption}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | DatePicker | ASP.NET Core | Syncfusion
 description: getting started
 platform: aspnet-core
 control: DatePicker
@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section expalins the essential steps required to render a DatePicker control in an ASP.net Core application.
+This section explains the essential steps required to render a DatePicker control in an ASP.net Core application.
 
 ## DatePicker Initialization
 
 1. [Getting Started](/aspnet-core/getting-started) section explains about basic system requirements and the steps to configure the Syncfusion Components in an ASP.net core application.
 
-    After successfuly adding the neccessary dependencies in your solution, make sure to build the solution, so that the neccessary assembly files are compiled properly before using it in your project.
+    After successfully adding the necessary dependencies in your solution, make sure to build the solution, so that the necessary assembly files are compiled properly before using it in your project.
 
 2. The Essential DatePicker can be created using EJTag helper as given below.
 
@@ -43,7 +43,7 @@ N> To render the DatePicker Control you can use either Razor or Tag helper code 
 
     @{
             Dictionary<string, object> htmlAttr = new Dictionary<string, object>();
-            htmlAttr.Add("name", "dp_startval");
+            htmlAttr.Add("name", "datepicker_start");
     }
 
 /*ej-Tag Helper code to render DatePicker*/
@@ -58,7 +58,7 @@ N> To render the DatePicker Control you can use either Razor or Tag helper code 
 
 @{
      Dictionary<string, object> htmlAttr = new Dictionary<string, object>();
-     htmlAttr.Add("name", "dp_startval");
+     htmlAttr.Add("name", "datepicker_start");
 }
 
     @{Html.EJ().DatePicker("startDate1").Value(DateTime.Now).HtmlAttributes(htmlAttr).Render(); }
@@ -162,7 +162,7 @@ Please refer the below code to create the DatePickerFor control in your applicat
 /*ej-Tag Helper code to render DatePicker*/
 
     @* bind the "date" property in model to strongly typed Datepicker *@
-    <ej-date-picker id="dp" ej-for="date" min-date="DateTime.Now"></ej-date-picker>
+    <ej-date-picker id="datepicker" ej-for="date" min-date="DateTime.Now"></ej-date-picker>
     @Html.ValidationMessageFor(model => model.date)
 
     {% endhighlight %}
