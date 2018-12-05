@@ -143,7 +143,7 @@ The following script explains you the details about rendering the Toggle Button 
 
 //Add the code in CSHTML page to configure the widget and initialize the control
 
-    @*set the prefix, suffix build-in icons in default and active state*@
+    @*set the prefix, suffix built-in icons in default and active state*@
     <div class="control">
         <ej-toggle-button id="toggleButton_iconsAndStates" content-type="@ContentType.ImageTextImage" show-rounded-corner="true" default-text="forward" active-text="backward" default-prefix-icon="e-icon e-mediaforward" active-prefix-icon="e-icon e-mediaback" default-suffix-icon="e-icon e-redo" />
 

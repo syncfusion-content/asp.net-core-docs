@@ -52,7 +52,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-date-picker id="startDate"></ej-date-picker>
 
@@ -62,7 +62,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-time-picker id="timeStart"></ej-time-picker>
 
@@ -72,7 +72,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-numeric-text-box id="NumericTextbox" value="0" />
 
@@ -90,7 +90,7 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-button id="Submit" width="100px" size="Small" text="Submit" click="Confirm" />
 
@@ -200,7 +200,7 @@ N> To render the TimePicker Control you can use either Razor or Tag helper code 
 
 		}
 
-		.innertag 
+		.inner-display 
 		{
 
 		display: inline-block;
@@ -276,7 +276,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-date-picker id="startDate" value="DateTime.Now" min-date="DateTime.Now" max-date="DateTime.Now.AddDays(1)"></ej-date-picker>
 
@@ -286,7 +286,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-time-picker id="timeStart" min-time="9:00 AM" max-time="10:00 PM" interval="60" select="selectedStartTime"></ej-time-picker>
                     </span>
@@ -295,7 +295,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-time-picker id="timeEnd" min-time="9:00 AM" max-time="10:00 PM" interval="60"></ej-time-picker>
 
@@ -305,7 +305,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-numeric-text-box id="NumericTextbox" value="0" />
 
@@ -325,7 +325,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 <td class="control">
 
-                    <span class="innertag">
+                    <span class="inner-display">
 
                         <ej-button id="Submit" width="100px" size="Small" text="Submit" click="Confirm" />
 
@@ -450,7 +450,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
         }
 
-		.innertag 
+		.inner-display 
 		{
 
 		display: inline-block;
@@ -515,7 +515,7 @@ You can select the Start time in the first TimePicker and select the End time wi
 ![Set Min and Max Date](Getting-Started_images/Getting-Started_img5.png)
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Set Min and Max Date](Getting-Started_images/Getting-Started_img6.png)
 
 
 
