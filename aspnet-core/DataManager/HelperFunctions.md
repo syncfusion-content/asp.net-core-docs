@@ -78,7 +78,7 @@ Please refer the online (link)[https://en.wikipedia.org/wiki/Time_zone#List_of_U
     </div>
     <script type="text/javascript">
         var serverTimezoneOffset = -5.0   // if your server is in EST time zone (UTC -5.0) (in hours)
-        var ClientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone differents and convert it to hours;
+        var ClientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone different and convert it to hours;
         ej.serverTimezoneOffset = serverTimezoneOffset + ClientSideTimeZoneDifference;
         $(function () {
             var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
@@ -111,7 +111,7 @@ Let see an example, when they observe the Daylight saving time.
     </div>
     <script type="text/javascript">
         var serverTimezoneOffset = -4.0  // if your server is in EDT time zone (UTC -4.0) (in hours)
-        var ClientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone differents and convert it to hours;
+        var ClientSideTimeZoneDifference = new Date().getTimezoneOffset() / 60; // get client time zone different and convert it to hours;
         ej.serverTimezoneOffset = serverTimezoneOffset + ClientSideTimeZoneDifference;
         $(function () {
             var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
