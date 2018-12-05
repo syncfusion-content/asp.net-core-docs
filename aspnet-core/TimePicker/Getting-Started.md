@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | TimePicker | ASP.NET Core | Syncfusion
 description: getting started
 platform: aspnet-core
 control: TimePicker
@@ -15,7 +15,7 @@ This section explains briefly about how to create  and customize a TimePicker in
 
 Essential TimePicker provides support to display the time in your web page and allows you to pick a time from the dropdownlist. In this section you can learn how to customize TimePickers in a real-time application. The following example shows you how to use the TimePicker control to book a hotel dining table booking application, within a limited time, in any day.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Create your first TimePicker](Getting-Started_images/Getting-Started_img1.png)
 
 The above screenshot illustrates the functionality of a TimePicker, with a time range from morning to evening. You can select the time to book a table ranging from 9.00 AM to 10.00 PM in the current day. This avoids selecting a time prior to that day.
 
@@ -40,19 +40,19 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
             <tr>
 
-                <td class="tdclass">Date</td>
+                <td class="control">Date</td>
 
-                <td class="tdclass">Time</td>
+                <td class="control">Time</td>
 
-                <td class="tdclass">Person</td>
+                <td class="control">Person</td>
 
             </tr>
 
             <tr>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-date-picker id="startDate"></ej-date-picker>
 
@@ -60,19 +60,19 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
                 </td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
-                        <ej-time-picker id="timestart"></ej-time-picker>
+                        <ej-time-picker id="timeStart"></ej-time-picker>
 
                     </span>
 
                 </td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-numeric-text-box id="NumericTextbox" value="0" />
 
@@ -88,9 +88,9 @@ Essential TimePicker widget has built-in features such as keyboard navigation, o
 
                 <td></td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-button id="Submit" width="100px" size="Small" text="Submit" click="Confirm" />
 
@@ -187,7 +187,7 @@ N> To render the TimePicker Control you can use either Razor or Tag helper code 
 
 	<style type="text/css" class="cssStyles">
 
-		.tdclass 
+		.control 
 		{
 
 		width: 70px;
@@ -200,7 +200,7 @@ N> To render the TimePicker Control you can use either Razor or Tag helper code 
 
 		}
 
-		.innerdp 
+		.innertag 
 		{
 
 		display: inline-block;
@@ -235,7 +235,7 @@ N> To render the TimePicker Control you can use either Razor or Tag helper code 
 
 5. The following screenshot displays the output for the above code.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![Create a TimePicker](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -243,7 +243,7 @@ N> To render the TimePicker Control you can use either Razor or Tag helper code 
 
 6. Click the submit button in the application to get the following output.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![Create a TimePicker](Getting-Started_images/Getting-Started_img3.png)
 
 
 ### Set Min and Max Date
@@ -262,21 +262,21 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
             <tr>
 
-                <td class="tdclass">Date</td>
+                <td class="control">Date</td>
 
-                <td class="tdclass">StartTime</td>
+                <td class="control">StartTime</td>
 
-                <td class="tdclass">EndTime</td>
+                <td class="control">EndTime</td>
 
-                <td class="tdclass">Person</td>
+                <td class="control">Person</td>
 
             </tr>
 
             <tr>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-date-picker id="startDate" value="DateTime.Now" min-date="DateTime.Now" max-date="DateTime.Now.AddDays(1)"></ej-date-picker>
 
@@ -284,18 +284,18 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 </td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-time-picker id="timeStart" min-time="9:00 AM" max-time="10:00 PM" interval="60" select="selectedStartTime"></ej-time-picker>
                     </span>
 
                 </td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-time-picker id="timeEnd" min-time="9:00 AM" max-time="10:00 PM" interval="60"></ej-time-picker>
 
@@ -303,9 +303,9 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 </td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-numeric-text-box id="NumericTextbox" value="0" />
 
@@ -323,9 +323,9 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
                 <td></td>
 
-                <td class="tdclass">
+                <td class="control">
 
-                    <span class="innerdp">
+                    <span class="innertag">
 
                         <ej-button id="Submit" width="100px" size="Small" text="Submit" click="Confirm" />
 
@@ -432,7 +432,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
 	<style type="text/css" class="cssStyles">
 
-		.tdclass {
+		.control {
 
         width: 70px;
 
@@ -450,7 +450,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
         }
 
-		.innerdp 
+		.innertag 
 		{
 
 		display: inline-block;
@@ -477,7 +477,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
 			var selDate = sender.value; // mentions the selected time.
 
-			minTimepicker = $("#timeend").data("ejTimePicker");// creating TimePicker object
+			minTimepicker = $("#timeEnd").data("ejTimePicker");// creating TimePicker object
 
 			minTimepicker.setModel({ "minTime": selDate });// setting minTime property through setModel of TimePicker object.
 
@@ -502,7 +502,7 @@ In a real-time scenario, the booking is open only for a limited time. You can se
 
 4. The following screenshot displays the output for the above code. 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Set Min and Max Date](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -512,7 +512,7 @@ You can select the Start time in the first TimePicker and select the End time wi
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Set Min and Max Date](Getting-Started_images/Getting-Started_img5.png)
 
 
 ![](Getting-Started_images/Getting-Started_img6.png)
@@ -539,11 +539,11 @@ You can specify the alert message in the script as follows.
 
 
 
-                    var b = $('#timestart').val();
+                    var b = $('#timeStart').val();
 
 
 
-                    var d = $('#timeend').val();
+                    var d = $('#timeEnd').val();
 
 
 
@@ -562,7 +562,7 @@ You can specify the alert message in the script as follows.
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Display Reserved Time](Getting-Started_images/Getting-Started_img7.png)
 
 
 

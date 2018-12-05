@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | DatePicker | ASP.NET Core | Syncfusion
 description: getting started
 platform: aspnet-core
 control: DatePicker
@@ -43,7 +43,7 @@ N> To render the DatePicker Control you can use either Razor or Tag helper code 
 
     @{
             Dictionary<string, object> htmlAttr = new Dictionary<string, object>();
-            htmlAttr.Add("name", "dp_startval");
+            htmlAttr.Add("name", "datepicker_start");
     }
 
 /*ej-Tag Helper code to render DatePicker*/
@@ -58,7 +58,7 @@ N> To render the DatePicker Control you can use either Razor or Tag helper code 
 
 @{
      Dictionary<string, object> htmlAttr = new Dictionary<string, object>();
-     htmlAttr.Add("name", "dp_startval");
+     htmlAttr.Add("name", "datepicker_start");
 }
 
     @{Html.EJ().DatePicker("startDate1").Value(DateTime.Now).HtmlAttributes(htmlAttr).Render(); }
@@ -162,7 +162,7 @@ Please refer the below code to create the DatePickerFor control in your applicat
 /*ej-Tag Helper code to render DatePicker*/
 
     @* bind the "date" property in model to strongly typed Datepicker *@
-    <ej-date-picker id="dp" ej-for="date" min-date="DateTime.Now"></ej-date-picker>
+    <ej-date-picker id="datepicker" ej-for="date" min-date="DateTime.Now"></ej-date-picker>
     @Html.ValidationMessageFor(model => model.date)
 
     {% endhighlight %}
