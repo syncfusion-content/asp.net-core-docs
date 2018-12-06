@@ -36,7 +36,7 @@ For example partial view ('date'):
    
    {% highlight cshtml %}
    
-        @model sample.models.datemodel
+        @model sample.models.date
 
         <div>        
             <ej-date-picker id="datepick" ej-for="@Model.Value" />
