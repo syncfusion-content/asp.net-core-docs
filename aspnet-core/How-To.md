@@ -17,22 +17,22 @@ The latest ASP.NET Core 2.0 SDK has the following known [issue](https://github.c
 
 If you want to use the model expressions in your application, then utilize the below workaround solution to resolve this issue.
 
-Declare the model expressions related code blocks in your partial view and call that partial view in your rendering section **(@Html.Partial("partialviewname"))** to resolve this issue.
+Declare the model expressions related code blocks in your partial view and call that partial view in your rendering section **(@Html.Partial("PartialViewName"))** to resolve this issue.
 
-For exmaple view:
+For example view:
 
    {% highlight cshtml %}
            
         <div>  
 
             @* Partial view returns the control with model expressions value*@ 
-            @Html.Partial("dateview")
+            @Html.Partial("date")
 
         </div>
 
    {% endhighlight %}
 
-For example partial view ('dateview'):
+For example partial view ('date'):
    
    {% highlight cshtml %}
    
