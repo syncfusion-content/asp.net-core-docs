@@ -53,7 +53,7 @@ Essential ASP.NET Core DatePicker allows you to restrict date selection in speci
 
 /*Razor code to render DatePicker*/
 
-     @{Html.EJ().DatePicker("datepick").ClientSideEvents(clientSideEvent => clientSideEvent.BeforeDateCreate("restrictDate")).Render(); }
+     @{Html.EJ().DatePicker("datepicker").ClientSideEvents(clientSideEvent => clientSideEvent.BeforeDateCreate("restrictDate")).Render(); }
 
     <script>   
    
@@ -139,7 +139,7 @@ Essential ASP.NET Core  DatePicker is responsive control, you have to just set t
 
 /*Razor code to render DatePicker*/
 
-     @{Html.EJ().DatePicker("datepick").Width("100%").Render(); }
+     @{Html.EJ().DatePicker("datepicker").Width("100%").Render(); }
 
 
 {% endhighlight %}
