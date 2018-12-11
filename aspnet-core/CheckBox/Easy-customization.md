@@ -50,7 +50,7 @@ N> To render the CheckBox Control you can use either Razor or Tag helper code as
 Execute the above code to render the following output.
 
 
-![](Easy-customization_images/Easy-customization_img1.png)
+![checked](Easy-customization_images/Easy-customization_img1.png)
 
 Checkbox in binary states
 {:.caption}
@@ -89,7 +89,7 @@ The following steps explains you the details about rendering the Checkbox with T
 
 Execute the above code to render the following output.
 
-![](Easy-customization_images/Easy-customization_img2.png)
+![enable tri state](Easy-customization_images/Easy-customization_img2.png)
 
 Checkbox with Non-Tri state and Tri-state
 {:.caption}
@@ -153,7 +153,7 @@ The following steps explains you the details about rendering the Checkbox with s
 Execute the above code to render the following output.
 
 
-![](Easy-customization_images/Easy-customization_img3.png)
+![check state](Easy-customization_images/Easy-customization_img3.png)
 
 Checkbox in three different states
 {:.caption}
@@ -209,7 +209,7 @@ The following steps explains you the details about rendering the Checkbox with d
 Execute the above code to render the following output.
 
 
-![](Easy-customization_images/Easy-customization_img4.png)
+![size](Easy-customization_images/Easy-customization_img4.png)
 
 Checkbox in different sizes
 {:.caption}
@@ -249,7 +249,7 @@ The following steps explains you the details about rendering the Checkbox with t
 Execute the above code to render the following output.
 
 
-![](Easy-customization_images/Easy-customization_img5.png)
+![text](Easy-customization_images/Easy-customization_img5.png)
 
 Checkbox with text content
 {:.caption}
@@ -290,8 +290,54 @@ The following steps explains you the details about rendering the Checkbox with r
 Execute the above code to render the following output.
 
 
-![](Easy-customization_images/Easy-customization_img6.png)
+![rounded corner](Easy-customization_images/Easy-customization_img6.png)
 
 Checkbox with non-rounded & rounded corner
 {:.caption}
 
+## Styles Customization
+
+CheckBox allows you to customize its appearance by using user-defined CSS and custom skin options such as colors and backgrounds. To apply custom themes, use  **CssClass** property. CssClass property sets the root class for CheckBox theme.
+
+By using this CssClass, you can override the existing styles under the theme style sheet. The theme style sheet applies theme-specific styles like colors and backgrounds. From the root class, you can customize the CheckBox control theme.
+
+In the following example, the border color and border width of the active CheckBox is customized through the custom classes to create the success, and danger indication with CheckBox.
+
+{% highlight html %}
+
+<span style="margin-left: 15px">
+    <ej-check-box id="check1" text="Primary" size="Medium" checked="true" css-class="success">
+    <ej-check-box id="check2" text="Danger" size="Medium" checked="true" css-class="danger">
+</span>
+
+{% endhighlight %}
+
+{% highlight css %}
+
+<style>
+        .success .e-chkbox-medium .e-chk-inact .e-chk-image,
+        .success .e-chkbox-medium .e-chk-act .e-chk-image {
+            background: #17ad37;
+            color: white;
+        }
+
+        .success .e-chkbox-medium .e-chk-inact,
+        .success .e-chkbox-medium .e-chk-act {
+            border-color: transparent;
+        }
+
+        .danger .e-chkbox-medium .e-chk-inact .e-chk-image,
+        .danger .e-chkbox-medium .e-chk-act .e-chk-image {
+            background: #d84315;
+            color: white;
+        }
+
+        .danger .e-chkbox-medium .e-chk-inact,
+        .danger .e-chkbox-medium .e-chk-act {
+            border-color: transparent;
+        }
+</style>
+
+{% endhighlight %}
+
+![customization](Easy-customization_images/Easy-customization_img7.png)
