@@ -99,7 +99,7 @@ The following output is displayed as a result of the above code example.
 
 # Drag And Drop between swim lanes
 
-You can set `allow-drag-and-drop` property of `kanbanswimlane-settings` as true to enable Drag and Drop between the swim lanes.
+You can set `allow-drag-and-drop` property of [`kanbanswimlane-settings`] as true to enable Drag and Drop between the swim lanes.
 
 If a card is to be dragged in the same swim lane, only a droppable target cell is added to the dotted line border.If a card is dragged from one swim lane to another, all the Kanban cells will be added to the dotted line borders, except the dragged card cell.
 
@@ -193,15 +193,15 @@ The following output is displayed as a result of the above code example.
 
 # Unassigned swim lane group
 
-Kanban cards which have null,undefined, empty string("") swimlane key values or user specified swimlane key values in the `keys(kanbanswimlane-settings.kanbanunassigned-group.keys)` collection will be grouped under the Unassigned swimlane group.You can enable and disble this behavior using the property `enable(kanbanswimlane-settings.kanbanunassigned-group.enable)` and the default value is `true`.
+Kanban cards which have null,undefined, empty string("") swimlane key values or user specified swimlane key values in the [`keys(kanbanswimlane-settings.kanbanunassigned-group.keys)`] collection will be grouped under the Unassigned swimlane group.You can enable and disable this behavior using the property [`enable(kanbanswimlane-settings.kanbanunassigned-group.enable)`] and the default value is `true`.
   
-Default values in the `keys(kanbanswimlane-settings.kanbanunassigned-group.keys)` collection are null,undefined,empty string("").You can also add your own(user-defined) swim-lane key values in the `keys(kanbanswimlane-settings.kanbanunassigned-group.keys)` collection.
+Default values in the [`keys(kanbanswimlane-settings.kanbanunassigned-group.keys)`] collection are null,undefined,empty string("").You can also add your own(user-defined) swim-lane key values in the [`keys(kanbanswimlane-settings.kanbanunassigned-group.keys)`] collection.
   
 ## Unassigned swim lane group with default values
 
-Kanban cards which have null,undefined, empty string("") swimlane key values will be grouped under the Unassigned swimlane group when Unassigned swim lane group is enabled.(set `true` to `enable(kanbanswimlane-settings.kanbanunassigned-group.enable)` property and the default value is `true`).
+Kanban cards which have null,undefined, empty string("") swimlane key values will be grouped under the Unassigned swimlane group when Unassigned swim lane group is enabled.(set `true` to [`enable(kanbanswimlane-settings.kanbanunassigned-group.enable)`] property and the default value is `true`).
 
-Default values in the `keys(kanbanswimlane-settings.kanbanunassigned-group.keys)` collection are null,undefined,empty string("").
+Default values in the [`keys(kanbanswimlane-settings.kanbanunassigned-group.keys)`] collection are null,undefined,empty string("").
 
 The following code example describes the above behavior.
 
@@ -281,7 +281,7 @@ The following output is displayed as a result of the above code example.
 
 ## Unassigned swim lane group with user specified values
 
-User specified swimlane key values in the `keys(kanbanswimlane-settings.kanbanunassigned-group.keys)` collection will be grouped under the Unassigned swimlane group when Unassigned swim lane group is enabled.(set `true` to `enable(kanbanswimlane-settings.kanbanunassigned-group.enable)` property and the default value is `true`).
+User specified swimlane key values in the [`keys(kanbanswimlane-settings.kanbanunassigned-group.keys)`] collection will be grouped under the Unassigned swimlane group when Unassigned swim lane group is enabled.(set `true` to [`enable(kanbanswimlane-settings.kanbanunassigned-group.enable)`] property and the default value is `true`).
 
 The following code example describes the above behavior.
 
@@ -364,7 +364,7 @@ The following output is displayed as a result of the above code example.
 
 ## Enable/Disable unassigned swim lane group
 
-You can enable and disble the unassigned swim lane group using the property `enable(kanbanswimlane-settings.kanbanunassigned-group.enable)` and the default value is `true`.
+You can enable and disable the unassigned swim lane group using the property [`enable(kanbanswimlane-settings.kanbanunassigned-group.enable)`] and the default value is `true`.
 
 The following code example describes the above behavior.
 

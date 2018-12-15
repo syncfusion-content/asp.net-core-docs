@@ -144,7 +144,7 @@ Kanban with Swim-lane
 
 ## Width
 
-By default, the Kanban is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign width of `kanbancolumns` in percentage. 
+By default, the Kanban is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign width of [`kanbancolumns`] in percentage. 
 
 The following code example describes the above behavior.
 

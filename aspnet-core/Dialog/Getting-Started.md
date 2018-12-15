@@ -47,7 +47,7 @@ Add Contents to the dialog using "e-content-template" property, which is given b
        
 ## Set Title
 
-The Dialog control's tilte can be set through the 'title' property. which is shown in the below code snippet.
+The Dialog control's title can be set through the 'title' property. which is shown in the below code snippet.
 
 {% highlight cshtml %}
 

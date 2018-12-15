@@ -142,6 +142,6 @@ Add following code in Style section
 
 {% endhighlight %}
 
-Here we have added styles and javascripts for to get output as like given in the screenshot. Accordingly you can customize as per your requirement.
+Here we have added styles and JavaScripts for to get output as like given in the screenshot. Accordingly you can customize as per your requirement.
 
 ![](Getting-Started_Images/splitterIntegration.png)

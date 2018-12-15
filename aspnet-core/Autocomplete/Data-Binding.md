@@ -198,7 +198,7 @@ The below following types are used to bind remote datasource to an AutoComplete 
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the datamanager URL property.
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the dataManager URL property.
 
 
 {% highlight html %}

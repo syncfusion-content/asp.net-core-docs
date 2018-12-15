@@ -9,13 +9,13 @@ platform: aspnet-core
 
 # Scrolling
 
-Scrolling can be enabled by setting `allow-scrolling` as true. The height and width can be set to Kanban by using the properties `kanbanscroll-settings.height` and `kanbanscroll-settings.width `respectively.
+Scrolling can be enabled by setting `allow-scrolling` as true. The height and width can be set to Kanban by using the properties [`kanbanscroll-settings.height`] and [`kanbanscroll-settings.width`] respectively.
 
-N> The height and width can be set in percentage and pixel. The default value for `height` and `width` in `kanbansroll-settings` is 0 and auto respectively.
+N> The height and width can be set in percentage and pixel. The default value for `height` and `width` in [`kanbansroll-settings`] is 0 and auto respectively.
 
 ## Set width and height in pixel
 
-To specify the `kanbanscroll-settings.width` and `kanbanscroll-settings.height` in pixel, by set the pixel value as integer.
+To specify the [`kanbanscroll-settings.width`] and [`kanbanscroll-settings.height`] in pixel, by set the pixel value as integer.
 
 The following code example describes the above behavior.
 
@@ -106,7 +106,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set height and width in percentage
 
-To specify the `kanbanscroll-settings.width` and `kanbanscrollsettings.height` in percentage, by set the percentage value as string.
+To specify the [`kanbanscroll-settings.width`] and [`kanbanscrollsettings.height`] in percentage, by set the percentage value as string.
 
 The following code example describes the above behavior.
 
@@ -197,7 +197,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set width as auto
 
-Specify `width` property of `kanbanscroll-settings` as auto, then the scrollbar is rendered only when the Kanban width exceeds the browser window width.
+Specify `width` property of [`kanbanscroll-settings`] as auto, then the scrollbar is rendered only when the Kanban width exceeds the browser window width.
 
 The following code example describes the above behavior.
 

@@ -358,7 +358,7 @@ This property sets the space between the Rotator Items.  The value set to this p
 
 ## AnimationType 
 
-animation-tye property specifies the Type of Animation for the Rotator Item. AnimationType options include slide, fastSlide, slowSlide, and other custom easing Animation Types. The default value is ‘slide’. The value set to this property is string. 
+animation-type property specifies the Type of Animation for the Rotator Item. AnimationType options include slide, fastSlide, slowSlide, and other custom easing Animation Types. The default value is ‘slide’. The value set to this property is string. 
 
 {% highlight CSHTML %}
 

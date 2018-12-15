@@ -156,7 +156,7 @@ Run the above code and you will got output as given below,
 
 ## Configure Popup button
 
-To enable Popup Button you have to set "show-popup-button" as "true". Now you can able to show suggestion list items either by clicking popup button or else by keyboard interaction.You can change the Popup icon as per your requirement by overridding through CSS.
+To enable Popup Button you have to set "show-popup-button" as "true". Now you can able to show suggestion list items either by clicking popup button or else by keyboard interaction.You can change the Popup icon as per your requirement by overriding through CSS.
 
 {% highlight cshtml %}
 

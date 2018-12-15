@@ -62,7 +62,7 @@ You can add the page content with text-area by referring to this section.
 
 {% endhighlight %}
 
-Add the following code in your script sction,
+Add the following code in your script section,
 
 {% highlight javascript %}
 

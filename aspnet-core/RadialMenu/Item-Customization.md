@@ -69,7 +69,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 
 {% endhighlight %}
 
-Add the following code in your stye section,
+Add the following code in your style section,
 
 {% highlight css %}
 
@@ -291,7 +291,7 @@ Add the following script in your code.
 
 {% endhighlight %}
 
-Add the following code in your stye section,
+Add the following code in your style section,
 
 {% highlight css %}
 
@@ -483,7 +483,7 @@ Add the following to perform actions for the icons are availed in RadialMenu,
 
 {% endhighlight %}
 
-Finaly add the following in your styles section,
+Finally add the following in your styles section,
 
 {% highlight css %}
 

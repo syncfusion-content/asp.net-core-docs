@@ -13,7 +13,7 @@ The stacked headers help you to group the logical columns in Kanban. It can be s
 
 ## Adding Stacked header columns
 
-To stack columns in stacked header, you need to define `kanbancolumn` property in `stacked-header-columns` with field names of visible columns.
+To stack columns in stacked header, you need to define [`kanbancolumn`] property in `stacked-header-columns` with field names of visible columns.
 
 The following code example describes the above behavior.
 

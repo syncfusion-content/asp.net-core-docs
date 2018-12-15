@@ -9,7 +9,7 @@ platform: aspnet-core
 
 # Filtering
 
-Filtering allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the quick filters collection. To enable filtering, define `kanbanfilter-settings` collection with display `text` and `ej.Query`. 
+Filtering allows to filter the collection of cards from `dataSource` which meets the predefined `query` in the quick filters collection. To enable filtering, define [`kanbanfilter-settings`] collection with display `text` and `ej.Query`. 
 
 You can also define display tip to describe filter definition to user using property `description`. If the `description` property is not defined, given `text` will act as display tip.
 

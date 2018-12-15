@@ -12,7 +12,7 @@ Column fields are present in the `dataSource` schema and it is rendering cards b
 
 ## Key Mapping
 
-To render Kanban with simple cards, you need to map the `dataSource` fields to Kanban cards and `kanbancolumns`. The required mapping field are listed as follows
+To render Kanban with simple cards, you need to map the `dataSource` fields to Kanban cards and [`kanbancolumns`]. The required mapping field are listed as follows
 
 <table>
 <tr>
@@ -38,7 +38,7 @@ Map the column name to use as content to cards.</td></tr>
 </table>
 
 N> 1. If the column with `key-field` is not in the datasource and `key` values specified will not available in column values, then the cards will not be rendered.
-N> 2. If the `kanbanfield.content` is not in the datasource, then empty cards will be rendered.
+N> 2. If the [`kanbanfield.content`] is not in the datasource, then empty cards will be rendered.
 
 The following code example describes the above behavior.
 
@@ -224,7 +224,7 @@ The following output is displayed as a result of the above code example.
 
 ### Header Template
 
-The template design that applies on for the column header. To render template, set `header-template` property of the `kanbancolumn`.
+The template design that applies on for the column header. To render template, set `header-template` property of the [`kanbancolumn`].
 
 You can use JsRender syntax in the template.
 
@@ -339,7 +339,7 @@ The following output is displayed as a result of the above code example.
 
 ## Width
 
-You can specify the width for particular column by setting `width` property of `kanbancolumn` as in pixel (ex: 100) or in percentage (ex: 40%).
+You can specify the width for particular column by setting `width` property of [`kanbancolumn`] as in pixel (ex: 100) or in percentage (ex: 40%).
 
 The following code example describes the above behavior.
 
@@ -821,7 +821,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize Items Count Text
 
-You can customize the items count text using the property `kanbantotalcount.text`.
+You can customize the items count text using the property [`kanbantotalcount.text`].
 
 The following code example describes the above behavior.
 

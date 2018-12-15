@@ -9,7 +9,7 @@ platform: aspnet-core
 
 # Context Menu 
 
-Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining `kanbancontext-menu-settings.enable` as true. Context menu has option to add default items in `kanbancontext-menu-settings.MenuItems` and customized items in `kanbancontext-menu-settings.custom-menu-items`.
+Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [`kanbancontext-menu-settings.enable`] as true. Context menu has option to add default items in [`kanbancontext-menu-settings.MenuItems`] and customized items in [`kanbancontext-menu-settings.custom-menu-items`].
 
 ## Default Context Menu items
 
@@ -242,7 +242,7 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use `kanbancontext-menu-settings.kanbancustom-menu-items` property and to bind required actions for this, use `context-click` event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`kanbancontext-menu-settings.kanbancustom-menu-items`] property and to bind required actions for this, use `context-click` event.
 
 The following code example describes the above behavior.
 
@@ -353,7 +353,7 @@ The following output is displayed as a result of the above code example.
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use `kanbancontext-menu-settings.sub-menu` property and to bind required actions for this, use `context-click` event.
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`kanbancontext-menu-settings.sub-menu`] property and to bind required actions for this, use `context-click` event.
 
 The following code example describes the above behavior.
 

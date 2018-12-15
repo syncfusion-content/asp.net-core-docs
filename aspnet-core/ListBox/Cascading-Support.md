@@ -11,9 +11,9 @@ documentation: ug
 
 Using cascade option, you can create a behavior of cascade between ListBox controls. For this, create a database with single field that is common between two ListBox data fields and then mention that column id in value field. With this, you can set second ListBox id in CascadeTo property in first ListBox. 
 
-In the following code example, in the first and second ListBox, "categoryid" is the common field. 
+In the following code example, in the first and second ListBox, "categoryId" is the common field. 
 
-The "categoryId" value of the selected item in the First Listbox that matches with "categoryid" value in the second Listbox, is retrieved and the item is loaded.
+The "categoryId" value of the selected item in the First Listbox that matches with "categoryId" value in the second Listbox, is retrieved and the item is loaded.
 
 You can add any number of cascading ListBoxes. For this, create a Datasource with single field value that is common between the two consecutive cascading ListBoxes and cascading is achieved based on that common field.”  
 

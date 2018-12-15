@@ -67,7 +67,7 @@ Add the following script in your code.
 
 {% endhighlight %}
 
-Add the following code in your stye section,
+Add the following code in your style section,
 
 {% highlight css %}
 
@@ -141,7 +141,7 @@ Add the following script in your code.
 
 {% endhighlight %}
 
-Add the following code in your stye section,
+Add the following code in your style section,
 
 {% highlight css %}
 

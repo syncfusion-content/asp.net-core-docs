@@ -143,7 +143,7 @@ The following output is displayed as a result of the above code example.
 
 ## Template
 
-Templates are used to create custom card layout as per the user convenient. HTML templates can be specified in the `template` property of the `kanbancard-settings` as an ID of the template’s HTML element.
+Templates are used to create custom card layout as per the user convenient. HTML templates can be specified in the `template` property of the [`kanbancard-settings`] as an ID of the template’s HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer this [`link`](https://www.jsviews.com/).
 
@@ -314,7 +314,7 @@ The following output is displayed as a result of the above code example.
 
 ## Tooltip
 
-You can enable HTML tooltip for Kanban card elements by setting `enable` property as true in `kanbantooltip-settings`.
+You can enable HTML tooltip for Kanban card elements by setting `enable` property as true in [`kanbantooltip-settings`].
 
 The following code example describes the above behavior. 
 
@@ -404,7 +404,7 @@ The following output is displayed as a result of the above code example.
 
 ### Template
 
-By making use of template feature with tooltip, all the field names that are mapped from the `dataSource` can be accessed to define the `template` tooltip for card. The `kanbantooltip-settings.enable` must be enabled first.
+By making use of template feature with tooltip, all the field names that are mapped from the `dataSource` can be accessed to define the `template` tooltip for card. The [`kanbantooltip-settings.enable`] must be enabled first.
 
 The following code example describes the tooltip template.
 

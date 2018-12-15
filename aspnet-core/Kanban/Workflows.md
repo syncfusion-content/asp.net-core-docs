@@ -11,7 +11,7 @@ platform: aspnet-core
 
 Workflows can be defined to set the flow of card moving between the Kanban column statuses and it is applicable to drag and drop and context menu features.
 
-You can set `kanbanworkflows` as array of Objects which consists of `key` and `allowed-transitions` properties. The `allowed-transitions` accepts more than one transition of the specific column key mentioned in `key` property.
+You can set [`kanbanworkflows`] as array of Objects which consists of `key` and `allowed-transitions` properties. The `allowed-transitions` accepts more than one transition of the specific column key mentioned in `key` property.
 
 If a card is to be dragged to not allowed transition columns, then not supported warning symbol will be displayed for denoting the error.
         
