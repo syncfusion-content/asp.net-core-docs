@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Splitter Getting-Started
 description: getting started
 platform: aspnet-core
 control: Splitter
@@ -37,7 +37,7 @@ ASP.NET Core Splitter control consists of movable split bar(s) that divides the 
 
 3. Now you can see below output.
 
-![](Getting-Started_Images/default1.png)
+![Getting Started](Getting-Started_Images/default1.png)
 
 ## Configure Tree View
 
@@ -47,7 +47,7 @@ Add below code to configure the tree view in your splitter control
 {% highlight cshtml %}
 
             @{
-                 IDictionary<string, object> cls = new Dictionary<string, object>()
+                 IDictionary<string, object> class = new Dictionary<string, object>()
                         { {"class","_child" }}; 
             }
         <ej-splitter id="outterSplitter" enableAutoResize="true" height="400" width="100%">
@@ -60,7 +60,7 @@ Add below code to configure the tree view in your splitter control
                             <e-tree-view-items  class="visibleHide">
                                 <e-tree-view-item  text="PARIS"  >
                                     <e-tree-view-child-items>
-                                        <e-tree-view-child-item id="tools" html-attributes="@cls" text="Speciality">
+                                        <e-tree-view-child-item id="tools" html-attributes="@class" text="Speciality">
                                             <e-content-template >
                                                 <div class="tools des">
                                                     <h3>PARIS</h3>
@@ -74,12 +74,12 @@ Add below code to configure the tree view in your splitter control
                                 </e-tree-view-item>
                                 <e-tree-view-item  text="CAMEMBERT">
                                     <e-tree-view-child-items>
-                                        <e-tree-view-child-item text="Speciality" id="chart" html-attributes="@cls"></e-tree-view-child-item>
+                                        <e-tree-view-child-item text="Speciality" id="chart" html-attributes="@class"></e-tree-view-child-item>
                                     </e-tree-view-child-items>
                                 </e-tree-view-item>
                                 <e-tree-view-item text="GRENOBLE">
                                     <e-tree-view-child-items>
-                                        <e-tree-view-child-item text="Speciality" id="grid" html-attributes="@cls"></e-tree-view-child-item>
+                                        <e-tree-view-child-item text="Speciality" id="grid" html-attributes="@class"></e-tree-view-child-item>
                                     </e-tree-view-child-items>
                                 </e-tree-view-item>
                             </e-tree-view-items>
@@ -99,7 +99,7 @@ Add below code to configure the tree view in your splitter control
                         </div>
                         <div class="chart des">
                             <h3>CAMEMBERT</h3>
-                            The village in the Orne département of Normandy where the famous French cheese is originated from.
+                            The village in the [`Orne département`] of Normandy where the famous French cheese is originated from.
                         </div>
                         <div class="grid des">
                             <h3>GRENOBLE</h3>
@@ -144,4 +144,4 @@ Add following code in Style section
 
 Here we have added styles and JavaScripts for to get output as like given in the screenshot. Accordingly you can customize as per your requirement.
 
-![](Getting-Started_Images/splitterIntegration.png)
+![Configure Tree View](Getting-Started_Images/splitterIntegration.png)

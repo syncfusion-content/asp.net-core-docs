@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Support.
+title: Syncfusion Radial Menu Template Support.
 description: template support.
 platform: aspnet-core
 control: RadialMenu 
@@ -13,7 +13,7 @@ documentation: ug
 
  ### Add SVG to item Icon
 
-Using SVG icon will optimize the icons quality and to reduce space occupation by normal images and svg images are scalable and Zoomable. Define the text element for SVG with x and y position and code for rendering the font icons. Assign the SVG element ID to **prepend-to** property.
+Using SVG icon will optimize the icons quality and to reduce space occupation by normal images and svg images are scalable and Zoom. Define the text element for SVG with x and y position and code for rendering the font icons. Assign the SVG element ID to **prepend-to** property.
 
 Add the following code to render text-area content and to use RTE's functionalities,
 
@@ -27,7 +27,7 @@ Add the following code to render text-area content and to use RTE's functionalit
                             Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
                             The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
                             Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
-                            The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
+                            The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusable and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
                         </p>
 
                         <p>A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).</p>
@@ -48,7 +48,7 @@ Use the below code to render Radial Menu component in your page,
 
 {% highlight cshtml %}
 
-    <ej-radial-menu id="defaultradialmenu" image-class="imageclass" auto-open="true">
+    <ej-radial-menu id="defaultRadialMenu" image-class="imageclass" auto-open="true">
             <e-radial-menu-items >
                    <e-radial-menu-item prepend-to="#template1" text ="Bold" click="bold" enabled="true">
                    
@@ -85,7 +85,7 @@ To bind action events please use the following code in script section,
 {% highlight javascript %}
 
     <script type="text/javascript">
-        var rteObj, rteEle = $("#rteSample1"), radialEle = $('#defaultradialmenu'), action = 0, forRedo = 0;
+        var rteObj, rteElement = $("#rteSample1"), radialElement = $('#defaultRadialMenu'), action = 0, forRedo = 0;
         $(function () {
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
                 $("#radialtarget1").parent().css("position", "relative");
@@ -95,7 +95,7 @@ To bind action events please use the following code in script section,
             }
             $(window).resize(function () {
                 if (ej.isMobile() && ej.isPortrait())
-                    $('#defaultradialmenu').css({ "left": 25 })
+                    $('#defaultRadialMenu').css({ "left": 25 })
             });
         });
         function rteCreate(e) {
@@ -108,11 +108,11 @@ To bind action events please use the following code in script section,
             // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
+            radialElement.ejRadialMenu("setPosition", x, y);
             $('iframe').contents().find('body').blur();
         }
         function rteChange(e) {
-            radialEle.ejRadialMenu("enableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
         }
         function bold(e) {
             rteObj.executeCommand("bold");
@@ -130,15 +130,15 @@ To bind action events please use the following code in script section,
             rteObj.executeCommand("undo");
             action -= 1;
             if (action == 0)
-                radialEle.ejRadialMenu("disableItem", "Undo");
-            radialEle.ejRadialMenu("enableItem", "Redo");
+                radialElement.ejRadialMenu("disableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Redo");
         }
         function redo(e) {
             rteObj.executeCommand("redo");
             action += 1;
             if (forRedo == action)
-                radialEle.ejRadialMenu("disableItem", "Redo");
-            radialEle.ejRadialMenu("enableItem", "Undo");
+                radialElement.ejRadialMenu("disableItem", "Redo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
         }
     </script>
 
@@ -175,7 +175,6 @@ Add the following in your style sheet,
         -webkit-font-smoothing: antialiased;
         /* Better Font Rendering =========== */
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
 
     </style>
@@ -184,7 +183,7 @@ Add the following in your style sheet,
 
 The following screenshot illustrates the output,
 
-![](template-support\img1.png)
+![SVG to item Icon](template-support\img1.png)
 
      N> This is the example sample for SVG icon support for Radial Menu.Like wise you can add any SVG element to it, but you need to customize and position the element individually.
 

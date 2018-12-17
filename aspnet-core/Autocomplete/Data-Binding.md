@@ -60,7 +60,7 @@ public partial class AutocompleteController : Controller
             public string Text { get; set; }
 
         }
-        public ActionResult Localdata()
+        public ActionResult LocalData()
         {
             List<CarsList> cars = new List<CarsList>();
             cars.Add(new CarsList { UniqueKey = 1, Text = "Audi S6" });
@@ -180,7 +180,7 @@ The following image is the output for AutoComplete control with local data bindi
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data Binding](Data-Binding_images/Data-Binding_img1.png)
 
 AutoComplete with local data-binding
 {:.caption}
@@ -212,7 +212,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
 
 Run the code to get the following output
 
-![](Data-Binding_images\odata_img1.png)
+![Data Binding Images](Data-Binding_images\odata_img1.png)
 
 
 

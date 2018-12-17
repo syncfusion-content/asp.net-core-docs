@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Editing | Kanban | ASP.NET Core | Syncfusion
+title: Syncfusion Kanban Editing
 description: Editing
 documentation: ug
 control: Kanban
-platform: asp.net-core
+platform: aspnet-core
 ---
 
 # Editing
@@ -118,7 +118,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img1.png)
+![Configuring Edit Items](Editing_images/editing_img1.png)
 
 ## Edit modes
 
@@ -221,7 +221,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img2.png)
+![Dialog](Editing_images/editing_img2.png)
 
 ### Dialog Template Form
 
@@ -385,7 +385,7 @@ While using template, you can change the elements that are defined in the `templ
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img3.png)
+![Dialog Template Form](Editing_images/editing_img3.png)
 
 ### External Form
 
@@ -482,7 +482,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![External Form](Editing_images/editing_img11.png)
 
 Form Position:
 
@@ -583,7 +583,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img12.png)
+![Form Position](Editing_images/editing_img12.png)
 
 ### External Template Form
 
@@ -746,7 +746,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img13.png)
+![External Template Form](Editing_images/editing_img13.png)
 
 
 ### Cell edit type and its params
@@ -926,7 +926,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img4.png)
+![Cell edit type and its params](Editing_images/editing_img4.png)
 
 ## Column Validation
 
@@ -1113,5 +1113,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img5.png)
+![Column Validation](Editing_images/editing_img5.png)
 

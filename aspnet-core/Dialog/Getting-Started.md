@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Dialog Getting-Started
 description: getting started
 platform: aspnet-core
 control: Dialog
@@ -24,7 +24,7 @@ Add the following code snippet to the corresponding view page to render dialog w
 
 {% endhighlight %}
 
-![](Getting-Started_Images/default.png)
+![Getting Started](Getting-Started_Images/default.png)
 
 ## Set content
 
@@ -43,7 +43,7 @@ Add Contents to the dialog using "e-content-template" property, which is given b
 {% endhighlight %}
 
 
-![](Getting-Started_Images/content.png)
+![Set content](Getting-Started_Images/content.png)
        
 ## Set Title
 
@@ -60,7 +60,7 @@ The Dialog control's title can be set through the 'title' property. which is sho
 {% endhighlight %}
   
 
-![](Getting-Started_Images/title.png)
+![Set Title](Getting-Started_Images/title.png)
 
 ## Open Dialog dynamically
 
@@ -94,4 +94,4 @@ We can open and close the dialog on button click. Refer the below code
 
   {% endhighlight %}
 
-![](Getting-Started_Images/Dialogbtn.png)
+![Open Dialog dynamically](Getting-Started_Images/Dialogbtn.png)

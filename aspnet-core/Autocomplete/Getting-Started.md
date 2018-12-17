@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Syncfusion Autocomplete Getting-Started
 description: getting started
 platform: aspnet-core
 control: AutoComplete 
@@ -30,7 +30,7 @@ AutoComplete Textbox control basically renders with built-in features like keybo
 
 4. After Execute the above code the AutoComplete control appears as follows
 
-    ![](Getting-Started_Images/default.png)
+    ![Getting Started](Getting-Started_Images/default.png)
 
 
 ## Populate Data to AutoComplete
@@ -69,7 +69,7 @@ You need to add the class in the Models. Define the Class with key and text fiel
                 component.Add(new ComponentsList { ComponentName = "Schedule" });
                 component.Add(new ComponentsList { ComponentName = "Scrollbar" });
                 component.Add(new ComponentsList { ComponentName = "Slider" });
-                component.Add(new ComponentsList { ComponentName = "RangeNavigatior" });
+                component.Add(new ComponentsList { ComponentName = "RangeNavigation" });
                 component.Add(new ComponentsList { ComponentName = "Rating" });
                 component.Add(new ComponentsList { ComponentName = "RichTextEditor" });
                 component.Add(new ComponentsList { ComponentName = "Tab" });
@@ -114,7 +114,7 @@ In the View page, add Autocomplete helper and map the Local data list to corresp
 
 Run the above code now you can get AutoComplete Control with data source. Your output will be shown as below.
 
-![](Getting-Started_Images/datasource.png)
+![Local Data Binding](Getting-Started_Images/datasource.png)
 
 ## Configure Visual Mode with filter option
 
@@ -136,7 +136,7 @@ You can use available filter-type to show suggestions based on your filter. By d
 
 After execute the above code your output will be,
 
-![](Getting-Started_Images/Visualmode.png)
+![Configure Visual Mode with filter option](Getting-Started_Images/Visualmode.png)
 
 ## Configure Highlight Search and Rounded corners
 
@@ -152,7 +152,7 @@ When you set the highlight-search property to 'true', the characters typed in te
 
 Run the above code and you will got output as given below,
 
-![](Getting-Started_Images/Highlighted.png)
+![Configure Highlight Search and Rounded corners](Getting-Started_Images/Highlighted.png)
 
 ## Configure Popup button
 
@@ -168,4 +168,4 @@ To enable Popup Button you have to set "show-popup-button" as "true". Now you ca
 
 Now the output will be as follows.
 
-![](Getting-Started_Images/ShowPopup.png)
+![Configure Popup button](Getting-Started_Images/ShowPopup.png)
