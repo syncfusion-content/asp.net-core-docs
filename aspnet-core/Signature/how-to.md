@@ -19,9 +19,9 @@ In the View page, define the following code.
 {% highlight CSHTML %}
 
 
-<ej-signature id="mysign" height="400px" width="500" stroke-width="3" background-image="../images/water.png" is-responsive="true" save-with-background="true" />
+<ej-signature id="mySign" height="400px" width="500" stroke-width="3" background-image="../images/water.png" is-responsive="true" save-with-background="true" />
 
-<ej-button id="signsave" text="Save" show-rounded-corner="true" click="onsave" />
+<ej-button id="signsave" text="Save" show-rounded-corner="true" click="onSave" />
 
 {% endhighlight %}
 
@@ -31,10 +31,10 @@ Add the following script to define the download format for the canvas.
 
 <script type="text/javascript">
         
-         function onsave() {
-            var sign = $("#mysign").ejSignature("instance");
+         function onSave() {
+            var sign = $("#mySign").ejSignature("instance");
             sign.option("saveImageFormat", "jpg") 
-            sign.save("MySignature");
+            sign.save("mySignature");
         }
 
     </script>
@@ -44,26 +44,26 @@ Add the following script to define the download format for the canvas.
 
 The following screenshot illustrates the Signature with saving (downloading) the drawn image along with its background.
 
-![](how_to_images\savesignatureimagewithuserdefinedformat_img1.png)
+![How to](how_to_images\savesignatureimagewithuserdefinedformat_img1.png)
 
 
-## To clear the Siganture
+## To clear the Signature
 
 To clear the signature, you can simply use the **clear()** method. This method will clear all the drawn strokes in the signature canvas and leaves it empty.
 
 {% highlight razor %}
 
-<ej-signature id="mysignature" height="400px" width="500" stroke-width="3" is-responsive="true" />
+<ej-signature id="mySignature" height="400px" width="500" stroke-width="3" is-responsive="true" />
 
-<ej-button id="signclear" text="Clear" show-rounded-corner="true" click="onclear" />
+<ej-button id="signclear" text="Clear" show-rounded-corner="true" click="onClear" />
 
 {% endhighlight %}
 
 {% highlight js %}
 
 <script type="text/javascript">
-    function onclear() {
-            var sign = $("#mysignature").ejSignature("instance");
+    function onClear() {
+            var sign = $("#mySignature").ejSignature("instance");
             sign.clear();
         }
  </script>
@@ -78,7 +78,7 @@ In the View page, define the following code to render signature with responsive
 
 {% highlight CSHTML %}
 
-<ej-signature id="mysign"  is-responsive="true"/>
+<ej-signature id="mySign"  is-responsive="true"/>
 
 {% endhighlight %}
 
@@ -87,15 +87,15 @@ The following screenshot illustrates the Signature with responsiveness.
 
 Before Responsiveness:
 
-![](how_to_images\makesignatureasresponsive_img1.png)
+![Signature as responsive](how_to_images\makesignatureasresponsive_img1.png)
 
 After giving the Responsiveness:
 
-![](how_to_images\makesignatureasresponsive_img2.png)
+![signature as responsive](how_to_images\makesignatureasresponsive_img2.png)
 
 ## To check whether any input to the signature control since render
 
-We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drwan strokes.
+We can detect whether not there has been any input to the signature control since render. To detect we can use the storeSnap public variable, which is an array that stores all the canvas inputs. At initial rendering this array is empty and we can use this variable to check for the drawn strokes.
 
 
 {% highlight js %}
