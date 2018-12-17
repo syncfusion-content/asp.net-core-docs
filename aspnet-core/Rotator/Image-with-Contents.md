@@ -95,7 +95,7 @@ This feature allows you to add text along with the image in Rotator control. Thi
                         <div class="contentPanel">Credit card </div>
                         <ul>
                             <li>A credit card is a payment card issued to users as a system of payment</li>
-                            <li>It allows the cardholder to pay for goods and services based on the holder's promise to pay for them</li>
+                            <li>It allows the card holder to pay for goods and services based on the holder's promise to pay for them</li>
 
                         </ul>
                     </div>
@@ -283,7 +283,7 @@ This feature allows you to add text along with the image in Rotator control. Thi
 
 {% endhighlight %}
 {% endtabs %} 
-![](Image-with-Contents_images/Image-with-Contents_img1.png)
+![Image with Contents](Image-with-Contents_images/Image-with-Contents_img1.png)
 
 ## Display items
 
@@ -304,7 +304,7 @@ This property specifies the number of Rotator Items to be displayed. The default
 
 {% endhighlight %}
 
-![](Image-with-Contents_images/Image-with-Contents_img2.png)
+![DisplayItemCount](Image-with-Contents_images/Image-with-Contents_img2.png)
 
 ## NavigateSteps
 
@@ -321,7 +321,7 @@ This property specifies the number of Rotator Items to navigate on a single clic
 
 {% endhighlight %}
 
-![](Image-with-Contents_images/Image-with-Contents_img3.png)
+![Navigate Steps](Image-with-Contents_images/Image-with-Contents_img3.png)
 
 ## StartIndex
 
@@ -338,7 +338,7 @@ This property sets the index of the slide that is displayed first. The default v
 
 {% endhighlight %}
 
-![](Image-with-Contents_images/Image-with-Contents_img4.png)
+![Start Index](Image-with-Contents_images/Image-with-Contents_img4.png)
 
 ## FrameSpace
 
@@ -354,11 +354,11 @@ This property sets the space between the Rotator Items.  The value set to this p
 
 {% endhighlight %}
 
-![](Image-with-Contents_images/Image-with-Contents_img5.png)
+![Frame Space](Image-with-Contents_images/Image-with-Contents_img5.png)
 
 ## AnimationType 
 
-animation-tye property specifies the Type of Animation for the Rotator Item. AnimationType options include slide, fastSlide, slowSlide, and other custom easing Animation Types. The default value is ‘slide’. The value set to this property is string. 
+animation-type property specifies the Type of Animation for the Rotator Item. AnimationType options include slide, fastSlide, slowSlide, and other custom easing Animation Types. The default value is ‘slide’. The value set to this property is string. 
 
 {% highlight CSHTML %}
 
@@ -446,4 +446,4 @@ Add the following code in your CSS.
 
 {% endhighlight %}
 
-![](Image-with-Contents_images/Image-with-Contents_img6.png)
+![CSS Class](Image-with-Contents_images/Image-with-Contents_img6.png)

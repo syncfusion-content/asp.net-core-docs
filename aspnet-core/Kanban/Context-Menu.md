@@ -9,7 +9,7 @@ platform: aspnet-core
 
 # Context Menu 
 
-Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining `kanbancontext-menu-settings.enable` as true. Context menu has option to add default items in `kanbancontext-menu-settings.MenuItems` and customized items in `kanbancontext-menu-settings.custom-menu-items`.
+Context menu is used to improve user action with Kanban using popup menu. It can be shown by defining [`kanbancontext-menu-settings.enable`] as true. Context menu has option to add default items in [`kanbancontext-menu-settings.MenuItems`] and customized items in [`kanbancontext-menu-settings.custom-menu-items`].
 
 ## Default Context Menu items
 
@@ -236,13 +236,13 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img1.png)
+![Default Context Menu items](Context_images/context_img1.png)
 
-![](Context_images/context_img2.png)
+![Default Context Menu](Context_images/context_img2.png)
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use `kanbancontext-menu-settings.kanbancustom-menu-items` property and to bind required actions for this, use `context-click` event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`kanbancontext-menu-settings.kanbancustom-menu-items`] property and to bind required actions for this, use `context-click` event.
 
 The following code example describes the above behavior.
 
@@ -349,11 +349,11 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img3.png)
+![Custom Context Menu](Context_images/context_img3.png)
 
 ## Sub Context Menu
 
-Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use `kanbancontext-menu-settings.sub-menu` property and to bind required actions for this, use `context-click` event.
+Sub context menu is used to add customized sub menu to the custom context menu item. To add a sub context menu, you need to use [`kanbancontext-menu-settings.sub-menu`] property and to bind required actions for this, use `context-click` event.
 
 The following code example describes the above behavior.
 
@@ -467,4 +467,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Context_images/context_img4.png)
+![Sub Context Menu](Context_images/context_img4.png)
