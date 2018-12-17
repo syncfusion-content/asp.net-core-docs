@@ -563,4 +563,4 @@ The following code example describes the tooltip template.
 
 The following output is displayed as a result of the above code example.
 
-![](Cards_images/cards_img4.png)
+![Template](Cards_images/cards_img4.png)
