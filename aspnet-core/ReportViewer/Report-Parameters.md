@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report Parameters
+title: Report Parameters | Syncfusion
 description: report parameters
 platform: aspnet-core
 control: ReportViewer

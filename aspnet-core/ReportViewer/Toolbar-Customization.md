@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar Customization
+title: Toolbar Customization | Syncfusion
 description: toolbar customization
 platform: aspnet-core
 control: ReportViewer

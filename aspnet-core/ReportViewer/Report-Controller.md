@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Report Controller
+title: Report Controller | Syncfusion
 description: report controller
 platform: aspnet-core
 control: ReportViewer

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Report DataSources
+title: Report DataSources | Syncfusion
 description: report datasources
 platform: aspnet-core
 control: ReportViewer
 documentation: ug
 ---
 
-# Report DataSources
+## Report DataSources
 
 The ReportViewer has support to add data sources to ReportViewer for RDLC reports at runtime. You can add SQL Server DataSources to ReportViewer. The ReportViewer has `dataSources` property that is the list of ReportDataSource type to add collection of DataSources to it. You can add DataSources through Web API.
 
@@ -55,7 +55,7 @@ public class ProductList
 }
 {% endhighlight %}
 
-# DataSource Credentials
+## DataSource Credentials
 
 The DataSource credentials can be given at Web API Controller to connect data source from SQL server.
 
