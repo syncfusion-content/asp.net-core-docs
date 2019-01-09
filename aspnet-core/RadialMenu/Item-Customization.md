@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Item-Customization
+title: Syncfusion Radial Menu Item-Customization
 description: item-customization
 platform: aspnet-core
 control: RadialMenu 
@@ -19,7 +19,7 @@ You can add the page content in RTE control by referring this section.
 
 {% highlight cshtml %}
 
-    <ej-radial-menu id="defaultradialmenu" image-class="imageclass" auto-open="true">
+    <ej-radial-menu id="defaultRadialMenu" image-class="imageclass" auto-open="true">
             <e-radial-menu-items >
                    <e-radial-menu-item image-url="http://mvc.syncfusion.com/demos/web/Images/RadialMenu/copy.png" text ="Copy"  enabled="true">
                     </e-radial-menu-item>
@@ -39,7 +39,7 @@ You can display the **Radial Menu** by performing desired action on the target c
 {% highlight javascript %}
 
     <script type="text/javascript">
-        var rteObj, radialEle = $('#defaultradialmenu');
+        var rteObj, radialElement = $('#defaultRadialMenu');
         $(function () {
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
                 $("#radialtarget1").parent().css("position", "relative");
@@ -49,7 +49,7 @@ You can display the **Radial Menu** by performing desired action on the target c
             }
             $(window).resize(function () {
                 if (ej.isMobile() && ej.isPortrait())
-                    $('#defaultradialmenu').css({ "left": 25 })
+                    $('#defaultRadialMenu').css({ "left": 25 })
             });
         });
         function rteCreate(e) {
@@ -62,14 +62,14 @@ You can display the **Radial Menu** by performing desired action on the target c
             // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
+            radialElement.ejRadialMenu("setPosition", x, y);
             $('iframe').contents().find('body').blur();
         }
         </script>
 
 {% endhighlight %}
 
-Add the following code in your stye section,
+Add the following code in your style section,
 
 {% highlight css %}
 
@@ -83,7 +83,7 @@ Add the following code in your stye section,
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\img1.png)
+![Adding image and text to RadialMenu items](item-customization_images\img1.png)
 
 ### Adding events to Radial Menu items
 
@@ -93,7 +93,7 @@ You can add the page content in RTE control by referring to this section
 
 {% highlight css %}
 
-    <ej-radial-menu id="nestedradialmenu" image-class="imageclass" auto-open="false">
+    <ej-radial-menu id="nestedRadialMenu" image-class="imageclass" auto-open="false">
         <e-radial-menu-items>
             <e-radial-menu-item image-url="http://mvc.syncfusion.com/demos/web/Images/RadialMenu/copy.png" text="Copy" click="copy" enabled="true">
             </e-radial-menu-item>
@@ -133,7 +133,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
     <script type="text/javascript">
-        var rteObj, rteEle = $("#rteSample2"), radialEle = $('#nestedradialmenu');
+        var rteObj, rteElement = $("#rteSample2"), radialElement = $('#nestedRadialMenu');
         $(function () {
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
                 $("#radialtarget2").parent().css("position", "relative");
@@ -143,7 +143,7 @@ Add the following script in your code.
             }
             $(window).resize(function(){
                 if(ej.isMobile() && ej.isPortrait())
-                    $('#nestedradialmenu').css({ "left": 25 })
+                    $('#nestedRadialMenu').css({ "left": 25 })
               });
              });
              function rteCreate(e) {
@@ -156,11 +156,11 @@ Add the following script in your code.
             // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
+            radialElement.ejRadialMenu("setPosition", x, y);
             $('iframe').contents().find('body').blur();
             }
             function rteChange(e) {
-                radialEle.ejRadialMenu("enableItem", "Undo");
+                radialElement.ejRadialMenu("enableItem", "Undo");
             }
              function copy(e) {
                rteObj.executeCommand("copy");
@@ -169,7 +169,7 @@ Add the following script in your code.
             if (ej.browserInfo().name == 'msie')
                 rteObj.executeCommand("paste");
             else
-                rteObj._openAlert("Your browser doesn't support direct access to the clipboard. Please use the Ctrl+V keyboard shortcut instead of paste opertion.");
+                rteObj._openAlert("Your browser doesn't support direct access to the clipboard. Please use the Ctrl+V keyboard shortcut instead of paste operation.");
              }
              function italic(e) {
               rteObj.executeCommand("italic");
@@ -188,13 +188,13 @@ Add the following script in your code.
                 }
             function undo(e) {
             rteObj.executeCommand("undo");
-            radialEle.ejRadialMenu("disableItem", "Undo");
-            radialEle.ejRadialMenu("enableItem", "Redo");
+            radialElement.ejRadialMenu("disableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Redo");
              }
              function redo(e) {
              rteObj.executeCommand("redo");
-            radialEle.ejRadialMenu("disableItem", "Redo");
-            radialEle.ejRadialMenu("enableItem", "Undo");
+            radialElement.ejRadialMenu("disableItem", "Redo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
             }
             function unorderedList(e) {
             rteObj.executeCommand("insertunorderedList");
@@ -224,7 +224,7 @@ Add the following script in your style section to render back image.
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\img2.png)
+![Adding events to Radial Menu items](item-customization_images\img2.png)
 
 
 ### Badge Customization in Radial Menu Items
@@ -241,7 +241,7 @@ The **Enabled** property to enable or disable badges. **Value** attribute is to 
         val.Value = 3;
     }
 
-        <ej-radial-menu id="defaultradialmenu" image-class="imageclass" auto-open="true">
+        <ej-radial-menu id="defaultRadialMenu" image-class="imageclass" auto-open="true">
             <e-radial-menu-items >
                    <e-radial-menu-item image-url="http://mvc.syncfusion.com/demos/web/Images/RadialMenu/copy.png" text ="Copy" badge="@val" enabled="true">
                     </e-radial-menu-item>
@@ -261,7 +261,7 @@ Add the following script in your code.
 {% highlight javascript %}
 
     <script type="text/javascript">
-        var rteObj, radialEle = $('#defaultradialmenu');
+        var rteObj, radialElement = $('#defaultRadialMenu');
         $(function () {
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
                 $("#radialtarget1").parent().css("position", "relative");
@@ -271,7 +271,7 @@ Add the following script in your code.
             }
             $(window).resize(function () {
                 if (ej.isMobile() && ej.isPortrait())
-                    $('#defaultradialmenu').css({ "left": 25 })
+                    $('#defaultRadialMenu').css({ "left": 25 })
             });
         });
         function rteCreate(e) {
@@ -284,14 +284,14 @@ Add the following script in your code.
             // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
+            radialElement.ejRadialMenu("setPosition", x, y);
             $('iframe').contents().find('body').blur();
         }
         </script>
 
 {% endhighlight %}
 
-Add the following code in your stye section,
+Add the following code in your style section,
 
 {% highlight css %}
 
@@ -305,7 +305,7 @@ Add the following code in your stye section,
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\img3.png)
+![Badge Customization in Radial Menu Items](item-customization_images\img3.png)
 
 ### Slider Customization in Radial Menu Items
 
@@ -328,7 +328,7 @@ You can add SliderSettings in radial menu items by referring this section.
     stroke.StrokeWidth = 1;
     stroke.Ticks=new List<double> { 0, 2, 4, 6, 8, 10, 12, 14 };
     }
-     <ej-radial-menu id="nestedradialmenu" image-class="imageclass" auto-open="false">
+     <ej-radial-menu id="nestedRadialMenu" image-class="imageclass" auto-open="false">
             <e-radial-menu-items>
                 <e-radial-menu-item image-url="http://mvc.syncfusion.com/demos/web/Images/RadialMenu/copy.png" text="Copy" click="copy" enabled="true">
                 </e-radial-menu-item>
@@ -378,7 +378,7 @@ Add following Code in your view page to render content section of RTE,
                             Model–view–controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
                             The model consists of application data, business rules, logic, and functions. A view can be any output representation of data, such as a chart or a diagram.
                             Multiple views of the same data are possible, such as a bar chart for management and a tabular view for accountants.
-                            The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusability and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
+                            The controller mediates input, converting it to commands for the model or view.The central ideas behind MVC are code reusable and in addition to dividing the application into three kinds of components, the MVC design defines the interactions between them.
                         </p>
 
                         <p>A controller can send commands to its associated view to change the view's presentation of the model (e.g., by scrolling through a document). It can also send commands to the model to update the model's state (e.g., editing a document).</p>
@@ -401,7 +401,7 @@ Add the following to perform actions for the icons are availed in RadialMenu,
 {% highlight javascript %}
 
     <script type="text/javascript">
-        var rteObj, rteEle = $("#rteSample2"), radialEle = $('#nestedradialmenu');
+        var rteObj, rteElement = $("#rteSample2"), radialElement = $('#nestedRadialMenu');
         $(function () {
             if (!(ej.browserInfo().name == "msie" && ej.browserInfo().version < 9)) {
                 $("#radialtarget2").parent().css("position", "relative");
@@ -411,7 +411,7 @@ Add the following to perform actions for the icons are availed in RadialMenu,
             }
             $(window).resize(function(){
                 if(ej.isMobile() && ej.isPortrait())
-                    $('#nestedradialmenu').css({ "left": 25 })
+                    $('#nestedRadialMenu').css({ "left": 25 })
             });
         });
         function rteCreate(e) {
@@ -424,11 +424,11 @@ Add the following to perform actions for the icons are availed in RadialMenu,
             // To set Radial Menu position within target
                 x = iframeX > target.width() - radialRadius ? target.width() - radialDiameter : (iframeX > radialRadius ? iframeX - radialRadius : 0),
                 y = iframeY > target.height() - radialRadius ? target.height() - radialDiameter : (iframeY > radialRadius ? iframeY - radialRadius : 0);
-            radialEle.ejRadialMenu("setPosition", x, y);
+            radialElement.ejRadialMenu("setPosition", x, y);
             $('iframe').contents().find('body').blur();
         }
         function rteChange(e) {
-            radialEle.ejRadialMenu("enableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
         }
         function copy(e) {
             rteObj.executeCommand("copy");
@@ -437,7 +437,7 @@ Add the following to perform actions for the icons are availed in RadialMenu,
             if (ej.browserInfo().name == 'msie')
                 rteObj.executeCommand("paste");
             else
-                rteObj._openAlert("Your browser doesn't support direct access to the clipboard. Please use the Ctrl+V keyboard shortcut instead of paste opertion.");
+                rteObj._openAlert("Your browser doesn't support direct access to the clipboard. Please use the Ctrl+V keyboard shortcut instead of paste operation.");
         }
         function font(e) {
             if (!ej.isNullOrUndefined(e.value))
@@ -465,13 +465,13 @@ Add the following to perform actions for the icons are availed in RadialMenu,
         }
         function undo(e) {
             rteObj.executeCommand("undo");
-            radialEle.ejRadialMenu("disableItem", "Undo");
-            radialEle.ejRadialMenu("enableItem", "Redo");
+            radialElement.ejRadialMenu("disableItem", "Undo");
+            radialElement.ejRadialMenu("enableItem", "Redo");
         }
         function redo(e) {
             rteObj.executeCommand("redo");
-            radialEle.ejRadialMenu("disableItem", "Redo");
-            radialEle.ejRadialMenu("enableItem", "Undo");
+            radialElement.ejRadialMenu("disableItem", "Redo");
+            radialElement.ejRadialMenu("enableItem", "Undo");
         }
         function unorderedList(e) {
             rteObj.executeCommand("insertunorderedList");
@@ -483,7 +483,7 @@ Add the following to perform actions for the icons are availed in RadialMenu,
 
 {% endhighlight %}
 
-Finaly add the following in your styles section,
+Finally add the following in your styles section,
 
 {% highlight css %}
 
@@ -501,4 +501,4 @@ Finaly add the following in your styles section,
 
 The following screenshot illustrates the output.
 
-![](item-customization_images\img4.png)
+![Slider Customization in Radial Menu Items](item-customization_images\img4.png)

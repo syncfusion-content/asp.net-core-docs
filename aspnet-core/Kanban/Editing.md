@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Editing | Kanban | ASP.NET Core | Syncfusion
+title: Syncfusion Kanban Editing
 description: Editing
 documentation: ug
 control: Kanban
-platform: asp.net-core
+platform: aspnet-core
 ---
 
 # Editing
@@ -21,9 +21,9 @@ N> In Kanban, the `primary key` column will be automatically set to `read only` 
 
 ## Configuring Edit Items
 
-You need to configure the list of data source fields that are allowable in editing state using `kanbanedit-item` property. The `field` property of `kanbanedit-item` needs to be mapped with data source fields.
+You need to configure the list of data source fields that are allowable in editing state using [`kanbanedit-item`] property. The `field` property of [`kanbanedit-item`] needs to be mapped with data source fields.
 
-You can map the data source field as title to edit form using `title` property of `kanbanfield`. By default, it’s mapped with `primary-key`.
+You can map the data source field as title to edit form using `title` property of [`kanbanfield`]. By default, it’s mapped with `primary-key`.
 
 The following code example describes the above behavior.
 
@@ -118,7 +118,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img1.png)
+![Configuring Edit Items](Editing_images/editing_img1.png)
 
 ## Edit modes
 
@@ -221,15 +221,15 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img2.png)
+![Dialog](Editing_images/editing_img2.png)
 
 ### Dialog Template Form
 
 You can edit any of the fields pertaining to a single card of data and apply it to a template so that the same format is applied to all the other cards that you may edit later. 
 
-Using this template support, you can edit the fields that are not bound to `kanbanedit-items`.
+Using this template support, you can edit the fields that are not bound to [`kanbanedit-items`].
 
-To edit the cards using Dialog template form, set `edit-mode` as `DialogTemplate` and specify the template id to `DialogTemplate` property of `kanbanedit-settings`.
+To edit the cards using Dialog template form, set `edit-mode` as `DialogTemplate` and specify the template id to `DialogTemplate` property of [`kanbanedit-settings`].
 
 N> 1. `value` attribute is used to bind the corresponding field value while editing.
 N> 2. `name` attribute is used to get the changed field values while save the edited card.
@@ -385,7 +385,7 @@ While using template, you can change the elements that are defined in the `templ
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img3.png)
+![Dialog Template Form](Editing_images/editing_img3.png)
 
 ### External Form
 
@@ -482,11 +482,11 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img11.png)
+![External Form](Editing_images/editing_img11.png)
 
 Form Position:
 
-Form Position can be customized by setting the `form-position` property of `kanbanedit-settings` as "Right" or "Bottom".
+Form Position can be customized by setting the `form-position` property of [`kanbanedit-settings`] as "Right" or "Bottom".
 
 The following code example describes the above behavior.
 
@@ -583,7 +583,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img12.png)
+![Form Position](Editing_images/editing_img12.png)
 
 ### External Template Form
 
@@ -591,7 +591,7 @@ You can edit any of the fields pertaining to a single card of data and apply it 
 
 Using this template support, you can edit the fields that are not bound to Kanban Edit Items.
 
-To edit the cards using External template form, set `edit-mode` as `ExternalFormTemplate` and specify the template id to `ExternalFormTemplate` property of `kanbanedit-settings`.
+To edit the cards using External template form, set `edit-mode` as `ExternalFormTemplate` and specify the template id to `ExternalFormTemplate` property of [`kanbanedit-settings`].
 
 While using template, you can change the elements that are defined in the template, to appropriate Syncfusion JS controls based on the column type. This can be achieved by using `action-complete` event of Kanban.
 
@@ -746,12 +746,12 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img13.png)
+![External Template Form](Editing_images/editing_img13.png)
 
 
 ### Cell edit type and its params
 
-The edit type of bound column can be customized using `edit-type` property of `kanbancolumns`. The following Essential JavaScript controls are supported built-in by `edit-type`. You can set the `edit-type` based on specific data type of the column.
+The edit type of bound column can be customized using `edit-type` property of [`kanbancolumns`]. The following Essential JavaScript controls are supported built-in by `edit-type`. You can set the `edit-type` based on specific data type of the column.
 
 <table>
 <tr>
@@ -926,7 +926,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img4.png)
+![Cell edit type and its params](Editing_images/editing_img4.png)
 
 ## Column Validation
 
@@ -940,7 +940,7 @@ N> If you enabled the unobtrusive option, then need to refer the jquery.validate
 
 ### jQuery Validation
 
-You can set validation rules using `validation-rules` property of `kanbancolumns`. The following are jQuery validation methods.
+You can set validation rules using `validation-rules` property of [`kanbancolumns`]. The following are jQuery validation methods.
 
 
 #### List of jQuery validation methods
@@ -1113,5 +1113,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/editing_img5.png)
+![Column Validation](Editing_images/editing_img5.png)
 
