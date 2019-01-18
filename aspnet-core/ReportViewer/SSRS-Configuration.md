@@ -39,5 +39,5 @@ public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
 N> DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports.
 
-N> Pure ASP.Net Core project will support only SSRS 2017 server and ASP.NET Core project with the combination .Net framework will render report from all SSRS server version.  
+N> Pure ASP.Net Core project will support only SSRS 2017 server and ASP.NET Core project with the combination .NET framework will render report from all SSRS server version.  
 
