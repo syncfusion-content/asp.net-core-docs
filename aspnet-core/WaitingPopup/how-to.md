@@ -2,7 +2,7 @@
 layout: post
 title: How to section WaitingPopup control for Syncfusion ASP.NET CORE
 description: How to
-platform: core
+platform: aspnet-core
 control: WaitingPopup
 documentation: ug
 keywords: WaitingPopup, hide, download
@@ -29,15 +29,15 @@ The following code illustrates on how to show and hide WaitingPopup during an ex
            $(temp.render()).ejDialog({ title: "Master Tracker Filters", width: "450px" });
         }
        function runTracker() {
-            var popupobj = $("#customWaiting").data("ejWaitingPopup");
-            popupobj.show();
+            var instance = $("#customWaiting").data("ejWaitingPopup");
+            instance.show();
         $.ajax({
             type: "POST",
             url: "MasterTracker",
             data: { "Id": "test" },
             success: function (data) {
-                var popupobj = $("#customWaiting").data("ejWaitingPopup");
-                popupobj.hide();
+                var instance = $("#customWaiting").data("ejWaitingPopup");
+                instance.hide();
                 if (data.fileName != "") {
                     window.location.href = "@Url.RouteUrl(new {Controller = "Dialog", Action = "Download"})/?file=" + data.fileName;
                 }
