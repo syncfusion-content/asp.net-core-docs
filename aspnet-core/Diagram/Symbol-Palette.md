@@ -293,4 +293,4 @@ You can show/hide the symbol text by using the `ShowPaletteItemText` property of
 
 {% endhighlight %}
 
-To explore the properties of symbol palette, refer to [Symbol Palette Properties](/api/aspnet/ejsymbolpalette#members "Symbol Palette Properties").
+To explore the properties of symbol palette, refer to [Symbol Palette Properties](https://help.syncfusion.com/cr/cref_files/aspnetmvc/Syncfusion.EJ~Syncfusion.JavaScript.DataVisualization.SymbolPalettePropertiesBuilder_members.html "Symbol Palette Properties").
