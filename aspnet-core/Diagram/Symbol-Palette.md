@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET Core Diagram Control | Symbolpalette | Syncfusion.
-description: "This page explains how to use Symbol palette and explains about the features. Also explains about how to integrate symbol palette with diagram control"
+description: "This page explains how to use symbol palette and its features. Also explains about how to work with diagram control along with the symbol palette"
 platform: aspnet-core
 control: Diagram
 documentation: ug
@@ -99,7 +99,7 @@ Also, you can embed any HTML element into a palette header by defining the Scri
 
 The following image shows the customized palette header
 
-![Customizing palettes Header](Symbol-Palette_images/customizethepaletteheader_img1.png)
+![Customizing palettes header](Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 
@@ -182,9 +182,9 @@ The `EnableScale` property of the paletteItem enables you to customize the size 
 
 {% endhighlight %}
 
-![Customizing Symbols size ](Symbol-Palette_images/Symbol-Palette_img1.png)
+![Customizing symbols size ](Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![Symbol size Customization regardless of the precedence](Symbol-Palette_images/Symbol-Palette_img2.png)
+![Symbol size customization regardless of the precedence](Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -212,7 +212,7 @@ You can customize the preview size of the individual palette items. The `Palette
 
 {% endhighlight %}
 
-![Customizing Previewing size of the palette items](Symbol-Palette_images/Symbol-Palette_img4.png)
+![Customizing previewing size of the palette items](Symbol-Palette_images/Symbol-Palette_img4.png)
 
 You can also customize the preview size of the all palette items. The `PreviewWidth` and `PreviewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
