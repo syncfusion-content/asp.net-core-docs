@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding the nodes/connectors to the symbol palette.
+title: Syncfusion | Symbolpalette.
 description: "The symbol palette displays a collection of palettes which shows a set of nodes and connectors."
 platform: aspnet-core
 control: Diagram
