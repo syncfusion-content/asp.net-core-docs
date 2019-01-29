@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET Core Diagram Control | Symbolpalette | Syncfusion.
-description: "This page explains about  symbol palette and adding the symbol palette with the diagram along with the  working principles"
+description: "This page explains how to use Symbol palette and explains about the features. Also explains about how to integrate symbol palette with diagram control"
 platform: aspnet-core
 control: Diagram
 documentation: ug
