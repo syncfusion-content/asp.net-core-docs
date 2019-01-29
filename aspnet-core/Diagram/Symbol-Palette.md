@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Define and add the frequently used nodes/connectors to the symbol palette.
-description: How to add shapes to the symbol palette and drag and drop them over the drawing area?
+title: Adding the nodes/connectors to the symbol palette.
+description: "The symbol palette displays a collection of palettes which shows a set of nodes and connectors."
 platform: aspnet-core
 control: Diagram
 documentation: ug
@@ -57,7 +57,7 @@ You can add any number of palettes to the `Palettes` collection of the symbol pa
 
 The following image shows the symbol palette with multiple palette Items.
 
-![](Symbol-Palette_images/Symbol-Palette_img3.png)
+![SymbolPalette](Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ### Customize the Palette Header
 
@@ -99,7 +99,7 @@ Also, you can embed any HTML element into a palette header by defining the Scri
 
 The following image shows the customized palette header
 
-![](Symbol-Palette_images/customizethepaletteheader_img1.png)
+![SymbolPalette](Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 
@@ -182,9 +182,9 @@ The `EnableScale` property of the paletteItem enables you to customize the size 
 
 {% endhighlight %}
 
-![](Symbol-Palette_images/Symbol-Palette_img1.png)
+![SymbolPalette](Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![](Symbol-Palette_images/Symbol-Palette_img2.png)
+![SymbolPalette](Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -212,7 +212,7 @@ You can customize the preview size of the individual palette items. The `Palette
 
 {% endhighlight %}
 
-![](Symbol-Palette_images/Symbol-Palette_img4.png)
+![SymbolPalette](Symbol-Palette_images/Symbol-Palette_img4.png)
 
 You can also customize the preview size of the all palette items. The `PreviewWidth` and `PreviewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
@@ -232,7 +232,7 @@ You can also customize the preview size of the all palette items. The `PreviewWi
 
 {% endhighlight %}
 
-![](Symbol-Palette_images/Symbol-Palette_img5.png)
+![SymbolPalette](Symbol-Palette_images/Symbol-Palette_img5.png)
 
 Symbol palette allows to sets the offset of the dragging helper relative to the mouse cursor.
 
@@ -265,7 +265,7 @@ Symbol palette allows to sets the offset of the dragging helper relative to the 
 
 {% endtabs %}  
 
-![](Symbol-Palette_images/Symbol-Palette_img6.png)
+![SymbolPalette](Symbol-Palette_images/Symbol-Palette_img6.png)
 
 
 Symbol preview size will be set based on the following precedence.
