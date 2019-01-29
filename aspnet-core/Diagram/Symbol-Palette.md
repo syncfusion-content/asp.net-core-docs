@@ -182,9 +182,9 @@ The `EnableScale` property of the paletteItem enables you to customize the size 
 
 {% endhighlight %}
 
-![Customizing Symbols size](Symbol-Palette_images/Symbol-Palette_img1.png)
+![Customizing Symbols size ](Symbol-Palette_images/Symbol-Palette_img1.png)
 
-![Symbol size Customization](Symbol-Palette_images/Symbol-Palette_img2.png)
+![Symbol size Customization regardless of the precedence](Symbol-Palette_images/Symbol-Palette_img2.png)
 
 
 ## Symbol Previews
@@ -212,7 +212,7 @@ You can customize the preview size of the individual palette items. The `Palette
 
 {% endhighlight %}
 
-![Previewing symbols](Symbol-Palette_images/Symbol-Palette_img4.png)
+![Customizing Previewing size of the palette items](Symbol-Palette_images/Symbol-Palette_img4.png)
 
 You can also customize the preview size of the all palette items. The `PreviewWidth` and `PreviewHeight` property of SymbolPalette enables you to define the preview size to all the symbol palette items. The following code example illustrates how to change the preview size of a symbol palette items.
 
