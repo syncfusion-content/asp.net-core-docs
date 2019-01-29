@@ -99,7 +99,7 @@ Also, you can embed any HTML element into a palette header by defining the Scri
 
 The following image shows the customized palette header
 
-![Customizing palette's Header](Symbol-Palette_images/customizethepaletteheader_img1.png)
+![Customizing palettes Header](Symbol-Palette_images/customizethepaletteheader_img1.png)
 
 ## Add symbols to palette
 
