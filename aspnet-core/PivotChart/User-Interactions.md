@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Interactions
+title: User-Interactions | PivotChart | ASP.NET Core | Syncfusion
 description: user interactions
 platform: aspnet-core
 control: PivotChart
@@ -27,7 +27,7 @@ Tooltips for the data points can be enabled by using the **"visible"** option of
 
 {% endhighlight %}
 
-![](User-Interactions_images/tooltip.png) 
+![Tooltip in ASP NET Core pivot chart control](User-Interactions_images/tooltip.png)
 
 ### Tooltip template
 
@@ -55,7 +55,7 @@ HTML elements can be displayed in the tooltip by using the `tooltip-template` op
 
 {% endhighlight %}
 
-![](User-Interactions_images/tooltiptemplate.png) 
+![Tooltip template in ASP NET Core pivot chart control](User-Interactions_images/tooltiptemplate.png)
 
 ### Tooltip customization
 
@@ -70,9 +70,9 @@ By using the `fill` and `border` properties of the tooltip, you can customize it
     <e-size width="950px" height="460px"></e-size>
 </ej-pivot-chart>
 
-{% endhighlight %}   
+{% endhighlight %}
 
-![](User-Interactions_images/tooltipcustomization.png) 
+![Tooltip customization in ASP NET Core pivot chart control](User-Interactions_images/tooltipcustomization.png)
 
 ### Tooltip with rounded corners
 
@@ -88,9 +88,9 @@ The tooltip properties `rx` and `ry` are used to customize its corner radius.
     <e-size width="950px" height="460px"></e-size>
 </ej-pivot-chart>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/tooltiprouded.png) 
+![Tooltip with rounded corners in ASP NET Core pivot chart control](User-Interactions_images/tooltiprouded.png)
 
 ## Marker and crosshair
 
@@ -101,7 +101,7 @@ In the pivot chart, you can customize the marker `shape` with the following symb
 * Rectangle
 * Circle
 * Cross
-* Diamond 
+* Diamond
 * Pentagon
 * Hexagon
 * Star
@@ -119,11 +119,11 @@ In the pivot chart, you can customize the marker `shape` with the following symb
         for (var seriescount = 0; seriescount < this.model.series.length; seriescount++)
             this.model.series[seriescount].marker.shape = "Triangle";
     }
-</script>                                        
+</script>
 
 {% endhighlight %}
 
-![](User-Interactions_images/marker.png) 
+![Marker customization in ASP NET Core pivot chart control](User-Interactions_images/marker.png)
 
 ## Highlight
 
@@ -141,13 +141,13 @@ The pivot chart provides highlighting support for the series and data points by 
             this.model.series[seriescount].highlightSettings.enable = true
     }
 </script>
-                                         
-{% endhighlight %} 
+
+{% endhighlight %}
 
 ### Highlight mode
 
 You can set three different modes for highlighting data points and series by using the `mode` property of the `highlightSettings`.
- 
+
 * series
 * points
 * cluster
@@ -165,11 +165,11 @@ You can set three different modes for highlighting data points and series by usi
             this.model.series[seriescount].highlightSettings.mode = "series";
         }
     }
-</script>                                          
+</script>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/highlightmode.png) 
+![Highlight mode in ASP NET Core pivot chart control](User-Interactions_images/highlightmode.png)
 
 ### Customize the highlight styles
 
@@ -190,11 +190,11 @@ To customize the highlighted series, use the `border.color`, `border.width`, and
             this.model.series[seriescount].highlightSettings.border.color = "red";
         }
     }
-</script>                                        
+</script>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/customizehighlight.png) 
+![Highlight style in ASP NET Core pivot chart control](User-Interactions_images/customizehighlight.png)
 
 ### Patterns to highlight
 
@@ -234,11 +234,11 @@ The pivot chart provides pattern support for highlighting the data by setting an
             this.model.series[seriescount].highlightSettings.pattern = "chessboard";
         }
     }
-</script>                                    
+</script>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](User-Interactions_images/patternhighlight.png) 
+![Highlight settings in ASP NET Core pivot chart control](User-Interactions_images/patternhighlight.png)
 
 ## Selection
 
@@ -256,7 +256,7 @@ The pivot chart provides selection support for series and data points by clickin
             this.model.series[seriescount].selectionSettings.enable = true;
         }
     }
-</script>                                          
+</script>
 
 {% endhighlight %}
 
@@ -281,11 +281,11 @@ You can set three different selection modes for highlighting the data points and
             this.model.series[seriescount].selectionSettings.mode = "series";
         }
     }
-</script>                                       
+</script>
 
 {% endhighlight %}
 
-![](User-Interactions_images/selectionmode.png) 
+![Selection mode in ASP NET Core pivot chart control](User-Interactions_images/selectionmode.png)
 
 ### Customize the selection styles
 
@@ -305,11 +305,11 @@ To customize the selection styles, use the `border.color`, `border.width`, and `
             this.model.series[seriescount].selectionSettings.border.color = "red";
         }
     }
-</script>                                          
+</script>
 
 {% endhighlight %}
 
-![](User-Interactions_images/customizeselection.png) 
+![Selection style in ASP NET Core pivot chart control](User-Interactions_images/customizeselection.png)
 
 ### Patterns for selection
 
@@ -348,8 +348,8 @@ The pivot chart provides pattern support for selecting data by setting an approp
             this.model.series[seriescount].selectionSettings.pattern = "chessboard";
         }
     }
-</script>                                         
+</script>
 
 {% endhighlight %}
 
-![](User-Interactions_images/patternselecion.png) 
+![Selection settings in ASP NET Core pivot chart control](User-Interactions_images/patternselecion.png)

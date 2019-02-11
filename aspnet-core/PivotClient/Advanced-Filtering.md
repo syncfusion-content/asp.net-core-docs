@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Filtering and Soritng
+title: Advanced Filtering | PivotClient | ASP.NET Core | Syncfusion
 description: advanced filtering and sorting
 platform: aspnet-core
 control: PivotClient
@@ -28,20 +28,20 @@ You can enable the "Advanced Filtering and Sorting" option in the pivot client b
 
 Sorting provides an option to sort the members of a field in the ascending or descending order.
 
-![](AdvanceFiltering_images/sorting.png)
+![Sorting options in ASP NET Core pivot client control](AdvanceFiltering_images/sorting.png)
 
 ## Label filtering
 
 Label filtering provides an option to filter the members of a field purely based on their caption.
 
-![](AdvanceFiltering_images/filtering.png)
+![Label filtering options in ASP NET Core pivot client control](AdvanceFiltering_images/filtering.png)
 
-![](AdvanceFiltering_images/filtering_dialog.png)
+![Label filter dialog in ASP NET Core pivot client control](AdvanceFiltering_images/filtering_dialog.png)
 
 ## Value filtering
 
-Value filtering provides an option to filter members based on the total values of the appropriate measure between the members of the level. 
+Value filtering provides an option to filter members based on the total values of the appropriate measure between the members of the level.
 
-![](AdvanceFiltering_images/valuefilter.png)
+![Value filtering options in ASP NET Core pivot client control](AdvanceFiltering_images/valuefilter.png)
 
-![](AdvanceFiltering_images/valuefilter_dialog.png)
+![Value filter dialog in ASP NET Core pivot client control](AdvanceFiltering_images/valuefilter_dialog.png)

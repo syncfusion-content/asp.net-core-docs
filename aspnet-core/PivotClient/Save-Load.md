@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save and Load Report
+title: Save and Load Report | PivotClient | ASP.NET Core | Syncfusion
 description: save and load report
 platform: aspnet-core
 control: PivotClient
@@ -21,7 +21,7 @@ You can save and load the report in two ways:
 You can store the report collection of pivot client to database by using the `save-report` event in the pivot client.
 
 N> By default, the online hosted URL link is used for saving the report to database. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. The “ejServices” folder is available in the below installed location.
-Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices 
+Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices
 Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\ejservices
 
 {% highlight CSHTML %}
@@ -69,7 +69,7 @@ You can store the report collection of the pivot client to local storage by sett
 You can load the stored report collection of the pivot client from database by using the `fetch-report`  and `load-report` events in the pivot client.
 
 N> By default, the online hosted URL link is used to fetch and load the report from the database. If you have installed Essential Studio, then you can provide the URL link by hosting “ejServices” in IIS. The “ejServices” folder is available in the below installed location.
-Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices 
+Location:  $system drive:\Users\$UserName#\AppData\Local\Syncfusion\EssentialStudio\$Version# \JavaScript\ejservices
 Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\ejservices
 
 {% highlight CSHTML %}
@@ -80,7 +80,7 @@ Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseve
 
 <script>
     function reportSettings(args) {
-        
+
         if (args.fetchReportSetting)
             return args.fetchReportSetting.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap";//you can provide the hosted url link to fetch report from DB here
 
@@ -106,9 +106,9 @@ You can load the stored report collection of the pivot client from local storage
         if ((localStorage.pivotClientRPTCollection != "" && !ej.isNullOrUndefined(localStorage.pivotClientRPTCollection))) {
             reportCollection = JSON.parse(localStorage.pivotClientRPTCollection);
         }
-        if (args.fetchReportSetting) 
+        if (args.fetchReportSetting)
             args.fetchReportSetting.reportList = $.map(reportCollection, function (item, index) { return item.reportName; }).join("__");
-        else if (args.loadReportSetting) 
+        else if (args.loadReportSetting)
             args.loadReportSetting.reportCollection = $.map(reportCollection, function (item, index) { if (item.reportName == args.loadReportSetting.selectedReport) return item.reportCol; });
     }
 </script>

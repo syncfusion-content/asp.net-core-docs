@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Member Editor
+title: Member Editor | PivotGrid | ASP.NET Core | Syncfusion
 description: Member editor in pivot grid control
 platform: aspnet-core
 control: PivotGrid
@@ -51,7 +51,7 @@ Following are the navigation options available in the member editor pager:
 * Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric value.
 
 
-![Paging in member editor](Member_Editor_images/member_editor_paging.png)
+![Paging support in member editor of ASP NET Core pivot grid control](Member_Editor_images/member_editor_paging.png)
 
 ## Member editor - Sorting
 
@@ -67,6 +67,6 @@ You can enable the member editor sorting in the pivot grid control by setting th
 
 {% endhighlight %}
 
-![Field members sorted in ascending order](Member_Editor_images/member_editor_sorting_ascending.png)
+![Ascending order of field items in ASP NET Core pivot grid control](Member_Editor_images/member_editor_sorting_ascending.png)
 
-![Field members sorted in descending order](Member_Editor_images/member_editor_sorting_descending.png)
+![Descending order of field items in ASP NET Core pivot grid control](Member_Editor_images/member_editor_sorting_descending.png)

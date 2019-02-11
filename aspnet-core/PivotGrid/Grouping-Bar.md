@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Bar
+title: Grouping Bar | PivotGrid | ASP.NET Core | Syncfusion
 description: grouping bar
 platform: aspnet-core
 control: PivotGrid
@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping bar
 
-## Initialization 
+## Initialization
 Grouping bar allows you to dynamically alter the report by filter, sort, and remove operations in the pivot grid control. Based on the relational data source and report bound to the pivot grid control, the grouping bar will be automatically populated. You can enable this option in the pivot grid by setting the `enable-grouping-bar` property to true.
 
 ### Relational
@@ -37,7 +37,7 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
 
 {% endhighlight %}
 
-![](Grouping-Bar_images/realtionalclientGB.png)
+![Grouping bar support in JQuery pivot grid control with relational client mode](Grouping-Bar_images/realtionalclientGB.png)
 
 ### OLAP
 
@@ -63,22 +63,22 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
 
 {% endhighlight %}
 
-![](Grouping-Bar_images/OLAPClientGB.png)
+![Grouping bar support in JQuery pivot grid control with OLAP client mode](Grouping-Bar_images/OLAPClientGB.png)
 
 ## Searching values
 The search option available in the grouping bar allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
-![](Grouping-Bar_images/filter.png)
+![Member editor dialog in ASP NET Core pivot grid control](Grouping-Bar_images/filter.png)
 
-![](Grouping-Bar_images/groupingbar-search.png)
+![Searching in ASP NET Core pivot grid control](Grouping-Bar_images/groupingbar-search.png)
 
 ## Filtering values
 
 The filtering option available in the grouping bar allows you to select a specific set of values that should be displayed in the pivot grid control. At least, one value should be present in checked state while filtering, otherwise the OK button will be disabled.
 
-![](Grouping-Bar_images/filter.png)
+![Member editor in ASP NET Core pivot grid control](Grouping-Bar_images/filter.png)
 
-![](Grouping-Bar_images/filter1.png)
+![Filtering in ASP NET Core pivot grid control](Grouping-Bar_images/filter1.png)
 
 ## Sorting values
 
@@ -86,14 +86,14 @@ The sorting option available in grouping bar allows you to arrange headers in th
 
 N> Sorting option is available for only the relational data source.
 
-![](Grouping-Bar_images/sort.png)
+![Sorting icon in ASP NET Core pivot grid control](Grouping-Bar_images/sort.png)
 
-![](Grouping-Bar_images/sort-grid.png)
+![Sorted results in ASP NET Core pivot grid control](Grouping-Bar_images/sort-grid.png)
 
 ## Removing field
 
 The remove option available in the grouping bar allows you to completely remove a specific field from the pivot grid control. The remove operation can be achieved by clicking the remove icon available in each field or by dragging and dropping the field out of the grouping bar region.
 
-![](Grouping-Bar_images/remove.png)
+![Remove icon in ASP NET Core pivot grid control](Grouping-Bar_images/remove.png)
 
-![](Grouping-Bar_images/remove-grid.png)
+![Removed items in ASP NET Core pivot grid control](Grouping-Bar_images/remove-grid.png)

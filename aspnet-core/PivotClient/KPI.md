@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key-Performance-Indicator-KPI
+title: KPI | PivotClient | ASP.NET Core | Syncfusion
 description: key performance indicator (KPI)
 platform: aspnet-core
 control: PivotClient
@@ -44,5 +44,5 @@ The **“KpiElements”** class in the OLAP base library holds the KPI name and 
 
 {% endhighlight %}
 
-![](KPI_images/clientmode-kpi.png)
+![KPI in ASP NET Core pivot client control](KPI_images/clientmode-kpi.png)
 

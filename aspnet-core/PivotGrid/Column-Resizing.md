@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Column Resizing
+title:  Column Resizing | PivotGrid | ASP.NET Core | Syncfusion
 description: column resizing
 platform: aspnet-core
 control: PivotGrid
@@ -17,6 +17,6 @@ You can enable column resizing option in the pivot grid by setting the `enable-c
 
 <ej-pivot-grid id="PivotGrid1" enable-column-resizing="true"></ej-pivot-grid>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](Column-Resizing_images/columnresizing.png)
+![Column resizing in ASP NET Core pivot grid control](Column-Resizing_images/columnresizing.png)

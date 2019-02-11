@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Field
+title: Calculated Field | PivotGrid | ASP.NET Core | Syncfusion
 description: calculated field
 platform: aspnet-core
 control: PivotGrid
@@ -16,7 +16,7 @@ The pivot grid provides support to insert a new calculated field based on the ex
 ### Through UI
 To insert a new calculated field, open the Calculated Field dialog by using the grouping bar context menu. You can define "Name" for the new calculated field, and "Formula" can be entered by inserting the required fields through the fields section. For inserting numbers and operators, you can use formula pop-up as shown in the following screenshot:
 
-![](Calculated-Field_images/Calculated-Field-Popup.png)
+![Calculated field dialog in ASP NET Core pivot grid control](Calculated-Field_images/Calculated-Field-Popup.png)
 
 Click **Add** for adding the respective calculated field, and click **OK** to populate the pivot grid control.
 
@@ -43,4 +43,4 @@ For client mode, the calculated field can be created at code-behind by defining 
 
 {% endhighlight %}
 
-![](Calculated-Field_images/Calculated-Field1.png)
+![ASP NET Core pivot grid control with user-defined field, aka calculated field](Calculated-Field_images/Calculated-Field1.png)

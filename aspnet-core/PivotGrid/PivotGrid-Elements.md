@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotGrid Elements
+title: PivotGrid Elements | PivotGrid | ASP.NET Core | Syncfusion
 description: pivotGrid elements
 platform: aspnet-core
 control: PivotGrid
@@ -18,7 +18,7 @@ The pivot grid control supports hyperlink option to link the data for each indiv
 * **enable-value-cell-hyperlink**: Enables hyperlink for the value cell.
 
 Also, hyperlink option provides separate events for row header, column header, value, and summary cells as mentioned below:
- 
+
 * **column-header-hyperlink-click**: Returns column header information through the event by clicking the hyperlink.
 * **row-header-hyperlink-click**: Returns row header information through the event by clicking the hyperlink.
 * **summary-cell-hyperlink-click**: Returns summary cell information through the event by clicking the hyperlink.
@@ -38,7 +38,7 @@ Also, hyperlink option provides separate events for row header, column header, v
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/hyperlink.png)
+![Hyperlink in ASP NET Core pivot grid control](PivotGrid-Elements_images/hyperlink.png)
 
 ## Selection
 You can select a particular range of value cells from the pivot grid and manipulate/display them. The cell selection is applicable only for value cells and you can enable this functionality by setting the `EnableCellSelection` property to true.
@@ -49,7 +49,7 @@ The **"CellSelection"** event will be triggered as soon as the selection process
 
 <ej:PivotGrid ID="PivotGrid1" runat="server" EnableCellSelection="true" >
     <ClientSideEvents CellSelection="valueCellClick"/>
-</ej:PivotGrid> 
+</ej:PivotGrid>
 
 <ej-pivot-grid id="PivotGrid1" enable-cell-selection="true" cell-selection="valueCellClick">
 </ej-pivot-grid>
@@ -65,7 +65,7 @@ The **"CellSelection"** event will be triggered as soon as the selection process
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/cellselection.png)
+![Cell selection in ASP NET Core pivot grid control](PivotGrid-Elements_images/cellselection.png)
 
 ## Cell context
 The cell context allows you to perform any custom operation by right-clicking the cell. For example, you can create and display the context menu by right-clicking the cell.
@@ -104,11 +104,11 @@ The conditional formatting allows you to highlight the particular cells with cer
 
 {% endhighlight %}
 
-![](PivotGrid-Elements_images/conditional.png)
+![ASP NET Core pivot grid control with conditional formatting](PivotGrid-Elements_images/conditional.png)
 
 ### Export
 
-You can export the pivot grid with highlighted particular cells along with its formatting styles. 
+You can export the pivot grid with highlighted particular cells along with its formatting styles.
 
 Limitations for Word:
 
@@ -132,4 +132,4 @@ The following border styles are alone supported:
 
 Also, the border size is not supported.
 
-![](PivotGrid-Elements_images/conditional_export.png)
+![Excel exporting with conditional formatting in ASP NET Core pivot grid control](PivotGrid-Elements_images/conditional_export.png)
