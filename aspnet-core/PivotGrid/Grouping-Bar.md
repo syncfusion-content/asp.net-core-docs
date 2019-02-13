@@ -37,7 +37,7 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
 
 {% endhighlight %}
 
-![Grouping bar support in JQuery pivot grid control with relational client mode](Grouping-Bar_images/realtionalclientGB.png)
+![Grouping bar support in ASp NET Core pivot grid control with relational client mode](Grouping-Bar_images/realtionalclientGB.png)
 
 ### OLAP
 
@@ -63,7 +63,7 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
 
 {% endhighlight %}
 
-![Grouping bar support in JQuery pivot grid control with OLAP client mode](Grouping-Bar_images/OLAPClientGB.png)
+![Grouping bar support in ASP NET Core pivot grid control with OLAP client mode](Grouping-Bar_images/OLAPClientGB.png)
 
 ## Searching values
 The search option available in the grouping bar allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
