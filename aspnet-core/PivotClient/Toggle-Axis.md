@@ -12,7 +12,7 @@ documentation: ug
 
 The toggle axis support swaps all axis elements between the column and row axes, thereby refreshing the pivot chart and pivot grid view. This can be achieved by using a toolbar icon.
 
-![Toggle axis icon in ASP NET Core pivot client control](Toggle-Axis_images/toggleaxisbefore.png)
+![Toggle axis in ASP NET Core pivot client control](Toggle-Axis_images/toggleaxisbefore.png)
 
 ![Toggled visiblity of elements in ASP NET Core pivot client control](Toggle-Axis_images/toggleaxisafter.png)
 

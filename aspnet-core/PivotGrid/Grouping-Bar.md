@@ -37,7 +37,7 @@ Grouping bar allows you to dynamically alter the report by filter, sort, and rem
 
 {% endhighlight %}
 
-![Grouping bar support in ASp NET Core pivot grid control with relational client mode](Grouping-Bar_images/realtionalclientGB.png)
+![Grouping bar support in ASP NET Core pivot grid control with relational client mode](Grouping-Bar_images/realtionalclientGB.png)
 
 ### OLAP
 
@@ -86,7 +86,7 @@ The sorting option available in grouping bar allows you to arrange headers in th
 
 N> Sorting option is available for only the relational data source.
 
-![Sorting icon in ASP NET Core pivot grid control](Grouping-Bar_images/sort.png)
+![Sorting in ASP NET Core pivot grid control](Grouping-Bar_images/sort.png)
 
 ![Sorted results in ASP NET Core pivot grid control](Grouping-Bar_images/sort-grid.png)
 
