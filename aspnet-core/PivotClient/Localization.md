@@ -644,7 +644,7 @@ N> Culture files are present under **"[installed drive]:\Users\[user name]\AppDa
 
 //1036 refers to "fr-FR" culture.
 <ej-pivot-client id="PivotClient1" locale="fr-FR">
-    <e-data-source catalog="Adventure Works DW 2008 SE" cube="Adventure Works" data="http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036">
+    <e-data-source catalog="Adventure Works DW 2008 SE" cube="Adventure Works" data="https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036">
         <e-pivot-rows>
             <e-row-field field-name="[Date].[Fiscal]"></e-row-field>
         </e-pivot-rows>

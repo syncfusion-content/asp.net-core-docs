@@ -256,7 +256,7 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 
 {% endhighlight %}
 
-![Report toolbar of ASP NET Core pivot client control](Layout-Customization_images/toolbarIconSettings1.png)
+![Report toolbar in ASP NET Core pivot client control](Layout-Customization_images/toolbarIconSettings1.png)
 
 The following screenshot shows after disabling the toolbar icons:
 

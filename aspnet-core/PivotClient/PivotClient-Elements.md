@@ -180,7 +180,7 @@ Member Editor is a dialog that displays the members of current hierarchy in a tr
 
 ![Member editor in ASP NET Core pivot client control](PivotClient-Elements_images/member editor.png)
 
-The “Check All” and “Uncheck All” option in the dialog allows you to select and unselect the entire nodes for filtering. To learn more details about filtering, [click here](http://help.syncfusion.com/aspnetmvc/pivotclient/olap-data-exploration#filtering-by-member).
+The “Check All” and “Uncheck All” option in the dialog allows you to select and unselect the entire nodes for filtering. To learn more details about filtering, [click here](https://help.syncfusion.com/aspnetmvc/pivotclient/olap-data-exploration#filtering-by-member).
 
 ## Toolbar
 
@@ -309,5 +309,5 @@ Select the required report from the report list. The selected report will be set
 
 ## Pivot grid and pivot chart
 
-The [pivot grid](http://help.syncfusion.com/aspnet-core/pivotgrid/overview) and [pivot chart](http://help.syncfusion.com/aspnet-core/pivotchart/overview) controls will be rendered with respect to the operations done at the axis element builder.
+The [pivot grid](https://help.syncfusion.com/aspnet-core/pivotgrid/overview) and [pivot chart](https://help.syncfusion.com/aspnet-core/pivotchart/overview) controls will be rendered with respect to the operations done at the axis element builder.
 

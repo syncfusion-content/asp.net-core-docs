@@ -32,7 +32,7 @@ Make use of export with the client side JSON data. The control can be exported b
 
 <script type="text/javascript">
     function Export(args) {
-        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export"; //You can provide the hosted url link for exporting here.
+        args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export"; //You can provide the hosted url link for exporting here.
     }
 </script>
 
@@ -50,7 +50,7 @@ The document name to be exported can be customized. Following code sample illust
 
 <script type="text/javascript">
         function Export(args) {
-            args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+            args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
             args.fileName=" File name is customized here ";
         }
 </script>
@@ -73,7 +73,7 @@ N> By default the pivot chart will be exported in image format to an Excel docum
 
 <script type="text/javascript">
     function Export(args) {
-        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+        args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
         args.exportChartAsImage = false; //you can set the chart format here
     }
 </script>
@@ -96,7 +96,7 @@ You can add the title and description to the exporting document by using the tit
 
 <script type="text/javascript">
     function Exporting(args) {
-        args.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
+        args.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap/Export";
         args.url = "ExportPivotClient";
 
         //you can provide title and description here

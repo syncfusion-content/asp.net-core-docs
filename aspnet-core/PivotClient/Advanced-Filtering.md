@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Filtering | PivotClient | ASP.NET Core | Syncfusion
+title: Advanced Filtering | Sorting | ASP.NET Core | Syncfusion
 description: advanced filtering and sorting
 platform: aspnet-core
 control: PivotClient

@@ -33,7 +33,7 @@ Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseve
 <script>
     function saveReportSettings(args) {
         if(args.saveReportSettings)
-            return args.saveReportSetting.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap"; //You can provide the hosted URL link to save report in DB here.
+            return args.saveReportSetting.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap"; //You can provide the hosted URL link to save report in DB here.
     }
 </script>
 
@@ -82,10 +82,10 @@ Eg: C:\Users\UserName\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseve
     function reportSettings(args) {
 
         if (args.fetchReportSetting)
-            return args.fetchReportSetting.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap";//you can provide the hosted url link to fetch report from DB here
+            return args.fetchReportSetting.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap";//you can provide the hosted url link to fetch report from DB here
 
         else if (args.loadReportSetting)
-            return args.loadReportSetting.url = "http://js.syncfusion.com/ejservices/api/PivotClient/Olap";//you can provide the hosted url link to load report from DB here
+            return args.loadReportSetting.url = "https://js.syncfusion.com/ejservices/api/PivotClient/Olap";//you can provide the hosted url link to load report from DB here
     }
 </script>
 {% endhighlight %}
