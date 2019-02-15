@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | PivotChart | ASP.NET Core | Syncfusion
 description: export
 platform: aspnet-core
 control: PivotChart
@@ -291,16 +291,16 @@ public void ExportToImage()
 
 The following screenshot shows the pivot chart control exported to an Excel document:
 
-![Export-Excel](Export_images/Export_ExcelClient.png)
+![Excel exporting in ASP NET Core pivot chart control](Export_images/Export_ExcelClient.png)
 
 The following screenshot shows the pivot chart control exported to a PDF document:
 
-![Export-PDF](Export_images/Export_PDFClient.png)
+![PDF exporting in ASP NET Core pivot chart control](Export_images/Export_PDFClient.png)
 
 The following screenshot shows the pivot chart control exported to a Word document:
 
-![Export-Word](Export_images/Export_WordClient.png)
+![Word exporting in ASP NET Core pivot chart control](Export_images/Export_WordClient.png)
 
 The following screenshot shows the pivot chart control exported to a PNG format:
 
-![Export-Image](Export_images/Export_PNGClient.png)
+![PNG exporting in ASP NET Core pivot chart control](Export_images/Export_PNGClient.png)

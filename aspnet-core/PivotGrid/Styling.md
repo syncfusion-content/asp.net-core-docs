@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling
+title: Styling | PivotGrid | ASP.NET Core | Syncfusion
 description: styling
 platform: aspnet-core
 control: PivotGrid
@@ -31,7 +31,7 @@ By default, the pivot grid supports the following **17** different types of them
 You can customize the appearance of the following component manually:
 
 * Pivot grid
-* Grouping bar 
+* Grouping bar
 * Pivot table field list
 
 To change the appearance of the pivot grid, apply the following customized CSS:
@@ -67,7 +67,7 @@ To change the appearance of the pivot grid, apply the following customized CSS:
 
 {% endhighlight %}
 
-![](Styling_images/customtheme-pivotgrid.png)
+![Customization of ASP NET Core pivot grid cells](Styling_images/customtheme-pivotgrid.png)
 
 To change the appearance of the grouping bar, apply the following customized CSS:
 
@@ -81,7 +81,7 @@ To change the appearance of the grouping bar, apply the following customized CSS
    background: green;
 }
 .e-pivotgrid .e-pivotButton .e-btn.e-select, .e-pivotgrid .e-rows .e-pivotButton, .e-pivotgrid .values .e-pivotButton, .e-pivotgrid .columns .e-pivotButton, .e-pivotgrid .e-drag .e-pivotButton {
-   background: blanchedalmond;    
+   background: blanchedalmond;
 }
 .e-pivotgrid .colheader, .e-pivotgrid .rowheader {
    color: #5c5c5c;
@@ -96,7 +96,7 @@ To change the appearance of the grouping bar, apply the following customized CSS
 
 {% endhighlight %}
 
-![](Styling_images/customtheme-groupingbar.png)
+![Customization of ASP NET Core pivot grid grouping bar](Styling_images/customtheme-groupingbar.png)
 
 To change the appearance of the pivot table field list, apply the following customized CSS:
 
@@ -104,7 +104,7 @@ To change the appearance of the pivot table field list, apply the following cust
 
 .e-pivotschemadesigner, .e-pivotschemadesigner .e-fieldTable {
      background-color: white;
-     color: black;   
+     color: black;
 }
 .e-pivotschemadesigner .e-treeview .e-active {
      background: white;
@@ -122,8 +122,7 @@ To change the appearance of the pivot table field list, apply the following cust
 
 {% endhighlight %}
 
-![](Styling_images/customtheme-fieldist.png)
+![Customization of ASP NET Core pivot grid field list](Styling_images/customtheme-fieldist.png)
 
 You can also customize the appearance of the pivot component by using the theme studio utility. To know more about theme studio [click here](/aspnetmvc/pivotgrid/styling).
 
- 

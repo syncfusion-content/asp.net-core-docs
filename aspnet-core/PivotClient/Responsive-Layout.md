@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive Layout
+title: Responsive Layout | PivotClient | ASP.NET Core | Syncfusion
 description: responsive layout
 platform: aspnet-core
 control: PivotClient
@@ -19,4 +19,4 @@ The pivot client widget supports responsive rendering based on the target device
 
 {% endhighlight %}
 
-![](Responsive-Layout_images/responsive.png)
+![Responsive layout of ASP NET Core pivot client control](Responsive-Layout_images/responsive.png)

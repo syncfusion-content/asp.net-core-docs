@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions
+title: Dimensions | PivotChart | ASP.NET Core | Syncfusion
 description: dimensions
 platform: aspnet-core
 control: PivotChart
@@ -16,7 +16,7 @@ You can customize the pivot chart dimension by setting the width and height of t
 {% highlight cshtml %}
 
 <ej-pivot-chart id="PivotChart1">
-    //Set size to Chart container   
+    //Set size to Chart container
     <e-size width="80%" height="80%"></e-size>
 </ej-pivot-chart>
 <style>
@@ -35,7 +35,7 @@ You can customize the pivot chart dimension by setting the width and height of t
 {% highlight cshtml %}
 
 <ej-pivot-chart id="PivotChart1">
-    //Set size to Chart container   
+    //Set size to Chart container
     <e-size width="950px" height="540px"></e-size>
 </ej-pivot-chart>
 <style>
@@ -46,8 +46,8 @@ You can customize the pivot chart dimension by setting the width and height of t
 </style>
 
 {% endhighlight %}
- 
-![](Dimensions_images/Dimensions.png) 
+
+![ASP NET Core pivot chart control with specified size](Dimensions_images/Dimensions.png)
 
 ## Responsive
 
@@ -56,25 +56,25 @@ The pivot chart control supports responsive rendering based on the target device
 {% highlight cshtml %}
 
 <ej-pivot-chart id="PivotChart1" is-responsive="true">
-    //Set size to Chart container   
+    //Set size to Chart container
     <e-size width="950px" height="540px"></e-size>
 </ej-pivot-chart>
 <style>
     #PivotChart1 {
         min-width:525px;
         min-height:460px;
-        height: 460px; 
+        height: 460px;
         width: 100%;
     }
 </style>
 
 {% endhighlight %}
 
-![](Dimensions_images/NormalView.png)
+![ASP NET Core pivot chart with normal layout](Dimensions_images/NormalView.png)
 
 _Normal View_
 
-![](Dimensions_images/ResponsiveView.png)
+![ASP NET Core pivot chart with responsive layout](Dimensions_images/ResponsiveView.png)
 
 _ResponsiveView_
 

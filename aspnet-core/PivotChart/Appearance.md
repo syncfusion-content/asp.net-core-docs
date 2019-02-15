@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | PivotChart | ASP.NET Core | Syncfusion
 description: appearance
 platform: aspnet-core
 control: PivotChart
@@ -39,7 +39,7 @@ By using the `theme` property, you can set the desired theme in the pivot chart.
 
 {% endhighlight %}
 
-![](Appearance_images/themes.png)
+![ASP NET Core pivot chart control rendered with built-in theme](Appearance_images/themes.png)
 
 ## Pivot chart - area customization
 
@@ -54,7 +54,7 @@ To customize the pivot chart border, use `border` property in the pivot chart.
 
 {% endhighlight %}
 
-![](Appearance_images/bordercustomize.png)
+![Border customization for ASP NET Core pivot chart control](Appearance_images/bordercustomize.png)
 
 ### Animation
 
@@ -68,4 +68,4 @@ You can enable the animation by using the `enable-animation` property under `e-c
     <e-size width="100%" height="460px"></e-size>
 </ej-pivot-chart>
 
-{% endhighlight %}   
+{% endhighlight %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging | PivotClient | ASP.NET Core | Syncfusion
 description: paging
 platform: aspnet-core
 control: PivotClient
@@ -54,7 +54,7 @@ The following are the options available in the pager for navigating pages at run
 * Move next: Navigates to the next page from the current page.
 * Numeric box: Navigates to the desired page by entering an appropriate page number in the numeric box.
 
-![Paging](Paging_images/paging.png)
+![Paging in ASP NET Core pivot client control](Paging_images/paging.png)
 
 ## Using virtual scrolling
 
@@ -84,4 +84,4 @@ The virtual scrolling is a technique that allows you to view the pivot client in
 
 {% endhighlight %}
 
-![Virtual-Scrolling](Paging_images/virtual-scrolling.png)
+![Virtual scrolling in ASP NET Core pivot client control](Paging_images/virtual-scrolling.png)

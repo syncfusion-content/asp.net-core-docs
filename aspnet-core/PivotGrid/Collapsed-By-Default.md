@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Collapse by default
+title:  Collapse by default | PivotGrid | ASP.NET Core | Syncfusion
 description: Collapse by default
 platform: aspnet-core
 control: PivotGrid
@@ -21,4 +21,4 @@ Allows you to collapse all members that are displayed in the grid. You can enabl
 {% endhighlight %}
 
 
-![](Collapse-By-Default_images/Collapse-Members.png)
+![Collapse by default layout in ASP NET Core pivot grid control](Collapse-By-Default_images/Collapse-Members.png)

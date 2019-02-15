@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  SubTotal Hiding
+title:  SubTotal Hiding | PivotGrid | ASP.NET Core | Syncfusion
 description: SubTotal Hiding
 platform: aspnet-core
 control: PivotGrid
@@ -34,4 +34,4 @@ You can hide the **Sub Total** for respective fields in rows and columns by sett
 </ej-pivot-grid>
 {% endhighlight %}
 
-![](SubTotal-Hiding_images/SubTotal.png)
+![SubTotal hiding support in ASP NET Core pivot grid control](SubTotal-Hiding_images/SubTotal.png)

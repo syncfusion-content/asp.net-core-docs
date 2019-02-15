@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend | PivotChart | ASP.NET Core | Syncfusion
 description: legend
 platform: aspnet-core
 control: PivotChart
@@ -25,7 +25,7 @@ N> By default, the legend is visible in the pivot chart.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img1.png) 
+![Legend visibility in ASP NET Core pivot chart control](Legend_images/Legend_img1.png)
 
 ## Legend shape
 
@@ -51,7 +51,7 @@ You can customize the legend `shape` in the pivot chart control. The default val
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png) 
+![Legend shape in ASP NET Core pivot chart control](Legend_images/Legend_img2.png)
 
 ## Legend position
 
@@ -69,7 +69,7 @@ N> The default value of legend position is bottom in the pivot chart.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png) 
+![Legend position in ASP NET Core pivot chart control](Legend_images/Legend_img3.png)
 
 ## Legend title
 
@@ -87,12 +87,12 @@ To add the legend title, you should specify the title text in `e-title.text` pro
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png) 
+![Legend title in ASP NET Core pivot chart control](Legend_images/Legend_img4.png)
 
 ## Legend alignment
 
 You can align the legend to center, far, and near based on its position in the chart area by using the `alignment` option.
- 
+
 {% highlight cshtml %}
 
 <ej-pivot-chart id="PivotChart1">
@@ -103,7 +103,7 @@ You can align the legend to center, far, and near based on its position in the c
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![Legend alignment in ASP NET Core pivot chart control](Legend_images/Legend_img5.png)
 
 ## Legend items - size and border
 
@@ -119,8 +119,8 @@ By using the legend `item-style-width`, `item-style-height`, and `item-style-bor
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
- 
+![Size and border of legend in ASP NET Core pivot chart control](Legend_images/Legend_img6.png)
+
 ## Legend border
 
 By using the `border` option in legend, you can customize the color and width of the border.
@@ -135,7 +135,7 @@ By using the `border` option in legend, you can customize the color and width of
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![Legend border in ASP NET Core pivot chart control](Legend_images/Legend_img7.png)
 
 ## Legend text
 
@@ -154,4 +154,4 @@ By using the `e-font` option, you can customize the font family, font style, fon
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![Legend text in ASP NET Core pivot chart control](Legend_images/Legend_img8.png)

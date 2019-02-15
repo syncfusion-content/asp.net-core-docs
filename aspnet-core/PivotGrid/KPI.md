@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Performance Indicator KPI
+title: KPI | PivotGrid | ASP.NET Core | Syncfusion
 description: key performance indicator (kpi)
 platform: aspnet-core
 control: PivotGrid
@@ -15,7 +15,7 @@ The different indicators available in KPI are:
 
 * KPI value: A physical measure or a calculated measure.
 * KPI goal: Defines the target for the measure.
-* KPI status: Evaluates the current status of the value compared to the goal. 
+* KPI status: Evaluates the current status of the value compared to the goal.
 * KPI trend: Evaluates the current trend of the value compared to the goal.
 
 The **"KpiElements"** class in OLAP base library holds the KPI names. When its object are added to an OlapReport, you can view the resultant information in the pivot grid.
@@ -45,5 +45,5 @@ The **"KpiElements"** class in OLAP base library holds the KPI names. When its o
 
 {% endhighlight %}
 
-![](KPI_images/ClientSideKPI.png)
+![KPI support in pivot grid OLAP client mode](KPI_images/ClientSideKPI.png)
 
