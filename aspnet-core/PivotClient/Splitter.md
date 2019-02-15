@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitter
+title: Splitter | PivotClient | ASP.NET Core | Syncfusion
 description: splitter
 platform: aspnet-core
 control: PivotClient
@@ -19,10 +19,10 @@ You can resize the cube dimension browser and axis element builder by setting th
 
 {% endhighlight %}
 
-![](Splitter_images/Splitter1.png)
+![Left move of splitter in ASP NET Core pivot client control](Splitter_images/Splitter1.png)
 
-![](Splitter_images/Splitter2.png)
+![Resizing axis element builder in ASP NET Core pivot client control](Splitter_images/Splitter2.png)
 
-![](Splitter_images/Splitter3.png)
+![Right move of splitter in ASP NET Core pivot client control](Splitter_images/Splitter3.png)
 
-![](Splitter_images/Splitter4.png)
+![Resizing cube dimension browser in ASP NET Core pivot client control](Splitter_images/Splitter4.png)

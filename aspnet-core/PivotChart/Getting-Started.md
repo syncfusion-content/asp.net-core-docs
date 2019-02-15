@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | PivotChart | ASP.NET Core | Syncfusion
 description: getting started
 platform: aspnet-core
 control: PivotChart
@@ -47,13 +47,13 @@ Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page 
 {% endhighlight %}
 
 It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot chart control with the tag helper support.
- 
+
 {% highlight cshtml %}
- 
+
 @using Syncfusion.JavaScript
 @addTagHelper "*, Syncfusion.EJ"
 @addTagHelper "*, Syncfusion.EJ.Pivot"
-    
+
 {% endhighlight %}
 
 N> Script manager must be defined at the bottom of the *_Layout.cshtml* page.
@@ -81,7 +81,7 @@ Before initializing the pivot chart, empty the contents of Index.cshtml file und
 
 ### Populate pivot chart with data
 
-This section illustrates how to populate the pivot chart control using a sample JSON data as shown below: 
+This section illustrates how to populate the pivot chart control using a sample JSON data as shown below:
 
 {% highlight cshtml %}
 
@@ -125,13 +125,13 @@ function onload(args) {
         height:460px;
     }
 </style>
-    
+
 {% endhighlight %}
 
 The JSON data is set to the **"data"** property present in the **"e-data-source"** object. The **"e-data-source"** object allows you to set both the data source and fields that should be displayed in the row, column, value, and filter section of the pivot chart control.
-  
+
 {% highlight cshtml %}
-  
+
 <ej-pivot-chart id="PivotChart1" load="onload">
     <e-data-source>
         <e-pivot-rows>
@@ -155,7 +155,7 @@ The JSON data is set to the **"data"** property present in the **"e-data-source"
 
 The above code will generate a simple pivot chart with sales amount over products in different regions.
 
-![](Getting-Started_images/purejs.png)
+![ASP NET Core pivot chart control with relational client mode](Getting-Started_images/purejs.png)
 
 ## OLAP
 
@@ -211,4 +211,4 @@ Initializes the OLAP data source for the pivot chart control as shown below:
 
 The above code will generate a simple pivot chart with internet sales amount over a period of fiscal years across different customer geographic locations.
 
-![](Getting-Started_images/Olap.png)
+![ASP NET Core pivot chart control with OLAP client mode](Getting-Started_images/Olap.png)

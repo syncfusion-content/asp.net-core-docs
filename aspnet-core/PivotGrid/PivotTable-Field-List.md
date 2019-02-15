@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotTable Field List
+title: PivotTable Field List | PivotGrid | ASP.NET Core | Syncfusion
 description: pivotTable field list
 platform: aspnet-core
 control: PivotGrid
@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot table field list
 
-## Initialization  
+## Initialization
 
 The field list, also known as pivot schema designer, allows you to add, rearrange, filter, and remove fields to show data in the pivot grid exactly the way you desire.
 
@@ -46,9 +46,9 @@ To initialize the pivot table field list, define a “div” tag with an appropr
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/RelationalClientside.png)
+![Field list support in ASP NET Core pivot grid control with client mode](PivotTable-Field-List_images/RelationalClientside.png)
 
-### OLAP 
+### OLAP
 
 {% highlight html %}
 
@@ -73,18 +73,18 @@ To initialize the pivot table field list, define a “div” tag with an appropr
 
 {% endhighlight %}
 
-![](PivotTable-Field-List_images/OlapClientMode.png)
+![Pivot schema designer in ASP NET Core OLAP client mode pivot grid control](PivotTable-Field-List_images/OlapClientMode.png)
 
 
-## Layout 
+## Layout
 
 The top portion of the layout shows field or cube items in a categorized way. They can dynamically be added to the report by drag and drop option or through simple check box selection.
- 
+
 Item(s) selected will be placed in the row section by default, except numeric based item(s) or measures, which will be placed in the value section, by default.
 
 The bottom portion of the layout is segregated as follows:
 
-* Report filter: Filters item(s) placed in a particular position of the layout. 
+* Report filter: Filters item(s) placed in a particular position of the layout.
 * Value section: The value label usually displays the numeric value item(s) present in the report.
 * Column section: Displays the item(s) as column header and values in the pivot grid control.
 * Row section: Displays the item(s) as row header and values in the pivot grid control.
@@ -92,23 +92,23 @@ The bottom portion of the layout is segregated as follows:
 ## UI interactions
 You can alter the report on fly through the drag and drop operation. You can drag any item from the field list and drop it in the column, row, value, or filter section available at the bottom of the field list.
 
-![](PivotTable-Field-List_images/RelationalDragnDrop.png) 
+![Drag and drop in field list of ASP NET Core pivot grid control](PivotTable-Field-List_images/RelationalDragnDrop.png)
 
 You can also alter the report on fly through check and uncheck option as an alternate. By default, fields will be added to the row label when checked.
 
-![](PivotTable-Field-List_images/RelationalFilterIcon.png) 
+![Filtering in field list of ASP NET Core pivot grid control](PivotTable-Field-List_images/RelationalFilterIcon.png)
 
 ## Searching values
 The search option available in the field list allows you to search a specific value that should be filtered from the list of values in the filter pop-up window.
 
-![](PivotTable-Field-List_images/RelationalFilterIcon.png)
+![Shows tree drop icon to open member editor dialog in field list](PivotTable-Field-List_images/RelationalFilterIcon.png)
 
-![](PivotTable-Field-List_images/relationaldialogsearch.png)
+![Shows searching in member editor dialog through field list](PivotTable-Field-List_images/relationaldialogsearch.png)
 
 ## Filtering
 Values can be filtered by checking/unchecking the check box beside them, inside the filter pop-up window. At least, one value should present in checked state while filtering, or else the OK button will be disabled.
 
-![](PivotTable-Field-List_images/RelationalFilterIcon.png) 
+![Tree drop icon in field list of ASP NET Core pivot grid control](PivotTable-Field-List_images/RelationalFilterIcon.png)
 
-![](PivotTable-Field-List_images/RelationalFilterDialog.png) 
+![Filtering in field list of ASP NET Core pivot grid control](PivotTable-Field-List_images/RelationalFilterDialog.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Frozen Header | PivotGrid | ASP.NET MVC | Syncfusion
+title:  Frozen Header | PivotGrid | ASP.NET Core | Syncfusion
 description:  frozen header
 platform: aspnet-core
 control: PivotGrid
@@ -19,7 +19,7 @@ Allows you to freeze the header of the grid so that it will be always visible wh
 
 {% endhighlight %}
 
-![](FrozenHeader_images/row_col_freeze.png)
+![Frozen header, aka Freeze headers support in ASP NET Core pivot grid control](FrozenHeader_images/row_col_freeze.png)
 
 You can also freeze the row/column headers individually by setting the following properties:
 
@@ -31,7 +31,7 @@ You can also freeze the row/column headers individually by setting the following
 
 {% endhighlight %}
 
-![](FrozenHeader_images/row_freeze.png)
+![Frozen row headers in ASP NET Core pivot grid control](FrozenHeader_images/row_freeze.png)
 
 {% highlight CSHTML %}
 
@@ -41,4 +41,4 @@ You can also freeze the row/column headers individually by setting the following
 
 {% endhighlight %}
 
-![](FrozenHeader_images/col_freeze.png)
+![Frozen column headers in ASP NET Core pivot grid control](FrozenHeader_images/col_freeze.png)

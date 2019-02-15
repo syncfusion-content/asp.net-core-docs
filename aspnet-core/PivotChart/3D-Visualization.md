@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D-Visualization
+title: 3D-Visualization | PivotChart | ASP.NET Core | Syncfusion
 description: 3d visualization
 platform: aspnet-core
 control: PivotChart
@@ -14,7 +14,7 @@ The pivot chart control allows you to view the data in a 3D view. Following are 
 * Bar
 * Column
 * Stacking bar
-* Stocking column 
+* Stocking column
 * Pie
 
 ## 3D column chart
@@ -30,7 +30,7 @@ The 3D column chart is rendered by specifying the chart type as **“Column”**
 
 {% endhighlight %}
 
-![](3D-Visualization_images/column3d.png)
+![ASP NET Core column chart control rendered in 3D](3D-Visualization_images/column3d.png)
 
 ## 3D bar chart
 
@@ -45,7 +45,7 @@ The 3D bar chart is rendered by specifying the chart type as **Bar** in the **�
 
 {% endhighlight %}
 
-![](3D-Visualization_images/bar3d.png)
+![ASP NET Core bar chart control rendered in 3D](3D-Visualization_images/bar3d.png)
 
 ## 3D stacking bar chart
 
@@ -60,7 +60,7 @@ The 3D stacking bar chart is rendered by specifying the chart type as **Stacking
 
 {% endhighlight %}
 
-![](3D-Visualization_images/stackingbar3d.png)
+![ASP NET Core stacking bar chart control rendered in 3D](3D-Visualization_images/stackingbar3d.png)
 
 ## 3D stacking column chart
 
@@ -75,7 +75,7 @@ The 3D stacking column chart is rendered by specifying the chart type as **Stack
 
 {% endhighlight %}
 
-![](3D-Visualization_images/stackingcolumn3d.png)
+![ASP NET Core stacking column chart control rendered in 3D](3D-Visualization_images/stackingcolumn3d.png)
 
 ## 3D pie chart
 
@@ -88,9 +88,9 @@ The 3D pie chart is rendered by specifying the chart type as **"Pie"** in the **
     <e-size width="100%" height="460px"></e-size>
 </ej-pivot-chart>
 
-{% endhighlight %}   
+{% endhighlight %}
 
-![](3D-Visualization_images/pie3d.png)
+![ASP NET Core pie chart control rendered in 3D](3D-Visualization_images/pie3d.png)
 
 ## Rotating 3D chart
 
@@ -98,14 +98,13 @@ You can rotate the 3D chart towards left or right by setting an appropriate angl
 
 {% highlight cshtml %}
 
-//Rotates the 3D Chart 
+//Rotates the 3D Chart
 <ej-pivot-chart id="PivotChart1" enable3d="true" rotation="40">
     <e-common-series-options type="Column"></e-common-series-options>
     <e-size width="100%" height="460px"></e-size>
 </ej-pivot-chart>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](3D-Visualization_images/rotation3d.png)
- 
- 
+![ASP NET Core pivot chart control with 3D rotation](3D-Visualization_images/rotation3d.png)
+

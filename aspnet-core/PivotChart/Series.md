@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series
+title: Series | PivotChart | ASP.NET Core | Syncfusion
 description: series
 platform: aspnet-core
 control: PivotChart
@@ -12,7 +12,7 @@ documentation: ug
 ## Series point customization
 
 By using the `fill` and `border` properties of the chart series, you can customize the series color, border color, and border width of the pivot chart.
- 
+
 {% highlight cshtml %}
 
 <ej-pivot-chart id="PivotChart1" series-rendering="onSeriesRenders">
@@ -26,8 +26,8 @@ By using the `fill` and `border` properties of the chart series, you can customi
             width: 2
         };
     }
-</script>                                          
+</script>
 
 {% endhighlight %}
 
-![](Series_images/Series_img1.png)
+![Series customization in ASP NET Core pivot chart control](Series_images/Series_img1.png)

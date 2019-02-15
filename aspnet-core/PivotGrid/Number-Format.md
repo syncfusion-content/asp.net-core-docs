@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Number format
-description: number format 
+title: Number format | PivotGrid | ASP.NET Core | Syncfusion
+description: number format
 platform: aspnet-core
 control: PivotGrid
 documentation: ug
 ---
 
-# Number format 
+# Number format
 
 I> This feature is applicable only for the relational data source at client mode.
 
@@ -44,5 +44,5 @@ Allows you to specify the required number format to be used in values of the piv
 
  {% endhighlight %}
 
-![](Number-Format_images/Numberformat.png)
+![Number formatting in ASP NET Core pivot grid relational client mode](Number-Format_images/Numberformat.png)
 
