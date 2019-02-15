@@ -37,4 +37,4 @@ You can bind the named sets in the pivot grid by setting it's unique name in the
 
 {% endhighlight %}
 
-![Named sets in ASP NET Core pivot grid OLAP client mode](KPI_images/namedset.png)
+![NamedSet in ASP NET Core pivot grid OLAP client mode](KPI_images/namedset.png)
