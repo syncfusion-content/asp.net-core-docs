@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | PivotGrid | ASP.NET Core | Syncfusion
 description: getting started
 platform: aspnet-core
 control: PivotGrid
@@ -47,13 +47,13 @@ Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page 
 {% endhighlight %}
 
 It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot grid control with the tag helper support.
- 
+
 {% highlight cshtml %}
- 
+
 @using Syncfusion.JavaScript
 @addTagHelper "*, Syncfusion.EJ"
 @addTagHelper "*, Syncfusion.EJ.Pivot"
-    
+
 {% endhighlight %}
 
 N> Script manager should be defined at the bottom of the *_Layout.cshtml* page.
@@ -74,7 +74,7 @@ Before initializing the pivot grid, empty the contents of the Index.cshtml file 
 
 ### Populate pivot grid with data
 
-This section illustrates how to populate the pivot grid control by using a sample JSON data as shown below: 
+This section illustrates how to populate the pivot grid control by using a sample JSON data as shown below:
 
 {% highlight cshtml %}
 
@@ -114,9 +114,9 @@ function onload(args) {
 {% endhighlight %}
 
 The JSON data is set to the **"data"** property present in the **"e-data-source"** object. The **"e-data-source"** object allows you to set both data source and fields that should be displayed in the row, column, value, and filter section of the pivot grid control.
-  
+
 {% highlight cshtml %}
-  
+
 <ej-pivot-grid id="PivotGrid1" load="onload">
     <e-data-source>
         <e-pivot-rows>
@@ -135,12 +135,12 @@ The JSON data is set to the **"data"** property present in the **"e-data-source"
 
 The above code will generate a simple pivot grid with "Country" field in the row, "Product" field in column, and "Amount" field in the value section.
 
-![](Getting-Started_images/purejs.png)
+![ASP NET Core pivot grid control with relational mode](Getting-Started_images/purejs.png)
 
 ### Apply sorting
 
 You can sort a field to an ascending or descending order by using the `sort-order` property. Sorting is applicable only for row and column fields. By default, fields are arranged in the ascending order.
- 
+
 {% highlight cshtml %}
 
 <ej-pivot-grid id="PivotGrid1" load="onload">
@@ -159,7 +159,7 @@ You can sort a field to an ascending or descending order by using the `sort-orde
 
 {% endhighlight %}
 
-![](Getting-Started_images/purejssorting.png)
+![Sorting in ASP NET pivot grid control](Getting-Started_images/purejssorting.png)
 
 ### Sort row/column by date
 
@@ -201,7 +201,7 @@ function onload(args) {
 
 {% endhighlight %}
 
-![](Getting-Started_images/sortbydate.png)
+![Sort by date in ASP NET Core pivot grid control](Getting-Started_images/sortbydate.png)
 
 ### Apply summary types
 
@@ -230,9 +230,9 @@ Allow you to specify the required summary type to be used in summary cells of th
     </e-data-source>
 </ej-pivot-grid>
 
-{% endhighlight %}    
+{% endhighlight %}
 
-![](Getting-Started_images/purejssummarytype.png)
+![Summary types in ASP NET Core pivot grid control](Getting-Started_images/purejssummarytype.png)
 
 ## OLAP
 
@@ -276,4 +276,4 @@ Initializes the OLAP data source for pivot grid control as shown below:
 
 The above code will generate a simple pivot grid with "Fiscal" field in the row, "Customer Geography" field in the column, and "Internet Sales Amount" field in the value section.
 
-![](Getting-Started_images/Olap.png)
+![ASP NET Core pivot grid control with OLAP client mode](Getting-Started_images/Olap.png)

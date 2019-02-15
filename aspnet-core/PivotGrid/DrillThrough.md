@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Drill Through
+title:  Drill Through | PivotGrid | ASP.NET Core | Syncfusion
 description:  drill through
 platform: aspnet-core
 control: PivotGrid
@@ -9,7 +9,7 @@ documentation: ug
 
 # Drill through
 
-Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set the [`enable-drill-through`] property to true. Raw items are obtained through the [`drill-through`] event, using which you can bind them to an external widget for a precise view. 
+Drill-through retrieves the raw items that are used to create a specific cell. To enable drill-through support, set the [`enable-drill-through`] property to true. Raw items are obtained through the [`drill-through`] event, using which you can bind them to an external widget for a precise view.
 
 ## Relational
 
@@ -24,7 +24,7 @@ Drill-through retrieves the raw items that are used to create a specific cell. T
     ejDialog = ej.buildTag("div#clientDialog.e-clientDialog", dialogContent, { "opacity": "1" }).attr("title", "Drill Through Information")[0].outerHTML;
     $(ejDialog).appendTo("#" + this._id);
     this.element.find(".e-clientDialog").ejDialog({ width: "70%", height: "100%", content: "#" + this._id, enableResize: false, close: ej.proxy(ej.Pivot.closePreventPanel, this) });
-        
+
     $("#Grid").ejGrid({
         dataSource: gridData,
         });
@@ -33,21 +33,21 @@ Drill-through retrieves the raw items that are used to create a specific cell. T
 
 {% endhighlight %}
 
-![](DrillThrough_images/DrillThroughRelational.png)
+![Drill through data in ASP NET Core pivot grid relational mode](DrillThrough_images/DrillThroughRelational.png)
 
 ## OLAP
 
 N> Drill-through is supported in the pivot grid only when you configure and enable the drill-through action at the cube.
 
-![](DrillThrough_images/pivotgrid.png)
+![Drill through support in ASP NET Core pivot grid control](DrillThrough_images/pivotgrid.png)
 
 By clicking any value cell, the "Drill Through Information" dialog will be opened. It consists of a grid with data that are associated with the measure values of clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and the values of the dimensions that are associated with this measure are alone displayed in the grid.
 
-![](DrillThrough_images/DrillThroughData.png)
+![Drill through data in ASP NET Core pivot grid control](DrillThrough_images/DrillThroughData.png)
 
 By clicking the "Hierarchy Selector" button which is displayed below the grid, the "Hierarchy Selector" dialog will be opened. It consists of dimensions that are associated with the measure of the clicked value cell. In this example, the measure behind the respective cell is “Sales Amount” and dimensions associated with this measure are alone displayed in the dialog.
 
-![](DrillThrough_images/hierarchy_selector.png)
+![Hierarchy selector in ASP NET Core pivot grid control](DrillThrough_images/hierarchy_selector.png)
 
 By dragging and dropping the respective hierarchies and finally clicking OK, the drill through MDX query will be framed and executed internally, and then it will provide the raw items through the [`drill-Through`] event. In this example, the obtained raw items are bounded to the ejGrid widget. Refer to the following code sample and screenshot:
 
@@ -80,4 +80,4 @@ By dragging and dropping the respective hierarchies and finally clicking OK, the
 
 {% endhighlight %}
 
-![](DrillThrough_images/drill_data.png)
+![Drill through data in ASP NET Core pivot grid OLAP client mode](DrillThrough_images/drill_data.png)

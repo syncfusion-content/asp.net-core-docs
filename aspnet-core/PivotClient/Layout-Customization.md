@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Customization
+title: Layout Customization | PivotClient | ASP.NET Core | Syncfusion
 description: layout customization
 platform: aspnet-core
 control: PivotClient
@@ -9,11 +9,11 @@ documentation: ug
 
 # Layout customization
 
-# Size
+## Size
 
 Allows you to render the pivot client in different sizes. You can set the height and width under the `e-size` property.
 
-## Set size in pixels
+### Set size in pixels
 
 {% highlight CSHTML %}
 
@@ -26,9 +26,9 @@ Allows you to render the pivot client in different sizes. You can set the height
 
 Pivot client with decreased size from default size.
 
-![](Layout-Customization_images/small-size.png)
+![ASP NET Core pivot client control with reduced size](Layout-Customization_images/small-size.png)
 
-## Set size in percentage
+### Set size in percentage
 
 You can set the pivot client size in percentage also.
 
@@ -43,7 +43,7 @@ N> Size of the parent container should be set in pixels.
 
 {% endhighlight %}
 
-## Control placement 
+## Control placement
 
 ### Tab view
 
@@ -58,7 +58,7 @@ In tab view representation, both the grid and chart will be displayed in separat
 
 {% endhighlight %}
 
-![](Layout-Customization_images/tabview.png)
+![ASP NET Core pivot client control with tab view](Layout-Customization_images/tabview.png)
 
 ### Tile view
 
@@ -73,7 +73,7 @@ In tile view representation, both the grid and chart will be displayed one above
 
 {% endhighlight %}
 
-![](Layout-Customization_images/tileview.png)
+![ASP NET Core pivot client control with tile view](Layout-Customization_images/tileview.png)
 
 ## Default view
 
@@ -90,7 +90,7 @@ To display grid control by default, set the `default-view` property under `e-dis
 
 {% endhighlight %}
 
-![](Layout-Customization_images/gridview.png)
+![ASP NET Core pivot client control with grid view as default](Layout-Customization_images/gridview.png)
 
 ### Chart view
 
@@ -105,7 +105,7 @@ To display chart control by default, set the `default-view` property to **Chart*
 
 {% endhighlight %}
 
-![](Layout-Customization_images/chartview.png)
+![ASP NET Core pivot client control with chart view as default](Layout-Customization_images/chartview.png)
 
 ## Display mode
 
@@ -122,7 +122,7 @@ By setting the `mode` property under the `e-display-settings` option to **GridOn
 
 {% endhighlight %}
 
-![](Layout-Customization_images/gridonlyview.png)
+![ASP NET Core pivot client control with grid only view](Layout-Customization_images/gridonlyview.png)
 
 ### Chart only
 
@@ -138,7 +138,7 @@ By setting the `mode` property under the `e-display-settings` option to **ChartO
 
 {% endhighlight %}
 
-![](Layout-Customization_images/chartonlyview.png)
+![ASP NET Core pivot client control with chart only view](Layout-Customization_images/chartonlyview.png)
 
 ### Both chart and grid
 
@@ -153,7 +153,7 @@ By setting the `mode` property under the `e-display-settings` option to **ChartA
 
 {% endhighlight %}
 
-![](Layout-Customization_images/tileview.png)
+![ASP NET Core pivot client control with grid and chart view](Layout-Customization_images/tileview.png)
 
 ## Toggle panel
 
@@ -168,7 +168,7 @@ Toggle panel option allows you to toggle the visibility of axis element builder 
 
 {% endhighlight %}
 
-![](Layout-Customization_images/toggleview.png)
+![ASP NET Core pivot client control with toggle panel](Layout-Customization_images/toggleview.png)
 
 ## Collapse toggle panel by default
 
@@ -182,7 +182,7 @@ Allows you to hide “Cube Browser” and “Axis Element Builder” panels whil
 
 {% endhighlight %}
 
-![](Layout-Customization_images/collapse-cube-browser-by-default.png)
+![ASP NET Core pivot client control with toggle panel by default](Layout-Customization_images/collapse-cube-browser-by-default.png)
 
 ## Maximized/full screen view
 
@@ -197,11 +197,11 @@ Full screen view helps to visualize the pivot grid and pivot chart controls in t
 
 {% endhighlight %}
 
-![](Layout-Customization_images/maximizeicon.png)
+![Full screen icon in ASP NET Core pivot client control](Layout-Customization_images/maximizeicon.png)
 
 The following screenshot shows the maximized view of the pivot grid:
 
-![](Layout-Customization_images/maximizedview.png)
+![Full screen view of ASP NET Core pivot client control](Layout-Customization_images/maximizedview.png)
 
 
 ## Chart types
@@ -220,9 +220,9 @@ The `chart-type` property takes column chart by default. The types available are
 
 The chart type can be changed dynamically through the toolbar icon.
 
-![](Layout-Customization_images/charttypes.png)
+![Chart types icon in ASP NET Core pivot client control](Layout-Customization_images/charttypes.png)
 
-![](Layout-Customization_images/linechart.png) 
+![ASP NET Core pivot client control with line chart type](Layout-Customization_images/linechart.png)
 
 ### Pivot tree map
 
@@ -238,9 +238,9 @@ You can include the pivot tree map component as one of the chart types by settin
 
 {% endhighlight %}
 
-![](Layout-Customization_images/TreeMap1.png)
+![Treemap icon in chart types panel of ASP NET Core pivot client control](Layout-Customization_images/TreeMap1.png)
 
-![](Layout-Customization_images/TreeMap2.png)
+![Treemap in ASP NET Core pivot client control](Layout-Customization_images/TreeMap2.png)
 
 
 ## Report toolbar
@@ -256,8 +256,8 @@ You can customize the display of toolbar by enabling/disabling the visibility of
 
 {% endhighlight %}
 
-![](Layout-Customization_images/toolbarIconSettings1.png)
+![Report toolbar in ASP NET Core pivot client control](Layout-Customization_images/toolbarIconSettings1.png)
 
 The following screenshot shows after disabling the toolbar icons:
 
-![](Layout-Customization_images/toolbarIconSettings2.png)
+![Hiding report icons from toolbar of ASP NET Core pivot client control](Layout-Customization_images/toolbarIconSettings2.png)

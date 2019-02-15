@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GrandTotal Hiding
+title:  GrandTotal Hiding | PivotGrid | ASP.NET Core | Syncfusion
 description: GrandTotal Hiding
 platform: aspnet-core
 control: PivotGrid
@@ -25,7 +25,7 @@ You can hide the **Grand Total** in row alone by setting the `enable-row-grand-t
 
 {% endhighlight %}
 
-![](GrandTotal-Hiding_images/enableRowGrandTotal.png)
+![Hiding row totals in ASP NET Core pivot grid control](GrandTotal-Hiding_images/enableRowGrandTotal.png)
 
 ## Column grand total hiding
 
@@ -37,7 +37,7 @@ You can hide the **Grand Total** in column alone by setting the `enable-column-g
 
 {% endhighlight %}
 
-![](GrandTotal-Hiding_images/enableColumnGrandTotal.png)
+![Hiding column totals in ASP NET Core pivot grid control](GrandTotal-Hiding_images/enableColumnGrandTotal.png)
 
 ## Both
 
@@ -49,4 +49,4 @@ You can hide the **Grand Total** in both row and column by setting the `enable-g
 
 {% endhighlight %}
 
-![](GrandTotal-Hiding_images/enableGrandTotal.png)
+![Hiding totals in ASP NET Core pivot grid control](GrandTotal-Hiding_images/enableGrandTotal.png)

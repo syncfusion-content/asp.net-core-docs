@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization 
+title: Localization | PivotChart | ASP.NET Core | Syncfusion
+description: localization
 platform: aspnet-core
 control: PivotChart
 documentation: ug
@@ -77,9 +77,9 @@ The content displayed within the pivot chart control is obtained from the OLAP c
 
 * To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"e-data-source"**.
 * To bind the globalized content in pivot chart control, set the **"locale"** property to a specific culture and refer to specific culture file in the sample.
- 
+
 N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\Web\Samples\Web\Scripts\cultures".**
- 
+
 {% highlight cshtml %}
 
 //1036 refers to “fr-FR” culture.
@@ -90,4 +90,4 @@ N> Culture files are present under **"[installed drive]:\Users\ [user name]\AppD
 
 {% endhighlight %}
 
-![](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png) 
+![Localization support in ASP NET Core pivot chart control](Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png)

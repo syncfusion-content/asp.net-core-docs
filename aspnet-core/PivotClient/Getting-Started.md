@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting-Started | PivotClient | ASP.NET Core | Syncfusion
 description: getting started
 platform: aspnet-core
 control: PivotClient
@@ -47,13 +47,13 @@ Now, refer to the necessary scripts and CSS files in your *_Layout.cshtml* page 
 {% endhighlight %}
 
 It is necessary to define the following namespace within the *_viewImports.cshtml* page to make use of the pivot client control with the tag helper support.
- 
+
 {% highlight cshtml %}
- 
+
 @using Syncfusion.JavaScript
 @addTagHelper "*, Syncfusion.EJ"
 @addTagHelper "*, Syncfusion.EJ.Pivot"
-    
+
 {% endhighlight %}
 
 N> Script manager should be defined at the bottom of the *_Layout.cshtml* page.
@@ -114,7 +114,7 @@ function onload(args) {
 {% endhighlight %}
 
 The JSON data is set to the **"data"** property present in the **"e-data-source"** object. The **"e-data-source"** object allows you to set both the data source and fields that should be displayed in the row, column, value, and filter section of the pivot client control.
-  
+
 {% highlight cshtml %}
 
 <ej-pivot-client id="PivotClient1" title="Relational Browser" load="onload">
@@ -135,7 +135,7 @@ The JSON data is set to the **"data"** property present in the **"e-data-source"
 
 Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with “Country” field in the row, “Product” field in the column, and “Amount” field in the value section.
 
-![](Getting-Started_images/purejs.png)
+![ASP NET Core pivot client control rendered with relational client mode](Getting-Started_images/purejs.png)
 
 ## OLAP
 
@@ -179,4 +179,4 @@ Initializes the OLAP data source for the pivot client control as shown below:
 
 Now, the pivot client is rendered with pivot chart, and the pivot grid is rendered with “Customer Geography” field in the column, “Fiscal” field in the row, and “Internet Sales Amount” field in the value section.
 
-![](Getting-Started_images/OlapClientside.png)
+![ASP NET Core pivot client control rendered with OLAP client mode](Getting-Started_images/OlapClientside.png)

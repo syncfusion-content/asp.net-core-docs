@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Layout
+title: Grid Layout | PivotGrid | ASP.NET Core | Syncfusion
 description: grid layout
 platform: aspnet-core
 control: PivotGrid
@@ -19,7 +19,7 @@ A layout in summary cells, are positioned at the bottom of each parent member an
 
 {% endhighlight %}
 
-![](Grid-Layout_images/layout-normal.png)
+![Normal layout in ASP NET Core pivot grid control](Grid-Layout_images/layout-normal.png)
 
 ## Excel-like layout
 
@@ -29,6 +29,6 @@ A layout in summary cells, which are positioned besides each parent member and t
 
 <ej-pivot-grid id="PivotGrid1" layout="ExcelLikeLayout"></ej-pivot-grid>
 
-{% endhighlight %} 
+{% endhighlight %}
 
-![](Grid-Layout_images/layout-excel.png)
+![Excel like layout in ASP NET Core pivot grid control](Grid-Layout_images/layout-excel.png)

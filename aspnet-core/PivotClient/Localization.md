@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | PivotClient | ASP.NET Core | Syncfusion
 description: localization 
 platform: aspnet-core
 control: PivotClient
@@ -306,7 +306,7 @@ Types de graphiques</td></tr>
 <tr>
 <td>Sort</td>
 <td>Trier</td>
-</tr>  
+</tr>
 <tr>
 <td>SelectField</td>
 <td>sélectionnez Champ</td>
@@ -318,7 +318,7 @@ Types de graphiques</td></tr>
 <tr>
 <td>ValueFilterLabel</td>
 <td>Voir les articles pour lesquels</td>
-</tr>    
+</tr>
 <tr>
 <td>LabelFilters</td>
 <td>Filtres d'étiquetage</td>
@@ -334,15 +334,15 @@ Types de graphiques</td></tr>
 <tr>
 <td>EndsWith</td>
 <td>Se termine par</td>
-</tr>     
+</tr>
 <tr>
 <td>NotEndsWith</td>
 <td>Non Se termine par</td>
-</tr>   
+</tr>
 <tr>
 <td>Contains</td>
 <td>Contient</td>
-</tr>    
+</tr>
 <tr>
 <td>NotContains</td>
 <td>Ne contient pas</td>
@@ -358,23 +358,23 @@ Types de graphiques</td></tr>
 <tr>
 <td>Equals</td>
 <td>Équivaut à</td>
-</tr>     
+</tr>
 <tr>
 <td>Top10</td>
 <td>"Top Count"</td>
-</tr>    
+</tr>
 <tr>
 <td>EqualTo</td>
 <td>Égal à</td>
-</tr>     
+</tr>
 <tr>
 <td>NotEquals</td>
 <td>pas equals</td>
-</tr>     
+</tr>
 <tr>
 <td>GreaterThan</td>
 <td>Plus grand que</td>
-</tr>     
+</tr>
 <tr>
 <td>GreaterThanOrEqualTo</td>
 <td>Plus grand ou égal à</td>
@@ -384,7 +384,7 @@ Types de graphiques</td></tr>
 <td>LessThan</td>
 <td>Moins que</td>
 </tr>
-     
+
 <tr>
 <td>LessThanOrEqualTo</td>
 <td>Inférieur ou égal à</td>
@@ -394,7 +394,7 @@ Types de graphiques</td></tr>
 <td>Between</td>
 <td>Entre</td>
 </tr>
-     
+
 <tr>
 <td>NotBetween</td>
 <td>Entre pas</td>
@@ -635,16 +635,16 @@ Types de graphiques</td></tr>
 
 The content displayed within the pivot client control is obtained from the OLAP cube.
 
-* To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"e-data-source"**. 
-* To bind the globalized content in the pivot client control, set the **"locale"** property to a specific culture and the specific culture file is referred in the sample. 
- 
+* To get localized data from OLAP cube, set the **"Locale Identifier"** in the connection string to a specific culture in the **"data"** property present in the **"e-data-source"**.
+* To bind the globalized content in the pivot client control, set the **"locale"** property to a specific culture and the specific culture file is referred in the sample.
+
 N> Culture files are present under **"[installed drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\ASP.NET Core\Web\samplebrowser\wwwroot\scripts\cultures".**
-  
+
 {% highlight CSHTML %}
 
 //1036 refers to "fr-FR" culture.
 <ej-pivot-client id="PivotClient1" locale="fr-FR">
-    <e-data-source catalog="Adventure Works DW 2008 SE" cube="Adventure Works" data="http://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036">
+    <e-data-source catalog="Adventure Works DW 2008 SE" cube="Adventure Works" data="https://bi.syncfusion.com/olap/msmdpump.dll; Locale Identifier=1036">
         <e-pivot-rows>
             <e-row-field field-name="[Date].[Fiscal]"></e-row-field>
         </e-pivot-rows>
@@ -663,16 +663,16 @@ N> Culture files are present under **"[installed drive]:\Users\[user name]\AppDa
 
 {% endhighlight %}
 
-![](Localization_images/localization.png)
+![Localization and globalization of cube in OLAP client mode](Localization_images/localization.png)
 
 ## Localization and globalization of relational info (relational)
 The content displayed within the pivot client control is obtained from the relational data source.
- 
-* To get the localized content, the relational data source should have localized headers in them which will be directly applied to the pivot client.  
+
+* To get the localized content, the relational data source should have localized headers in them which will be directly applied to the pivot client.
 * To globalize the values appeared in the pivot client, set the **"format"** and **"locale"** properties accordingly. Also, the specific culture file is referred in the sample.
 
 N> Culture files are present under **"[installed drive]:\Users\[user name]\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\ASP.NET Core\Web\samplebrowser\wwwroot\scripts\cultures".**
- 
+
 {% highlight CSHTML %}
 
 <ej-pivot-client id="PivotClient1" locale="fr-FR" load="onload">
@@ -688,10 +688,10 @@ N> Culture files are present under **"[installed drive]:\Users\[user name]\AppDa
         </e-pivot-values>
     </e-data-source>
 </ej-pivot-client>
-        
+
 {% endhighlight %}
 
-![](Localization_images/relational-localization.png)
+![Localization and globalization of cube in Relational client mode](Localization_images/relational-localization.png)
 
 ## RTL
 
@@ -701,9 +701,9 @@ You can render the pivot client control from right to left by setting the `enabl
 
 <ej-pivot-client id="PivotClient1" enable-rtl="true">
   //..
-</ej-pivot-client>    
+</ej-pivot-client>
 
 {% endhighlight %}
 
-![](Localization_images/rtl.png)
+![RTL support in ASP NET Core pivot client control](Localization_images/rtl.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting | PivotGrid | ASP.NET Core | Syncfusion
 description: exporting
 platform: aspnet-core
 control: PivotGrid

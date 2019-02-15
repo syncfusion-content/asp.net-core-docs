@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Named Set
+title: Named Set | PivotGrid | ASP.NET Core | Syncfusion
 description: named set
 platform: aspnet-core
 control: PivotGrid
@@ -37,4 +37,4 @@ You can bind the named sets in the pivot grid by setting it's unique name in the
 
 {% endhighlight %}
 
-![](KPI_images/namedset.png)
+![NamedSet in ASP NET Core pivot grid OLAP client mode](KPI_images/namedset.png)
