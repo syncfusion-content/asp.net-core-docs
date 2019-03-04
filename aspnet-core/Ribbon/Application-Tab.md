@@ -16,7 +16,7 @@ The Application Tab is used to represent a `Menu` that do some operations, such 
 
 ## Application Menu
 
-The Application Menu is similar to traditional file Menu options and Syncfusion `Menu` control is used internally to render this. To show Application Menu in Ribbon, set the `Type` as `Menu` and [`MenuSettings`](http://help.syncfusion.com/aspnetcore/menu/getting-started) to customize properties of `ejMenu`.
+The Application Menu is similar to traditional file Menu options and Syncfusion `Menu` control is used internally to render this. To show Application Menu in Ribbon, set the `Type` as `Menu` and [`MenuSettings`](https://help.syncfusion.com/aspnet-core/menu/getting-started) to customize properties of `ejMenu`.
 
 ### _Create Using Template_
 
