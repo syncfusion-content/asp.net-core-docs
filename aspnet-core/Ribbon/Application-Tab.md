@@ -16,7 +16,7 @@ The Application Tab is used to represent a `Menu` that do some operations, such 
 
 ## Application Menu
 
-The Application Menu is similar to traditional file Menu options and Syncfusion `Menu` control is used internally to render this. To show Application Menu in Ribbon, set the `Type` as `Menu` and [`MenuSettings`](http://help.syncfusion.com/aspnetcore/menu/getting-started) to customize properties of `ejMenu`.
+The Application Menu is similar to traditional file Menu options and Syncfusion `Menu` control is used internally to render this. To show Application Menu in Ribbon, set the `Type` as `Menu` and [`MenuSettings`](https://help.syncfusion.com/aspnet-core/menu/getting-started) to customize properties of `ejMenu`.
 
 ### _Create Using Template_
 
@@ -68,7 +68,7 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
     
 {% endhighlight  %}
 
-![](Application-Tab_images/Createusingtemplate_img1.png)
+![Menu creation using template](Application-Tab_images/Createusingtemplate_img1.png)
 
 ### _Binding Data Source_
 
@@ -144,7 +144,7 @@ Application Menu can be rendered using JSON Data Source. Please refer [`this`](h
 {% endhighlight  %}
  
 
-![](Application-Tab_images/Bindingdatasource_img2.png)
+![Binding the data source to the menu](Application-Tab_images/Bindingdatasource_img2.png)
 
 ## Backstage Page
 
@@ -251,7 +251,7 @@ To render the Ribbon with the Backstage page, refer to the following code snippe
     
 {% endhighlight  %}
 
-![](Application-Tab_images/backstagepage_img3.png)
+![Ribbon with backstage page](Application-Tab_images/backstagepage_img3.png)
 
 N> Height & Width of backstage can be set using `Height` and `Width`, if these are not set, Ribbon’s Height & Width will be considered.
 
