@@ -67,19 +67,19 @@ The following steps help you to create the **Syncfusion** **ASP****.****NET** **
 
    **Components:** Choose the Required Syncfusion components to configure.
 
-   ![](getting-started_images/Syncfusion-Project-Templates_img2.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Configuration wizard](getting-started_images/Syncfusion-Project-Templates_img2.jpeg)
    
 4. Once you click Create button, the Syncfusion ASP.NET Core Application is created.
 
 5. Required Syncfusion NuGet/Bower packages, Scripts and CSS are added to the Project.
 
-   ![](getting-started_images/Syncfusion-Project-Templates_img3.png)
+   ![Required Syncfusion NuGet/Bower packages added to the Syncfusion Essential JS 1 ASP.NET Core project](getting-started_images/Syncfusion-Project-Templates_img3.png)
 
-   ![](getting-started_images/Syncfusion-Project-Templates_img4.jpeg)
+   ![Required Syncfusion Scripts and Themes added to the Syncfusion Essential JS 1 ASP.NET Core project](getting-started_images/Syncfusion-Project-Templates_img4.jpeg)
 
 6. Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
   
-   ![](getting-started_images/Syncfusion-Project-Templates_img5.png)  
+   ![Syncfusion license registration information for Syncfusion Essential JS 1 ASP.NET Core project](getting-started_images/Syncfusion-Project-Templates_img5.png)  
 
 #### Using Syncfusion Project Conversion utility
 
@@ -107,7 +107,7 @@ The following steps help you to use the Syncfusion Project Conversion in the exi
 
 3. Project Conversion Wizard opens to configure the project.
 
-   ![](getting-started_images/Project-Conversion_img2.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Conversion wizard](getting-started_images/Project-Conversion_img2.jpeg)
 
    **Choose the assets from:**
 
@@ -117,43 +117,43 @@ The following steps help you to use the Syncfusion Project Conversion in the exi
 
    * Installed Location - Refer to the assets from Syncfusion installed locations.     
    
-   ![](getting-started_images/Project-Conversion_img3.jpeg)
+   ![Choose the required assets for Syncfusion Essential JS 1 ASP.NET Core project](getting-started_images/Project-Conversion_img3.jpeg)
    
    **Choose the Theme:**
    
    The master page of project will be updated based on selected theme. The Theme Preview section shows the controls preview before convert into a Syncfusion project
    
-   ![](getting-started_images/Project-Conversion_img4.jpeg)
+   ![Choose the theme to apply on the master page of the ASP.NET Core project](getting-started_images/Project-Conversion_img4.jpeg)
 
    **Choose Copy Global Resources:** 
     
    The localization culture files will be shipped into Scripts\ej\i18n directory of the project.
 
-   ![](getting-started_images/Project-Conversion_img14.jpeg)   
+   ![Choose Copy Global Resources to ship the localization culture files for ASP.NET Core project](getting-started_images/Project-Conversion_img14.jpeg)   
 
 4. Choose the required controls from Components section and Click the **Convert** button to convert it into a Syncfusion Project.
 
-   ![](getting-started_images/ProjectConversion_img5.jpeg)
+   ![Select the required components from the Components selection in the Syncfusion ASP.NET Core Project Conversion Wizard](getting-started_images/ProjectConversion_img5.jpeg)
    
    The **Project Backup** dialog will be opened. If click Yes it will backup the current project before converting it to Syncfusion project. If click No it will convert the project to Syncfusion project without backup. 
    
-   ![](getting-started_images/Project-Conversion_img6.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core Project converson backup dialog](getting-started_images/Project-Conversion_img6.jpeg)
 
 5. The required Syncfusion NuGet/Bower packages, Scripts and CSS are included in the ASP.NET Core Web Application. Refer to the following screenshots for more information.
 
-   ![](getting-started_images/Project-Conversion_img7.png)
+   ![Required Syncfusion Essential JS 1 ASP.NET Core NuGet/Bower packages](getting-started_images/Project-Conversion_img7.png)
 
-   ![](getting-started_images/Project-Conversion_img8.jpeg)
+   ![Required Syncfusion Essential JS 1 ASP.NET Core themes and scripts](getting-started_images/Project-Conversion_img8.jpeg)
    
 Once you converted your ASP.NET Core Web Application to Syncfusion ASP.NET Core Web Application using Syncfusion Visual Studio Extension, Perform the following steps to render the Syncfusion controls to your project.
 
 1. Include the Syncfusion control snippets to any of the view page of your project. Refer the following screenshot for more information.
 
-   ![](getting-started_images\Project-Conversion_img11.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core datepicker control code snippet](getting-started_images\Project-Conversion_img11.jpeg)
 
 2. Then run the project and the following output will be displayed.
 
-   ![](getting-started_images\Project-Conversion_img12.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core datepicker control output](getting-started_images\Project-Conversion_img12.jpeg)
    
    
    I> Refer all the required external and internal scripts only once in the page with proper order. Refer this [link](https://help.syncfusion.com/js/control-initialization#adding-the-required-javascript-files) to know about order of script reference.
@@ -164,7 +164,7 @@ The following steps helps to create an ASP.NET Core web application to utilize S
 
 * Open Visual Studio 2017 to create ASP.NET Core web application.
 
-![](getting-started_images/getting-started_img1.png)
+![create ASP.NET Core web application via New Project Template wizard](getting-started_images/getting-started_img1.png)
 
 * After project creation, install the Syncfusion Packages in your created application.
 
@@ -186,7 +186,7 @@ The following steps helps to create an ASP.NET Core web application to utilize S
 
 * Now, our Syncfusion Packages will list in this window. Select and install the “**Syncfusion.EJ.AspNet.Core**” package from this list.
 
-![](getting-started_images/getting-started_img18.png)
+![Syncfusion Packages will list in Nuget Package Manager](getting-started_images/getting-started_img18.png)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -194,7 +194,7 @@ The following steps helps to create an ASP.NET Core web application to utilize S
 
 * Then the packages will get installed and it will be automatically referred to your application. Open your **bower.json** file and specify our bower name “**syncfusion-javascript**” and the value with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure look like a below structure.
 
-![](getting-started_images/getting-started_img3.png)
+![Project folder structure after bower installation complete](getting-started_images/getting-started_img3.png)
 
 *  Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -259,7 +259,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 *  Finally compile your project, after successful compilation then press F5 key to deploy your project.   
 
-   ![](getting-started_images/getting-started_img4.png)
+   ![output for your application with syncfusion control](getting-started_images/getting-started_img4.png)
    
 ### Syncfusion Project Migration
 
@@ -285,7 +285,7 @@ The following steps help you to migrate your existing Syncfusion ASP.NET Core We
 
 2. The **Project Migration** window appears. You can choose the required Essential Studio version that is installed in the machine. 
 
-   ![](getting-started_images/Project-Migration_img2.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Migration window](getting-started_images/Project-Migration_img2.jpeg)
 
 3. The **Project Migration** window allows you to configure the following options:
 
@@ -295,6 +295,6 @@ The following steps help you to migrate your existing Syncfusion ASP.NET Core We
    
 4. Click the Migrate Button. The **Project Backup** dialog will be opened. If click Yes it will backup the current project before migrate the Syncfusion project. If click No it will migrate the project to required Syncfusion version without backup
    
-   ![](getting-started_images/Project-Migration_img3.jpeg)
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Migration backup dialog](getting-started_images/Project-Migration_img3.jpeg)
       
 5. The Syncfusion NuGet/Bower Packages, Scripts and CSS are updated to the corresponding version in the project.
