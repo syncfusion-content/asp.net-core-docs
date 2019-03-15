@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Essential ASP.NET Core Spreadsheet
+title: Getting Started for Syncfusion Essential ASP.NET Core Spreadsheet
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
 platform: aspnet-core
 control: Spreadsheet
@@ -26,7 +26,7 @@ The following steps explains how to create spreadsheet,
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with Data
 
@@ -86,7 +86,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 </ej-spread-sheet>
 ~~~
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img2.png)
 
 ## Apply Conditional Formatting
 
@@ -108,7 +108,7 @@ To apply conditional formats for a range use `e-cformat-rules` tag. The followi
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img3.png)
 
 ## Export Spreadsheet as Excel File
 
@@ -132,3 +132,7 @@ public ActionResult ExcelExport(string sheetModel, string sheetData, string pass
 {% endhighlight %}
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
+
+N> 1. For more details about `Export` refer following [`link`](https://help.syncfusion.com/aspnetmvc/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Client dependencies` refer the following [`link`](https://help.syncfusion.com/js/spreadsheet/dependencies "link")
+N> 3. For more details about `Server dependencies` refer the following [`link`](https://help.syncfusion.com/aspnet-core/spreadsheet/open-and-save#server-dependencies "link")
