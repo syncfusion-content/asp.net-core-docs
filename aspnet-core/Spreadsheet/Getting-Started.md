@@ -132,3 +132,7 @@ public ActionResult ExcelExport(string sheetModel, string sheetData, string pass
 {% endhighlight %}
 
 Use shortcut `Ctrl + S` to save Spreadsheet as excel file.
+
+N> 1. For more details about `Export` refer following [`link`](https://help.syncfusion.com/aspnetmvc/spreadsheet/open-and-save#save "link")
+N> 2. For more details about `Client dependencies` refer the following [`link`](https://help.syncfusion.com/js/spreadsheet/dependencies "link")
+N> 3. For more details about `Server dependencies` refer the following [`link`](https://help.syncfusion.com/aspnetmvc/spreadsheet/open-and-save#server-dependencies "link")
