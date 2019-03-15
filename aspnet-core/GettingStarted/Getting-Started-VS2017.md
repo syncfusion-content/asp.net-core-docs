@@ -33,11 +33,21 @@ Syncfusion provides the **Visual** **Studio** **Project** **Templates** for th
 
 I> The Syncfusion ASP.NET Core project templates are available from v15.2.0.40.
 
-The following steps direct you to create the **Syncfusion** **ASP****.****NET** **Core** **Application** through the **Visual** **Studio** **Project** **Template**.
+The following steps help you to create the **Syncfusion** **ASP****.****NET** **Core** **Application** through the **Visual** **Studio** **Project** **Template**.
 
-1. To create a Syncfusion ASP.NET Core project, choose **New** **Project****->** **Syncfusion****->****.NET** **Core****->****Syncfusion** **ASP****.****NET** **Core** **Application** from **Visual** **Studio**.
+1. To create a Syncfusion ASP.NET Core (Essential JS 1) project, follow either one of the options below:
 
-   ![](getting-started_images/Syncfusion-Project-Templates_img1.jpeg)
+   **Option 1:**   
+   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET Core (EJ1) > Create New Syncfusion Project…** in **Visual Studio**.
+
+   ![Choose Syncfusion ASP.NET Core Application from Visual Studio New Project dialog via Syncfusion menu](getting-started_images/Syncfusion_Menu_ProjectTemplate.png)
+
+   N>In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+
+   **Option 2:**   
+   Choose **File > New > Project** and navigate to **Syncfusion > .NET Core > Syncfusion ASP.NET Core (Essential JS 1) Web Application** in **Visual Studio**.
+
+   ![Choose Syncfusion ASP.NET Core Application from Visual Studio New Project dialog](getting-started_images/Syncfusion-Project-Templates_img1.png)
 
 2. Name the **Project**, choose the destination location when required and set the Framework of the project, then click **OK**. The Project Configuration Wizard appears.
 
@@ -77,13 +87,23 @@ Syncfusion Project Conversion is a Visual Studio add-in that converts an existin
 
 I> The Syncfusion ASP.NET Core Web Application Project Conversion utility is available from v15.2.0.40.
 
-The following steps direct you to use the Syncfusion Project Conversion in the existing ASP.NET Core Web Application.
+The following steps help you to use the Syncfusion Project Conversion in the existing ASP.NET Core Web Application.
 
 1. Open an existing Microsoft ASP.NET Core Web Application or create a new Microsoft ASP.NET Core Web Application. 
 
-2. Right-click on **Project** from Solution Explorer and select **Syncfusion VS Extensions** and choose the **Convert to Syncfusion ASP.NET Core Application**. Refer to the following screenshot for more information.
+2. To open Project Conversion Wizard, follow either one of the options below: 
 
-   ![](getting-started_images/Project-Conversion_img1.jpeg)
+   **Option 1:**  
+   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET Core (EJ1) > Convert to Syncfusion ASP.NET Core Application…** in **Visual Studio**.
+
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Conversion via Syncfusion menu](getting-started_images/Syncfusion_Menu_Project_Conversion.png)
+
+   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+
+   **Option 2:**  
+   Right-click the Project from Solution Explorer, select **Syncfusion Essential JS 1**, and then choose **Convert to Syncfusion ASP.NET Core (Essential JS 1) Application...** Refer to the following screenshot for more information.
+
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Conversion add-in](getting-started_images/Project-Conversion_img1.png)
 
 3. Project Conversion Wizard opens to configure the project.
 
@@ -247,11 +267,21 @@ Syncfusion Project Migration is a Visual Studio add-in that allows you to migrat
 
 I> The Syncfusion ASP.NET Core Web Application Project Migration utility is available from v15.2.0.40.
 
-The following steps direct you to migrate your existing Syncfusion ASP.NET Core Web Application. 
+The following steps help you to migrate your existing Syncfusion ASP.NET Core Web Application. 
 
-1. Right-click on **Syncfusion ASP.NET Core Web Application** from Solution Explorer and select **Syncfusion VS Extensions**. Choose **Migrate the Project to Another version**
+1. To open Migration Wizard, follow either one of the options below: 
 
-   ![](getting-started_images/Project-Migration_img1.jpeg)
+   **Option 1:**  
+   Click **Syncfusion Menu** and choose **Essential Studio for ASP.NET Core (EJ1) > Migrate Project…** in **Visual Studio**.
+   
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Migration via Syncfusion menu](getting-started_images/Syncfusion_Menu_Project_Migration.png)
+
+   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+   
+   **Option 2:**  
+   Right-click the **Syncfusion ASP.NET Core Web Application** from Solution Explorer and select **Syncfusion Essential JS 1**. Choose **Migrate the Essential JS 1 Project to Another Version...**
+
+   ![Syncfusion Essential JS 1 ASP.NET Core Project Migration add-in](getting-started_images/Project-Migration_img1.png)
 
 2. The **Project Migration** window appears. You can choose the required Essential Studio version that is installed in the machine. 
 
