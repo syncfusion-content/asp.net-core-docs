@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Essential ASP.NET Core Spreadsheet
+title: Getting Started for Syncfusion Essential ASP.NET Core Spreadsheet
 description: How to create a Spreadsheet with data source, apply format and export it as excel file.
 platform: aspnet-core
 control: Spreadsheet
@@ -26,7 +26,7 @@ The following steps explains how to create spreadsheet,
 
 Now, the Spreadsheet is rendered with default row and column count.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img1.png)
 
 ## Populate Spreadsheet with Data
 
@@ -86,7 +86,7 @@ Now, this section explains how to populate JSON data to the Spreadsheet. You can
 </ej-spread-sheet>
 ~~~
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img2.png)
 
 ## Apply Conditional Formatting
 
@@ -108,7 +108,7 @@ To apply conditional formats for a range use `e-cformat-rules` tag. The followi
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started](Getting-Started_images/Getting-Started_img3.png)
 
 ## Export Spreadsheet as Excel File
 
