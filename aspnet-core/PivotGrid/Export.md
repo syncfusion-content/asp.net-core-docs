@@ -211,3 +211,5 @@ The following screenshot shows the pivot grid control exported to a Word documen
 The following screenshot shows the pivot grid control exported to a PDF document:
 
 ![Export-PDF](Exporting_images/ExportOLAPPDF.png)
+
+N> Grand total and sub-totals can be hidden while exporting the document.

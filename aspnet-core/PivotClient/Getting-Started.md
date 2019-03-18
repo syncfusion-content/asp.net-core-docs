@@ -137,6 +137,50 @@ Now, the pivot client is rendered with pivot chart, and the pivot grid is render
 
 ![ASP NET Core pivot client control rendered with relational client mode](Getting-Started_images/purejs.png)
 
+### Summary Types
+
+Allows you to perform calculations over a group of values using `summary-type` option. This property includes several types of aggregations like sum, average, minimum, maximum etc. You can see the totals of PivotClient control with any one of the below mentioned summary types. 
+
+Also, summary type options are added in the context menu of pivot buttons, in values section, to change the resultant summary value dynamically.
+
+ The following summary types have been supported. By default, `sum` is applied.
+
+* Sum
+* Average
+* Count
+* Min
+* Max
+
+Refer the following code sample to implement summary type through code behind.
+
+{% highlight cshtml %}
+
+<ej-pivot-client id="PivotClient1" load="onload">
+    <e-data-source>
+        <e-pivot-rows>
+            <e-row-field field-name="Country" field-caption="Country"></e-row-field>
+        </e-pivot-rows>
+        <e-pivot-columns>
+            <e-column-field field-name="Product" field-caption="Product"></e-column-field>
+        </e-pivot-columns>
+        <e-pivot-values>
+            <e-value-field field-name="Amount" field-caption="Amount" summary-type="Count"></e-value-field>
+            <e-value-field field-name="Quantity" field-caption="Quantity" summary-type="Min"></e-value-field>
+        </e-pivot-values>
+    </e-data-source>
+</ej-pivot-client>
+
+<script type="text/javascript">
+function onload(args) {
+    args.model.dataSource.data = pivot_dataset;
+}
+</script>
+
+{% endhighlight %}
+
+![Summary types in ASP NET Core pivot](Getting-Started_images/client_mode_summary.png)
+
+
 ## OLAP
 
 This section covers the information required to populate a simple pivot client with OLAP data source.
