@@ -71,10 +71,10 @@ The following code illustrates about how to render UploadBox inside the column 
                                 .Trim('"');
                 filename = hostingEnv.WebRootPath + $@"\{filename}"; //get file path 
                 size += file.Length;
-                using (FileStream fs = System.IO.File.Create(filename))
+                using (FileStream stream = System.IO.File.Create(filename))
                 {
-                    file.CopyTo(fs);
-                    fs.Flush();
+                    file.CopyTo(stream);
+                    stream.Flush();
                 }
             }
             return Content("");
