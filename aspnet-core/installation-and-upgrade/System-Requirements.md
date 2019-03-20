@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio ASP.NET Core products
+title: Installation and Deployment of Syncfusion ASP.NET Core products
 description: Learn how to install and deploy the Syncfusion ASP.NET Core component
 platform: aspnet-core
 control: Installation and Deployment
@@ -34,7 +34,7 @@ The following topic describes the system requirements for Syncfusion ASP.NET Cor
 
 ### Development Environment
 
-* Microsoft Visual Studio 2015 Update 3 (minimum) , 2017 version latest (15.6.4). 
+* Microsoft Visual Studio 2015 Update 3 (minimum) , 2017 version latest (15.6.4), 2019. 
 * .NET Framework :  Minimum .NET 4.5.1 upto .NET 4.7 .
 * Command Line (Optional. Necessary for command line deployment)
 * Visual Studio Code (optional text-editor)
