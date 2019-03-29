@@ -78,8 +78,6 @@ Add packages can be used to search and install NuGet packages to the Visual Stud
 
 The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
 
-### Configure NuGet feed URL 
-
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
     N> To update the existing nuget.exe to latest version use the following command.
@@ -115,6 +113,8 @@ mono nuget.exe install “ Syncfusion.EJ.AspNet.Core”
 #install all package which mention in package.config path for Mac and Linux 
 mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 ~~~
+
+N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Managing NuGet package using Dotnet CLI
 
