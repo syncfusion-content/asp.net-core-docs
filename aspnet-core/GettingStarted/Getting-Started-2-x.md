@@ -91,13 +91,22 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
 
     <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
+    <!-- CDN style reference for EJ controls
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> -->
+
     <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+
+    <!-- CDN EJ responsive style reference for EJ controls
+    <link href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"> -->
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
 
     <script src="~/lib/jsrender/jsrender.min.js"></script>
 
     <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+
+     <!-- CDN script reference for EJ controls
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> -->
 
     </head>
 
@@ -207,8 +216,8 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
         "bootstrap": "^3.3.6", 
         "jquery": "^3.1.1", 
         "jsrender": "^0.9.75", 
-        "gulp": "^3.9.1", 
-        "syncfusion-javascript": "^16.1.24" 
+        "gulp": "*", 
+        "syncfusion-javascript": "*" 
         } 
     } 
 
@@ -232,25 +241,20 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
  {% highlight cshtml %} 
 
     var gulp = require('gulp'); 
-    gulp.task('copy', function () { 
+    gulp.task('copy', async function () { 
         gulp.src('./node_modules/syncfusion-javascript/**') 
             .pipe(gulp.dest('./wwwroot/lib/syncfusion-javascript')); 
     });
 
   {% endhighlight %}
 
-* To configure Visual Studio Code to use Gulp as task runner, Press ** Ctrl + Shift + P ** to bring up the command palette. Now type **Configure Task** and select **Create task.json file from template**.
+*  Open then command window prompt and run the below command to copy the necessary script and CSS files from node_modules directory to wwwroot directory.
 
- ![](getting-started_images/getting-started_img21.png) 
+{% highlight text %}
 
- * This will create **task.json** file in .vscode directory.
+  gulp copy 
 
-  ![](getting-started_images/getting-started_img22.png) 
-
-
-* Once again, press **Ctrl + Shift + P** to bring up the command palette. Type "Run Task" and select it, which will bring up a list of tasks configured in Gulp. Choose the Gulp Task **copy** to run gulp task to copy necessary script and CSS files from **node_modules** directory to **wwwroot** directory.
-
-  ![](getting-started_images/getting-started_img23.png)
+{% endhighlight %} 
 
 
 * Now open your **project.csproj** file to specify our assembly packages.
@@ -293,13 +297,22 @@ N> Kindly include the below mentioned scripts and CSS references under the appro
 
     <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
+    <!-- CDN style reference for EJ controls
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> -->
+
     <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+
+    <!-- CDN responsive style reference for EJ controls
+    <link href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"> -->
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
 
     <script src="~/lib/jsrender/jsrender.min.js"></script>
 
     <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+
+     <!-- CDN script reference for EJ controls
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> -->
 
     </head>
 
@@ -444,8 +457,8 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
         "bootstrap": "^3.3.6", 
         "jquery": "^3.1.1", 
         "jsrender": "^0.9.75", 
-        "gulp": "^3.9.1", 
-        "syncfusion-javascript": "^16.1.24" 
+        "gulp": "*", 
+        "syncfusion-javascript": "*" 
         } 
     } 
 
@@ -467,27 +480,22 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
  {% highlight cshtml %} 
 
     var gulp = require('gulp'); 
-    gulp.task('copy', function () { 
+    gulp.task('copy', async function () { 
         gulp.src('./node_modules/syncfusion-javascript/**') 
             .pipe(gulp.dest('./wwwroot/lib/syncfusion-javascript')); 
     });
 
   {% endhighlight %}
 
-* To configure Visual Studio Code to use Gulp as task runner, Press ** Ctrl + Shift + P ** to bring up the command palette. Now type **Configure Task** and select **Create task.json file from template**.
+*  Open then command window prompt and run the below command to copy the necessary script and CSS files from node_modules directory to wwwroot directory.
 
- ![](getting-started_images/getting-started_img21.png) 
+{% highlight text %}
 
- * This will create **task.json** file in .vscode directory.
+  gulp copy 
 
-  ![](getting-started_images/getting-started_img24.png) 
+{% endhighlight %} 
 
-
-* Once again, press **Ctrl + Shift + P** to bring up the command palette. Type "Run Task" and select it, which will bring up a list of tasks configured in Gulp. Choose the Gulp Task **copy** to run gulp task to copy necessary script and CSS files from **node_modules** directory to **wwwroot** directory.
-
-  ![](getting-started_images/getting-started_img25.png)
-
-
+ 
 * Now open your **project.csproj** file to specify our assembly packages.
 
   ![](getting-started_images/getting-started_img26.png)
@@ -530,13 +538,22 @@ N> Kindly include the below mentioned scripts and CSS references under the appro
 
     <link href="~/lib/syncfusion-javascript/Content/ej/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
 
+    <!-- CDN style reference for EJ controls
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" /> -->
+
     <link href="~/lib/syncfusion-javascript/Content/ej/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+
+    <!-- CDN responsive style reference for EJ controls
+    <link href="https://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet"> -->
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
 
     <script src="~/lib/jsrender/jsrender.min.js"></script>
 
     <script src="~/lib/syncfusion-javascript/Scripts/ej/web/ej.web.all.min.js"></script>
+
+     <!-- CDN script reference for EJ controls
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script> -->
 
     </head>
 
