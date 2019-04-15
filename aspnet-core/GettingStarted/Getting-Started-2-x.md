@@ -28,7 +28,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  Open Visual Studio 2017 version 15.5 to create **ASP.NET Core web application**.
 
-   ![](getting-started_images/getting-started_image1.png)
+   ![create application](getting-started_images/getting-started_image1.png)
 
 *  After project creation, install the Syncfusion Packages in your application.
 
@@ -50,7 +50,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 * Now, our Syncfusion Packages will list in this window. Select and install the “**Syncfusion.EJ.AspNet.Core**” package from this list.
 
-![](getting-started_images/getting-started_img37.png)
+![install nuget](getting-started_images/getting-started_img37.png)
 
 * Then the packages will get installed and it will be automatically referred to your application.
 
@@ -74,7 +74,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 > Syncfusion Essential Studio build will be available in the following installed location, 
  `C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets`
  
-![](getting-started_images/necessary_files_refer_img.png)
+![scripts for ejControls](getting-started_images/necessary_files_refer_img.png)
 
 
 * Refer the required Syncfusion [CDN](https://help.syncfusion.com/js/cdn) links in the **_layout.cshtml** page to render Syncfusion components.
@@ -139,7 +139,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 *  Finally compile your project, after successful compilation then press F5 key to deploy your project.   
 
-   ![](getting-started_images/getting-started_img36.png)
+   ![output](getting-started_images/getting-started_img36.png)
 
 ## ASP.NET Core 2.x Application Using Command Prompt with Visual Studio Code
 
@@ -163,7 +163,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_image123.png)
+  ![create application](getting-started_images/getting-started_image123.png)
 
 
 * Then run the below mentioned command to create a new web application. After command execution the project will be created within your folder.
@@ -173,15 +173,14 @@ The following steps helps to create a ASP.NET Core web application to configure 
     dotnet new mvc
 
 {% endhighlight %}
-
-  ![](getting-started_images/getting-started_image21.png)
+  ![select application type](getting-started_images/getting-started_image21.png)
 
 
 ### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-  ![](getting-started_images/getting-started_image22.png)
+  ![vs code](getting-started_images/getting-started_image22.png)
 
 
 N> **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into **wwwroot** folder.   
@@ -223,7 +222,7 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
 
   {% endhighlight %}
 
-  ![](getting-started_images/getting-started_img20.png)
+  ![package](getting-started_images/getting-started_img20.png)
 
 
 * Now, run the following commands to download syncfusion scripts and CSS in the node_modules directory.
@@ -259,7 +258,7 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
 
 * Now open your **project.csproj** file to specify our assembly packages.
 
-  ![](getting-started_images/getting-started_image25.png)
+  ![add assembly](getting-started_images/getting-started_image25.png)
 
 N> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
@@ -351,11 +350,11 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_image26.png)
+![host application](getting-started_images/getting-started_image26.png)
 
 * Open browser and launch the localhost:5000 to view the output of the project.
 
-  ![](getting-started_images/getting-started_image27.png)
+  ![output](getting-started_images/getting-started_image27.png)
 
 
 ## ASP.NET Core 2.x Application Using Yeoman with Visual Studio Code:
@@ -397,12 +396,12 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_image5.png)
+  ![create application](getting-started_images/getting-started_image5.png)
 
 
 * From the list of available projects, select the **Web Application Basic [ without Membership and Authorization ]** by using arrow keys.
 
-  ![](getting-started_images/getting-started_image6.png)
+  ![select application type](getting-started_images/getting-started_image6.png)
 
 
 * And then provide the project name or simply press the enter key to create the project with default name.
@@ -411,7 +410,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-  ![](getting-started_images/getting-started_image7.png)
+  ![configuration](getting-started_images/getting-started_image7.png)
 
   N> **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into wwwroot folder.   
 
@@ -464,7 +463,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
 
   {% endhighlight %}
 
-  ![](getting-started_images/getting-started_img20.png)
+  ![package](getting-started_images/getting-started_img20.png)
 
 
 * Now, run the following commands to download syncfusion scripts and CSS in the node_modules directory.
@@ -498,7 +497,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
  
 * Now open your **project.csproj** file to specify our assembly packages.
 
-  ![](getting-started_images/getting-started_img26.png)
+  ![project](getting-started_images/getting-started_img26.png)
 
 N> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
@@ -520,7 +519,7 @@ N> The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_img27.png)
+![restore](getting-started_images/getting-started_img27.png)
  
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
@@ -591,4 +590,4 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_img28.png)
+  ![output](getting-started_images/getting-started_img28.png)
