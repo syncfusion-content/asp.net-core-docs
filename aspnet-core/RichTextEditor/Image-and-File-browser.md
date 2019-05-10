@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image and File browser in RichTextEditor widget for Syncfusion Essential ASP.NET Core
+title: Image and File browser in Syncfusion RichTextEditor widget
 description: Configuring and working with Image and File browser in RichTextEditor  
 platform: aspnet-core
 control: RTE
@@ -140,7 +140,7 @@ Refer [here](http://www.syncfusion.com/downloads/support/forum/144048/ze/RTE_Ima
 
 N> In RTE, image will be inserted based on the file path mentioned in image browser settings. In Asp.Net Core, static files will be present in wwwroot folder and this path cannot be directly accessed in browser while inserting image into RTE. So, include “wwwroot” in Controller page for FileExplorer actions alone. 
 
-# Insert an Image from Online Source
+## Insert an Image from Online Source
 
 If you want to insert an image from online source like Google, ping, etc., you need to enable images tool on the editor’s toolbar. By default, the images tool is open a simple dialog which allows you to inserting an image from online source.
 
@@ -165,4 +165,4 @@ If you want to insert an image from online source like Google, ping, etc., you n
 
 {% endhighlight %}
 
-![](ImageandFilebrowser_images/ImageandFilebrowser_img1.png)
+![Image](ImageandFilebrowser_images/ImageandFilebrowser_img1.png)
