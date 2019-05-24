@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive Layout
-description: responsive layout
+description: This document illustrates that how to enable responsive layout rendering in ASP.NET Core PivotGrid control  
 platform: aspnet-core
 control: PivotGauge
 documentation: ug

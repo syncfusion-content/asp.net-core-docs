@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotGrid - Overview
-description: PivotGrid Introduction
+title: PivotGrid - Overview | ASP.NET Core | PivotGrid | Syncfusion
+description: It is an overview of PivotGrid control in ASP.NET Core platform. PivotGrid component visualizes relational and OLAP data sources in tabular format
 platform: aspnet-core
 control: pivotgrid
 documentation: ug

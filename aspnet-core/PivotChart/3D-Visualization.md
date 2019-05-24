@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D-Visualization | PivotChart | ASP.NET Core | Syncfusion
-description: 3d visualization
+description: This document illustrates that how to define 3d visualization and its types in ASP.NET Core PivotChart control
 platform: aspnet-core
 control: PivotChart
 documentation: ug

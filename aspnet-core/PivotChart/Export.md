@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting | PivotChart | ASP.NET Core | Syncfusion
-description: export
+description: This document illustrates that how to define exporting and its customization in ASP.NET Core PivotChart control
 platform: aspnet-core
 control: PivotChart
 documentation: ug

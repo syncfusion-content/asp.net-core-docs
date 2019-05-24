@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotTable Field List | PivotGrid | ASP.NET Core | Syncfusion
-description: pivotTable field list
+description: This document illustrates that how to enable pivot table field list component in ASP.NET Core PivotGrid control
 platform: aspnet-core
 control: PivotGrid
 documentation: ug

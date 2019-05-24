@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting | PivotClient | ASP.NET Core | Syncfusion
-description: exporting
+description: This document illustrates that how to define exporting and its customization in ASP.NET Core PivotClient control
 platform: aspnet-core
 control: PivotClient
 documentation: ug

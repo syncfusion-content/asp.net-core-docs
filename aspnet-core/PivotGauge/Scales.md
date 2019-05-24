@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scale
-description: scale
+title: Scale | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to enable scales and its customization in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -23,7 +23,7 @@ Scales can be added within the pivot gauge control.
 
 {% endhighlight  %}
 
-![](Scales_images/AddingScale.png) 
+![Scale in ASP NET Core pivot gauge control](Scales_images/AddingScale.png) 
 
 ## Scale customization
 
@@ -48,7 +48,7 @@ The pointer cap is a circular shape element which is located at the center of th
 
 {% endhighlight  %}
 
-![](Scales_images/PointerCap.png)
+![Pointer cap in ASP NET Core pivot gauge control](Scales_images/PointerCap.png)
 
 ### Appearance
 The appearance of the scale can be customized through the following properties:
@@ -77,4 +77,4 @@ The `ShowIndicators`, `ShowTicks`, `ShowRanges`, `ShowPointers`, and `ShowScaleB
 
 {% endhighlight  %}
 
-![](Scales_images/Appearance.png)
+![Scale appearance in ASP NET Core pivot gauge control](Scales_images/Appearance.png)

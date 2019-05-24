@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series | PivotChart | ASP.NET Core | Syncfusion
-description: series
+description: This document illustrates that how to enable series and its customization in ASP.NET Core PivotChart control
 platform: aspnet-core
 control: PivotChart
 documentation: ug

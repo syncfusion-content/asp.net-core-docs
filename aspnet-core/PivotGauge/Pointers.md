@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pointers
-description: pointers
+title: Pointers | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to enable pointers and its customization in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -38,7 +38,7 @@ Needle type pointer is the default pointer which is always located at the center
 
 {% endhighlight %}
 
-![](Pointers_images/NeedlePointer.png) 
+![Needle pointer in ASP NET Core pivot gauge control](Pointers_images/NeedlePointer.png) 
 
 For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamond, Pentagon, Circle, Slider, Pointer, Wedge, Trapezoid, RoundedRectangle, and Image.
 
@@ -56,7 +56,7 @@ For marker pointer, the available shapes are Rectangle, Triangle, Ellipse, Diamo
 
 {% endhighlight %}
 
-![](Pointers_images/MarkerPointer.png) 
+![Marker pointer in ASP NET Core pivot gauge control](Pointers_images/MarkerPointer.png) 
 
 ## Adding pointer collection
 
@@ -77,7 +77,7 @@ The pointer collection can be directly added to the scales option within the  pi
 
 {% endhighlight  %}
 
-![](Pointers_images/AddingPointerCollection.png)
+![Collection of pointers in ASP NET Core pivot gauge control](Pointers_images/AddingPointerCollection.png)
 
 ## Appearance customization
 
@@ -111,7 +111,7 @@ The appearance of the pointer can be customized through the following properties
 
 {% endhighlight %}
 
-![](Pointers_images/AppearanceCustomization.png) 
+![Custom appearance of ASP NET Core pivot gauge control](Pointers_images/AppearanceCustomization.png) 
 
 ## Pointer position
 
@@ -136,7 +136,7 @@ N> Both the properties can be applied only if the pointer type is set to marker.
 
 {% endhighlight %}
 
-![](Pointers_images/PointerPosition.png)
+![Pointer position in ASP NET Core pivot gauge control](Pointers_images/PointerPosition.png)
 
 ## Pointer image
 
@@ -159,7 +159,7 @@ It is possible to replace the pointers with an image. To view the pointers as an
 
 {% endhighlight %}
 
-![](Pointers_images/PointerImage.png)
+![Pointer image in ASP NET Core pivot gauge control](Pointers_images/PointerImage.png)
 
 ## Pointer value text
 
@@ -197,4 +197,4 @@ To display the current value of pointers in the pivot gauge control, the **"e-po
 
 {% endhighlight %}
 
-![](Pointers_images/PointerValueText.png)
+![Pointer value text in ASP NET Core pivot gauge control](Pointers_images/PointerValueText.png)

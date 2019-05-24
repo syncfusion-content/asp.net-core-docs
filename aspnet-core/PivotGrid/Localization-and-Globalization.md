@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | PivotGrid | ASP.NET Core | Syncfusion
-description: localization and globalization
+description: This document illustrates that how to define localization and globalization in ASP.NET Core PivotGrid control
 platform: aspnet-core
 control: PivotGrid
 documentation: ug
