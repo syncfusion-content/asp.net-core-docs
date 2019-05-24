@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotChart - Overview | ASP.NET Core | Syncfusion
-description: This document illustrates overview of PivotChart control in ASP.NET Core platform. Pivot Chart is a lightweight component to visualize relational and OLAP data sources in a graphical format
+description: It is an overview of PivotChart control in ASP.NET Core platform. Pivot Chart visualizes relational and OLAP data sources in a graphical format
 platform: aspnet-core
 control: pivotchart
 documentation: ug
