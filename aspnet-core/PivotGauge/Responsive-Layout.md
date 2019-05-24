@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive Layout
+title: Responsive Layout | ASP.NET Core | PivotGauge | Syncfusion
 description: This document illustrates that how to enable responsive layout rendering in ASP.NET Core PivotGrid control  
 platform: aspnet-core
 control: PivotGauge
@@ -17,11 +17,11 @@ The pivot gauge control supports responsive rendering based on the target device
 
 {% endhighlight %}
 
-![](Responsive-Layout_images/Responsive1.png) 
+![Normal layout of ASP NET Core pivot gauge control](Responsive-Layout_images/Responsive1.png) 
 
 _Normal View_
 
 
-![](Responsive-Layout_images/Responsive2.png) 
+![Responsive layout of ASP NET Core pivot gauge control](Responsive-Layout_images/Responsive2.png) 
 
 _Responsive View_
