@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple Axes | PivotChart | ASP.NET Core | Syncfusion
-description: multiple axes
+description: This document illustrates that how to define multiple-axes and its properties in ASP.NET Core PivotChart control
 platform: aspnet-core
 control: PivotChart
 documentation: ug

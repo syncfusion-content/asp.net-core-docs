@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization
+title: Localization | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to define localization with respective to the modes in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -60,4 +60,4 @@ To get the localized string based on different cultures, set the **"Locale Ident
 
 {% endhighlight %}
 
-![](Localization-and-Translation-Support_images/Localization.png) 
+![Localization in ASP NET Core pivot gauge control](Localization-and-Translation-Support_images/Localization.png) 

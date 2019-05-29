@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cell Editing | PivotGrid | ASP.NET Core | Syncfusion
+description: This document illustrates that how to enable cell editing feature through API in ASP.NET Core PivotGrid control
 platform: aspnet-core
 control: PivotGrid
 documentation: ug

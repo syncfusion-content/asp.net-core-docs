@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotChart - Overview
-description: PivotChart Introduction
+title: PivotChart - Overview | ASP.NET Core | Syncfusion
+description: It is an overview of PivotChart control in ASP.NET Core platform. Pivot Chart visualizes relational and OLAP data sources in a graphical format
 platform: aspnet-core
 control: pivotchart
 documentation: ug

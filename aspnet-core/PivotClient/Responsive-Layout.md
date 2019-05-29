@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive Layout | PivotClient | ASP.NET Core | Syncfusion
-description: responsive layout
+description: This document illustrates that how to enable responsive layout rendering in ASP.NET Core PivotClient control
 platform: aspnet-core
 control: PivotClient
 documentation: ug
