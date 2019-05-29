@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Filtering | PivotGrid | ASP.NET Core | Syncfusion
-description: advance filtering and sorting
+description: This document illustrates that how to define advance filtering and sorting with respective to the modes in ASP.NET Core PivotGrid control
 platform: aspnet-core
 control: PivotGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging | PivotClient | ASP.NET Core | Syncfusion
-description: paging
+description: This document illustrates that how to define paging with respective to the modes in ASP.NET Core  PivotClient control
 platform: aspnet-core
 control: PivotClient
 documentation: ug

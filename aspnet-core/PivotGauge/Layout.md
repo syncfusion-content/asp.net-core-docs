@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout
-description: layout 
+title: Layout | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to define layouts and its functionalities in ASP.NET Core PivotGauge control 
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -19,7 +19,7 @@ Gauges can be arranged in specified number of rows by using the `rows-count` pro
 
 {% endhighlight %}
 
-![](Layout_images/RowBased.png) 
+![Row-wise layout in ASP NET Core pivot gauge control](Layout_images/RowBased.png) 
 
 ## Column-wise layout
 
@@ -31,5 +31,5 @@ Gauges can be arranged in specified number of columns by using the `columns-coun
 
 {% endhighlight %}
 
-![](Layout_images/ColumnBased.png)
+![Column-wise layout in ASP NET Core pivot gauge control](Layout_images/ColumnBased.png)
 

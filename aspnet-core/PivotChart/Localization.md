@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | PivotChart | ASP.NET Core | Syncfusion
-description: localization
+description: This document illustrates that how to define localization with respective to the modes in ASP.NET Core  PivotChart control
 platform: aspnet-core
 control: PivotChart
 documentation: ug

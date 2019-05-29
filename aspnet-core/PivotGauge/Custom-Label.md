@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom labels
-description: custom labels
+title: Custom labels | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to enable custom labels and its functionalities in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -55,7 +55,7 @@ The appearance of the custom labels can be changed through the following propert
 
 {% endhighlight %}
 
-![](Custom-Label_images/AppearanceCustomization.png) 
+![Custom label customization in ASP NET Core pivot gauge control](Custom-Label_images/AppearanceCustomization.png) 
 
 ## Multiple custom labels
 
@@ -86,4 +86,4 @@ Multiple ranges can be added to `CustomLabelCollection` to the scales option wit
 
 {% endhighlight %}
 
-![](Custom-Label_images/MultipleCustomLabels.png) 
+![Multiple custom labels in ASP NET Core pivot gauge control](Custom-Label_images/MultipleCustomLabels.png) 

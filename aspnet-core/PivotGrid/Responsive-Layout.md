@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive | PivotGrid | ASP.NET Core | Syncfusion
-description: responsive
+description: This document illustrates that how to define responsive layout rendering in ASP.NET Core PivotGrid control
 platform: aspnet-core
 control: PivotGrid
 documentation: ug

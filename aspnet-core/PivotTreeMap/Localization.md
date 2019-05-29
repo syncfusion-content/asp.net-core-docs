@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | PivotTreeMap | ASP.NET | Syncfusion
-description: localization 
+title: Localization | PivotTreeMap | ASP.NET Core | Syncfusion
+description: This document illustrates that how to define localization with respective to the modes in ASP.NET Core PivotTreeMap control 
 platform: aspnet
 control: PivotTreeMap
 documentation: ug
@@ -43,5 +43,5 @@ The content displayed within the pivot tree map control is obtained from the OLA
 
 {% endhighlight %}
 
-![](Localization_images/localization.png) 
+![Localization in ASP NET Core pivot tree map control](Localization_images/localization.png) 
 

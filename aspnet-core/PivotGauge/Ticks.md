@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks
-description: ticks
+title: Ticks | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to enable ticks and its customization in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -53,5 +53,5 @@ The appearance of the tick can be customized through the following properties:
 
 {% endhighlight %}
 
-![](Ticks_images/TickCustomization.png) 
+![Ticks in ASP NET Core pivot gauge control](Ticks_images/TickCustomization.png) 
 
