@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label Format
-description: label format
+title: Label Format | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to define label format feature and its functionalities in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -22,7 +22,7 @@ Number format for the label values can be set to any of the following types:
 
 * Default	
 * Currency
-* Percentage
+* Percentages
 * Fraction
 * Scientific
 * Text
@@ -36,4 +36,4 @@ Number format for the label values can be set to any of the following types:
 
 {% endhighlight %}
 
-![](Label-Format_images/labelformat.png) 
+![Label formats in ASP NET Core pivot gauge control](Label-Format_images/labelformat.png) 

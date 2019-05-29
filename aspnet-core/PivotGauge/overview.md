@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotGauge - Overview
-description: PivotGauge Introduction
+title: PivotGauge - Overview | ASP.NET Core | PivotGauge | Syncfusion
+description: It is an overview of PivotGauge control in ASP.NET Core platform. PivotGauge visualizes relational and OLAP data sources in the form of circular gauge
 platform: aspnet-core
 control: pivotgauge
 documentation: ug

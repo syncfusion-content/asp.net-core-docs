@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PivotGrid Elements | PivotGrid | ASP.NET Core | Syncfusion
-description: pivotGrid elements
+description: This document illustrates that how to customize cells with an interactive way in ASP.NET Core PivotGrid control
 platform: aspnet-core
 control: PivotGrid
 documentation: ug

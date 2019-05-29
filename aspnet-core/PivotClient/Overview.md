@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotClient - Overview
-description: PivotClient Introduction
+title: PivotClient - Overview | ASP.NET Core | PivotClient | Syncfusion
+description: It is an overview of PivotClient control in ASP.NET Core platform. PivotClient visualizes relational and OLAP data sources in a graphical and tabular formats
 platform: aspnet-core
 control: pivotclient
 documentation: ug

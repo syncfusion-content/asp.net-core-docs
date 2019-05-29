@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ranges
-description: ranges
+title: Ranges | ASP.NET Core | PivotGauge | Syncfusion
+description: This document illustrates that how to enable ranges and its customization in ASP.NET Core PivotGauge control
 platform: aspnet-core
 control: PivotGauge
 documentation: ug
@@ -63,7 +63,7 @@ N> By default, the placement takes the value near, whereas other enumeration val
 
 {% endhighlight  %}
 
-![](Ranges_images/AppearanceCustomization.png)
+![Custom apperance of ranges in ASP NET Core pivot gauge control](Ranges_images/AppearanceCustomization.png)
 
 N> When you set both the position properties - "distance-from-scale" and "placement" for a range, preference is given to the value that is set in the "distance-from-scale" property.
 
@@ -87,4 +87,4 @@ Multiple ranges can be added to `range-collection` to the scales option within t
 
 {% endhighlight %}
 
-![](Ranges_images/MultipleRanges.png)
+![Multiple ranges in ASP NET Core pivot gauge control](Ranges_images/MultipleRanges.png)

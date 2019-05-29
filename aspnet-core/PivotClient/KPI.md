@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KPI | PivotClient | ASP.NET Core | Syncfusion
-description: key performance indicator (KPI)
+description: This document illustrates that how to enable key performance indicator (KPI) in ASP.NET Core  PivotClient control
 platform: aspnet-core
 control: PivotClient
 documentation: ug
