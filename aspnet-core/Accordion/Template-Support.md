@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Template Support | Accordion  | ASP.NET Core | Syncfusion
-description: template support
+description: Syncfusion Accordion control has a template for its header and its content. It is used to customize the overall look and layout of a site.
 platform: aspnet-core
 control: Accordion 
 documentation: ug
 ---
 
-# Template Support
+# Accordion Template support
 
 The Content template option provided here is used to specify the HTML elements inside the Accordion control. You can use this option to load any HTML elements and display it in the Accordion panels as per your requirement.
 
@@ -74,4 +74,4 @@ The following code example explains how to use content template option in the Ac
 
 Output:
 
-![](Template-Support_images/Template-Support_img1.png)
+![Customizing the layout using template option in asp net core accordion](Template-Support_images/Template-Support_img1.png)
