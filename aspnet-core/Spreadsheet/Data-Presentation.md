@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data presentation with Spreadsheet widget for Syncfusion Essential ASP.NET Core.
+title: Data presentation with Spreadsheet for Syncfusion ASP.NET Core
 description: How to perform Spreadsheet Data presentation.
 platform: aspnet-core
 control: Spreadsheet
@@ -92,7 +92,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 {% endtabs %} 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img1.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img1.png)
 
 ## Chart
 
@@ -178,7 +178,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img2.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img2.png)
 
 ## Conditional Formatting
 
@@ -244,7 +244,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img3.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img3.png)
 
 ### Clear Rules
 
@@ -305,7 +305,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img4.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img4.png)
 
 ## Filtering
 
@@ -380,7 +380,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img5.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img5.png)
 
 ### Filter by Color
 
@@ -449,7 +449,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img6.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img6.png)
 
 ## Pivot Table
 
@@ -535,7 +535,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img7.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img7.png)
 
 ## Sorting
 
@@ -606,7 +606,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img8.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img8.png)
 
 ### Sort by Color
 
@@ -698,4 +698,4 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Data-Presentation_images/Data-Presentation_img9.png)
+![Alt text](Data-Presentation_images/Data-Presentation_img9.png)
