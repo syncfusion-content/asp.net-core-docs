@@ -121,13 +121,13 @@ You can perform the following customizations for chart. These are available in D
 
 <table>
     <colgroup><col width="180px" /></colgroup>
-    <tr><th>Feature</br></th><th>Description</br></th></tr>
-    <tr><td>Add Chart Elements</br></td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</br></td></tr>
-    <tr><td>Switch Row/Column</br></td><td>You can switch the row of the chart to column of the chart and vice versa.</br></td></tr>
-    <tr><td>Select Data</br></td><td>You can modify the data source of Chart.</br></td></tr>
-    <tr><td>Chart Type</br></td><td>You can change the type of the chart using Chart Type dialog.</br></td></tr>
-    <tr><td>Height and Width</br></td><td>You can change the height and width of the chart.</br></td></tr>
-    <tr><td>Chart Themes</br></td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</br></td></tr>
+    <tr><th>Feature</th><th>Description</th></tr>
+    <tr><td>Add Chart Elements</td><td>You can add a chart element like chart axes, legends, chart title, axis title, data labels and grid lines.</td></tr>
+    <tr><td>Switch Row/Column</td><td>You can switch the row of the chart to column of the chart and vice versa.</td></tr>
+    <tr><td>Select Data</td><td>You can modify the data source of Chart.</td></tr>
+    <tr><td>Chart Type</td><td>You can change the type of the chart using Chart Type dialog.</td></tr>
+    <tr><td>Height and Width</td><td>You can change the height and width of the chart.</td></tr>
+    <tr><td>Chart Themes</td><td>You can change the theme of the chart. The available themes are saffron, lemon and azure in dark, light themes.</td></tr>
 </table>
 
 The following code example describes the above behavior.
