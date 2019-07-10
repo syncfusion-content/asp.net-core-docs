@@ -13,7 +13,7 @@ documentation: ug
 Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in
 your ASP.NET Core application to use our components.
 
-# Create ASP.NET Core web application with Razor pages
+## Create ASP.NET Core web application with Razor pages
 
 ### System Requirements:
 
