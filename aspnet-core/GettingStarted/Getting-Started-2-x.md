@@ -22,7 +22,7 @@ To work with ASP.NET Core 2.x, you need to make sure, whether you have installed
 
 * DotNetCore [2.x](https://www.microsoft.com/net/download/dotnet-core).
 
-### Configure Syncfusion UI Components in ASP.NET Core Application using NPM packages:
+### Configure Syncfusion UI Components in ASP.NET Core Application using NuGet packages:
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
 
