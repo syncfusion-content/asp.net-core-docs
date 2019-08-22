@@ -65,7 +65,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img1.png)
+![Both Wrap Mode](Cell_images/Cell_img1.png)
 
 ### Header
 
@@ -108,7 +108,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img1_1.png)
+![Header Wrap Mode](Cell_images/Cell_img1_1.png)
 
 ### Content
 
@@ -151,7 +151,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img1_2.png)
+![Content Wrap Mode](Cell_images/Cell_img1_2.png)
 
 ## Cell merging
 
@@ -163,6 +163,11 @@ N> The following features are not supported with Cell Merging
 N> 1. Normal Mode Editing
 N> 2. Inline Mode Editing
 N> 3. Inline TemplateForm Mode Editing
+N> 4. Grouping
+N> 5. Virtual Scrolling
+N> 6. Frozen Columns
+N> 7. Cell Selection Modes
+N> 8. Column Selection
 
 The following code example describes the previous behavior.
 
@@ -213,7 +218,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img2.png)
+![Cell Merging](Cell_images/Cell_img2.png)
 
 
 ## Displaying HTML content
@@ -254,7 +259,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img4.png)
+![Display HTML](Cell_images/Cell_img4.png)
 
 ## Tooltip
 
@@ -308,7 +313,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img5.png)
+![Tooltip](Cell_images/Cell_img5.png)
 
 ## ClipMode
 
@@ -360,7 +365,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img6.png)
+![Clip](Cell_images/Cell_img6.png)
  
 ### Ellipsis
 
@@ -400,7 +405,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img7.png)
+![Ellipsis](Cell_images/Cell_img7.png)
 
 ### Ellipsis with tooltip
 
@@ -449,4 +454,4 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Cell_images/Cell_img8.png)
+![Ellipsis with Tooltip](Cell_images/Cell_img8.png)
