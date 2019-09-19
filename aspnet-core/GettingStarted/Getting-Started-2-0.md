@@ -30,7 +30,7 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  Open Visual Studio 2017 version 15.3 to create **ASP.NET Core web application**.
 
-   ![](getting-started_images/getting-started_image1.png)
+   ![create application](getting-started_images/getting-started_image1.png)
 
 *  After project creation, install the Syncfusion NuGet packages in your application by following the below given steps.
 
@@ -46,9 +46,9 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 ![install nuget](getting-started-razor-images/image3.png)
 
-* After successfull NuGet package installation, open your **bower.json** file and specify our bower name **"syncfusion-javascript"** and the value with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure will look like in below structure.
+* After successful NuGet package installation, open your **bower.json** file and specify our bower name **"syncfusion-javascript"** and the value with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure will look like in below structure.
 
-![](getting-started_images/getting-started_image3.png)
+![bower](getting-started_images/getting-started_image3.png)
 
 * Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -114,7 +114,7 @@ N> Include the below mentioned scripts and CSS references under the appropriate 
 
 *  Finally compile your project, after successful compilation then press F5 key to deploy your project.   
 
-   ![](getting-started_images/getting-started_image4.png)
+   ![output](getting-started_images/getting-started_image4.png)
 
 ## ASP.NET Core 2.0 Application Using Command Prompt with Visual Studio Code
 
@@ -140,7 +140,7 @@ dotnet new --help
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_image123.png)
+  ![create](getting-started_images/getting-started_image123.png)
 
 
 * Then run the below mentioned command to create a new web application. After command execution the project will be created within your folder.
@@ -151,33 +151,33 @@ dotnet new mvc
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_image21.png)
+  ![create application](getting-started_images/getting-started_image21.png)
 
 
 ### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-  ![](getting-started_images/getting-started_image22.png)
+  ![open application](getting-started_images/getting-started_image22.png)
 
 
 * Open your **bower.json** json file and specify our Syncfusion package will loads our scripts and CSS. Refer this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages) to configure the bower execution environment in your local machine. Then install a bower extension in your Visual Studio code to complete a configuration.    
 
 * In **bower.json** file specify our Syncfusion packages with our latest version.
 
-  ![](getting-started_images/getting-started_image23.png)
+  ![bower](getting-started_images/getting-started_image23.png)
 
 
 * Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
-  ![](getting-started_images/getting-started_image24.png)
+  ![bower](getting-started_images/getting-started_image24.png)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.csproj** file to specify our assembly packages.
 
-  ![](getting-started_images/getting-started_image25.png)
+  ![bower](getting-started_images/getting-started_image25.png)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -262,11 +262,11 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started_image26.png)
+![compile](getting-started_images/getting-started_image26.png)
 
 * Open browser and launch the localhost:5000 to view the output of the project.
 
-  ![](getting-started_images/getting-started_image27.png)
+  ![output](getting-started_images/getting-started_image27.png)
 
 
 ## ASP.NET Core 2.0 Application Using Yeoman with Visual Studio Code:
@@ -309,12 +309,12 @@ yo aspnet
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_image5.png)
+  ![create](getting-started_images/getting-started_image5.png)
 
 
 * From the list of available projects, select the **Web Application Basic [ without Membership and Authorization ]** by using arrow keys.
 
-  ![](getting-started_images/getting-started_image6.png)
+  ![create application](getting-started_images/getting-started_image6.png)
 
 
 * And then provide the project name or simply press the enter key to create the project with default name.
@@ -323,22 +323,22 @@ yo aspnet
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-  ![](getting-started_images/getting-started_image7.png)
+  ![open application](getting-started_images/getting-started_image7.png)
 
 
 * Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages). Then install a Bower extension in your Visual Studio code to complete a configuration.    
 
-  ![](getting-started_images/getting-started_image11.png)
+  ![bower](getting-started_images/getting-started_image11.png)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version will loads our scripts and CSS. 
 
-  ![](getting-started_images/getting-started_image12.png)
+  ![bower](getting-started_images/getting-started_image12.png)
 
 
 * Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
-  ![](getting-started_images/getting-started_image11.png)
+  ![install bower](getting-started_images/getting-started_image11.png)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
@@ -346,7 +346,7 @@ yo aspnet
 * Now open your **project.csproj** file to specify our assembly packages.
 
 
- ![](getting-started_images/getting-started_image9.png)
+ ![assembly reference](getting-started_images/getting-started_image9.png)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -431,4 +431,4 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 {% endhighlight %}
 
-  ![](getting-started_images/getting-started_img17.JPG)
+  ![output](getting-started_images/getting-started_img17.JPG)
