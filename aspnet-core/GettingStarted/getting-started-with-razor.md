@@ -37,9 +37,9 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 ![template selection](getting-started-razor-images/image2.png)
 
-*  After project creation, install the Syncfusion Packages in your application by following the below given steps.
+*  After project creation, install the Syncfusion NuGet packages in your application by following the below given steps.
 
-> The Syncfusion ASP.NET Core NuGet Package can be installed from [https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core)
+> The Syncfusion ASP.NET Core NuGet package can be installed from [https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core)
     
 * Right click on your project references and then select “**Manage NuGet Package**” option. 
 
@@ -47,11 +47,9 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 * In the new window, choose the “**nuget.org**” from the package source dropdown. And check the “**include prerelease**” option.
 
-* Now, our Syncfusion Packages will list in this window. Select and install the “**Syncfusion.EJ.AspNet.Core**” package from this list.
+* Now, browse and select `Syncfusion.EJ.AspNet.Core` NuGet package from the NuGet solution window and then, install the selected NuGet package in your application.
 
 ![install nuget](getting-started-razor-images/image3.png)
-
-* Then the packages will get installed and it will be automatically referred to your application.
 
 After installing the packages, Open the **~/Pages/_ViewImports.cshtml** file and import the Syncfusion packages.
 

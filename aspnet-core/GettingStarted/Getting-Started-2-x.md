@@ -30,29 +30,19 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
    ![create application](getting-started_images/getting-started_image1.png)
 
-*  After project creation, install the Syncfusion Packages in your application.
+*  After project creation, install the Syncfusion NuGet packages in your application by following the below given steps.
 
-* Select the **Tools->Nuget Package Manager->Package Manager settings** the dialog window will open.
-
-* Navigate to the **Nuget Package Manager->Package Sources** from the options dialog.
-
-* Click the Add button to create the new package sources.
-
-* Select the newly created Package Source and rename the source name using the Name input box.
-
-    **Name**: Name of the package that listed in Available package sources  
-  **Source**: Syncfusion ASP.NET Core NuGet Package feed URL
-  [http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore](http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore)
-
-* Select the Update and then click the OK button. The package’s source get added to the list of available package sources.
+> The Syncfusion ASP.NET Core NuGet package can be installed from [https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core)
     
-* Right click your project references and then select “**Manage NuGet Package**” option. In this window choose the “**Syncfusion Packages registered name**” from the package source dropdown. And check the “**include prerelease**” option.
+* Right click on your project references and then select “**Manage NuGet Package**” option. 
 
-* Now, our Syncfusion Packages will list in this window. Select and install the “**Syncfusion.EJ.AspNet.Core**” package from this list.
+![install nuget](getting-started-razor-images/image5.png)
+
+* In the new window, choose the “**nuget.org**” from the package source dropdown. And check the “**include prerelease**” option.
+
+* Now, browse and select `Syncfusion.EJ.AspNet.Core` NuGet package from the NuGet solution window and then, install the selected NuGet package in your application.
 
 ![install nuget](getting-started_images/getting-started_img37.png)
-
-* Then the packages will get installed and it will be automatically referred to your application.
 
 * Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
