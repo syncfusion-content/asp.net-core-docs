@@ -166,25 +166,17 @@ The following steps helps to create an ASP.NET Core web application to utilize S
 
 ![create ASP.NET Core web application via New Project Template wizard](getting-started_images/getting-started_img1.png)
 
-* After project creation, install the Syncfusion Packages in your created application.
+*  After project creation, install the Syncfusion NuGet packages in your application by following the below given steps.
 
-* Select the **Tools-> NuGet Package Manager-> Package Manager Settings** the dialog window will open.
+> The Syncfusion ASP.NET Core NuGet package can be installed from [https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ.AspNet.Core)
+    
+* Right click on your project references and then select “**Manage NuGet Package**” option. 
 
-* Navigate to the **NuGet Package Manager->Package Sources** from the Options dialog.
+![install nuget](getting-started-razor-images/image5.png)
 
-* Click the Add button to create the new Package Source.
+* In the new window, choose the “**nuget.org**” from the package source dropdown. And check the “**include prerelease**” option.
 
-* Select the newly created Package Source and rename the source name using the Name input box.
-
-  **Name**: Name of the package that listed in Available package sources  
-  **Source**: Syncfusion ASP.NET Core NuGet Package feed URL
-  [http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore](http://nuget.syncfusion.com/nuget_aspnetcore/nuget/getsyncfusionpackages/aspnetcore)
-
-* Select the Update and then click the OK button. The package’s source get added to the list of available package sources.
-
-* Right click your project references and then select “**Manage NuGet Package**” option. In this window choose the “**Syncfusion Packages registered name**” from the package source dropdown. And check the “**include prerelease**” option.
-
-* Now, our Syncfusion Packages will list in this window. Select and install the “**Syncfusion.EJ.AspNet.Core**” package from this list.
+* Now, browse and select `Syncfusion.EJ.AspNet.Core` NuGet package from the NuGet solution window and then, install the selected NuGet package in your application.
 
 ![Syncfusion Packages will list in Nuget Package Manager](getting-started_images/getting-started_img18.png)
 
@@ -192,7 +184,7 @@ The following steps helps to create an ASP.NET Core web application to utilize S
 
 > The package **"Syncfusion.EJ.MVC"** renamed into **"Syncfusion.EJ.AspNet.Core"** from Volume 3, 2016 (14.3.0.49) release. The "**preview2-final**" keyword removed our Syncfusion packages naming from Volume 1, 2017 (15.1.0.33) release.
 
-* Then the packages will get installed and it will be automatically referred to your application. Open your **bower.json** file and specify our bower name “**syncfusion-javascript**” and the value with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure look like a below structure.
+* After successful NuGet installation, open your **bower.json** file and specify our bower name “**syncfusion-javascript**” and the value with *. The * specifies the latest version of our scripts and themes files. After, the bower installation has completed, the project folder structure look like a below structure.
 
 ![Project folder structure after bower installation complete](getting-started_images/getting-started_img3.png)
 
