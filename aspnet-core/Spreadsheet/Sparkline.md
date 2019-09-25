@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline with Spreadsheet widget.
+title: Sparkline with Spreadsheet widget | Syncfusion
 description: How to Create sparkline chart in Spreadsheet 
 platform: aspnet-core
 control: Spreadsheet
