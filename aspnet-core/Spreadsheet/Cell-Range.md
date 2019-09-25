@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Range with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+title: Cell Range with Spreadsheet widget | Syncfusion
 description: How to use the Spreadsheet Cell Range
 platform: aspnet-core
 control: Spreadsheet
@@ -92,7 +92,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img1.png)
+![Removing Comment](Cell-Ranges_images/Cell-Ranges_img1.png)
 
 ## Cell Navigation
 
@@ -300,7 +300,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img2.png)
+![Invalid data formatting](Cell-Ranges_images/Cell-Ranges_img2.png)
 
 ## Drag and Drop
 
@@ -357,7 +357,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img3.png)
+![Drag and Drop](Cell-Ranges_images/Cell-Ranges_img3.png)
 
 ## Auto Fill
 
@@ -498,7 +498,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img5.png)
+![Auto Fill](Cell-Ranges_images/Cell-Ranges_img5.png)
 
 ## Hyperlink
 
@@ -573,7 +573,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img6.png)
+![Removing Hyperlink](Cell-Ranges_images/Cell-Ranges_img6.png)
 
 ## Merge Cell
 
@@ -662,7 +662,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img7.png)
+![Merging cells](Cell-Ranges_images/Cell-Ranges_img7.png)
 
 ### Unmerge Cells
 
@@ -720,4 +720,4 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Cell-Ranges_images/Cell-Ranges_img8.png)
+![Unmerging Cells](Cell-Ranges_images/Cell-Ranges_img8.png)
