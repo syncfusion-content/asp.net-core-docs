@@ -1,5 +1,5 @@
 ---
-title: Formatting with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+title: Formatting with Spreadsheet widget.
 description: How to use different types of formatting in Spreadsheet and configure its properties.
 platform: aspnet-core
 control: Spreadsheet

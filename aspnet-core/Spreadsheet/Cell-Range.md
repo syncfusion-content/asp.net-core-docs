@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Range with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+title: Cell Range with Spreadsheet widget.
 description: How to use the Spreadsheet Cell Range
 platform: aspnet-core
 control: Spreadsheet

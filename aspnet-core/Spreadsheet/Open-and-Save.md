@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open and Save with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+title: Open and Save with Spreadsheet widget.
 description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
 platform: aspnet-core
 control: Spreadsheet
