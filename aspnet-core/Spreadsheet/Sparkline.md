@@ -115,5 +115,5 @@ public class SparklineDetail
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Sparkline_images/Sparkline.png)
+![Sparkline Customization](Sparkline_images/Sparkline.png)
 
