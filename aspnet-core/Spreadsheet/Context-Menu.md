@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+title: Context Menu with Spreadsheet widget | Essential ASP.NET Core
 description: How to use the Spreadsheet Context Menu
 platform: aspnet-core
 control: Spreadsheet
