@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+title: Sparkline with Spreadsheet widget | Syncfusion
 description: How to Create sparkline chart in Spreadsheet 
 platform: aspnet-core
 control: Spreadsheet
@@ -115,5 +115,5 @@ public class SparklineDetail
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Sparkline_images/Sparkline.png)
+![Sparkline Customization](Sparkline_images/Sparkline.png)
 
