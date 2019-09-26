@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard with Spreadsheet widget | Essential ASP.NET Core
+title: Clipboard in ASP.NET Core Spreadsheet widget | Syncfusion 
 description: How to use the Spreadsheet Clipboard
 platform: aspnet-core
 control: Spreadsheet
