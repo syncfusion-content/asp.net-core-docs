@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio ASP.NET Core products
-description: Learn how to install and deploy the Syncfusion ASP.NET Core component
+title: Installation process for Syncfusion ASP.NET Core products
+description: This section provides information regarding the Syncfusion ASP.NET Core Online installer and steps for installing it
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
