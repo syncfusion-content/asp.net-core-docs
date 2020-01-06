@@ -16,13 +16,13 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 
 1. Close all the running Visual Studio instances.
 
-2. Double-click the Syncfusion ASP.NET Core platform Setup file. The Setup Wizard opens and extracts the package automatically.
+2. Double-click the Syncfusion ASP.NET Core platform installer file. The installer Wizard opens and extracts the package automatically.
 
    ![](Platform_images/Step-by-Step-Installation_img1.png)
 
-   N> The Setup wizard extracts the syncfusionessentialaspnetcore_(version).exe dialog, displaying the unzip operation of the package.
+   N> The installer wizard extracts the syncfusionessentialaspnetcore_(version).exe dialog, displaying the unzip operation of the package.
 
-3. You have two options to unlock the Syncfusion setup:
+3. You have two options to unlock the Syncfusion installer:
 
    
 * *Login To Install*
@@ -80,13 +80,13 @@ The following procedure illustrates how to install Essential Studio ASP.NET Core
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio Platform Installer supports installing/uninstalling the setup through Command Line. The following sections illustrate this ability. 
+The Syncfusion Essential Studio Platform Installer supports installing/uninstalling through Command Line. The following sections illustrate this ability. 
 
 ### Command Line Installation
 
 Follow the steps below to install through Command Line in Silent mode.
 
-1. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically. 
+1. Double-click the Syncfusion Essential Studio platform installer file. The installer Wizard opens and extracts the package automatically. 
 2. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
 3. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
 4. Copy the extracted syncfusionessentialaspnetcore_(version).exe file in local drive.
@@ -94,7 +94,7 @@ Follow the steps below to install through Command Line in Silent mode.
 6. Open the Command Prompt in administrator mode and pass the following arguments.
 
    
-   **Arguments:** “Setup file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
+   **Arguments:** “Installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
 
 
    N> [..] – Arguments inside the square brackets are optional.
@@ -102,28 +102,28 @@ Follow the steps below to install through Command Line in Silent mode.
    **Example:** “D:\Temp\syncfusionessentialaspnetcore_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
-7. Setup is installed.
+7. Essential Studio for ASP.NET Core (Essential JS1) is installed.
 
    N> x.x.x.x needs to be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
 
-Syncfusion Essential Studio supports uninstalling the setup through Command Line in Silent mode. The following steps illustrate this. 
+Syncfusion Essential Studio supports uninstalling through Command Line in Silent mode. The following steps illustrate this. 
 
-1. When you do not have the extracted setup (syncfusionessentialaspnetcore_(version).exe) then follow the steps from 2 to 7.
-2. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically.
+1. When you do not have the extracted installer (syncfusionessentialaspnetcore_(version).exe) then follow the steps from 2 to 7.
+2. Double-click the Syncfusion Essential Studio platform installer file. The installer Wizard opens and extracts the package automatically.
 3. The syncfusionessentialaspnetcore_(version).exe file is extracted into the Temp folder.
 4. Run %temp%. The Temp folder will open. The syncfusionessentialaspnetcore_(version).exe file is available in one of the folders.
 5. Copy the syncfusionessentialaspnetcore_(version).exe file in local drive. 
 6. Cancel the Wizard.
 7. Open the Command Prompt in administrator mode and pass the following arguments.
    
-   **Arguments:** “Copied setup file path\syncfusionessentialaspnetcore_(version).exe” /uninstall silent 
+   **Arguments:** “Copied installer file path\syncfusionessentialaspnetcore_(version).exe” /uninstall silent 
 
    **Example:** “D:\Temp\syncfusionessentialaspnetcore_x.x.x.x.exe" /uninstall silent
 
 
-8. Setup is uninstalled.
+8. Essential Studio for ASP.NET Core (Essential JS1) is uninstalled.
 
    N> x.x.x.x needs to be replaced with the Essential Studio version installed in your machine.

@@ -12,7 +12,7 @@ documentation: ug
 
 The following procedure illustrates how to install ASP.NET Core Mac installer. 
 
-1. Double-click the Syncfusion ASP.NET Core Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
+1. Double-click the Syncfusion ASP.NET Core Mac installer(.pkg) file. The installer Wizard opens. Click Continue.
 
    ![](Mac-Installer_images/Mac_Installer1.png)
    
