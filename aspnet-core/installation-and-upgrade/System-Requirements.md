@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment of Syncfusion ASP.NET Core products
-description: Learn how to install and deploy the Syncfusion ASP.NET Core component
+title: System Requirements | ASP.NET Core | Syncfusion
+description: this section provides the information about the system requirements for ASP.NET Core platform with supported browsers
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug

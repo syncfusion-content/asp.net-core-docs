@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install and Deployment process of Syncfusion ASP.NET Core products
-description: Learn how to install and deploy the Syncfusion ASP.NET Core component
+title: Upgrade from trial version to license version| ASP.NET Core | Syncfusion
+description: this section provides the information about upgrading ASP.NET Core from trial version to license version
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
