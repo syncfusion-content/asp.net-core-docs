@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade from major version to service pack version| ASP.NET Core | Syncfusion
+title: Upgrade from major version to service pack version| Syncfusion
 description: this section provides the information about upgrading the ASP.NET Core projects from major version to service pack version
 platform: aspnet-core
 control: Essential Studio

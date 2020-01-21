@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade from trial version to license version| ASP.NET Core | Syncfusion
+title: Upgrade from trial version to license version| Syncfusion
 description: this section provides the information about upgrading ASP.NET Core from trial version to license version
 platform: aspnet-core
 control: Installation and Deployment

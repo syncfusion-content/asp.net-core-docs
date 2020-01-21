@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Essential Studio ASP.NET Core Offline Installer | ASP.NET Core  | Syncfusion
+title: ASP.NET Core Offline Installer | ASP.NET Core | Syncfusion
 description: this section provides information regarding the Syncfusion ASP.NET Core Offline installer and steps for installing it
 platform: aspnet-core
 control: Installation and Deployment

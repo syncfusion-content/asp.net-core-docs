@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio ASP.NET Core products
-description: Learn how to install and deploy the Syncfusion ASP.NET Core component
+title: ASP.NET Core Mac| ASP.NET Core | Syncfusion
+description: this section provides the information about ASP.NET Core mac installer and steps for installation
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
