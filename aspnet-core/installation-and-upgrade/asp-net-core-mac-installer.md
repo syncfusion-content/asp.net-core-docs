@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET Core Mac| ASP.NET Core | Syncfusion
-description: this section provides the information about ASP.NET Core mac installer and steps for installation
+description: this section provides the information about Essential Studio ASP.NET Core mac installer and steps for installation
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
