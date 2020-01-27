@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment of Syncfusion ASP.NET Core products
-description: Learn how to install and deploy the Syncfusion ASP.NET Core component
+title: System Requirements | ASP.NET Core | Syncfusion
+description: this section provides the information about the system requirements for ASP.NET Core platform with supported browsers
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
@@ -30,7 +30,7 @@ The following topic describes the system requirements for Syncfusion ASP.NET Cor
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 2 GB of available space may be required. However, 300 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 2 GB of available space may be required. However, 300 MB free space is required in boot drive even if you are installing in other drive.
 
 ### Development Environment
 
