@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-#  Convert Project  
+# ASP.NET Core Convert Project 
 
 Syncfusion project conversion is a Visual Studio add-in that converts an existing ASP.NET Core application into the Syncfusion ASP.NET Core (Essential JS 1) Web application by adding the required assemblies and resource files.
 
