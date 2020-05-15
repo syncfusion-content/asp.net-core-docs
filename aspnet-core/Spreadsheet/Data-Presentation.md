@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data presentation with Spreadsheet for Syncfusion ASP.NET Core
-description: How to perform Spreadsheet Data presentation.
+description: How to perform the proper representation of data with Syncfusion Essential ASP.NET Core Spreadsheet widget.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Data Presentation
+# Spreadsheet Data Presentation
 
 Data presentation is helpful for proper representation of data in Spreadsheet. You have following features in Data Presentation.
 
@@ -92,7 +92,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 {% endtabs %} 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img1.png)
+![Cell Type](Data-Presentation_images/Data-Presentation_img1.png)
 
 ## Chart
 
@@ -178,7 +178,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img2.png)
+![Chart](Data-Presentation_images/Data-Presentation_img2.png)
 
 ## Conditional Formatting
 
@@ -210,12 +210,13 @@ The following code example describes the above behavior.
     function loadComplete() {
         var xlCFormat = this.XLCFormat;
         if (!this.isImport) {
-            xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
-            xlCFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
-            xlCFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
-            xlCFormat.setCFRule({ "action": "equalto", "inputs": ["20"], "color": "redf", "range": "D2:D11" });
-            xlCFormat.setCFRule({ "action": "textcontains", "inputs": ["loafers"], "color": "redt", "range": "A1:A11" });
-            xlCFormat.setCFRule({ "action": "dateoccur", "inputs": ["02/04/2014"], "color": "redft", "range": "B1:B11" });
+           xlCFormat.setCFRule({ "action": "greaterthan", "inputs": ["10"], "color": "redft", "range": "G2:G11" });
+           xlCFormat.setCFRule({ "action": "lessthan", "inputs": ["20"], "color": "yellowft", "range": "E1:E11" });
+           xlCFormat.setCFRule({ "action": "between", "inputs": ["300", "600"], "color": "greenft", "range": "F2:F11" });
+           xlCFormat.setCFRule({ "action": "textcontains", "inputs": ["loafers"], "color": "redt", "range": "A1:A11" });
+           xlCFormat.setCFRule({ "action": "dateoccur", "inputs": ["02/04/2014"], "color": "redft", "range": "B1:B11" });
+		   xlCFormat.setCFRule({ "action": "databar", "color": "redft", "range": "H1:H11" });
+           xlCFormat.setCFRule({action: "colorscale", color: "gyr", range: "D2:D11"});
         }
     }
 </script>
@@ -244,7 +245,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img3.png)
+![Conditional Formatting](Data-Presentation_images/Data-Presentation_img3.png)
 
 ### Clear Rules
 
@@ -305,7 +306,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img4.png)
+![Clear Rules](Data-Presentation_images/Data-Presentation_img4.png)
 
 ## Filtering
 
@@ -380,7 +381,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img5.png)
+![Filtering](Data-Presentation_images/Data-Presentation_img5.png)
 
 ### Filter by Color
 
@@ -449,7 +450,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img6.png)
+![Clear Filter](Data-Presentation_images/Data-Presentation_img6.png)
 
 ## Pivot Table
 
@@ -535,7 +536,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img7.png)
+![Pivot Table](Data-Presentation_images/Data-Presentation_img7.png)
 
 ## Sorting
 
@@ -606,7 +607,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img8.png)
+![Sorting](Data-Presentation_images/Data-Presentation_img8.png)
 
 ### Sort by Color
 
@@ -633,13 +634,13 @@ You can perform the following customizations for table. These are available in D
 
 <table>
     <colgroup><col width="150px" /></colgroup>
-    <tr><th>Feature</br></th><th>Description</br></th></tr>
-    <tr><td>Resize Table</br></td><td>You can resize the table only to increase row count.</br></td></tr>
-    <tr><td>Convert to Range</br></td><td>You can remove the table using this option.</br></td></tr>
-    <tr><td>First Column</br></td><td>You can highlight the first column of the table.</br></td></tr>
-    <tr><td>Last Column</br></td><td>You can highlight the last column of the table.</br></td></tr>
-    <tr><td>Total Row</br></td><td>You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.</br></td></tr>
-    <tr><td>Filter Button</br></td><td>You can able to hide or unhide the filter icons in the filter header of a table.</br></td></tr>
+    <tr><th>Feature</th><th>Description</th></tr>
+    <tr><td>Resize Table</td><td>You can resize the table only to increase row count.</td></tr>
+    <tr><td>Convert to Range</td><td>You can remove the table using this option.</td></tr>
+    <tr><td>First Column</td><td>You can highlight the first column of the table.</td></tr>
+    <tr><td>Last Column</td><td>You can highlight the last column of the table.</td></tr>
+    <tr><td>Total Row</td><td>You can insert a new row in the bottom of the table to display the total value of the last column. You can toggle this by using checkbox.</td></tr>
+    <tr><td>Filter Button</td><td>You can able to hide or unhide the filter icons in the filter header of a table.</td></tr>
 </table>
 
 The following code example describes the above behavior.
@@ -698,4 +699,4 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![Alt text](Data-Presentation_images/Data-Presentation_img9.png)
+![Table](Data-Presentation_images/Data-Presentation_img9.png)
