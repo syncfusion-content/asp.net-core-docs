@@ -1,12 +1,12 @@
 ---
 layout: post
 title: scrolling with Grid widget for Syncfusion Essential ASP.NET Core
-description: How to enable scrolling and its functionalities
+description: This section explains about the scrolling and its functionalities like Frozen Rows and Columns, Touch Scroll, Virtual Scroll and the types of Virtual Scroll.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
-# Scrolling
+# How to enable Scrolling
 
 Scrolling can be enabled by setting the `allow-scrolling` as `true`. The height and width can be set to Grid by using the properties `height` and `width` property of the `e-scroll-settings`. 
 
@@ -54,7 +54,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Scrolling_images/Scrolling_img1.png)
+![Scrolling](Scrolling_images/Scrolling_img1.png)
 
 ## Set width and height in pixel 
 
@@ -100,7 +100,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img2.png)
+![In pixel](scrolling_images/scrolling_img2.png)
 
 ## Set width and height in percentage
 
@@ -147,7 +147,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img3.png)
+![In percentage](scrolling_images/scrolling_img3.png)
 
 ## Set Width as auto
 
@@ -193,7 +193,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img4.png)
+![Auto Width](scrolling_images/scrolling_img4.png)
 
 ## Frozen columns
 
@@ -238,7 +238,7 @@ N> The `allow-scrolling` must be `true` while specifying `frozen-columns`.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img5.png)
+![Frozen Columns](scrolling_images/scrolling_img5.png)
 
 
 ### Freeze particular columns:
@@ -287,7 +287,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img6.png)
+![Frozen Column](scrolling_images/scrolling_img6.png)
 
 
 ### Frozen columns alert Messages:
@@ -349,7 +349,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img7.png)
+![Frozen Rows](scrolling_images/scrolling_img7.png)
 
 
 ## Touch scroll
@@ -460,7 +460,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img8.png)
+![Normal Mode](scrolling_images/scrolling_img8.png)
 
 #### Enhanced virtual scrolling:
 
@@ -505,7 +505,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img10.png)
+![Virtual Scroll](scrolling_images/scrolling_img10.png)
 
 ### Infinite or Continuous mode:
 
@@ -550,5 +550,5 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
- ![](scrolling_images/scrolling_img9.png)
+ ![Infinite Mode](scrolling_images/scrolling_img9.png)
 
