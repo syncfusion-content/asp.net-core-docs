@@ -6,7 +6,7 @@ platform: aspnet-core
 control: Grid
 documentation: ug
 ---
-# How to enable Scrolling
+# Enable Scrolling in Grid
 
 Scrolling can be enabled by setting the `allow-scrolling` as `true`. The height and width can be set to Grid by using the properties `height` and `width` property of the `e-scroll-settings`. 
 
