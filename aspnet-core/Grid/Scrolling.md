@@ -406,7 +406,7 @@ We also have an enhanced virtual scrolling feature with an improvised virtual sc
 It supports two mode of virtualization. They are as follows.
 
 1. Normal Mode
-2. Continuous Mode
+2. Infinite or Continuous Mode
 
 N> Enhanced Virtual Scrolling supports only Normal mode
 N> The following features are not supported by virtual scrolling 
@@ -507,9 +507,9 @@ The following output is displayed as a result of the above code example.
 
 ![](scrolling_images/scrolling_img10.png)
 
-### Continuous mode:
+### Infinite or Continuous mode:
 
-In Continuous mode, the data is loaded in grid when the scrollbar reaches the end. You can enable the continuous mode by setting the `virtual-scroll-mode` property as `Continuous`.
+In Infinite or Continuous mode, the data is loaded in grid when the scrollbar reaches the end. You can enable the continuous mode by setting the `virtual-scroll-mode` property as `Continuous`.
 
 The following code example describes the above behavior.
 
