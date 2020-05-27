@@ -1,7 +1,7 @@
 ---
 layout: post
 title: scrolling with Grid widget for Syncfusion Essential ASP.NET Core
-description: This section explains about the scrolling and its functionalities like Frozen rows, Frozen Columns, Touch Scrolling, Virtual Scrolling and the types of Virtual Scrolling.
+description: This section explains about the scrolling and its functionalities like Frozen Rows and Columns, Touch Scroll, Virtual Scroll and the types of Virtual Scroll.
 platform: aspnet-core
 control: Grid
 documentation: ug
