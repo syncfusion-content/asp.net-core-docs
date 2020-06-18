@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DataLabels in ASP.NET Core SunburstChart widget | Syncfusion
-description: Learn about DataLabels support in Syncfusion ASP.NET Core SunburstChart control and more details.
+description: You can learn about DataLabels support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug
 ---
 
-# Data Labels 
+# Data Labels with ASP.NET Core SunburstChart
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
 You can enable or disable the data labels by setting the visible property of the **e-sunburstchart-data-label-settings** to true as shown in the below code
@@ -20,7 +20,7 @@ You can enable or disable the data labels by setting the visible property of the
 
 {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img1.png)
+![Visual representation of DataLabels using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img1.png)
 
 ## Label Overflow mode
 
@@ -41,7 +41,7 @@ label-overflow-mode="@SunburstLabelOverflowMode.Hide"></e-sunburstchart-data-lab
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img2.png) 
+![Label Overflow mode - Hide using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img2.png) 
 
 {% highlight cshtml %}
 
@@ -52,7 +52,7 @@ label-overflow-mode="@SunburstLabelOverflowMode.Trim"></e-sunburstchart-data-lab
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img3.png)
+![Label Overflow mode - Trim using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img3.png)
 
 ## Label Rotation Mode
 You can rotate the data label by using *label-rotation-mode* property. By default, the labelRotationMode is set as **angle**. 
@@ -69,7 +69,7 @@ The following code shows how to set labelRotationMode as normal and angle.
 
  {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img4.png)
+![Label Rotation Mode - Normal using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img4.png)
 
 {% highlight cshtml %}
 
@@ -81,7 +81,7 @@ The following code shows how to set labelRotationMode as normal and angle.
 
 {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img5.png)
+![Label Rotation Mode - Angle using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img5.png)
  
 ## Customizing the data labels
 
@@ -97,7 +97,7 @@ You can customize the appearance of the data point using the `e-sunburstchart-fo
 
 {% endhighlight %}
 
-![](DataLabel_images/DataLabel_img6.png)
+![Customizing the data labels using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img6.png)
 
 ## Sunburst Chart Title & Subtitle
 

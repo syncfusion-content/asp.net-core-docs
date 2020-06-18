@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Overview in ASP.NET Core PivotTreeMap widget | Syncfusion
-description: Learn about the overview of Syncfusion ASP.NET Core PivotTreeMap control and more details.
+description: You can learn about the overview of Syncfusion ASP.NET Core PivotTreeMap control and more details.
 platform: aspnet-core
 control: pivottreemap
 documentation: ug
 keywords: overview
 ---
 
-# Overview
+# Overview with ASP.NET Core Pivot TreeMap
 
 The **pivot tree map** control allows you to visualize OLAP data in the form of nested nodes in hierarchical order with the ability to drill up and down. 
 

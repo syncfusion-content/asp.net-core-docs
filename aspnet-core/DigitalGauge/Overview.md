@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ASP.NET Core DigitalGauge widget | Syncfusion
-description: Learn about the overview of Syncfusion ASP.NET Core Digital Gauge control and more details.
+title: BulletGraph | BulletGraph  | ASP.NET Core | Syncfusion
+description: BulletGraph
 platform: ejmvc
 control: DigitalGauge
 documentation: ug

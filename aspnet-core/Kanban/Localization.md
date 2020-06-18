@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Localization in ASP.NET Core Kanban widget | Syncfusion
-description: Learn about Localization support in Syncfusion ASP.NET Core Kanban control and more details.
+description: You can learn about Localization support in Syncfusion ASP.NET Core Kanban control and more details.
 documentation: ug
 control: Kanban
 platform: aspnet-core
 ---
 
-# Localization
+# Localization with ASP.NET Core Kanban
 
 All text in Kanban can be localized using `ej.Kanban.Locale` object. Please find the table with list of properties and its value in locale object.
 
@@ -288,7 +288,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img1.png)
+![Visual representation of Localization using Kanban in ASP.NET Core](Localization_images/localization_img1.png)
 
 ## Right to Left (RTL)
 
@@ -399,4 +399,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Localization_images/localization_img2.png)
+![Visual representation of RTL using Kanban in ASP.NET Core](Localization_images/localization_img2.png)
