@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Levels
-description: Learn how to customize various levels in SunburstChart
+title: Levels in ASP.NET Core SunburstChart widget | Syncfusion
+description: You can learn about Levels support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug
@@ -41,4 +41,4 @@ You can define the levels as shown in the below code example
 
 The following screenshot illustrates the Sunburst Chart with different levels
 
-![](Levels_images/Levels_img1.png)
+![Group Member Path using SunburstChart in ASP.NET Core](Levels_images/Levels_img1.png)

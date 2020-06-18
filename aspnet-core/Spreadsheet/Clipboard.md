@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Clipboard in ASP.NET Core Spreadsheet widget | Syncfusion 
-description: How to use the Spreadsheet Clipboard
+description: You can learn here Clipboard support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 ---
 
-# Clipboard
+# Clipboard with ASP.NET Core Spreadsheet
 
 The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting `allow-clipboard` property in Spreadsheet.
 By default `allow-clipboard` property is `true`.

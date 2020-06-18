@@ -1,7 +1,7 @@
 ---
 layout: post
-title: legend
-description: Learn how to add and customize the legnds in Sunburst Chart.
+title: Legend in ASP.NET Core SunburstChart widget | Syncfusion
+description: You can learn about Legend support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug
@@ -20,7 +20,7 @@ The legend is used to represent the first level of items in the Sunburst Chart.T
 
  {% endhighlight %}
 
-![](Legend_images/Legend_img1.png)
+![Visual representation of Legend using SunburstChart in ASP.NET Core](Legend_images/Legend_img1.png)
 
 ## Legend Icon 
 
@@ -43,7 +43,7 @@ You can specify different shapes of legend icon by using the **shape** property 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png)
+![Legend Icon using SunburstChart in ASP.NET Core](Legend_images/Legend_img2.png)
  
 ## Positioning the Legend
 
@@ -58,7 +58,7 @@ By using the **position** property, you can position the legend at left, right, 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![Positioning the Legend using SunburstChart in ASP.NET Core](Legend_images/Legend_img3.png)
  
 ### Customization
 
@@ -76,7 +76,7 @@ You can change the size of the legend items by using the **LegendItemStyle-Width
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png)
+![Legend Item Size and border using SunburstChart in ASP.NET Core](Legend_images/Legend_img4.png)
 
 
 ## Legend Alignment
@@ -108,7 +108,7 @@ By default, legend takes 20% of the height horizontally when it was placed on th
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![Legend  Size using SunburstChart in ASP.NET Core](Legend_images/Legend_img5.png)
 
 ## Legend title
 
@@ -157,7 +157,7 @@ row-count="2" column-count="3">
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
+![Legend Row and Column using SunburstChart in ASP.NET Core](Legend_images/Legend_img6.png)
  
 ## LegendInteractivity
 
@@ -168,7 +168,7 @@ It has three types of action
 *	ToggleSegmentVisibility
 *	None
 
-## ToggleSegmentSelection
+## Toggle Segment Selection
 
 Used to highlight specific category while clicking on legend item
 
@@ -182,7 +182,7 @@ click-action="@SunburstLegendClickAction.ToggleSegmentSelection">
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![Toggle Segment Selection using SunburstChart in ASP.NET Core](Legend_images/Legend_img7.png)
  
 ## Toggle Segment Visibility
 
@@ -198,5 +198,5 @@ click-action="@SunburstLegendClickAction.ToggleSegmentVisibility">
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![Toggle Segment Visibility using SunburstChart in ASP.NET Core](Legend_images/Legend_img8.png)
 
