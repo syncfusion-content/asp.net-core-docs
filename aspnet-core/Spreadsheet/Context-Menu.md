@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu in ASP.NET Core Spreadsheet widget | Syncfusion
-description: How to use the Spreadsheet Context Menu
+description: Learn about Context Menu support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: legend
-description: Learn how to add and customize the legnds in Sunburst Chart.
+title: Legend in ASP.NET Core SunburstChart widget | Syncfusion
+description: Learn about Legend support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug

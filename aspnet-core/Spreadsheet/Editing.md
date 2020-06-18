@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing with Spreadsheet widget for Syncfusion Essential ASP.NET Core
-description: How to Edit the Spreadsheet 
+title: Editing in ASP.NET Core Spreadsheet widget | Syncfusion 
+description: Learn about Editing support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | Kanban | ASP.NET Core | Syncfusion
-description: Localization
+title: Localization in ASP.NET Core Kanban widget | Syncfusion
+description: Learn about Localization support in Syncfusion ASP.NET Core Kanban control and more details.
 documentation: ug
 control: Kanban
 platform: aspnet-core

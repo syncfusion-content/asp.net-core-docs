@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Qualitative Range | BulletGraph	 | Syncfusion
-description: qualitative range
+title: Qualitative Range in ASP.NET Core BulletGraph widget | Syncfusion
+description: Learn about Qualitative Range support in Syncfusion ASP.NET Core BulletGraph control and more details.
 platform: aspnet-core
 control: BulletGraph	
 documentation: ug

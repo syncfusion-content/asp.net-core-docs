@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Segment Settings | DigitalGauge |  Syncfusion
-description: segment settings
+title: Segment Settings in ASP.NET Core DigitalGauge widget | Syncfusion
+description: Learn about Segment Settings support in Syncfusion ASP.NET Core DigitalGauge control and more details.
 platform: aspnet-core
 control: DigitalGauge
 documentation: ug

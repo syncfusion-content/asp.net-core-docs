@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datalabel Customization
-description: Learn how to customize datalabels in Sunburst Chart.
+title: DataLabels in ASP.NET Core SunburstChart widget | Syncfusion
+description: Learn about DataLabels support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open and Save in ASP.NET Core Spreadsheet widget | Syncfusion
-description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
+description: Learn about Open and Save support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug

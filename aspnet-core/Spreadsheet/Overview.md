@@ -1,6 +1,6 @@
 ---
-title: Overview
-description: overview
+title: Overview in ASP.NET Core Spreadsheet widget | Syncfusion
+description: Learn about the overview of Syncfusion ASP.NET Core SpreadSheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
