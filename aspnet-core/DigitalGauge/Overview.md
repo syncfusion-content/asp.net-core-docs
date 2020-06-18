@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BulletGraph | BulletGraph  | ASP.NET Core | Syncfusion
-description: BulletGraph
+title: DigitalGauge | DigitalGauge | ASP.NET MVC | Syncfusion
+description: overview
 platform: ejmvc
 control: DigitalGauge
 documentation: ug

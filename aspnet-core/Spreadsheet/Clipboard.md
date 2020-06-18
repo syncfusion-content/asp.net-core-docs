@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard in ASP.NET Core Spreadsheet widget | Syncfusion 
-description: You can learn Clipboard support in Syncfusion ASP.NET Core Spreadsheet control and more details.
+description: You can learn here Clipboard support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
