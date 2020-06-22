@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Cell Range in ASP.NET Core Spreadsheet widget | Syncfusion 
-description: How to use the Spreadsheet Cell Range
+description: You can learn about Cell range support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Cell Range
+# Cell Range with ASP.NET Core Spreadsheet
 
 A Cell Range is a collection of cells in a sheet. It represents single cell or selection of cells. When cells have been selected, they are surrounded by border. 
 

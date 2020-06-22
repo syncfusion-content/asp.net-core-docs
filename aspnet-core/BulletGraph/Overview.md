@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BulletGraph | BulletGraph  | ASP.NET Core | Syncfusion
-description: BulletGraph
+title: Overview in ASP.NET Core BulletGraph widget | Syncfusion
+description: You can learn here about the overview of Syncfusion ASP.NET Core BulletGraph control and more details.
 platform: aspnet-core
 control: BulletGraph	
 documentation: ug
 ---
 
-# BulletGraph
+# Overview with ASP.NET Core BulletGraph
 
 BulletGraphs are easy to interpret and also it conveys much more information to the user by visualizing the data in a small amount of space. It is generally used to compare a primary measure to one or more other measures in the context of qualitative ranges of performance. Occasionally, the BulletGraphs are also used to compare the same measure across multiple categories.
 
