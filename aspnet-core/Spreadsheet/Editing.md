@@ -7,7 +7,7 @@ control: Spreadsheet
 documentation: ug
 ---
 
-# Editing with ASP.NET Core Spreadsheet 
+# Editing in ASP.NET Core Spreadsheet 
 
 You can edit the contents of a cell directly in the cell. You can also do this by typing in the formula bar. When you edit the cell, Spreadsheet is operating in edit mode. In this mode some of the options are unavailable. You can use `allow-editing` property to enable/disable editing feature.
 

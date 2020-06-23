@@ -7,7 +7,7 @@ control: Spreadsheet
 documentation: ug
 ---
 
-# Clipboard with ASP.NET Core Spreadsheet
+# Clipboard in ASP.NET Core Spreadsheet
 
 The Spreadsheet provides support for the clipboard operations (cut, copy, and paste). Clipboard operations can be enabled or disabled by setting `allow-clipboard` property in Spreadsheet.
 By default `allow-clipboard` property is `true`.

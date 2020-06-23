@@ -6,7 +6,7 @@ control: Spreadsheet
 documentation: UG
 ---
 
-# Formatting with ASP.NET Core Spreadsheet
+# Formatting in ASP.NET Core Spreadsheet
 
 Spreadsheet supports many formatting options to make your data easier to view and understand. Use `allow-cell-formatting` property to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     

@@ -7,7 +7,7 @@ control: DigitalGauge
 documentation: ug
 ---
 
-# Segment Settings with ASP.NET Core DigitalGauge
+# Segment Settings in ASP.NET Core DigitalGauge
 
 ## Appearance
 
