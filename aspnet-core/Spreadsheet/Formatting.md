@@ -1,12 +1,12 @@
 ---
 title: Formatting in ASP.NET Core Spreadsheet widget | Syncfusion
-description: How to use different types of formatting in Spreadsheet and configure its properties.
+description: You can learn about formatting support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: UG
 ---
 
-# Formatting
+# Formatting in ASP.NET Core Spreadsheet
 
 Spreadsheet supports many formatting options to make your data easier to view and understand. Use `allow-cell-formatting` property to enable / disable formatting option in Spreadsheet. The different types of formatting supported in Spreadsheet are,
     
