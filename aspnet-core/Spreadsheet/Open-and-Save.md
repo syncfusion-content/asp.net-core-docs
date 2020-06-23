@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Open and Save in ASP.NET Core Spreadsheet widget | Syncfusion
-description: How to perform Open and Save and configure its functionalities like server mapper, import URL etc.
+description: You can learn about open and save support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Open and Save
+# Open and Save in ASP.NET Core Spreadsheet
 The native data format for Spreadsheet is JSON. You can load and store JSON data with Spreadsheet. In Spreadsheet we have [`saveAsJSON`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:saveasjson "saveAsJSON") and [`loadFromJSON`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:loadfromjson "loadFromJSON") method which is used to save Spreadsheet as JSON and same JSON used to render Spreadsheet.
 
 {% highlight javascript %}
