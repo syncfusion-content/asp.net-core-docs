@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataLabels in ASP.NET Core SunburstChart widget | Syncfusion
-description: You can learn about DataLabels support in Syncfusion ASP.NET Core SunburstChart control and more details.
+title: Data Label in ASP.NET Core SunburstChart widget | Syncfusion
+description: You can learn about data label support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug
 ---
 
-# Data Labels with ASP.NET Core SunburstChart 
+# Data Label with ASP.NET Core SunburstChart 
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users.
 You can enable or disable the data labels by setting the visible property of the **e-sunburstchart-data-label-settings** to true as shown in the below code

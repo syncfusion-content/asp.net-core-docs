@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Range in ASP.NET Core Spreadsheet widget | Syncfusion 
-description: You can learn about Cell range support in Syncfusion ASP.NET Core Spreadsheet control and more details.
+description: You can learn about cell range support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug

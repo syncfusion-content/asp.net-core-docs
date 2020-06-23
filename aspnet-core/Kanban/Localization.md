@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in ASP.NET Core Kanban widget | Syncfusion
-description: You can learn about Localization support in Syncfusion ASP.NET Core Kanban control and more details.
+description: You can learn about localization support in Syncfusion ASP.NET Core Kanban control and more details.
 documentation: ug
 control: Kanban
 platform: aspnet-core

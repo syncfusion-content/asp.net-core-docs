@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Character Settings in ASP.NET Core DigitalGauge widget | Syncfusion
-description: Learn about Character Settings support in Syncfusion ASP.NET Core DigitalGauge control and more details.
+description: Learn about character settings support in Syncfusion ASP.NET Core DigitalGauge control and more details.
 platform: aspnet-core
 control: DigitalGauge
 documentation: ug
