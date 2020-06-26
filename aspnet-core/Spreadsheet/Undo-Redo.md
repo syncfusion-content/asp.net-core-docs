@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Undo Redo in ASP.NET Core Spreadsheet widget | Syncfusion
-description: You can learn about Undo Redo support in Syncfusion ASP.NET Core Spreadsheet control and more details.
+description: You can learn about undo redo support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 --- 
 
-# Undo and Redo with ASP.NET Core Spreadsheet
+# Undo and Redo in ASP.NET Core Spreadsheet
 
 Spreadsheet provides the support to perform undo and redo operations. You can set `allow-undo-redo` property as `true` to enable undo redo feature. You can also use `undoredo-step` property to limit the undo redo action.
 

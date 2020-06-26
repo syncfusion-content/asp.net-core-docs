@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Qualitative Range in ASP.NET Core BulletGraph widget | Syncfusion
-description: Learn about Qualitative Range support in Syncfusion ASP.NET Core BulletGraph control and more details.
+description: Learn about qualitative range support in Syncfusion ASP.NET Core BulletGraph control and more details.
 platform: aspnet-core
-control: BulletGraph	
+control: BulletGraph
 documentation: ug
 ---
 
-# Qualitative Range with ASP.NET Core BulletGraph
+# Qualitative Range in ASP.NET Core BulletGraph
 
 Qualitative Range represents the quality of a specific range in quantitative scale like good, bad and satisfactory. Color for each qualitative range is customized using`range-stroke` property. The `range-end` property specifies the ending point of the qualitative range. Minimum value of quantitative scale is considered as the starting point of first qualitative range and previous end points are considered as starting point for other qualitative ranges. 
 

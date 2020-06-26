@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Menu in ASP.NET Core Spreadsheet widget | Syncfusion
-description: You can learn about Context Menu support in Syncfusion ASP.NET Core Spreadsheet control and more details.
+description: You can learn about context menu support in Syncfusion ASP.NET Core Spreadsheet control and more details.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 ---
 
-# Context Menu with ASP.NET Core Spreadsheet
+# Context Menu in ASP.NET Core Spreadsheet
 
 Context Menu is used to improve user interaction with Spreadsheet using popup menu. This will open when right clicking on Cell/Column Header/Row Header/ Pager in Spreadsheet. You can use `enable-context-menu` property to enable/disable context menu. 
 

@@ -8,7 +8,7 @@ documentation: ug
 keywords: overview
 ---
 
-# Overview with ASP.NET Core Pivot TreeMap
+# ASP.NET Core Pivot TreeMap Overview
 
 The **pivot tree map** control allows you to visualize OLAP data in the form of nested nodes in hierarchical order with the ability to drill up and down. 
 

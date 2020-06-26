@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in ASP.NET Core SunburstChart widget | Syncfusion
-description: You can learn about Legend support in Syncfusion ASP.NET Core SunburstChart control and more details.
+description: You can learn about legend support in Syncfusion ASP.NET Core SunburstChart control and more details.
 platform: aspnet-core
 control: SunburstChart
 documentation: ug
