@@ -6,7 +6,7 @@ control: Spreadsheet
 documentation: ug
 keywords: 
 ---
-# Overview with ASP.NET Core Spreadsheet
+# ASP.NET Core Spreadsheet Overview
 
 The Spreadsheet control is a Microsoft Excel-like Spreadsheet component for web. It provides editing experience that is very similar to that of excel. The Spreadsheet control includes all the important features of Microsoft Excel like editing, sorting, filtering, formulas, data validation, formatting, table and charts.
 
