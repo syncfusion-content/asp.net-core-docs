@@ -41,7 +41,7 @@ label-overflow-mode="@SunburstLabelOverflowMode.Hide"></e-sunburstchart-data-lab
 
  {% endhighlight %}
 
-![abel Overflow mode - Hide using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img2.png) 
+![Label Overflow mode - Hide using SunburstChart in ASP.NET Core](DataLabel_images/DataLabel_img2.png) 
 
 {% highlight cshtml %}
 
