@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Segment Settings | DigitalGauge |  Syncfusion
-description: segment settings
+title: Segment Settings in ASP.NET Core DigitalGauge widget | Syncfusion
+description: Learn about segment settings support in Syncfusion ASP.NET Core DigitalGauge control and more details.
 platform: aspnet-core
 control: DigitalGauge
 documentation: ug
 ---
 
-# Segment Settings
+# Segment Settings in ASP.NET Core DigitalGauge
 
 ## Appearance
 
@@ -30,7 +30,7 @@ documentation: ug
 
 Execute the above code examples to render the DigitalGauge as follows.
 
-![](Segment-Settings_images/Segment-Settings_img1.png)
+![Appearance using DigitalGauge in ASP.NET Core](Segment-Settings_images/Segment-Settings_img1.png)
 
 Digital Gauge control with segment settings
 {:.caption}
@@ -58,7 +58,7 @@ Digital Gauge control with segment settings
 Execute the above code examples to render the DigitalGauge as follows.
 
 
-![](Segment-Settings_images/Segment-Settings_img2.png)
+![Dimension Modification using DigitalGauge in ASP.NET Core](Segment-Settings_images/Segment-Settings_img2.png)
 
 Digital Gauge control with segment dimension
 {:.caption}
