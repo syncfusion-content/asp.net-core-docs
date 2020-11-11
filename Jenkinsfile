@@ -1,5 +1,5 @@
 node('content')
-{ 
+{  
 timestamps
   { 
   
