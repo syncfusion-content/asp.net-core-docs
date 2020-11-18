@@ -1,7 +1,8 @@
-node_modules
-.vscode
-yarn.lock
-package-lock.json
-cireports
-package.json
+.npmrc
+dist/
+.vscode/
+coverage/
+index.js
+index.d.ts
 gulpfile.js
+node_modules/
