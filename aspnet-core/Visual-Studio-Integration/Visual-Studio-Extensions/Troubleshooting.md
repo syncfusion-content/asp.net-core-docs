@@ -19,7 +19,7 @@ Troubleshoot the project with the Syncfusion configuration and apply the fix lik
 
 The following steps help you to utilize the Syncfusion Troubleshooter by Visual Studio. 
 
-> Before use the Syncfusion Troubleshooter for ASP.NET Core (Essential JS 1), check whether the Syncfusion **Syncfusion Essential JS1 AspNet Core VSExtensions** Extension installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. 
+> Before use the Syncfusion Troubleshooter for ASP.NET Core (Essential JS 1), check whether the **Syncfusion Essential JS1 AspNet Core VSExtensions** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed. 
 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
