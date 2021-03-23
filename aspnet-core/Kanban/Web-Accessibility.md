@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web Accessibility | Kanban | ASP.NET Core | Syncfusion
+title: Web Accessibility in ASP.NET Core Kanban control | Syncfusion
 description: Web Accessibility
 documentation: ug
 control: Kanban

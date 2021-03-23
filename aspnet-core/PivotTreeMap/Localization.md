@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization | PivotTreeMap | ASP.NET Core | Syncfusion
+title: Localization in ASP.NET Core PivotTreeMap | Syncfusion
 description: This document illustrates that how to define localization with respective to the modes in ASP.NET Core PivotTreeMap control 
 platform: aspnet
 control: PivotTreeMap

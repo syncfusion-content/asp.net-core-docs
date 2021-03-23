@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Drill Through | PivotClient | ASP.NET Core | Syncfusion
+title:  DrillThrough in ASP.NET Core PivotClient control | Syncfusion
 description:  This document explains that how to define drill through feature with respective to the modes in ASP.NET Core PivotClient control
 platform: aspnet-core
 control: PivotClient

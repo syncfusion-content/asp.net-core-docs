@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection and Hovering | Kanban | ASP.NET Core | Syncfusion
+title: Selection and Hovering in ASP.NET Core Kanban | Syncfusion
 description: Selection and Hovering
 documentation: ug
 control: Kanban

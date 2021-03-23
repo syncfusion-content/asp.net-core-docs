@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | ASP.NET Core | Syncfusion
+title: Getting Started with ASP.NET Core Kanban Control| Syncfusion
 description: Getting Started.
 platform: aspnet-core 
 control: Kanban 
