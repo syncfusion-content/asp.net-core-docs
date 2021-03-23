@@ -7,7 +7,7 @@ control: PivotClient
 documentation: ug
 ---
 
-# Drill through
+# Drill through in ASP.NET Core PivotClient Control
 
 The drill-through retrieves raw items that are used to create a specified cell. To enable drill-through support, set [`enable-drill-through`] property to true. Raw items are obtained through the [`drill-through`] event, using which you can bind them to an external widget for a precise view.
 

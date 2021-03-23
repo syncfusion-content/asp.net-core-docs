@@ -7,7 +7,7 @@ control: PivotGauge
 documentation: ug
 ---
 
-# Custom labels
+# Custom labels in ASP.NET Core PivotGauge
 
 ## Adding custom label collection
 
