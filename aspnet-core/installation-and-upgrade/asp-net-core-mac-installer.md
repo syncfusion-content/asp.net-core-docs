@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Mac Installation
+# ASP.NET Core Mac Installation
 
 The steps below show how to install the Essential Studio ASP.NET Core Mac installer. 
 
