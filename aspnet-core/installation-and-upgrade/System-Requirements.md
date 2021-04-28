@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for ASP.NET Core
 
-The following topic describes the system requirements for Syncfusion ASP.NET Core platform.
+The system requirements for using our Syncfusion ASP.NET Core platform are as follows
 
 ### Operating Systems
 
