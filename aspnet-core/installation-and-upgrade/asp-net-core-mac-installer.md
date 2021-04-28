@@ -26,7 +26,7 @@ The steps below show how to install the Essential Studio ASP.NET Core Mac instal
 
    ![License Agree Confirmation](Mac-Installer_images/Mac_Installer3.png)
    
-   >N The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
 
 
 4. The Destination select wizard will appear. You can choose which disc to install the Syncfusion Essential Studio for ASP.NET Core Mac installer on here.
