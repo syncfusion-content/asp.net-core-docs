@@ -116,12 +116,12 @@ To install through the Command Line in Silent mode, follow the steps below.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
    
-   **Arguments:** “installer file path\SyncfusionEssentialStudio(product)_(version).exe” /Install silent /UNLOCKKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
+    **Arguments:** “installer file path\SyncfusionEssentialStudio(product)_(version).exe” /Install silent /UNLOCKKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
 
 
-   N> [..] – Arguments inside the square brackets are optional.
+    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\syncfusionessentialaspnetcore-js1_x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Product.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+    **Example:** “D:\Temp\syncfusionessentialaspnetcore-js1_x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Product.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
 7.  Essential Studio for ASP.NET Core (Essential JS1) is installed.
@@ -140,9 +140,9 @@ Syncfusion Essential ASP.NET Core can be uninstalled silently using the Command 
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
    
-   **Arguments:** “Copied installer file path\syncfusionessentialaspnetcore-js1_(version).exe” /uninstall silent 
+    **Arguments:** “Copied installer file path\syncfusionessentialaspnetcore-js1_(version).exe” /uninstall silent 
 
-   **Example:** “D:\Temp\syncfusionessentialaspnetcore-js1_x.x.x.x.exe" /uninstall silent
+    **Example:** “D:\Temp\syncfusionessentialaspnetcore-js1_x.x.x.x.exe" /uninstall silent
 
 
 7.  Essential Studio for ASP.NET Core (Essential JS1) is uninstalled.
