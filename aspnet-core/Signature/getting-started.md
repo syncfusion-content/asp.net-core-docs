@@ -19,7 +19,7 @@ The following screenshot demonstrates the output of the Signature control in ASP
 
 ## Create a Simple Signature
 
-Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
 Once you have done all the basic configurations which is mentioned in the ASP.NET Core getting started page, now you can create and deploy our Signature Control.
 

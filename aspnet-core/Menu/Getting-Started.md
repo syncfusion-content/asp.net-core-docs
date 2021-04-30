@@ -18,7 +18,7 @@ From the following guideline, you can learn how to customize the Menu control fo
  
 ## Create your first Menu in ASP.NET Core
 
-Create Syncfusion ASP.NET Core application. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation to initially configure the common specifications.
+Create Syncfusion ASP.NET Core application. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation to initially configure the common specifications.
 
 {% highlight CSHTML %}
 

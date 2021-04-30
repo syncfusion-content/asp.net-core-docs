@@ -27,7 +27,7 @@ ASP.NET Core Slider control allows you to switch between different ranges of inp
 
 1. Create an ASP.NET Core Project and add Syncfusion assembly packages, scripts, and styles to it.
 
-   Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started)
+   Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0)
 
 2. Add the following code example for Slider to the corresponding view page.
 

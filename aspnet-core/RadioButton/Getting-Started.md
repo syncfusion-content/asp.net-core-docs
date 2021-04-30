@@ -22,7 +22,7 @@ ASP.NET Core RadioButton provides support to display the RadioButton within your
 
 Essential Studio ASP.NET Core RadioButton widget has a built-in feature to select a single option from the QuizApp. You can create the RadioButton widget using the following steps.
 
-1. Create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+1. Create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation.
 2. Add the following code example to the corresponding view page to render RadioButton.
 
 

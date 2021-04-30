@@ -13,7 +13,7 @@ ASP.NET Core Rotator provides support to display the provided number of images w
 
 ## Create a Simple Rotator
 
-Essential Studio ASP.NET Core Rotator control has built-in features such as unobtrusive and flexible APIs. Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/getting-started ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application. 
+Essential Studio ASP.NET Core Rotator control has built-in features such as unobtrusive and flexible APIs. Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0 ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application. 
 You can easily create the Rotator control by adding the following code in corresponding view page.
 
 {% highlight cshtml %}

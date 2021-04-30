@@ -29,7 +29,7 @@ In the above screenshot, you can rate the movie by selecting a corresponding mov
 
 The Essential Studio ASP.NET CoreRating widget renders with built-in features like Precision, Orientation and flexible APIs. You can easily create the Rating widget by using HTML helper class as follows.
 
-You can create a Core Project and add necessary assembly and script with the help of the given [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) Documentation.
+You can create a Core Project and add necessary assembly and script with the help of the given [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) Documentation.
 
 Add the following code example to the corresponding view page to render Rating inside the Tab control.	
 

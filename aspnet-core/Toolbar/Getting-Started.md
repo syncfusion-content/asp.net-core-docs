@@ -24,7 +24,7 @@ Toolbar control displays a list of tools in a web page. It is used to customize 
 
 The basic rendering of ASP.NET Core Toolbar is achieved with default functionality.
 
-1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation
+1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation
 
 2.Then, add the mentioned code to the corresponding view page for Toolbar rendering.
 

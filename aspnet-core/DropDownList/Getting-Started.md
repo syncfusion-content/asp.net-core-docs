@@ -11,7 +11,7 @@ documentation: ug
 
 ## Create your first DropDownList in ASP.NET Core 
 
-1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation
+1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation
 
 
 2.Add DropDownList control by using the below code.

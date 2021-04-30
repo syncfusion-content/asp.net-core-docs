@@ -26,7 +26,7 @@ In the above screenshot, you can select hobbies, interest list and social networ
 
 ASP.NET Core Checkbox widget has built-in features like multiple selections. You can easily create the Checkbox widget using simple Tag helper `<ej-check-box />` as follows.
 
-1. Create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+1. Create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation.
 2. Add the following code to the corresponding view page to render Checkbox.
 
 

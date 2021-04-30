@@ -13,7 +13,7 @@ ASP.NET Core Splitter control consists of movable split bar(s) that divides the 
 
 ## Create a Simple Splitter 
 
-1.	Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/getting-started ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+1.	Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0 ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 2.	Add the following code example to the corresponding view page to render the Splitter. Here we have used the e-content-template property to specify the contents of the splitter control.
 
     {% highlight cshtml %}

@@ -13,7 +13,7 @@ This section briefly explains how to create a tree view in the ASP.NET Core plat
 
 ## Create your first tree view in ASP.NET Core
 
-Create an ASP.NET Core project and add the Syncfusion assembly packages, CSS, and scripts with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation. After the project creation, create a tree view in the following ways.
+Create an ASP.NET Core project and add the Syncfusion assembly packages, CSS, and scripts with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation. After the project creation, create a tree view in the following ways.
 
 ## Tree view using helper element
 

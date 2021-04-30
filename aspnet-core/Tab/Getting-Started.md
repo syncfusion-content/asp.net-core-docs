@@ -26,7 +26,7 @@ The ASP.NET Core tab widget basically builds a dynamic, interactive, and menu-dr
 
 To create a tab control:
 
-1. Create a core project, and add the required assemblies and script with the help of [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+1. Create a core project, and add the required assemblies and script with the help of [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation.
 2.Then, add the following code sample to the corresponding view page for tab rendering..
   
 {% highlight CSHTML %}

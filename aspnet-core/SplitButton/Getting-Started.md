@@ -19,7 +19,7 @@ The HTML button element and the <UL>, <LI> can be easily configured as Essential
 
 Essential ASP.NET Core Split Button control contains built-in features such as Click and different option choosing. You can easily create the Split Button control by using Tag helper as follows.
 
-1. You can create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+1. You can create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation.
 2. Add the following code to the corresponding View page to render Split Button.
 
 

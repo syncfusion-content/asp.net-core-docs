@@ -13,7 +13,7 @@ This section explains briefly on how to create a ListBox control in your ASP.NET
 
 ## Create your first ListBox
 
-1. Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+1. Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 2. Create your first Listbox by using the below mentioned code.
 
     {% highlight cshtml %}

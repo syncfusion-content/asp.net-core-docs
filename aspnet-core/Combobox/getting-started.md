@@ -10,7 +10,7 @@ keywords: allowCustom, ComboBox, dataSource, popupHeight, popupWidth
 
 # Getting Started
 
-This section explains how to create a simple **ComboBox** component and configure its available functionalities in TypeScript, using [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+This section explains how to create a simple **ComboBox** component and configure its available functionalities in TypeScript, using [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation.
 
 {% highlight CSHTML %}
   

@@ -25,7 +25,7 @@ In the above screenshot, you can see the weighted list and a click on any item d
 
 Essential Studio ASP.NET Core TagCloud widget has built-in features such as clicking on one of the sites in the TagCloud brings all relevant results only from the selected source. You can easily create the TagCloud widget element as follows.
 
-1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation
+1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation
 
 2.Add the following code to the corresponding view page to render TagCloud.
 

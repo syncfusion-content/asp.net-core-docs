@@ -13,7 +13,7 @@ documentation: ug
 
 This section explains you briefly on how to create a GroupButton in your application with ASP.NET Core. You can easily create the Button control by using Tag helper as follows.
 
-1. You can create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation.
+1. You can create a .NetCore Project with the help of the given [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation.
 2. Add the following code example to the corresponding view page to render GroupButton.
 
 

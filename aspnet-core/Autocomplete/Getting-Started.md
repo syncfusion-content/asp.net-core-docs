@@ -16,7 +16,7 @@ This section allows you to learn and how to configure the AutoComplete control i
 
 AutoComplete Textbox control basically renders with built-in features like keyboard navigation with animations and flexible API’s. You can easily create the AutoCompleteTextbox control by the following steps.
 
-1. Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+1. Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 2. Once you have done all the basic configurations which is mentioned in the ASP.NET Core getting started page, Now you can create and deploy our AutoComplete Control.
 3. Initialize the AutoComplete control in the view page by using the below code.
 

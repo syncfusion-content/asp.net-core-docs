@@ -8,7 +8,7 @@ keywords:
 ---
 # Getting Started
 
-Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the introduction part to know more about the basic [system requirements](https://help.syncfusion.com/aspnet-core/getting-started#system-requirements) and the steps to [configure Syncfusion File Format components](https://help.syncfusion.com/aspnet-core/getting-started#configure-syncfusion-file-format-components-in-aspnet-core-application) in an ASP.NET Core application. Ensure once whether all the following dependency packages are included within the project.json file as mentioned [here](https://help.syncfusion.com/aspnet-core/getting-started#configure-syncfusion-file-format-components-in-aspnet-core-application), to create and manipulate the Word documents using DocIO.
+Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) page of the introduction part to know more about the basic [system requirements](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0#system-requirements) and the steps to [configure Syncfusion File Format components](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0#configure-syncfusion-file-format-components-in-aspnet-core-application) in an ASP.NET Core application. Ensure once whether all the following dependency packages are included within the project.json file as mentioned [here](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0#configure-syncfusion-file-format-components-in-aspnet-core-application), to create and manipulate the Word documents using DocIO.
 
 <table>
 <thead>

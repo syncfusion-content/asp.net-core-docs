@@ -27,7 +27,7 @@ Progress Bar
 
 ASP.NET Core Progress Bar control indicates the current progress of an operation like uploading a document through a simple interface. You can easily create the Progress bar control using simple Razor code or ej-tag helper  as follows.
 
-1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/getting-started) documentation
+1.Create an ASP.NET Core Project as given in [`ASP.NET Core`](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation
 
 2.Add the following code to the corresponding view page to render Progress Bar.
 

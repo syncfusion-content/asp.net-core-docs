@@ -13,7 +13,7 @@ This section allows you to learn and how to configure the NavigationDrawer contr
 
 ## Create Navigation Drawer control
 
-Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application. Here we have used listview to show list of items such as home, profile, photos and location where you can navigate to desired page by clicking on the option available in the drawer. Use the below code in the corresponding view page.
+Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application. Here we have used listview to show list of items such as home, profile, photos and location where you can navigate to desired page by clicking on the option available in the drawer. Use the below code in the corresponding view page.
 
 {% highlight cshtml %}
 

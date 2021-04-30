@@ -15,7 +15,7 @@ This section explains briefly you on how to create a Diagram in your ASP.NET COR
 
 ### Initialize Diagram
 
-1\. Create an ASP.NET CORE Application and add necessary packages and Scripts by referring [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) Documentation.
+1\. Create an ASP.NET CORE Application and add necessary packages and Scripts by referring [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) Documentation.
 
 2\. Add a placeholder `div` element to initialize diagram control
 

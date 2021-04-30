@@ -23,7 +23,7 @@ You can upload a resume allowing .png and .docx file extensions, and avoid unsup
 
 The UploadBox basically renders built-in features like upload and delete. You can know the status of the file(whether it is completed or failed) and also  retry upload if it failed. 
 
-You can create a Core Project and add necessary assembly and script with the help of the given [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) Documentation.
+You can create a Core Project and add necessary assembly and script with the help of the given [Dotnet Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) Documentation.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 

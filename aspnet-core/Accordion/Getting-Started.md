@@ -18,7 +18,7 @@ Accordion control allows you to provide multiple panes and display them one/more
 
 ## Create a Simple Accordion
 
-ASP.NET Core Accordion basically renders using a div element. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation to initially configure the common specifications.
+ASP.NET Core Accordion basically renders using a div element. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation to initially configure the common specifications.
 
 {% highlight CSHTML %}
 

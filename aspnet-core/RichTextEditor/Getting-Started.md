@@ -12,7 +12,7 @@ This section explains the step-by-step instructions to create RichTextEditor in 
 
 ## Create your first RichTextEditor in ASP.NET Core.
 
-1.  Create Syncfusion ASP.NET Core application. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) documentation to initially configure the common specifications.
+1.  Create Syncfusion ASP.NET Core application. You can refer [ASP.NET Core Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) documentation to initially configure the common specifications.
 
 2.Add RichTextEditor control by using the below code.
 

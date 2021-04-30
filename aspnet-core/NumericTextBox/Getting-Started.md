@@ -23,7 +23,7 @@ From the following steps you can learn how to create and use NumericTextBox in y
 
 ASP.NET Core Editors renders built-in features like keyboard navigation, min and max range and flexible API’s. 
 
-1. Create an ASP.NET Core Project and add Syncfusion assembly packages and Scripts. Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started).
+1. Create an ASP.NET Core Project and add Syncfusion assembly packages and Scripts. Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0).
 2. Add necessary Tag helper elements to render the Editor components.
 
    ~~~ cshtml

@@ -30,7 +30,7 @@ In the above screenshot, you can type only numbers and it does not allow text fo
 
 ASP.NET Core MaskEdit control renders built-in features like text masking, number masking and flexible APIs. You can easily create the MaskEdit control using simple HTML helper class as follows:
 
-1. Create an ASP.NET Core Project and add Syncfusion assembly packages, styles and scripts to it. Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started)
+1. Create an ASP.NET Core Project and add Syncfusion assembly packages, styles and scripts to it. Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0)
 2. Add the following code to the corresponding view page to render MaskEdit.
 
 
@@ -264,7 +264,7 @@ You can easily create the MaskEdit control using simple HTML helper class as fol
 
 1. Create a ASP.NET Core Project and add Syncfusion assembly packages and scripts to it. 
 
-   Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/getting-started).
+   Refer [ASP.NET Core-Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0).
 
 2. Add the following code to the corresponding view page to render MaskEdit.
 

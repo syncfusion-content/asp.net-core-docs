@@ -13,7 +13,7 @@ This control allows you to select an item from a list-like interface and provide
  
 ## Create a simple ListView
 
-1.	Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/getting-started ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+1.	Refer the [Getting Started]( https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0 ) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 2.	Add the following code example to the corresponding view page for ListView rendering.
 
 The following steps explain local data binding to an ListView.
