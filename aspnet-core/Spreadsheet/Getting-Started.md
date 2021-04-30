@@ -1,13 +1,13 @@
 ---
-title: Getting Started for Syncfusion Essential ASP.NET Core Spreadsheet
-description: How to create a Spreadsheet with data source, apply format and export it as excel file.
+title: Getting Started with ASP.NET Core Spreadsheet control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Spreadsheet control, its elements, and more.
 platform: aspnet-core
 control: Spreadsheet
 documentation: UG
 keywords: 
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Spreadsheet
 
 This section explains briefly about how to create Spreadsheet in your ASP.NET core application  and also how to populate the Spreadsheet with data, formats and how to export Spreadsheet data as excel file.
 

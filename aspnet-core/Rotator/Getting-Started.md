@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core Rotator control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Rotator control, its elements, and more.
 platform: aspnet-core
 control: Rotator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Rotator
 
 ASP.NET Core Rotator provides support to display the provided number of images within your web page in a rotating manner. Refer the following guidelines to create a Rotator control for a real-time website banner scenario that has five images that slide automatically. When you click the play button, images slide automatically in a rotating manner and on second click, the rotation stops. This section explains briefly about how to create a Rotator in your ASP.NET Core application.
 
@@ -84,4 +84,4 @@ Add following code in style section.
 
 The following banner is displayed as output.
 
-![](Getting-Started_Images/default.png)
+![Getting-Started_images](Getting-Started_Images/default.png)

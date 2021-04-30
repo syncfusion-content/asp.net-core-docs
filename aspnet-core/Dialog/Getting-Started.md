@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Dialog Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core Dialog control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Dialog control, its elements, and more.
 platform: aspnet-core
 control: Dialog
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Dialog
 
 This section allows you to learn how to configure and use our Dialog control in your application. It also allows you to learn how to add content to the dialog in different way.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Autocomplete Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core AutoComplete control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core AutoComplete control, its elements, and more.
 platform: aspnet-core
 control: AutoComplete 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core AutoComplete
 
 This section allows you to learn and how to configure the AutoComplete control in your application. It also allows you to learn how to pass the required data to it.
 

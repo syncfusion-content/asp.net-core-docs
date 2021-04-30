@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core RadialMenu control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core RadialMenu control, its elements, and more.
 platform: aspnet-core
 control: RadialMenu 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core RadialMenu
 
 This section explains briefly about how to create a RadialMenu in ASP.NET Core application.
 
@@ -114,4 +114,4 @@ Run the above code and select any text inside the target. The settings icon is d
 
 
 
-![](getting-started_images\img.png)
+![Getting-Started_images](getting-started_images\img.png)

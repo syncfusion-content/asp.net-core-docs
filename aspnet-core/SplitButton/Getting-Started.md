@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SplitButton | ASP.NET Core | Syncfusion
-description: getting started 
+title: Getting Started with ASP.NET Core SplitButton control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core SplitButton control, its elements, and more.
 platform: aspnet-core
 control: SplitButton
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with ASP.NET Core SplitButton
 
 This section explains briefly about how to create a Split Button in ASP.NET Core application.
 
@@ -64,7 +64,7 @@ Output of the above scripts,
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
 
 
 

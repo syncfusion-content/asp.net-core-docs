@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core ListBox control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core ListBox control, its elements, and more.
 platform: aspnet-core
 control: ListBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core ListBox
 
 This section explains briefly on how to create a ListBox control in your ASP.NET Core application.
 

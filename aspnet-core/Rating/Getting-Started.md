@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | Rating | ASP.NET Core | Syncfusion
-description: How to create the Rating
+title: Getting Started with ASP.NET Core Rating control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Rating control, its elements, and more.
 platform: aspnet-core
 control: Rating
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Rating
 
 This section explains briefly how to create a Rating control in the ASP.NET Core.
 
@@ -19,7 +19,7 @@ The following screenshot demonstrates the functionality of a Rating control with
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -233,4 +233,4 @@ Add the following styles to the corresponding view page to show the Rating in a 
 
 Execute the above code to render the following output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png)

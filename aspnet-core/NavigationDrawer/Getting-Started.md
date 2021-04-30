@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core NavigationDrawer | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core NavigationDrawer control, its elements, and more.
 platform: aspnet-core
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core NavigationDrawer
 
 This section allows you to learn and how to configure the NavigationDrawer control in your application.
 
@@ -284,4 +284,4 @@ Add this in corresponding style section:
 
 After execute the above code you can get below output.
 
-![](Getting-Started_Images/default2.png)
+![Getting-Started_images2](Getting-Started_Images/default2.png)

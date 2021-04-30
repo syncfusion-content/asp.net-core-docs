@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | GroupButton | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core GroupButton control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core GroupButton control, its elements, and more.
 platform: aspnet-core
 control: GroupButton
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core GroupButton
 
 ## GroupButton initialization
 

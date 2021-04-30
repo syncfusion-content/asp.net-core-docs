@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core RadialSlider control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core RadialSlider control, its elements, and more.
 platform: aspnet-core
 control: RadialSlider 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core RadialSlider
 
 This section explains briefly about how to create a RadialSlider in ASP.NET Core application.
 
@@ -24,4 +24,4 @@ This section explains briefly about how to create a RadialSlider in ASP.NET Core
 
 Run the code and you will get below output.
 
-![](Getting-Started_Images/default.png)
+![Getting-Started_images](Getting-Started_Images/default.png)

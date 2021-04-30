@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Scroller | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core Scroller control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Scroller control, its elements, and more.
 platform: aspnet-core
 control: Scroller
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Scroller
 
 This section explains briefly about how to create a Scroller in your ASP.NET Core application.
 
@@ -79,4 +79,4 @@ Essential Studio ASP.NET Core Scroller control has a built-in feature to customi
 
 4. Execute the above example code to get the following output. 
 
-	![](Getting-Started_images/Getting-Started_img1.png)
+	![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)

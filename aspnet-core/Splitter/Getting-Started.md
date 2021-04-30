@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Splitter Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core Splitter control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Splitter control, its elements, and more.
 platform: aspnet-core
 control: Splitter
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Splitter
 
 ASP.NET Core Splitter control consists of movable split bar(s) that divides the container’s display area into two or more resizable and collapsible panes. Refer the following guidelines to create a Splitter, add tree view in the Splitter and how to set actions to view the image that is used to split the document or image and also Expand or Collapse the Splitter. This section explains briefly about how to create a Splitter in ASP.NET Core application.
 
