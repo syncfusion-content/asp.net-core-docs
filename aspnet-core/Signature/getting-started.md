@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with ASP.NET Core Signature control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Signature control, its elements, and more.
-platform: ASP.NET core
+platform: ASP.NET Core
 control: Signature
 documentation: ug
 ---

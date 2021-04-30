@@ -24,7 +24,7 @@ This section explains briefly on how to create a ListBox control in your ASP.NET
 
 3. After executed the above code you can get the following output.
 
-![](Getting-Started_Images/default.png)
+![Getting-Started_images](Getting-Started_Images/default.png)
 
 ## Data binding
 
@@ -94,7 +94,7 @@ In the View page, add Listbox helper and map the Local data list to correspondin
 
 Run this code and you can get output like this
 
-![](Getting-Started_Images/datasource.png)
+![Getting-Started_images](Getting-Started_Images/datasource.png)
 
 ## Selection
 
@@ -111,6 +111,6 @@ The ListBox control supports item selection in different way. In this example we
  
  Your output will be as given below.
 
-![](Getting-Started_Images/selectedIndex.png)
+![Getting-Started_images](Getting-Started_Images/selectedIndex.png)
  
  
