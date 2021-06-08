@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | ReportWriter | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core ReportWriter Control | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Core ReportWriter Control, its elements, and more.
 platform: aspnet-core
 control: ReportWriter
 documentation: ug
 ---
 
-# Overview
+# Getting Started with ASP.NET Core ReportWriter
 
 The report writer is a class library that is used to export the RDL/RDLC report with popular file formats like PDF, Microsoft Word, and Microsoft Excel without previewing the report in web page. This section describes how to export the RDL report to PDF in ASP.NET Core application using the `ReportWriter`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | ReportViewer | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core ReportViewer Control | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Core ReportViewer Control, its elements, and more.
 platform: aspnet-core
 control: ReportViewer
 documentation: ug
 ---
 
-# Overview
+# Getting Started with ASP.NET Core ReportViewer
 
 The report viewer is a visualization control to view the Microsoft RDL/RDLC format based report on a web page, and it is powered by HTML5/JavaScript. This section explains how to add the report viewer component in the ASP.NET Core MVC application along with simple example of the invoice report.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ASP.NET Core Chart Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core Chart Control, its elements, and more.
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
-# Getting Started
+# Getting Started with ASP.NET Core Chart
 
 This section explains the steps required to populate the chart with data, data labels, tooltips, and title. This section covers only minimal features that needed to get started with the Chart.
 

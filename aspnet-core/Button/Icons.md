@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Icons | Button | ASP.NET Core | Syncfusion
-description: icons
+description: Learn here all about adding icons in Syncfusion Essential Studio ASP.NET Core Button control and more.
 platform: aspnet-core
 control: Button
 documentation: ug
 ---
 
-# Icons
+# Icons in ASP.NET Core Button control
 
 The Essential Studio for ASP.NET Core provide icons library that contains the number of built-in icons that can be applied for CSS class names to elements and refer “ej.widgets.all.core.min.css” file. Use the following syntax to apply class names.
 

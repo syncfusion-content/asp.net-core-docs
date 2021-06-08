@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | DateTimePicker | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core DateTimePicker Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio ASP.NET Core DateTimePicker Control, its elements, and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core DateTimePicker
 
 This section explains the essential steps required to render a DateTimePicker control in an ASP.net Core application.
 
