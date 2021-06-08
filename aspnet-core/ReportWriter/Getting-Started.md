@@ -13,9 +13,9 @@ The report writer is a class library that is used to export the RDL/RDLC report 
 
 
 ## Environment setup
-Refer to the [installation](/aspnet-core/configuration-and-installation) page to know more about the basic steps required to configure the Syncfusion components to use with ASP.NET Core application. 
+Refer to the [installation](https://help.syncfusion.com/aspnet-core/installation-and-upgrade/system-requirements) page to know more about the basic steps required to configure the Syncfusion components to use with ASP.NET Core application. 
 
-N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation. If you missed to explore, refer to the [nuget-package-manager-settings](/aspnet-core/nuget-packages) to configure the Syncfusion NuGet source.
+N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation. If you missed to explore, refer to the [nuget-package-manager-settings](https://help.syncfusion.com/aspnet-core/visual-studio-integration/nuget-packages) to configure the Syncfusion NuGet source.
 
 ### References
 You should add the following packages for the report viewer:

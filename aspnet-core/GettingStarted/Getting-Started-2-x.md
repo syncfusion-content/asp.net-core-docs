@@ -360,7 +360,7 @@ To create an ASP.NET Core 2.x application, we will use the [**yeoman**](http://
 
 Since **Visual Studio Code** uses folder structure for storing files of application, we will create a folder of the name **ASP.NET**
 
-* Install Node from [https://nodejs.org/](https://nodejs.org/#)
+* Install Node from [https://nodejs.org/]("https://nodejs.org/#")
 
 * Open the Command prompt window in Administrator mode and execute the below mentioned command to install the **Yeoman** tool in your local machine by using **npm**.
 
