@@ -120,7 +120,7 @@ RibbonTab is a set of related groups which are combined into single item. For cr
 
 {% endhighlight  %}
 
-![](getting-started-images/Ribbon_img1.png)
+![getting-started-images1](getting-started-images/Ribbon_img1.png)
 
 ## Configuring Groups
 
