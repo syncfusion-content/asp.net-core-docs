@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering | ListView | ASP.NET Core | Syncfusion
-description: filtering
+title: Filtering in ASP.NET Core ListView Control | Syncfusion
+description: Learn here about filtering in Syncfusion Essential Studio ASP.NET Core ListView Control, its features, and more.
 platform: aspnet-core
 control: ListView
 documentation: ug
 keywords: listview, filter
 ---
 
-# Filtering
+# Filtering in ASP.NET Core ListView Control
 
 Filtering is one of the key features of ListView control. The Filtering option is added into the ListView control when the enable-filtering property is set to “true”. This enables a simple interface to filter items from a large collection of ListView items.
 
