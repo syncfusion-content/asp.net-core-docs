@@ -37,13 +37,13 @@ Refer the following code examples.
 
 ### Screenshot:
 
-![](Filtering_images/Filtering_img1.png)
+![Filtering_images_Image1](Filtering_images/Filtering_img1.png)
 
 
 Enable Filtering
 {:.caption}
 
-![](Filtering_images/Filtering_img2.png)
+![Filtering_images_Image2](Filtering_images/Filtering_img2.png)
 
 Enable Filtering
 {:.caption}
