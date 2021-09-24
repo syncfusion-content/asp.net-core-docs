@@ -7,9 +7,7 @@ control: Common
 documentation: ug
 ---
 
-## Configuring Syncfusion Bower Packages
-
-### Overview
+# Configuring Syncfusion Bower Packages
 
 [Bower](http://bower.io) is a package manager for the Web. Syncfusion Bower package allows you to use the Syncfusion JavaScript Widgets in an efficient way.
 

@@ -95,6 +95,6 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Printing_images/print_img1.png)
+![kanban printing1](Printing_images/print_img1.png)
 
 
