@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core | Syncfusion
-description: Learn here all about getting started with Syncfusion ASP.NET Core(SfGetting started) control,its elements and more.
+description: Learn here all about getting started with Syncfusion ASP.NET Core(Common) control,its elements and more.
 platform: aspnet-core 
 control: Common 
 documentation: ug
