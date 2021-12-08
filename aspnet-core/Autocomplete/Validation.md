@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation | AutoComplete | ASP.NET Core | Syncfusion
-description: Learn here all about validation support with Syncfusion ASP.NET Core AutoComplete control, its elements and more.
+description: Learn here all about validation support in Syncfusion ASP.NET Core AutoComplete control, its elements and more.
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
