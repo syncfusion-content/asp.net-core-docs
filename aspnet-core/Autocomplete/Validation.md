@@ -120,4 +120,4 @@ namespace SyncfusionASPNETCoreDDL.Models
 
 The following output is displayed as a result of the above code example.  
 
-![Validation messages  in ASP.NET Core AutoComplete](Validation_images\validation_img1.png)
+![Validation messages in ASP.NET Core AutoComplete](Validation_images\validation_img1.png)
