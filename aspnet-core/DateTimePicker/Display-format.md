@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DateTimePicker in ASP.NET Core | Syncfusion
-description: learn here all about DateTimePicker support in Syncfusion ASP.NET Core control,its element and more.
+description: learn here all about display format support in Syncfusion ASP.NET Core DateTimePicker(SfDateTimePicker) control,its element and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
