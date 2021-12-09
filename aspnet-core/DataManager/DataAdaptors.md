@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data-Adaptors  | DataManager | ASP.NET Core | Syncfusion
-description: data adaptors
+description: Learn here all about Data Adaptors support in Syncfusion ASP.NET Core Datamanager control, its elements and more
 platform: aspnet-core
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adapt
 
 ---
 
-# Data Adaptors
+# Data Adaptors in ASP.NET Core Datamanager
 
 **DataManger** uses adaptors to process data. There are three types of adaptors in **DataManger**. They are
 
@@ -177,7 +177,7 @@ The following code example illustrates on how to use **JSONAdaptor**.
 
 The result of above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img1.png) 
+![JSON Adaptor in ASP.NET Core Datamanager](Data-Adaptors_images/Data-Adaptors_img1.png) 
 
 ## URL Adaptor
 
@@ -349,7 +349,7 @@ to <BR>
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img2.png) 
+![MVC Contoller in ASP.NET Core Datamanager](Data-Adaptors_images/Data-Adaptors_img2.png) 
 
 ## OData Adaptor
 
@@ -452,7 +452,7 @@ The result of the above code example is illustrated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img3.png) 
+![OData Adaptor in ASP.NET Core Datamanager](Data-Adaptors_images/Data-Adaptors_img3.png) 
 
 ## WebAPI Adaptor
 
@@ -604,7 +604,7 @@ Refer to the following code example.
 
 Result of the above code example is illustrated as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img4.png) 
+![WebAPI Adaptor in ASP.NET Core Datamanager](Data-Adaptors_images/Data-Adaptors_img4.png) 
 
 ## RemoteSave Adaptor
 
@@ -963,7 +963,7 @@ The following code example illustrates you on how to create custom adaptor.
 
 Result of above code example is as follows.
 
-![](Data-Adaptors_images/Data-Adaptors_img6.png) 
+![Custom Adaptor in ASP.NET Core Datamanager](Data-Adaptors_images/Data-Adaptors_img6.png) 
 
 Using Custom Adaptor, you can override the existing method of Extended Adaptor, 
 
@@ -1171,7 +1171,7 @@ Cache Adaptor is used to cache the data of the visited pages. It prevents new re
 
 {% endtabs %}
 
-![](Data-Adaptors_images/Data-Adaptors_img7.png)
+![Cache Adaptor in ASP.NET Core Datamanager](Data-Adaptors_images/Data-Adaptors_img7.png)
 
 Cache Adaptor has the following unique properties, 
 
