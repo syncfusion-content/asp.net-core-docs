@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display format | DateTimePicker | ASP.NET Core | Syncfusion
-description: learn here all about display format support in Syncfusion ASP.NET Core DateTimePicker control,its element and more.
+title: DateTimePicker in ASP.NET Core | Syncfusion
+description: learn here all about DateTimePicker support in Syncfusion ASP.NET Core control,its element and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
 ---
 
-# Display format in ASP.NET Core DateTimePicker
+# DateTimePicker in ASP.NET Core 
 
 ## DateTime format
 
