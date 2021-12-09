@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing with Grid widget for Syncfusion Essential ASP.NET Core
-description:  Learn here all about editing support in Syncfusion ASP.NET Core Grid control, its elements and more.
+description: Learn here all about editing support in Syncfusion ASP.NET Core Grid control, its elements and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
