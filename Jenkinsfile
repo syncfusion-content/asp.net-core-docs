@@ -17,7 +17,7 @@ timestamps
            {
 		     checkout scm
 			 
-			 def branchCommit = '"' + 'https://api.gitlab.com/repos/syncfusion-content/asp.net-core-docs/pulls/' + env.pullRequestId + '/files'
+			 def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/asp.net-core-docs/pulls/'+env.pullRequestId+'/changes'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
