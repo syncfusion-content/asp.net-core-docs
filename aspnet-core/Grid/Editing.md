@@ -650,7 +650,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![Editing external form in ASP.NET Core Grid](Editing_images/Editing_img12.png)
+![Editing external edit form in ASP.NET Core Grid](Editing_images/Editing_img12.png)
 
 
 ### External template form
@@ -891,8 +891,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![Confirmation messages in ASP.NET Core Grid](Editing_images/Editing_img17.png)
-
+![Confirmation messages while deleting in ASP.NET Core Grid](Editing_images/Editing_img17.png)
 
 ## Column validation
 

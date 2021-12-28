@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive with Grid widget for Syncfusion ASP.NET Core
-description: Learn here all about Responsive support in Syncfusion ASP.NET Core Grid control, its elements and more details.
+description: Learn here all about Responsive support in Syncfusion ASP.NET Core Grid control, its elements and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
@@ -85,22 +85,22 @@ Responsive row with Filtering, Sorting and Searching.
 {:caption}
 CRUD in mobile layout
 
-![Crud in mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img4.png)
+![Crud mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img4.png)
 
 {:caption}
 Filtering in mobile layout
 
-![Filtering in mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img5.png)
+![Filtering mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img5.png)
 {:caption}
 
 Filtering in mobile layout
 
-![Filtering in mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img6.png)
+![Filtering in ASP.NET Core Grid](Responsive_images/Responsive_img6.png)
 
 {:caption}
 Sorting in mobile layout
 
-![Sorting in mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img7.png)
+![Sorting mobile layout in ASP.NET Core Grid](Responsive_images/Responsive_img7.png)
 {:caption}
 
 Searching in mobile layout
