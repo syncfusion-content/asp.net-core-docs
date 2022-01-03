@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DateTimePicker in ASP.NET Core | Syncfusion
-description: learn here all about display format support in Syncfusion ASP.NET Core DateTimePicker(SfDateTimePicker) control,its element and more.
+title: Display format in ASP.NET Core DateTimePicker | Syncfusion
+description: learn here all about display format support in Syncfusion ASP.NET Core DateTimePicker(SfDateTimePicker) control,its element, and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
 ---
 
-# DateTimePicker in ASP.NET Core 
+# Display format in ASP.NET Core DateTimePicker
 
 ## DateTime format
 
@@ -147,7 +147,7 @@ You can also customize the format according to your needs. This is achieved by c
 
 2. The following screenshot displays the output for the above code.
 
-	![Showcase of DateTimePicker with short of day by the week in ASP.NET Core](Display-format_images/Display-format_img2.png)
+	![Showcase of DateTimePicker with UTC format in ASP.NET Core DateTimePicker](Display-format_images/Display-format_img2.png)
 
     Showcase of DateTimePicker with short name of day of the week
     {:.caption}
