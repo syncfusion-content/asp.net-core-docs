@@ -202,7 +202,7 @@ public partial class GridController : Controller
 
 Default tab layout
 
-![Filtering design in tab layout in ASP.NET Core Grid](Responsive_images/Responsive_img9.png)
+![Filtering design tab layout in ASP.NET Core Grid](Responsive_images/Responsive_img9.png)
 
 {:caption}
 Filtering design in tab layout.
