@@ -87,7 +87,7 @@ N> To render the Tab Control you can use either Razor or Tag helper code as give
 
 2. The following screenshot displays the output for the above code.
 
-	![Showcase of DateTimePicker with UTC formal in ASP.NET Core](Display-format_images/Display-format_img1.png)
+	![Showcase of DateTimePicker with UTC format in ASP.NET Core](Display-format_images/Display-format_img1.png)
 
     Showcase of DateTimePicker with UTC time format
     {:.caption}
@@ -147,7 +147,7 @@ You can also customize the format according to your needs. This is achieved by c
 
 2. The following screenshot displays the output for the above code.
 
-	![Showcase of DateTimePicker with UTC format in ASP.NET Core DateTimePicker](Display-format_images/Display-format_img2.png)
+	![Showcase of DateTimePicker with  short name of day in ASP.NET Core DateTimePicker](Display-format_images/Display-format_img2.png)
 
     Showcase of DateTimePicker with short name of day of the week
     {:.caption}
