@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bash On Windows in ASP.NET Core | Syncfusion
-description: Learn here all about bash on windows in Syncfusion Essential Studio ASP.NET Core platform control, its elements, and more.
+description: Learn here all about bash on windows in Syncfusion Essential Studio ASP.NET Core control, its elements, and more.
 platform: aspnet-core
 control: Control Name undefined
 documentation: ug

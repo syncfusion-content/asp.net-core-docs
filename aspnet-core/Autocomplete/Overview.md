@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion ASP.NET Core AutoComplete Control | Syncfusion
+title: Overview of ASP.NET Core AutoComplete Control | Syncfusion
 description: Learn here about Overview document of Syncfusion Essential Studio ASP.NET Core AutoComplete Control, its elements, and more.
 platform: aspnet-core
 control: Autocomplete 
