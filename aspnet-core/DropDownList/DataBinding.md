@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Data binding in DropDownList control for Syncfusion ASP.NET Core
-description: Describes about the data binding in DropDownList control for Syncfusion ASP.NET Core
+description: Learn here all about Data binding support in Syncfusion Essential Studio ASP.NET Core DropDownList Control, its elements, and more.
 platform: aspnet-core
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, data binding, Local data, Remote data
 ---
 
-# Data Binding
+# Data Binding support in ASP.NET Core DropDownList
 
 To populate data in the DropDownList control, define DataSource property with associated fields. You can bind any list data and other remote services in the DropDownList.
 
@@ -259,7 +259,7 @@ N> The columns are bounded automatically when the fields are specified with the 
 {% endtabs %}
 
 
-![](DataBinding_images/DataBinding_img1.jpeg)
+![ASPNETCore DropDownList DataBinding](DataBinding_images/DataBinding_img1.jpeg)
 
 N> Images for this sample are available in (installed location)\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\samples\web\themes\images<br/> 
 
@@ -296,7 +296,7 @@ For further details about OData service please refer [the link](http://www.odata
      
 {% endhighlight %}           
            
-![](DataBinding_images/DataBinding_img2.jpeg)
+![ASPNETCore DropDownList OData Version 4](DataBinding_images/DataBinding_img2.jpeg)
 
 N> Events associated with remote data bind is listed [here](http://help.syncfusion.com/js/api/ejdropdownlist#events). 
 
@@ -330,7 +330,7 @@ Using WebApiAdaptor, you can bind WebApi service’s data to DropDownList. The d
 
 {% endhighlight %}
 
-![](DataBinding_images/DataBinding_img3.jpeg)
+![ASPNETCore DropDownList WebAPI](DataBinding_images/DataBinding_img3.jpeg)
 
 ## Virtual Scrolling 
 
