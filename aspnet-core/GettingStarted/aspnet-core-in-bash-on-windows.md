@@ -1,13 +1,13 @@
 ---
 layout: post
-title: asp.net core in bash on windows
-description: asp.net core in bash on windows
+title: Bash On Windows in ASP.NET Core | Syncfusion
+description: Learn here all about bash on windows in Syncfusion Essential Studio ASP.NET Core platform control, its elements, and more.
 platform: aspnet-core
 control: Control Name undefined
 documentation: ug
 ---
 
-## ASP.NET Core in Bash On Windows
+# ASP.NET Core in Bash On Windows
 
 To work with ASP.NET Core samples in Ubuntu based Bash shell on Windows 10 (Bash on Windows), you need to make sure is whether you have following software on your machine.  
 
@@ -16,7 +16,7 @@ To work with ASP.NET Core samples in Ubuntu based Bash shell on Windows 10 (Bash
 * Visual Studio Code
 
 
-### Install Bash on Windows
+## Install Bash on Windows
 
 
 
@@ -26,7 +26,7 @@ To getting started with Bash on Windows, once you are sure with having correct v
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img1.png)
+![ASPNETCore in bash on windows](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img1.png)
 
 
 
@@ -34,7 +34,7 @@ To getting started with Bash on Windows, once you are sure with having correct v
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img2.png)
+![ASPNETCore Control panel bash on windows](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img2.png)
 
 
 
@@ -44,7 +44,7 @@ To getting started with Bash on Windows, once you are sure with having correct v
 
 *  Click Start button and type **bash**. Form the search result select the **Bash** run command option.
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img3.png)
+![ASPNETCore button type bash on windows](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img3.png)
 
 
 
@@ -52,7 +52,7 @@ To getting started with Bash on Windows, once you are sure with having correct v
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img4.png)
+![ASPNETCore bash run command](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img4.png)
 
 
 
@@ -182,7 +182,7 @@ $ sudo apt-get upgrade
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img5.jpeg)
+![ASPNETCore Configuring Syncfusion Components](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img5.jpeg)
 
 
 
@@ -190,13 +190,13 @@ $ sudo apt-get upgrade
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img6.jpeg)
+![ASPNETCore bash on windows CSS files](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img6.jpeg)
 
 *  Then open quick window to enter the *>bower* command and press **Enter** key, from the below list of suggestions select the **bower install** option to restored our scripts and CSS into your application **wwwroot -> lib** folder.
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img7.jpeg)
+![ASPNETCore bower command](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img7.jpeg)
 
 
 
@@ -206,7 +206,7 @@ $ sudo apt-get upgrade
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img8.png)
+![ASPNETCore project json file](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img8.png)
 
 The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -321,5 +321,5 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 
 
-![](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img9.jpeg)
+![ASPNETCore dotnet run command](aspnetcoreinbashonwindows_images\aspnetcoreinbashonwindows_img9.jpeg)
 
