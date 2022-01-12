@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Responsive with Grid widget for Syncfusion ASP.NET Core
-description: How to set the grid, responsive to screen resolutions
+description: Learn here all about Responsive support in Syncfusion Essential Studio ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
 
-# Responsive
+# Responsive support in ASP.NET Core Grid
 
 The Grid control has support for responsive behavior based on client browser's width and height. To enable responsive, the `is-responsive` property should be true. In Desktop and Tablet mode, to render scroller set `min-width` property. Following are three modes of responsive layout available in grid based on client width. 
 
@@ -67,7 +67,7 @@ public partial class GridController : Controller
 {% endtabs %} 
 
 
-![](Responsive_images/Responsive_img1.png)
+![ASPNETCore Grid Responsive](Responsive_images/Responsive_img1.png)
 
 
 W> IE8 and IE9 does not support responsive row. The `ejgrid.responsive.css` should be referred to display Responsive Row.
@@ -76,31 +76,31 @@ W> IE8 and IE9 does not support responsive row. The `ejgrid.responsive.css` shou
 
 The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen in the following screenshots.
 
-![](Responsive_images/Responsive_img2.png)
+![ASPNETCore Grid Customized features](Responsive_images/Responsive_img2.png)
 {:caption}
 Responsive row with Filtering, Sorting and Searching.
 
-![](Responsive_images/Responsive_img3.png)
+![ASPNETCore Grid Responsive row with Filtering Sorting and Searching](Responsive_images/Responsive_img3.png)
 
 {:caption}
 CRUD in mobile layout
 
-![](Responsive_images/Responsive_img4.png)
+![ASPNETCore Grid CRUD in mobile layout](Responsive_images/Responsive_img4.png)
 
 {:caption}
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img5.png)
+![ASPNETCore Grid Filtering in mobile layout](Responsive_images/Responsive_img5.png)
 {:caption}
 
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img6.png)
+![ASPNETCore Grid Filtering in mobile layout](Responsive_images/Responsive_img6.png)
 
 {:caption}
 Sorting in mobile layout
 
-![](Responsive_images/Responsive_img7.png)
+![ASPNETCore Grid Sorting in mobile layout](Responsive_images/Responsive_img7.png)
 {:caption}
 
 Searching in mobile layout
@@ -197,12 +197,12 @@ public partial class GridController : Controller
 {% endhighlight  %}
 {% endtabs %} 
 
-![](Responsive_images/Responsive_img8.png)
+![ASPNETCore Grid Tablet Layout](Responsive_images/Responsive_img8.png)
 {:caption}
 
 Default tab layout
 
-![](Responsive_images/Responsive_img9.png)
+![ASPNETCore Grid Default tab layout](Responsive_images/Responsive_img9.png)
 
 {:caption}
 Filtering design in tab layout.

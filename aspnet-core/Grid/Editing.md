@@ -6,7 +6,7 @@ platform: aspnet-core
 control: Grid
 documentation: ug
 ---
-# Editing
+# Editing support in ASP.NET Core Grid
 
 The Grid control has support for dynamic insertion, updating and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call `addRecord` method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
 
@@ -60,7 +60,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img1.png)
+![ASPNETCore Grid Editing](Editing_images/Editing_img1.png)
 
 ## Cell edit type and its edit options
 
@@ -147,7 +147,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img2.png)
+![ASPNETCore Grid Editing Type](Editing_images/Editing_img2.png)
 
 ## Cell edit template
 
@@ -219,7 +219,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img3.png)
+![ASPNETCore Grid Cell edit template](Editing_images/Editing_img3.png)
 
 
 ## Edit modes
@@ -269,7 +269,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img4.png)
+![ASPNETCore Grid Inline](Editing_images/Editing_img4.png)
 
 ### Inline form
 
@@ -314,7 +314,7 @@ The following code example describes the previous behavior.
  
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img5.png)
+![ASPNETCore Grid Inline form](Editing_images/Editing_img5.png)
 
 
 ### Inline template form
@@ -408,11 +408,11 @@ The following code example describes the previous behavior.
 
  The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img6.png)
+![ASPNETCore Grid Inline template form](Editing_images/Editing_img6.png)
 
 Before the template elements are converted to JS controls
 
-![](Editing_images/Editing_img7.png)
+![ASPNETCore Grid Before Inline template form](Editing_images/Editing_img7.png)
 
 After the template elements are converted to JS controls using action-complete event.
 
@@ -459,7 +459,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img8.png)
+![ASPNETCore Grid Dialog](Editing_images/Editing_img8.png)
 
 
 ### Dialog template form
@@ -552,11 +552,11 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img9.png)
+![ASPNETCore Grid Dialog template form](Editing_images/Editing_img9.png)
 
 Before the template elements are converted to JS controls.
 
-![](Editing_images/Editing_img10.png)
+![ASPNETCore Grid Editing Before elements are converted to JS controls](Editing_images/Editing_img10.png)
 
 After the template elements are converted to JS controls using actionComplete event.
 
@@ -603,7 +603,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img11.png)
+![ASPNETCore Grid External form](Editing_images/Editing_img11.png)
 
 Form position:
 
@@ -650,7 +650,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img12.png)
+![ASPNETCore Grid Form position](Editing_images/Editing_img12.png)
 
 
 ### External template form
@@ -743,11 +743,11 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img13.png)
+![ASPNETCore Grid External template form](Editing_images/Editing_img13.png)
 
 Before the template elements are converted to JS controls.
 
-![](Editing_images/Editing_img14.png)
+![ASPNETCore Grid Before External template form](Editing_images/Editing_img14.png)
 
 After the template elements are converted to JS controls using actionComplete event.
 
@@ -798,7 +798,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img15.png)
+![ASPNETCore Grid Batch Excel like](Editing_images/Editing_img15.png)
 
 
 ## Confirmation messages
@@ -846,7 +846,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img16.png)
+![ASPNETCore Grid Confirmation messages](Editing_images/Editing_img16.png)
 
 To show delete confirm dialog while deleting a record, set the `show-delete-confirm-dialog` as true.
 
@@ -891,7 +891,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img17.png)
+![ASPNETCore Grid show delete confirm dialog](Editing_images/Editing_img17.png)
 
 
 ## Column validation
@@ -1017,7 +1017,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img18.png)
+![ASPNETCore Grid jQuery validation](Editing_images/Editing_img18.png)
 
 
 ### Custom validation
@@ -1080,7 +1080,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img19.png)
+![ASPNETCore Grid Custom validation](Editing_images/Editing_img19.png)
 
 
 ## Persisting data in server
@@ -1538,7 +1538,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img26.png)
+![ASPNETCore Grid Adding new row position](Editing_images/Editing_img26.png)
 
 
 ## Render with blank row for easy add new
@@ -1584,7 +1584,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img27.png)
+![ASPNETCore Grid Render with blank row for easy add new](Editing_images/Editing_img27.png)
 
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
 N> 2. If it is local, then the newly added record is added at the top of the page even if the added new `row-position` is mentioned as "Bottom".
@@ -1631,4 +1631,4 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Editing_images/Editing_img28.png)
+![ASPNETCore Grid Default column values on add new](Editing_images/Editing_img28.png)

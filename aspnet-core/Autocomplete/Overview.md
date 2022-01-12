@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview
-description: Overview document
+title: Overview of ASP.NET Core AutoComplete Control | Syncfusion
+description: Learn here about Overview document of Syncfusion Essential Studio ASP.NET Core AutoComplete Control, its elements, and more.
 platform: aspnet-core
 control: Autocomplete 
 documentation: ug
 ---
 
-# Overview
+# Overview of Syncfusion ASP.NET Core AutoComplete
 
 The Essential ASP.NET Core AutoComplete control is a textbox control that provides a list of suggestions based on the user query. When users enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
 
-# Key Features
+## Key Features
     
 * **Delimiter:** Supports search for multiple words using a delimiter symbol.
 
