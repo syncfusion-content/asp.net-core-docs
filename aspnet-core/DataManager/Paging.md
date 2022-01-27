@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Paging | DataManager | ASP.NET Core | Syncfusion
-description: paging
+description: Learn here about paging support in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 keywords: custom paging, paging, skip, take, range, requiresCount
 ---
 
-# Paging
+# Paging support in ASP.NET Core DataManager
 
 Paging is a very important query in **DataManager** that is used to display only some records from the large data source. Here, you can learn the paging query in detail.
 
@@ -57,7 +57,7 @@ Refer to the following code example for the paging options.
 
 Result for the above code example is illustrated as follows.
 
-![](Paging_images/Paging_img1.png) 
+![ASP.NET Core DataManager Default](Paging_images/Paging_img1.png) 
 
 ## Dynamic Paging
 
@@ -128,7 +128,7 @@ The paging operation can be dynamically performed using the **DataManager**. Wit
 
 Result of above code example is illustrated as follows.
 
-![](Paging_images/Paging_img2.png) 
+![ASP.NET Core DataManager Dynamic Paging](Paging_images/Paging_img2.png) 
 
 ## Custom paging
 
@@ -172,7 +172,7 @@ In this section, you can learn how to use customized paging. The following code 
 
 Result of above code example is illustrated as follows.
 
-![](Paging_images/Paging_img3.png) 
+![ASP.NET Core DataManager Custom paging](Paging_images/Paging_img3.png) 
 
 ## Skip
 
@@ -216,7 +216,7 @@ The `skip` query is used to skip some number of records.
 
 Result of the above code example is illustrated as follows.
 
-![](Paging_images/Paging_img1.png) 
+![ASP.NET Core DataManager Skip](Paging_images/Paging_img1.png) 
 
 ## Take
 
@@ -260,7 +260,7 @@ The `take` query is used to get some certain number of records from the data sou
 
 Result of the above code example is illustrated as follows.
 
-![](Paging_images/Paging_img5.png) 
+![ASP.NET Core DataManager Take](Paging_images/Paging_img5.png) 
 
 ## RequiresCount
 
@@ -304,7 +304,7 @@ The `requiresCount` query is used to get the count of the total number of record
 
 Result of the above code example is illustrated as follows.
 
-![](Paging_images/Paging_img7.png) 
+![ASP.NET Core DataManager RequiresCount](Paging_images/Paging_img7.png) 
 
 ## Range
 
@@ -348,5 +348,5 @@ The `range` query is used to get some particular range of records from the data 
 
 Result of the above code example is illustrated as follows.
 
-![](Paging_images/Paging_img7.png) 
+![ASP.NET Core DataManager Range](Paging_images/Paging_img7.png) 
 

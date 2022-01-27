@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Display format | DateTimePicker | ASP.NET Core | Syncfusion
-description: display format
+description: Learn here about display format support in Syncfusion Essential ASP.NET Core DateTimePicker Control, its elements, and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
 ---
 
-# Display format
-
-## DateTime format
+# Display format in ASP.NET Core DateTimePicker
 
 DateTimePicker allows you to define the text representation of a date and time value to be displayed in the DateTimePicker control. The format specified is achieved by the date-time-format property. Default value of this property is “M/d/yyyy h: mm tt”. To change the “Time Popup” display format, time-display-format is used here. The default value of this property is “h:mm t”. 
 
@@ -87,7 +85,7 @@ N> To render the Tab Control you can use either Razor or Tag helper code as give
 
 2. The following screenshot displays the output for the above code.
 
-	![](Display-format_images/Display-format_img1.png)
+	![ASP.NET Core DateTimePicker Display format](Display-format_images/Display-format_img1.png)
 
     Showcase of DateTimePicker with UTC time format
     {:.caption}
@@ -147,7 +145,7 @@ You can also customize the format according to your needs. This is achieved by c
 
 2. The following screenshot displays the output for the above code.
 
-	![](Display-format_images/Display-format_img2.png)
+	![ASP.NET Core DateTimePicker Display format screenshot](Display-format_images/Display-format_img2.png)
 
     Showcase of DateTimePicker with short name of day of the week
     {:.caption}
