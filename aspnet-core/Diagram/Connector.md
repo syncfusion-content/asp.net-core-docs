@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Draw a line connecting two points, nodes or ports
-description: How to draw a line to connect points, nodes, or ports?
+title: Connector Support in ASP.NET Core Diagram Control | Syncfusion
+description: Learn here about Connector Support in Syncfusion Essential ASP.NET Core Diagram Control, its elements, and more.
 platform: aspnet-core
 control: Diagram
 documentation: ug
 ---
 
-# Connector
+# Connector Support in ASP.NET Core Diagram
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them.
 
-![](Connector_images/Connector_img1.png)
+![ASP.NET Core Diagram Connector](Connector_images/Connector_img1.png)
 
 ## Create Connector
 
@@ -35,7 +35,7 @@ The `SourcePoint` and `TargetPoint` properties of connector allow you to define 
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img2.png)
+![ASP.NET Core Diagram Create Connector](Connector_images/Connector_img2.png)
 
 ### Add connector at run time
 
@@ -61,7 +61,7 @@ diagram.add(connector);
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img3.png)
+![ASP.NET Core Diagram](Connector_images/Connector_img3.png)
 
 ### Connectors from palette
 
@@ -126,7 +126,7 @@ The `SourceNode` and `TargetNode` properties allow to define the nodes to be con
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img4.png)
+![ASP.NET Core Diagram Update Connector](Connector_images/Connector_img4.png)
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports.
 
@@ -182,7 +182,7 @@ The `SourcePort` and `TargetPort` properties allow to create connections between
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img5.png)
+![ASP.NET Core Diagram Connector with ports](Connector_images/Connector_img5.png)
 
 ## Segments
 
@@ -209,7 +209,7 @@ To create a straight line, you should specify the `Type` of the segment as "stra
 
 {% endhighlight %}
 
-![](Connector_images/connector_img6.png)
+![ASP.NET Core Diagram Straight](Connector_images/connector_img6.png)
 
 The `Point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
@@ -231,7 +231,7 @@ The `Point` property of straight segment allows you to define the end point of i
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img7.png)
+![ASP.NET Core Diagram Connector Straight](Connector_images/Connector_img7.png)
 
 ### Orthogonal
 
@@ -255,7 +255,7 @@ Set the segment `Type` as "Orthogonal" to create a default orthogonal segment. T
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img8.png)
+![ASP.NET Core Diagram Orthogonal](Connector_images/Connector_img8.png)
 
 The `Length` and `Direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -275,15 +275,15 @@ The `Length` and `Direction` properties allow to define the flow and length of s
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img9.png)
+![ASP.NET Core Diagram Orthogonal Connector](Connector_images/Connector_img9.png)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following images illustrate how orthogonal segments are re-routed.
 
-![](Connector_images/Connector_img10.png)
+![ASP.NET Core Diagram Avoid overlapping](Connector_images/Connector_img10.png)
 
-![](Connector_images/Connector_img11.png)
+![ASP.NET Core Diagram Avoid overlapping Connector](Connector_images/Connector_img11.png)
 
 N> Overlapping with source and target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -309,7 +309,7 @@ To create a bezier segment, the `Segment.Type` is set as `Bezier`. The following
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img12.png)
+![ASP.NET Core Diagram Bezier](Connector_images/Connector_img12.png)
 
 The `Point1` and `Point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
@@ -332,7 +332,7 @@ The `Point1` and `Point2` properties of bezier segment enable you to set the con
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img13.png)
+![ASP.NET Core Diagram Points](Connector_images/Connector_img13.png)
 
 The `Vector1` and `Vector2` properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
 
@@ -355,7 +355,7 @@ The `Vector1` and `Vector2` properties of bezier segment enable you to define th
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img14.png)
+![ASP.NET Core Diagram Vectors](Connector_images/Connector_img14.png)
 
 ### Complex segments
 
@@ -378,7 +378,7 @@ Multiple segments can be defined one after another. To create a connector with m
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img15.png)
+![ASP.NET Core Diagram Complex segments](Connector_images/Connector_img15.png)
 
 ## Decorator
 
@@ -413,7 +413,7 @@ The `Shape` property of decorator allows to define the shape of the decorators. 
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img16.png)
+![ASP.NET Core Diagram Decorator](Connector_images/Connector_img16.png)
 
 ## Padding
 
@@ -450,7 +450,7 @@ The `SourcePadding` and `TargetPadding` properties of connector define the space
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img17.png)
+![ASP.NET Core Diagram SourcePadding](Connector_images/Connector_img17.png)
 
 The `ConnectorPadding` property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
@@ -483,7 +483,7 @@ The `ConnectorPadding` property of node defines the space to be left between the
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img18.png)
+![ASP.NET Core Diagram ConnectorPadding Property](Connector_images/Connector_img18.png)
 
 The `ConnectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
@@ -521,7 +521,7 @@ The `ConnectorPadding` property of port defines the space between the ports and 
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img19.png)
+![ASP.NET Core Diagram ConnectorPadding](Connector_images/Connector_img19.png)
 
 ## Bridging
 
@@ -541,7 +541,7 @@ Bridging can be enabled/disabled either with the `Connector.Constraints` or `Dia
  
 {% endhighlight %}
 
-![](Connector_images/Connector_img20.png)
+![ASP.NET Core Diagram Bridging](Connector_images/Connector_img20.png)
 
 The direction of the bridge can be customized with the property `BridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
@@ -555,7 +555,7 @@ The following code example illustrates how to draw the bridge at the bottom dire
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img21.png)
+![ASP.NET Core Diagram](Connector_images/Connector_img21.png)
 
 **Limitation**: Bezier segments do not support bridging.
 
@@ -597,7 +597,7 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 
 {% endhighlight %}
 
-![](Connector_images/Connector_img22.png)
+![ASP.NET Core Diagram Corner radius](Connector_images/Connector_img22.png)
 
 ## Appearance
 
@@ -644,7 +644,7 @@ The following code example illustrates how to customize the appearance of the de
  
 {% endhighlight %}
 
-![](Connector_images/Connector_img23.png)
+![ASP.NET Core Diagram Decorator Appearance](Connector_images/Connector_img23.png)
 
 ## Interaction
 Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction#connection-editing "Connection Editing").

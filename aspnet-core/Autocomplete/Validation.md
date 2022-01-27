@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Validation | AutoComplete | ASP.NET Core | Syncfusion
-description: validation
+title: Validation in ASP.NET Core AutoComplete Control | Syncfusion
+description: Learn here about validation support in Syncfusion Essential ASP.NET Core AutoComplete Control, its elements, and more.
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
 ---
 
-## Validation
+# Validation in ASP.NET Core AutoComplete
 
 You can validate the Autocomplete `value` on form submission by applying `validation-rules` and `validation-message` to the Autocomplete. 
 
 N> [jquery.validate.min](http://cdn.syncfusion.com/js/assets/external/jquery.validate.min.js) script file should be referred for validation, for more details, refer [here](http://jqueryvalidation.org/documentation).
 
-### Validation Rules
+## Validation Rules
 
 The validation rules help you to verify the selected text by adding validation attributes to the input element. This can be set by using `validation-rules` property.
 
@@ -120,4 +120,4 @@ namespace SyncfusionASPNETCoreDDL.Models
 
 The following output is displayed as a result of the above code example.  
 
-![](Validation_images\validation_img1.png)
+![ASP.NET Core AutoComplete Validation](Validation_images\validation_img1.png)
