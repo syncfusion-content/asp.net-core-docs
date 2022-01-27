@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Overview | FileExplorer | ASP.NET Core | Syncfusion
-description:  To get start with FileExplorer by adding references
+description:  Learn here all about Overview of Syncfusion Essential Studio ASP.NET Core FileExplorer Control, its elements, and more. 
 platform: aspnet-core
 control: FileExplorer
 documentation: ug
 ---
 
-# Overview
+# Overview of Syncfusion Essential ASP.NET Core FileExplorer
 
 The file explorer is an interface for managing the file system through any web application. It allows the user to perform the most common file operations such as browse files, open, create, rename, copy, paste, move, delete, and file searching.
 For a live demo of file explorer, check the online sample [here](http://aspnetcore.syncfusion.com/fileexplorer/default).
 
-![](Overview_images/Overview_img1.jpeg)
+![ASP.NET Core FileExplorer Overview](Overview_images/Overview_img1.jpeg)
 
 ## Key features
 
