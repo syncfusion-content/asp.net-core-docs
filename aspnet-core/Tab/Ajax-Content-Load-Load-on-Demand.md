@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ajax Content Load Load on Demand | Tab  | ASP.NET Core | Syncfusion
-description: ajax content load (load on demand)
+description: Learn here about ajax content load (load on demand) in Syncfusion Essential ASP.NET Core Tab Control, its elements, and more.
 platform: aspnet-core
 control: Tab 
 documentation: ug
@@ -207,7 +207,7 @@ N> To render the tab Control, you can use either Razor or Tag helper code as giv
 
 The following screenshot illustrates the first Tab with the sub tab control using Load on Demand.
 
-![](Ajax-Content-Load-Load-on-Demand_images/Ajax on load.JPG)
+![ASP.NET Core Tab Ajax Content Load On Demand](Ajax-Content-Load-Load-on-Demand_images/Ajax on load.JPG)
 
 Tab section with sub Tab control using Load on Demand.
 {:.caption}
