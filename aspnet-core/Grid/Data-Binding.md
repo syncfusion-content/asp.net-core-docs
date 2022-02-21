@@ -1,12 +1,12 @@
 ---
 layout: post
 title: DataBinding with grid widget for Syncfusion Essential ASPNET Core
-description: How to bind in-memory JSON and remote web services in grid
+description: How to bind in-memory JSON and remote web services in Syncfusion ASPNET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: grid
 documentation: ug
 --- 
-# Data Binding
+# Data Binding in ASPNET Core Grid
 
 The Grid `datasource` property or `e-datamanager` child tag allows to bind datasource as the instance of one of the following types.
    
@@ -68,7 +68,7 @@ namespace samplebrowser.Controllers.Grid
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![ASPNET Core Grid Data Binding](Data-Binding_images/Data-Binding_img1.png)
 
 ##  Complex binding
 
@@ -111,7 +111,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img6.png)
+![ASPNET Core Grid Complex binding](Data-Binding_images/Data-Binding_img6.png)
 
 
 ##  WCF DataService / OData service
@@ -141,7 +141,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img7.png)
+![ASPNET Core Grid WCF DataService](Data-Binding_images/Data-Binding_img7.png)
 
 
 ##  Web API Service
@@ -197,7 +197,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img9.png)
+![ASPNET Core Grid Web API Service](Data-Binding_images/Data-Binding_img9.png)
 
 ##  HTML Table binding
 
@@ -286,7 +286,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img10.png)
+![ASPNET Core Grid HTML Table binding](Data-Binding_images/Data-Binding_img10.png)
 
 ##  Miscellaneous
 
@@ -315,7 +315,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img11.png)
+![ASPNET Core Grid Load on demand](Data-Binding_images/Data-Binding_img11.png)
 
 ###  Load at once
 
@@ -344,7 +344,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img12.png)
+![ASPNET Core Grid Load at once](Data-Binding_images/Data-Binding_img12.png)
 
 ###  Data caching
 
@@ -374,7 +374,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img13.png)
+![ASPNET Core Grid Data caching](Data-Binding_images/Data-Binding_img13.png)
 
 ###  Custom request parameters and HTTP header
 
@@ -405,7 +405,7 @@ E> Attempting to add custom parameters with key name same as any default AJAX pa
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img14.png)
+![ASPNET Core Grid Adding request parameters](Data-Binding_images/Data-Binding_img14.png)
 
 ####  Adding custom HTTP headers
 
@@ -436,7 +436,7 @@ N>  To add custom headers to the DataManager through JavaScript, refer to this [
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img15.png)
+![ASPNET Core Grid](Data-Binding_images/Data-Binding_img15.png)
 
 ###  Handling HTTP Errors
 
@@ -486,4 +486,4 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Data-Binding_images/Data-Binding_img16.png)
+![ASPNET Core Grid Handling HTTP Errors](Data-Binding_images/Data-Binding_img16.png)
