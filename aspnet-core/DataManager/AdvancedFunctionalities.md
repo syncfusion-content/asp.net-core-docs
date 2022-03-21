@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Advanced Functionalities | DataManager | ASP.NET Core | Syncfusion
-description: Advanced Functionalities of Data Manager
+description: Advanced Functionalities of Syncfusion ASP.NET Core DataManager Control, its elements, features and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 keywords: Offline Support, Load on Demand, Customer Request Headers, HTML Table, Cross domain & JSONP
 
 ---
-# Advanced Functionalities
+# Advanced Functionalities in ASP.NET Core DataManager
 
 ## Offline Support
 
@@ -53,7 +53,7 @@ In the following code example, the offline property of the DataManager is set as
 
 {% endtabs %} 
 
-![](Advanced_images/offline1.png) 
+![ASP.NET Core DataManager offline](Advanced_images/offline1.png) 
 
 ## Load on demand
 
@@ -99,14 +99,14 @@ You can use the following code example for implementing load on demand using Dat
 
 The result of the above code example is illustrated as follows.
 
-![](Advanced_images/loadondemand1.png) 
+![ASP.NET Core DataManager loadondemand1](Advanced_images/loadondemand1.png) 
 
 Load on demand {:.caption}
 
 The request and the response for the above code is send as follows.
 
 
-![](Advanced_images/loadondemand2.png) 
+![ASP.NET Core DataManager loadondemand2](Advanced_images/loadondemand2.png) 
 
 Demanded data {:.caption}
 
@@ -137,7 +137,7 @@ You can add custom request headers to every request made by the **DataManager** 
 
 The above method generates the request header with custom header as follows.
 
-![](Advanced_images/headers1.png) 
+![ASP.NET Core DataManager headers1](Advanced_images/headers1.png) 
 
 ### Adding Custom Request Headers to every Request using pre-request callback **beforeSend**
 
@@ -186,7 +186,7 @@ You can set the custom headers using pre-request callback **beforeSend** as foll
 
 The above method generates the request header with custom header as follows.
 
-![](Advanced_images/headers2.png)
+![ASP.NET Core DataManager headers2](Advanced_images/headers2.png)
 
 ### Adding Custom Request Headers using **addParams** method
 
@@ -231,7 +231,7 @@ You can use the addParams method of ej.Query class, to add custom parameter to t
 
 The custom parameter will be passed along with the data request of the grid as follows.
 
-![](Advanced_images/headers3.png) 
+![ASP.NET Core DataManager headers3](Advanced_images/headers3.png) 
 
 ## Cross domain & JSONP
 
@@ -276,7 +276,7 @@ The **DataManager** contains support for creating cross domain request, you can 
 
 Result of above code example is illustrated as follows.
 
-![](Advanced_images/cross1.png)  
+![ASP.NET Core DataManager cross1](Advanced_images/cross1.png)  
 
 ## HTML Table
 
@@ -345,5 +345,5 @@ Refer to the following code example for the **HTML** element binding using **Dat
 
 The result of the above code example is illustrated as follows.
 
-![](Advanced_images/table.png)  
+![ASP.NET Core DataManager table](Advanced_images/table.png)  
 	
