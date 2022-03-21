@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Query | DataManager | ASP.NET Core | Syncfusion
-description: query
+description: Learn here about query support in Syncfusion ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 keywords: select, clone, expand, from
 ---
 
-# Query
+# Query in ASP.NET Core DataManager
 
 **DataManager** provides support for multiple queries in order to perform various operations like filtering, sorting, cloning, expanding, searching, grouping etc., in the data source. Here, you can learn the query options in detail.
 
@@ -55,7 +55,7 @@ The `select` query of the data manager is used to select only some particular fi
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img1.png)
+![ASP.NET Core DataManager Select Query](Query_images/Query_img1.png)
 
 ## From
 
@@ -100,7 +100,7 @@ The `from` query of the data manager is used to select the table from where the 
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img1.png)
+![ASP.NET Core DataManager From](Query_images/Query_img1.png)
 
 ## Clone
 
@@ -166,7 +166,7 @@ The `clone` query of the data manager is used to duplicate the query. The follow
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img3.png)
+![ASP.NET Core DataManager Clone](Query_images/Query_img3.png)
 
 ## Expand
 
@@ -214,4 +214,4 @@ The `expand` query of the data manager is used to perform complex data binding.
 
 Result of the above code example is illustrated as follows.
 
-![](Query_images/Query_img4.png)
+![ASP.NET Core DataManager Expand](Query_images/Query_img4.png)
