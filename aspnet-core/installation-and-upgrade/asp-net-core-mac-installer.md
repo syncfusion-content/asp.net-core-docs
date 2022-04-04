@@ -12,7 +12,7 @@ documentation: ug
 
 ## How to download ASP.NET Core Mac installer?
 
-1. Essential Studio ASP.NET Core Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download trial\licensed Mac installer based on your license.
+1. Essential Studio ASP.NET Core Mac installer can be downloaded from your account’s [download](https://help.syncfusion.com/common/essential-studio/download) section. You can download Syncfusion Mac installer based on your license.
 
 2. In the downloads page, click the "Mac" button and download the required Essential Studio ASP.NET Core Mac installer.
 
@@ -29,7 +29,7 @@ documentation: ug
 
    1.	Right-click the downloaded pkg file.
    2.	Select the "Open With" option and choose "Installer (Default)".
-   3.	Installer window will be opened.
+   3. Installer window will be opened.
 
 ## Step-by-Step Installation
 
