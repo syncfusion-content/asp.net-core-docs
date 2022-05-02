@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Query | DataManager | ASP.NET Core | Syncfusion
+title: Qurey in ASP.NET Core DataManager Control | Syncfusion
 description: Learn here about query support in Syncfusion ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
