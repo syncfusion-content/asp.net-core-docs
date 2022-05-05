@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart types |Chart  | ASP.NET CORE | Syncfusion
+title: Chart types in ASP.NET Core Chart Control | Syncfusion
 description: What are the different types of Charts available in Essential JavaScript Chart.
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
 
-# ChartTypes
+# ChartTypes in ASP.NET Core Chart
 
 ## Line Chart
 
@@ -25,7 +25,7 @@ To render a line chart, set the series type to **Line** in the chart series. To 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img1.png)
+![ASP.NET Core Chart Line Chart](Chart-Types_images/Chart-Types_img1.png)
 
 
 ### Change the line width
@@ -44,7 +44,7 @@ To change the width of the line segment, use the **Width** property of the serie
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img2.png)
+![ASP.NET Core Chart Change the line width](Chart-Types_images/Chart-Types_img2.png)
 
 
 ### Dashed lines
@@ -63,7 +63,7 @@ To render a line chart with dotted lines, use the **DashArray** option of the se
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img3.png)
+![ASP.NET Core Chart Dashed lines](Chart-Types_images/Chart-Types_img3.png)
 
 
 ### Changing the line cap
@@ -82,7 +82,7 @@ For customizing the start and end caps of the line segment, use the **LineCap** 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img4.png)
+![ASP.NET Core Chart Changing the line cap](Chart-Types_images/Chart-Types_img4.png)
 
 
 ### Changing the line join
@@ -102,7 +102,7 @@ To specify how the two intersecting line segments should be joined, use the **Li
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img5.png)
+![ASP.NET Core Chart Changing the line join](Chart-Types_images/Chart-Types_img5.png)
 
 
 ### Multi color line
@@ -123,7 +123,7 @@ You can change the color of the line segments by using the **Fill** property of 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img81.png)
+![ASP.NET Core Chart Multi color line](Chart-Types_images/Chart-Types_img81.png)
 
  
 ## Step Line Chart
@@ -143,7 +143,7 @@ To render a step line chart, set the series type to **StepLine"** in the chart s
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img6.png)
+![ASP.NET Core Chart Step Line Chart](Chart-Types_images/Chart-Types_img6.png)
 
 
 ### Changing the line width
@@ -162,7 +162,7 @@ To change the line width, use the **Width** property.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img7.png)
+![ASP.NET Core Chart Changing the line width](Chart-Types_images/Chart-Types_img7.png)
 
 
 ### Dashed lines
@@ -181,7 +181,7 @@ To render the step line series with dotted lines, use the **DashArray** option o
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img8.png)
+![ASP.NET Core Chart Dashed lines](Chart-Types_images/Chart-Types_img8.png)
 
 
 ### Changing the line cap
@@ -200,7 +200,7 @@ For customizing the start and end caps of the line segment, use the **LineCap** 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img9.png)
+![ASP.NET Core Chart Changing the line cap](Chart-Types_images/Chart-Types_img9.png)
 
 
 ### Changing the line join
@@ -219,7 +219,7 @@ To specify how the two intersecting line segments should be joined, use the **Li
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img10.png)
+![ASP.NET Core Chart Changing the line join](Chart-Types_images/Chart-Types_img10.png)
 
 
 ## Area Chart
@@ -237,7 +237,7 @@ To render an area chart, specify the series type to **Area** in the chart series
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img11.png)
+![ASP.NET Core Chart Area Chart](Chart-Types_images/Chart-Types_img11.png)
 
 
 ## Range Area Chart
@@ -262,7 +262,7 @@ Since the range area series requires two y values for a point, add **High** and 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img12.png)
+![ASP.NET Core Chart Range Area Chart](Chart-Types_images/Chart-Types_img12.png)
 
 ## Step Area Chart
 
@@ -280,7 +280,7 @@ To render a step area chart, set the type to **StepArea** in the chart series. T
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img13.png)
+![ASP.NET Core Chart Step Area Chart](Chart-Types_images/Chart-Types_img13.png)
 
 ## Spline Area Chart
 
@@ -298,7 +298,7 @@ To render a spline area chart, set the type to **SplineArea** in the chart serie
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img14.png)
+![ASP.NET Core Chart Spline Area Chart](Chart-Types_images/Chart-Types_img14.png)
 
 
 ## Stacked Area Chart
@@ -317,7 +317,7 @@ To render a stacked area chart, set the type to **StackingArea** in the chart se
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img15.png)
+![ASP.NET Core Chart Stacked Area Chart](Chart-Types_images/Chart-Types_img15.png)
 
 
 ## 100% Stacked Area Chart  
@@ -336,7 +336,7 @@ To render a 100% stacked area chart, set the type to **StackingArea100** in the 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img16.png)
+![ASP.NET Core Chart 100% Stacked Area Chart](Chart-Types_images/Chart-Types_img16.png)
 
 
 ## Stacked Spline Area Chart
@@ -356,7 +356,7 @@ To render a stacked spline area chart, set the type to **StackingSplineArea** in
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img97.png)
+![ASP.NET Core Chart Stacked Spline Area Chart](Chart-Types_images/Chart-Types_img97.png)
 
 
 ## 100% Stacked Spline Area Chart  
@@ -376,7 +376,7 @@ To render a 100% stacked spline area chart, set the type to **StackingSplineArea
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img98.png)
+![ASP.NET Core Chart 100% Stacked Spline Area Chart](Chart-Types_images/Chart-Types_img98.png)
 
 
 ## Column Chart
@@ -395,7 +395,7 @@ To render a column chart, set the type to **Column** in the chart series. To cha
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img17.png)
+![ASP.NET Core Chart Column Chart](Chart-Types_images/Chart-Types_img17.png)
 
 
 ### Change a point color
@@ -416,7 +416,7 @@ You can change the color of a column by using the **Fill** property of the point
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img18.png)
+![ASP.NET Core Chart Change a point color](Chart-Types_images/Chart-Types_img18.png)
 
 ### Column width customization
 
@@ -437,7 +437,7 @@ N> Width of a column also depends on the **ColumnSpacing** property, because Col
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img88.png)
+![ASP.NET Core Chart](Chart-Types_images/Chart-Types_img88.png)
 
 ### Column with rounded corners
 Corners of the column chart can be customized by setting value to the **CornerRadius** property.
@@ -452,7 +452,7 @@ Corners of the column chart can be customized by setting value to the **CornerRa
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img90.png)   
+![ASP.NET Core Chart Column with rounded corners](Chart-Types_images/Chart-Types_img90.png)   
 
 ### Spacing between column series
 
@@ -473,7 +473,7 @@ N> Space between the columns will also affect the width of the column. For examp
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img89.png)
+![ASP.NET Core Chart Spacing between column series](Chart-Types_images/Chart-Types_img89.png)
 
 
 ### Cylindrical Chart
@@ -498,7 +498,7 @@ The following chart types can be rendered as cylinder in both 2D and 3D views:
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img91.png)
+![ASP.NET Core Chart Cylindrical Chart](Chart-Types_images/Chart-Types_img91.png)
 
 ## Range Column Chart
 
@@ -524,7 +524,7 @@ Since the range column series requires two y values for a point, add the **High*
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img19.png)
+![ASP.NET Core Chart Range Column Chart](Chart-Types_images/Chart-Types_img19.png)
 
 
 ### Change a point color 
@@ -545,7 +545,7 @@ To change the color of a range column, use the **Fill** property of point.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img20.png)
+![ASP.NET Core Chart Change a point color](Chart-Types_images/Chart-Types_img20.png)
 
 
 ## Stacked Column Chart
@@ -565,7 +565,7 @@ To render a stacked column chart, set the type to **StackingColumn** in the char
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img21.png)
+![ASP.NET Core Chart Stacked Column Chart](Chart-Types_images/Chart-Types_img21.png)
 
 
 ### Cluster/Group stacked columns
@@ -589,7 +589,7 @@ You can use the **StackingGroup** property to group the stacked columns. Columns
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img22.png)
+![ASP.NET Core Chart Cluster/Group stacked columns](Chart-Types_images/Chart-Types_img22.png)
 
 
 ### Change a point color
@@ -610,7 +610,7 @@ To change the color of a stacking column, use the **Fill** property of the point
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img23.png)
+![ASP.NET Core Chart Change a point color](Chart-Types_images/Chart-Types_img23.png)
 
 
 ## 100% Stacked Column Chart    
@@ -630,7 +630,7 @@ To render a 100% stacked column chart, set the type to **StackingColumn100** in 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img24.png)
+![ASP.NET Core Chart 100% Stacked Column Chart](Chart-Types_images/Chart-Types_img24.png)
 
 
 ### Cluster/Group 100% stacked columns
@@ -654,7 +654,7 @@ By using the **StackingGroup** property, you can group the 100% stacking columns
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img25.png)
+![ASP.NET Core Chart Cluster/Group 100% stacked columns](Chart-Types_images/Chart-Types_img25.png)
 
 
 ### Change a point color
@@ -675,7 +675,7 @@ To change the color of a 100% stacking column, use the **Fill** property of the 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img26.png)
+![ASP.NET Core Chart Change a point color](Chart-Types_images/Chart-Types_img26.png)
 
 
 ## Bar Chart
@@ -695,7 +695,7 @@ To render a bar Chart, set the type to **Bar** in the chart series. To change th
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img27.png)
+![ASP.NET Core Chart Bar Chart](Chart-Types_images/Chart-Types_img27.png)
 
 
 ### Change the color of a bar
@@ -716,7 +716,7 @@ By using the **Fill** property of the point, you can change the specific point o
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img28.png)
+![ASP.NET Core Chart Change the color of a bar](Chart-Types_images/Chart-Types_img28.png)
 
 
 ## Stacked Bar Chart
@@ -736,7 +736,7 @@ To render a stacked bar chart, set the type to **StackingBar** in the chart seri
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img29.png)
+![ASP.NET Core Chart Stacked Bar Chart](Chart-Types_images/Chart-Types_img29.png)
 
 
 ### Cluster/Group stacked bars
@@ -760,7 +760,7 @@ You can use the **StackingGroup** property to group the stacking bars with the s
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img30.png)
+![ASP.NET Core Chart Cluster/Group stacked bars](Chart-Types_images/Chart-Types_img30.png)
 
 
 ### Change a point color
@@ -781,7 +781,7 @@ You can change the color of a stacking bar by using the **Fill** property of the
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img31.png)
+![ASP.NET Core Chart Change a point color](Chart-Types_images/Chart-Types_img31.png)
 
 
 ## 100% Stacked Bar Chart
@@ -801,7 +801,7 @@ To render a 100% stacked bar chart, set the type to **StackingBar100** in the ch
  
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img32.png)
+![ASP.NET Core Chart](Chart-Types_images/Chart-Types_img32.png)
 
 By using the **StackingGroup** property, you can group the 100% stacking bars with the same group name. 
 
@@ -822,7 +822,7 @@ By using the **StackingGroup** property, you can group the 100% stacking bars wi
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img33.png)
+![ASP.NET Core Chart 100% Stacked Bar Chart](Chart-Types_images/Chart-Types_img33.png)
 
 
 ### Change a point color
@@ -843,7 +843,7 @@ To change the color of a 100% stacking bar, use the Fill property of the point.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img34.png)
+![ASP.NET Core Chart Change a point color](Chart-Types_images/Chart-Types_img34.png)
 
 ## Spline Chart
 
@@ -862,7 +862,7 @@ To render a spline chart, set the type to **Spline** in the chart series. To cha
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img35.png)
+![ASP.NET Core Chart Spline Chart](Chart-Types_images/Chart-Types_img35.png)
 
 
 ### Spline types
@@ -917,7 +917,7 @@ To change the width of the spline segment, use the **Width** property of the ser
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img36.png)
+![ASP.NET Core Chart Change the spline width](Chart-Types_images/Chart-Types_img36.png)
 
 
 ### Dashed lines
@@ -936,7 +936,7 @@ To render the spline chart with dotted lines, use the **DashArray** option of th
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img37.png)
+![ASP.NET Core Chart Dashed lines](Chart-Types_images/Chart-Types_img37.png)
 
 
 ## Pie Chart
@@ -955,7 +955,7 @@ You can create a pie chart by setting the series type to **Pie** in the chart se
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img38.png)
+![ASP.NET Core Chart Pie Chart](Chart-Types_images/Chart-Types_img38.png)
 
 
 ### Change the pie size
@@ -974,7 +974,7 @@ You can use the **PieCoefficient** property to change the diameter of the pie ch
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img39.png)
+![ASP.NET Core Chart Change the pie size](Chart-Types_images/Chart-Types_img39.png)
 
 
 ### Explode a pie segment
@@ -994,7 +994,7 @@ You can explode a pie segment on the chart load by using the **ExplodeIndex** pr
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img40.png)
+![ASP.NET Core Chart Explode a pie segment](Chart-Types_images/Chart-Types_img40.png)
 
 
 ### Explode all the segments
@@ -1014,7 +1014,7 @@ To explode all the segments of the pie chart, enable the **ExplodeAll** property
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img41.png)
+![ASP.NET Core Chart Explode all the segments](Chart-Types_images/Chart-Types_img41.png)
 
 
 ### Explode a pie segment by hovering the mouse
@@ -1034,7 +1034,7 @@ To explode a pie segment by hovering the mouse, enable the **Explode** property 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img42.png)
+![ASP.NET Core Chart Explode a pie segment by hovering the mouse](Chart-Types_images/Chart-Types_img42.png)
 
 
 ### Sector of Pie
@@ -1054,7 +1054,7 @@ Chart allows you to render all the data points/segments in the semi-pie, quarter
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img43.png)
+![ASP.NET Core Chart Sector of Pie](Chart-Types_images/Chart-Types_img43.png)
 
 
 ## Doughnut Chart
@@ -1074,7 +1074,7 @@ To create a doughnut chart, specify the series type to **Doughnut** in the chart
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img44.png)
+![ASP.NET Core Chart Doughnut Chart](Chart-Types_images/Chart-Types_img44.png)
 
 
 ### Change doughnut inner radius
@@ -1094,7 +1094,7 @@ You can change the doughnut chart inner radius by using the **DoughnutCoefficien
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img45.png)
+![ASP.NET Core Chart Change doughnut inner radius](Chart-Types_images/Chart-Types_img45.png)
 
 
 ### Change the doughnut size
@@ -1114,7 +1114,7 @@ You can use the **DoughnutSize** property to change the diameter of the doughnut
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img46.png)
+![ASP.NET Core Chart Change the doughnut size](Chart-Types_images/Chart-Types_img46.png)
 
 
 ### Explode a doughnut segment
@@ -1134,7 +1134,7 @@ To explode a specific doughnut segment, set the index to be exploded by using th
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img47.png)
+![ASP.NET Core Chart Explode a doughnut segment](Chart-Types_images/Chart-Types_img47.png)
 
 
 ### Explode all the segments
@@ -1154,7 +1154,7 @@ To explode all the segments, enable the **ExplodeAll** property of the series.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img48.png)
+![ASP.NET Core Chart Explode all the segments](Chart-Types_images/Chart-Types_img48.png)
 
 
 ### Explode a doughnut segment by hovering the mouse
@@ -1174,7 +1174,7 @@ To explode a doughnut segment by hovering the mouse, enable the **Explode** prop
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img49.png)
+![ASP.NET Core Chart Explode a doughnut segment by hovering the mouse](Chart-Types_images/Chart-Types_img49.png)
 
 
 ### Sector of doughnut
@@ -1194,7 +1194,7 @@ Chart allows you to render all the data points/segments in the semi-doughnut, qu
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img50.png)
+![ASP.NET Core Chart Sector of doughnut](Chart-Types_images/Chart-Types_img50.png)
 
 
 ## Multiple Pie Chart
@@ -1218,12 +1218,12 @@ Chart provides support to render more than one series in pie and doughnut chart.
 
 **Multiple pie** 
 
-![](Chart-Types_images/Chart-Types_img82.png)
+![ASP.NET Core Chart](Chart-Types_images/Chart-Types_img82.png)
 
 
 **Multiple doughnut** 
 
-![](Chart-Types_images/Chart-Types_img83.png)
+![ASP.NET Core Chart Multiple doughnut](Chart-Types_images/Chart-Types_img83.png)
 
 
 ### Start and end angles support
@@ -1232,12 +1232,12 @@ In the multiple pie chart, the **StartAngle** and **EndAngle** properties are al
 
 **Sector of multiple pie**
 
-![](Chart-Types_images/Chart-Types_img84.png)
+![ASP.NET Core Chart multiple pie](Chart-Types_images/Chart-Types_img84.png)
 
 
 **Sector of multiple doughnut**
 
-![](Chart-Types_images/Chart-Types_img85.png)
+![ASP.NET Core Chart multiple doughnut](Chart-Types_images/Chart-Types_img85.png)
 
 
 ## Pyramid Chart
@@ -1257,7 +1257,7 @@ To create a pyramid chart, specify the series type to **Pyramid** in the chart s
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img51.png)
+![ASP.NET Core Chart Pyramid Chart](Chart-Types_images/Chart-Types_img51.png)
 
 
 ### Pyramid mode
@@ -1277,7 +1277,7 @@ Pyramid mode has two types, namely Linear and Surface. The default **PyramidMode
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img52.png)
+![ASP.NET Core Chart Pyramid mode](Chart-Types_images/Chart-Types_img52.png)
 
 ### Gap between the segments
 
@@ -1296,7 +1296,7 @@ You can control the gap between the segments by using the **GapRatio** property 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img53.png)
+![ASP.NET Core Chart Gap between the segments](Chart-Types_images/Chart-Types_img53.png)
 
 
 ### Explode a pyramid segment
@@ -1316,7 +1316,7 @@ You can explode a pyramid segment on the chart load by using the **ExplodeIndex*
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img54.png)
+![ASP.NET Core Chart Explode a pyramid segment](Chart-Types_images/Chart-Types_img54.png)
 
 
 ## Funnel Chart
@@ -1336,7 +1336,7 @@ You can create a funnel chart by setting the series type to **Funnel** in the ch
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img55.png)
+![ASP.NET Core Chart Funnel Chart](Chart-Types_images/Chart-Types_img55.png)
 
 ### Change the funnel width and height
 
@@ -1355,7 +1355,7 @@ Funnel segment's height and width are calculated from the chart size, by default
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img56.png)
+![ASP.NET Core Chart Change the funnel width and height](Chart-Types_images/Chart-Types_img56.png)
 
 
 ### Explode a funnel segment
@@ -1375,7 +1375,7 @@ You can explode a funnel segment on the chart load by using the **ExplodeIndex**
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img57.png)
+![ASP.NET Core Chart Explode a funnel segment](Chart-Types_images/Chart-Types_img57.png)
 
 
 ## Bubble Chart
@@ -1409,7 +1409,7 @@ To create a Bubble chart, set the series type to **Bubble** in the chart series.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img58.png)
+![ASP.NET Core Chart Bubble Chart](Chart-Types_images/Chart-Types_img58.png)
 
 ## Scatter
 
@@ -1428,7 +1428,7 @@ To create a scatter chart, set the series type to **Scatter** in the chart serie
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img59.png)
+![ASP.NET Core Chart Scatter](Chart-Types_images/Chart-Types_img59.png)
 
 
 ### Customize the scatter chart
@@ -1448,7 +1448,7 @@ You can change the scatter size and scatter color by using the **Size** and **Fi
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img60.png)
+![ASP.NET Core Chart Customize the scatter chart](Chart-Types_images/Chart-Types_img60.png)
 
 
 ## HiLoOpenClose Chart 
@@ -1481,7 +1481,7 @@ To create a HiLo open close chart, set the series type to **HiloOpenClose** in t
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img61.png)
+![ASP.NET Core Chart HiLoOpenClose Chart](Chart-Types_images/Chart-Types_img61.png)
 
 
 ### DrawMode
@@ -1501,7 +1501,7 @@ You can change the HiLo open close chart's **DrawMode** option to Open, Close, o
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img62.png)
+![ASP.NET Core Chart DrawMode](Chart-Types_images/Chart-Types_img62.png)
 
 
 ### Bull and bear Color	
@@ -1521,7 +1521,7 @@ You can change the HiLo open close chart's **DrawMode** option to Open, Close, o
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img63.png)
+![ASP.NET Core Chart Bull and bear Color](Chart-Types_images/Chart-Types_img63.png)
 
 
 ## Candle
@@ -1555,7 +1555,7 @@ You can create a Candle chart by specifying the series type to **Candle** in the
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img64.png)
+![ASP.NET Core Chart Candle](Chart-Types_images/Chart-Types_img64.png)
 
 
 ### Bull and Bear Color
@@ -1575,7 +1575,7 @@ You can create a Candle chart by specifying the series type to **Candle** in the
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img65.png)
+![ASP.NET Core Chart Bull and Bear Color](Chart-Types_images/Chart-Types_img65.png)
 
 
 ## HiLo
@@ -1608,7 +1608,7 @@ HiLo chart is created by setting the series type to **Hilo** in the chart series
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img66.png)
+![ASP.NET Core Chart HiLo](Chart-Types_images/Chart-Types_img66.png)
 
 
 ## Polar
@@ -1628,7 +1628,7 @@ Polar chart is created by setting the series type to **Polar** in the chart seri
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img67.png)
+![ASP.NET Core Chart Polar](Chart-Types_images/Chart-Types_img67.png)
 
 
 ### DrawType
@@ -1648,7 +1648,7 @@ Polar **DrawType** property is used to change the series plotting type to *Line*
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img68.png)
+![ASP.NET Core Chart DrawType](Chart-Types_images/Chart-Types_img68.png)
 
 
 ### Stack columns in polar chart
@@ -1668,7 +1668,7 @@ By using the **IsStacking** property, you can specify whether the column has to 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img69.png)
+![ASP.NET Core Chart Stack columns in polar chart](Chart-Types_images/Chart-Types_img69.png)
 
 
 ## Radar Chart  
@@ -1689,7 +1689,7 @@ To create a radar chart, specify the series type to **Radar** in the chart serie
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img70.png)
+![ASP.NET Core Chart Radar Chart](Chart-Types_images/Chart-Types_img70.png)
 
 ### DrawType
 
@@ -1709,7 +1709,7 @@ Radar **DrawType** property is used to change the series plotting type to *Line*
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img71.png)
+![ASP.NET Core Chart DrawType](Chart-Types_images/Chart-Types_img71.png)
 
 
 ### Stack columns in Radar chart
@@ -1730,7 +1730,7 @@ By using the **IsStacking** property, you can specify whether the column has to 
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img72.png)
+![ASP.NET Core Chart Stack columns in Radar chart](Chart-Types_images/Chart-Types_img72.png)
 
 
 ## Waterfall Chart 
@@ -1753,7 +1753,7 @@ N> The inline property of the **Series.PositiveFill** has the first priority, an
 {% endhighlight %}
 
 
-![](Chart-Types_images/Chart-Types_img73.png)
+![ASP.NET Core Chart Waterfall Chart](Chart-Types_images/Chart-Types_img73.png)
 
 
 **ShowIntermediateSum**
@@ -1816,7 +1816,7 @@ To customize the connector line color, width, opacity, and dashArray of the wate
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img74.png)
+![ASP.NET Core Chart ConnectorLine](Chart-Types_images/Chart-Types_img74.png)
 
 
 ## Error Bar Chart 
@@ -1837,7 +1837,7 @@ Chart can generate error bar for Cartesian type series, such as line, column, ba
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img75.png)
+![ASP.NET Core Chart Error Bar Chart](Chart-Types_images/Chart-Types_img75.png)
 
 
 ### Changing error bar type
@@ -1858,7 +1858,7 @@ You can change the error bar rendering type by using **Type** (like FixedValue, 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img76.png)
+![ASP.NET Core Chart Changing error bar type](Chart-Types_images/Chart-Types_img76.png)
 
 
 #### Customizing error bar type
@@ -1879,7 +1879,7 @@ To customize the error bar type, set error bar type to **Custom**, and then chan
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img77.png)
+![ASP.NET Core Chart Customizing error bar type](Chart-Types_images/Chart-Types_img77.png)
 
 
 ### Changing error bar mode
@@ -1900,7 +1900,7 @@ Error bar mode is used to define whether the error bar line has to be drawn Hori
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img78.png)
+![ASP.NET Core Chart Changing error bar mode](Chart-Types_images/Chart-Types_img78.png)
 
 ### Changing error bar direction
 
@@ -1920,7 +1920,7 @@ You can change the error bar direction to plus, minus, or both side by using **E
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img79.png)
+![ASP.NET Core Chart Changing error bar direction](Chart-Types_images/Chart-Types_img79.png)
 
 
 ### Customizing error bar cap
@@ -1941,14 +1941,14 @@ To customize the visibility, length, width, and fill color of error bar cap, use
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img80.png)
+![ASP.NET Core Chart Customizing error bar cap](Chart-Types_images/Chart-Types_img80.png)
 
 
 ## Box and Whisker Chart 
 
 To render a box and whisker chart, set the series type to **boxAndWhisker**. This chart requires 2 fields, namely x and y to plot a segment. The field y requires n number of data, or it should contains minimum of five values to plot a segment.
 
-![](Chart-Types_images/Chart-Types_img90.png)
+![ASP.NET Core Chart Box and Whisker Chart](Chart-Types_images/Chart-Types_img90.png)
 
 ### BoxPlotMode
  
@@ -1986,7 +1986,7 @@ Outlier symbol's width and height can be customized by using outlierSettings thr
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img92.png)
+![ASP.NET Core Chart Customize the outlier](Chart-Types_images/Chart-Types_img92.png)
 
 ## Pie of Pie Chart
 To render the pie of pie chart, set the series type to **pieofpie**. Pie of pie chart is used for displaying the data of a pie slice as another pie chart. The values in the second pie is displayed based on the **splitMode** property.
@@ -2003,7 +2003,7 @@ To render the pie of pie chart, set the series type to **pieofpie**. Pie of pie 
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img93.png)
+![ASP.NET Core Chart Pie of Pie Chart](Chart-Types_images/Chart-Types_img93.png)
 
 
 ### Split mode and split value 
@@ -2028,7 +2028,7 @@ By default, the splitMode is set to  **Value**.
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img94.png)
+![ASP.NET Core Chart Split mode and split value](Chart-Types_images/Chart-Types_img94.png)
 
 ### Changing pie Of pie size
 The size of the second pie can be customized by using the **PieOfPieCoefficient** property. The default value of pieOfPieCoefficient is 0.6. Its value ranges from 0 to 1.
@@ -2048,7 +2048,7 @@ The size of the second pie can be customized by using the **PieOfPieCoefficient*
 
 The following screenshot represents the pie of pie series with pieOfPieCoefficient as 1.
 
-![](Chart-Types_images/Chart-Types_img95.png)
+![ASP.NET Core Chart Changing pie Of pie size](Chart-Types_images/Chart-Types_img95.png)
 
 #### Customizing the Gap
 
@@ -2067,4 +2067,4 @@ The distance between the two pies in the pie of pie chart can be controlled by u
 
 {% endhighlight %}
 
-![](Chart-Types_images/Chart-Types_img96.png)
+![ASP.NET Core Chart Customizing the Gap](Chart-Types_images/Chart-Types_img96.png)
