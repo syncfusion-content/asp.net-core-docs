@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Validation | AutoComplete | ASP.NET Core | Syncfusion
-description: Learn here all about validation with Syncfusion support aspnet core autocomplete control, its elements and more.
+description: validation
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
 ---
 
-## Validation in aspnet core autocomplete
+## Validation
 
 You can validate the Autocomplete `value` on form submission by applying `validation-rules` and `validation-message` to the Autocomplete. 
 
@@ -120,4 +120,4 @@ namespace SyncfusionASPNETCoreDDL.Models
 
 The following output is displayed as a result of the above code example.  
 
-![Validation messages](Validation_images\validation_img1.png)
+![](Validation_images\validation_img1.png)
