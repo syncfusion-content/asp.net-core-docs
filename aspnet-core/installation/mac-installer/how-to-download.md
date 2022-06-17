@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Steps to Download ASP.NET Core | ASP.NET Core | Syncfusion
-description: This page explains about how to download the Syncfusion Essential Studio ASP.NET Core installer based on licensed and trial customer
+title: Downloading Syncfusion ASP.NET Core Mac installer - Syncfusion
+description: Learn here about the how to download Syncfusion ASP.NET Core mac installer packages from syncfusion website.
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Download ASP.NET Core Installer
+# Downloading Syncfusion ASP.NET Core Mac installer
 
 The Syncfusion ASP.NET Core installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/aspnet-core-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
@@ -20,27 +20,26 @@ The Syncfusion ASP.NET Core installer can be downloaded from the [Syncfusion.com
 Our 30-day trial can be downloaded in two ways.
 
    * Download Free Trial Setup
-   * Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+   * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 ### Download Free Trial Setup
 
 1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the ASP.NET Core platform.
 2. After completing the required form or logging in with your registered Syncfusion account, you can download the ASP.NET Core (Essential JS1) trial installer from the confirmation page. ((as shown in below screenshot.) 
    
-   ![Trial and downloads of Syncfusion Essential Studio](download-images/trial-confirmation.png)
+   ![Trial and downloads of Syncfusion Essential Studio](images/trial-confirmation.png)
    
 3. With a trial license, only the latest version’s trial installer can be downloaded.
 4. After downloading, the Syncfusion ASP.NET Core (Essential JS1) trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) article.
 5. Before the trial expires, you can download the trial installer at any time from your registered account’s [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page ((as shown in below screenshot.)
-6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio ASP.NET Core web installer.
  
-   ![Trial and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
+    ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
 
-7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio ASP.NET Core Offline trial installer which is available in EXE and ZIP format.
+6. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio ASP.NET Core Offline trial installer which is available in PKG format.
 
-   ![License and downloads of Syncfusion Essential Studio](download-images/start-trial-download-offline-installer.png)
+   ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
 
-### Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
@@ -48,16 +47,16 @@ You should initiate an evaluation if you have already obtained our components th
 
    N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 	
-   ![Trial and downloads of Syncfusion Essential Studio](download-images/start-trial-download.png)
+   ![Trial and downloads of Syncfusion Essential Studio](images/start-trial-download.png)
    
 2. To access this page, you must sign up\log in with your Syncfusion account.
 3. Begin your trial by selecting the ASP.NET Core product. 
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) key here at any time before the trial period expires. ((as shown in below screenshot.)
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/aspnet-core/licensing/generating-license-keys) here at any time before the trial period expires. ((as shown in below screenshot.)
 
-   ![License and downloads of Syncfusion Essential Studio](download-images/start-trial-download-installer.png)
+   ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-installer.png)
 
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
    
@@ -66,13 +65,14 @@ You should initiate an evaluation if you have already obtained our components th
 
 1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
 2. You can view all the licenses (both active and expired) associated with your account.
-3. Click the Download (element 1 in the screenshot below) button to download the respective product’s installer.
-4. The most recent version of the installer will be downloaded from this page.
-5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
-6. You can download other platform\add-on installers by going to More Downloads Options (element 3 in the screenshot below).
-7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
+3. You can download ASP.NET Core Mac licensed installer by going to More Downloads Options (element 3 in the screenshot below).
 
-   ![License and downloads of Syncfusion Essential Studio](download-images/license-download.png)
+   ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
+   
+4. Unlock key is not required to install the Syncfusion ASP.NET Core Mac trial installer.   
+5. For Mac OS, PKG formats is available for download.
+   
+   ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
 	
 
-You can also refer to the [**Online installer**](https://help.syncfusion.com/aspnet-core/installation-and-upgrade/install-using-the-web-installer) and [**Offline installer**](https://help.syncfusion.com/aspnet-core/installation-and-upgrade/install-using-the-offline-installer) links for step-by-step installation guidelines.	
+You can also refer to the [**ASP.NET Core Mac installer**](https://help.syncfusion.com/aspnet-core/installation-and-upgrade/install-using-the-web-installer) links for step-by-step installation guidelines.	

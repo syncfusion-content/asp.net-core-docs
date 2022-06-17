@@ -1,14 +1,14 @@
 ---
 layout: post
-title: System Requirements | ASP.NET Core | Syncfusion
-description: this section provides the information about the system requirements for ASP.NET Core platform with supported browsers
+title: System Requirements in ASP.NET Core - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion ASP.NET Core Components.
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# System Requirements for ASP.NET Core
+# System Requirements for ASP.NET Core Components
 
 The system requirements for using our Syncfusion ASP.NET Core platform are as follows
 

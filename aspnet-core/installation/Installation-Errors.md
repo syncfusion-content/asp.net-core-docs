@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Syncfusion Essential Studio ASP.NET Core products
-description: Learn how to install Syncfusion ASP.NET Core installer and deploy the Syncfusion ASP.NET Core component
+title: Installation Errors in ASP.NET Core - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion ASP.NET Core Components installation.
 platform: aspnet-core
 control: Installation and Deployment
 documentation: ug
