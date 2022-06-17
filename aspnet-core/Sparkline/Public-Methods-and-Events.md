@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Public Methods and Events
-description: Public Methods and Events in Sparkline.
+title: Public Methods and Events in Aspnet.core Sparkline
+description: Learn about Easy Customization support in Syncfusion Aspnet.core Sparkline control, its elements, and more.
 platform: aspnet-core
 control: Sparkline
 documentation: ug
 ---
 
 
-## Methods
+# Methods in Aspnet.core Sparkline
 
 
 ### redraw()
