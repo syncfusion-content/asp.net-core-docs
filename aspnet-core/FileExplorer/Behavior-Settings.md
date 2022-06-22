@@ -1,13 +1,13 @@
 ---
 title: Behavior Settings| FileExplorer | ASP.NET Core | Syncfusion
-description: Customize the behavior of FileExplorer
+description: Learn here about Customize the behavior settings in Syncfusion Essential ASP.NET Core FileExplorer Control, its elements, and more.
 platform: Asp.Net Core
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer, Syncfusion, Asp.Core FileExplorer, UG document, Behavior settings
 ---
 
-# Behavior Settings
+# Behavior Settings in ASP.NET Core FileExplorer
 
 Here are some properties to customize behavior of the file explorer.
 

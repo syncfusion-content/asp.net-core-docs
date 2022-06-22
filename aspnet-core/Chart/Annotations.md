@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Annotations |Chart  | ASP.NET Core | Syncfusion
+title: Annotations in ASP.NET Core Chart Control | Syncfusion
 description: How to add annotations in Essential ASP.NET CORE Chart and the different options available to customize its position. 
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
 
-# Annotations
+# Annotations in ASP.NET Core Chart
 
 Annotations are used to mark the specific area of interest in the chart with texts, shapes, or images. 
 
@@ -28,7 +28,7 @@ You can add annotations to the chart by using the **Annotations** option. By usi
 
 {% endhighlight %}
 
-![](Annotations_images/Annotations_img1.png)
+![ASP.NET Core Chart Annotations](Annotations_images/Annotations_img1.png)
 
 N> Annotations are not supported in 3D chart types.
 
@@ -48,7 +48,7 @@ To rotate the annotation template, use the **Angle** property of the annotations
 
 {% endhighlight %}
 
-![](Annotations_images/Annotations_img2.png)
+![ASP.NET Core Chart Rotate the annotation template](Annotations_images/Annotations_img2.png)
 
 
 ## Positioning annotation
@@ -77,7 +77,7 @@ N> By using the **Region** option, you can specify whether the annotation is pla
 
 {% endhighlight %}
 
-![](Annotations_images/Annotations_img3.png)
+![ASP.NET Core Chart Positioning annotation](Annotations_images/Annotations_img3.png)
 
 ## Annotation alignments
 
@@ -96,4 +96,4 @@ When the **coordinateUnit** is set to pixels or points, you can align the annota
 
 {% endhighlight %}
 
-![](Annotations_images/Annotations_img4.png)
+![ASP.NET Core Chart Annotation alignments](Annotations_images/Annotations_img4.png)
