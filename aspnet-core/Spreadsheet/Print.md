@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print with Spreadsheet widget for Syncfusion Essential ASP .NET Core
-description: How to use the Spreadsheet Print
+title: Print with Spreadsheet widget for Syncfusion Essential ASP.NET Core
+description: How to use the Print support in Syncfusion Essential ASP.NET Core Spreadsheet Control, its elements, and more.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 ---
 
-# Print
+# Print in ASP.NET Core Spreadsheet
 
 This feature is used to produce text and graphics from a computer screen or file into a sheet of paper. You can use `allow-printing` property in `e-print-settings` to enable/disable the print operation.
 
@@ -80,14 +80,14 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 
 The following output is displayed as a result of the above code example.
 
-![](Print_images/Print_img1.png)
+![ASP.NET Core Spreadsheet print](Print_images/Print_img1.png)
 
-![](Print_images/Print_img2.png)
+![ASP.NET Core Spreadsheet Print dialog with entire sheet](Print_images/Print_img2.png)
 
 Print dialog with entire sheet in Chrome browser
 {:.caption}
 
-![](Print_images/Print_img3.png)
+![ASP.NET Core Spreadsheet Print dialog with selected area](Print_images/Print_img3.png)
 
 Print dialog with selected area print in chrome browser
 {:.caption}
@@ -138,7 +138,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 {% endhighlight %}
 {% endtabs %}
 
-![](Print_images/Print_img4.png)
+![ASP.NET Core Spreadsheet Print dialog without gridlines](Print_images/Print_img4.png)
 
 Print dialog without gridlines in chrome browser
 {:.caption}
@@ -189,7 +189,7 @@ namespace samplebrowser.Controllers.SpreadsheetASP
 {% endhighlight %}
 {% endtabs %}
 
-![](Print_images/Print_img5.png)
+![ASP.NET Core Spreadsheet print dialog](Print_images/Print_img5.png)
 
 Print dialog without headings in chrome browser
 {:.caption}
