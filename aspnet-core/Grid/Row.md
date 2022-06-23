@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Row with Grid widget for Syncfusion Essential ASP.NET Core
-description: How to use and customize the grid row
+description: How to use and customize the row in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
-# Row
+# Row in ASP.NET Core Grid
 It represents the record details that are fetched from the datasource.
 
 ## Row hover
@@ -46,7 +46,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Row_images/Row_img1.png)
+![ASP.NET Core Grid Row hover](Row_images/Row_img1.png)
 
 ## Details template
 
@@ -123,7 +123,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Row_images/Row_img2.png)
+![ASP.NET Core Grid Details template](Row_images/Row_img2.png)
 
 
 ## Row template
@@ -216,7 +216,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Row_images/Row_img3.png)
+![ASP.NET Core Grid Row template](Row_images/Row_img3.png)
 
 ## Alternate row styling
 
@@ -257,4 +257,4 @@ By default, its value is `true`, so the following code example describes the how
 
 The following output is displayed as a result of the previous code example.
 
-![](Row_images/Row_img4.png)
+![ASP.NET Core Grid Alternate row styling](Row_images/Row_img4.png)

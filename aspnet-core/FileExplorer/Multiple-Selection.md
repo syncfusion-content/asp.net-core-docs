@@ -1,12 +1,12 @@
 ---
 title: Multiple Selection | FileExplorer | ASP.NET Core | Syncfusion
-description: Multi selection support in FileExplorer
+description: Learn here about Multiple selection support in Syncfusion ASP.NET Core FileExplorer Control, its elements, and more.
 platform: Asp.Net Core
 control: FileExplorer
 documentation: UG
 keywords: FileExplorer,  Syncfusion, Asp.Net Core FileExplorer, UG document, Multiple selection
 ---
-# Multiple Selection
+# Multiple Selection in ASP.NET Core FileExplorer
 
 The file explorer allows the user to select multiple files by enabling the “[AllowMultiSelection](http://help.syncfusion.com/js/api/ejfileexplorer#members:allowmultiselection)” property. The multiple selection can be done by pressing the “**Ctrl”** key or “**Shift”** key. You can select all the files in the directory by pressing “**Ctrl + A**”. The multiple selection is useful for copy pasting multiple files, deleting multiple files, and downloading multiple files. In another way, multiple files can be selected by bringing the mouse down and drag over the desired files. In addition to that, additional files can be selected with the preselected file by holding the ctrl/shift key and drag the mouse over the files. Also, holding the ctrl/shift key and dragging over selected files will unselect the selected files.
 
