@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Multiple Selection | ListBox | ASP.NET Core | Syncfusion
-description: multiple selection
+description: Learn here about multiple selection support in Syncfusion Essential ASP.NET Core ListBox Control, its elements, and more.
 platform: aspnet-core
 control: ListBox
 documentation: ug
 ---
 
-# Multiple Selection
+# Multiple Selection in ASP.NET Core ListBox
 
 ## Allow multiple selection
 
@@ -42,7 +42,7 @@ The following steps explain you the configuration of the allow-multi-selection f
 2. Output for ListBox control that provides multiple selection is as follows.
 
 
-   ![](Multiple-Selection_images/Multiple-Selection_img1.png)
+   ![ASP.NET Core ListBox Multiple selection through index](Multiple-Selection_images/Multiple-Selection_img1.png)
 
 
 
@@ -108,7 +108,7 @@ The following steps explains you the configuration of selected-indices property 
 2. Output of the above steps.
 
 
-![](Multiple-Selection_images/Multiple-Selection_img2.png)
+![ASP.NET Core ListBox Checkbox Support](Multiple-Selection_images/Multiple-Selection_img2.png)
 
 
 
@@ -172,7 +172,7 @@ The following steps explains you the configuration of checkbox options in ListBo
 
 
 
-![](Multiple-Selection_images/Multiple-Selection_img3.png)
+![ASP.NET Core ListBox Check All](Multiple-Selection_images/Multiple-Selection_img3.png)
 
 
 
@@ -233,7 +233,7 @@ The following steps explains you the configuration of checkbox options in ListBo
 
 
 
-![](Multiple-Selection_images/Multiple-Selection_img4.png)
+![ASP.NET Core ListBox Uncheck All](Multiple-Selection_images/Multiple-Selection_img4.png)
 
 
 
