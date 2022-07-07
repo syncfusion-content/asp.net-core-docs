@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Localization
-description: localization
+title: Localization in ASP.NET Core Gantt Control | Syncfusion
+description: Learn here about localization support in Syncfusion Essential ASP.NET Core Gantt Control, its elements, and more.
 platform: aspnet-core
 control: Gantt
 documentation: ug
 ---
-# Localization
+# Localization in ASP.NET Core Gantt
 
 Localization is the process of customizing the User Interface (UI) based on a culture, specific to a particular country or region, in order to display regional data. The culture is represented by a unique string like `en-US` for US English and `fr-FR` for French.
 
@@ -328,4 +328,4 @@ ej.Gantt.Locale["fr-FR"] = {
 
 The following screenshot shows Gantt with French culture.
 
-![](Localization_images/Localization_img1.png)
+![ASP.NET Core Gantt localization](Localization_images/Localization_img1.png)
