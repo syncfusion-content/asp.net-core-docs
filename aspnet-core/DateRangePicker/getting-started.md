@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | DateRangePicker  | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core DateRangePicker Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential ASP.NET Core DateRangePicker Control, its elements, and more.
 platform: aspnet-core
 control: DateRangePicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core DateRangePicker
 
 This section explains briefly about how to render a DateRangePicker in your application with ASP.NET Core.
 
@@ -16,7 +16,7 @@ This section explains briefly about how to render a DateRangePicker in your appl
 The Essential ASP.NET Core DateRangePicker supports to display two calendars in the webpage and allows you pick date range from the calendars. Refer the following guidelines to customize the DateRangePicker. The following screenshot illustrates the functionality of DateRangePicker.
 
 
-![](getting_started_images/getting-started1.png)
+![ASP.NET Core DateRangePicker Getting Started](getting_started_images/getting-started1.png)
     
 DateRangePicker
 {:.caption}
@@ -45,7 +45,7 @@ ASP.NET Core DateRangePicker widget basically renders with built-in features lik
 
 Execute the above code to render the following output.
 
-![](getting_started_images/getting-started2.png)
+![ASP.NET Core DateRangePicker Start Date](getting_started_images/getting-started2.png)
 
 DateRangePicker
 {:.caption}
@@ -93,7 +93,7 @@ Below code will explain to use the **EndDate** API to set the end Date in popup.
 
 Execute the above code to render the following output.
 
-![](getting_started_images/getting-started3.png)
+![ASP.NET Core DateRangePicker End Date](getting_started_images/getting-started3.png)
 
 DateRangePicker with StartDate and EndDate 
 {:.caption}

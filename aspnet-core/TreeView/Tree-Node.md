@@ -1,16 +1,16 @@
 ---
 title: Tree Node manipulation | TreeView | ASP.NET Core | Syncfusion
-description: handling operations in tree Node
+description: Learn here about tree node support in Syncfusion Essential ASP.NET Core TreeView Control, its elements, and more.
 platform: aspnet-core
 control: TreeView
 documentation: UG
 ---
 
-# Tree Node
+# Tree Node in ASP.NET Core TreeView
 
 The tree view node is structured with expand/collapse arrow, checkbox, image and text as shown in the following.
 
-![](Tree-Node_images/Tree-Node_img1.jpeg)
+![ASP.NET Core TreeView Tree Node](Tree-Node_images/Tree-Node_img1.jpeg)
 
 Also the tree view node object holds the following properties.
 
