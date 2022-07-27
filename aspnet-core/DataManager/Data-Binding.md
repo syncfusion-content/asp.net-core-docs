@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data-Binding | DataManager | ASP.NET Core | Syncfusion
-description: data binding
+description: Learn here about data binding support in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: JSON Adaptor, URL Adaptor, OData Adaptor, Odata4 Adaptor, WebApi Adapt
 
 ---
 
-# Data Binding
+# Data Binding in ASP.NET Core DataManager
 
 ## JSON
 
@@ -108,7 +108,7 @@ A data source can be bound to a Grid through the DataManager. The DataManager su
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img1.png) 
+![ASP.NET Core DataManager OData binding](Data-Binding_images/Data-Binding_img1.png) 
 
 ## REST Services
 
@@ -165,7 +165,7 @@ The result of the above code example is illustrated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img2.png) 
+![ASP.NET Core DataManager OData V4](Data-Binding_images/Data-Binding_img2.png) 
 
 ## OData V4
 
@@ -222,13 +222,13 @@ You can refer to the following code example for consuming OData v4 services and 
 
 The request and response to the service from the **DataManager** is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img4.png) 
+![ASP.NET Core DataManager v4 request and response](Data-Binding_images/Data-Binding_img4.png) 
 
  _OData v4 request and response_
 
 The result of the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img3.png) 
+![ASP.NET Core DataManager WebAPI binding](Data-Binding_images/Data-Binding_img3.png) 
 
  _OData v4 binding_
 
@@ -339,7 +339,7 @@ Refer to the following code example for consuming Web API data using ej.DataMana
 
 The result for the above code example is illustrated as follows.
 
-![](Data-Binding_images/Data-Binding_img5.png) 
+![ASP.NET Core DataManager Complex Data Sorting](Data-Binding_images/Data-Binding_img5.png) 
 
 _Web API data binding_
 
@@ -408,4 +408,4 @@ You can perform a data operation based on nested column data and bind to the dat
 
 {%endhighlight%}
 
-![](CORE_Sorting_images/complexdata.png)
+![ASP.NET Core DataManager complex data](CORE_Sorting_images/complexdata.png)
