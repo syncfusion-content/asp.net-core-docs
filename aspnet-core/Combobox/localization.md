@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Localization in ComboBox control for Syncfusion ASP.NET CORE
-description: Localization support to ComboBox control for Syncfusion ASP.NET CORE
+description: Learn here about Localization support in Syncfusion Essential ASP.NET Core ComboBox Control, its elements, and more.
 platform: core
 control: ComboBox
 documentation: ug
 keywords: locale, ComboBox
 ---
 
-# Localization
+# Localization in ASP.NET Core ComboBox
 
 The Localization library allows you to localize the static text content of the **noRecordsTemplate** and **actionFailureTemplate** &nbsp;properties according to the culture currently assigned to the ComboBox.
 
@@ -54,4 +54,4 @@ public ActionResult Databindingremote()
 
 {% endhighlight %}
 
-![](Combobox_localization_images/localization.png)
+![ASP.NET Core ComboBox localization](Combobox_localization_images/localization.png)
