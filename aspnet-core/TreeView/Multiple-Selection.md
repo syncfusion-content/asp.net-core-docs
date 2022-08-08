@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeView with Multiple Selection | TreeView | ASP.NET Core | Syncfusion
-description: specify multiple selection option in TreeView and its settings
+title: Multiple Selection in ASP.NET Core TreeView Control | Syncfusion
+description: Learn here about Multiple Selection in Syncfusion Essential ASP.NET Core TreeView Control, its elements, and more.
 platform: aspnet-core
 control: TreeView
 documentation: ug
 ---
 
-# Multiple Selection
+# Multiple Selection in ASP.NET Core TreeView
 
 The tree view supports to select the multiple nodes by specifying the [allowMultiSelection](http://help.syncfusion.com/js/api/ejtreeview#members:allowmultiselection) as true. It allows you to select more than one nodes in the tree view.
 
@@ -58,7 +58,7 @@ In the view page, add the following code and map the properties defined to the c
 {% endhighlight %}
 
 By running the previous code, you will get the output like the following:
-![](Fullrowselection_images/multiselect.png)
+![ASP.NET Core TreeView multiselect](Fullrowselection_images/multiselect.png)
 
 
 ## Select nodes
