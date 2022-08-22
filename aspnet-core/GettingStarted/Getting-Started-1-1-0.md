@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started in ASP.NET Core Common Control | Syncfusion
-description: Learn here all about getting started in Syncfusion Essential ASP.NET Core Common control, its elements, and more. 
+title: Getting Started in ASP.NET Core Control | Syncfusion
+description: Learn here all about getting started in Syncfusion Essential ASP.NET Core control, its elements, and more. 
 platform: aspnet-core 
 control: Common 
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Common
+# Getting Started with ASP.NET Core
 
 > Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
  
@@ -28,11 +28,11 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  Open Visual Studio 2015 to create **ASP.NET Core web application**.
 
-   ![ASP.NET Core Common web application](getting-started_images/getting-started_img1.png)
+   ![ASP.NET Core web application](getting-started_images/getting-started_img1.png)
 
 *  After project creation, open your **project.json** file to add our Syncfusion assembly packages.
 
-   ![ASP.NET Core Common open project.json](getting-started_images/getting-started_img5.png)
+   ![ASP.NET Core open project.json](getting-started_images/getting-started_img5.png)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -41,15 +41,15 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 *  In the Solution Explorer window, click the **"Show All Files"** button.
 
-   ![ASP.NET Core Common show all files](getting-started_images/getting-started_img6.jpeg)
+   ![ASP.NET Core show all files](getting-started_images/getting-started_img6.jpeg)
    
 *  Open **bower.json** file to include the following necessary packages.   
 
-   ![ASP.NET Core Common open bower.json](getting-started_images/getting-started_img2.png)
+   ![ASP.NET Core open bower.json](getting-started_images/getting-started_img2.png)
 
 *  After Bower packages installation the scripts and CSS files are loaded into the **wwwroot -> lib** folder as shown below
 
-   ![ASP.NET Core Common script and CSS files loaded](getting-started_images/getting-started_img3.png)
+   ![ASP.NET Core script and CSS files loaded](getting-started_images/getting-started_img3.png)
    
 *  Now open **_viewImports.cshtml** file from the views folder and add the following namespace for components references and Tag Helper support.
 
@@ -114,7 +114,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 *  Finally compile your project, after successful compilation then press F5 key to deploy your project.   
 
-   ![ASP.NET Core Common press F5 key](getting-started_images/getting-started_img4.png)
+   ![ASP.NET Core press F5 key](getting-started_images/getting-started_img4.png)
 
 ### Configure Syncfusion File Format Components in ASP.NET Core Application:
 
@@ -122,11 +122,11 @@ The following steps helps to create a ASP.NET Core web application to configure 
 
 * Open Visual Studio 2015 to create **ASP.NET Core web application**.
 
-   ![ASP.NET Core Common configure file format component](getting-started_images/getting-started_fileformat_img1.png)
+   ![ASP.NET Core configure file format component](getting-started_images/getting-started_fileformat_img1.png)
 
 * After project creation, open your **project.json** file to add our Syncfusion assembly packages.
 
-   ![ASP.NET Core Common add file](getting-started_images/getting-started_fileformat_img2.png)
+   ![ASP.NET Core add file](getting-started_images/getting-started_fileformat_img2.png)
 
 N> 1. You can refer [Installation](https://help.syncfusion.com/aspnet-core/configuration-and-installation) procedure to configure Syncfusion NuGet packages.
 N> 2. The File format component packages has been modified from Volume 3, 2017 (15.3.0.26) release. You can refer [migration document](https://help.syncfusion.com/aspnet-core/release-notes/migratingtov15.3.0.26) for more details.
@@ -164,36 +164,36 @@ dotnet new -t web
 
 {% endhighlight %}
 
-  ![ASP.NET Core Common system requirement](getting-started_images/getting-started_img10.JPG)
+  ![ASP.NET Core system requirement](getting-started_images/getting-started_img10.JPG)
 
 
 ### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-  ![ASP.NET Core Common configure components](getting-started_images/getting-started_img11.JPG)
+  ![ASP.NET Core configure components](getting-started_images/getting-started_img11.JPG)
 
 
 * Open your **bower.json** json file and specify our Syncfusion package will loads our scripts and CSS. Refer this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages) to configure the bower execution environment in your local machine. Then install a bower extension in your Visual Studio code to complete a configuration.    
 
-  ![ASP.NET Core Common loads](getting-started_images/getting-started_img12.JPG)
+  ![ASP.NET Core loads](getting-started_images/getting-started_img12.JPG)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version.
 
-  ![ASP.NET Core Common file specify latest version packages](getting-started_images/getting-started_img13.JPG)
+  ![ASP.NET Core file specify latest version packages](getting-started_images/getting-started_img13.JPG)
 
 
 * Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
-  ![ASP.NET Core Common folder](getting-started_images/getting-started_img14.JPG)
+  ![ASP.NET Core folder](getting-started_images/getting-started_img14.JPG)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.json** file to specify our assembly packages.
 
-  ![ASP.NET Core Common file specify assembly packages](getting-started_images/getting-started_img15.JPG)
+  ![ASP.NET Core file specify assembly packages](getting-started_images/getting-started_img15.JPG)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -216,7 +216,7 @@ dotnet restore
 
 {% endhighlight %}
 
-  ![ASP.NET Core Common restore packages](getting-started_images/getting-started_img16.JPG)
+  ![ASP.NET Core restore packages](getting-started_images/getting-started_img16.JPG)
 
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
@@ -274,7 +274,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 * Finally press F5 key to deploy your project.
 
-  !ASP.NET Core Common application using Yeoman with visual studio code[](getting-started_images/getting-started_img17.JPG)
+  ![ASP.NET Core application using Yeoman with visual studio code](getting-started_images/getting-started_img17.JPG)
 
 
 ## ASP.NET Core 1.1.0 Application Using Yeoman with Visual Studio Code:
@@ -313,46 +313,46 @@ npm install -g yo
 
 {% endhighlight %}
 
-  ![ASP.NET Core Common project creation wizard](getting-started_images/getting-started_img7.JPG)
+  ![ASP.NET Core project creation wizard](getting-started_images/getting-started_img7.JPG)
 
 
 * From the list of available projects, select the **Web Application Basic [ without Membership and Authorization ]** by using arrow keys.
 
-  ![ASP.NET Core Common select web application basic](getting-started_images/getting-started_img8.JPG)
+  ![ASP.NET Core select web application basic](getting-started_images/getting-started_img8.JPG)
 
 
 * And then provide the project name or simply press the enter key to create the project with default name.
 
-  ![ASP.NET Core Common provide project name](getting-started_images/getting-started_img9.JPG)
+  ![ASP.NET Core provide project name](getting-started_images/getting-started_img9.JPG)
 
 
 ### Configure Syncfusion Components in ASP.NET Core Application
 
 * Open Visual Studio Code and open your ASP.NET folder using **Open -> Folder** menu. Now your project folder is loaded in Visual Studio Code application.
 
-  ![ASP.NET Core Common open visual studio](getting-started_images/getting-started_img11.JPG)
+  ![ASP.NET Core open visual studio](getting-started_images/getting-started_img11.JPG)
 
 
 * Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages). Then install a Bower extension in your Visual Studio code to complete a configuration.    
 
-  ![ASP.NET Core Common configure bower execution](getting-started_images/getting-started_img12.JPG)
+  ![ASP.NET Core configure bower execution](getting-started_images/getting-started_img12.JPG)
 
 
 * In **bower.json** file specify our Syncfusion packages with our latest version will loads our scripts and CSS. 
 
-  ![ASP.NET Core Common specify file packages](getting-started_images/getting-started_img13.JPG)
+  ![ASP.NET Core specify file packages](getting-started_images/getting-started_img13.JPG)
 
 
 * Open quick window (Ctrl + p) to run the `bower install` command to install our scripts and CSS to your application **wwwroot -> lib** folder.
 
-  ![ASP.NET Core Common run bower](getting-started_images/getting-started_img14.JPG)
+  ![ASP.NET Core run bower](getting-started_images/getting-started_img14.JPG)
 
 
 > Recommended to install the “**Bower package watcher**” extension will helps to load the packages whenever save the **bower.json** file.
 
 * Now open your **project.json** file to specify our assembly packages.
 
-  ![ASP.NET Core Common install bower package watcher](getting-started_images/getting-started_img15.JPG)
+  ![ASP.NET Core install bower package watcher](getting-started_images/getting-started_img15.JPG)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -376,7 +376,7 @@ dotnet restore
 
 {% endhighlight %}
 
-  ![ASP.NET Core Common open command prompt window](getting-started_images/getting-started_img16.JPG)
+  ![ASP.NET Core open command prompt window](getting-started_images/getting-started_img16.JPG)
 
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
@@ -434,4 +434,4 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 * Finally press F5 key to deploy your project.
 
-  ![ASP.NET Core Common add script manager](getting-started_images/getting-started_img17.JPG)
+  ![ASP.NET Core add script manager](getting-started_images/getting-started_img17.JPG)
