@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started in ASP.NET Core Common Control | Syncfusion
-description: Learn here all about getting started in Syncfusion Essential ASP.NEt Core Common control, its elements, and more. 
+description: Learn here all about getting started with Syncfusion Essential ASP.NET Core Common control, its elements, and more. 
 platform: aspnet-core
 control: grid
 documentation: ug
