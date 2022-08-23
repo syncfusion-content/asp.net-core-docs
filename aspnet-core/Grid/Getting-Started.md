@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Getting Started in ASP.NET Core Control | Syncfusion
+title:  Getting started with grid widget for Syncfusion Essential ASP.NET Core
 description: Learn here all about getting started with Syncfusion Essential ASP.NET Core control, its elements, and more. 
 platform: aspnet-core
 control: grid
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core
+# Getting Started with Essential ASP.NET Core
 
 Refer to the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-2-0) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 

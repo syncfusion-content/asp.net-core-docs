@@ -1,14 +1,14 @@
 ---
 layout: post
 title: EJTagHelpers | ASP.NET Core | Syncfusion
-description: EJTagHelpers
+description: Learn here all about EJTagHelpers support in Syncfusion Essential ASP.NET Core control, its elements, and more.
 platform: js
 platform: aspnet-core
 control: Common 
 documentation: ug
 ---
 
-# TagHelpers in ASP.NET Core
+# TagHelpers in Essential ASP.NET Core
 
 Tag Helpers are used to write server-side code in razor view page. It is a feature of Razor view engine which converts the server-side code into HTML and serves it to the web browser. The main advantage of using Tag Helpers over HTML Helpers is that the Razor markup using Tag Helpers looks like standard HTML and it also has rich **intelliSense** with the scope of existing elements. The most important feature of the Tag Helper is that they can be independent from the C# syntax. Tag helper provides more reliable and reusable code that can be created and used across different views, as and when it is needed.
 
