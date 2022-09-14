@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Getting started with grid widget for Syncfusion Essential ASP.NET Core
-description: How to create the grid, data bind, enable paging, grouping, filtering and add summaries
+description: Learn here all about getting started with Syncfusion Essential ASP.NET Core Grid control, its elements, and more. 
 platform: aspnet-core
 control: grid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Essential ASP.NET Core Grid
 
 Refer to the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-2-0) page of the introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
@@ -94,7 +94,7 @@ In `e-columns` definition, the `text-align` property allows you to align text of
 
 The following output is displayed as a result of the previous code example.
 
-![](Getting-Started_images/Getting-Started2_img1.jpeg)
+![ASP.NET Core Grid data binding](Getting-Started_images/Getting-Started2_img1.jpeg)
 
 
 ## Enable paging
@@ -135,7 +135,7 @@ The paging feature in grid offers complete navigation support to easily switch
 
 The following output is displayed as a result of the previous code example.
 
-![](Getting-Started_images/Getting-Started2_img2.png)
+![ASP.NET Core Grid enable paging](Getting-Started_images/Getting-Started2_img2.png)
 
 
 ## Enable filtering
@@ -178,7 +178,7 @@ To enable filtering, use the `allow-filtering` property of grid is as follows.
 
 The following output is displayed as a result of the previous code example.
 
-![](Getting-Started_images/Getting-Started2_img3.png)
+![ASP.NET Core Grid enable filtering](Getting-Started_images/Getting-Started2_img3.png)
 
 
 ## Enable grouping
@@ -220,7 +220,7 @@ To enable grouping, use the `allow-grouping` property of grid is as follows.
 
 The following output is displayed as a result of the previous code example.
 
-![](Getting-Started_images/Getting-Started2_img4.png)
+![ASP.NET Core Grid enable grouping](Getting-Started_images/Getting-Started2_img4.png)
 
 
 ## Add summaries
@@ -268,4 +268,4 @@ Summaries can be added by setting the `show-summary` to `true` and adding requir
 
 The following output is displayed as a result of the previous code example.
 
-![](Getting-Started_images/Getting-Started2_img5.png)
+![ASP.NET Core Grid adds summaries](Getting-Started_images/Getting-Started2_img5.png)
