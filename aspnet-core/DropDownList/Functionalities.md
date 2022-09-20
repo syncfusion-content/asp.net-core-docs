@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Functionalities in ASP.NET Core DropDownList Control | Syncfusion
-description: Learn here all about Functionalities support in Syncfusion Essential ASP.NET Core DropDownList control, its elements, and more.
+title: Functionalities in the DropDownList control for Syncfusion ASP.NET Core
+description: Functionalities in the DropDownList control for Syncfusion ASP.NET Core
 platform: aspnet-core
 control: DropDownList
 documentation: ug
 keywords: DropDownList, dropdown, Selection, Grouping, Sorting
 
 ---
-# Functionalities in ASP.NET Core DropDownList
+# Functionalities
 
 ## Selection
 
@@ -197,7 +197,7 @@ To select an item initially you can pass the item’s value via Value property o
     
 {% endtabs %}
 
-![ASP.NET Core DropDownList using value or text](Functionalities_images/Functionalities_img1.png)
+![](Functionalities_images/Functionalities_img1.png)
 
 ### Using indices
 
@@ -234,7 +234,7 @@ You can select a single or more than one item by passing index values to the pro
     
 {% endtabs %}
 
-![ASP.NET Core DropDownList using indices](Functionalities_images/Functionalities_img2.png)
+![](Functionalities_images/Functionalities_img2.png)
 
 I> To use "SelectedIndices" property, you should enable either ShowCheckbox or MultiSelectMode property First.
 
@@ -376,7 +376,7 @@ The below given example explains the behavior of grouping with List data binding
     
 {% endtabs %}
 
-![ASP.NET Core DropDownList grouping](Functionalities_images/Functionalities_img3.png)
+![](Functionalities_images/Functionalities_img3.png)
 
 N> Grouping has restrictions in the following scenarios, <BR>
 
@@ -412,7 +412,7 @@ N> Grouping has restrictions in the following scenarios, <BR>
 
 {% endhighlight %}
 
-![ASP.NET Core DropDownList virtual scrolling](Functionalities_images/Functionalities_img4.png)
+![](Functionalities_images/Functionalities_img4.png)
 
 I> Virtual scrolling is not supported with Grouping.
 
@@ -519,9 +519,9 @@ Configuring the data items for cascading to the series of DropDownList is demons
     
 {% endtabs %}
 
-![ASP.NET Core DropDownList sorting](Functionalities_images/Functionalities_img5.png)
+![](Functionalities_images/Functionalities_img5.png)
 
-![ASP.NET Core DropDownList cascading](Functionalities_images/Functionalities_img6.jpeg)
+![](Functionalities_images/Functionalities_img6.jpeg)
 
 ### Binding the data source to the cascading DropDownList using cascade event
 
@@ -596,7 +596,7 @@ Bind the data source to the cascading DropDownList dynamically using ClientSideE
     
 {% endtabs %}
 
-![ASP.NET Core DropDownList multi level cascading](Functionalities_images/Functionalities_img7.jpeg)
+![](Functionalities_images/Functionalities_img7.jpeg)
 
 ### Multi-Level Cascading
 
