@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Load on demand in DropDownList control for Syncfusion ASP.NET Core
-description: Describes about Load on demand in DropDownList control for Syncfusion ASP.NET Core
+title: Load on demand | DropDownList | ASP.NET Core | Syncfusion
+description: Learn here all about Load on Demand support in Syncfusion Essential ASP.NET Core DropDownlist control, its elements, and more.
 platform: aspnet-core
 control: DropDownList, loadOnDemand
 documentation: ug
 
 ---
 
-## Load On Demand
+# Load On Demand in ASP.NET Core DropDownlist
 
 Load on demand feature allows the DropDownList items load on request from the service/database, during only on click the DropDown icon or DropDownList. This functionality helps to improve performance on control initial rendering time. Because data items load on request. 
 
@@ -32,4 +32,4 @@ The loadOnDemand property is used to enable or disable the load on demand functi
 {% endhighlight %}
 
 
-![](LoadOnDemand_images/loadondemand.png)
+![ASP.NET Core DropDownlist load on demand](LoadOnDemand_images/loadondemand.png)
