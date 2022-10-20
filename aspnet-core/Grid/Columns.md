@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# Columns in Essential ASP.NET Core Grid
+# Columns in ASP.NET Core Grid
 
 The column definitions are used as the DataSource schema in the Grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
 
