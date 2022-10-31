@@ -298,7 +298,7 @@ For further details about OData service please refer [the link](http://www.odata
            
 ![ASPNETCore DropDownList OData Version 4](DataBinding_images/DataBinding_img2.jpeg)
 
-N> Events associated with remote data bind is listed [here](http://help.syncfusion.com/js/api/ejdropdownlist#events). 
+N> Events associated with remote data bind is listed [here](https://help.syncfusion.com/api/js/ejdropdownlist#events). 
 
 ## WebAPI
 
