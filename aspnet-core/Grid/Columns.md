@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns with grid widget for Syncfusion Essential ASP.NET Core
-description: columns
+title: Columns in ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Column support in Syncfusion Essential ASP.NET Core Grid control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
 
-# Columns
+# Columns in ASP.NET Core Grid
 
 The column definitions are used as the DataSource schema in the Grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The `field` property of the columns is necessary to map the datasource values in grid columns.
 
@@ -46,7 +46,7 @@ The columns are automatically generated when `columns` declaration is empty or u
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img1.png)
+![Auto Generation in ASP.NET Core Grid](columns_images/columns_img1.png)
 
 ### How to set the `is-primary-key` for auto generated columns when editing is enabled:
 
@@ -167,7 +167,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img2.png)
+![Header in ASP.NET Core Grid](columns_images/columns_img2.png)
 
 ### Header text alignment
 
@@ -215,7 +215,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img3.png)
+![Header Text Alignment in ASP.NET Core Grid](columns_images/columns_img3.png)
 
 
 ### Header template
@@ -314,7 +314,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img5.png)
+![Text Alignment in ASP.NET Core Grid](columns_images/columns_img5.png)
 
 ## Format
 
@@ -358,7 +358,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img6.png)
+![Format in ASP.NET Core Grid](columns_images/columns_img6.png)
 
 ## Width
 
@@ -400,7 +400,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img7.png)
+![Width in ASP.NET Core Grid](columns_images/columns_img7.png)
 
 
 ## Resizing
@@ -519,7 +519,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img8.png)
+![Resize to Fit in ASP.NET Core Grid](columns_images/columns_img8.png)
 
 
 ## Reorder
@@ -561,7 +561,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img10.png)
+![Reorder in ASP.NET Core Grid](columns_images/columns_img10.png)
 
 ## Visibility
 
@@ -603,7 +603,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img11.png)
+![Visibility in ASP.NET Core Grid](columns_images/columns_img11.png)
 
 
 ## Unbound Column
@@ -656,7 +656,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img13.png)
+![Unbound Column in ASP.NET Core Grid](columns_images/columns_img13.png)
 
 ## Controlling grid actions
 
@@ -736,7 +736,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img15.png)
+![Command Column in ASP.NET Core Grid](columns_images/columns_img15.png)
 
 
 ## Command column
@@ -803,7 +803,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img17.png)
+![Default Action Button in ASP.NET Core Grid](columns_images/columns_img17.png)
 
 ### Custom buttons
 
@@ -902,7 +902,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img18.png)
+![Custom Buttons in ASP.NET Core Grid](columns_images/columns_img18.png)
 
 
 ## Column chooser
@@ -945,7 +945,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img19.png)
+![Column Chooser in ASP.NET Core Grid](columns_images/columns_img19.png)
 
 ## Foreign key column
 
@@ -997,7 +997,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img20.png)
+![Foreign Key Column in ASP.NET Core Grid](columns_images/columns_img20.png)
 
 ## Customize column
 
@@ -1053,7 +1053,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img23.png)
+![Customize Column in ASP.NET Core Grid](columns_images/columns_img23.png)
 
 ## Type
 
@@ -1096,7 +1096,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img24.png)
+![Type in ASP.NET Core Grid](columns_images/columns_img24.png)
 
 ## Column layout
 
@@ -1140,5 +1140,5 @@ You can set the grid's columns layout based on either grid width or its columns 
 
 The following output is displayed as a result of the previous code example.
 
-![](columns_images/columns_img25.png)
+![Column Layout in ASP.NET Core Grid](columns_images/columns_img25.png)
 
