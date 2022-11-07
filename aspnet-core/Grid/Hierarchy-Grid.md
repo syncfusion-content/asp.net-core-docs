@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Hierarchical binding | grid | ASP.NET Core | Syncfusion
-description: How to bind the hierarchical data
+description: Learn here all about Hierarchy support in Syncfusion Essential ASP.NET Core Grid control, its elements, and more.
 platform: aspnet-core
 control: grid
 documentation: ug
 ---
 
-# Hierarchical Bindings
+# Hierarchical Bindings in ASP.NET Core Grid
 
 Hierarchical binding can be used to create the grid with parent and child relation, this facilitate you to view the child records for a particular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining grid within grid and `query-string`.
 
@@ -64,7 +64,7 @@ public partial class GridController : Controller
 
 {% endtabs %} 
 
-![](Hierarchy-Grid_images/Hierarchy-Grid_img1.png)
+![ASP.NET Core Grid hierarchical binding](Hierarchy-Grid_images/Hierarchy-Grid_img1.png)
 
 
 ## Expand or collapse all child's
