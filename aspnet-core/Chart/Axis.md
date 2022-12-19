@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart Axis |Chart  | ASP.NET CORE | Syncfusion
-description: How to customize the grid lines, tick lines, labels and title of chart axis
+description: Learn here about Axis support in Syncfusion Essential ASP.NET Core Chart control, its elements, and more.
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
 
-# Axis
+# Axis in Essential ASP.NET Core Chart
 
 Charts typically have two axes, namely vertical (y) axis and horizontal (x) axis that are used to measure and categorize data.
 
@@ -33,7 +33,7 @@ Category axis displays the text labels instead of numbers. To use the categorica
 
 {% endhighlight %}
 
-![](Axis_images/axis_img1.png)
+![Category Axis in ASP.NET Core Chart](Axis_images/axis_img1.png)
 
 ### Place labels on ticks
 
@@ -52,7 +52,7 @@ Labels in the category axis can be placed on ticks by setting the **LabelPlaceme
 
 {% endhighlight %}
 
-![](Axis_images/axis_img2.png)
+![Place Labels in ASP.NET Core Chart](Axis_images/axis_img2.png)
 
 
 ### Display labels after a fixed interval
@@ -72,7 +72,7 @@ To display the labels after a fixed interval n, set the **Interval** property of
 
 {% endhighlight %}
 
-![](Axis_images/axis_img3.png)
+![Display Labels in ASP.NET Core Chart](Axis_images/axis_img3.png)
 
 
 ### Indexed Category Axis
@@ -100,11 +100,11 @@ Category axis can also plot points based on index value of data points. Index ba
 
 {% endhighlight %}
 
-![](Axis_images/axis_img50.png)
+![Indexed Category Axis in ASP.NET Core Chart](Axis_images/axis_img50.png)
 
 **While Category axis IsIndexed value false**
 
-![](Axis_images/axis_img51.png)
+![Indexed Value in ASP.NET Core Chart](Axis_images/axis_img51.png)
 
 
 ## Numeric Axis 
@@ -121,7 +121,7 @@ Numeric axis supports numerical scale, and displays numbers as labels. To use nu
 
 {% endhighlight %}
 
-![](Axis_images/axis_img4.png)
+![Numeric Axis in ASP.NET Core Chart](Axis_images/axis_img4.png)
 
 
 ### Customize numeric range
@@ -136,7 +136,7 @@ To customize the range of an axis, use the **Range** property. By using this, yo
 
 {% endhighlight %}
 
-![](Axis_images/axis_img5.png)
+![Customize Numeric Range in ASP.NET Core Chart](Axis_images/axis_img5.png)
 
 
 #### Customizing numeric interval
@@ -151,7 +151,7 @@ Axis interval can be customized by using the **Interval** property of the axis r
 
 {% endhighlight %}
 
-![](Axis_images/axis_img6.png)
+![Customizing Numeric Interval in ASP.NET Core Chart](Axis_images/axis_img6.png)
 
 
 ### Apply padding to the range
@@ -175,7 +175,7 @@ When the value of RangePadding property is **None**, padding can not be applied 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img7.png)
+![Apply Padding to the Range in ASP.NET Core Chart](Axis_images/axis_img7.png)
 
 
 #### Round
@@ -192,12 +192,12 @@ When the value of RangePadding property is **Round**, the axis range will be rou
 
 **Chart before rounding axis range**
 
-![](Axis_images/axis_img8.png)
+![Before Rounding Axis Range in ASP.NET Core Chart](Axis_images/axis_img8.png)
 
 
 **Chart after rounding axis range**
 
-![](Axis_images/axis_img9.png)
+![After Rounding Axis Range in ASP.NET Core Chart](Axis_images/axis_img9.png)
 
 
 **Additional**
@@ -212,7 +212,7 @@ When the value of RangePadding property is **Additional**, the axis range will b
 
 {% endhighlight %}
 
-![](Axis_images/axis_img10.png)
+![Additional in ASP.NET Core Chart](Axis_images/axis_img10.png)
 
 
 **Normal**
@@ -227,7 +227,7 @@ When the value of the RangePadding property is **Normal**, the padding will be a
 
 {% endhighlight %}
 
-![](Axis_images/axis_img11.png)
+![Normal Range Padding in ASP.NET Core Chart](Axis_images/axis_img11.png)
 
 
 ### Customizing the starting range of the axis
@@ -242,7 +242,7 @@ By default, the Y axis value will be calculated from 0 for column, bar, stacking
 
 {% endhighlight %}
 
-![](Axis_images/axis_img66.png)
+![Customizing Range Axis in ASP.NET Core Chart](Axis_images/axis_img66.png)
 
 
 ## DateTime Axis
@@ -259,7 +259,7 @@ Date time axis supports date time scale, and displays the date time values as ax
 
 {% endhighlight %}
 
-![](Axis_images/axis_img12.png)
+![Date Time Axis in ASP.NET Core Chart](Axis_images/axis_img12.png)
 
 
 ### Customizing date time range
@@ -274,7 +274,7 @@ Axis range can be customized by using the Range property. By using this, you can
 
 {% endhighlight %}
 
-![](Axis_images/axis_img13.png)
+![Customizing Date Time Range in ASP.NET Core Chart](Axis_images/axis_img13.png)
 
 
 ### Date time intervals
@@ -301,7 +301,7 @@ Essential chart supports the following types of interval for date time axis:
 
 {% endhighlight %}
 
-![](Axis_images/axis_img14.png)
+![Date Time Intervals in ASP.NET Core Chart](Axis_images/axis_img14.png)
 
 ### Apply padding to the range
 
@@ -323,7 +323,7 @@ When the value of the RangePadding property is **None**, padding will be applied
 
 {% endhighlight %} 
 
-![](Axis_images/axis_img15.png)
+![Apply Padding to Range in ASP.NET Core Chart](Axis_images/axis_img15.png)
 
 
 **Round**
@@ -340,12 +340,12 @@ When the value of RangePadding property is **Round**, the axis range will be rou
 
 **Chart before rounding axis range**
 
-![](Axis_images/axis_img16.png)
+![Before Rounding Axis Range in ASP.NET Core Chart](Axis_images/axis_img16.png)
 
 
 **Chart after rounding axis range**
 
-![](Axis_images/axis_img17.png)
+![After Rounding Axis Range in ASP.NET Core Chart](Axis_images/axis_img17.png)
 
 
 **Additional** 
@@ -360,7 +360,7 @@ When the value of the RangePadding property is **Additional**, the range will be
 
 {% endhighlight %} 
 
-![](Axis_images/axis_img18.png)
+![Range Padding in ASP.NET Core Chart](Axis_images/axis_img18.png)
 
 
 ## DateTime Category Axis
@@ -377,7 +377,7 @@ DateTime category axis takes date time value as input, but behaves like category
 
 {% endhighlight %}
 
-![](Axis_images/axis_img63.png)
+![DateTime Category Axis in ASP.NET Core Chart](Axis_images/axis_img63.png)
 
 
 ### Customizing DateTime Category range
@@ -394,7 +394,7 @@ Axis range can be customized by using the **range** property. By using this, you
 
 {% endhighlight %}
 
-![](Axis_images/axis_img64.png)
+![Customizing Date Time Category Range in ASP.NET Core Chart](Axis_images/axis_img64.png)
 
 ### DateTime category intervals
 
@@ -421,7 +421,7 @@ Essential Chart supports the following types of interval for date time category 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img65.png)
+![Date Time Category Intervals in ASP.NET Core Chart](Axis_images/axis_img65.png)
 
 ## Logarithmic Axis
 
@@ -437,7 +437,7 @@ Logarithmic axis supports logarithmic scale, and it is used in visualizing when 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img19.png)
+![Logarithmic Axis in ASP.NET Core Chart](Axis_images/axis_img19.png)
 
 ### Customize logarithmic range
 
@@ -453,7 +453,7 @@ Logarithmic range can be customized by using the **Range** property. By using th
 
 {% endhighlight %}
 
-![](Axis_images/axis_img20.png)
+![Customize Logarithmic Range in ASP.NET Core Chart](Axis_images/axis_img20.png)
 
 
 ### Logarithmic base
@@ -470,7 +470,7 @@ Logarithmic base can be customized by using the **LogBase** property of the axis
 
 {% endhighlight %}
 
-![](Axis_images/axis_img21.png)
+![Logarithmic Base in ASP.NET Core Chart](Axis_images/axis_img21.png)
 
 
 ### Logarithmic interval
@@ -487,7 +487,7 @@ Logarithmic axis interval can be customized by using the Interval property of th
 
 {% endhighlight %}
 
-![](Axis_images/axis_img22.png)
+![Logarithmic Interval in ASP.NET Core Chart](Axis_images/axis_img22.png)
       
 
 ## Label Format
@@ -506,7 +506,7 @@ Numeric labels can be formatted by using the **LabelFormat** property. Numeric v
 
 {% endhighlight %}
 
-![](Axis_images/axis_img23.png)
+![Format Numeric Labels in ASP.NET Core Chart](Axis_images/axis_img23.png)
 
 
 The following table describes the result of some commonly used label formats on numeric values. 
@@ -583,7 +583,7 @@ Date time labels can be formatted by using the **LabelFormat** property of the a
 
 {% endhighlight %}
 
-![](Axis_images/axis_img24.png)
+![Format Date Time Values in ASP.NET Core Chart](Axis_images/axis_img24.png)
 
 
 The following table describes the result some common date time formats to the labelFormat property.
@@ -647,7 +647,7 @@ Prefix and suffix can be added to the category labels by using the **LabelFormat
 
 {% endhighlight %}
 
-![](Axis_images/axis_img25.png)
+![Custom Labels Format in ASP.NET Core Chart](Axis_images/axis_img25.png)
 
 
 ## Common axis features
@@ -668,7 +668,7 @@ Axis can be positioned anywhere in the chart area by using the **CrossesAt** pro
 
 {% endhighlight %}
 
-![](Axis_images/axis_img52.png)
+![Axis Crossing in ASP.NET Core Chart](Axis_images/axis_img52.png)
 
 
 #### Crossing a specific Axis
@@ -685,7 +685,7 @@ The **CrossesInAxis** property takes axis name as input and determines the axis 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img53.png)
+![Crossing A Specific Axis in ASP.NET Core Chart](Axis_images/axis_img53.png)
 
 Axis will be placed in the opposite side if value of **CrossesAt** property is greater than the maximum value of crossing axis (axis name provided through **CrossesInAxis** property or primary Y axis for horizontal axis).
 
@@ -699,7 +699,7 @@ Axis will be placed in the opposite side if value of **CrossesAt** property is g
 
 {% endhighlight %}
 
-![](Axis_images/axis_img54.png)
+![Crosses Axis in ASP.NET Core Chart](Axis_images/axis_img54.png)
 
 #### Positioning the axis elements while crossing
 
@@ -716,7 +716,7 @@ The `ShowNextToAxisLine` property is used for controlling the axis elements move
 
 The axis is placed at the crossing value without the axis elements 
 
-![](Axis_images/axis_img67.png)
+![Positioning the Axis Elements in ASP.NET Core Chart](Axis_images/axis_img67.png)
 
 
 ### Axis Visibility
@@ -733,7 +733,7 @@ Axis visibility can be controlled by using the **Visible** property of the axis.
 
 {% endhighlight %}
 
-![](Axis_images/axis_img26.png)
+![Axis Visibility in ASP.NET Core Chart](Axis_images/axis_img26.png)
 
 
 ### Axis title
@@ -754,7 +754,7 @@ The **Title** property in the axis provides options to customize the text and fo
 
 {% endhighlight %}
 
-![](Axis_images/axis_img27.png)
+![Axis Title in ASP.NET Core Chart](Axis_images/axis_img27.png)
 
 You can modify the position of the axis title either inside or outside the chart area by using the **Position** property. By default, it will be placed outside the chart area. In addition, you can also change the alignment of the title to near, far, or center by using **Alignment** property. By using **Offset** property, you can change the position with respect to pixels.
 
@@ -769,7 +769,7 @@ You can modify the position of the axis title either inside or outside the chart
 
 {% endhighlight %}
 
-![](Axis_images/axis_img62.png)
+![Axis Title Position in ASP.NET Core Chart](Axis_images/axis_img62.png)
 
 ### Label customization
 
@@ -787,7 +787,7 @@ The **Font** property of the axis provides options to customize the FontFamily, 
 
 {% endhighlight %}
 
-![](Axis_images/axis_img28.png)
+![Labels Customization in ASP.NET Core Chart](Axis_images/axis_img28.png)
 
 
 ### Label and tick positioning
@@ -805,7 +805,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![](Axis_images/axis_img29.png)
+![Label and Tick Positioning in ASP.NET Core Chart](Axis_images/axis_img29.png)
 
 
 ### Edge labels placement
@@ -825,12 +825,12 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 **Chart before setting edge label placement to X-axis**
 
-![](Axis_images/axis_img30.png)
+![Edge Labels Placement in ASP.NET Core Chart](Axis_images/axis_img30.png)
 
 
 **Chart after setting edge label placement to X-axis**
 
-![](Axis_images/axis_img31.png)
+![After Setting Edge Label Placement in ASP.NET Core Chart](Axis_images/axis_img31.png)
 
 
 ### Grid lines customization
@@ -850,7 +850,7 @@ The **MajorGridLines** and **MinorGridLines** properties in the axis are used to
 
 {% endhighlight %}
 
-![](Axis_images/axis_img32.png)
+![Grid Lines Customization in ASP.NET Core Chart](Axis_images/axis_img32.png)
 
 
 ### Tick lines customization
@@ -870,7 +870,7 @@ The **MajorTickLines** and **MinorTickLines** properties in the axis are used to
 
 {% endhighlight %}
 
-![](Axis_images/axis_img33.png)
+![Tick Lines Customization in ASP.NET Core Chart](Axis_images/axis_img33.png)
 
   
 ### Inversing axis
@@ -890,12 +890,12 @@ Axis can be inversed by using the **IsInversed** property of the axis. The defau
 
 **Chart before inversing the axes**
 
-![](Axis_images/axis_img34.png)
+![Befoere Inversing Axis in ASP.NET Core Chart](Axis_images/axis_img34.png)
 
 
 **Chart after inversing the axes**
 
-![](Axis_images/axis_img35.png)
+![After Inversing Axis in ASP.NET Core Chart](Axis_images/axis_img35.png)
    
 
 ### Place axes at the opposite side
@@ -915,12 +915,12 @@ The **OpposedPosition** property of axis can be used to place the axis at the op
 
 **Chart with X and Y axes at normal position**
 
-![](Axis_images/axis_img36.png)
+![XY Axis at Normal Position in ASP.NET Core Chart](Axis_images/axis_img36.png)
 
 
 **Chart with Y-axis at opposed position**
 
-![](Axis_images/axis_img37.png)
+![Y Axis at Opposed Position in ASP.NET Core Chart](Axis_images/axis_img37.png)
 
 
 ### Maximum number of labels per 100 pixels
@@ -940,18 +940,18 @@ Maximum of 3 labels are displayed for each 100 pixels in the axis, by default. T
 
 **Chart before setting maximum labels per 100 pixels**
 
-![](Axis_images/axis_img38.png)
+![Before Setting Maximum Labels in ASP.NET Core Chart](Axis_images/axis_img38.png)
 
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![](Axis_images/axis_img39.png)
+![After Setting Maximum Labels in ASP.NET Core Chart](Axis_images/axis_img39.png)
 
 ## Multiple Axis
 
 Multiple axes can be used in the chart, and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
-![](Axis_images/axis_img40.png)
+![Multiple Axis in ASP.NET Core Chart](Axis_images/axis_img40.png)
 
 
 An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **Axes** collection. You can associate it to a series by specifying name of the axis to the **XAxisName** or **YAxisName** property of the series.
@@ -972,7 +972,7 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 {% endhighlight %}
 
-![](Axis_images/axis_img41.png)
+![Additional Horizontal and Vertical Axis in ASP.NET Core Chart](Axis_images/axis_img41.png)
 
 ## Smart axis labels
 
@@ -988,41 +988,41 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 {% endhighlight %}
 
-![](Axis_images/axis_img42.png)
+![Smart Axis Labels in ASP.NET Core Chart](Axis_images/axis_img42.png)
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **Rotate45**.
 
-![](Axis_images/axis_img43.png)
+![Rotate 45 in ASP.NET Core Chart](Axis_images/axis_img43.png)
 
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **Rotate90**.
 
-![](Axis_images/axis_img44.png)
+![Rotate 90 in ASP.NET Core Chart](Axis_images/axis_img44.png)
 
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **Wrap**.
 
-![](Axis_images/axis_img45.png)
+![Wrap Labels in ASP.NET Core Chart](Axis_images/axis_img45.png)
 
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **trim**.
 
-![](Axis_images/axis_img46.png)
+![Trim Labels in ASP.NET Core Char](Axis_images/axis_img46.png)
 
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **Hide**.
 
-![](Axis_images/axis_img47.png)
+![Hide labels in ASP.NET Core Chart](Axis_images/axis_img47.png)
 
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **MultipleRows**.
 
-![](Axis_images/axis_img48.png)
+![Multiple Rows in ASP.NET Core Chart](Axis_images/axis_img48.png)
 
 
 The following screenshot displays the result when the LabelIntersectAction property is set to **WrapByWord**.
 
-![](/js/Chart/Axis_images/axis_img49.png)
+![Wrap by Word in ASP.NET Core Chart](/js/Chart/Axis_images/axis_img49.png)
 
 ## Multi-level Labels
 Axis can be customized with multiple levels of labels by using the **MultiLevelLabels** property. These labels are placed based on the start and end range values. You can add any number of labels to an axis.
@@ -1041,7 +1041,7 @@ Axis can be customized with multiple levels of labels by using the **MultiLevelL
 
 {% endhighlight %}
 
-![](Axis_images/axis_img57.png)
+![Multi level Labels in ASP.NET Core Chart](Axis_images/axis_img57.png)
 
 ### Customizing the multi-Level labels
 
@@ -1062,7 +1062,7 @@ The text of the labels can be customized by using the **Text** property.
 
 {% endhighlight %}
 
-![](Axis_images/axis_img59.png)
+![Customizing Multi Level Labels in ASP.NET Core Chart](Axis_images/axis_img59.png)
 
 You can change the alignment of the text to far, near, or center position by using the **TextAlignment** property. By default, the text will be aligned at center. 
 
@@ -1081,7 +1081,7 @@ You can change the alignment of the text to far, near, or center position by usi
        
 {% endhighlight %}
 
-![](Axis_images/axis_img60.png)
+![Wrap Text in ASP.NET Core Chart](Axis_images/axis_img60.png)
 
 You can trim, wrap, or wrapAndTrim the text if it exceeds the maximum text width value by using the **TextOverflow** property.
 
@@ -1102,6 +1102,6 @@ You can trim, wrap, or wrapAndTrim the text if it exceeds the maximum text width
 
 The following screenshot illustrates the trimmed multi-level labels.
 
-![](Axis_images/axis_img61.png)
+![Trimmed Multi Level Labels in ASP.NET Core Chart](Axis_images/axis_img61.png)
 
 And these labels can be placed in various rows by using the **Level** property.
