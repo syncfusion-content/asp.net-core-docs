@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview
-description: Overview document
+title: Overview of ASP.NET Core Tile Control | Syncfusion
+description: Learn here about Overview document of Syncfusion Essential ASP.NET Core Tile Control, its features, and more.
 platform: aspnet-core
 control: Tile 
 documentation: ug
 ---
 
-# Overview
+# Overview of ASP.NET Core Tile
 
 The Essential Studio for ASP.NET Core Web Tiles are simple, opaque rectangles or squares and they are arrayed on the start screen in a grid-like pattern. Tapping or selecting a Tile, launches the app or does some other action that is represented by the Tile. Tiles are arranged in a group separated by columns that looks like a start screen of a device and it can be either static or live. 
 
-# Key Features
+## Key Features
 
 *	**Live tile support:** Here the tiles are changed dynamically at specific time interval.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Trendlines | Chart  | ASP.NET Core | Syncfusion
-description: What are the different types of trendlines available in chart.
+description: What are the different types of trendlines available in Syncfusion Essential ASP.NET Core Chart Control, its elements, and more.
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines in ASP.NET Core Chart
 
 Chart can generate trendlines for Cartesian type series such as line, column, scatter, area, candle, HiLo, etc., except bar type series. You can add more than one trendline object to the **Trendlines** option.
 
@@ -27,7 +27,7 @@ Chart can generate trendlines for Cartesian type series such as line, column, sc
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img1.png)
+![ASP.NET Core Chart Customize the trendline styles](Trendlines_images/Trendlines_img1.png)
 
 ## Customize the trendline styles
 
@@ -49,7 +49,7 @@ A trendline can be customized by using the properties such as **Fill**, **Width*
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img2.png)
+![ASP.NET Core Chart Types of trendline](Trendlines_images/Trendlines_img2.png)
 
 
 ## Types of trendline
@@ -83,7 +83,7 @@ To render linear trendline, set the type to **Linear**.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img3.png)
+![ASP.NET Core Chart Exponential](Trendlines_images/Trendlines_img3.png)
 
 ### Exponential
 
@@ -105,7 +105,7 @@ Exponential trendline can be rendered by setting the type to **Exponential**.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img4.png)
+![ASP.NET Core Chart Logarithmic](Trendlines_images/Trendlines_img4.png)
 
 ### Logarithmic
 
@@ -127,7 +127,7 @@ Logarithmic trendline can be rendered by setting the type to **Logarithmic**.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img5.png)
+![ASP.NET Core Chart Power](Trendlines_images/Trendlines_img5.png)
 
 
 ### Power
@@ -150,7 +150,7 @@ Power trendline can be rendered by setting the type to **Power**.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img6.png)
+![ASP.NET Core Chart Polynomial](Trendlines_images/Trendlines_img6.png)
 
 
 ### Polynomial
@@ -173,7 +173,7 @@ Polynomial trendline can be rendered by setting the type to **Polynomial**. You 
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img7.png)
+![ASP.NET Core Chart MovingAverage](Trendlines_images/Trendlines_img7.png)
 
 
 ### MovingAverage
@@ -196,7 +196,7 @@ Moving average trendline can be rendered by setting the type to **MovingAverage*
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img8.png)
+![ASP.NET Core Chart Forecasting](Trendlines_images/Trendlines_img8.png)
 
 
 ## Forecasting
@@ -226,7 +226,7 @@ The value set for **ForwardForecast** is used to determine the distance moving t
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img9.png)
+![ASP.NET Core Chart Forward forecasting](Trendlines_images/Trendlines_img9.png)
 
 
 ### Backward forecasting
@@ -249,7 +249,7 @@ The value set for the **BackwardForecast** is used to determine the past trends.
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img10.png)
+![ASP.NET Core Chart Backward forecasting](Trendlines_images/Trendlines_img10.png)
 
 
 ## Trendlines legend
@@ -272,4 +272,4 @@ To display the legend item for trendline, use the **Name** property. You can int
 
 {% endhighlight %}
 
-![](Trendlines_images/Trendlines_img11.png)
+![ASP.NET Core Chart Trendlines legend](Trendlines_images/Trendlines_img11.png)

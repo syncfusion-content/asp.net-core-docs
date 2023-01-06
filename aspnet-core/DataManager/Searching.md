@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Searching | DataManager | ASP.NET Core | Syncfusion
-description: searching
+description: Learn here about searching support in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 ---
 
-# Searching
+# Searching in ASP.NET Core DataManager
 
 Searching is a basic query technique in data manager. It is used to filter the records from the entire data source based on the `search` key parameter.
 
@@ -96,5 +96,5 @@ Searching is a basic query technique in data manager. It is used to filter the r
 
 Result of above code example is illustrated as follows.
 
-![](Searching_images/Searching1.png) 
+![ASP.NET Core DataManager searching](Searching_images/Searching1.png) 
 

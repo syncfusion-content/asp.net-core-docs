@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summary with Grid widget for ASP.NET Core
-description: How to enable summary and its functionalities
+title: Summary in ASP.NET Core Grid Control | Syncfusion
+description: Learn here about Summary support in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
 
-# Summary 
+# Summary in ASP.NET Core Grid
 
 The summary rows visibility can be controlled by the`show-summary` property and it can be added to Grid by using the `e-summary-rows` array property. The following code example describes the above behavior.
 
@@ -50,7 +50,7 @@ The summary rows visibility can be controlled by the`show-summary` property and 
 {% endtabs %}  
 
 
-![](Summary_images/summaryGrid_img1.png)
+![ASP.NET Core Grid supported aggregates](Summary_images/summaryGrid_img1.png)
 
 ## Supported aggregates 
 
@@ -121,7 +121,7 @@ Summaries with `Sum`,`Average`,`Maximum` and `Minimum` aggregate can be defined 
 {% endhighlight  %}    
 {% endtabs %}  
 
-![](Summary_images/summaryGrid_img2.png)
+![ASP.NET Core Grid true and false count](Summary_images/summaryGrid_img2.png)
 
 ### True and False count 
 
@@ -170,7 +170,7 @@ Summaries with `true` and `false` count aggregate can be defined by using `summa
 {% endhighlight  %}    
 {% endtabs %}  
 
-![](Summary_images/summaryGrid_img3.png)
+![ASP.NET Core Grid custom summary](Summary_images/summaryGrid_img3.png)
 
 
 ## Custom summary
@@ -228,7 +228,7 @@ Custom summary can be used to create summary values based on your required custo
 {% endtabs %}  
 
 
-![](Summary_images/summaryGrid_img4.png)
+![ASP.NET Core Grid group summary](Summary_images/summaryGrid_img4.png)
 
 ## Group summary
 
@@ -272,7 +272,7 @@ Group summary is used to summarize values of a particular column based on group 
 {% endhighlight  %}
 {% endtabs %}
 
-![](Summary_images/summaryGrid_img5.png)
+![ASP.NET Core Grid caption summary](Summary_images/summaryGrid_img5.png)
 
 W> Minimum one column should be grouped to show the summary details.
 
@@ -319,7 +319,7 @@ To show summaries in each Group's caption row, particular summary row should hav
 
 {% endtabs %}
 
-![](Summary_images/summaryGrid_img6.png)
+![ASP.NET Core Grid format](Summary_images/summaryGrid_img6.png)
 
 W> Minimum one column should be grouped to show summary details.
 
@@ -366,7 +366,7 @@ To format Summary values, the `format` property needs to be assigned in `e-summa
 
 {% endtabs %} 
 
-![](Summary_images/summaryGrid_img7.png)
+![ASP.NET Core Grid summary column template](Summary_images/summaryGrid_img7.png)
 
 ## Summary template
 
@@ -421,7 +421,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](Summary_images/summaryGrid_img9.png)
+![ASP.NET Core Grid handling aggregate](Summary_images/summaryGrid_img9.png)
 
 ## Handling aggregation in server-side
 
@@ -498,4 +498,4 @@ namespace MvcApplication4.Controllers
 
 The following output is displayed as a result of the previous code example.
 
-![](Summary_images/summaryGrid_img8.png)
+![ASP.NET Core Grid summary grid](Summary_images/summaryGrid_img8.png)

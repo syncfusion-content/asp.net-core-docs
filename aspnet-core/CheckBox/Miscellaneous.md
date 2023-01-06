@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Miscellaneous | Checkbox | ASP.NET MVC | Syncfusion
-description: miscellaneous
-platform: ejmvc
+title: Miscellaneous | Checkbox | ASP.NET Core | Syncfusion
+description: Learn here about miscellaneous support in Syncfusion Essential ASP.NET Core CheckBox Control, its elements, and more.
+platform: ASP.NET Core
 control: Checkbox
 documentation: ug
 ---
 
-# Miscellaneous
+# Miscellaneous in ASP.NET Core CheckBox
 
 ## Checkbox Id
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Tooltip Support | ListBox | ASP.NET Core | Syncfusion
-description: tooltip support
+description: Learn here about tooltip support in Syncfusion Essential ASP.NET Core ListBox Control, its elements and more.
 platform:  aspnet-core
 control: ListBox
 documentation: ug
 ---
 
-# Tooltip Support
+# Tooltip Support in ASP.NET Core ListBox
 
 The following steps explains you the configuration of Tooltip properties in ListBox.
 
@@ -68,7 +68,7 @@ The following steps explains you the configuration of Tooltip properties in List
 2. Output of the above steps.
 
 
-![](Tooltip-Support_images/Tooltip-Support_img1.png)
+![ASP.NET Core ListBox Tooltip Support](Tooltip-Support_images/Tooltip-Support_img1.png)
 
 
 

@@ -1,12 +1,12 @@
 ---
 title: Template Option  | TreeView | ASP.NET Core | Syncfusion
-description: rendering TreeView using Template Option
+description: Learn here about Template Option in Syncfusion Essential ASP.NET Core TreeView Control, its elements, and more.
 platform: aspnet-core
 control: TreeView
 documentation: UG
 ---
 
-# Template Option
+# Template Option in ASP.NET Core TreeView
 
 The tree nodes can be customized by using the **Template** property. The tree view template option requires addition JS library called the **JsRender** that helps you to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender, refer to this link [http://www.jsviews.com/](http://www.jsviews.com/#).
 
@@ -165,7 +165,7 @@ In the view page, specify the template format and add the following code:
     {% endhighlight %}
 
 By running the above code, you will get the output like the following:
-![](Template_images/template.png)
+![ASP.NET Core TreeView template](Template_images/template.png)
 
 **Custom action in nodes**
 

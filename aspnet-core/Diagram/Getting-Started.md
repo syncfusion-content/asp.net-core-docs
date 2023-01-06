@@ -29,7 +29,7 @@ This section explains briefly you on how to create a Diagram in your ASP.NET COR
 
 3\. This creates an empty diagram
 
-![Getting-Started_images1](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET Core Diagram Initialize Diagram](Getting-Started_images/Getting-Started_img1.png)
 
 ### Create and add Node
 
@@ -53,7 +53,7 @@ N> `Labels` property is an array, which indicates that more than one label can b
 
 Added node will be displayed in diagram as shown below.
 
-![Getting-Started_images2](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET Core Diagram Create and add Node](Getting-Started_images/Getting-Started_img2.png)
 
 ### Connect nodes
 
@@ -89,7 +89,7 @@ Connect these two nodes by adding a `connector` into `Connectors` collection wit
 
 * `Connector` connects the two nodes as shown below.
 
-![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET Core Diagram Connect nodes](Getting-Started_images/Getting-Started_img3.png)
 
 * Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `Width` and `Height`, we can move such properties into `DefaultSettings`. Above code can be rewritten as shown below.
 
@@ -212,7 +212,7 @@ Similarly we can add required nodes and connectors to form a complete flow diagr
 
 Final flow chart will looks as shown below.
 
-![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
+![ASP.NET Core Diagram Complete flow diagram](Getting-Started_images/Getting-Started_img4.png)
 
 ## Automatic organization chart
 
@@ -317,4 +317,4 @@ Following code examples indicate how to define the default appearance of node an
 
 * The Employee details are displayed in the Diagram as follows.
 
-![Getting-Started_images5](Getting-Started_images/Getting-Started_img5.png)
+![ASP.NET Core Diagram Apply org chart layout](Getting-Started_images/Getting-Started_img5.png)

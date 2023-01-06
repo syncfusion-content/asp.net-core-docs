@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting-Started | Pager | ASP.NET Core | Syncfusion
-description: getting started
+title: Getting Started with ASP.NET Core Pager Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential ASP.NET Core Pager Control, its elements, and more.
 platform: aspnet-core
 control: Pager
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Pager
 
 This section briefly explains about how to create a **Pager** control in your application with ASP.NET Core application.
 
-# Adding Pager control in your Core application
+## Adding Pager control in your Core application
 
 1. Create a ASP.NET core Project and add necessary assemblies and scripts.
 
@@ -43,7 +43,7 @@ This section briefly explains about how to create a **Pager** control in your ap
 
 Run the above sample to get the below output.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASP.NET Core Pager Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 
  **PageSize:**  PageSize value defines the number of records to be displayed per page. The default value for the PageSize API is 12. 
@@ -70,7 +70,7 @@ Run the above sample to get the below output.
 
 Run the above sample to get the below output.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![ASP.NET Core Adding Pager](Getting-Started_images/Getting-Started_img2.png)
 
 **PageCount:**  PageCount value defines the number of pages to be displayed in the pager control for navigation. The default value for PageCount is 10 and value will be updated based on TotalRecordsCount and PageSize values.
 
@@ -94,5 +94,5 @@ Run the above sample to get the below output.
 
 Run the above sample to get the below output.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![ASP.NET Core Pager Sample](Getting-Started_images/Getting-Started_img3.png)
 

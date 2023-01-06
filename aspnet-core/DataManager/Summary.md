@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Summary | DataManager | ASP.NET Core | Syncfusion
-description: summary 
+description: Learn here about summary support in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 keywords: Sum, Average, Minimum, Maximum, Distinct
 ---
 
-# Summary 
+# Summary in ASP.NET Core DataManager
 
 Summary is a key feature in **DataManager** that helps to aggregate any data. **DataManager** provides several summary type by default, they are as follows.
 
@@ -81,7 +81,7 @@ The `Sum` summary type provides the sum of the data. The Sum data utilization me
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img1.png) 
+![ASP.NET Core DataManager summary](Summary_images/Summary_img1.png) 
 
 ## Min
 
@@ -142,7 +142,7 @@ The minimum of particular field can be calculated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img2.png) 
+![ASP.NET Core DataManager max](Summary_images/Summary_img2.png) 
 
 ## Max
 
@@ -203,7 +203,7 @@ The maximum of particular field can be calculated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img3.png) 
+![ASP.NET Core DataManager average](Summary_images/Summary_img3.png) 
 
 ## Avg
 
@@ -262,7 +262,7 @@ The Average summary type provides the average of the given data. The Average dat
 
 The result of the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img4.png) 
+![ASP.NET Core DataManager distinct](Summary_images/Summary_img4.png) 
 
 ## Distinct
 
@@ -323,4 +323,4 @@ The following code example illustrates how to use the `ej.distinct` method. In t
 
 The result for the above code example is illustrated as follows.
 
-![](Summary_images/Summary_img5.png) 
+![ASP.NET Core DataManager summary](Summary_images/Summary_img5.png) 

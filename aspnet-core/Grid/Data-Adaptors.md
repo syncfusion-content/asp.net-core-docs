@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Data-Adaptor with Grid widget for Syncfusion Essential ASP.NET Core
-description: How to enable data-Adaptor and its functionalities
+description: How to enable data-Adaptor and its functionalities in Syncfusion ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
-#  Data Adaptors
+# Data Adaptors with Grid widget in ASP.NET Core Grid
 
 The Data Adaptor is a mechanism through which the `DataManager` interact with the remote service or local dataSource. The `DataManager` has several preconfigured Data Adaptors, refer to the [link](https://help.syncfusion.com/aspnet-core/datamanager/dataadaptors).
    
@@ -54,7 +54,7 @@ The JSON Adaptor is used when the grid is bound with local datasource. It can be
 
 The following output is displayed as a result of the above code example.
 
- ![](Data-Adaptors_images/Data-Adaptor_img1.png)
+ ![ASP.NET Core Grid JSON Adaptor](Data-Adaptors_images/Data-Adaptor_img1.png)
    
 ##  Url Adaptor
 
@@ -131,7 +131,7 @@ The following code example describes the above behavior.
  
  The following output is displayed as a result of the above code example.
  
- ![](Data-Adaptors_images/Data-Adaptor_img2.png)
+ ![ASP.NET Core Grid Url Adaptor](Data-Adaptors_images/Data-Adaptor_img2.png)
  
  
 ##  OData Adaptor
@@ -161,7 +161,7 @@ You can use the following code example to use OData Adaptor.
 
 The following output is displayed as a result of the above code example.
 
- ![](Data-Adaptors_images/Data-Adaptor_img3.png)
+ ![ASP.NET Core Grid OData Adaptor](Data-Adaptors_images/Data-Adaptor_img3.png)
 
 ##  ODataV4 Adaptor
 
@@ -188,7 +188,7 @@ You can use the following code example to use ODataV4 Adaptor.
 
 The following output is displayed as a result of the above code example.
 
- ![](Data-Adaptors_images/Data-Adaptor_img4.png)
+ ![ASP.NET Core Grid ODataV4 Adaptor](Data-Adaptors_images/Data-Adaptor_img4.png)
 
 
 ##  WebAPI Adaptor
@@ -238,7 +238,7 @@ You can use the following code example to use WebAPI Adaptor.
 
 The following output is displayed as a result of the above code example.
 
- ![](Data-Adaptors_images/Data-Adaptor_img5.png)
+ ![ASP.NET Core Grid WebAPI Adaptor](Data-Adaptors_images/Data-Adaptor_img5.png)
 
 ##  RemoteSave Adaptor
 
@@ -302,11 +302,11 @@ You can use the following code example to use RemoteSaveAdaptor.
 
 The following output is displayed as a result of the above code example.
 
- ![](Data-Adaptors_images/Data-Adaptor_img6.png)
+ ![ASP.NET Core Grid RemoteSave Adaptor](Data-Adaptors_images/Data-Adaptor_img6.png)
 
 On performing CRUD operations in Grid, the record changes will be sent to server-side as in the following screenshot.
 
- ![](Data-Adaptors_images/Data-Adaptor_img7.png)
+ ![ASP.NET Core Grid CRUD operation](Data-Adaptors_images/Data-Adaptor_img7.png)
 
 
 ##  Foreign Key Adaptor
@@ -368,7 +368,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
- ![](Data-Adaptors_images/Data-Adaptor_img8.png)
+ ![ASP.NET Core Grid Foreign Key Adaptor](Data-Adaptors_images/Data-Adaptor_img8.png)
 
 ##  Custom Adaptor         
 

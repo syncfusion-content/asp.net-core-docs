@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Data Binding in ComboBox control for Syncfusion ASP.NET CORE
-description: DataBinding support to ComboBox control for Syncfusion ASP.NET CORE
+description: Learn here about Data Binding support in Syncfusion Essential ASP.NET Core ComboBox Control, its elements, and more.
 platform: CORE
 control: ComboBox
 documentation: ug
 keywords: remote data, ComboBox, json data, local data
 ---
 
-# Data Binding
+# Data Binding in ASP.NET Core ComboBox
 
 The ComboBox loads the data either from the local data sources or
 remote data services using the `dataSource` property. It supports
@@ -54,7 +54,7 @@ The ComboBox has the support to load array of primitive data such as strings and
 
 Output for array-data combobox control is as follows.
 
-![](Combobox_databinding_images/array_data.png) 
+![ASP.NET Core ComboBox array data](Combobox_databinding_images/array_data.png) 
 
 ### 2. Array of JSON data
 
@@ -97,7 +97,7 @@ In the following example, `Id` column and `Game` column from complex data have b
         }
   {% endhighlight  %}
 
-![](Combobox_databinding_images/local_data.png)
+![ASP.NET Core ComboBox local data](Combobox_databinding_images/local_data.png)
 
 ## Binding remote data
 
@@ -133,4 +133,4 @@ public ActionResult Databindingremote()
 Output for remote-data combobox control is as follows:
 
 
-![](Combobox_databinding_images/remote_data.png) 
+![ASP.NET Core ComboBox remote data](Combobox_databinding_images/remote_data.png) 

@@ -1,11 +1,11 @@
 ---
-title: Data binding with Spreadsheet widget for Syncfusion Essential ASP.NET Core
-description: How to perform Data Binding and configure its properties like dataSource, query etc.
+title: Data binding in ASP.NET Core Spreadsheet Control | Syncfusion
+description: Learn here about Data binding in Syncfusion Essential ASP.NET Core Spreadsheet Control, its elements, and more.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
 ---
-# Data Binding
+# Data Binding in ASP.NET Core Spreadsheet
 
 Spreadsheet can be populated with external datasource using `datasource` property. The `datasource` property can be assigned either with the instance of `e-datamanager` or JSON data array collection. Spreadsheet supports three different kinds of Data binding.
 
@@ -51,7 +51,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img1.png)
+![ASP.NET Core Spreadsheet Remote Data](Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -71,7 +71,7 @@ To bind remote data to the Spreadsheet, you can assign a service data as an inst
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![ASP.NET Core Spreadsheet Offline Mode](Data-Binding_images/Data-Binding_img2.png)
 
 ### Offline Mode
 
@@ -93,7 +93,7 @@ The following code illustrates Offline data binding for Spreadsheet,
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img2.png)
+![ASP.NET Core Spreadsheet HTML Table Data](Data-Binding_images/Data-Binding_img2.png)
 
 ## HTML Table Data
 
@@ -168,7 +168,7 @@ An HTML Table element can also be used as the data source of Spreadsheet. To use
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img3.png)
+![ASP.NET Core Spreadsheet Cell Binding](Data-Binding_images/Data-Binding_img3.png)
 
 ## Ways to bind data in Spreadsheet
 
@@ -391,7 +391,7 @@ You can specify particular row with `index` property and its height with `height
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets.
-![](Data-Binding_images/Data-Binding_img4.png)
+![ASP.NET Core Spreadsheet Range Binding](Data-Binding_images/Data-Binding_img4.png)
 
 ### Range Binding
 
@@ -507,7 +507,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 The following output is displayed as a result of the above code snippets.
 
-![](Data-Binding_images/Data-Binding_img5.png)
+![ASP.NET Core Spreadsheet Sheet Binding](Data-Binding_images/Data-Binding_img5.png)
 
 ### Sheet Binding
 
@@ -596,5 +596,5 @@ The following code illustrates sheet binding in Spreadsheet
 {% endhighlight %}
 
 The following output is displayed as a result of the above code snippets. 
-![](Data-Binding_images/Data-Binding_img6.png)
+![ASP.NET Core Spreadsheet data binding](Data-Binding_images/Data-Binding_img6.png)
 

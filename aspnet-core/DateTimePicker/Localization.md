@@ -79,7 +79,7 @@ N> To render the DateTimePicker Control you can use either Razor or Tag helper c
    
 2. The following screenshot displays the output for the above code.
 
-	![](Localization_images/Localization_img1.png)
+	![ASP.NET Core DateTimePicker Localization](Localization_images/Localization_img1.png)
 
     Showcase for DateTimePicker with Spanish culture
     {:.caption}

@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Getting-Started | DataManager | ASP.NET Core | Syncfusion
-description: How to create the DataManager
+title: Getting Started with ASP.NET Core DataManager Control | Syncfusion
+description: Learn here about getting started with Syncfusion ASP.NET Core DataManager control, its elements, features, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 ---
 
-# Getting Started 
-
-## Create your DataManager in the ASP.NET Core
+# Create your DataManager in the ASP.NET Core
 
 DataManager is used to manage relational data. It supports CRUD (Create, Read, Update, and Destroy) in individual requests and Batch. DataManager uses DataManager control for processing and ej.Query for serving the data. DataManager control communicates with data source and ej.Query generates data queries that are read by DataManager. 
 
-### Configure Demo Application
+## Configure Demo Application
 
 This section briefly describes how to make a connection to WCF “Northwind” OData service and generate a report with top five orders from customer HANAR with higher Freight charges.  In this application scenario, you can learn how to bind the DataManager to the Grid control to do paging, filtering and sorting with Grid control in the DataManager by using ej.Query.
 
@@ -88,7 +86,7 @@ You can bind the DataManager with Grid by defining the ID of DataManager in the 
 
 When you run, the following table is displayed.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![ASPNETCore DataManager GettingStarted](Getting-Started_images/Getting-Started_img1.png)
 
 DataManager with Grid Control
 {:.caption}
@@ -149,7 +147,7 @@ The select property of ejQuery is used to retrieve the specified columns from th
 
 When you run the filter query and bind the result to the Grid, the following table is displayed.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![ASPNETCore DataManager Filter](Getting-Started_images/Getting-Started_img2.png)
 
 Data with Filtering
 {:.caption}
@@ -210,7 +208,7 @@ The sortBy property of ejQuery is used to sort the records based on the field an
 
 When you run the sort query and bind the result to the table, the following table is displayed.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![ASPNETCore DataManager Sorting](Getting-Started_images/Getting-Started_img3.png)
 
 Data with Sorting
 {:.caption}
@@ -270,7 +268,7 @@ The Page property of ejQuery is used to retrieve the records based on the given 
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![ASPNETCore DataManager Pages](Getting-Started_images/Getting-Started_img4.png)
 
 ## Server side operations
 
@@ -481,7 +479,7 @@ The below code illustrates how to bind data to editing Grid using **DataOperatio
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![ASPNETCore DataManager Server side operations](Getting-Started_images/Getting-Started_img5.png)
 
 In this section, you can learn how to enable basic properties available in the DataManager and the usage of the various queries in the DataManager.  
 

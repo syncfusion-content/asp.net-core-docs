@@ -1,14 +1,14 @@
 ---
 layout: post
 title: How to ComboBox control for Syncfusion ASP.NET CORE
-description: How to
+description: Learn here about How to section in Syncfusion Essential ASP.NET Core ComboBox Control, its elements, and more.
 platform: core
 control: ComboBox
 documentation: ug
 keywords: dataBind, ComboBox, cascading, autofill, icons
 ---
 
-# How To
+# How To section in ASP.NET Core ComboBox
 
 ## Configure the Cascading ComboBox
 
@@ -89,7 +89,7 @@ The following example, shows the cascade behavior of country, state, and city Co
 Output for combobox control is as follows.
 
 
-![](Combobox_howto_images/howto_cascading.png)
+![ASP.NET Core ComboBox Show the list items with icons](Combobox_howto_images/howto_cascading.png)
 
 
 ## Show the list items with icons
@@ -194,7 +194,7 @@ In the following sample, icon classes are mapped with the `iconCss` field.
 Output for combobox control is as follows.
 
 
-![](Combobox_howto_images/howto_icon.png)
+![ASP.NET Core ComboBox Autofill supported](Combobox_howto_images/howto_icon.png)
 
 ## Autofill supported with ComboBox
 
@@ -242,7 +242,7 @@ In the following sample, showcase that how to work autofill with ComboBox.
 Output for grouping combobox control is as follows.
 
 
-![](Combobox_howto_images/autofill.png)
+![ASP.NET Core ComboBox jQuery Validator](Combobox_howto_images/autofill.png)
 
 ## Validation of ComboBox using jQuery Validator
 
@@ -356,8 +356,8 @@ The ComboBox supports the strongly typed Tag helpers represented by model expres
 
 Now, the ComboBox will be displayed with the value passed from model as shown below
 
-![](Combobox_howto_images/modelbinding.png)
+![ASP.NET Core ComboBox value passed from model](Combobox_howto_images/modelbinding.png)
 
 This value can be received during Http post during form submit as shown below
 
-![](Combobox_howto_images/Post.png)
+![ASP.NET Core ComboBox Http post during form submit](Combobox_howto_images/Post.png)
