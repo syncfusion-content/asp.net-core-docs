@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sorting with Grid widget for Syncfusion Essential Core
-description: How to enable sorting and its functionalities
+title: Sorting in ASP.NET Core Grid Control | Syncfusion
+description: Learn here about Sorting support in Syncfusion Essential ASP.NET Core Grid control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
-# Sorting
+# Sorting in Essential ASP.NET Core Grid
 
 The Grid control has support to sort data bound columns in ascending or descending order. This can be achieved by setting the `allow-sorting` property as `true`. 
 
@@ -44,7 +44,7 @@ public partial class GridController : Controller
 {% endtabs %} 
 The following output is displayed as a result of the above code example.
 
-![](Sorting_images/Sorting_img1.png)
+![Sorting in ASP.NET Core Grid](Sorting_images/Sorting_img1.png)
 
 ## Initial sorting
 
@@ -91,7 +91,7 @@ public partial class GridController : Controller
 
 The following output is displayed as a result of the above code example.
 
-![](Sorting_images/Sorting_img2.png)
+![Initial Sorting in ASP.NET Core Grid](Sorting_images/Sorting_img2.png)
 
 ## Multi-column sorting
 
@@ -138,7 +138,7 @@ public partial class GridController : Controller
 
 The following output is displayed as a result of the above code example.
 
-![](Sorting_images/Sorting_img3.png)
+![Multi Column Sorting in ASP.NET Core Grid](Sorting_images/Sorting_img3.png)
 
 ## Stable sorting
 
@@ -188,7 +188,7 @@ public partial class GridController : Controller
 
 The following output is displayed as a result of the above code example.
 
-![](Sorting_images/Sorting_img4.png)
+![Stable Sorting in ASP.NET Core Grid](Sorting_images/Sorting_img4.png)
 
 ## Touch options
 
@@ -229,7 +229,7 @@ public partial class GridController : Controller
 
 The following output is displayed as a result of the above code example.
 
-![](Sorting_images/Sorting_img5.png)
+![Touch Option in ASP.NET Core Grid](Sorting_images/Sorting_img5.png)
 
 
 N> To get the sorted data of the grid after sorting a column you can refer the [`How To`](https://help.syncfusion.com/aspnet-core/grid/how-to "Getting Datasource of Grid in Sorted Order").
