@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization
-description: Customization
+title: Customization in ASP.NET Core Gantt Control | Syncfusion
+description: Learn here about Customization support in Syncfusion Essential ASP.NET Core Gantt control, its elements, and more.
 platform: aspnet-core
 control: Gantt
 documentation: ug
 ---
 
-# Customizations 
+# Customizations in Essential ASP.NET Core Gantt
 
 Gantt provides support for the following UI customizations,
 
@@ -80,7 +80,7 @@ The DOM structure and class names mentioned in the above code snippet is mandato
 
 The following screenshot shows the template for taskbars in Gantt.
 
-![](Customization_images/Customization_img1.png)
+![Taskbar Template in ASP.NET Core Gantt](Customization_images/Customization_img1.png)
 
 ## Task label template
 
@@ -104,7 +104,7 @@ The following code example explains how to set task name field as right label an
 
 The following screenshot shows Gantt with task labels mapped with different data source fields
 
-![](Customization_images/Customization_img4.png)
+![Mapping Data Source Fields as Task Labels in ASP.NET Core Gantt](Customization_images/Customization_img4.png)
 
 ### Task label templates
 
@@ -150,7 +150,7 @@ It is possible to customize the task labels with templates, by using `right-task
 
 The following screenshot shows Gantt with task label templates.
 
-![](Customization_images/Customization_img2.png)
+![Task Labels Template in ASP.NET Core Gantt](Customization_images/Customization_img2.png)
 
 ## Tooltip template
 
@@ -209,7 +209,7 @@ The following code example shows how to customize the tooltip.
 
 The following screenshot shows Gantt with task tooltip customization.
 
-![](Customization_images/Customization_img3.png)
+![Taskbar Tooltip ASP.NET Core Gantt](Customization_images/Customization_img3.png)
 
 ### Dependency tooltip
 
@@ -256,7 +256,7 @@ The default dependency tooltip in Gantt can be customized by using `predecessor-
 {% endhighlight %}
 
 The following screenshot show the output of above code example.
-![](Customization_images/Customization_img8.png)
+![Dependency Tooltip in ASP.NET Core Gantt](Customization_images/Customization_img8.png)
 
 ### Cell tooltip 
 
@@ -301,7 +301,7 @@ TreeGrid part tooltip can also be customized using `cell-tooltip-template` prope
 
 {% endhighlight %}
 
-![](Customization_images/Customization_img5.png)
+![Cell Tooltip in ASP.NET Core Gantt](Customization_images/Customization_img5.png)
 
 ### Taskbar Editing Tooltip
 
@@ -357,7 +357,7 @@ Taskbar editing tooltip can be customized by using `taskbar-editing-tooltip-temp
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![](Customization_images/Customization_img6.png)
+![Customize Taskbar Editing Toolbar in ASP.NET Core Gantt](Customization_images/Customization_img6.png)
 
 #### Customize progress bar editing tooltip
 
@@ -385,4 +385,4 @@ Progress bar editing tooltip can be customized by using `progressbar-tooltip-tem
 {% endhighlight %}
 
 The below screenshot shows the output of above code example.
-![](Customization_images/Customization_img7.png)
+![Customize Progress Bar Editing Toolbar in ASP.NET Core Gantt](Customization_images/Customization_img7.png)

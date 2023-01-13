@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started on Linux| ASP.NET Core | Syncfusion
-description: Getting Started on Linux.
+description: Learn here about Getting Started on Linux in Syncfusion Essential ASP.NET Core Application, its elements, and more.
 platform: aspnet-core 
 control: Common 
 documentation: ug
 ---
 
 
-# Getting Started on Linux
+# Getting Started on Linux with ASP.NET Core Application
 
 > Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
@@ -163,7 +163,7 @@ mkdir Sample
 
 {% endhighlight %}
 
-  ![](getting-started-images-linux/getting_started_2_1.png)
+  ![Run Command in ASP.NET Core Application](getting-started-images-linux/getting_started_2_1.png)
 
 
 * Then run the below mentioned command to create a new web application. After command execution the project will be created within your folder.
@@ -174,7 +174,7 @@ mkdir Sample
 
 {% endhighlight %}
 
-  ![](getting-started-images-linux/getting_started_2_2.png)
+  ![Create New Web in ASP.NET Core Application](getting-started-images-linux/getting_started_2_2.png)
 
 
 #### Building Projects with Yeoman
@@ -210,17 +210,17 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 * From the list of available projects, select the *Web Application Basic* [without Membership and Authorization] by using arrow keys.
 
-  ![](getting-started-images-linux/getting_started_2_3.png)
+  ![Select Web in ASP.NET Core Application](getting-started-images-linux/getting_started_2_3.png)
 
 * And then provide the project name or simply press the ‘Enter’ key to create the project with default name.
 
-  ![](getting-started-images-linux/getting_started_2_4.png)
+  ![Create Project with Default in ASP.NET Core Application](getting-started-images-linux/getting_started_2_4.png)
 
 ### Configuring Syncfusion Components
 
 * Open Visual Studio Code and open your Sample application folder using **Open Folder** option. Now your project folder is loaded in Visual Studio Code application.
 
-  ![](getting-started-images-linux/getting_started_2_5.png)
+  ![Open Folder in ASP.NET Core Application](getting-started-images-linux/getting_started_2_5.png)
 
 > **bower.json** file has been deprecated from the latest version of DotNetCore 2.1. We have used syncfusion NPM packages and gulp task runner to download the necessary syncfusion scripts and CSS files into wwwroot folder.   
 
@@ -254,7 +254,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %} 
 
-![](getting-started-images-linux/getting_started_2_6.png)
+![Type Command in ASP.NET Core Application](getting-started-images-linux/getting_started_2_6.png)
 
 * After **package.json** file is created. Remove the content in that file and include the following dependencies.
 
@@ -275,7 +275,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
   {% endhighlight %}
 
-  ![](getting-started-images-linux/getting_started_2_7.png)
+  ![Remove Content in ASP.NET Core Application](getting-started-images-linux/getting_started_2_7.png)
 
   * Now, run the following commands to download syncfusion scripts and CSS in the node_modules directory.
 
@@ -339,19 +339,19 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
    To configure Visual Studio Code to use Gulp as task runner, Press **Ctrl+Shift+P** to bring up the command palette. Now type **Configure Task** and select **Create task.json file from template**.
   
-  ![](getting-started-images-linux/getting_started_2_9.png)
+  ![Configure Visual Studio Code in ASP.NET Core Application](getting-started-images-linux/getting_started_2_9.png)
 
    * This will create **task.json** file in .vscode directory.
 
-![](getting-started-images-linux/getting_started_2_10.png)
+![Create Task json in ASP.NET Core Application](getting-started-images-linux/getting_started_2_10.png)
 
 * Once again, press **Ctrl+Shift+P** to bring up the command palette. Type "Run Task" and select it, which will bring up a list of tasks configured in Gulp. Choose the Gulp Task **copy** to run gulp task to copy necessary script and CSS files from **node_modules** directory to **wwwroot** directory.
 
-  ![](getting-started-images-linux/getting_started_2_11.png)
+  ![ Commad Palette in ASP.NET Core Application](getting-started-images-linux/getting_started_2_11.png)
 
 * By the same way,type "Run Task" and select each gulp task mentioned in **gulpfile.js** to copy the scripts and CSS from the required package in **node_modules** directory to **wwwroot** directory.
 
-![](getting-started-images-linux/getting_started_2_15.png)
+![Run Task in ASP.NET Core Application](getting-started-images-linux/getting_started_2_15.png)
 
 * Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
@@ -363,7 +363,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %}
 
-  ![](getting-started-images-linux/getting_started_2_12.png)
+  ![Install NuGet Packages in in ASP.NET Core Application](getting-started-images-linux/getting_started_2_12.png)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -387,7 +387,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %}
 
- ![](getting-started-images-linux/getting_started_2_13.png)
+ ![Open Terminal Window in in ASP.NET Core Application](getting-started-images-linux/getting_started_2_13.png)
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
@@ -443,4 +443,4 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 * Then open your browser and paste the listening port **localhost:5000** to view your sample in browser.
 
- ![](getting-started-images-linux/getting_started_2_14.png)
+ ![Open Browser and Paste the Listening Port in in ASP.NET Core Application](getting-started-images-linux/getting_started_2_14.png)
