@@ -67,7 +67,7 @@ diagram.add(connector);
 
 Connectors can be predefined and added to the symbol palette. You can drop those connectors into the Diagram, when required.
 
-For more information about adding connectors from symbol palette, refer to [Symbol Palette](/aspnetmvc/Diagram/Symbol-Palette "Symbol Palette").
+For more information about adding connectors from symbol palette, refer to [Symbol Palette](/aspnetmvc/diagram/symbol-palette "Symbol Palette").
 
 ### Connectors through data source
 
@@ -78,7 +78,7 @@ For more information about data source, refer to [Data Binding](/aspnetmvc/Diagr
 
 ### Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/aspnetmvc/Diagram/Tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/aspnetmvc/diagram/tools#drawing-tools:connectors "Draw Connectors").
 
 ## Update Connector at runtime
 
@@ -647,7 +647,7 @@ The following code example illustrates how to customize the appearance of the de
 ![ASP.NET Core Diagram Decorator Appearance](Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction#connection-editing "Connection Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/diagram/interaction#connection-editing "Connection Editing").
 
 ## Constraints
-The `Constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/aspnet-core/Diagram/Constraints#connectorconstraints "Connector Constraints").
+The `Constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/aspnet-core/diagram/constraints#connectorconstraints "Connector Constraints").
