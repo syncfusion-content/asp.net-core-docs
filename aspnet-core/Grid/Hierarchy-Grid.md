@@ -69,7 +69,7 @@ public partial class GridController : Controller
 
 ## Expand or collapse all child's
 
-The grid can able to expand and collapse all the `ChildGrid` through programmatically using the [`expandAll`](http://help.syncfusion.com/js/api/ejgrid#methods:expandall "expandAll") and [`collapseAll`](http://help.syncfusion.com/js/api/ejgrid#methods:collapseall "collapseAll") method.
+The grid can able to expand and collapse all the `ChildGrid` through programmatically using the [`expandAll`](https://help.syncfusion.com/api/js/ejgrid#methods:expandall "expandAll") and [`collapseAll`](https://help.syncfusion.com/api/js/ejgrid#methods:collapseall "collapseAll") method.
 
 {% tabs %}
 
