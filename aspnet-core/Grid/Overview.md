@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  grid widget for Syncfusion Essential ASP.NET Core
-description: Overview for grid
+description: Learn here more about Overview in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more
 platform: aspnet-core
 control: grid
 documentation: ug
 ---
-# OverView
+# OverView in ASP.NET Core Grid
 
 The grid control for ASP.NET Core is an efficient display engine for tabular data. It will pull from a datasource, such as List of collections, OData web services, or DataManager and binding data fields to columns and displaying a column header to identify the field. It is a feature-rich control that provides extensive appearance customization options with support for grouped records. This grid is very useful for generating complex grid-based reports with rich formatting. Almost all the features in JS grid are applicable to grid in ASP.NET Core too.
 
