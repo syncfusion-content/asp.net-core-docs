@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout nodes and connectors in an organized structure
-description: How to arrange nodes by using the automatic layouts?
+title: Automatic Layout in ASP.NET Core Diagram Control | Syncfusion
+description: Learn here about Automatic Layout in Syncfusion Essential ASP.NET Core Diagram Control, its elements, and more.
 platform: ejmvc
 control: Diagram
 documentation: ug
 ---
 
-# Automatic Layout
+# Automatic Layout in ASP.NET Core Diagram
 
 Diagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
@@ -85,7 +85,7 @@ To arrange the nodes in hierarchical structure, you need to specify the layout `
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img1.png)
+![ASP.NET Core Diagram Radial Tree Layout](Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **ExcludeFromLayout** property as true.
 
@@ -180,7 +180,7 @@ To arrange nodes in a radial tree structure, you need to set the `Layout.Type` a
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img2.png) 
+![ASP.NET Core Diagram Organizational Chart](Automatic-Layout_images/Automatic-Layout_img2.png) 
 
 ## Organizational Chart
 
@@ -275,7 +275,7 @@ The following code example illustrates how to create an organizational chart.
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img3.png)
+![ASP.NET Core Diagram GetLayoutInfo](Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -411,7 +411,7 @@ The following code example illustrates how to set the vertical right arrangement
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img10.png)
+![ASP.NET Core Diagram Assistant](Automatic-Layout_images/Automatic-Layout_img10.png)
 
 ### Assistant
 
@@ -496,7 +496,7 @@ The following code example illustrates how to add assistants to layout.
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img11.png)
+![ASP.NET Core Diagram Customize Layout](Automatic-Layout_images/Automatic-Layout_img11.png)
 
 ## Customize Layout
 
@@ -566,7 +566,7 @@ The following code illustrates how to arrange the nodes in a "BottomToTop" orien
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img12.png)
+![ASP.NET Core Diagram Fixed Node](Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -612,7 +612,7 @@ This is helpful when you try to expand/collapse a node. It might be expected tha
     {% endhighlight %}
     {% endtabs %}
 
-![](Automatic-Layout_images/Automatic-Layout_img13.png) 
+![ASP.NET Core Diagram Expand and collapse](Automatic-Layout_images/Automatic-Layout_img13.png) 
 
 ### Expand and collapse
 
@@ -678,4 +678,4 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 
 ### Refresh layout
 
-Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/js/api/ejDiagram#methods:layout "Refresh layout").
+Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/js/api/ejdiagram#methods:layout "Refresh layout").
