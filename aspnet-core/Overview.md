@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview in ASP.NET Core Application | Syncfusion
+title: Introduction of Syncfusion ASP.NET CORE controls
 description: Learn here all about overview of Syncfusion Essential ASP.NET Core widgets based on HTML5 and jQuery.
 platform: aspnet-core 
 control: Introduction
 documentation: ug
 ---
 
-# Overview in Essential ASP.NET Core Application
+# Welcome to Syncfusion ASP.NET Core Controls of Essential JS 2
 
 Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, Gantt, scheduler, diagram and much more.   
 
