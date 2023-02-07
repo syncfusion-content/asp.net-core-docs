@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SSRS Configuration | ReportViewer | ASP.NET Core | Syncfusion
-description: Learn here more about ssrs configuration support in Syncfusion Essential ASP.NET Core ReportViewer Control, its elements, and more
+title: SSRS Configuration in ASP.NET Core ReportViewer control | Syncfusion
+description: Learn here more about ssrs configuration support in Syncfusion Essential ASP.NET Core ReportViewer Control, its elements, and more.
 platform: aspnet-core
 control: ReportViewer
 documentation: ug

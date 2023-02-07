@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Tab  | ASP.NET Core | Syncfusion
-description: Learn here more about Overview in Syncfusion Essential ASP.NET Core Tab Control, its elements, and more
+title: Overview in ASP.NET Core Tab control | Syncfusion
+description: Learn here more about Overview in Syncfusion Essential ASP.NET Core Tab Control, its elements, and more.
 platform: aspnet-core
 control: Tab 
 documentation: ug

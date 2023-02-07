@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | ASP.NET Core | Syncfusion
-description: Learn here more about Getting Started with Syncfusion Essential ASP.NET Core Application, its elements, and more
+title: Getting Started with ASP.NET Core Platform | Syncfusion
+description: Learn here more about Getting Started with Syncfusion Essential ASP.NET Core Application, its elements, and more.
 platform: aspnet-core 
 control: Common 
 documentation: ug

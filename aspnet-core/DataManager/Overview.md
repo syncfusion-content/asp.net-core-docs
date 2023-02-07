@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | DataManager  | ASP.NET Core | Syncfusion
-description: Learn here more about Overview in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more
+title: Overview in ASP.NET Core DataManager control  | Syncfusion
+description: Learn here more about Overview in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug

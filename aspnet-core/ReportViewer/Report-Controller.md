@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Report Controller | ReportViewer | ASP.NET Core | Syncfusion
-description: Learn here more about report controller support in Syncfusion Essential ASP.NET Core ReportViewer Control, its elements, and more
+title: Report Controller in ASP.NET Core ReportViewer control | Syncfusion
+description: Learn here more about report controller support in Syncfusion Essential ASP.NET Core ReportViewer Control, its elements, and more.
 platform: aspnet-core
 control: ReportViewer
 documentation: ug
