@@ -1,11 +1,10 @@
 ---
 layout: post
 title: Getting-Started with ASP.NET Core Pdf Viewer | Syncfusion
-description: Learn here on getting started with ASP.NET Core Pdf Viewer default behavior settings and how to perform required operation.
+description: Learn here more about getting started with Syncfusion Essential ASP.NET Core Pdf Viewer Control, its elements, and more.
 platform: aspnet-core
 control: Pdf Viewer
 documentation: ug
 ---
-
 
 # Getting-Started with ASP.NET Core Pdf Viewer
