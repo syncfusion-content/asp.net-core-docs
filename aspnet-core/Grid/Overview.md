@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview for Syncfusion Essential ASP.NET Core
+title: Grid widget for Syncfusion Essential ASP.NET Core
 description: Learn here more about Overview in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: grid
