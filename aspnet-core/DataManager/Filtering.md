@@ -773,7 +773,7 @@ The ALL operator returns true if all the sub query values meet the condition. Th
 
 {% endtabs %}
 
-![All ASP.NET Core DataManager](Filtering_images/Filtering_image16.png) 
+![Operators in ASP.NET Core DataManager](Filtering_images/Filtering_image16.png) 
 
 ### any
 
@@ -832,4 +832,4 @@ The ANY operator returns true if any of the sub query values meet the condition.
 
 {% endtabs %}
 
-![Any ASP.NET Core DataManager](Filtering_images/Filtering_image17.png) 
+![Field Records in ASP.NET Core DataManager](Filtering_images/Filtering_image17.png) 
