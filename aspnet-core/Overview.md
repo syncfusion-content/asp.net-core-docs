@@ -9,6 +9,8 @@ documentation: ug
 
 # Welcome to Syncfusion Essential ASP.NET Core
 
+> Syncfusion jQuery based widgets are no longer in active development. Switch to our pure JavaScript based next generation Essential JS 2 library.
+
 Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 JavaScript components for building modern web applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including charts, grids, Gantt, scheduler, diagram and much more.   
 
 ## How to best read this user guide
