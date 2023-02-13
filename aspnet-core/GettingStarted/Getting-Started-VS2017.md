@@ -127,7 +127,7 @@ The following steps help you to use the Syncfusion Project Conversion in the exi
 
    **Choose Copy Global Resources:** 
     
-   The localization culture files will be shipped into Scripts\ej\i18n directory of the project.
+
 
    ![Choose Copy Global Resources to ship the localization culture files for ASP.NET Core project](getting-started_images/Project-Conversion_img14.jpeg)   
 
