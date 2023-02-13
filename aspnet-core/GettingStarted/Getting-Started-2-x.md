@@ -141,8 +141,8 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
 
-* Create a new folder in your local directory.
-* Open the command prompt from your local directory with administrator mode.
+
+
 * In the command prompt we have an options to develop a below listed types of projects. The default type as console application. To know more about the project options and its syntax declarations refer the [.NET](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new#) link.
 
 * Run the below command to know about project creation templates.
@@ -215,7 +215,7 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
   ![package](getting-started_images/getting-started_img20.png)
 
 
-* Now, run the following commands to download syncfusion scripts and CSS in the node_modules directory.
+
 
 {% highlight text %}
 
@@ -225,7 +225,7 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
 
 {% endhighlight %} 
 
-* Add the **gulpfile.js** in the root directory and kindly include the below mentioned gulp task in the **gulpfile.js**.
+
 
  {% highlight cshtml %} 
 
@@ -237,7 +237,7 @@ N> **bower.json** file has been deprecated from the latest version of DotNetCore
 
   {% endhighlight %}
 
-*  Open then command window prompt and run the below command to copy the necessary script and CSS files from node_modules directory to wwwroot directory.
+
 
 {% highlight text %}
 
@@ -456,7 +456,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
   ![package](getting-started_images/getting-started_img20.png)
 
 
-* Now, run the following commands to download syncfusion scripts and CSS in the node_modules directory.
+
 
 {% highlight text %}
 
@@ -464,7 +464,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
 
 {% endhighlight %} 
 
-* Add the **gulpfile.js** in the root directory and kindly include the below mentioned gulp task in the **gulpfile.js**.
+
 
  {% highlight cshtml %} 
 
@@ -476,7 +476,7 @@ Since **Visual Studio Code** uses folder structure for storing files of applic
 
   {% endhighlight %}
 
-*  Open then command window prompt and run the below command to copy the necessary script and CSS files from node_modules directory to wwwroot directory.
+
 
 {% highlight text %}
 

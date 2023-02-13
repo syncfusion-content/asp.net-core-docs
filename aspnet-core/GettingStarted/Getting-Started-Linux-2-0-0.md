@@ -140,7 +140,7 @@ ASP.NET Core Web application can be created in any one of the following ways.
 
 The following steps helps to create a ASP.NET Core web application using terminal window.
 
-* Open a terminal window to create a new directory for your project creation.
+
 
 {% highlight text %}
 
@@ -149,7 +149,7 @@ mkdir Sample
 {% endhighlight %}
 
 
-* Then navigate to your folder directory in your terminal window.
+
 
 * In terminal window, the following steps helps to create a ASP.NET Core web application to configure our components.
 
@@ -277,7 +277,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
   ![Remove Content in ASP.NET Core Application](getting-started-images-linux/getting_started_2_7.png)
 
-  * Now, run the following commands to download syncfusion scripts and CSS in the node_modules directory.
+
 
 {% highlight text %}
   
@@ -285,7 +285,7 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 {% endhighlight %} 
 
-* Add the **gulpfile.js** in the root directory and kindly include the below mentioned gulp task in the **gulpfile.js**.
+
 
  {% highlight cshtml %} 
 
@@ -341,15 +341,15 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
   
   ![Configure Visual Studio Code in ASP.NET Core Application](getting-started-images-linux/getting_started_2_9.png)
 
-   * This will create **task.json** file in .vscode directory.
+
 
 ![Create Task json in ASP.NET Core Application](getting-started-images-linux/getting_started_2_10.png)
 
-* Once again, press **Ctrl+Shift+P** to bring up the command palette. Type "Run Task" and select it, which will bring up a list of tasks configured in Gulp. Choose the Gulp Task **copy** to run gulp task to copy necessary script and CSS files from **node_modules** directory to **wwwroot** directory.
+
 
   ![ Commad Palette in ASP.NET Core Application](getting-started-images-linux/getting_started_2_11.png)
 
-* By the same way,type "Run Task" and select each gulp task mentioned in **gulpfile.js** to copy the scripts and CSS from the required package in **node_modules** directory to **wwwroot** directory.
+
 
 ![Run Task in ASP.NET Core Application](getting-started-images-linux/getting_started_2_15.png)
 
