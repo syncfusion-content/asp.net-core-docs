@@ -119,7 +119,7 @@ ASP.NET Core Web application can be created in any one of the following ways.
 
 The following steps helps to create a ASP.NET Core web application using terminal window.
 
-* Open a terminal window to create a new directory for your project creation.
+
 
 {% highlight text %}
 
@@ -128,7 +128,7 @@ mkdir Sample
 {% endhighlight %}
 
 
-* Then navigate to your folder directory in your terminal window.
+
 * In terminal window, you have an option to develop a below listed types of ASP.NET Core projects. The default project type as console application. If you want to create any other specific type project, need to specify the **-t** (**template**) key in command before the project type name. To know more about the project options and its syntax declarations refer the dotnet link.
 
 
