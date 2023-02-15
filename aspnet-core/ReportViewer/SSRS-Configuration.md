@@ -1,15 +1,15 @@
 ---
 layout: post
-title: SSRS Configuration | Syncfusion
-description: ssrs configuration
+title: SSRS Configuration in ASP.NET Core Report Viewer| Syncfusion
+description: Learn here about ssrs configuration in Syncfusion Essential ASP.NET Core Report Viewer Control, its elements, and more.
 platform: aspnet-core
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 ---
 
-# SSRS Configuration
+# SSRS Configuration in ASP.NET Core Report Viewer
 
-The ReportViewer has support to load RDL reports from SSRS server. You have to set your SSRS server URL to ReportViewer’s ReportServiceUrl property and set the relative path of RDL file in SSRS to ReportViewer’s ReportPath property. 
+The Report Viewer has support to load RDL reports from SSRS server. You have to set your SSRS server URL to Report Viewer’s ReportServiceUrl property and set the relative path of RDL file in SSRS to ReportViewer’s ReportPath property. 
 
 {% highlight javascript %}
 

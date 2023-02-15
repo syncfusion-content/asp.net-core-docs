@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Report Controller | Syncfusion
-description: report controller
+title: Report Controller in ASP.NET Core Report Viewer Control | Syncfusion
+description: Learn here about Report Controller in Syncfusion Essential ASP.NET Core Report Viewer Control, its elements, and more.
 platform: aspnet-core
-control: ReportViewer
+control: Report Viewer
 documentation: ug
 ---
 
-# Report Controller
+# Report Controller in ASP.NET Core Report Viewer
 
-The ReportViewer uses Web API services to process the report file, process the request from control and to return the processed data to control. The Syncfusion.EJ.ReportViewer assembly has helper APIs to define the service actions and process the service requests. 
+The Report Viewer uses Web API services to process the report file, process the request from control and to return the processed data to control. The Syncfusion.EJ.Report Viewer assembly has helper APIs to define the service actions and process the service requests. 
 
 ## IReportController
 
-The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from ReportViewer control. The `IReportController` has the following action methods declaration. 
+The interface `IReportController` has the declaration of action methods that is defined in WebApi Controller for processing the RDL/RDLC files and for processing request from Report Viewer control. The `IReportController` has the following action methods declaration. 
 
 <table>
 <tr>
