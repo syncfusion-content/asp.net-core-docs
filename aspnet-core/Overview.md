@@ -7,7 +7,6 @@ control: Introduction
 documentation: ug
 ---
 
-
 > The Syncfusion ASP.NET Core controls in the Essential JavaScript 1 library, which are based on jQuery widgets, are no longer under active development. The 2022 Volume 4 is the final release for these controls. We recommend that users migrate to the Syncfusion ASP.NET Core controls available in the Essential JS 2 library, which have been designed to be lightweight and modular. To learn more, please refer to the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) and [demo](https://ej2.syncfusion.com/aspnetcore/Grid/GridOverview) for the Syncfusion ASP.NET Core controls in Essential JS 2 library.
 
 # Welcome to Syncfusion Essential ASP.NET Core
