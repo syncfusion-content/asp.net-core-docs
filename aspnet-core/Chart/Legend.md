@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart legend| Chart  | ASP.NET CORE | Syncfusion
-description: How to cutomize the legend in Essential JavaScript Chart.
+description: Learn here about legend suport in Syncfusion Essential JavaScript Chart Control, its elements and more.
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
 
-# Legend
+# Legend in JavaScript Chart
 
 The legend contains the list of chart series and trendlines that appear in a chart. 
 
@@ -25,7 +25,7 @@ By default, the legend is enabled in the chart. You can enable or disable this b
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img1.png)
+![JavaScript Chart Legend title](Legend_images/Legend_img1.png)
 
 ## Legend title
 
@@ -41,7 +41,7 @@ To add title to the legend, specify the **Legend.Title.Text** option.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img2.png)
+![JavaScript Chart Position and align the legend](Legend_images/Legend_img2.png)
 
 
 ## Position and align the legend
@@ -58,7 +58,7 @@ By using the **Position** option, you can position the legend at left, right, to
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![JavaScript Chart Legend alignment](Legend_images/Legend_img3.png)
 
 **Legend alignment**
 
@@ -74,7 +74,7 @@ You can align the legend to center, far, or near based on its position by using 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png)
+![JavaScript Chart legend items](Legend_images/Legend_img4.png)
 
 ## Arrange legend items in the rows and columns
 
@@ -99,7 +99,7 @@ You can arrange the legend items horizontally and vertically by using the **RowC
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![JavaScript Chart Legend shape](Legend_images/Legend_img5.png)
 
 ## Customization
 
@@ -117,7 +117,7 @@ To change the legend icon shape, specify the shape in the **Shape** property of 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
+![JavaScript Chart Legend items size and border](Legend_images/Legend_img6.png)
 
 ### Legend items size and border
 
@@ -133,7 +133,7 @@ You can change the size of the legend items by using the **ItemStyle.Width** and
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![JavaScript Chart Legend size](Legend_images/Legend_img7.png)
 
 ### Legend size
 
@@ -149,7 +149,7 @@ By default, legend takes 20% of the **Height** horizontally when it is placed on
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![JavaScript Chart Legend item padding](Legend_images/Legend_img8.png)
 
 ### Legend item padding
 
@@ -165,7 +165,7 @@ You can control the spacing between the legend items by using the **ItemPadding*
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img9.png)
+![JavaScript Chart Legend border](Legend_images/Legend_img9.png)
 
 ### Legend border
 
@@ -181,7 +181,7 @@ You can customize the legend border by using the **Border** option in the legend
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img10.png)
+![JavaScript Chart Scrollbar for legend](Legend_images/Legend_img10.png)
 
 ### Scrollbar for legend
 
@@ -197,7 +197,7 @@ You can enable or disable the legend scrollbar by using the **EnableScrollbar** 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img11.png)
+![JavaScript Chart Customize the legend text](Legend_images/Legend_img11.png)
 
 ### Customize the legend text
 
@@ -217,7 +217,7 @@ To customize the text and title of the legend item, use the **Legend.Font** and 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img12.png)
+![JavaScript Chart Legend items text overflow](Legend_images/Legend_img12.png)
 
 ### Legend items text overflow
 
@@ -236,19 +236,19 @@ You can trim the text of the legend item when its width exceeds the **Legend.Tex
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img13.png)
+![JavaScript Chart Wrap](Legend_images/Legend_img13.png)
 
 **Wrap**
 
 By specifying **TextOverflow** to **Wrap**, you can wrap the legend text by word.
 
-![](Legend_images/Legend_img14.png)
+![JavaScript Chart WrapAndTrim](Legend_images/Legend_img14.png)
 
 **WrapAndTrim**
 
 You can wrap and trim the legend text by specifying **TextOverflow** as **WrapAndTrim**. The original text will be displayed on mouse hover.
 
-![](Legend_images/Legend_img15.png)
+![JavaScript Chart Handle the legend item click](Legend_images/Legend_img15.png)
 
 
 ## Handle the legend item click
@@ -286,7 +286,7 @@ You can select a specific series or point while clicking the corresponding legen
       
 {% endhighlight %}
 
-![](Legend_images/Legend_img16.png)
+![JavaScript Chart Collapsing legend item](Legend_images/Legend_img16.png)
 
 
 ## Collapsing legend item
@@ -312,4 +312,4 @@ You can collapse the legend item of the specific series/point, which is displaye
       
 {% endhighlight %}
 
-![](Legend_images/Legend_img17.png)
+![JavaScript Chart legend](Legend_images/Legend_img17.png)
