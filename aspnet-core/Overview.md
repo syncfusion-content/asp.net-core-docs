@@ -31,5 +31,5 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 ## Create a support incident
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.syncfusion.com/support/) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://internalsupport.bolddesk.com/agent/tickets/create) by creating a support ticket.
 
