@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Limitations | ReportViewer | ASP.NET Core | Syncfusion
-description: limitations
+description: Learn here about Limitations in Syncfusion Essential ASP.NET Core ReportViewer Control, its elements, and more.
 platform: aspnet-core
 control: ReportViewer
 documentation: ug
 ---
 
-# Limitations
+# Limitations in ASP.NET Core ReportViewer
 
 ## RDL Specification support
 
