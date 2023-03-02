@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Core Concepts in ASP.NET Core Common | Syncfusion
-description: Learn here about Core Concepts in Syncfusion Essential ASP.NET Core Common Control, its elements, and more.
+title: Core Concepts in ASP.NET Core | Syncfusion
+description: Learn here about Core Concepts in Syncfusion Essential ASP.NET Core Concepts Control, its elements, and more.
 platform: aspnet-core
-control: Common 
+control: Concept
 documentation: ug
 ---
 
-# Core Concepts in ASP.NET Core Common
+# Core Concepts in ASP.NET Core 
 
 ## Basics
 

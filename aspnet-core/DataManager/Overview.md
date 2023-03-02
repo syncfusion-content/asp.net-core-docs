@@ -7,7 +7,7 @@ control: DataManager
 documentation: ug
 ---
 
-# DataManager in ASP.NET Core
+# Overview of ASP.NET Core DataManager
 
 DataManager helps in managing relational data in the ASP.NET Core. Its rich features make querying data sources easier. The ODataClient supports OData queries that are enabled in the Web API & WCF data services.
 

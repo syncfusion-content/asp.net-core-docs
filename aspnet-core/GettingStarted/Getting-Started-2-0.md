@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started | ASP.NET Core | Syncfusion
-description: Learn here more about getting started with Syncfusion Essential ASP.NET Core Common Control, its elements, and more.
+description: Learn here more about getting started with Syncfusion Essential ASP.NET Core 20. Control, its elements, and more.
 platform: aspnet-core 
-control: Common 
+control: 2.0 Application
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core
+# Getting Started with ASP.NET Core 2.0 Application
 
 > Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
   
