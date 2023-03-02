@@ -39,44 +39,44 @@ In file explorer, files have been displayed in 3 types of views “Grid”, “T
 <td>
 NewFolder <br/><br/></td>
 <td>
-It creates a new folder on the current directory.<br/><br/>While click on the NewFolder item, the dialog displays to get the folder name. Based on the user input, FileExplorer creates new folder on the current directory.
+
 Also {{'[createFolder](https://help.syncfusion.com/api/js/ejfileexplorer#events:createfolder)'| markdownify}} event will be triggered when new folder is created successfully in the file system.<br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
 <td>
 Back <br/><br/></td>
 <td>
-It navigates to the previous directory from the user history. When the backward history is not available, it will be in disabled state.<br/><br/><br/><br/></td>
+
 </tr>
 <tr>
 <td>
 Forward <br/><br/></td>
 <td>
-It navigates to the next directory from the user history. When the forward history is not available, it will be in disable state.<br/><br/><br/><br/></td>
+
 </tr>
 <tr>
 <td>
 Upward <br/><br/></td>
 <td>
-It navigates to the parent directory of the current folder.<br/><br/><br/><br/></td>
+
 </tr>
 <tr>
 <td>
 Address bar<br/><br/></td>
 <td>
-The “address bar” is the textbox that displays the path of the current directory, as a series of its parent directory will be separated by slash (“/”).<br/><br/>And the address bar is an editable area, where you can enter any directory’s path for a quick navigation.<br/><br/><br/><br/></td>
+
 </tr>
 <tr>
 <td>
 Refresh <br/><br/></td>
 <td>
-It refreshes the current directory.<br/><br/><br/><br/></td>
+
 </tr>
 <tr>
 <td>
 Upload <br/><br/></td>
 <td>
-It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check {{'[here](https://help.syncfusion.com/js/fileexplorer/toolbar#customizing-the-upload-functionality)'| markdownify }}.
+
 <br/><br/><br/><br/></td></tr>
 </tr>
 <tr>
@@ -130,12 +130,12 @@ It displays the details of the currently selected file or folder.<br/><br/><br/>
 <td>
 Search bar<br/><br/></td>
 <td>
-The Search bar is the textbox that is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the “search bar” can be customized. For more details, check <br/>{{'[here](#_Search_bar)'| markdownify }}.<br/><br/></td>
+
 </tr>
 <tr>
 <td>
 Sort by <br/><br/></td><td>
-It is used to sort the files from the current directory. The sorting can be done based on the columns available from grid, in both ascending and descending order.<br/><br/><br/><br/></td>
+
 </tr>
 </table>
 
