@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview | DataManager  | ASP.NET Core | Syncfusion
-description: overview 
+description: Learn here about overview of Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 ---
 
-# DataManager
+# Overview of ASP.NET Core DataManager
 
 DataManager helps in managing relational data in the ASP.NET Core. Its rich features make querying data sources easier. The ODataClient supports OData queries that are enabled in the Web API & WCF data services.
 

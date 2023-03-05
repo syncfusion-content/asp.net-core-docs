@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Filtering with grid widget for Syncfusion Essential ASP.NET Core
-description: How to enable filtering and its functionalities
+description: Learn here about filtering support in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: grid
 documentation: ug
 ---
-# Filtering
+# Filtering in ASP.NET Core Grid
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allow-filtering` property as `true`.   
 
@@ -63,7 +63,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img1.png)
+![ASP.NET Core Grid Menu filter](filtering_images/filtering_img1.png)
 
 
 ## Menu filter
@@ -110,19 +110,19 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img2.png)
+![ASP.NET Core Grid Numeric filter](filtering_images/filtering_img2.png)
 
 Numeric filter
 
-![](filtering_images/filtering_img3.png)
+![ASP.NET Core Grid String filter](filtering_images/filtering_img3.png)
 
 String filter
 
-![](filtering_images/filtering_img4.png)
+![ASP.NET Core Grid Date filter](filtering_images/filtering_img4.png)
 
 Date filter
 
-![](filtering_images/filtering_img5.png)
+![ASP.NET Core Grid Boolean filter](filtering_images/filtering_img5.png)
 
 Boolean filter
 
@@ -167,7 +167,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img6.png)
+![ASP.NET Core Grid Filtering between values](filtering_images/filtering_img6.png)
 
 ### Filtering between values
 
@@ -222,7 +222,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img7.png)
+![ASP.NET Core Grid selection](filtering_images/filtering_img7.png)
 
 
 ### Add current selection to filter checkbox:
@@ -231,7 +231,7 @@ When filtering is done multiple times on the same column then the previously fil
 
 The following image describes the previous mentioned behavior.
 
-![](filtering_images/filtering_img12.png)
+![ASP.NET Core Grid Case sensitivity](filtering_images/filtering_img12.png)
 
 
 ### Case sensitivity
@@ -274,7 +274,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img8.png)
+![ASP.NET Core Grid Filter bar](filtering_images/filtering_img8.png)
 
 
 ## Filter bar
@@ -455,7 +455,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img9.png)
+![ASP.NET Core Grid Filter bar modes](filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -506,7 +506,7 @@ The following code example describes the previous behavior.
 
 The following output is displayed as a result of the previous code example.
 
-![](filtering_images/filtering_img10.png)
+![ASP.NET Core Grid FilterBar operators](filtering_images/filtering_img10.png)
 
 
 ## Filter operators
@@ -727,6 +727,6 @@ The following code example describes the previous behavior.
 The following output is displayed as a result of the previous code example.
 
 
-![](filtering_images/filtering_img11.png)
+![ASP.NET Core Grid after filtering](filtering_images/filtering_img11.png)
 {:caption}
 After Filtering
