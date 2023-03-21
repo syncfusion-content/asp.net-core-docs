@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview | Tab  | ASP.NET Core | Syncfusion
-description: overview
+description: Learn here more about overview in Syncfusion Essential ASP.NET Core Tab Control, its elements, and more.
 platform: aspnet-core
 control: Tab 
 documentation: ug
 ---
 
-# Tab
+# Ovierview in ASP.NET Core Tab
 
 The tab control is an interface where the list of items are expanded from a single item. Each tab panel defines its header text or header template, as well as a content template. The tab items can be dynamically added and removed. It is loaded with AJAX content useful for building dashboards where space is limited.
 
