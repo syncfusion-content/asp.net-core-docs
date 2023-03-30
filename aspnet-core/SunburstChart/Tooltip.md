@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip
-description: Learn how to add Tooltip to Sunburstchart .
+title: Tooltip support in ASP.NET Core SunburstChart Control | Syncfusion
+description: Learn how to add Tooltip support in Syncfusion Essential ASP.NET Core SunburstChart Control, its elements, and more.
 platform: aspnet-core
 control: Sunburst Chart
 documentation: ug
 ---
 
-## Tooltip  
+# Tooltip in ASP.NET Core SunburstChart
 
 ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value
 
@@ -19,7 +19,7 @@ ToolTip allows you to display any information over a sunburst segment. It appear
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img1.png)
+![ASP.NET Core SunburstChart tooltip template](Tooltip_images/Tooltip_img1.png)
 
 ## Tooltip Template   
 
@@ -45,7 +45,7 @@ HTML elements can be displayed in the tooltip by using the *Template* property o
 
 {% endhighlight %}
 
-![](Tooltip_images/Tooltip_img2.png)
+![ASP.NET Core SunburstChart appearance of tooltip](Tooltip_images/Tooltip_img2.png)
 
 ## Customize the appearance of tooltip
 
