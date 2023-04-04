@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding | TreeGrid | ASP.NET Core | Syncfusion
-description: data binding
+description: Learn here more about data binding support in Syncfusion Essential ASP.NET Core TreeGrid Control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ASP.NET Core TreeGrid
 
 Data Binding is the process that establishes a connection between the application and different kinds of data sources such as business objects.
 
@@ -290,7 +290,7 @@ The following code example shows you how to bind the Hierarchical local data int
 
 The output of the above steps is as follows:
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Hierarchy Datasource Binding in ASP.NET Core TreeGrid](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -484,7 +484,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 
 The following screenshot shows the output of the above steps,
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![Self-Referential Data Binding in ASP.NET Core TreeGrid](Data-Binding_images/Data-Binding_img2.png)
 
 ## Remote data binding
 
@@ -530,8 +530,8 @@ The following code explains how to use Load on Demand in TreeGrid Control,
 
 The output for load on demand support in TreeGrid:
 
-![](Data-Binding_images/Data-Binding_img3.png)
-![](Data-Binding_images/Data-Binding_img4.png)
+![Remote data binding in ASP.NET Core TreeGrid](Data-Binding_images/Data-Binding_img3.png)
+![Load on demand in ASP.NET Core TreeGrid](Data-Binding_images/Data-Binding_img4.png)
 
 The following code snippet shows on how to enable load on demand support using  [`EnableLoadOnDemand`](https://help.syncfusion.com/api/js/ejtreegrid#members:enableLoadOnDemand "enableLoadOnDemand") property.
 
@@ -547,7 +547,7 @@ The following code snippet shows on how to enable load on demand support using  
 
 The following output shows how load on demand works for expanding action
 
-![](Data-Binding_images/Data-Binding_img5.png)
+![Load on demand works for expanding action in ASP.NET Core TreeGrid](Data-Binding_images/Data-Binding_img5.png)
 
 ### Load at once:
 
