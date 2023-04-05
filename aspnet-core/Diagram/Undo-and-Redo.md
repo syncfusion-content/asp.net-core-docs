@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# History Manager in ASP.NET Core Diagram
+# Undo and Redo in ASP.NET Core Diagram
 
 Diagram tracks the history of actions that are performed after loading the time and provides support to reverse and restore those changes.
 
