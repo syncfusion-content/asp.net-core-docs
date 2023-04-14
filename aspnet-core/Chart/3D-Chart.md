@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 3D Chart | Chart | ASP.NET CORE | Syncfusion
-description: 3d chart
+description: Learn here more about 3d chart support in Syncfusion Essential ASP.NET Core Charts Control, its elements, and more.
 platform: aspnet-core
 control: Chart
 documentation: ug
 ---
 
-# 3D Chart
+# 3D Chart in ASP.NET Core Charts
 
 Essential 3D chart for ASP.NET Core allows you to view 8 chart types in 3D view such as bar, stacking bar, stacking bar 100, column, stacked column, 100% stacked column, pie, and doughnut.
 
@@ -29,7 +29,7 @@ For rendering a 3D column chart, specify the series type to **Column** in the ch
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img1.png)
+![3D column chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img1.png)
 
 
 ## 3D bar chart
@@ -50,7 +50,7 @@ You can create a 3D bar chart by setting the series type to **Bar** in the chart
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img2.png)
+![3D bar chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img2.png)
 
 
 ## 3D stacked column chart
@@ -76,7 +76,7 @@ You can create a 3D stacked column chart by setting the series type to **Stackin
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img3.png)
+![3D stacked column chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img3.png)
 
 ## 3D 100% stacked column chart
 
@@ -101,7 +101,7 @@ You can create a 3D stacked column chart by setting the series type to **Stackin
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img4.png)
+![3D 100% stacked column chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img4.png)
 
 
 ## 3D stacked bar chart
@@ -127,7 +127,7 @@ To create stacking bar 3D chart, set the series type to **StackingBar** in the c
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img5.png)
+![3D stacked bar chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img5.png)
 
 
 ## 3D 100% stacked bar chart
@@ -153,7 +153,7 @@ You can create 100% stacking bar 3D chart by setting the series type to **Stacki
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img6.png)
+![3D 100% stacked bar chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img6.png)
 
 
 ## 3D pie chart
@@ -174,7 +174,7 @@ To render the pie chart in 3D view, enable the **Enbel3D** option in the chart, 
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img7.png)
+![3D pie chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img7.png)
 
 
 ## 3D doughnut chart
@@ -195,7 +195,7 @@ To render the doughnut chart in 3D view, enable the **Enbel3D** option in the ch
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img8.png)
+![3D doughnut chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img8.png)
 
 
 ## Configure 3D chart
@@ -215,7 +215,7 @@ To render the chart in 3D view, set the **Enable3D** option to true in the chart
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img9.png)
+![3D view in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img9.png)
 
 
 ### Placing bar/column kind of series side-by-side
@@ -233,7 +233,7 @@ The **SideBySideSeriesPlacement** property defines the appearance of the differe
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img10.png)
+![Placing bar/column kind of series side-by-side in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img10.png)
 
 
 ### Setting axis wall size
@@ -251,7 +251,7 @@ In 3D chart, Cartesian axes lines are represented as walls, and they define the 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img11.png)
+![Setting axis wall size in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img11.png)
 
 
 ### 3D depth
@@ -269,7 +269,7 @@ By using the **Depth** property, you can view the 3D chart from the front view o
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img12.png)
+![3D depth in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img12.png)
 
 
 ### Rotating and tilting 3D chart
@@ -287,7 +287,7 @@ To spin the 3D chart by dragging the mouse, enable **EnableRotation** option in 
 {% endhighlight %}
 
 
-![](3D-Chart_images/3D-Chart_img13.png)
+![Rotating and tilting 3D chart in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img13.png)
 
 
 ### PerspectiveAngle	
@@ -304,4 +304,4 @@ The **PerspectiveAngle** specifies the appearance of the height, width, depth, a
 
 {% endhighlight %}
 
-![](3D-Chart_images/3D-Chart_img14.png)
+![PerspectiveAngle in ASP.NET Core Chart](3D-Chart_images/3D-Chart_img14.png)
