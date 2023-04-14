@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks | CircularGauge | Syncfusion
-description: ticks
+title: Ticks in ASP.NET Core CircularGauge Control | Syncfusion
+description: Learn here more about ticks support in Syncfusion Essential ASP.NET Core Circular Gauge Control, its elements, and more.
 platform: aspnet-core
 control: CircularGauge
 documentation: ug
 ---
 
-# Ticks
+# Ticks in ASP.NET Core Circular Gauge
 
 Ticks are used to mark some values on the scale. Based on the tick’s value you can set the labels on the required position.
 
@@ -31,7 +31,7 @@ Tick collection is directly added to the scale object. Refer the following code 
 {% endhighlight %}
 Execute the above code to render the following output.
 
-![](Ticks_images/Ticks_img1.png)
+![Adding Tick Collection in ASP.NET Core Circular Gauge](Ticks_images/Ticks_img1.png)
 
 Circular Gauge with tick collection
 {:.caption}
@@ -62,7 +62,7 @@ placement="@TickPlacement.Near" distance-from-scale="5"></e-ticks>
 
 Execute the above code to render the following output.
 
-![](Ticks_images/Ticks_img2.png)
+![Tick Customization in ASP.NET Core Circular Gauge](Ticks_images/Ticks_img2.png)
 
 Circular Gauge with tick customization
 {:.caption}

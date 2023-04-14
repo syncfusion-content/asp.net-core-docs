@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summary-Row
-description: summary row
+title: Summary Row in ASP.NET Core TreeGrid Control | Syncfusion
+description: Learn here more about summary row support in Syncfusion Essential ASP.NET Core TreeGrid Control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
 documentation: ug
 ---
 
-# Summary Row
+# Summary Row in ASP.NET Core TreeGrid
 
 Summary rows in TreeGrid is used to summarize every hierarchy with the set of predefined summary types using the column values. 
 
@@ -45,7 +45,7 @@ The below code snippet explains defining a summary row in TreeGrid,
 </ej-tree-grid>
 {% endhighlight %}
 The below screenshot shows the output of above code example.
-![](SummaryRows_images/SummaryRows_img1.png)
+![Defining summary columns in ASP.NET Core TreeGrid](SummaryRows_images/SummaryRows_img1.png)
 
 ## Customize height of total summary
 
@@ -57,7 +57,7 @@ The below code example shows how to update the footer summary container height.
 </ej-tree-grid>
 {% endhighlight %}
 The below screenshot shows the output of above code example.
-![](SummaryRows_images/SummaryRows_img2.png)
+![Customize height of total summary in ASP.NET Core TreeGrid](SummaryRows_images/SummaryRows_img2.png)
 
 ## Expand/collapse total summary row
 
@@ -75,7 +75,7 @@ Please find the below code example to enable collapsible total summary row in Tr
    //..
 </ej-tree-grid>
 {% endhighlight %}
-![](SummaryRows_images/SummaryRows_img3.png)
+![Using Expander Icon in ASP.NET Core TreeGrid](SummaryRows_images/SummaryRows_img3.png)
 
 N> We can also customize the expander icon column in total summary row by using `_summaryColumnIndex` property and `load` event.
 
@@ -125,4 +125,4 @@ Custom summary can be used to create summary values based on your required custo
 
 The output of the tree grid with custom summary value is as follows.
 
-![](SummaryRows_images/CustomSummary_img1.png)
+![Custom Summary in ASP.NET Core TreeGrid](SummaryRows_images/CustomSummary_img1.png)
