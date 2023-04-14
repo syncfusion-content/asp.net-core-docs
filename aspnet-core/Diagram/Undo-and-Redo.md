@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Undo and Redo | Diagram | ASP.NET CORE | Syncfusion
-description: undo and redo
+description: Learn here more about undo and redo support in Syncfusion Essential ASP.NET Core Diagram Control, its elements, and more.
 platform: aspnet-core
 control: Diagram
 documentation: ug
 ---
 
-# History Manager
+# Undo and Redo in ASP.NET Core Diagram
 
 Diagram tracks the history of actions that are performed after loading the time and provides support to reverse and restore those changes.
 
