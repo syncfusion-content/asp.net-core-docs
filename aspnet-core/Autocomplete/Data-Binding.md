@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding | AutoComplete | ASP.NET Core | Syncfusion
-description: data-binding
+description: Learn here about data binding in Syncfusion Essential ASP.NET Core AutoComplete Control, its elements, and more.
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
 ---
 
-# Data-Binding
+# Data Binding in ASP.NET Core AutoComplete
 
 In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The following sub-properties provide a way to bind either the local or remote data to the AutoComplete widget by binding the appropriate data fields to the corresponding options.
 

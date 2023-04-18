@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges and Frames | CircularGauge |  Syncfusion
-description:  ranges and frames
+title: Ranges and Frames in ASP.NET Core CircularGauge Control |  Syncfusion
+description: Learn here about ranges and frames in Syncfusion Essential ASP.NET Core CircularGauge Control, its elements, and more.
 platform: aspnet-core
 control: CircularGauge
 documentation: ug
 ---
 
-#  Ranges and Frames
+# Ranges and Frames in ASP.NET Core CircularGauge
 
 Ranges are used to specify or group the scale values. By using ranges, you can describe the values in the pointers. 
 
@@ -55,7 +55,7 @@ Range collection is directly added to the scale object. Refer the following code
 
 Execute the above code to render the following output.
 
-![](Ranges-and-Frames_images/Ranges-and-Frames_img1.png)
+![ASP.NET Core CircularGauge range and frame](Ranges-and-Frames_images/Ranges-and-Frames_img1.png)
 
 Circular Gauge with customized ranges with startValues and endValues
 {:.caption}
@@ -84,7 +84,7 @@ placement="@RangePlacement.Far">
 
 Execute the above code to render the following output.
 
-![](Ranges-and-Frames_images/Ranges-and-Frames_img2.png)
+![ASP.NET Core CircularGauge color and border](Ranges-and-Frames_images/Ranges-and-Frames_img2.png)
 
 Circular Gauge with customized range colors and borders
 {:.caption}
@@ -118,7 +118,7 @@ Execute the above code to render the following output.
 
 
 
-![](Ranges-and-Frames_images/Ranges-and-Frames_img3.png)
+![ASP.NET Core CircularGauge position the ranges](Ranges-and-Frames_images/Ranges-and-Frames_img3.png)
 
 Circular Gauge with customized ranges
 {:.caption}
@@ -152,7 +152,7 @@ placement="@RangePlacement.Far">
 
 Execute the above code to render the following output.
 
-![](Ranges-and-Frames_images/Ranges-and-Frames_img4.png)
+![ASP.NET Core CircularGauge multiple ranges](Ranges-and-Frames_images/Ranges-and-Frames_img4.png)
 
 Circular Gauge with multiple ranges
 {:.caption}
@@ -185,7 +185,7 @@ half-circle-frame-start-angle="205" half-circle-frame-end-angle="335"></e-frame>
 
 Execute the above code to render the following output.
 
-![](Ranges-and-Frames_images/Ranges-and-Frames_img5.png)
+![ASP.NET Core CircularGauge frames](Ranges-and-Frames_images/Ranges-and-Frames_img5.png)
 
 Circular Gauge with multiple ranges
 {:.caption}
