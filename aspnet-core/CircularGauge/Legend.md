@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Legend | CircularGauge | ASP.NET Core| Syncfusion
-description:  legend
+description: Learn here about Legend in Syncfusion Essential ASP.NET Core CircularGauge Control, its elements, and more.
 platform: aspnet-core
 control: CircularGauge
 documentation: ug
 ---
 
-# Legend
+# Legend in ASP.NET Core CircularGauge
 
 The legend contains the list of the ranges that appear in the circular gauge  
 
@@ -23,7 +23,7 @@ By default, the legend  the legend will not be displayed in the circular gauge. 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img1.png)
+![ASP.NET Core CircularGauge legend visibility](Legend_images/Legend_img1.png)
 
 
 [Click](http://ng2jq.syncfusion.com/#/circulargauge/legend) here to view the online demo sample for legend .
@@ -75,7 +75,7 @@ By using the `position` property, you can position the legend at *left*, *right*
 
 {% endhighlight  %}
 
-![](Legend_images/Legend_img2.png)
+![ASP.NET Core CircularGauge legend fill](Legend_images/Legend_img2.png)
 
 ### Legend Alignment
 
@@ -89,7 +89,7 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img3.png)
+![ASP.NET Core CircularGauge legend alignment`](Legend_images/Legend_img3.png)
 
 ## Customization
 
@@ -105,7 +105,7 @@ To change the legend item, shape, you have to specify the desired shape in the `
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img4.png)
+![ASP.NET Core CircularGauge legend shape](Legend_images/Legend_img4.png)
 
 
 ### Legend Item Size and Border
@@ -124,7 +124,7 @@ You can change the size of the legend items by using the `width` and `height` pr
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img5.png)
+![ASP.NET Core CircularGauge legend item size](Legend_images/Legend_img5.png)
 
 ### Legend size
 
@@ -140,7 +140,7 @@ You can change the default legend size by using the `size` property of the legen
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img6.png)
+![ASP.NET Core CircularGauge size](Legend_images/Legend_img6.png)
 
 
 ### Legend Item Padding
@@ -157,7 +157,7 @@ You can control the spacing between the legend items by using the `item-padding`
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img7.png)
+![ASP.NET Core CircularGauge item padding](Legend_images/Legend_img7.png)
 
 ### Legend border
 
@@ -174,7 +174,7 @@ You can customize the legend border by using the `border` option in the legend.
 
 {% endhighlight %}
 
-![](Legend_images/Legend_img8.png)
+![ASP.NET Core CircularGauge border](Legend_images/Legend_img8.png)
 
 ### Font of the legend text
 
@@ -191,7 +191,7 @@ The font of the legend item text can be customized by using the `font` property 
 {% endhighlight %}
 
 
-![](Legend_images/Legend_img9.png)
+![ASP.NET Core CircularGauge events](Legend_images/Legend_img9.png)
 
 ## Events
 

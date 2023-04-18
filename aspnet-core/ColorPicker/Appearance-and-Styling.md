@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | ColorPicker  | ASP.NET Core | Syncfusion
-description: appearance and styling
+description: Learn here about appearance and styling in ASP.NET Core ColorPicker Control, its elements, and more.
 platform: aspnet-core
 control: ColorPicker
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in ASP.NET Core ColorPicker
 
 ## modelType
 
@@ -67,7 +67,7 @@ N> To render the ColorPicker Control you can use either Razor or Tag helper code
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![ASP.NET Core ColorPicker appearance](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ColorPicker rendered with Palette Model
 {:.caption}
@@ -190,7 +190,7 @@ PresetType(PresetsType.CandyCrush)</td></tr>
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![ASP.NET Core ColorPicker styling](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ColorPicker with Presets
 {:.caption}
@@ -227,7 +227,7 @@ The CustomPalette property is a dependent property of Palette and ModelType prop
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![ASP.NET Core ColorPicker customized color](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ColorPicker with Customized Colors
 {:.caption}
@@ -263,7 +263,7 @@ The following steps explain you how to get the ColorPicker popup in DisplayInlin
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![ASP.NET Core ColorPicker display inline](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 ColorPicker in Display Inline
 {:.caption}
@@ -352,7 +352,7 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 The following screenshot displays the output of the above code example.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![ASP.NET Core ColorPicker theme](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 ColorPicker with Theme Support
 {:.caption}
@@ -415,7 +415,7 @@ Using this property you can override the existing styles under the theme style s
 {% endhighlight  %}
 The following screenshot displays the output of above steps.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+![ASP.NET Core ColorPicker custom theme](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 ColorPicker with Custom Theme
 {:.caption}
