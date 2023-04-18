@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Enabling the ProgressBar | Progress Bar | ASP.NET Core | Syncfusion
-description: enabling the progressbar
+description: Learn here about enabling the progressbar in Syncfusion Essential ASP.NET Core Progress Bar Control, its elements, and more.
 platform: aspnet-core
 control: Progress Bar
 documentation: ug
 ---
 
-## Enabling the ProgressBar
+# Enabling the ProgressBar in ASP.NET Core
 
 The ProgressBar is enabled by using the ‘Enabled’ Property. When this property is set to ‘false’, it disables the ProgressBar widget. By default, ‘Enabled’ property is set to ‘true’ in the ProgressBar widget.
 
@@ -25,7 +25,7 @@ The following steps explain how to disable the ProgressBar widget when ‘Enable
 
 The following screenshot displays the output for the above code.
 
-![](Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png)
+![ASP.NET Core Progress Bar enable](Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png)
 
 Disabled Progress Bar
 {:.caption}

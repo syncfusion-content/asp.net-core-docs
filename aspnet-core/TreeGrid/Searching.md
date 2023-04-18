@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Searching | TreeGrid | ASP.NET Core | Syncfusion
-description: Searching
+description: Learn here about Searching in Syncfusion Essential ASP.NET Core TreeGrid Control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
 documentation: ug
 ---
 
-## Searching
+# Searching in ASP.NET Core TreeGrid
 
 The TreeGrid control has an option to search its content using toolbar search box. The toolbar search box can be enabled by using the `ToolbarSettings.ToolbarItems` property. The following code example explains how to integrate search textbox in toolbar.
 
@@ -34,7 +34,7 @@ public partial class TreeGridController : Controller
 {% endhighlight %}
 
 The below screenshot shows TreeGrid search with `plan` key word.
-![](Searching_images/Searching_img1.png)
+![ASP.NET Core TreeGrid searching](Searching_images/Searching_img1.png)
 
 ## Search Hierarchy Modes
 
@@ -62,6 +62,6 @@ The following code example shows how to set the `SearchHierarchyMode` in the tre
 {% endhighlight %}
 
 The following image depicts the output of the previous code example.
-![](Searching_images/SearchHierarchyModes_img1.png)
+![ASP.NET Core TreeGrid search hierarchy mode](Searching_images/SearchHierarchyModes_img1.png)
 
 The above screenshot shows Tree Grid with `child` search mode.

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling | AutoComplete  | ASP.NET Core | Syncfusion
-description: appearance and styling
+description: Learn here about appearance and styling in ASP.NET Core AutoComplete Control, its elements, and more.
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in ASP.NET Core AutoComplete
 
 ## Adjusting AutoComplete size
 
@@ -40,7 +40,7 @@ The following image is the output for AutoComplete textbox with customized dimen
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![ASP.NET Core AutoComplete define height and weight](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 AutoComplete with Customized dimensions
 {:.caption}
@@ -76,7 +76,7 @@ The following image is the output for AutoComplete when ShowRoundedCorner is set
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![ASP.NET Core AutoComplete rounded corner](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 AutoComplete with Rounded corners
 {:.caption}
@@ -106,7 +106,7 @@ The following image is the output for AutoComplete when WatermarkText is defined
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![ASP.NET Core AutoComplete watermark text](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 AutoComplete loaded with watermark text
 {:.caption}
@@ -140,7 +140,7 @@ The following image is the output for AutoComplete, after configuring the height
 
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![ASP.NET Core AutoComplete popup panel](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 AutoComplete PopUp panel with configured dimensions
 {:.caption}
@@ -259,7 +259,7 @@ The following steps allow you to configure CssClass for an AutoComplete textbox.
 
 The following image is of an AutoComplete textbox configured based on CSS class.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![ASP.NET Core AutoComplete css class](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 AutoComplete widget configured with CSS class
 {:.caption}
