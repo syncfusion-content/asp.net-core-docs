@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling | ColorPicker  | ASP.NET Core | Syncfusion
-description: Learn here about appearance and styling in ASP.NET Core ColorPicker Control, its elements, and more.
+title: Appearance and Styling in ASP.NET Core ColorPicker | Syncfusion
+description: Learn here about appearance and styling in Syncfusion ASP.NET Core ColorPicker Control, its elements, and more.
 platform: aspnet-core
 control: ColorPicker
 documentation: ug
