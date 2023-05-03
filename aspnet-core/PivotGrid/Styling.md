@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-# Styling in ASP.NET Core PivotGrid Control
+# Styling in ASP.NET Core PivotGrid
 By default, the pivot grid supports the following **17** different types of themes:
 
 * default-theme

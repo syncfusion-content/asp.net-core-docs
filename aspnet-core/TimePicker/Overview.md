@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-# Overview of ASP.NET Core TimePicker Control
+# Overview of ASP.NET Core TimePicker
 
 The Essential ASP.NET Core TimePicker control allows users to select a time value. The available times can be restricted to a range by setting minimum and maximum time values. The TimePicker sets the time as a mask to prevent users from entering invalid values. 
 
