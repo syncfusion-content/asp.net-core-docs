@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering | DataManager | ASP.NET Core | Syncfusion
-description: filtering
+title: Filtering in ASP.NET Core DataManager Control | Syncfusion
+description: Learn here about filtering in Syncfusion Essential ASP.NET Core DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 keywords: filter Operators, lessThan, lessThanOrEqual, less, contains
 ---
 
-# Filtering
+# Filtering in ASP.NET Core DataManager
 
 Filtering is a basic technique in **DataManager** query. The “where” query is used to filter some particular or related records from the data source to review details of records. 
 
