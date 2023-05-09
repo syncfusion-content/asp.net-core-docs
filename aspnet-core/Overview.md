@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get an overview about Essential ASP.NET Core | Syncfusion
+title: Overview for ASP.NET Core Application | Syncfusion
 description: Learn here all about overview of Syncfusion Essential ASP.NET Core widgets based on HTML5 and jQuery.
 platform: aspnet-core 
 control: Introduction
