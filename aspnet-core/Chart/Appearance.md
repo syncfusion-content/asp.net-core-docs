@@ -24,7 +24,7 @@ The chart displays different series in different colors, by default. You can cus
 {% endhighlight %}
 
 
-![Custom color palette in APS.NET Core Chart](Appearance_images/aspnetcore-chart-appearance.png)
+![Appearance in APS.NET Core Chart](Appearance_images/aspnetcore-chart-appearance.png)
 
 
 N> The color palette is applied to the points in accumulation type of series
@@ -74,7 +74,7 @@ Marker, data label, and fill color of each point in a series can be customized i
 
 {% endhighlight %}
 
-![Level Customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-level-customization.png)
+![Level customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-level-customization.png)
 
 
 ## Series border customization
