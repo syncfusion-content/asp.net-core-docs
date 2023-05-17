@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Appearance
+# Appearance in ASP.NET Core Chart
 
 ## Custom color palette
 
@@ -24,7 +24,7 @@ The chart displays different series in different colors, by default. You can cus
 {% endhighlight %}
 
 
-![](Appearance_images/Appearance_img1.png)
+![Appearance in APS.NET Core Chart](Appearance_images/aspnetcore-chart-appearance.png)
 
 
 N> The color palette is applied to the points in accumulation type of series
@@ -53,7 +53,7 @@ You can set the desired theme by using the **Theme** property. The default theme
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img2.png)
+![Built-in themes in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-theme.png)
 
 
 ## Point level customization
@@ -74,7 +74,7 @@ Marker, data label, and fill color of each point in a series can be customized i
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img3.png)
+![Point level customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-level-customization.png)
 
 
 ## Series border customization
@@ -94,7 +94,7 @@ To customize the series border color, width, and dash array, use **Series.Border
 
 {% endhighlight %}
 
-![](Appearance_images/Appearance_img4.png)
+![Series border customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-series-border-customization.png)
 
 
 ## Chart area customization
@@ -111,7 +111,7 @@ The chart background can be customized by using the **Background** property. To 
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img5.png)
+![Chart area customization in ASP.NET Core](Appearance_images/aspnetcore-chart-area-customization.png)
 
 
 **Chart Margin**
@@ -127,7 +127,7 @@ The chart background can be customized by using the **Background** property. To 
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img6.png)
+![Chart margin in ASP.NET Core](Appearance_images/aspnetcore-chart-margin.png)
 
 
 **Setting background image**
@@ -142,7 +142,7 @@ Background image can be added to the chart by using the **BackGroundImageUrl** p
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img7.png)
+![Setting background image in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-background-image.png)
 
 
 **Chart area background**
@@ -160,7 +160,7 @@ The chart area background can be customized by using the **Background** property
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img8.png)
+![Chart area in ASP.NET Core](Appearance_images/aspnetcore-chart-area.png)
 
 
 ### Customize chart area grid bands
@@ -178,7 +178,7 @@ You can provide different color for alternate grid's rows and columns formed by 
 
 {% endhighlight %} 
 
-![](Appearance_images/Appearance_img9.png)
+![Customize chart area grid bands in ASP.NET Core](Appearance_images/aspnetcore-chart-grid-band.png)
 
 
 ### Animation
