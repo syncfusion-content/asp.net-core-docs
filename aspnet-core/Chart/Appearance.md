@@ -53,7 +53,7 @@ You can set the desired theme by using the **Theme** property. The default theme
 
 {% endhighlight %}
 
-![Theme in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-theme.png)
+![Built-in themes in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-theme.png)
 
 
 ## Point level customization
@@ -74,7 +74,7 @@ Marker, data label, and fill color of each point in a series can be customized i
 
 {% endhighlight %}
 
-![Level customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-level-customization.png)
+![Point level customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-level-customization.png)
 
 
 ## Series border customization
@@ -111,7 +111,7 @@ The chart background can be customized by using the **Background** property. To 
 
 {% endhighlight %} 
 
-![Area customization in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-area-customization.png)
+![Chart area customization in ASP.NET Core](Appearance_images/aspnetcore-chart-area-customization.png)
 
 
 **Chart Margin**
@@ -127,7 +127,7 @@ The chart background can be customized by using the **Background** property. To 
 
 {% endhighlight %} 
 
-![Margin in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-margin.png)
+![Chart margin in ASP.NET Core](Appearance_images/aspnetcore-chart-margin.png)
 
 
 **Setting background image**
@@ -142,7 +142,7 @@ Background image can be added to the chart by using the **BackGroundImageUrl** p
 
 {% endhighlight %} 
 
-![Background image in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-background-image.png)
+![Setting background image in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-background-image.png)
 
 
 **Chart area background**
@@ -178,7 +178,7 @@ You can provide different color for alternate grid's rows and columns formed by 
 
 {% endhighlight %} 
 
-![Grid band in ASP.NET Core Chart](Appearance_images/aspnetcore-chart-grid-band.png)
+![Customize chart area grid bands in ASP.NET Core](Appearance_images/aspnetcore-chart-grid-band.png)
 
 
 ### Animation
