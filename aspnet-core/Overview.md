@@ -21,13 +21,13 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 * After you have integrated the component into your application using one of the sample code snippets as a starting point, it is likely that you would want additional information on specific features and API. The best option would be to search a the specific topic using the search box that is available at the top of the user guide.
 
-* Another valuable resource is the [API reference](https://help.syncfusion.com/cr/aspnet-core) which provides detailed information on the object hierarchy as well as the settings available on every object.
+* Another valuable resource is the [API reference](https://help.syncfusion.com/cr/aspnet-core/Syncfusion.CompoundFile.DocIO.html) which provides detailed information on the object hierarchy as well as the settings available on every object.
 
 ## Additional help resources
 
-* The [Knowledge Base](https://www.syncfusion.com/kb/aspnetcore) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
+* The [Knowledge Base](https://support.syncfusion.com/kb/retiredproducts/category/91) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
 
-* Similar to the [Knowledge Base](https://www.syncfusion.com/kb/aspnetcore), the [forum](https://www.syncfusion.com/forums/aspnetcore) section also contains responses to questions that other customers have asked us in the past.
+* Similar to the [Knowledge Base](https://support.syncfusion.com/kb/retiredproducts/category/91), the [forum](https://www.syncfusion.com/forums/aspnetcore) section also contains responses to questions that other customers have asked us in the past.
 
 ## Create a support incident
 

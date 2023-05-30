@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Exporting | TreeGrid | ASP.NET Core | Syncfusion
-description: exporting
+title: Exporting in ASP.NET Core TreeGrid Control | Syncfusion
+description: Learn here more about exporting in Syncfusion ASP.NET Core TreeGrid Control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
 documentation: ug
 ---
-# Export
+# Exporting in ASP.NET Core TreeGrid
 
 Exporting feature provides support to export TreeGrid content to excel and PDF files. To export the contents, the `ExcelExport` and `PdfExport` toolbar items must be added in the toolbar using the `ToolbarItems` property of `ToolbarSettings`. When you click, the toolbar exporting icons, it internally invokes the export public method of TreeGrid object to export.
 
@@ -62,7 +62,7 @@ The below code snippet explains the above behavior,
 {% endtabs %} 
 
 The below screen shot shows TreeGrid with excel and PDF exporting enabled.
-![](Export_images/Export_img1.png)
+![ASP.NET Core TreeGrid export](Export_images/Export_img1.png)
 
 ## Server dependencies
 Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio & Essential ASP.NET builds. The list of assemblies needed for TreeGrid Export as follows

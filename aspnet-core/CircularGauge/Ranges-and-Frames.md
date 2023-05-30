@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ranges and Frames in ASP.NET Core CircularGauge Control |  Syncfusion
+title: Ranges and Frames in ASP.NET Core CircularGauge Control | Syncfusion
 description: Learn here about ranges and frames in Syncfusion Essential ASP.NET Core CircularGauge Control, its elements, and more.
 platform: aspnet-core
 control: CircularGauge
