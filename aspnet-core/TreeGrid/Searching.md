@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching | TreeGrid | ASP.NET Core | Syncfusion
+title: Searching in ASP.NET Core TreeGrid Control | Syncfusion
 description: Learn here about Searching in Syncfusion Essential ASP.NET Core TreeGrid Control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
