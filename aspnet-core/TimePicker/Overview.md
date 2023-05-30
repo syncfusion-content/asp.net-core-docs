@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TimePicker | TimePicker | ASP.NET Core | Syncfusion
-description: overview
+title: Overview of ASP.NET Core TimePicker Control | Syncfusion
+description: Learn here more about Overview of Syncfusion Essential ASP.NET Core TimePicker Control, its elements, and more.
 platform: aspnet-core
 control: TimePicker
 documentation: ug
 ---
 
-# TimePicker
+# Overview of ASP.NET Core TimePicker
 
 The Essential ASP.NET Core TimePicker control allows users to select a time value. The available times can be restricted to a range by setting minimum and maximum time values. The TimePicker sets the time as a mask to prevent users from entering invalid values. 
 
