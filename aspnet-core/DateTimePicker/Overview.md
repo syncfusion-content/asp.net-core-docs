@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DateTimePicker| DateTimePicker  | ASP.NET Core | Syncfusion
-description: overview
+title: Overview of ASP.NET Core DateTimePicker Control | Syncfusion
+description: Learn here about overview of Syncfusion Essential ASP.NET Core DateTimePicker Control, its elements and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
 ---
 
-# DateTimePicker
+# Overview of ASP.NET Core DateTimePicker
 
 The Essential ASP.NET Core DateTimePicker control is used to input the date and time with a specific format. The DateTimePicker control combines the DatePicker and TimePicker controls so that users can select the date and time with their desired format.
 
