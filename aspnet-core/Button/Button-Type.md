@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Button Type in ASP.NET Core Button control | Syncfusion
-description: Learn here about button type support in Syncfusion Essential ASP.NET Core Button control, its elements and more.
+title: Button Type in ASP.NET Core Button Control | Syncfusion
+description: Learn here about button type support in Syncfusion Essential ASP.NET Core Button Control, its elements and more.
 platform: aspnet-core
 control: Button
 documentation: ug

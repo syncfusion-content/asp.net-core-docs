@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of ASP.NET Core DateTimePicker control | Syncfusion
-description: Learn here about overview of Syncfusion Essential ASP.NET Core DateTimePicker control, its elements and more.
+title: Overview of ASP.NET Core DateTimePicker Control | Syncfusion
+description: Learn here about overview of Syncfusion Essential ASP.NET Core DateTimePicker Control, its elements and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug

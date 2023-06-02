@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of ASP.NET Core Checkbox control | Syncfusion
-description: Learn here about overview of Syncfusion Essential ASP.NET Core Checkbox control, its elements and more.
+title: Overview of ASP.NET Core Checkbox Control | Syncfusion
+description: Learn here about overview of Syncfusion Essential ASP.NET Core Checkbox Control, its elements and more.
 platform: spnet-core
 control: Checkbox
 documentation: ug
