@@ -25,9 +25,9 @@ Essential JS is a comprehensive collection of over 80 enterprise-grade HTML5 Jav
 
 ## Additional help resources
 
-* The [Knowledge Base](https://support.syncfusion.com/kb/retiredproducts/category/91) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
+* The [Knowledge Base](https://www.syncfusion.com/kb/aspnetcore) section contains responses to some of the most common questions that other customers have asked us in the past so this would be a good place to search for topics that are not covered in the user guide.
 
-* Similar to the [Knowledge Base](https://support.syncfusion.com/kb/retiredproducts/category/91), the [forum](https://www.syncfusion.com/forums/aspnetcore) section also contains responses to questions that other customers have asked us in the past.
+* Similar to the [Knowledge Base](https://www.syncfusion.com/kb/aspnetcore), the [forum](https://www.syncfusion.com/forums/aspnetcore) section also contains responses to questions that other customers have asked us in the past.
 
 ## Create a support incident
 
