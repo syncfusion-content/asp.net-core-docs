@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacked Header | TreeGrid | ASP.NET Core | Syncfusion
-description: stacked header
+title: Stacked Header in ASP.NET Core TreeGrid Control | Syncfusion
+description: Learn here all about stacked header support in Syncfusion Essential ASP.NET Core TreeGrid control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
 documentation: ug
 ---
 
-# Stacked Headers
+# Stacked Headers in AP.NET Core TreeGrid
 
 The stacked headers helps you to group the logical columns in treegrid. It can be shown by setting `ShowStackedHeader` as `true` and by defining `StackedHeaderRows`.
 
