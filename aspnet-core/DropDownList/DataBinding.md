@@ -269,7 +269,7 @@ To bind remote data to the DropDownList, you can assign a service data as an ins
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/) URL directly to the Datasource URL property.
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](https://www.odata.org/) URL directly to the Datasource URL property.
 
 {% highlight CSHTML %}
                
@@ -285,7 +285,7 @@ OData is a standardized protocol for creating and consuming data. You can provi
 
 For OData Version 4 support ODataV4Adaptor should be used. By using URL property of Datasource, you can bind OData Version 4 Service link and specify  Adaptor value as enum AdaptorType.ODataV4Adaptor.
  
-For further details about OData service please refer [the link](http://www.odata.org/).
+For further details about OData service please refer [the link](https://www.odata.org/).
 
 {% highlight CSHTML %}
 

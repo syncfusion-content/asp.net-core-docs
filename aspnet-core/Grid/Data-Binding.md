@@ -16,11 +16,11 @@ The Grid `datasource` property or `e-datamanager` child tag allows to bind datas
 *	ORM components such as Entity Framework/Linq to SQL.
 
 N> 1. To update the dataSource after Grid rendered, use `dataSource` method of grid.
-N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://www.syncfusion.com/kb/8613/how-to-convert-dates-to-utc-format).
+N> 2. DateTime values, retrieved from server-end or database, will be converted based on the local time zone. To avoid the local time zone conversion, refer this knowledge base [link](https://support.syncfusion.com/kb/article/7605/how-to-convert-dates-to-utc-format).
 
 ## IEnumerable
  
-The grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) interface. It can be assigned to the grid’s `datasource` property.
+The grid can be bound with either non-generic collection or generic collection that implements [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN) interface. It can be assigned to the grid’s `datasource` property.
     
 N> The IEnumerable datasource can be passed as either directly to the datasource property or to the json property of the child tag.
   

@@ -72,7 +72,7 @@ Set the UL element `Id` to `MenuItemID` property to create Application Menu and 
 
 ### _Binding Data Source_
 
-Application Menu can be rendered using JSON Data Source. Please refer [`this`](http://help.syncfusion.com/aspnetmvc/menu/data-binding) page to set data source to `ejMenu`.
+Application Menu can be rendered using JSON Data Source. Please refer [`this`](https://help.syncfusion.com/aspnetmvc/menu/data-binding) page to set data source to `ejMenu`.
 
 {% highlight html %}
 

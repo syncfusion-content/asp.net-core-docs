@@ -70,7 +70,7 @@ However we can disable the context menu by using ShowContextMenu API and it need
 
 ## Adding an item with the context menu
 
-To add a new item to the editor ContextMenu, you need to use the ‘[insertMenuOption’](http://help.syncfusion.com/js/api/ejrte#methods:insertMenuOption "") method and in order to handle the ContextMenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/js/api/ejrte#events:contextMenuClick "")’ client side-event.
+To add a new item to the editor ContextMenu, you need to use the ‘[insertMenuOption’](https://help.syncfusion.com/js/api/ejrte#methods:insertMenuOption "") method and in order to handle the ContextMenu item click using the ‘[contextMenuClick](http://help.syncfusion.com/js/api/ejrte#events:contextMenuClick "")’ client side-event.
 
 {% highlight CSHTML %}
 
@@ -100,7 +100,7 @@ To add a new item to the editor ContextMenu, you need to use the ‘[insertMenuO
 
 ## Removing an item from the context menu
 
-To remove a menu-item from the editor ContextMenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](http://help.syncfusion.com/js/api/ejrte#methods:removeMenuOption "").
+To remove a menu-item from the editor ContextMenu, you have to use the ‘removeMenuOption’ method from the ejRTE object and find the method and parameter details with the [API-document](https://help.syncfusion.com/js/api/ejrte#methods:removeMenuOption "").
 
 {% highlight CSHTML %}
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started | ASP.NET Core | Syncfusion
-description: Getting Started.
+title: Getting Started with ASP.NET Core Platform | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential ASP.NET Core platform, its elements, and more.
 platform: aspnet-core 
 control: Common 
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with ASP.NET Core Application
  
 ## ASP.NET Core 1.1 Application Using Visual Studio 2017
 
@@ -77,7 +77,7 @@ The following steps help you to create the **Syncfusion** **ASP****.****NET** **
 
    ![Required Syncfusion Scripts and Themes added to the Syncfusion Essential JS 1 ASP.NET Core project](getting-started_images/Syncfusion-Project-Templates_img4.jpeg)
 
-6. Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
   
    ![Syncfusion license registration information for Syncfusion Essential JS 1 ASP.NET Core project](getting-started_images/Syncfusion-Project-Templates_img5.png)  
 

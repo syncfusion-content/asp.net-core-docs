@@ -12,7 +12,7 @@ The editor provides tools to add tables in your content. You can add, edit, and 
 
 ## Create a Table
 
-By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
+By default, [Insert Table](https://help.syncfusion.com/js/api/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
 
 * [Insert a table](#insert-a-table)
 * [Insert a custom table](#custom-table)

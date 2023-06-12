@@ -25,8 +25,8 @@ There are four types of filter menu available in all filter types, they are as f
 
 The corresponding filter menu is opened based on the column type.
 
-N>  1. Need to specify the [`type`](http://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
-N>  2. The default filter type is Filter bar, when `allow-filtering` is enabled and [`filter-type`](http://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filter-type") is not set.
+N>  1. Need to specify the [`type`](https://help.syncfusion.com/api/js/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
+N>  2. The default filter type is Filter bar, when `allow-filtering` is enabled and [`filter-type`](https://help.syncfusion.com/api/js/ejgrid#members:filtersettings-filtertype "filter-type") is not set.
 
 The following code example describes the previous behavior.
 

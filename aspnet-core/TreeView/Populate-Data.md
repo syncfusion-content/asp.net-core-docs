@@ -387,7 +387,7 @@ Previous data can be directly assigned to the `DataSource` property and you can 
     
 ## Remote data
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays a vital role in processing queries to make them suitable to send along with data request, and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](https://helpjs.syncfusion.com/js/api/ejdatamanager) plays a vital role in processing queries to make them suitable to send along with data request, and also process the response data from the server.
 
 The following steps explain you to bind remote data to the tree view control.
 
@@ -399,7 +399,7 @@ The following steps explain you to bind remote data to the tree view control.
 
 ### OData
 
-**OData** is a standardized protocol for creating and consuming data. Bind the [OData service](http://www.odata.org/#) data to tree view in two ways by using `DataSource` API of tree view control.
+**OData** is a standardized protocol for creating and consuming data. Bind the [OData service](https://www.odata.org/) data to tree view in two ways by using `DataSource` API of tree view control.
     
    **Using Datasource(DataSource) API**
     
@@ -437,7 +437,7 @@ The following steps explain you to bind remote data to the tree view control.
     {% endhighlight %}
     
     
-In the previous methods, you may also specify the **adaptor** as [ODataAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
+In the previous methods, you may also specify the **adaptor** as [ODataAdaptor](https://helpjs.syncfusion.com/js/datamanager/data-adaptors#odata-adaptor) and it is optional to specify.
 
 Provide the adaptor value either as string value (“ODataAdaptor”) or Enum type (AdaptorType.ODataAdaptor).
     
@@ -455,7 +455,7 @@ Provide the adaptor value either as string value (“ODataAdaptor”) or Enum ty
     {% endhighlight %}   
     
     
-N>**You can use the previous code until OData service version 3. For OData Service version 4 End Point, a separate adaptor [ej.ODataV4Adaptor](http://helpjs.syncfusion.com/js/datamanager/data-binding#odata-v4) is created for data binding.**
+N>**You can use the previous code until OData service version 3. For OData Service version 4 End Point, a separate adaptor [ej.ODataV4Adaptor](https://helpjs.syncfusion.com/js/datamanager/data-binding#odata-v4) is created for data binding.**
     
     {% highlight CSHTML %}
     
@@ -474,7 +474,7 @@ N>**You can use the previous code until OData service version 3. For OData Servi
     
 ### Web API
 
-Using the [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to the tree view as shown in the following code example.
+Using the [ej.WebApiAdaptor](https://helpjs.syncfusion.com/js/datamanager/data-adaptors#webapi-adaptor), you can bind Web API service data to the tree view as shown in the following code example.
     
     
     {% highlight CSHTML %}
@@ -490,11 +490,11 @@ Using the [ej.WebApiAdaptor](http://helpjs.syncfusion.com/js/datamanager/data-ad
     
 ### Other restful web services
 
-The Custom Adaptor concept of the [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) allows you to customize or generate your own adaptor which is used to process query and result data.
+The Custom Adaptor concept of the [ej.DataManager](https://helpjs.syncfusion.com/js/api/ejdatamanager) allows you to customize or generate your own adaptor which is used to process query and result data.
 
-[http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
+[http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor](https://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor)
 
-When using remote data binding, the adaptor of [ej.DataManager](http://helpjs.syncfusion.com/js/api/ejdatamanager#) plays a vital role in processing queries to make them suitable to send along with the data request, and also process the response data from the server.
+When using remote data binding, the adaptor of [ej.DataManager](https://helpjs.syncfusion.com/js/api/ejdatamanager) plays a vital role in processing queries to make them suitable to send along with the data request, and also process the response data from the server.
 
 In the controller page, create a data list that contains the details about the tree nodes.
     

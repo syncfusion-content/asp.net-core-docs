@@ -29,7 +29,7 @@ Keyboard shortcut keys are,
 </tr>
 <tr>
     <td>
-         {{'[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j
+         {{'[Access key](https://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j
         <br/>
     </td>
     <td>

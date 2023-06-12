@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Common
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
   
 ## ASP.NET Core 2.x Application Using Visual Studio 2017 version 15.3+
 
@@ -18,9 +18,9 @@ documentation: ug
 
 To work with ASP.NET Core 2.x, you need to make sure, whether you have installed the following software on your machine
 
-* Visual Studio 2017 [version 15.5](https://www.visualstudio.com/downloads/).
+* Visual Studio 2017 [version 15.5](https://visualstudio.microsoft.com/downloads/).
 
-* DotNetCore [2.x](https://www.microsoft.com/net/download/dotnet-core).
+* DotNetCore [2.x](https://dotnet.microsoft.com/download/dotnet-core).
 
 ### Configure Syncfusion UI Components in ASP.NET Core Application using NuGet packages:
 
@@ -137,13 +137,13 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 * Visual Studio [Code](https://code.visualstudio.com/#).
 
-* DotNetCore [2.x](https://www.microsoft.com/net/download/dotnet-core).
+* DotNetCore [2.x](https://dotnet.microsoft.com/download/dotnet-core).
 
 The following steps helps to create a ASP.NET Core web application to configure our components.
 
 
 
-* In the command prompt we have an options to develop a below listed types of projects. The default type as console application. To know more about the project options and its syntax declarations refer the [.NET](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new#) link.
+* In the command prompt we have an options to develop a below listed types of projects. The default type as console application. To know more about the project options and its syntax declarations refer the [.NET](https://learn.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new) link.
 
 * Run the below command to know about project creation templates.
 
@@ -351,12 +351,12 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 ### System Requirements:
 
-* Visual Studio 2017 [version 15.x](https://www.visualstudio.com/downloads/).
+* Visual Studio 2017 [version 15.x](https://visualstudio.microsoft.com/downloads/).
 
-* DotNetCore [2.x](https://www.microsoft.com/net/download/dotnet-core).
+* DotNetCore [2.x](https://dotnet.microsoft.com/download/dotnet-core).
 
 
-To create an ASP.NET Core 2.x application, we will use the [**yeoman**](http://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
+To create an ASP.NET Core 2.x application, we will use the [**yeoman**](https://yeoman.io/#) tool. This is a scaffolding tool for Modern web apps and helps us to quick start a new web project. 
 
 Since **Visual Studio Code** uses folder structure for storing files of application, we will create a folder of the name **ASP.NET**
 

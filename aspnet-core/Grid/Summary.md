@@ -325,7 +325,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Format
 
-To format Summary values, the `format` property needs to be assigned in `e-summary-columns` collection object.  To know more about formatting options. Please refer to [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format Summary values, the `format` property needs to be assigned in `e-summary-columns` collection object.  To know more about formatting options. Please refer to [**globalize.js**](https://github.com/globalizejs/globalize/tree/v0.1.1)
 
 {% tabs %}
 {% highlight razor %}

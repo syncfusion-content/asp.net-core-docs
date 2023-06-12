@@ -67,7 +67,7 @@ The following screenshot exhibits the output of the above code.
 
 ## URL,Web API adaptor server side filtering
 
-When the dataSource of AutoComplete bound with Adaptors such as WebAPI/URL, then we need to perform the filtering and sorting operation in server side using LINQ or our [DataManager API operations](https://www.syncfusion.com/kb/4300/server-side-api-for-datamanager-operations) before returning data to the client side.
+When the dataSource of AutoComplete bound with Adaptors such as WebAPI/URL, then we need to perform the filtering and sorting operation in server side using LINQ or our [DataManager API operations](https://support.syncfusion.com/kb/article/4411/server-side-api-for-datamanager-operations) before returning data to the client side.
 
 This change is applicable for all operations that needs to fetch altered data from Data source like filter, search etc.
 

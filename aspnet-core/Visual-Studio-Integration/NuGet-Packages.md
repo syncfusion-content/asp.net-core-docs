@@ -13,7 +13,7 @@ documentation: ug
 
 From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet package, you must include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your ASP.NET Core application to use Syncfusion controls
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet package, you must include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your ASP.NET Core application to use Syncfusion controls
 
 N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
@@ -35,7 +35,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
 3.	The Syncfusion ASP.NET Core NuGet Packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/aspnet-core/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/aspnet-core/visual-studio-integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 
 ### Using Package Manager Console
@@ -118,7 +118,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
     ~~~
 
-N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/aspnet-core/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/aspnet-core/visual-studio-integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Managing NuGet package using Dotnet CLI
 
@@ -148,7 +148,7 @@ The NuGet Command Line Interface (CLI), Dotnet.exe, provides the full extent of 
     dotnet restore
     ~~~
 
-	To know more command about the dotnet CLI, refer [here](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore2x). 
+	To know more command about the dotnet CLI, refer [here](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore2x). 
 
 ## Upgrading NuGet packages
 

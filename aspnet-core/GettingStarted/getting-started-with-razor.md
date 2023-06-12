@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 > Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed,you also have to include a license key in your projects.
-Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in
+Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview#aspnet-core) to know about registering Syncfusion license key in
 your ASP.NET Core application to use our components.
 
 ## Create ASP.NET Core application with Razor pages
@@ -21,7 +21,7 @@ To create an razor application in ASP.NET Core, you need to make sure, whether y
 
 * Visual Studio 2017.
 
-* DotNetCore [2.x](https://www.microsoft.com/net/download/dotnet-core).
+* DotNetCore [2.x](https://dotnet.microsoft.com/download/dotnet-core).
 
 ### Configure Syncfusion UI Components in ASP.NET Core Application using NuGet packages:
 

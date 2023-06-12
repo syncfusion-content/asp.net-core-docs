@@ -8,7 +8,7 @@ documentation: UG
 
 # Template Option in ASP.NET Core TreeView
 
-The tree nodes can be customized by using the **Template** property. The tree view template option requires addition JS library called the **JsRender** that helps you to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender, refer to this link [http://www.jsviews.com/](http://www.jsviews.com/#).
+The tree nodes can be customized by using the **Template** property. The tree view template option requires addition JS library called the **JsRender** that helps you to create the structured way of tree nodes with simple codes and increased performance. To know more about JsRender, refer to this link [http://www.jsviews.com/](https://www.jsviews.com/).
 
 In the controller page, create a data list that contains the details about the tree nodes.
     

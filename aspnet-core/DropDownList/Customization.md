@@ -90,7 +90,7 @@ You can use ShowRoundedCorner property to add rounded borders to the input and p
 
 ![](Customization_images/Customization_img3.png)
 
-I> The browser support details for rounded corner is given [here](http://www.w3schools.com/cssref/css3_pr_border-radius.asp).
+I> The browser support details for rounded corner is given [here](https://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
 ## Enable/Disable the control
 

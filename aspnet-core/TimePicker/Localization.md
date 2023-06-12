@@ -12,7 +12,7 @@ documentation: ug
 You can globalize the TimePicker, so that users of different cultures can make use of it and post their content. For your convenience, you can format the TimePicker control to your culture. When your blog is in your culture, the viewers of your culture can understand about your company and its products. You can achieve localization using the “Locale” property. 
 
 More than 350 culture specific files are available to localize the time. To know more about EJ globalize support, please refer the below link      
- [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ [http://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization) 
 
 N> Seven culture-specific script files are available in the below specified location. For all other culture files, please download from the [GitHub](https://github.com/syncfusion/ej-global/tree/master/i18n) location.
 

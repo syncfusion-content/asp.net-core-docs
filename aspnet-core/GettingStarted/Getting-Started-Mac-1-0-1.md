@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started on Mac
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 The below guidelines demonstrate how to create an ASP.NET Core application and configure with our components.
 
@@ -20,7 +20,7 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 * ASP.NET Core 1.0.1 [Preview2](https://go.microsoft.com/fwlink/?LinkID=827517).
 
-* [Homebrew](http://brew.sh/)
+* [Homebrew](https://brew.sh/)
 
 * OpenSSL (Latest Version)
 
@@ -60,7 +60,7 @@ mkdir Sample
 
 
 
-* In terminal window, you have an option to develop a below listed types of ASP.NET Core projects. The default project type as console application. If you want to create any other specific type project, then need to specify the **-t** (**template**) key in command before the project type name. To know more about the project options and its syntax declarations refer the [dotnet](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new) link.
+* In terminal window, you have an option to develop a below listed types of ASP.NET Core projects. The default project type as console application. If you want to create any other specific type project, then need to specify the **-t** (**template**) key in command before the project type name. To know more about the project options and its syntax declarations refer the [dotnet](https://learn.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new) link.
 
 {% highlight text %}
 
@@ -83,7 +83,7 @@ dotnet new -t web
 
 #### Building Projects with Yeoman
 
-Yeoman is a scaffolding tool for modern web apps and helps us to quick start a new web project. The following steps helps to create an ASP.NET Core 1.0 application using [yeoman](http://yeoman.io/) tool.
+Yeoman is a scaffolding tool for modern web apps and helps us to quick start a new web project. The following steps helps to create an ASP.NET Core 1.0 application using [yeoman](https://yeoman.io/) tool.
 Since **Visual Studio Code** uses folder structure for storing files of application, create a folder of the name **ASP.NET**.
 
 * Open the Command line terminal and execute the below mentioned command to install the Node.js.
