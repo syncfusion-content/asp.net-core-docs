@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Easy Customization | RadioButton | ASP.NET Core | Syncfusion
-description: easy customization
+title: Easy Customization in ASP.NET Core Radio Button Control | Syncfusion
+description: Learn here all about easy customization support in Syncfusion Essential ASP.NET Core Radio Button control, its elements, and more.
 platform: aspnet-core
 control: RadioButton
 documentation: ug
 ---
 
-# Easy Customization
+# Easy Customization in ASP.NET Core Radio Button
 
 ## Checked status
 
