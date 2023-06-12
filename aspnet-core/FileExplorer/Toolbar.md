@@ -161,7 +161,7 @@ In the view page, add FileExplorer and specify “ShowToolbar” as false.
 
 ## Toolbar configuration
 
-From the list of available items, you can configure and group your required toolbar items only through the “[Tools](http://help.syncfusion.com/js/api/ejfileexplorer#members:tools)” property. And also, you can arrange the toolbar items by the “[ToolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist)” property.
+From the list of available items, you can configure and group your required toolbar items only through the “[Tools](https://help.syncfusion.com/js/api/ejfileexplorer#members:tools)” property. And also, you can arrange the toolbar items by the “[ToolsList](http://help.syncfusion.com/js/api/ejfileexplorer#members:toolslist)” property.
 
   
 {% highlight CSHTML %}
@@ -180,7 +180,7 @@ From the list of available items, you can configure and group your required tool
     
 ## Search bar
 
-The Search bar can be customize through the “[FilterSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings)” property. By default, the search does not consider the case sensitivity, and the search work is based on the “[FilterType](http://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings-filtertype)”.
+The Search bar can be customize through the “[FilterSettings](https://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings)” property. By default, the search does not consider the case sensitivity, and the search work is based on the “[FilterType](https://help.syncfusion.com/js/api/ejfileexplorer#members:filtersettings-filtertype)”.
 
 The file explorer allows the following filter types in the search functionality.
 
@@ -271,9 +271,9 @@ In the view page, add FileExplorer and specify custom tool as shown in the follo
 
 Each toolbar item can be enabled or disabled through the following client-side public methods.
 
-* [enableToolbarItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:enabletoolbaritem)
+* [enableToolbarItem](https://help.syncfusion.com/js/api/ejfileexplorer#methods:enabletoolbaritem)
 
-* [disableToolbarItem](http://help.syncfusion.com/js/api/ejfileexplorer#methods:disabletoolbaritem)
+* [disableToolbarItem](https://help.syncfusion.com/js/api/ejfileexplorer#methods:disabletoolbaritem)
 
 These methods accepts the tool name as the parameter. It also allows the parameter as tool item index or the jQuery object of the tool item.
     
@@ -312,7 +312,7 @@ If you want to enable / disable the custom added tool in toolbar, you need to pa
 
 ## Customizing the Upload Functionality
 
-The file explorer helps you to upload the file using the “[Upload](http://help.syncfusion.com/js/uploadbox/overview#)” component. File upload can be done through the toolbar item or context menu item. The “[UploadSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:uploadsettings)” property is used to configure the upload functionalities.
+The file explorer helps you to upload the file using the “[Upload](https://help.syncfusion.com/js/uploadbox/overview#)” component. File upload can be done through the toolbar item or context menu item. The “[UploadSettings](https://help.syncfusion.com/js/api/ejfileexplorer#members:uploadsettings)” property is used to configure the upload functionalities.
 
 This property has the following sub properties with the default values:
         

@@ -13,7 +13,7 @@ Here are some properties to customize behavior of the file explorer.
 
 ## File type restriction
 
-The file explorer control showcase all the files from the filesystem and you can customize the file types that you want to show by using the “[FileTypes](http://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes)” property. It filter the files based on the file extensions.
+The file explorer control showcase all the files from the filesystem and you can customize the file types that you want to show by using the “[FileTypes](https://help.syncfusion.com/js/api/ejfileexplorer#members:filetypes)” property. It filter the files based on the file extensions.
 By default it has the value " \*.\* ", so it allows all the file types. In case of image browser, you can allow the image files only by setting “*.png, *.gif, *.jpg, *.jpeg” and it does not allow the other type of files.
 In the view page, add FileExplorer helper and specify the file type restriction as shown in the following:
 
@@ -31,7 +31,7 @@ In the view page, add FileExplorer helper and specify the file type restriction 
 
 ## Customize the AJAX request settings
 
-As you already know file explorer is a client – server based control and each action performed in the client sends an AJAX request to the server to perform the server side operations. While sending the AJAX request, the AJAX configurations can be customized through the “[AjaxSettings](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
+As you already know file explorer is a client – server based control and each action performed in the client sends an AJAX request to the server to perform the server side operations. While sending the AJAX request, the AJAX configurations can be customized through the “[AjaxSettings](https://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxsettings)” property.
 The [beforeAjaxRequest](https://help.syncfusion.com/api/js/ejfileexplorer#events:beforeajaxrequest) event will be triggered before the AJAX request is performed. You can modify the ajax request in this event.
 
 The following requests are passed during the **client – server** actions:
