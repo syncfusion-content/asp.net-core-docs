@@ -112,7 +112,7 @@ The following table list out the keys with corresponding texts in English cultur
     
 ## Change the culture
 
-The language of the FileExplorer can be changed by the “[Locale](http://help.syncfusion.com/js/api/ejfileexplorer#members:locale)” property. This property allows the culture code of the country as input. The culture code has to be specified in the standard format as the **[Language Code]-[County/Region Code]**.
+The language of the FileExplorer can be changed by the “[Locale](https://help.syncfusion.com/js/api/ejfileexplorer#members:locale)” property. This property allows the culture code of the country as input. The culture code has to be specified in the standard format as the **[Language Code]-[County/Region Code]**.
 
 For example the culture code for German is “**de-DE**”.
 

@@ -10,19 +10,19 @@ documentation: ug
 
 ## Customizing template with range selection between two DatePicker. 
 
-You can customize the date field to emphasize the particular dates in Essential ASP.NET Core  DatePicker calendar with help of [SpecialDates](http://help.syncfusion.com/js/api/ejdatepicker#members:specialdates) and set the date range using [MinDate](http://help.syncfusion.com/js/api/ejdatepicker#members:mindate) and [MaxDate](http://help.syncfusion.com/js/api/ejdatepicker#members:maxdate) property. 
+You can customize the date field to emphasize the particular dates in Essential ASP.NET Core  DatePicker calendar with help of [SpecialDates](https://help.syncfusion.com/js/api/ejdatepicker#members:specialdates) and set the date range using [MinDate](https://help.syncfusion.com/js/api/ejdatepicker#members:mindate) and [MaxDate](http://help.syncfusion.com/js/api/ejdatepicker#members:maxdate) property. 
 
 ## Validating the date value in server side
 	
-The Essential ASP.NET Core DatePicker control, is a form control which  allows us to validate the date value in client side and server side actions. Please refer from the [validation](https://www.syncfusion.com/kb/5433/how-to-achieve-the-required-field-validation-for-datepicker-control-in-asp-net-mvc) to know more about this with EJMVC DatePicker control.
+The Essential ASP.NET Core DatePicker control, is a form control which  allows us to validate the date value in client side and server side actions. Please refer from the [validation](https://support.syncfusion.com/kb/article/5086/how-to-achieve-the-required-field-validation-for-datepicker-control-in-asp-net-mvc) to know more about this with EJMVC DatePicker control.
 
 ## Localize DatePicker with browser specific culture
 
-You can get the browser culture name at page load or document ready state. Based on the culture name, The Essential ASP.NET Core DatePicker can be initiated with that specific culture value by assigning to [Locale](http://help.syncfusion.com/js/api/ejdatepicker#members:locale) property. 
+You can get the browser culture name at page load or document ready state. Based on the culture name, The Essential ASP.NET Core DatePicker can be initiated with that specific culture value by assigning to [Locale](https://help.syncfusion.com/js/api/ejdatepicker#members:locale) property. 
 
 ## Disable specific dates to restrict user
 
-Essential ASP.NET Core DatePicker allows you to restrict date selection in specific range by using date range option. But you can also restrict selective date in DatePicker calendar by utilizing [BeforeDateCreate](http://help.syncfusion.com/js/api/ejdatepicker#events:beforedatecreate) event. This event will get triggered at each date creation. So you can disable the selective date in this event to restrict the user.
+Essential ASP.NET Core DatePicker allows you to restrict date selection in specific range by using date range option. But you can also restrict selective date in DatePicker calendar by utilizing [BeforeDateCreate](https://help.syncfusion.com/js/api/ejdatepicker#events:beforedatecreate) event. This event will get triggered at each date creation. So you can disable the selective date in this event to restrict the user.
 
 {% highlight cshtml %}
 
@@ -74,7 +74,7 @@ Essential ASP.NET Core DatePicker allows you to restrict date selection in speci
 
 ## How to add clear button with DatePicker?
 
-Clear button can be included in the DatePicker control. In the `create` event of DatePicker, clear button element should be appended in the input element and event for clearing the value should bind with the clear button element. Refer the sample from the link [Clear button](http://jsplayground.syncfusion.com/mmdn4d0q) to know how to add the clear button with the DatePicker component. Based, on the theme loaded you can adjust the styles of the clear button.
+Clear button can be included in the DatePicker control. In the `create` event of DatePicker, clear button element should be appended in the input element and event for clearing the value should bind with the clear button element. Refer the sample from the link [Clear button](https://jsplayground.syncfusion.com/mmdn4d0q) to know how to add the clear button with the DatePicker component. Based, on the theme loaded you can adjust the styles of the clear button.
 
 {% highlight cshtml %}
 
