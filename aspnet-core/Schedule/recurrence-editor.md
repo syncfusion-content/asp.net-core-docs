@@ -12,7 +12,7 @@ The Recurrence Editor includes the entire recurrence related information in a se
 
 ## Getting Started
 
-Follow the steps as mentioned in the [Getting Started](http://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to create an MVC application with required assembly references, scripts and stylesheets to render the Recurrence Editor.
+Follow the steps as mentioned in the [Getting Started](https://help.syncfusion.com/aspnet-core/getting-started) page of the Introduction part to create an MVC application with required assembly references, scripts and stylesheets to render the Recurrence Editor.
 
 Add the basic Recurrence Editor code in the View page as shown below,
 

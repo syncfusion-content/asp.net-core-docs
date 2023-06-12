@@ -11,7 +11,7 @@ keywords: appearance and styling,ribbon appearance and styling
 
 ## Themes
 
-Ribbon control’s style and appearance are controlled based on CSS classes and it has support of 12 default themes. You can check List of themes available for JavaScript’s control which is mentioned in [`this`](http://help.syncfusion.com/js/theming-in-essential-javascript-components) page.
+Ribbon control’s style and appearance are controlled based on CSS classes and it has support of 12 default themes. You can check List of themes available for JavaScript’s control which is mentioned in [`this`](https://help.syncfusion.com/js/theming-in-essential-javascript-components) page.
 
 To apply styles refer to two files namely
 

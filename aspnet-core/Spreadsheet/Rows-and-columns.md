@@ -74,7 +74,7 @@ You can dynamically insert blank cells to the top of the selected range and shif
 * Click Insert in the context menu and select “Shift Cells Down” option in Insert dialog.
 * Select Insert Cells option in Insert button of OTHERS tab in Ribbon and select “Shift Cells Down” option in Insert dialog.
 
-You can also perform insert shift bottom using [`insertShiftBottom`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:insertshiftbottom "insertShiftBottom") method.
+You can also perform insert shift bottom using [`insertShiftBottom`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:insertshiftbottom "insertShiftBottom") method.
 
 ### Insert Shift Right
 You can dynamically insert blank cells to the left of the selected range and shift the selected cells to right by following ways,
@@ -82,7 +82,7 @@ You can dynamically insert blank cells to the left of the selected range and shi
 * Click Insert in the context menu and select “Shift Cells Right” option in Insert dialog.
 * Select Insert Cells option in Insert button of OTHERS tab in Ribbon and select “Shift Cells Right” option in Insert dialog.
 
-You can also perform insert shift right using [`insertShiftRight`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:insertshiftright "insertShiftRight") method.
+You can also perform insert shift right using [`insertShiftRight`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:insertshiftright "insertShiftRight") method.
 
 ### Insert Entire Row
 You can dynamically insert the selected number of blank rows to the top of the selected range by following ways,
@@ -92,7 +92,7 @@ You can dynamically insert the selected number of blank rows to the top of the s
 * Select Insert Sheet Rows option in Insert button of OTHERS tab in Ribbon.
 * Click Insert option in row header context menu.
 
-You can also perform insert entire row using [`insertEntireRow`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:insertentirerow "insertEntireRow") method.
+You can also perform insert entire row using [`insertEntireRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:insertentirerow "insertEntireRow") method.
 
 ### Insert Entire Column
 You can dynamically insert the selected number of blank columns to the left of the selected range by following ways,
@@ -102,7 +102,7 @@ You can dynamically insert the selected number of blank columns to the left of t
 * Select Insert Sheet Columns option in Insert button of OTHERS tab in Ribbon.
 * Click Insert option in column header context menu.
 
-You can also perform insert entire column using [`insertEntireColumn`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:insertentirecolumn "insertEntireColumn") method.
+You can also perform insert entire column using [`insertEntireColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:insertentirecolumn "insertEntireColumn") method.
 
 ## Delete 
 You can delete a range of cells, rows or columns based on the selection in worksheet. You have to enable the `allow-delete` property to perform delete operation. 
@@ -119,7 +119,7 @@ You can dynamically delete the selected range of cells and shift the other cells
 * Click Delete in the context menu and select “Shift Cells Up” option in Delete dialog.
 * Select Delete Cells option in Delete button of OTHERS tab in Ribbon and select “Shift Cells Up” option in Delete dialog.
 
-You can also perform delete shift up using [`deleteShiftUp`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteshiftup "deleteShiftUp") method.
+You can also perform delete shift up using [`deleteShiftUp`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteshiftup "deleteShiftUp") method.
 
 ### Delete Shift Left
 You can dynamically delete the selected range of cells and shift the other cells to left by following ways,
@@ -127,7 +127,7 @@ You can dynamically delete the selected range of cells and shift the other cells
 * Click Delete in the context menu and select “Shift Cells Left” option in Delete dialog.
 * Select Delete Cells in Delete button of OTHERS tab in Ribbon and select “Shift Cells Left” option in Delete dialog.
 
-You can also perform delete shift left using [`deleteShiftLeft`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteshiftleft "deleteShiftLeft") method.
+You can also perform delete shift left using [`deleteShiftLeft`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteshiftleft "deleteShiftLeft") method.
 
 ###  Delete Entire Row
 You can dynamically delete the selected rows and shift the other rows to top by following ways,
@@ -137,7 +137,7 @@ You can dynamically delete the selected rows and shift the other rows to top by 
 * Select Delete Sheet Rows option in Delete button of OTHERS tab in Ribbon.
 * Click Delete option in row header context menu.
 
-You can also perform delete entire row using [`deleteEntireRow`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteentirerow "deleteEntireRow") method.
+You can also perform delete entire row using [`deleteEntireRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteentirerow "deleteEntireRow") method.
 
 ###  Delete Entire Column
 You can dynamically delete a selected columns and shift other columns to left by following ways,
@@ -147,7 +147,7 @@ You can dynamically delete a selected columns and shift other columns to left by
 * Select Delete Sheet Columns option in Delete button of OTHERS tab in Ribbon.
 * Click Delete option in column header context menu.
 
-You can also perform delete entire column using [`deleteEntireColumn`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteentirecolumn "deleteEntireColumn") method.
+You can also perform delete entire column using [`deleteEntireColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:deleteentirecolumn "deleteEntireColumn") method.
 
 The following code example describes the above behavior.
 
@@ -209,13 +209,13 @@ You can show or hide the rows and columns in Spreadsheet using methods and conte
 You can hide the rows dynamically by using one of the following ways,
 
 * Click “Hide” option in row header context menu.
-* Hide the rows using [`hideRow`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:hiderow "hideRow") method.
+* Hide the rows using [`hideRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hiderow "hideRow") method.
 
 ###  Hide Column
 You can hide the columns dynamically by using one of the following ways,
 
 * Click “Hide” option in column header context menu.
-* Hide the columns using [`hideColumn`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:hidecolumn "hideColumn") method.
+* Hide the columns using [`hideColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:hidecolumn "hideColumn") method.
 
 The following code example describes the above behavior.
 
@@ -269,13 +269,13 @@ The following output is displayed as a result of the above code example.
 You can show the hidden rows dynamically by using one of the following ways,
 
 * Click “Unhide” option in row header context menu.
-* Show the hidden rows using [`showRow`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:showrow "showRow") method.
+* Show the hidden rows using [`showRow`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showrow "showRow") method.
 
 ###  Show Column
 You can show the hidden columns dynamically by using one of the following ways,
 
 * Click “Unhide” option in column header context menu.
-* Show the hidden columns using [`showColumn`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:showcolumn "showColumn") method.
+* Show the hidden columns using [`showColumn`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:showcolumn "showColumn") method.
 
 The following code example describes the above behavior.
 
@@ -332,8 +332,8 @@ You can change `column-width` and `row-height` with the specified value. You
 You can perform resizing using one of the following ways,
 
 * Resize option in column header and row header.
-* Set the column width by using [`setColWidth`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or `column-width` property.
-* Set the row height by using [`setRowHeight`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or `row-height` property.
+* Set the column width by using [`setColWidth`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setcolwidth "setColWidth") method or `column-width` property.
+* Set the row height by using [`setRowHeight`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlresize-setrowheight "setRowHeight") method or `row-height` property.
 
 The following code example describes the above behavior.
 

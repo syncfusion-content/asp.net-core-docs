@@ -11,7 +11,7 @@ documentation: ug
 
 The editor provides zoom tools which enlarges the view of an editor's object enabling you to see more detail. You can continuous zoomIn and zoomOut either using zoom tools or keyboard.
 
-You can assign Increases and decreases of zooming range using [zoomStep](http://help.syncfusion.com/js/api/ejrte#members:zoomStep) property
+You can assign Increases and decreases of zooming range using [zoomStep](https://help.syncfusion.com/js/api/ejrte#members:zoomStep) property
 
 {% highlight CSHTML %}
   

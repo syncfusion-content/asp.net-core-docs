@@ -14,7 +14,7 @@ The report viewer is a visualization control to view the Microsoft RDL/RDLC form
 N> The report viewer control depends on server-side processing for report rendering. So, you should build the WebAPI service that is compatible for report viewer. This getting started will illustrates details of how to create the report viewer compatible Web API service also for your application.
 
 ## Environment setup
-Refer the [installation](https://help.syncfusion.com/aspnet-core/installation-and-upgrade/system-requirements) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
+Refer the [installation](https://help.syncfusion.com/aspnet-core/system-requirements) page to know more about the basic steps to configure the Syncfusion components to use with ASP.NET Core application. 
 
 N> NuGet package reference will be mostly preferred with ASP.NET Core development to setup the environment without installation, if you missed to explore then refer to the [nuget-package-manager-settings](https://help.syncfusion.com/aspnet-core/visual-studio-integration/nuget-packages) to configure the Syncfusion NuGet source.
 
