@@ -60,7 +60,7 @@ The following output is displayed as a result of the above code example.
 
 The Url Adaptor is the base Adaptor that would interact with remote services. It can be enabled in Grid using `adaptor` property of `e-datamanager` as `UrlAdaptor`. For every operations, an AJAX post will be send to the specified data service. 
     
-N> When using `UrlAdaptor`, grid actions such as `Paging, Filtering` and `Sorting` should be handled at the server side itself. We have `DataOperation` class to do these server side operations. Please refer to the Knowledge Base [link](https://www.syncfusion.com/kb/4300). These operations can also be done using the `QueryableDataOperations` class which accepts the IQueryable Data. Please refer the Kb [link](https://www.syncfusion.com/kb/8434).
+N> When using `UrlAdaptor`, grid actions such as `Paging, Filtering` and `Sorting` should be handled at the server side itself. We have `DataOperation` class to do these server side operations. Please refer to the Knowledge Base [link](https://support.syncfusion.com/kb/article/4411/server-side-api-for-datamanager-operations). These operations can also be done using the `QueryableDataOperations` class which accepts the IQueryable Data. Please refer the Kb [link](https://support.syncfusion.com/kb/article/7406/server-side-api-for-datamanager-operations-with-iqueryable-data).
 
 
 The following code example describes the above behavior.
