@@ -136,7 +136,7 @@ namespace MVCSampleBrowser.Controllers
 ![Loading excel documents from server side](Open-and-Save_images/Open-and-Save_img1.png)
 
 ### Methods
-To open an excel document, [`import`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
+To open an excel document, [`import`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:import "import") method should be called with import options as a parameter. The Spreadsheet can open excel document as a stream or file URL.
  
 #### Stream
 Spreadsheet can open excel document as a stream and the document stream was either from the client side or it can be specified in server side. The code snippets to open excel document as a stream from client side are as follows,
@@ -254,7 +254,7 @@ You can save excel documents in following ways,
 2. User Interface
 
 ### Methods
-To save Spreadsheet document as excel file, [`export`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-export "export") method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
+To save Spreadsheet document as excel file, [`export`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlexport-export "export") method should be called with file type as parameter. The code snippets to save Spreadsheet document are as follows,
 
 {% highlight javascript %}
 

@@ -275,7 +275,7 @@ Scheduler supports binding the appointment data to it through the list of appoin
 
 ## Binding Remote Data Service
 
-The appointment data can be bound to the Scheduler through [Odata](http://www.odata.org) remote services, by configuring the service URL to the Schedule dataSource API.
+The appointment data can be bound to the Scheduler through [Odata](https://www.odata.org/) remote services, by configuring the service URL to the Schedule dataSource API.
 
 {% highlight razor %}
 
@@ -289,7 +289,7 @@ The appointment data can be bound to the Scheduler through [Odata](http://www.od
 
 ## OData V4
 
-The OData v4 is an improved version of OData protocols. Scheduler supports retrieving and consuming appointment data from [OData v4](http://www.odata.org/documentation) services, just similar to the other remote services. 
+The OData v4 is an improved version of OData protocols. Scheduler supports retrieving and consuming appointment data from [OData v4](https://www.odata.org/documentation) services, just similar to the other remote services. 
 
 {% highlight razor %}
 

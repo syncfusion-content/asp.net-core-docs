@@ -13,7 +13,7 @@ The editor provides tools to makes your content as list such as an ordered and u
 
 ## Create a Lists
 
-By default, [Insert Lists](http://help.syncfusion.com/js/api/ejrte#members:tools-lists) tool is enabled in the editor’s toolbar.The editor’s have ordered and unordered list types.
+By default, [Insert Lists](https://help.syncfusion.com/js/api/ejrte#members:tools-lists) tool is enabled in the editor’s toolbar.The editor’s have ordered and unordered list types.
 
 {% highlight CSHTML %}
 
@@ -37,7 +37,7 @@ By default, [Insert Lists](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 ## Custom Lists
 
-You can use [custom lists](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList) tools to insert lists with custom behaviors.You can create a list with related attributes (such as listImage, listStyle, title, name, and text) using the custom list tool.Ordered and Unordered list having own customize ways to insert a list into the editor’s content.
+You can use [custom lists](https://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList) tools to insert lists with custom behaviors.You can create a list with related attributes (such as listImage, listStyle, title, name, and text) using the custom list tool.Ordered and Unordered list having own customize ways to insert a list into the editor’s content.
 
 * [Insert a customOrderedList](#insert-a-customOrderedList)
 * [Insert a customUnorderedList](#insert-a-customUnorderedList)  
@@ -45,7 +45,7 @@ You can use [custom lists](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 ### Insert a customOrderedList
 
-you need to enable [customOrderedList](http://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList) tool on the editor’s toolbar.
+you need to enable [customOrderedList](https://help.syncfusion.com/js/api/ejrte#members:tools-customOrderedList) tool on the editor’s toolbar.
 
 The customOrderedList having below options for an ordered list customization.
 
@@ -91,7 +91,7 @@ Summary<br/><br/></th></tr>
 
 ### Insert a customUnorderedList
 
-you need to enable [customUnorderedList](http://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList) tool on the editor’s toolbar.
+you need to enable [customUnorderedList](https://help.syncfusion.com/js/api/ejrte#members:tools-customUnorderedList) tool on the editor’s toolbar.
 
 The customUnorderedList having below options for an unordered list customization.
 

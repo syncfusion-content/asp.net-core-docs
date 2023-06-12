@@ -45,7 +45,7 @@ More Commands...</td></tr>
 
 N> By default, the Ribbon control is localized in `en-US` culture.
 
-For further information on – how to refer the required culture scripts into your application, refer [`here`](http://help.syncfusion.com/js/localization).
+For further information on – how to refer the required culture scripts into your application, refer [`here`](https://help.syncfusion.com/js/localization).
 
 {% highlight CSHTML %}
 

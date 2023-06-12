@@ -22,7 +22,7 @@ Shortcut Key</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
+{{ '[Access key](https://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
 Focuses into Timepicker widget</td></tr>
 <tr>
 <td>
@@ -105,7 +105,7 @@ The following steps explains you on how to enable keyboard interaction for the T
 N> To render the TimePicker Control you can use either Razor or Tag helper code as given in the above code snippet.
 
 
-2. Run the code sample, press [Access key](http://en.wikipedia.org/wiki/Access_key) + J to focus in the TimePicker widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
+2. Run the code sample, press [Access key](https://en.wikipedia.org/wiki/Access_key) + J to focus in the TimePicker widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
 
 

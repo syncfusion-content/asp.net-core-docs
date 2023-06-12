@@ -136,7 +136,7 @@ You can also define the ajax action in controller page and map the corresponding
 
 {% endhighlight %}
 
-Refer [here](http://www.syncfusion.com/downloads/support/forum/144048/ze/RTE_ImageBrowser-1950248249) for sample. 
+Refer [here](https://www.syncfusion.com/downloads/support/forum/144048/ze/RTE_ImageBrowser-1950248249) for sample. 
 
 N> In RTE, image will be inserted based on the file path mentioned in image browser settings. In Asp.Net Core, static files will be present in wwwroot folder and this path cannot be directly accessed in browser while inserting image into RTE. So, include “wwwroot” in Controller page for FileExplorer actions alone. 
 

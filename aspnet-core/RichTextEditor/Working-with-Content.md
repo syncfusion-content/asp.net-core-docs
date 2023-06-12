@@ -35,7 +35,7 @@ attrib.Add("style", "background-color:#e0ffff;color:#6495ed;");
 
 {% endhighlight %}
 
-N> Background image for the RTE control : {{'[Link](http://jsplayground.syncfusion.com/Sync_cpaoqshs)'| markdownify }} <BR>
+N> Background image for the RTE control : {{'[Link](https://jsplayground.syncfusion.com/Sync_cpaoqshs)'| markdownify }} <BR>
 
 ## Adding CSS File
 
@@ -127,7 +127,7 @@ The ContentEditable attribute allows you to make any element of HTML content to 
 
 {% endhighlight %}
 
-N> Content editable is fully compatible with latest browsers, to know more details, see [here](http://www.w3schools.com/tags/att_global_contenteditable.asp#).
+N> Content editable is fully compatible with latest browsers, to know more details, see [here](https://www.w3schools.com/tags/att_global_contenteditable.asp).
 
 ## Submit Content
 
@@ -199,7 +199,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 
 The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the EnablePersistence property to true, the persistence will be enabled in the editor.
 
-N>  [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
+N>  [local storage](https://www.w3schools.com/html/html5_webstorage.asp) is not supported below ie9 version, therefore persistence support is fallback to [cookie](https://www.w3schools.com/js/js_cookies.asp).
 
 {% highlight CSHTML %}
 
