@@ -22,7 +22,7 @@ Shortcut Key</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
+{{ '[Access key](https://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -56,6 +56,6 @@ In the View page add the below code. Set the access key property to the NumericT
 
 {% endhighlight %}
 
-Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) + j key to focus the NumericTextBox widget. Perform provided functionality by using keyboard shortcuts.
+Run the above example and press [Access key](https://en.wikipedia.org/wiki/Access_key) + j key to focus the NumericTextBox widget. Perform provided functionality by using keyboard shortcuts.
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png)

@@ -20,7 +20,7 @@ Shortcut Key</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Access key](http://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
+{{ '[Access key](https://en.wikipedia.org/wiki/Access_key)' | markdownify }} + j</td><td>
 Focuses the control</td></tr>
 <tr>
 <td>
@@ -54,6 +54,6 @@ percentAttribute.Add("accesskey", "k");
 
 {% endhighlight %}
 
- Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access_key) + j key to focus the PercentageTextBox widget. Perform provided functionality by using keyboard shortcuts.
+ Run the above example and press [Access key](https://en.wikipedia.org/wiki/Access_key) + j key to focus the PercentageTextBox widget. Perform provided functionality by using keyboard shortcuts.
 
 ![](Keyboard-Interaction_images/Keyboard-Interaction_img1.png)
