@@ -222,7 +222,7 @@ The following output is displayed as a result of the previous code example.
 
 The template design that applies on for the column header. To render template, `header-template-id` property of `e-columns`.
 
-The JsRender syntax can be used in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
+The JsRender syntax can be used in the template. For more information about JsRender syntax, please refer [the link](https://www.jsviews.com/#jsrapi "the link").
 
 N> It's a standard way to enclose the `template` within the `script` tag with `type` as `text/x-jsrender`.
 
@@ -320,7 +320,7 @@ The following output is displayed as a result of the previous code example.
 
 Format is the process of customizing the particular column data with specified jQuery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. To specify the globalize format, by using Format property of `e-columns`.
 
-The `format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings available for the `Date` and `Number` types.
+The `format` value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/globalizejs/globalize/tree/v0.1.1#format "data format") strings available for the `Date` and `Number` types.
 
 The following code example describes the previous behavior.
 

@@ -351,7 +351,7 @@ The following output is displayed as a result of the previous code example.
 
 Using the `CaptionFormat` property of `group-settings` you can render any type of JsRender templates or customizing the group caption text. 
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [the link](http://www.jsviews.com/#jsrapi "the link").
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer to [the link](https://www.jsviews.com/#jsrapi "the link").
 
 N>  1. It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". 
 N>  2. Using locale property of `CaptionFormat`, you can only customize the default group caption text.

@@ -267,7 +267,7 @@ When you move the cursor over the particular cell it provides an information abo
 
 **Template**
 
-HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
+HTML templates can be specified in the `tooltip` property of the particular column cell as a string (HTML element) or ID of the template's HTML element.You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](https://www.jsviews.com/#jsrapi "this link"). 
 
 N> It is a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender". 
 N> The `tooltip` template must contain `value` property to bind the corresponding cell text in tooltip
