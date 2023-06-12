@@ -208,7 +208,7 @@ By running the previous code, you will get results like the following image:
 
 ## Create instance for tree view
 
-Create an instance for an existing tree view in the following ways. Once a reference has been established, you can use the [API’s](http://help.syncfusion.com/js/api/ejtreeview) of tree view to control its behavior.
+Create an instance for an existing tree view in the following ways. Once a reference has been established, you can use the [API’s](https://help.syncfusion.com/js/api/ejtreeview) of tree view to control its behavior.
     
         
    {% highlight javascript %}
@@ -225,11 +225,11 @@ Create an instance for an existing tree view in the following ways. Once a refer
     
     
     
-N>**To configure the API settings after tree view creation, please refer to the [API configuration](http://help.syncfusion.com/js/api-configuration), [Invoking Methods](http://help.syncfusion.com/js/invoking-methods)**.
+N>**To configure the API settings after tree view creation, please refer to the [API configuration](https://help.syncfusion.com/js/api-configuration), [Invoking Methods](https://help.syncfusion.com/js/invoking-methods)**.
  
 ## Tree view events
 
-ASP.NET Core tree view supports all the [events](http://help.syncfusion.com/js/api/ejtreeview#events) available in EJ tree view. Refer to the following code example to specify an event using the tag helper of tree view.
+ASP.NET Core tree view supports all the [events](https://help.syncfusion.com/js/api/ejtreeview#events) available in EJ tree view. Refer to the following code example to specify an event using the tag helper of tree view.
     
    
    {% highlight CSHTML %}

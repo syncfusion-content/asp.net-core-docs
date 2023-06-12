@@ -256,7 +256,7 @@ Find the steps to configure the Syncfusion Components to particular language fro
 
 ## Accessibility
 
-All the Essential JS UI widgets provide built-in compliance with the WAI-ARIA specifications. This ensures that the widgets work properly with assistive technologies. [WAI-ARIA](https://www.w3.org/WAI/PF/aria-practices/) compliance for the widgets have been achieved by providing proper keyboard navigation support as well as by defining the required ARIA attributes to the DOM elements.    
+All the Essential JS UI widgets provide built-in compliance with the WAI-ARIA specifications. This ensures that the widgets work properly with assistive technologies. [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) compliance for the widgets have been achieved by providing proper keyboard navigation support as well as by defining the required ARIA attributes to the DOM elements.    
 
 For example, the ejButton widget, when created through JavaScript code will render in the web browser with HTML DOM elements (along with the assigned built-in ARIA attributes) as shown below,
 

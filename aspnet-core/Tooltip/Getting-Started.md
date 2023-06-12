@@ -87,7 +87,7 @@ Apply the following style sheet
 
 ## Setting Dimensions
 
-Tooltip dimensions can be set using [width](http://help.syncfusion.com/js/api/ejtooltip#members:width) and [height](http://help.syncfusion.com/js/api/ejtooltip#members:height) API.
+Tooltip dimensions can be set using [width](https://help.syncfusion.com/js/api/ejtooltip#members:width) and [height](https://help.syncfusion.com/js/api/ejtooltip#members:height) API.
 
 {% highlight CSHTML %}
  
