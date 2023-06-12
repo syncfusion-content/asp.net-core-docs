@@ -760,7 +760,7 @@ The whole purpose of Radio Button is to enable you to make one selection, only o
 
 You can make only one selection from the group of radio buttons. All radio buttons in that group need to share the same name. This tells the form handler, the name of the group, and the value of the selected Radio Button.
 
-Radio Button is [mutually exclusive](http://en.wikipedia.org/wiki/Mutually_exclusive_events); that is, when you select a radio button, any previously selected radio buttons in the same group become deselected. 
+Radio Button is [mutually exclusive](https://en.wikipedia.org/wiki/Mutually_exclusive_events); that is, when you select a radio button, any previously selected radio buttons in the same group become deselected. 
 
 For example, when you want to choose between a groups of colors, you can create Radio Buttons for each color. You can give all the radio buttons the same name, for example, "preferred_color", but you must give each radio button a different value, for example, "red".
 

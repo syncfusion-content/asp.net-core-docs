@@ -14,7 +14,7 @@ documentation: ug
 The widget provides multi-language support using globalization. You can customize the NumericTextBox with your own language style by using this feature. You can change the globalization by using the **locale** property. The default value for **locale** property is **en-US** in NumericTextBox control.
 
 More than 350 culture specific files are available to localize the value. To know more about EJ globalize support, please refer the below link      
- [http://help.syncfusion.com/js/localization](http://help.syncfusion.com/js/localization) 
+ [http://help.syncfusion.com/js/localization](https://help.syncfusion.com/js/localization) 
  
  N> All the culture-specific script files are available within the below specified location, once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
