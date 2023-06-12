@@ -9,13 +9,13 @@ documentation: ug
 
 # Configuring Syncfusion Bower Packages
 
-[Bower](http://bower.io) is a package manager for the Web. Syncfusion Bower package allows you to use the Syncfusion JavaScript Widgets in an efficient way.
+[Bower](https://bower.io/) is a package manager for the Web. Syncfusion Bower package allows you to use the Syncfusion JavaScript Widgets in an efficient way.
 
 I>Syncfusion JavaScript Bower package is available as [public Git Repository](https://github.com/syncfusion/JavaScript-Widgets) and also registered as Syncfusion-JavaScript in the Bower registry.
 
 ### Bower Installation
 
-To configure the Bower in your machine you need to install [node, npm](http://nodejs.org) and [git](http://git-scm.org). For more information to configure the Bower package please refer the official site for [bower](http://bower.io/#install-bower). 
+To configure the Bower in your machine you need to install [node, npm](https://nodejs.org/) and [git](http://git-scm.org). For more information to configure the Bower package please refer the official site for [bower](https://bower.io/). 
 Syncfusion JavaScript Bower package can be configured in the following ways.
 
 1. Using command prompt.
@@ -88,7 +88,7 @@ Syncfusion JavaScript npm package is available as [public Git Repository](https:
 
 ### Syncfusion npm Installation 
 
-To configure the npm,  install the [Nodejs](http://nodejs.org/) and update the npm. For more information to configure the npm packages refer the official site of [npm](https://docs.npmjs.com/getting-started/installing-node). 
+To configure the npm,  install the [Nodejs](https://nodejs.org/) and update the npm. For more information to configure the npm packages refer the official site of [npm](https://docs.npmjs.com/getting-started/installing-node/). 
 
 syncfusion-javascript npm package can be configured in following ways.
 
@@ -167,7 +167,7 @@ npm update
 
 ### Overview
 
-JSPM is a package manager for [SystemJS universal module loader](https://github.com/systemjs/systemjs), built on top of the dynamic [ES6 module loader](https://github.com/ModuleLoader/es6-module-loader). This can load any module format (ES6, AMD, CommonJS and globals) directly from any registry such as npm and GitHub with flat versioned dependency management. Any custom registry endpoints can be created through the Registry API.
+JSPM is a package manager for [SystemJS universal module loader](https://github.com/systemjs/systemjs), built on top of the dynamic [ES6 module loader](https://github.com/ModuleLoader/es-module-loader). This can load any module format (ES6, AMD, CommonJS and globals) directly from any registry such as npm and GitHub with flat versioned dependency management. Any custom registry endpoints can be created through the Registry API.
 
 ### Syncfusion JavaScript JSPM
 

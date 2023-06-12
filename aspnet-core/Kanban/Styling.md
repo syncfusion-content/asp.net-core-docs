@@ -11,7 +11,7 @@ platform: aspnet-core
 
 ## List of classes and its purposes
 
-To modify Kanban appearance, you need to override default CSS of Kanban. Please find the list of CSS classes and its corresponding section in Kanban. Also you have an option to create your own custom theme for all JavaScript controls using our [`Theme Studio`](http://js.syncfusion.com/themestudio/)
+To modify Kanban appearance, you need to override default CSS of Kanban. Please find the list of CSS classes and its corresponding section in Kanban. Also you have an option to create your own custom theme for all JavaScript controls using our [`Theme Studio`](https://js.syncfusion.com/themestudio/)
 
 <table>
         <tr>

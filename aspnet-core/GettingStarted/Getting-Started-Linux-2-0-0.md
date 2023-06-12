@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started on Linux with ASP.NET Core Application
 
-> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
+> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
 The below guidelines demonstrate how to create an ASP.NET Core application and configure with our components.
 
@@ -20,7 +20,7 @@ The below guidelines demonstrate how to create an ASP.NET Core application and c
 
 * Mono
 
-* Install .NET Core [SDK](https://www.microsoft.com/net/download/linux) based on your OS version. 
+* Install .NET Core [SDK](https://dotnet.microsoft.com/download/linux) based on your OS version. 
 
 Set up the apt-get feeds, then install .NET Core on Ubuntu or Linux Mint. Execute the below commands in terminal window to set up the apt-get feeds for Ubuntu 17.10 and 17.04.
 
@@ -64,7 +64,7 @@ sudo apt-get update
 
 ### Mono Installation
 
-The [Mono Project](http://www.mono-project.com/) (powered by Xamarin) is a project that tends to make the .NET Framework available to Microsoft's foreign platforms. To run our ASP.NET Core 2.1.4 web application on Linux, install the Mono by executing the below commands.
+The [Mono Project](https://www.mono-project.com/) (powered by Xamarin) is a project that tends to make the .NET Framework available to Microsoft's foreign platforms. To run our ASP.NET Core 2.1.4 web application on Linux, install the Mono by executing the below commands.
 
 * Execute this command to add the Mono's GPG key to the packages manager.
 
@@ -153,7 +153,7 @@ mkdir Sample
 
 * In terminal window, the following steps helps to create a ASP.NET Core web application to configure our components.
 
-* In the terminal window, we have an options to develop a below listed types of projects. The default type as console application. To know more about the project options and its syntax declarations refer the [.NET](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new#) link.
+* In the terminal window, we have an options to develop a below listed types of projects. The default type as console application. To know more about the project options and its syntax declarations refer the [.NET](https://learn.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-new) link.
 
 * Run the below command to know about project creation templates.
 
@@ -178,7 +178,7 @@ mkdir Sample
 
 
 #### Building Projects with Yeoman
-Yeoman is a scaffolding tool for modern web apps and helps us to quick start a new web project. The following steps helps to create an ASP.NET Core 1.0 application using [yeoman](http://yeoman.io/) tool.
+Yeoman is a scaffolding tool for modern web apps and helps us to quick start a new web project. The following steps helps to create an ASP.NET Core 1.0 application using [yeoman](https://yeoman.io/) tool.
 Since **Visual Studio Code** uses folder structure for storing files of application, create a folder of the name **ASP.NET**.
 
 * Open the Terminal window and execute the below mentioned command  to install the Node.js.

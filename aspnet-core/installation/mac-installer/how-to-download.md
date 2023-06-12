@@ -30,7 +30,7 @@ Our 30-day trial can be downloaded in two ways.
    ![Trial and downloads of Syncfusion Essential Studio](images/trial-confirmation.png)
    
 3. With a trial license, only the latest version’s trial installer can be downloaded.
-4. After downloading, the Syncfusion ASP.NET Core (Essential JS1) trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) article.
+4. After downloading, the Syncfusion ASP.NET Core (Essential JS1) trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) article.
 5. Before the trial expires, you can download the trial installer at any time from your registered account’s [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page ((as shown in below screenshot.)
  
     ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)

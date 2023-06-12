@@ -396,7 +396,7 @@ The MaskEditTextBox provides support for adding HTML attributes to the component
 
 #### Configure HTMLAttributes property
 
-1. In the View page add MaskEditTextBox helper, and configure the HtmlAttributes property. Here we have added the [Access key](http://en.wikipedia.org/wiki/Access_key) attribute. While pressing the “AccessKey” and “J” keys, MaskEditTextBox will gain focus.
+1. In the View page add MaskEditTextBox helper, and configure the HtmlAttributes property. Here we have added the [Access key](https://en.wikipedia.org/wiki/Access_key) attribute. While pressing the “AccessKey” and “J” keys, MaskEditTextBox will gain focus.
 
 
 

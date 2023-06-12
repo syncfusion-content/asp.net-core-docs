@@ -57,7 +57,7 @@ Checkbox in binary states
 
 ## Enable Tri-State
 
-Sometimes, it is essential for you to represent the answer in partially true state. To represent the partially true types, an indeterminate state option is present. The state between checked and unchecked state is called indeterminate state. For example, a Checkbox presented to select files to send via [FTP](http://en.wikipedia.org/wiki/File_Transfer_Protocol) can use a [tree view](http://en.wikipedia.org/wiki/Tree_view) so that files can be selected one at a time, or by folder. When only some of the files in a folder are selected, then the checkbox for that folder could be in indeterminate state.
+Sometimes, it is essential for you to represent the answer in partially true state. To represent the partially true types, an indeterminate state option is present. The state between checked and unchecked state is called indeterminate state. For example, a Checkbox presented to select files to send via [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) can use a [tree view](https://en.wikipedia.org/wiki/Tree_view) so that files can be selected one at a time, or by folder. When only some of the files in a folder are selected, then the checkbox for that folder could be in indeterminate state.
 
 When you enable Tri-state, then the Checkbox includes the indeterminate state. The Checkbox has three states. Enable the enable-tri-state  property specifies to enable or disable the Tri-State option for Checkbox. 
 

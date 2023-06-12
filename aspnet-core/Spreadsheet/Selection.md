@@ -30,7 +30,7 @@ You can set default `selection-type` in `e-selection-settings`.
 
 ### Cell Selection 
 
-Cell selection is used to select a single or multiple cells. It can be performed using [`selectRange`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrange "selectRange") method. 
+Cell selection is used to select a single or multiple cells. It can be performed using [`selectRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrange "selectRange") method. 
 The following code example describes the above behavior,
 
 {% highlight html %}
@@ -51,7 +51,7 @@ The following output is displayed as a result of the above code example.
 
 ### Row Selection 
 
-Row selection is used to select a single or multiple rows. It can be performed using [`selectRows`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrows "selectRows") method.
+Row selection is used to select a single or multiple rows. It can be performed using [`selectRows`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectrows "selectRows") method.
 The following code example describes the above behavior,
 
 {% highlight html %}
@@ -74,7 +74,7 @@ N> This type can be set as default by setting `selection-type` property in `e-se
 
 ### Column Selection
 
-Column selection is used to select a single or multiple columns. It can be performed using [`selectColumns`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectcolumns "selectColumns") method.
+Column selection is used to select a single or multiple columns. It can be performed using [`selectColumns`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectcolumns "selectColumns") method.
 The following code example describes the above behavior,
 
 {% highlight html %}
@@ -97,7 +97,7 @@ N> This type can be set as default by setting `selection-type` property in `e-se
 
 ### Sheet Selection
 
-Sheet selection is used to select all cells in a worksheet.  It can be performed using [`selectSheet`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectsheet "selectSheet") method.
+Sheet selection is used to select all cells in a worksheet.  It can be performed using [`selectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:xlselection-selectsheet "selectSheet") method.
 The following code example describes the above behavior,
 
 {% highlight html %}

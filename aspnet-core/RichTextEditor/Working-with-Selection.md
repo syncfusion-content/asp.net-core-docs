@@ -12,7 +12,7 @@ The editor control provides option to select the all content and in addition to 
 
 ## Select All 
 
-The [selectAll](http://help.syncfusion.com/js/api/ejrte#methods:selectall) method enables you to select the entire content including images in the editor by programmatically.
+The [selectAll](https://help.syncfusion.com/js/api/ejrte#methods:selectall) method enables you to select the entire content including images in the editor by programmatically.
 
 N> the selection highlight is invisible if the editor does not have focus. So, if you want to call the selectAll method, focus the editor before.
 
@@ -39,7 +39,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 ## Select a Range 
 
-You can programmatically select a range of content in the editor using the [selectRange](http://help.syncfusion.com/js/api/ejrte#methods:selectrange) method.  To select a range, create a range object with desired offset position and pass it as arguments to selectRange method. The range object is created from [createRange](http://help.syncfusion.com/js/api/ejrte#methods:createrange) method. 
+You can programmatically select a range of content in the editor using the [selectRange](https://help.syncfusion.com/js/api/ejrte#methods:selectrange) method.  To select a range, create a range object with desired offset position and pass it as arguments to selectRange method. The range object is created from [createRange](http://help.syncfusion.com/js/api/ejrte#methods:createrange) method. 
 
 {% highlight CSHTML %}
 
@@ -79,8 +79,8 @@ You can programmatically select a range of content in the editor using the [sele
 
 The following public methods helps you to retrieve the selected content from the editor:
 
-* [getText](http://help.syncfusion.com/js/api/ejrte#methods:gettext) method is used to get the currently selected content as raw text.
-* [getSelectedHtml](http://help.syncfusion.com/js/api/ejrte#methods:getselectedhtml) method is used to get the HTML source of currently selected content.
+* [getText](https://help.syncfusion.com/js/api/ejrte#methods:gettext) method is used to get the currently selected content as raw text.
+* [getSelectedHtml](https://help.syncfusion.com/js/api/ejrte#methods:getselectedhtml) method is used to get the HTML source of currently selected content.
 
 {% highlight CSHTML %}
 

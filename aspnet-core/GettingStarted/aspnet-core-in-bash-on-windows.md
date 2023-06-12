@@ -176,7 +176,7 @@ $ sudo apt-get upgrade
 
 *  Once the project creation is successful, you need to have one common text editor for configuration. Here we have mentioned Visual Studio code editor throughout the documentation.
 
-*  Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment)
+*  Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/overview)
 
 *  Click the Extension icon in the Visual Studio Code left side pane, in the search window type the command bower. The Bower related extensions are listed out. Now select the Bower extension and click the install button.
 
@@ -200,7 +200,7 @@ $ sudo apt-get upgrade
 
 
 
-*  Open a **project.json** file and refer our Syncfusion assembly **Syncfusion.EJ.AspNet.Core**  into your application for our components deployment. To know more about packages configuration and installation refer this [link](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration).
+*  Open a **project.json** file and refer our Syncfusion assembly **Syncfusion.EJ.AspNet.Core**  into your application for our components deployment. To know more about packages configuration and installation refer this [link](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages).
 
 *  Once the NuGet packages installation gets completed, in **project.json** file to include our **Syncfusion.EJ.AspNet.Core** package reference.
 

@@ -96,4 +96,4 @@ The following code illustrates about how to render UploadBox inside the column 
 
 {% endhighlight %}
 
-Refer to the sample [here](http://www.syncfusion.com/downloads/support/directtrac/230884/ze/Grid_with_Uploadbox1479644797 )
+Refer to the sample [here](https://www.syncfusion.com/downloads/support/directtrac/230884/ze/Grid_with_Uploadbox1479644797)

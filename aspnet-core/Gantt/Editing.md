@@ -359,7 +359,7 @@ $("#updateRecordByRowIndex").click(function () {
 
 {% endhighlight %}
 
-You can find the JS playground sample for this [here](http://jsplayground.syncfusion.com/Sync_w5suulh5).
+You can find the JS playground sample for this [here](https://jsplayground.syncfusion.com/Sync_w5suulh5).
 
 N> Using these methods we can't update the task id value.
 

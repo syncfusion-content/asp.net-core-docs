@@ -12,7 +12,7 @@ The Essential ASP.NET Core DatePicker appearance can be customized using below l
 
 ## Set Dimension 
 
-By default DatePicker has standard height and width (height: "30" and width: "143"). You can change this height and width by using [Height](http://help.syncfusion.com/js/api/ejdatepicker#members:height) and [Width](http://help.syncfusion.com/js/api/ejdatepicker#members:width) property respectively.
+By default DatePicker has standard height and width (height: "30" and width: "143"). You can change this height and width by using [Height](https://help.syncfusion.com/js/api/ejdatepicker#members:height) and [Width](https://help.syncfusion.com/js/api/ejdatepicker#members:width) property respectively.
 
 
 {% highlight cshtml %}
@@ -63,7 +63,7 @@ Since Essential ASP.NET Core DatePicker is a form control and you can make it as
 
 ## Show Footer
 
-You can show or hide the footer of EJMVC DatePicker calendar by using [ShowFooter](http://help.syncfusion.com/js/api/ejdatepicker#members:showfooter) property. 
+You can show or hide the footer of EJMVC DatePicker calendar by using [ShowFooter](https://help.syncfusion.com/js/api/ejdatepicker#members:showfooter) property. 
 
 {% highlight cshtml %}
 
@@ -91,7 +91,7 @@ N>  Footer contains the today button to quickly navigate to the current date. By
 
 ## Show Popup Button
 
-The Essential ASP.NET Core DatePicker input textbox  contains a button to open the DatePicker calendar. You can hide this DatePicker calendar button using [ShowPopupButton](http://help.syncfusion.com/js/api/ejdatepicker#members:showpopupbutton) value as false.
+The Essential ASP.NET Core DatePicker input textbox  contains a button to open the DatePicker calendar. You can hide this DatePicker calendar button using [ShowPopupButton](https://help.syncfusion.com/js/api/ejdatepicker#members:showpopupbutton) value as false.
 
 By hiding this button, you can open the DatePicker by focusing the input textbox element itself.
 
@@ -119,7 +119,7 @@ By hiding this button, you can open the DatePicker by focusing the input textbox
 
 ## Show Other Months
 
-You can show or hide the other month days from the Essential ASP.NET Core DatePicker calendar by using [ShowOtherMonths](http://help.syncfusion.com/js/api/ejdatepicker#members:showothermonths) property.
+You can show or hide the other month days from the Essential ASP.NET Core DatePicker calendar by using [ShowOtherMonths](https://help.syncfusion.com/js/api/ejdatepicker#members:showothermonths) property.
 
 {% highlight cshtml %}
 
@@ -144,7 +144,7 @@ You can show or hide the other month days from the Essential ASP.NET Core DatePi
 
 ## Highlight Special Date
 
-The Essential ASP.NET Core DatePicker allows you to highlight the special dates in ASP.NET Core DatePicker calendar by using [SpecialDates](http://help.syncfusion.com/js/api/ejdatepicker#members:specialdates) property. It receives the list of "dataSpecial" date fields such as, in which the data should contain the date value, icon CSS class and tooltip as field values with any names.
+The Essential ASP.NET Core DatePicker allows you to highlight the special dates in ASP.NET Core DatePicker calendar by using [SpecialDates](https://help.syncfusion.com/js/api/ejdatepicker#members:specialdates) property. It receives the list of "dataSpecial" date fields such as, in which the data should contain the date value, icon CSS class and tooltip as field values with any names.
 
 Special Date property has following properties,
 

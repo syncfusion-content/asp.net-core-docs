@@ -86,7 +86,7 @@ The following output is displayed as a result of the above code example.
 
 You can restrict/prevent the editing in the specified range. You can use `allow-lock-cell` property to enable/disable the lock cells. You can do this by one of the following ways,
 
-* Using [`lockCells`](http://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the selected cells. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
+* Using [`lockCells`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:lockcells "lockCells") method to lock the selected cells. Then you need to protect the sheet using [`protectSheet`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:protectsheet "protectSheet") method to restrict the editing.
 * Using "Lock Cells” option under Changes group of REVIEW tab in ribbon. Then Using "Protect Sheet” option under Changes group of REVIEW tab in ribbon to restrict editing.
 
 The following code example describes the above behavior.
@@ -206,6 +206,6 @@ namespace MVCSampleBrowser.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-To save and retrieve the Spreadsheet data in the database, you can refer this [`Knowledge Base`](https://www.syncfusion.com/kb/7567/how-to-save-and-retrieve-the-spreadsheet-data-in-database "Knowledge Base") link.
+To save and retrieve the Spreadsheet data in the database, you can refer this [`Knowledge Base`](https://support.syncfusion.com/kb/article/6923/how-to-save-and-retrieve-the-spreadsheet-data-in-database) link.
 
 You can update data dynamically in the Spreadsheet by using [`updateRange`](https://help.syncfusion.com/api/js/ejspreadsheet#methods:updaterange "updateRange") method.

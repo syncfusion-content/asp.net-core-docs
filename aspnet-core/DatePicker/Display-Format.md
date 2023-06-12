@@ -82,7 +82,7 @@ The full four digit year<br/><br/></td><td>
 
 ## Date Format
 
-Each culture has some specific date format. Date format defines a format or structure of the displayed date in the textbox of EJMVC DatePicker component. You can change the date format by using [DateFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dateformat) property
+Each culture has some specific date format. Date format defines a format or structure of the displayed date in the textbox of EJMVC DatePicker component. You can change the date format by using [DateFormat](https://help.syncfusion.com/js/api/ejdatepicker#members:dateformat) property
 
 The standard formats are listed as follows
 
@@ -159,7 +159,7 @@ N> by default date format is based on culture specific. You have to refer the re
 
 ## Header Format
 
-EJMVC DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using [HeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:headerformat) property.
+EJMVC DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using [HeaderFormat](https://help.syncfusion.com/js/api/ejdatepicker#members:headerformat) property.
 
 {% highlight cshtml %}
 
@@ -182,7 +182,7 @@ EJMVC DatePicker calendar consists of header, day header, days and footer sectio
 
 ## Day Header
 
-Day header determines the days name to be displayed in terms of short, medium and long in EJMVC DatePicker calendar by using [DayHeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat) property. Also the DatePicker calendar size varies with this specified values.
+Day header determines the days name to be displayed in terms of short, medium and long in EJMVC DatePicker calendar by using [DayHeaderFormat](https://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat) property. Also the DatePicker calendar size varies with this specified values.
 
 {% highlight cshtml %}
 
@@ -205,9 +205,9 @@ Day header determines the days name to be displayed in terms of short, medium an
 
 ## Tooltip with Formatting
 
-The EJMVC DatePicker calendar shows tooltip on hovering the date by specifying the formatted date of hovered date. Its helps you to get clear view about the date going to select. You can show or hide this tooltip option by using [ShowTooltip](http://help.syncfusion.com/js/api/ejdatepicker#members:showtooltip ) property.
+The EJMVC DatePicker calendar shows tooltip on hovering the date by specifying the formatted date of hovered date. Its helps you to get clear view about the date going to select. You can show or hide this tooltip option by using [ShowTooltip](https://help.syncfusion.com/js/api/ejdatepicker#members:showtooltip ) property.
 
-You can also change the format of tooltip by using [TooltipFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:tooltipformat) property. Below codes example allows to show tooltip and format its value. 
+You can also change the format of tooltip by using [TooltipFormat](https://help.syncfusion.com/js/api/ejdatepicker#members:tooltipformat) property. Below codes example allows to show tooltip and format its value. 
 
 {% highlight cshtml %}
 
