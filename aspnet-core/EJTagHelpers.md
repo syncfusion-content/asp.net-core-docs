@@ -45,7 +45,7 @@ Open a view page to render Syncfusion UI components in Tag Helper Syntax. The fo
 
 We can configure the EJ components with its properties by using tag attributes. It also has rich IntelliSense support which displays all the methods and properties of EJ controls on the page model.
 
-![](ej-tag-helpers_images/ej-tag-helper_image.png)   
+![API configuration with tag helpers in ASP.NET Core application](ej-tag-helpers_images/aspnetcore-api-configuration-with-tag-helpers.png)   
 
 ## Wiring Client Side Events
 
