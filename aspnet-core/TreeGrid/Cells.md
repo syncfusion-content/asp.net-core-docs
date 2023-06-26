@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Cells | TreeGrid | ASP.NET Core | Syncfusion
-description: cells
+description: Learn here about Cells in Syncfusion Essential ASP.NET Core TreeGrid Control, its elements, and more.
 platform: aspnet-core
 control: TreeGrid
 documentation: ug
 ---
 
-# Cell
+# Cells in TreeGrid ASP.NET Core 
 
 ## Tooltip
 
@@ -26,12 +26,12 @@ Please find the example describes the above behavior.
 {% endhighlight  %}
 
 The following output shows the result of above code example.
-![](Cell/tooltip.png)
+![Tooltip in ASP.NET Core TreeGrid](Cell/tooltip.png)
 
 {:caption}
 Cell Tooltip
 
-![](Cell/headerTooltip.png)
+![Tooltip Header in ASP.NET Core TreeGrid](Cell/headerTooltip.png)
 
 {:caption}
 Header Tooltip
@@ -108,7 +108,7 @@ Please find code example describes the cell tooltip template support.
 
 The following output shows the result of above code example.
 
-![](Cell/gridcelltemplate.png)
+![Tooltip Template in ASP.NET Core TreeGrid](Cell/gridcelltemplate.png)
 
 ### Column tooltip
 
@@ -142,7 +142,7 @@ Please refer the following code example for setting a custom tooltip for a speci
 
 The following output shows the output of above code snippets.
 
-![](Cell/cellTooltipTemplate.png)
+![Column Tooltip in ASP.NET Core TreeGrid](Cell/cellTooltipTemplate.png)
 
 N> Template element should be enclosed with `<script>` tag with type as `“text/x-jsrender”`.
 
@@ -178,7 +178,7 @@ Please refer the following code example for setting a custom tooltip for a speci
 
 The following output shows the result of above code example.
 
-![](Cell/headerTooltipTemplate.png)
+![Output Header Tooltip Template in ASP.NET Core TreeGrid](Cell/headerTooltipTemplate.png)
 
 
 ## Clip Mode
@@ -220,7 +220,7 @@ The following code example describes the above behavior.
 
 The following output shows the result of above code example.
 
-![](Cell/clipmode.png)
+![Clip Mode in in ASP.NET Core TreeGrid](Cell/clipmode.png)
 
 ### Ellipsis
 
@@ -248,7 +248,7 @@ The following code example describes the above behavior.
 
 The following output is shows the result of the above code example.
 
-![](Cell/ellipsisMode.png)
+![Ellipsis in ASP.NET Core TreeGrid](Cell/ellipsisMode.png)
 
 ## Text Wrap
 Text wrap enables the TreeGrid to wrap cell content or header content to next line when the content exceeds the boundary of the cell width.
@@ -273,7 +273,7 @@ The following code example describes the above behavior.
 
 The following output shows the result of above code example.
 
-![](Cell/headerTextOverflow.png)
+![Header Text Wrap in ASP.NET Core TreeGrid](Cell/headerTextOverflow.png)
 
 ### Content Text Wrap
 
@@ -299,4 +299,4 @@ The following code example describes the above behavior.
 
 The following output shows the result of above code example.
 
-![](Cell/textWrap.png)
+![Content Text Wrap in ASP.NET Core TreeGrid](Cell/textWrap.png)

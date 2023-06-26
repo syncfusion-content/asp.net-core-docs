@@ -1,13 +1,13 @@
 ---
 layout: post
 title: NumericTextBox | NumericTextBox | ASP.NET Core | Syncfusion
-description: overview
+description: Learn here about overview in Syncfusion Essential ASP.NET Core NumericTextBox Control, its elements, and more.
 platform: aspnet-core
 control: NumericTextBox
 documentation: ug
 ---
 
-# NumericTextBox
+# NumericTextBox in ASP.NET Core 
 
 Essential ASP.NET Core NumericTextBox is used to display only numeric values. It has Spin buttons to increase or decrease the values in the Text Box. 
 
