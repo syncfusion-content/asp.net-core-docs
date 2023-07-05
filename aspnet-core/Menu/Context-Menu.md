@@ -61,7 +61,7 @@ In the following example, a context menu for the division containing text is cre
 
 The following screen shot displays the output of the above code.
 
-![Context Menu in ASP.NET Core](Context-Menu_images/Context-Menu_img1.png)
+![Context Menu in ASP.NET Core](context-menu_images/aspnetcore-context-menu.png)
 
 Context Menu
 {:.caption}
