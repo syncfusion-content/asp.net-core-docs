@@ -1,7 +1,8 @@
 ---
 layout: post
 title: overview | Signature | ASP.NET Core | Syncfusion
-description: Learn more about using ASP.NET core Signature to customize the background, stroke width and stroke color, convert captured signature to an image format.
+description: Learn more about how to customize the ASP.NET Core Signature background, stroke width and stroke color and convert captured signature to an image format.
+
 platform: ASP.NET core
 control: Signature
 documentation: ug
