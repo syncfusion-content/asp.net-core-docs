@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Getting-Started | PivotGrid | ASP.NET Core | Syncfusion
-description: getting started
+description: Learn more about the introduction to the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
+
 platform: aspnet-core
 control: PivotGrid
 documentation: ug

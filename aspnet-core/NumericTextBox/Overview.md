@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NumericTextBox | NumericTextBox | ASP.NET Core | Syncfusion
-description: overview
+description: Learn more about how NumericTextBox is used to display only numeric values using Spin buttons to increase or decrease the values in the Text Box. 
 platform: aspnet-core
 control: NumericTextBox
 documentation: ug
