@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Context Menu | Menu | ASP.NET Core | Syncfusion
-description: context menu
+description: Learn here about Context Menu in Syncfusion Essential ASP.NET Core Menu Control, its elements, and more.
 platform: aspnet-core 
 control: Menu
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in ASP.NET Core
 
 A context menu is a type of menu in a graphical user interface (GUI) that appears when you perform right click operation. In this Menu control you can use a context menu by specifying the type of menu as ContextMenu. A context also provides support for nested level of menu items.
 
@@ -61,7 +61,7 @@ In the following example, a context menu for the division containing text is cre
 
 The following screen shot displays the output of the above code.
 
-![](Context-Menu_images/Context-Menu_img1.png)
+![Context Menu in ASP.NET Core](context-menu_images/aspnetcore-context-menu.png)
 
 Context Menu
 {:.caption}
