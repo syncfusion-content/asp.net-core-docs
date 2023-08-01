@@ -1,7 +1,7 @@
 ---
 layout: post
-title: EJTagHelpers | ASP.NET Core | Syncfusion
-description: EJTagHelpers
+title: EJTagHelpers in ASP.NET Core | Syncfusion
+description: Learn here about EJTagHelpers in Syncfusion Essential ASP.NET Core , its elements, and more.
 platform: aspnet-core
 control: Common 
 documentation: ug
