@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MultiSelection modes | AutoComplete | ASP.NET Core | Syncfusion
-description: multiselection modes
+title: MultiSelection modes in ASP.NET Core AutoComplete | Syncfusion
+description: Learn here about multiselection modes in Syncfusion Essential ASP.NET Core AutoComplete Control, its elements, and more.
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
