@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling | Accordion  | ASP.NET Core | Syncfusion
-description: appearance and styling
+title: Appearance and Styling in ASP.NET Core Accordion | Syncfusion
+description: Learn here about appearance and styling in Syncfusion Essential ASP.NET Core Accordion Control, its elements, and more.
 platform: aspnet-core
 control: Accordion 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | PivotGrid | ASP.NET Core | Syncfusion
-description: Learn here about getting started with PivotGrid in Syncfusion Essential ASP.NET Core Control, its elements, and more.
+title: Getting-Started in ASP.NET Core PivotGrid | Syncfusion
+description: Learn here about getting started with Syncfusion Essential ASP.NET Core PivotGrid Control, its elements, and more.
 platform: aspnet-core
 control: PivotGrid
 documentation: ug
