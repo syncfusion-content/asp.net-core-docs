@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in ASP.NET Core Menu | Syncfusion
+title: Context Menu in ASP.NET Core | Syncfusion
 description: Learn here about Context Menu in Syncfusion Essential ASP.NET Core Menu Control, its elements, and more.
 platform: aspnet-core 
 control: Menu
