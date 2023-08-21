@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NumericTextBox | NumericTextBox | ASP.NET Core | Syncfusion
+title: Overview of ASP.NET Core NumericTextBox | Syncfusion
 description: Learn here about overview in Syncfusion Essential ASP.NET Core NumericTextBox Control, its elements, and more.
 platform: aspnet-core
 control: NumericTextBox
