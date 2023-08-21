@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Range | DateTimePicker | ASP.NET Core | Syncfusion
-description: date range
+title: Date Range in ASP.NET Core DateTimePicker | Syncfusion
+description: Learn here about date range in Syncfusion ASP.NET Core DateTimePicker control, its elements, and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug

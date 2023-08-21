@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence | Accordion  | ASP.NET Core | Syncfusion
-description: state persistence
+title: State Persistence in ASP.NET Core Accordion | Syncfusion
+description: Learn here about state persistence in Syncfusion Essential ASP.NET Core Accordion Control, its elements, and more.
 platform: aspnet-core
 control: Accordion 
 documentation: ug
