@@ -8,7 +8,7 @@ documentation: ug
 keywords : dialog, animation
 ---
 
-## Animation
+# Animation in ASP.NET Core Dialog
 
 The Dialog widget can be animated while opening and closing the dialog.
 
