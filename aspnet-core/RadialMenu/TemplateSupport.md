@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Syncfusion Radial Menu Template Support.
-description: template support.
+title: Template Support | ASP.NET Core Radial Menu | Syncfusion
+description: Learn here about template support in Syncfusion Essential ASP.NET Core Radial Menu Control, its elements, and more.
 platform: aspnet-core
 control: RadialMenu 
 documentation: ug
 ---
 
-## Template Support
+# Template Support in ASP.NET Core Radial Menu
 
  Template support for RadialMenu items will allow you to use any type of [\<svg\>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements) permitted tags inside our template. Here for example, using this template support you can use the SVG icons in Radial Menu instead of image tags. To use SVG icons in RadialMenu, you need to use [prepend-to](https://help.syncfusion.com/api/js/ejradialmenu#members:items-prependTo) property.
 
- ### Add SVG to item Icon
+ ## Add SVG to item Icon
 
 Using SVG icon will optimize the icons quality and to reduce space occupation by normal images and svg images are scalable and Zoom. Define the text element for SVG with x and y position and code for rendering the font icons. Assign the SVG element ID to **prepend-to** property.
 
