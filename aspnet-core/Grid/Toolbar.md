@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbar with Grid widget for ASP.NET Core
-description: toolbar 
+title: Toolbar with Grid widget for ASP.NET Core | Syncfusion
+description: Learn here about toolbar in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: Grid
 documentation: ug
 ---
 
-# Toolbar
+# Toolbar in ASP.NET Core ToolBar
 
 Toolbar can be shown by defining the `show-toolbar` property in `toolbar-settings`. Toolbar has option to add default items in `toolbar-items` and customized items in ` custom-toolbar-items`.
 
@@ -92,7 +92,7 @@ namespace SyncfusionMvcApplication1.Controllers
 {% endhighlight %}
 {% endtabs %}  
 
-![](Toolbar_images/Toolbar_img1.png)
+![Default toolbar items in ASP.NET Core Grid](Toolbar_images/Toolbar_img1.png)
 
 
 I> The `allow-adding`, `allow-editing` and `allow-deleting` need to be enabled for add, delete, edit, save & cancel in `toolbar-items`. `allow-searching` to be enabled while adding search in toolbar to perform search action.
@@ -165,4 +165,4 @@ namespace SyncfusionMvcApplication1.Controllers
 {% endhighlight %}
 {% endtabs %}  
 
-![](Toolbar_images/Toolbar_img4.png)
+![Custom Toolbar items in ASP.NET Core Grid](Toolbar_images/Toolbar_img4.png)

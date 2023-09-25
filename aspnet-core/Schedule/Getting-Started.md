@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | ASP.NET Core | Syncfusion
-description: Getting Started with Scheduler control.
+description: Learn here about getting started with Scheduler control in Syncfusion Essential ASP.NET Core Schedule Control, its elements, and more.
 platform: aspnet-core 
 control: Schedule 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with ASP.NET Core Schedule
 
 Refer the [Getting Started](/aspnet-core/getting-started) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
@@ -134,7 +134,7 @@ Now, define the action _GetData_ within the **Home** controller page as shown be
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting Started with ASP.NET Core Schedule](Getting-Started_images/Getting-Started_img1.png)
 
 
  
