@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template Support | ASP.NET Core Radial Menu | Syncfusion
+title: Template Support in ASP.NET Core Radial Menu Control | Syncfusion
 description: Learn here about template support in Syncfusion Essential ASP.NET Core Radial Menu Control, its elements, and more.
 platform: aspnet-core
 control: RadialMenu 
