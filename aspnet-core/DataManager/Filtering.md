@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering | DataManager | ASP.NET Core | Syncfusion
-description: Learn here about filtering in Syncfusion Essential ASP.NET Cor DataManager Control, its elements, and more.
+title: Filtering in DataManager | ASP.NET Core | Syncfusion
+description: Learn here about filtering support in Syncfusion Essential ASP.NET Cor DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | ASP.NET Core | Syncfusion
-description: Learn here about getting started with Scheduler control in Syncfusion Essential ASP.NET Core Schedule Control, its elements, and more.
+title: Getting Started with ASP.NET Core Schedule | Syncfusion
+description: Learn here about getting started with Scheduler in Syncfusion Essential ASP.NET Core Schedule Control, its elements, and more.
 platform: aspnet-core 
 control: Schedule 
 documentation: ug

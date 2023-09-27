@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started on Linux| ASP.NET Core | Syncfusion
+title: Getting Started with Linux in ASP.NET Core | Syncfusion
 description: Learn here about getting started on Linux in Syncfusion Essential ASP.NET Core Control, its elements, and more.
 platform: aspnet-core 
 control: Common 
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Getting Started on Linux with ASP.NET Core
+# Getting Started with Linux in ASP.NET Core
 
 > Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
