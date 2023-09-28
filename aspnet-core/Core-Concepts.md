@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Core Concepts in ASP.NET Core | Syncfusion
+title: Core Concepts in ASP.NET Core Control | Syncfusion
 description: Learn here about Core Concepts in Syncfusion Essential ASP.NET Core Control, its elements, and more.
 platform: aspnet-core
 control: Common 
@@ -15,7 +15,7 @@ documentation: ug
 
 Using tag helper methods we can set values to Syncfusion Widget properties during or after the creation.
 
-![API Configuration in ASP.NET Core](core-concepts_images/core-concepts_img1.png)
+![API configuration in ASP.NET Core](core-concepts_images/core-concepts_img1.png)
 
 In the above example, minimum & maximum range defined for DatePicker component. 
 

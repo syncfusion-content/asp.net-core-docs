@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Linux in ASP.NET Core | Syncfusion
+title: Getting Started with Linux in ASP.NET Core Control | Syncfusion
 description: Learn here about getting started on Linux in Syncfusion Essential ASP.NET Core Control, its elements, and more.
 platform: aspnet-core 
 control: Common 
@@ -178,11 +178,11 @@ yo aspnet
 
 {% endhighlight %}
 
-  ![Building Projects with Yeoman in ASP.NET Core](getting-started-images-linux/img1.jpg)
+  ![Building projects with yeoman in ASP.NET Core](getting-started-images-linux/img1.jpg)
 
 * From the list of available projects, select the *Web Application Basic* [without Membership and Authorization] by using arrow keys.
 
-  ![Web Application basic in ASP.NET Core](getting-started-images-linux/img2.jpg)
+  ![Web application basic in ASP.NET Core](getting-started-images-linux/img2.jpg)
 
 * And then provide the project name or simply press the ‘Enter’ key to create the project with default name.
 
@@ -192,7 +192,7 @@ yo aspnet
 
 * Open Visual Studio Code and open your Sample application folder using **Open Folder** option. Now your project folder is loaded in Visual Studio Code application.
 
-  ![Configuring Syncfusion Components in ASP.NET Core](getting-started-images-linux/img4.jpg)
+  ![Configuring Syncfusion components in ASP.NET Core](getting-started-images-linux/img4.jpg)
 
 * Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages)
 
@@ -202,7 +202,7 @@ yo aspnet
 
 * In **bower.json** file specify our Syncfusion packages with our latest version, or else specify the **`*`** symbol will automatically loads our latest version scripts and CSS files.
 
-  ![Syncfusion Packages in ASP.NET Core](getting-started-images-linux/img6.jpg)
+  ![Syncfusion packages in ASP.NET Core](getting-started-images-linux/img6.jpg)
 
 * Then open quick window to enter the *`>bower`* command and press ‘Enter’ key, from the below list of suggestions select the **bower install** option to restored our scripts and CSS into your application **wwwroot -> lib** folder.
 

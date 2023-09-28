@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar with Grid widget for ASP.NET Core | Syncfusion
+title: Toolbar with Grid widget for ASP.NET Core Control | Syncfusion
 description: Learn here about toolbar support in Syncfusion Essential ASP.NET Core Grid Control, its elements, and more.
 platform: aspnet-core
 control: Grid
@@ -165,4 +165,4 @@ namespace SyncfusionMvcApplication1.Controllers
 {% endhighlight %}
 {% endtabs %}  
 
-![Custom Toolbar items in ASP.NET Core Grid](Toolbar_images/Toolbar_img4.png)
+![Custom toolbar items in ASP.NET Core Grid](Toolbar_images/Toolbar_img4.png)

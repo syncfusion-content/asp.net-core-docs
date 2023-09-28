@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CheckBox with DropDownList widget for Syncfusion ASP.NET Core
+title: CheckBox in ASP.NET Core DropDownList Control | Syncfusion
 description: Learn here about Checkbox functionalities in Syncfusion Essential ASP.NET Cor DropDown List Control, its elements, and more.
 platform: aspnet-core
 control: DropDownList
@@ -80,7 +80,7 @@ DropDownList displays checkboxes to the left of each item when you set <b>ShowCh
     
 {% endtabs %}
 
-![Field with Boolen Values in ASP.NET Core DropDownList](Checkbox_images/Checkbox_img2.png)
+![Field with boolen values in ASP.NET Core DropDownList](Checkbox_images/Checkbox_img2.png)
 
 ## Selection Modes
 
@@ -163,4 +163,4 @@ When you enable this option in DropDownList control, each checked item’s text 
     
 {% endtabs %}
 
-![Visual Mode in ASP.NET Core DropDownList](Checkbox_images/Checkbox_img4.png)
+![Visual mode in ASP.NET Core DropDownList](Checkbox_images/Checkbox_img4.png)

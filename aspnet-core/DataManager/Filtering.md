@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in DataManager | ASP.NET Core | Syncfusion
+title: Filtering in ASP.NET Core DataManager Control| Syncfusion
 description: Learn here about filtering support in Syncfusion Essential ASP.NET Cor DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
@@ -81,7 +81,7 @@ This operator is used to get the records with values less than that of the filte
 
 Result of the above code example is illustrated as follows.
 
-![Lessthan in ASP.NET Core DataManger](Filtering_images/Filtering_img1.png) 
+![lessThan in ASP.NET Core DataManger](Filtering_images/Filtering_img1.png) 
 
 ## greaterThan
 
@@ -124,7 +124,7 @@ This operator is used to get the records with values greater than that of the fi
 
 Result of the above code example is illustrated as follows.
 
-![Greatertahn in ASP.NET Core DataManger](Filtering_images/Filtering_img2.png) 
+![GreaterThan in ASP.NET Core DataManger](Filtering_images/Filtering_img2.png) 
 
 ## lessThanOrEqual
 
@@ -210,7 +210,7 @@ This operator is used to get the records with values greater than or equal to th
 
 Result of the above code example is illustrated as follows.
 
-![greaterThanorEqual in ASP.NET Core DataManger](Filtering_images/Filtering_img4.png) 
+![GreaterThanorEqual in ASP.NET Core DataManger](Filtering_images/Filtering_img4.png) 
 
 ## equal
 
@@ -468,7 +468,7 @@ The `and` predicate is used to add n-number of predicates with “and” conditi
 
 Result of the above code example is illustrated as follows.
 
-![And Predictable in ASP.NET Core DataManger](Filtering_images/Filtering_img10.png) 
+![And predictable in ASP.NET Core DataManger](Filtering_images/Filtering_img10.png) 
 
 ## or predicate
 
@@ -511,7 +511,7 @@ Using this method you can add n-number of predicates with `or` condition and fil
 
 Result of the above code example is illustrated as follows.
 
-![Or Predicate in ASP.NET Core DataManger](Filtering_images/Filtering_img11.png) 
+![Or predicate in ASP.NET Core DataManger](Filtering_images/Filtering_img11.png) 
 
 ## Containment Operators
 
@@ -711,7 +711,7 @@ This operator used to fetch the records with value not match with the given filt
 
 ![Notin in ASP.NET Core DataManger](Filtering_images/Filtering_image14.png) 
 
-![Filter Value in ASP.NET Core DataManger](Filtering_images/Filtering_image15.png) 
+![Filter value in ASP.NET Core DataManger](Filtering_images/Filtering_image15.png) 
 
 ## Lambda Operators
 
