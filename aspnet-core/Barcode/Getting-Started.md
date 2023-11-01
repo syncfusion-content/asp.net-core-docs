@@ -7,7 +7,7 @@ control: Barcode
 documentation: ug
 ---
 
-## Getting Started with ASP.NET Core Barcode
+# Getting Started with ASP.NET Core Barcode
 
 Refer the [Getting Started](https://help.syncfusion.com/aspnet-core/gettingstarted/getting-started-1-1-0) page of the Introduction part to know more about the basic system requirements and the steps to configure the Syncfusion components in an ASP.NET Core application.
 
