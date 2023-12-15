@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering | DataManager | ASP.NET Core | Syncfusion
-description: filtering
+title: Filtering in ASP.NET Core DataManager Control| Syncfusion
+description: Learn here about filtering support in Syncfusion Essential ASP.NET Cor DataManager Control, its elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
 keywords: filter Operators, lessThan, lessThanOrEqual, less, contains
 ---
 
-# Filtering
+# Filtering in ASP.NET Core DataManger
 
 Filtering is a basic technique in **DataManager** query. The “where” query is used to filter some particular or related records from the data source to review details of records. 
 
@@ -81,7 +81,7 @@ This operator is used to get the records with values less than that of the filte
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img1.png) 
+![lessThan in ASP.NET Core DataManger](Filtering_images/Filtering_img1.png) 
 
 ## greaterThan
 
@@ -124,7 +124,7 @@ This operator is used to get the records with values greater than that of the fi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img2.png) 
+![GreaterThan in ASP.NET Core DataManger](Filtering_images/Filtering_img2.png) 
 
 ## lessThanOrEqual
 
@@ -167,7 +167,7 @@ This operator is used to get the records with values less than or equal to the f
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img3.png) 
+![LessThanoeEqual in ASP.NET Core DataManger](Filtering_images/Filtering_img3.png) 
 
 ## greaterThanOrEqual
 
@@ -210,7 +210,7 @@ This operator is used to get the records with values greater than or equal to th
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img4.png) 
+![GreaterThanorEqual in ASP.NET Core DataManger](Filtering_images/Filtering_img4.png) 
 
 ## equal
 
@@ -253,7 +253,7 @@ This operator is used to get the records with values equal to that of the filter
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img5.png) 
+![Equal in ASP.NET Core DataManger](Filtering_images/Filtering_img5.png) 
 
 ## notEqual
 
@@ -296,7 +296,7 @@ This operator is used to get the records with values not equal to that of the fi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img6.png) 
+![NotEqual in ASP.NET Core DataManger](Filtering_images/Filtering_img6.png) 
 
 ## contains
 
@@ -339,7 +339,7 @@ This operator is used to get the records that contains the filter value.
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img7.png) 
+![Contains in ASP.NET Core DataManger](Filtering_images/Filtering_img7.png) 
 
 ## startswith
 
@@ -382,7 +382,7 @@ This operator is used to get the records that starts with the filter value speci
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img8.png) 
+![StartsWith in ASP.NET Core DataManger](Filtering_images/Filtering_img8.png) 
 
 ## endswith
 
@@ -425,7 +425,7 @@ This operator is used to get the records that ends with the filter value specifi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img9.png) 
+![EndsWith in ASP.NET Core DataManger](Filtering_images/Filtering_img9.png) 
 
 ## and predicate
 
@@ -468,7 +468,7 @@ The `and` predicate is used to add n-number of predicates with “and” conditi
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img10.png) 
+![And predictable in ASP.NET Core DataManger](Filtering_images/Filtering_img10.png) 
 
 ## or predicate
 
@@ -511,7 +511,7 @@ Using this method you can add n-number of predicates with `or` condition and fil
 
 Result of the above code example is illustrated as follows.
 
-![](Filtering_images/Filtering_img11.png) 
+![Or predicate in ASP.NET Core DataManger](Filtering_images/Filtering_img11.png) 
 
 ## Containment Operators
 
@@ -562,7 +562,7 @@ This operator is used to get the records that not contains the filter value.
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image12.png) 
+![Notcontains in ASP.NET Core DataManger](Filtering_images/Filtering_image12.png) 
 
 ### contains
 
@@ -611,7 +611,7 @@ This operator is used to get the records that contains the filter value.
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image111.png) 
+![Contains in ASP.NET Core DataManger](Filtering_images/Filtering_image111.png) 
 
 ### in
 
@@ -660,7 +660,7 @@ This operator used to fetch the records with value match with the given filter v
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image13.png) 
+![In in ASP.NET Core DataManger](Filtering_images/Filtering_image13.png) 
 
 ### notin
 
@@ -709,9 +709,9 @@ This operator used to fetch the records with value not match with the given filt
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image14.png) 
+![Notin in ASP.NET Core DataManger](Filtering_images/Filtering_image14.png) 
 
-![](Filtering_images/Filtering_image15.png) 
+![Filter value in ASP.NET Core DataManger](Filtering_images/Filtering_image15.png) 
 
 ## Lambda Operators
 
@@ -773,7 +773,7 @@ The ALL operator returns true if all the sub query values meet the condition. Th
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image16.png) 
+![All in ASP.NET Core DataManger](Filtering_images/Filtering_image16.png) 
 
 ### any
 
@@ -832,4 +832,4 @@ The ANY operator returns true if any of the sub query values meet the condition.
 
 {% endtabs %}
 
-![](Filtering_images/Filtering_image17.png) 
+![Any in ASP.NET Core DataManger](Filtering_images/Filtering_image17.png) 

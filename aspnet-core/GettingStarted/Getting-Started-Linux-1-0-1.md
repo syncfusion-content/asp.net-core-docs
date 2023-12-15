@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started on Linux| ASP.NET Core | Syncfusion
-description: Getting Started on Linux.
+title: Getting Started with Linux in ASP.NET Core Control | Syncfusion
+description: Learn here about getting started on Linux in Syncfusion Essential ASP.NET Core Control, its elements, and more.
 platform: aspnet-core 
 control: Common 
 documentation: ug
 ---
 
 
-# Getting Started on Linux
+# Getting Started with Linux in ASP.NET Core
 
 > Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview#aspnet-core) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
 
@@ -178,41 +178,41 @@ yo aspnet
 
 {% endhighlight %}
 
-  ![](getting-started-images-linux/img1.jpg)
+  ![Building projects with yeoman in ASP.NET Core](getting-started-images-linux/img1.jpg)
 
 * From the list of available projects, select the *Web Application Basic* [without Membership and Authorization] by using arrow keys.
 
-  ![](getting-started-images-linux/img2.jpg)
+  ![Web application basic in ASP.NET Core](getting-started-images-linux/img2.jpg)
 
 * And then provide the project name or simply press the ‘Enter’ key to create the project with default name.
 
-  ![](getting-started-images-linux/img3.jpg)
+  ![Naming the project in ASP.NET MVC Core](getting-started-images-linux/img3.jpg)
 
 ### Configuring Syncfusion Components
 
 * Open Visual Studio Code and open your Sample application folder using **Open Folder** option. Now your project folder is loaded in Visual Studio Code application.
 
-  ![](getting-started-images-linux/img4.jpg)
+  ![Configuring Syncfusion components in ASP.NET Core](getting-started-images-linux/img4.jpg)
 
 * Now configure a Bower execution environment in your local machine based on this [link](https://help.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-bower-packages)
 
 * Click the Extension icon in the Visual Studio Code left side pane, in the search window type the command *bower*. The Bower related extensions are listed out. Now select the Bower extension and click the install button.
 
-  ![](getting-started-images-linux/img5.jpg)
+  ![Bower related extensions in ASP.NET Core](getting-started-images-linux/img5.jpg)
 
 * In **bower.json** file specify our Syncfusion packages with our latest version, or else specify the **`*`** symbol will automatically loads our latest version scripts and CSS files.
 
-  ![](getting-started-images-linux/img6.jpg)
+  ![Syncfusion packages in ASP.NET Core](getting-started-images-linux/img6.jpg)
 
 * Then open quick window to enter the *`>bower`* command and press ‘Enter’ key, from the below list of suggestions select the **bower install** option to restored our scripts and CSS into your application **wwwroot -> lib** folder.
 
-  ![](getting-started-images-linux/img7.jpg)
+  ![Installing bower in ASP.NET Core](getting-started-images-linux/img7.jpg)
 
 * Now refer our Syncfusion package **Syncfusion.EJ.AspNet.Core** into your application for our components deployment. The packages configuration & installation guidelines will be documented [here](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#confuguring-syncfusion-nuget-packages-from-command-line-in-linuxmac).
 
 * Once the NuGet packages installation gets completed, open your **project.json** file to include our **Syncfusion.EJ.AspNet.Core** package reference.
 
-  ![](getting-started-images-linux/img8.jpg)
+  ![Package refernce in ASP.NET Core](getting-started-images-linux/img8.jpg)
 
 > The ASP.NET Core NuGet packages versioning has been streamlined as 16.1.0.32 in shorter than older versioning (16.1600.0.32) from Volume 1, 2018 service pack 1 release (16.1.0.32). Since all the framework version wise assemblies are grouped into a single package.
 
@@ -236,7 +236,7 @@ dotnet restore
 
 {% endhighlight %}
 
-  ![](getting-started-images-linux/img9.jpg)
+  ![Terminal window in ASP.NET Core](getting-started-images-linux/img9.jpg)
 
 * Now refer the necessary scripts and CSS files in your **_layout.cshtml** page.
 
@@ -292,4 +292,4 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 * Then open your browser and paste the listening port **localhost:5000** to view your sample in browser.
 
-  ![](getting-started-images-linux/img10.jpg)
+  ![Completed sample in ASP.NET Core](getting-started-images-linux/img10.jpg)

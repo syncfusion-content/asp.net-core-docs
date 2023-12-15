@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Core Concepts | ASP.NET Core | Syncfusion
-description: Core Concepts
+title: Core Concepts in ASP.NET Core Control | Syncfusion
+description: Learn here about Core Concepts in Syncfusion Essential ASP.NET Core Control, its elements, and more.
 platform: aspnet-core
 control: Common 
 documentation: ug
 ---
 
-# Core Concepts
+# Core Concepts in ASP.NET Core 
 
 ## Basics
 
@@ -15,7 +15,7 @@ documentation: ug
 
 Using tag helper methods we can set values to Syncfusion Widget properties during or after the creation.
 
-![](core-concepts_images/core-concepts_img1.png)
+![API configuration in ASP.NET Core](core-concepts_images/core-concepts_img1.png)
 
 In the above example, minimum & maximum range defined for DatePicker component. 
 
@@ -227,7 +227,7 @@ Find the steps to configure the Syncfusion Components to particular language fro
 3. Download and refer the Syncfusion UI component localized text from [ej-global](https://github.com/syncfusion/ej-global/tree/master/localetexts) repository.
 
    
-   ![](core-concepts_images/core-concepts_img1.png)
+   ![Localization in ASP.NET Core](core-concepts_images/core-concepts_img1.png)
    
 4. Load the Localized text file from local texts folder as like previous step   
 
