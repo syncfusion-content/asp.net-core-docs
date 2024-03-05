@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of ASP.NET Core DatePicker | Syncfusion
-description: Learn here all about overview support in Syncfusion Essential ASP.NET Core DatePicker control, its elements, and more.
+description: Learn here all about overview of Syncfusion Essential ASP.NET Core DatePicker control, its elements, and more.
 platform: aspnet-core
 control: DatePicker
 documentation: ug
