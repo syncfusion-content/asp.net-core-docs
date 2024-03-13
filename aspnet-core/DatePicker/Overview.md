@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview
-description: DatePicker introduction with key features
+title: Overview of ASP.NET Core DatePicker | Syncfusion
+description: Learn here all about overview of Syncfusion Essential ASP.NET Core DatePicker control, its elements, and more.
 platform: aspnet-core
 control: DatePicker
 documentation: ug
 ---
-# Overview 
+# Overview of ASP.NET Core DataPicker
 
 The Essential ASP.NET Core DatePicker component provides the support for displaying calendar in web page and allows the user to pick or directly enter the date value as like [EJ DatePicker]( http://help.syncfusion.com/js/datepicker/overview), since DatePicker is a server side wrapper of EJ DatePicker.
 
