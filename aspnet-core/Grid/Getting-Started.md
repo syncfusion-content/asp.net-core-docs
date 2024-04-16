@@ -220,7 +220,7 @@ To enable grouping, use the `allow-grouping` property of grid is as follows.
 
 The following output is displayed as a result of the previous code example.
 
-![ASP.NET Core Grid enable grouping](Getting-Started_images/Getting-Started2_img4.png)
+![ASP.NET Core Grid enable grouping](getting-started_images/aspnet-core-grid-enable-grouping.png)
 
 
 ## Add summaries
@@ -268,4 +268,4 @@ Summaries can be added by setting the `show-summary` to `true` and adding requir
 
 The following output is displayed as a result of the previous code example.
 
-![ASP.NET Core Grid adds summaries](Getting-Started_images/Getting-Started2_img5.png)
+![ASP.NET Core Grid adds summaries](getting-started_images/aspnet-core-grid-add-summaries.png)
