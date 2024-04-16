@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting started with ASP.NET Core Grid | Syncfusion
+title: Getting started with ASP.NET Core Grid | Syncfusion
 description: Learn here all about getting started with Syncfusion Essential ASP.NET Core Grid control, its elements, and more. 
 platform: aspnet-core
 control: grid
@@ -94,7 +94,7 @@ In `e-columns` definition, the `text-align` property allows you to align text of
 
 The following output is displayed as a result of the previous code example.
 
-![ASP.NET Core Grid data binding](Getting-Started_images/Getting-Started2_img1.jpeg)
+![ASP.NET Core Grid data binding](getting-started_images/aspnet-core-grid-data-binding.jpeg)
 
 
 ## Enable paging
@@ -135,7 +135,7 @@ The paging feature in grid offers complete navigation support to easily switch
 
 The following output is displayed as a result of the previous code example.
 
-![ASP.NET Core Grid enable paging](Getting-Started_images/Getting-Started2_img2.png)
+![ASP.NET Core Grid enable paging](getting-started_images/aspnet-core-grid-enable-paging.png)
 
 
 ## Enable filtering
@@ -178,7 +178,7 @@ To enable filtering, use the `allow-filtering` property of grid is as follows.
 
 The following output is displayed as a result of the previous code example.
 
-![ASP.NET Core Grid enable filtering](Getting-Started_images/Getting-Started2_img3.png)
+![ASP.NET Core Grid enable filtering](getting-started_images/aspnet-core-grid-enable-filtering.png)
 
 
 ## Enable grouping
