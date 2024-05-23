@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling | DateTimePicker | ASP.NET Core | Syncfusion
-description: appearance and styling
+title: Appearance and Styling in ASP.NET Core DateTimePicker | Syncfusion
+description: Learn here all about appearance and styling support in Syncfusion Essential ASP.NET Core DateTimePicker control, it's elements and more.
 platform: aspnet-core
 control: DateTimePicker
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in ASP.NET Core DateTimePicker
 
 ## Theme
 
@@ -63,7 +63,7 @@ N> To render the DateTimePicker Control you can use either Razor or Tag helper c
 
 2. The following screenshot displays the output for the above code.
 
-	![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+    ![Theme in ASP.NET Core DateTimePicker](appearance-and-styling_images/aspnet-core-date-time-picker-theme.png)
     
 	Showcase of DateTimePicker with gradient lime dark theme
 	{:.caption}
@@ -115,9 +115,9 @@ Using this CssClass you can override the existing styles under the theme style s
 </style>
 
  {% endhighlight %}
-   
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![CSS class in ASP.NET Core DateTimePicker](appearance-and-styling_images/aspnet-core-date-time-picker-css-class.png)
+
 
  Showcase for DateTimePicker with cssClass “Purple-dark”
     {:.caption}
