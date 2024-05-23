@@ -63,7 +63,7 @@ N> To render the DateTimePicker Control you can use either Razor or Tag helper c
 
 2. The following screenshot displays the output for the above code.
 
-    ![Theme in ASP.NET Core DateTimePicker](appearance-and-styling_images/aspnet-core-date-time-picker-theme.png)
+    ![Theme in ASP.NET Core DateTimePicker.](appearance-and-styling_images/aspnet-core-date-time-picker-theme.png)
     
 	Showcase of DateTimePicker with gradient lime dark theme
 	{:.caption}
@@ -116,7 +116,7 @@ Using this CssClass you can override the existing styles under the theme style s
 
  {% endhighlight %}
 
-![CSS class in ASP.NET Core DateTimePicker](appearance-and-styling_images/aspnet-core-date-time-picker-css-class.png)
+![CSS class in ASP.NET Core DateTimePicker.](appearance-and-styling_images/aspnet-core-date-time-picker-css-class.png)
 
 
  Showcase for DateTimePicker with cssClass “Purple-dark”
