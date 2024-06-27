@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive features of Maps control for Asp.Net Core
-description: Learn how to enables the effective interaction on Map elements
+title: User Interactive in ASP.NET Core Maps Control | Syncfusion
+description: Learn here all about user interactive support in Syncfusion Essential ASP.NET Core Maps control, it's elements and more.
 platform: aspnet-core
 control: Maps
 documentation: ug
 ---
 
-# User Interaction
+# User Interaction in ASP.NET Core Maps
 
 Options like zooming, panning and map selection enable the effective interaction on Map elements.
 
@@ -40,7 +40,7 @@ selection-stroke-width="2" value-path="population">
 
 
 
-![](User-Interaction_images/User-Interaction_img1.png)
+![Selection in ASP.NET Core Maps.](user-interaction_images/aspnet-core-maps-selection.png)
 
 
 ## MultiSelection
@@ -58,7 +58,7 @@ This feature enables you to select multiple Map shapes on mouse taps accompanied
 	
 {% endhighlight %}
 
-![](User-Interaction_images/User-Interaction_img5.png)
+![Multiselection in ASP.NET Core Maps.](user-interaction_images/aspnet-core-maps-multi-selection.png)
 
 
 ## Dragging On Selection
@@ -74,7 +74,7 @@ You can enable this feature by setting the property `dragging-on-selection` in t
 
 {% endhighlight %}
 
-![](User-Interaction_images/User-Interaction_img4.png)
+![Dragging on selection in ASP.NET Core Maps.](user-interaction_images/aspnet-core-maps-dragging-on-selection.png)
 
 
 ## Zooming
@@ -147,8 +147,7 @@ You can zoom the Map with mouse events by using mouse scroll. When the mouse is 
 
 When the map is double-tapped by using mouse, the zoom in operation is performed. 
 
-![](User-Interaction_images/User-Interaction_img2.png)
-
+![Mouse double tap in ASP.NET Core Maps.](user-interaction_images/aspnet-core-maps-mouse-double-tap.png)
 
 ### By using Shape Selection
 
@@ -247,7 +246,7 @@ Specifies the zoom factor for map zoom value, you can use `factor` property.
 
 Navigation control is built-in with Maps control. With Navigation control, Maps can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by `enable-navigation` property.
 
-![](User-Interaction_images/User-Interaction_img3.png)
+![Navigation in ASP.NET Core Maps.](user-interaction_images/aspnet-core-maps-navigation.png)
 
 
 {% highlight CSHTML %}
