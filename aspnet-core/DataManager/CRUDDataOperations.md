@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Data Operations | DataManager | ASP.NET Core | Syncfusion
-description: CRUD Data Operations
+title: CRUD Data Operations in ASP.NET Core DataManager Control | Syncfusion
+description: Learn here all about crud data operations support in Syncfusion ASP.NET Core DataManager control, it's element's and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
@@ -9,7 +9,7 @@ keywords: Insert of Records, Delete, Update, Read, Remove, Add Fields
 
 ---
 
-# CRUD Data Operations
+# CRUD Data Operations in ASP.NET Core DataManager
 
 The DataManager fully supports the CRUD (Create, Read, Update, Destroy) data operations. However, it must be combined with some user interface or another Syncfusion UI widget such as the Grid, ListView, etc.
 
@@ -85,7 +85,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% endtabs %}
 
-![](CRUD_images/insert1.png) 
+![Insert in ASP.NET Core DataManager.](crud_images/aspnet-core-data-manager-insert.png) 
 
 ### Update
 
@@ -154,7 +154,7 @@ The update method is used to update the modified changes made to a record in the
 
 {% endtabs %}
 
-![](CRUD_images/update1.png) 
+![Update in ASP.NET Core DataManager.](crud_images/aspnet-core-data-manager-update.png)
 
 ### Remove
 
@@ -223,7 +223,7 @@ The remove function receives the items to be deleted in the Data Table. The func
 
 {% endtabs %}
 
-![](CRUD_images/remove1.png) 
+![Remove in ASP.NET Core DataManager.](crud_images/aspnet-core-data-manager-remove.png) 
 
 ## Remote CRUD Operations
 
@@ -311,7 +311,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% endtabs %}
 
-![](CRUD_images/insert2.png) 
+![Remove CRUD opeartions in ASP.NET Core DataManager.](crud_images/aspnet-core-data-manager-remove-crud-operations.png) 
 
 ### Update
 
