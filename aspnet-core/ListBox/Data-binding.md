@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data binding | ListBox | ASP.NET Core | Syncfusion
-description: data-binding 
+title: Data Binding in ASP.NET Core ListBox Control | Syncfusion
+description: Learn here all about data binding support in Syncfusion ASP.NET Core ListBox control, it's element's and more.
 platform: aspnet-core
 control: ListBox
 documentation: ug
 ---
 
-# Data-binding 
+# Data binding in ASP.NET Core ListBox
 
 The ListBox is populated with the node information taken from a data source. The ListBox supports binding data sources containing hierarchical data and supports Object data, Remote data for retrieving data from a specified data source.
 
@@ -139,7 +139,7 @@ The following code explains you the details of data binding with ListBox.
 
 
 
-![](Data-binding_images/Data-binding_img1.png)
+![Local data in ASP.NET Core ListBox.](data-binding_images/aspnet-core-listbox-data-binding.png)
 
 
 
@@ -172,8 +172,7 @@ The following steps explains you the details of data binding from remote.
 2. Output of the above steps.
 
 
-
-![](Data-binding_images/Data-binding_img2.png)
+![Remote data  in ASP.NET Core](data-binding_images/aspnet-core-listbox-remote-data.png)
 
 
 

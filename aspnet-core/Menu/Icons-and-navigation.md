@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Icons and navigation | Menu | ASP.NET Core | Syncfusion
-description: icons and navigation
+title: Icons and navigation in ASP.NET Core Menu Control | Syncfusion
+description: Learn here all about icons and navigation support in Syncfusion ASP.NET Core Menu control, it's element's and more.
 platform: aspnet-core
 control: Menu
 documentation: ug
 ---
 
-# Icons and navigation
+# Icons and navigation in ASP.NET Core Menu
 
 Icons are the images that is displayed in the Menu control. To specify the menu with icons you can use SpriteCssClass property to display the icons. 
 
@@ -127,7 +127,7 @@ Icons are the images that is displayed in the Menu control. To specify the menu 
 
 The following screenshot displays the output for the above code.                                                                                                       
 
-![](Icons-and-navigation_images/Icons-and-navigation_img1.png)
+![Icons in ASP.NET Core Menu.](icons-and-navigation_images/aspnet-core-menu-icons.png)
 
 Menu with Icons
 {:.caption}
@@ -169,14 +169,14 @@ Navigation in Menu control is the default usage to navigate into the other web p
 
 The following screenshot displays the output for the above code example.            
 
-![](Icons-and-navigation_images/Icons-and-navigation_img2.png)
+![Navigation in ASP.NET Core Menu.](1cons-and-navigation_images/aspnet-core-menu-navigation.png)
 
 Navigation of Menu
 {:.caption}
 
 When you click on “Google” that is present under “Search engine”, it navigates to the link that you specified in the sample code. Then the output is as follows.
 
-![](Icons-and-navigation_images/Icons-and-navigation_img3.png)
+![Items in ASP.NET Core Menu.](icons-and-navigation_images/aspnet-core-menu-items.png)
 
 After navigating to a menu item
 {:.caption}
