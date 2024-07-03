@@ -169,7 +169,7 @@ Navigation in Menu control is the default usage to navigate into the other web p
 
 The following screenshot displays the output for the above code example.            
 
-![Navigation in ASP.NET Core Menu.](1cons-and-navigation_images/aspnet-core-menu-navigation.png)
+![Navigation in ASP.NET Core Menu.](icons-and-navigation_images/aspnet-core-menu-navigation.png)
 
 Navigation of Menu
 {:.caption}

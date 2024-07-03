@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in ASP.NET Core ComboBox Control | Syncfusion
 description: Learn here all about filtering support in Syncfusion ASP.NET Core ComboBox control, it's element's and more.
-platform: core
+platform: aspnet-core
 control: ComboBox
 documentation: ug
 keywords: allowFiltering, ComboBox, updateData, case sensitive filtering, filter type, minimum filter character
