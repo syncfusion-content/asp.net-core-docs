@@ -84,7 +84,7 @@ N> To render the Button Control you can use either Razor or Tag helper code as g
 
 Execute the above code to render the following output.
 
-![](Button-Type_images/Button-Type_img1.png)
+![Button Type in ASP.NET Core Button.](button-type_images/aspnet-core-button-type.png)
 
 Different button types
 {:.caption}
