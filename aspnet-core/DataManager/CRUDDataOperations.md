@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Data Operations in ASP.NET Core DataManager Control | Syncfusion
-description: Learn here all about crud data operations support in Syncfusion ASP.NET Core DataManager control, it's element's and more.
+description: Learn here all about crud data operations support in Syncfusion ASP.NET Core DataManager control, it's elements, and more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
