@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in ASP.NET Core ComboBox Control | Syncfusion
-description: Learn here all about filtering support in Syncfusion ASP.NET Core ComboBox control, it's element's and more.
+description: Learn here all about filtering support in Syncfusion ASP.NET Core ComboBox control, it's elements, and more.
 platform: aspnet-core
 control: ComboBox
 documentation: ug

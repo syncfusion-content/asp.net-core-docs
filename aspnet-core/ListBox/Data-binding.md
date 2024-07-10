@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ASP.NET Core ListBox Control | Syncfusion
-description: Learn here all about data binding support in Syncfusion ASP.NET Core ListBox control, it's element's and more.
+description: Learn here all about data binding support in Syncfusion ASP.NET Core ListBox control, it's elements, and more.
 platform: aspnet-core
 control: ListBox
 documentation: ug

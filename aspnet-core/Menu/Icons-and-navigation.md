@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons and navigation in ASP.NET Core Menu Control | Syncfusion
-description: Learn here all about icons and navigation support in Syncfusion ASP.NET Core Menu control, it's element's and more.
+description: Learn here all about icons and navigation support in Syncfusion ASP.NET Core Menu control, it's elements, and more.
 platform: aspnet-core
 control: Menu
 documentation: ug
