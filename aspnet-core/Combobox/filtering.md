@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in ComboBox control for Syncfusion ASP.NET CORE
-description: Filtering support to ComboBox control for Syncfusion ASP.NET CORE
-platform: core
+title: Filtering in ASP.NET Core ComboBox Control | Syncfusion
+description: Learn here all about filtering support in Syncfusion ASP.NET Core ComboBox control, it's elements, and more.
+platform: aspnet-core
 control: ComboBox
 documentation: ug
 keywords: allowFiltering, ComboBox, updateData, case sensitive filtering, filter type, minimum filter character
 ---
 
-# Filtering
+# Filtering in ASP.NET Core ComboBox
 
 The ComboBox has built-in support to filter data items when the `allowFiltering` is enabled. The filter operation starts as soon as you start typing characters in the component.
 
@@ -64,7 +64,7 @@ The following sample illustrates how to query the data source and pass the data 
 Output for filtering combobox control is as follows.
 
 
-![](Combobox_filtering_images/filtering.png)
+![Filtering in ASP.NET Core ComboBox.](combobox_filtering_images/aspnet-core-combobox-filtering.png)
 
 
 ## Limit the minimum filter character
@@ -179,8 +179,7 @@ In the following examples, data filtering is done with the `endsWith` type.
 
 Output for filtering combobox control is as follows.
 
-
-![](Combobox_filtering_images/filter_type.png)
+![Filter type in ASP.NET Core ComboBox.](combobox_filtering_images/aspnet-core-combobox-filter-type.png)
 
 ## Case sensitive filtering
 
@@ -237,5 +236,6 @@ The following example shows how to perform the case-sensitive filter.
 
 Output for filtering combobox control is as follows:
 
+![Filter type in ASP.NET Core ComboBox.](combobox_filtering_images/aspnet-core-combobox-filter-type.png)
 
-![](Combobox_filtering_images/case_sensitive_filtering.png)
+![Case sensitive filtering in ASP.NET Core ComboBox.](combobox_filtering_images/aspnet-core-combobox-case-sensitive-filtering.png)
