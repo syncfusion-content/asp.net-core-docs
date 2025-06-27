@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in DropDownList control for Syncfusion ASP.NET Core
-description: Customization in DropDownList control for Syncfusion ASP.NET Core
+description: Check out and learn here all customization in DropDownList control for Syncfusion ASP.NET Core and much more.
 platform: aspnet-core
 control: DropDownList
 documentation: ug
@@ -47,9 +47,9 @@ It provides the short description of the expected value in dropdown and will dis
     
 {% endtabs %}
 
-![](Customization_images/Customization_img1.png)
+![adding watermark text.](Customization_images/Customization_img1.png)
 
-![](Customization_images/Customization_img2.png)
+![watermarkText property.](Customization_images/Customization_img2.png)
 
 ## Applying Rounded Corner
 
@@ -88,7 +88,7 @@ You can use ShowRoundedCorner property to add rounded borders to the input and p
     
 {% endtabs %}
 
-![](Customization_images/Customization_img3.png)
+![disabled in drop down list.](Customization_images/Customization_img3.png)
 
 I> The browser support details for rounded corner is given [here](https://www.w3schools.com/cssref/css3_pr_border-radius.asp).
 
@@ -129,7 +129,7 @@ The Enabled property is used to indicate whether the control can respond to the 
     
 {% endtabs %}
 
-![](Customization_images/Customization_img4.png)
+![enabled property in drop down list.](Customization_images/Customization_img4.png)
 
 ## Applying HTML Attributes
 
@@ -173,4 +173,4 @@ Additional HTML attributes can be applied to the control by using HtmlAttributes
     
 {% endtabs %}
 
-![](Customization_images/Customization_img5.png)
+![additional html attributes.](Customization_images/Customization_img5.png)
