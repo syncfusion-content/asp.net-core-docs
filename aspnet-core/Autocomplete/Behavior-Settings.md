@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior Settings | AutoComplete | ASP.NET Core | Syncfusion
-description: behavior settings
+description: Check out and learn here all about behavior settings of Syncfusion AutoComplete ASP.NET Core and much more details.
 platform: aspnet-core
 control: AutoComplete
 documentation: ug
@@ -39,7 +39,7 @@ The following steps explain the configuration of the filtering conditions for an
 
 The following image is the output for AutoComplete control that filters list items based on the ‘contains’ option.
 
-![](Behavior-Settings_images/Behavior-Settings_img1.png)
+![Autocomplete control that filters list items.](Behavior-Settings_images/Behavior-Settings_img1.png)
 
 AutoComplete using "contains" filterType
 {:.caption}
@@ -75,7 +75,7 @@ The following steps explain how to enable the AutoFill property for an AutoCompl
 
 The following image is the output for AutoComplete when EnableAutoFill is set to ‘true’.
 
-![](Behavior-Settings_images/Behavior-Settings_img2.png)
+![the enable-auto-fill property.](Behavior-Settings_images/Behavior-Settings_img2.png)
 
 AutoComplete with AutoFill
 {:.caption}
@@ -112,7 +112,7 @@ The following image is the output for AutoComplete when “SortOrder” is confi
 
 
 
-![](Behavior-Settings_images/Behavior-Settings_img3.png)
+![sort order.](Behavior-Settings_images/Behavior-Settings_img3.png)
 
 AutoComplete PopUp sorted in descending order
 {:.caption}
@@ -169,7 +169,7 @@ The following steps explain you how to enable this property.
 
 The following images are the outputs for AutoComplete when enable-distinct is set to “true” and “false”.
 
-![](Behavior-Settings_images/Behavior-Settings_img4.png)
+![property disabled and enabled.](Behavior-Settings_images/Behavior-Settings_img4.png)
 
 AutoComplete PopUp items with Distinct property disabled and enabled
 {:.caption}
@@ -197,7 +197,7 @@ The following steps explains you how to configure the Popup button for an AutoCo
 
 The following image is the output for AutoComplete when ShowPopupButton is enabled.
 
-![](Behavior-Settings_images/Behavior-Settings_img5.png)
+![show popup button is enabled.](Behavior-Settings_images/Behavior-Settings_img5.png)
 
 AutoComplete with popup icon
 {:.caption}
@@ -232,7 +232,7 @@ The following steps help you to disable editing in an AutoComplete textbox.
 
 The following image is the output for the AutoComplete textbox configured to restrict editing.
 
-![](Behavior-Settings_images/Behavior-Settings_img6.png)
+![configured to restrict editing.](Behavior-Settings_images/Behavior-Settings_img6.png)
 
 AutoComplete with readOnly property
 {:.caption}
@@ -268,7 +268,7 @@ The following steps allow you to set text for empty results of an AutoComplete t
 
 The following image is the output of the AutoComplete textbox when the list doesn’t return any value.
 
-![](Behavior-Settings_images/Behavior-Settings_img7.png)
+![customized empty result text.](Behavior-Settings_images/Behavior-Settings_img7.png)
 
 AutoComplete with customized EmptyResultText
 {:.caption}

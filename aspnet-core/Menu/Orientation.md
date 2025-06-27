@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Orientation | Menu | ASP.NET Core | Syncfusion
-description: orientation
+description: Check out and learn here everything about the orientation of the Syncfusion ASP.NET Core Menu and much more details. 
 platform: aspnet-core
 control: Menu
 documentation: ug
@@ -72,7 +72,7 @@ The following steps explains you the details on rendering the Menu control.
 
 The following screenshot displays the output of the above code.        
 
-![](Orientation_images/Orientation_img1.png)
+![horizontal orientation in menu.](Orientation_images/Orientation_img1.png)
 
 Horizontal Menu
 {:.caption}
@@ -137,7 +137,7 @@ You can also render Menu control in vertical direction using orientation.To set 
 
 The following screen shot displays the output of the above code.                       
 
-![](Orientation_images/Orientation_img2.png)
+![render menu control.](Orientation_images/Orientation_img2.png)
 
 Vertical Menu
 {:.caption}

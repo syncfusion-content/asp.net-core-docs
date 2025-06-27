@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart size |Chart  | ASP.NET CORE | Syncfusion
-description: Learn how to set Chart size and make it responsive. 
+description: Check out and learn here all about how to set chart size in chart dimensions of Syncfusion Chart and much more.
 platform: aspnet-core
 control: Chart
 documentation: ug
@@ -39,7 +39,7 @@ You can also set the chart dimension by using the **Size** property of the chart
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
+![size property of the chart.](Chart-Dimensions_images/Chart-Dimensions_img1.png)
 
 ## Setting size relative to the container size
 
@@ -56,7 +56,7 @@ You can specify the chart size in percentage by using the **Size** property. The
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img2.png)
+![dimension with respect to its container.](Chart-Dimensions_images/Chart-Dimensions_img2.png)
 
 
 ## Responsive chart

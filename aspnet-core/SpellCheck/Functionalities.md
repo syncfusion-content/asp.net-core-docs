@@ -1,6 +1,6 @@
 ---
 title: SpellCheck - Functionalities
-description: SpellCheck Functionalities
+description: Check out and learn here all spellcheck functionalities of Syncfusion ASP.NET Core Spellcheck and much more details.
 platform: aspnet-core
 control: spellcheck
 documentation: ug
@@ -249,7 +249,7 @@ The following code example describes the above behavior.
 
 The following screenshot displays the output for the above code
 
-![](ValidateOnType_Images/validateontype.png)
+![checking content on typing.](ValidateOnType_Images/validateontype.png)
 
 ## Suggestion Words
 

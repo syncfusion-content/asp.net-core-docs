@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TreeView with Full Row Selection | TreeView | ASP.NET Core | Syncfusion
+title: TreeView with Full Row Selection | TreeView | Syncfusion
 description: specify full row selection option in TreeView and its settings
 platform: aspnet-core
 control: TreeView
@@ -75,7 +75,7 @@ In the view page, add the following code and map the properties defined to the c
 {% endhighlight %}
 
 By running the previous code, you will get the output like the following:
-![](Fullrowselection_images/selection1.png)
+![full row selection property.](Fullrowselection_images/selection1.png)
 
 ## Customization
 
@@ -189,4 +189,4 @@ In the view page, add the following code and map the properties defined to the c
 {% endhighlight %}
 
 By running the above code, you will get the output like the following:
-![](Fullrowselection_images/custom.png)
+![customize the tree view full row selection.](Fullrowselection_images/custom.png)
