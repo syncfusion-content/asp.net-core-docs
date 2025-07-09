@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns with Spreadsheet widget for Syncfusion Essential ASP.NET Core
-description: How to use and customize the Spreadsheet Rows and Columns
+title: Rows and Columns with Spreadsheet widget for Syncfusion ASP.NET Core
+description: Check out and learn here all about how to use and customize the spreadsheet rows and columns and much more.
 platform: aspnet-core
 control: Spreadsheet
 documentation: ug
@@ -263,7 +263,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Rows-and-columns_images/Rows-and-columns_img2.png)
+![Delete Entire Column in Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img2.png)
 
 ### Show Row
 You can show the hidden rows dynamically by using one of the following ways,
@@ -324,7 +324,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Rows-and-columns_images/Rows-and-columns_img3.png)
+![Hide Column in Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img3.png)
 
 ## Resizing
 You can change `column-width` and `row-height` with the specified value. You have to enable `allow-resizing` property to perform resizing.
@@ -380,4 +380,4 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![](Rows-and-columns_images/Rows-and-columns_img4.png)
+![Show Column inSpreadsheet.](Rows-and-columns_images/Rows-and-columns_img4.png)
