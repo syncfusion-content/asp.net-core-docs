@@ -200,7 +200,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![delete entire column in Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img1.png)
+![delete entire column in ASP.NET CORE Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img1.png)
 
 ## Show and Hide 
 You can show or hide the rows and columns in Spreadsheet using methods and context menu. 
@@ -263,7 +263,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![delete entire column in Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img2.png)
+![delete entire column in ASP.NET CORE Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img2.png)
 
 ### Show Row
 You can show the hidden rows dynamically by using one of the following ways,
@@ -324,7 +324,7 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![hide column in Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img3.png)
+![hide column in ASP.NET CORE Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img3.png)
 
 ## Resizing
 You can change `column-width` and `row-height` with the specified value. You have to enable `allow-resizing` property to perform resizing.
@@ -380,4 +380,4 @@ namespace MVCSampleBrowser.Controllers
 {% endtabs %}
 
 The following output is displayed as a result of the above code example.
-![show column inSpreadsheet.](Rows-and-columns_images/Rows-and-columns_img4.png)
+![show column in ASP.NET CORE Spreadsheet.](Rows-and-columns_images/Rows-and-columns_img4.png)
