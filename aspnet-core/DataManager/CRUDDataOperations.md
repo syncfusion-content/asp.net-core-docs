@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Data Operations | DataManager | ASP.NET Core | Syncfusion
-description: CRUD Data Operations
+description: Check out and learn here all about CRUD data operations of Syncfusion ASP.NET Core DataManager and much more.
 platform: aspnet-core
 control: DataManager
 documentation: ug
@@ -85,7 +85,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% endtabs %}
 
-![](CRUD_images/insert1.png) 
+![local crud operations in insert.](CRUD_images/insert1.png) 
 
 ### Update
 
@@ -154,7 +154,7 @@ The update method is used to update the modified changes made to a record in the
 
 {% endtabs %}
 
-![](CRUD_images/update1.png) 
+![local crud operations in update.](CRUD_images/update1.png) 
 
 ### Remove
 
@@ -223,7 +223,7 @@ The remove function receives the items to be deleted in the Data Table. The func
 
 {% endtabs %}
 
-![](CRUD_images/remove1.png) 
+![local crud operations in remove.](CRUD_images/remove1.png) 
 
 ## Remote CRUD Operations
 
@@ -311,7 +311,7 @@ The insert method of the data manager is used to add a new record to the table. 
 
 {% endtabs %}
 
-![](CRUD_images/insert2.png) 
+![remote crud operations in insert.](CRUD_images/insert2.png) 
 
 ### Update
 
