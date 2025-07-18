@@ -39,7 +39,7 @@ You can also set the chart dimension by using the **Size** property of the chart
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img1.png)
+![set size in pixels in ASP.Net Core Chart.](Chart-Dimensions_images/Chart-Dimensions_img1.png)
 
 ## Setting size relative to the container size
 
@@ -56,7 +56,7 @@ You can specify the chart size in percentage by using the **Size** property. The
 
 {% endhighlight %}
 
-![](Chart-Dimensions_images/Chart-Dimensions_img2.png)
+![setting size relative to the container size in ASP.NET Core Chart.](Chart-Dimensions_images/Chart-Dimensions_img2.png)
 
 
 ## Responsive chart

@@ -47,9 +47,9 @@ It provides the short description of the expected value in dropdown and will dis
     
 {% endtabs %}
 
-![](Customization_images/Customization_img1.png)
+![adding watermark text in customization.](Customization_images/Customization_img1.png)
 
-![](Customization_images/Customization_img2.png)
+![Adding watermark text in ASP.NET Core Drop Down List.](Customization_images/Customization_img2.png)
 
 ## Applying Rounded Corner
 
@@ -129,7 +129,7 @@ The Enabled property is used to indicate whether the control can respond to the 
     
 {% endtabs %}
 
-![](Customization_images/Customization_img4.png)
+![enable/disable the control in ASP.NET Drop Down List.](Customization_images/Customization_img4.png)
 
 ## Applying HTML Attributes
 
@@ -173,4 +173,4 @@ Additional HTML attributes can be applied to the control by using HtmlAttributes
     
 {% endtabs %}
 
-![](Customization_images/Customization_img5.png)
+![applying html attributes in ASP.NET Core.](Customization_images/Customization_img5.png)

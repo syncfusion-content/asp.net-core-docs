@@ -75,7 +75,7 @@ In the view page, add the following code and map the properties defined to the c
 {% endhighlight %}
 
 By running the previous code, you will get the output like the following:
-![](Fullrowselection_images/selection1.png)
+![full row selection in ASP.NET Tree view.](Fullrowselection_images/selection1.png)
 
 ## Customization
 
@@ -189,4 +189,4 @@ In the view page, add the following code and map the properties defined to the c
 {% endhighlight %}
 
 By running the above code, you will get the output like the following:
-![](Fullrowselection_images/custom.png)
+![customize in ASP>NET COre Tree View.](Fullrowselection_images/custom.png)

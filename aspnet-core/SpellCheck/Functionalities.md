@@ -249,7 +249,7 @@ The following code example describes the above behavior.
 
 The following screenshot displays the output for the above code
 
-![](ValidateOnType_Images/validateontype.png)
+![checking content on typing in ASP.NET Core Spellcheck.](ValidateOnType_Images/validateontype.png)
 
 ## Suggestion Words
 
