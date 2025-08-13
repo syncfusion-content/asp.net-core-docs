@@ -65,7 +65,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img1.png)
+![row selection in Grid.](Selection_images/Selection_img1.png)
 
 ## Multiple row selection using checkbox column
 
@@ -107,7 +107,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img12.png)
+![multiple row selection using checkbox column in ASP.NET Core Grid.](Selection_images/Selection_img12.png)
 
 ## Cell selection
 
@@ -150,7 +150,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img2.png)
+![cell selection in ASP.NET Core Grid.](Selection_images/Selection_img2.png)
 
 ### Cell selection mode
 
@@ -196,7 +196,7 @@ The following code example describes the above behavior.
 
  The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img3.png)
+![cell selection mode in ASP.NET Core Grid.](Selection_images/Selection_img3.png)
 
 
 ## Column selection
@@ -239,7 +239,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example
 
-![](Selection_images/Selection_img4.png)
+![column selection in ASP.NET Core Grid.](Selection_images/Selection_img4.png)
 
 
 ## Touch options
@@ -280,7 +280,7 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](Selection_images/Selection_img5.png)
+![touch options in ASP.NET Core Grid.](Selection_images/Selection_img5.png)
 
 
 ## Toggle selection
@@ -364,4 +364,4 @@ The following code example describes the above behavior.
 
 The following output is displayed as a result of the above code example.
 
-![](selection_images/Selection_img13.png)
+![drag selection in ASP.NET Core Grid.](selection_images/Selection_img13.png)

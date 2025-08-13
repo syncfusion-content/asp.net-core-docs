@@ -620,12 +620,12 @@ In the view page, add the following code and map the properties defined to the c
 
 The following screenshot displays the load on demand for a local data source in the tree view control.
 
-![](Populate-Data_images/Populate-Data_img1.png)
+![expanding the parent node in ASP.NET Core TreeView.](Populate-Data_images/Populate-Data_img1.png)
 
 While expanding the parent node
 {:.caption}
 
-![](Populate-Data_images/Populate-Data_img2.png)
+![After expanding the parent node in ASP.NET Core TreeView.](Populate-Data_images/Populate-Data_img2.png)
 
 After expanding the parent node
 {:.caption}
