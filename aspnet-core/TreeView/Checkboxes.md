@@ -24,7 +24,7 @@ The tree view supports tri-state checkboxes in addition to the standard two-stat
     {% endhighlight %}
     
 By running the above code, you will get the output like the following image.
-![](Checkboxes_images/checkbox_images_img1.png)
+![indeterminate checkboxes in ASP.NET Core TreeView](Checkboxes_images/checkbox_images_img1.png)
 
 ## Auto checkable
 
