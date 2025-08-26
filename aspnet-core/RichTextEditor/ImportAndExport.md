@@ -7,7 +7,7 @@ control: RTE
 documentation: ug
 ---
 
-## Import 
+# Import 
 
 Import feature provides support to import a word document into the editor `textarea`. To enable import option in the RTE tool bar,  `import` toolbar items needs to be added in RTE toolbar toolsList using `importExport` which adds the tool in the toolbar. In `ImportSettings` Url option, the server page for import is needed to be mapped. When you click the toolbar import icon, it opens a dialog to browse the select a word file. The selected word file will be imported into the editor `textarea`.
 
@@ -32,7 +32,7 @@ Import feature provides support to import a word document into the editor `texta
 
 {% endhighlight %}
 
-![](ImportAndExport_images/import_images.png)
+![import a word document into the RichTextEditor.](ImportAndExport_images/import_images.png)
 
 ## Export 
 
@@ -62,7 +62,7 @@ Export feature provides support to export editor `textarea` content into word an
 {% endhighlight %}
 
 ### Word Export
-![](ImportAndExport_images/export_word_images.png)
+![export feature provides support to export RichTextEditor textarea content into word.](ImportAndExport_images/export_word_images.png)
 
 ### PDF Export
-![](ImportAndExport_images/export_pdf_images.png)
+![export feature provides support to export RichTextEditor textarea content into pdf.](ImportAndExport_images/export_pdf_images.png)
