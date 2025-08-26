@@ -32,7 +32,7 @@ Import feature provides support to import a word document into the editor `texta
 
 {% endhighlight %}
 
-![import a word document into the editor textarea.](ImportAndExport_images/import_images.png)
+![import a word document into the RichTextEditor.](ImportAndExport_images/import_images.png)
 
 ## Export 
 
@@ -62,7 +62,7 @@ Export feature provides support to export editor `textarea` content into word an
 {% endhighlight %}
 
 ### Word Export
-![export feature provides support to export editor textarea content into word.](ImportAndExport_images/export_word_images.png)
+![export feature provides support to export RichTextEditor textarea content into word.](ImportAndExport_images/export_word_images.png)
 
 ### PDF Export
-![export feature provides support to export editor textarea content into pdf.](ImportAndExport_images/export_pdf_images.png)
+![export feature provides support to export RichTextEditor textarea content into pdf.](ImportAndExport_images/export_pdf_images.png)
