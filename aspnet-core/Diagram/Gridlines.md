@@ -94,7 +94,7 @@ public ActionResult Index()
 
 ![](Gridlines_images/Gridlines_img2.png)
 
-# Snapping
+## Snapping
 
 ## Snap To Lines
 
