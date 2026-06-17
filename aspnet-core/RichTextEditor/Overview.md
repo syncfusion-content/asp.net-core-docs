@@ -19,3 +19,5 @@ The following are some of the key features of the editor:
 * Tables
 * Localization
 * XHTML validation
+
+N> Looking for the full ASP.NET Core Rich Text Editor component overview, features, pricing, and documentation? Visit the [ASP.NET Core Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/richtexteditor/overview#/fluent2) page.
