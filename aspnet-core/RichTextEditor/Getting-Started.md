@@ -124,4 +124,4 @@ public ActionResult RichTextEditorFeatures(string rteSample)
 
 {% endhighlight %}
 
-N> Looking for the full ASP.NET Core Rich Text Editor component overview, features, pricing, and documentation? Visit the [ASP.NET Core Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started) page.
+N> Looking for the full ASP.NET Core Rich Text Editor component overview, features, pricing, and documentation? Visit the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) page.
